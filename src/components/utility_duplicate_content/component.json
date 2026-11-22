@@ -1,0 +1,13 @@
+{
+  "name": "utility_duplicate_content",
+  "title": "Utility Duplicate Content",
+  "summary": "Renders another post's content in the current page.",
+  "description": "Renders the content blocks of another post (e.g. page \"home\") in the current page, so two pages share one content without copying it.",
+  "type": "utility",
+  "assets": {
+    "php": [
+      "assets/php/utility_duplicate_content.php"
+    ]
+  },
+  "dependencies": []
+}

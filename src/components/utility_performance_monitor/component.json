@@ -1,0 +1,14 @@
+{
+  "name": "utility_performance_monitor",
+  "title": "Utility Performance Monitor",
+  "summary": "Dev-only FPS and performance panel on previews.",
+  "description": "Dev tool: a small panel on platform previews with live FPS, frame times, jank, long tasks (blocking time), LCP, CLS and interaction delay, plus a 0-100 score and an auto scroll test. Turned on in the platform (Settings > Platform tools > Performance monitor, dev/platform/data/settings.json tools.performance_monitor). Never rendered in compiled (dist) pages. Its css / js are printed inline, so they are not part of the production bundle.",
+  "assets": {
+    "php": ["assets/php/utility_performance_monitor.php"]
+  },
+  "inline_assets": {
+    "css": ["assets/css/style.css"],
+    "js": ["assets/js/utility_performance_monitor.js"]
+  },
+  "dependencies": []
+}

@@ -1,0 +1,26 @@
+{
+  "name": "block_workstation_status",
+  "title": "Block Workstation Status",
+  "summary": "Workstation status badge (active / inactive dot).",
+  "description": "Status badge of a workstation (old .status): dot + text from data.workstation.status (\"active\" = green dot, anything else = red), pinned to the bottom-right corner of its positioned parent. Used by block_workstation_hero and block_workstation_card.",
+  "post_types": [
+    "workstation"
+  ],
+  "assets": {
+    "php": [
+      "assets/php/block_workstation_status.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "theme"
+  ]
+}

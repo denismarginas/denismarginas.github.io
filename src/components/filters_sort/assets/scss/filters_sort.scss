@@ -1,0 +1,43 @@
+@import "theme";
+
+.filters-sort {
+  display: grid;
+  gap: var(--dm-spacing-xs);
+  width: 100%;
+
+  &:not([data-grid-list-design]):not([data-grid-column-balancing]) {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+
+  > .filters-sort-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+
+    > label {
+      font-family: var(--dm-font-primary);
+      font-size: var(--dm-font-size-sm);
+      font-weight: var(--dm-font-weight-bold);
+      color: var(--dm-color-white);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    > select {
+      width: 100%;
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: var(--cursor-not-allowed, not-allowed);
+      }
+    }
+  }
+}
+
+.block-sort {
+  &[hidden] {
+    display: none !important;
+  }
+}

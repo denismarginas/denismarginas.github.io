@@ -1,0 +1,23 @@
+{
+  "name": "tooltip",
+  "title": "Tooltip",
+  "summary": "Text bubble on hover or focus.",
+  "description": "Text bubble shown on hover / keyboard focus of a trigger (given HTML or a small status icon). Status colors: info, success, warning, error.",
+  "assets": {
+    "php": [
+      "assets/php/tooltip.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "theme"
+  ]
+}

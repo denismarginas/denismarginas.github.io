@@ -1,0 +1,7 @@
+@import "../variables/_radius";
+
+:root {
+  --dm-radius-none: #{$dm-radius-none};
+  --dm-radius-sm: #{$dm-radius-sm};
+  --dm-radius-md: #{$dm-radius-md};
+}

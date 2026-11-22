@@ -1,0 +1,21 @@
+{
+  "name": "animation_blurred_lines",
+  "title": "Animation Blurred Lines",
+  "summary": "Animated blurred-lines background effect.",
+  "description": "Animated blurred lines background effect with floating spans.",
+  "assets": {
+    "php": [
+      "assets/php/animation_blurred_lines.php"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ],
+    "js": [
+      "assets/js/animation_blurred_lines.js"
+    ]
+  },
+  "dependencies": []
+}

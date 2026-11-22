@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://denismarginas.github.io/sitemap.xml

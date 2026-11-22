@@ -1,0 +1,15 @@
+{
+  "name": "page_not_found",
+  "title": "Page Not Found",
+  "summary": "404 page content with code, text and link buttons.",
+  "description": "404 page content: big error code, title, text and link buttons (home, projects, search, contact), optional requested address and extra note; children render as overlays inside the card in a centered card with the .bg-radial-primary background. Used by the \"404\" page (routing 404_post_id).",
+  "post_types": ["page"],
+  "assets": {
+    "php": ["assets/php/page_not_found.php"],
+    "html": ["assets/html/template.html"],
+    "scss": ["assets/scss/**"],
+    "css": ["assets/css/**"],
+    "js": ["assets/js/page_not_found.js"]
+  },
+  "dependencies": ["button", "section", "svg", "theme"]
+}

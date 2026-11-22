@@ -1,0 +1,155 @@
+[
+    {
+        "_id": "education_technical_university_cluj_napoca_baia_mare",
+        "settings": {
+            "collection_type": "education",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#bf0001",
+                    "secondary": "#fff",
+                    "canvas_primary": "#fff",
+                    "canvas_secondary": "#2c2c2c"
+                }
+            }
+        },
+        "data": {
+            "seo": {
+                "title": "Universitatea Tehnică din Cluj-Napoca (UTCN – Baia Mare)",
+                "short_title": "Universitatea",
+                "description": "Am studiat informatică și matematică, cu accent pe limbaje de programare, algoritmi, baze de date și rețele de calculatoare.",
+                "slug": "education-technical-university-cluj-napoca-baia-mare"
+            },
+            "date": {
+                "start": "2016-10-01",
+                "end": "2019-07-14",
+                "publish": "2019-07-14"
+            },
+            "education": {
+                "type": "Universitatea",
+                "location": "Baia Mare",
+                "profession": [
+                    "Mathematics-Informatics"
+                ],
+                "heading": "Competențe și subiecte",
+                "disciplines": {
+                    "list": [
+                        "Programare în limbaj de asamblare",
+                        "Logica computațională",
+                        "Programare în Python",
+                        "Programare în C",
+                        "Rețelistică informatică",
+                        "Baze de date",
+                        "Sisteme avansate de gestionare a bazelor de date",
+                        "Matematică"
+                    ],
+                    "svg": "chevron-right"
+                },
+                "projects": [
+                    {
+                        "text": "Teză de licență",
+                        "_id": "student-courses-bachelor-s-thesis-platform",
+                        "svg": "folder-open"
+                    }
+                ]
+            },
+            "media": {
+                "path": "education",
+                "logo": {
+                    "img": "src/content/img/projects/education-university-utcnbm-media/logo/logo-technical-university-of-cluj-napoca-from-baia-mare-utcnbm.webp",
+                    "img_min": "src/content/img/projects/education-university-utcnbm-media/logo/logo-technical-university-of-cluj-napoca-from-baia-mare-utcnbm-minimalist.webp",
+                    "bg": "light"
+                }
+            },
+            "external_links": [
+                {
+                    "text": "Site web",
+                    "link": "https://www.utcluj.ro",
+                    "svg": "web"
+                }
+            ],
+            "taxonomy": {
+                "tag": [
+                    "university",
+                    "mathematics",
+                    "informatics"
+                ],
+                "category": [
+                    "Education"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "education_emil_racovita_high_school",
+        "settings": {
+            "collection_type": "education",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#97d059",
+                    "secondary": "#fff",
+                    "canvas_primary": "#fff",
+                    "canvas_secondary": "#80906e"
+                }
+            }
+        },
+        "data": {
+            "seo": {
+                "title": "Liceul „Emil Racoviță”",
+                "short_title": "Liceu",
+                "description": "Am finalizat studiile de liceu, specializarea în Matematică-Informație, cu accent pe programare și fundamentele informaticii.",
+                "slug": "education-emil-racovita-high-school"
+            },
+            "date": {
+                "start": "2012-09-14",
+                "end": "2016-07-18",
+                "publish": "2016-07-18"
+            },
+            "education": {
+                "type": "Liceu",
+                "location": "Baia Mare",
+                "profession": [
+                    "Mathematics-Informatics"
+                ],
+                "heading": "Competențe și subiecte",
+                "disciplines": {
+                    "list": [
+                        "Matematică",
+                        "Tehnologie informațională",
+                        "Știința calculatoarelor",
+                        "C++",
+                        "HTML",
+                        "CSS",
+                        "Visual FoxPro"
+                    ],
+                    "svg": "chevron-right"
+                }
+            },
+            "media": {
+                "path": "education",
+                "logo": {
+                    "img": "src/content/img/projects/education-high-school-er-media/logo/logo-high-school-emil-racovita.webp",
+                    "img_min": "src/content/img/projects/education-high-school-er-media/logo/logo-high-school-emil-racovita-minimalist.webp",
+                    "bg": "light"
+                }
+            },
+            "external_links": [
+                {
+                    "text": "Site web",
+                    "link": "https://www.liceulracovita.ro",
+                    "svg": "web"
+                }
+            ],
+            "taxonomy": {
+                "tag": [
+                    "high-school",
+                    "mathematics-informatics"
+                ],
+                "category": [
+                    "Education"
+                ]
+            }
+        }
+    }
+]

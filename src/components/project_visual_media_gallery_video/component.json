@@ -1,0 +1,20 @@
+{
+  "name": "project_visual_media_gallery_video",
+  "title": "Project Visual Media Gallery - Video",
+  "summary": "Video grid part of a project's visual media.",
+  "description": "Video part of a project's visual media (old video_media / renderVideoMedia): title (block_title, default \"Video Media Content\") + grid of videos from src/content/vid/projects/<media.path>/ and its sub folders (project_media_gallery \"videos\" -> block_video, thumbnails from data_items_video.json, one list per folder, max 2 columns, id \"video\"). Renders nothing (no title) when there are no videos. Used by project_visual_media_gallery, can also be placed on its own.",
+  "post_types": [
+    "project"
+  ],
+  "assets": {
+    "php": [
+      "assets/php/project_visual_media_gallery_video.php"
+    ]
+  },
+  "dependencies": [
+    "project_visual_web_gallery",
+    "project_media_gallery",
+    "block_title",
+    "theme"
+  ]
+}

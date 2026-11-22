@@ -1,0 +1,26 @@
+{
+  "name": "anchor_index",
+  "title": "Anchor Index",
+  "summary": "On-this-page links that jump to sections and mark the one in view.",
+  "description": "List of links to sections of the page (\"on this page\"): optional title, items with an id, a text and an optional date. Clicking jumps to the section; the section in view is marked aria-current=\"true\" (anchor_index.js). Sections of the page that are not in the list are ignored. Used in project asides and by social_post_listing.",
+  "assets": {
+    "php": [
+      "assets/php/anchor_index.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ],
+    "js": [
+      "assets/js/anchor_index.js"
+    ]
+  },
+  "dependencies": [
+    "theme"
+  ]
+}

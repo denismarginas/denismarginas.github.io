@@ -1,0 +1,24 @@
+@mixin pill() {
+  padding: 6px 8px;
+  border-radius: var(--dm-radius-sm);
+  font-size: var(--dm-font-size-xs);
+  font-weight: var(--dm-font-weight-semibold);
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--post-color-secondary, var(--dm-color-white));
+  background-color: var(--post-color-primary, var(--dm-color-primary));
+  transition: var(--dm-transition);
+}
+
+@mixin pill-hover() {
+  color: var(--post-color-primary, var(--dm-color-primary));
+  background-color: var(--post-color-secondary, var(--dm-color-white));
+}
+
+@mixin pills() {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--dm-spacing-xxs);
+}

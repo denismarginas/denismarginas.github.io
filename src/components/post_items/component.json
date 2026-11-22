@@ -1,0 +1,14 @@
+{
+  "name": "post_items",
+  "summary": "List of post cards with image and title link.",
+  "description": "Renders a list of post cards with a feature image and a title link.",
+  "assets": {
+    "php": ["assets/php/post_items.php"],
+    "html": [
+      "assets/html/template.html",
+      "assets/html/template_item.html",
+      "assets/html/template_item_image.html"
+    ]
+  },
+  "dependencies": ["image", "utility_sort", "utility_project_web_screens"]
+}

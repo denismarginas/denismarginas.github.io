@@ -1,0 +1,29 @@
+@import 'utilities/maps';
+
+@each $name, $value in $dm-text-align {
+  .text-#{$name} {
+    text-align: $value;
+  }
+}
+
+@each $name, $value in $dm-text-transform {
+  .text-#{$name} {
+    text-transform: $value;
+  }
+}
+
+@each $bp, $width in $dm-breakpoints {
+  @media (min-width: $width) {
+    @each $name, $value in $dm-text-align {
+      .text-#{$bp}-#{$name} {
+        text-align: $value;
+      }
+    }
+
+    @each $name, $value in $dm-text-transform {
+      .text-#{$bp}-#{$name} {
+        text-transform: $value;
+      }
+    }
+  }
+}

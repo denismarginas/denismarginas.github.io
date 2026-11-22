@@ -1,0 +1,23 @@
+{
+  "name": "block_paragraph_card",
+  "title": "Block Paragraph Card",
+  "summary": "Paragraphs in a softly tinted rounded card.",
+  "description": "Paragraphs (optional title) in a softly tinted rounded card.",
+  "assets": {
+    "php": [
+      "assets/php/block_paragraph_card.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "theme"
+  ]
+}

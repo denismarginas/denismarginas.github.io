@@ -1,0 +1,9 @@
+@mixin radial-surface($center, $edge, $shape: ellipse at center, $stop: 100%) {
+  background-color: $edge;
+  background-image: radial-gradient(
+    var(--dm-bg-radial-shape, #{$shape}),
+    $center 0%,
+    $edge var(--dm-bg-radial-stop, #{$stop})
+  );
+  background-repeat: no-repeat;
+}

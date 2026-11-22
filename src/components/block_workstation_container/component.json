@@ -1,0 +1,27 @@
+{
+  "name": "block_workstation_container",
+  "title": "Block Workstation Container",
+  "summary": "Titled part of a workstation page holding its blocks.",
+  "description": "Part of a workstation item page (old workstation_configuration / workstation_accessories): optional uppercase title + its children (e.g. columns with a block_slider_images, block_workstation_item_listing cards / chevron list). Styles the sliders inside on the item gradient. Used inside block_workstation_containers (item colors and fonts).",
+  "post_types": [
+    "workstation"
+  ],
+  "assets": {
+    "php": [
+      "assets/php/block_workstation_container.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "section",
+    "theme"
+  ]
+}

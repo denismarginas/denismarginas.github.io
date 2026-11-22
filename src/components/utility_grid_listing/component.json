@@ -1,0 +1,19 @@
+{
+  "name": "utility_grid_listing",
+  "title": "Utility Grid Listing",
+  "summary": "Computes grid attributes for balanced listings.",
+  "description": "Computes grid listing attributes (item count and divisible-by design) for balanced grid layouts.",
+  "type": "utility",
+  "assets": {
+    "php": [
+      "assets/php/utility_grid_listing.php"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": []
+}

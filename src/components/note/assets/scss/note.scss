@@ -1,0 +1,41 @@
+@import "theme";
+
+.note {
+  padding: var(--dm-spacing-sm);
+  border: 1px solid transparent;
+  border-left-width: 4px;
+  border-radius: 0.25rem;
+
+  * {
+    font-size: var(--dm-font-size-md);
+    line-height: 1.5;
+  }
+
+  &--info {
+    border-color: var(--dm-color-info);
+    background-color: color-mix(in srgb, var(--dm-color-info) 5%, transparent);
+  }
+
+  &--success {
+    border-color: var(--dm-color-success);
+    background-color: color-mix(in srgb,
+        var(--dm-color-success) 5%,
+        transparent);
+  }
+
+  &--warning {
+    border-color: var(--dm-color-warning);
+    background-color: color-mix(in srgb,
+        var(--dm-color-warning) 5%,
+        transparent);
+  }
+
+  &--error {
+    border-color: var(--dm-color-error);
+    background-color: color-mix(in srgb, var(--dm-color-error) 5%, transparent);
+  }
+
+  @media (max-width: $dm-screen-sm) {
+    padding: var(--dm-spacing-xs) var(--dm-spacing-sm);
+  }
+}

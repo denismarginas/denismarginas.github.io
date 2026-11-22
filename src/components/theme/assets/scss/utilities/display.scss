@@ -1,0 +1,17 @@
+@import 'utilities/maps';
+
+@each $name, $value in $dm-displays {
+  .d-#{$name} {
+    display: $value;
+  }
+}
+
+@each $bp, $width in $dm-breakpoints {
+  @media (min-width: $width) {
+    @each $name, $value in $dm-displays {
+      .d-#{$bp}-#{$name} {
+        display: $value;
+      }
+    }
+  }
+}

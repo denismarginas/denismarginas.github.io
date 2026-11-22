@@ -1,0 +1,37 @@
+@import "theme";
+
+.utility-datetime-amount {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--dm-spacing-xs);
+  flex-wrap: wrap;
+}
+
+.datetime-text {
+  font-size: var(--dm-font-size-md);
+}
+
+.datetime-amount {
+  font-size: var(--dm-font-size-lg);
+  color: var(--dm-color-white);
+  padding: var(--dm-spacing-xxs) var(--dm-spacing-xs);
+  border-radius: var(--dm-radius-sm);
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.datetime-amount.primary {
+  background-color: var(--dm-color-primary-500);
+}
+
+.datetime-amount.secondary {
+  background-color: var(--dm-color-gray);
+}
+
+amount-primary.datetime-amount,
+amount-secondary.datetime-amount {
+  font-size: var(--dm-font-size-lg);
+  color: var(--dm-color-white);
+}

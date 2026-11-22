@@ -1,0 +1,34 @@
+{
+  "name": "hobby_pc_video_games_filters",
+  "title": "Hobby PC Video Games Filters",
+  "summary": "Filters, sort and search for the PC games listing.",
+  "description": "Filters + sort + keyword search for a hobby_pc_video_games_listing (look and drawer from filters_toolbar). Linked by \"id\" to the <ul id> of the listing; filters, sort and texts come from the \"pc-video-games\" toolbar in data_items_listing_toolbar.json, options from the same games the listing shows.",
+  "assets": {
+    "php": [
+      "assets/php/hobby_pc_video_games_filters.php"
+    ],
+    "html": [
+      "assets/html/template.html",
+      "assets/html/parts/filter.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ],
+    "js": [
+      "assets/js/hobby_pc_video_games_filters.js"
+    ]
+  },
+  "dependencies": [
+    "listing_toolbar",
+    "hobby_pc_video_games_listing",
+    "filters_sort",
+    "filters_toolbar",
+    "utility_grid_listing",
+    "utility_grid_column_balancing",
+    "svg",
+    "theme"
+  ]
+}

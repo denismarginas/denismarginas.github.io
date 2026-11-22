@@ -1,0 +1,13 @@
+{
+  "name": "cookie_settings",
+  "title": "Cookie Settings Button",
+  "summary": "Button that reopens the cookie notice settings.",
+  "description": "Button that reopens the cookie notice with its settings panel (cookie_notice.js handles [data-cookie-settings]). Default: a subtle icon-only gear in the text size (used in the footer by website_info); with \"text\" and \"class\" it becomes a normal button, and \"status\" adds a live line with the current analytics choice. Renders nothing when the cookie notice is turned off.",
+  "assets": {
+    "php": ["assets/php/cookie_settings.php"],
+    "html": ["assets/html/template.html"],
+    "scss": ["assets/scss/**"],
+    "css": ["assets/css/**"]
+  },
+  "dependencies": ["svg", "cookie_notice", "theme"]
+}

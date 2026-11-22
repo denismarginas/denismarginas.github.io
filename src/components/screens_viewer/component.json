@@ -1,0 +1,15 @@
+{
+  "name": "screens_viewer",
+  "title": "Screens Viewer",
+  "summary": "Website screens viewer with mockup stage and thumbnail rail.",
+  "description": "Website screens section: a stage with the selected screen paired with its counterpart in the laptop + phone mockup (card_post_project_visual_devices_website, desktop-and-phone), a counter + title, a rail of device-mockup thumbnails (the old web gallery tiles) with arrows, and the full captures in the popup gallery. Screens: web/website/desktop|phone, plus web/content-website/<folder>/desktop|phone groups. Only the selected pair is in the page, the others wait in <template>s.",
+  "post_types": ["project"],
+  "assets": {
+    "php": ["assets/php/screens_viewer.php"],
+    "html": ["assets/html/template.html"],
+    "scss": ["assets/scss/**"],
+    "css": ["assets/css/**"],
+    "js": ["assets/js/screens_viewer.js"]
+  },
+  "dependencies": ["section", "section_head", "card_post_project_visual_devices_website", "overlay_noise", "utility_project_media", "popup", "image", "theme"]
+}

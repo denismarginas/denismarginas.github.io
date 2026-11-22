@@ -1,0 +1,24 @@
+{
+  "name": "portrait_about",
+  "title": "Portrait About",
+  "summary": "Portrait photo for the about page.",
+  "description": "Portrait photo (about page), optional max width.",
+  "assets": {
+    "php": [
+      "assets/php/portrait_about.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "image",
+    "theme"
+  ]
+}

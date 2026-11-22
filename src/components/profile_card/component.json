@@ -1,0 +1,28 @@
+{
+  "name": "profile_card",
+  "title": "Profile Card",
+  "summary": "Image + title, text and details list (contact, bio).",
+  "description": "Image + content block: title, paragraphs and an optional details list (label / value / link / tooltip). Used for the contact data and the bio on the contact page.",
+  "assets": {
+    "php": [
+      "assets/php/profile_card.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "image",
+    "svg",
+    "theme",
+    "tooltip",
+    "title",
+    "overlay_noise"
+  ]
+}

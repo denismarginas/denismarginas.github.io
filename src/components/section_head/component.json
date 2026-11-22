@@ -1,0 +1,13 @@
+{
+  "name": "section_head",
+  "title": "Section Head",
+  "summary": "Section heading: kicker, title, subtitle and count.",
+  "description": "Heading of a page section: small kicker label with a line, big title (<em> parts in the accent color), optional subtitle and a count on the right (e.g. \"14 views\"). Colors from the page (--project-*) with theme fallbacks.",
+  "assets": {
+    "php": ["assets/php/section_head.php"],
+    "html": ["assets/html/template.html"],
+    "scss": ["assets/scss/**"],
+    "css": ["assets/css/**"]
+  },
+  "dependencies": ["theme"]
+}

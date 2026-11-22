@@ -1,0 +1,40 @@
+{
+  "name": "video_archive",
+  "title": "Video Archive",
+  "summary": "Searchable grid of every video, each opens in a popup.",
+  "description": "Archive of the video collection (data_collection_video.json): search, filter by tag and sort by date or title (filters_toolbar look), a grid of thumbnail cards and a popup per video with the player, date, tags, description and buttons. Thumbnails come from data.media.video.video_thumbnail (relative to src/content/img/), with \"placeholder\" (default thumbnails/video-thumbnail-placeholder.webp) when it is empty or missing. Each video opens from the URL #<video _id>. Options: id, filter.taxonomy.tag, filter._id, search_placeholder, results_text, empty_text, type_label, sort_default, placeholder, popup_width. Texts can also come from a \"video-archive\" entry in data_collection_listing_toolbar.json.",
+  "post_types": [
+    "page"
+  ],
+  "assets": {
+    "php": [
+      "assets/php/video_archive.php"
+    ],
+    "html": [
+      "assets/html/template.html",
+      "assets/html/parts/item.html",
+      "assets/html/parts/card.html",
+      "assets/html/parts/popup.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ],
+    "js": [
+      "assets/js/video_archive.js"
+    ]
+  },
+  "dependencies": [
+    "listing_toolbar",
+    "filters_toolbar",
+    "filters_sort",
+    "popup",
+    "video",
+    "image",
+    "text_block",
+    "svg",
+    "theme"
+  ]
+}

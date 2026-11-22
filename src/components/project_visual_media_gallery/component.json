@@ -1,0 +1,23 @@
+{
+  "name": "project_visual_media_gallery",
+  "title": "Project Visual Media Gallery",
+  "summary": "Visual media section: photo and video galleries.",
+  "description": "Visual media section of a project page (replaces the old section_media_project): primary title (\"Visual Media\") + optional content_section_primary components (e.g. project_block_visual_and_paragraph), then project_visual_media_gallery_photo (\"Photo Media Content\") and project_visual_media_gallery_video (\"Video Media Content\"). The primary title renders only when something below it has output.",
+  "post_types": [
+    "project"
+  ],
+  "assets": {
+    "php": [
+      "assets/php/project_visual_media_gallery.php"
+    ]
+  },
+  "dependencies": [
+    "project_visual_media_gallery_photo",
+    "project_media_gallery",
+    "project_visual_media_gallery_video",
+    "project_visual_web_gallery",
+    "block_title",
+    "section",
+    "theme"
+  ]
+}

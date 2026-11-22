@@ -1,0 +1,31 @@
+{
+  "name": "block_image",
+  "title": "Block Image",
+  "summary": "Single image block that opens in the popup, optionally with a looping video over it.",
+  "description": "Single image block: from the post media folder (image_path + image_file_name) or any image (img). Outlined card or plain, opens in the popup; optional cover, width and per-screen heights. With video (path under src/content/vid/, e.g. backgrounds/clip.webm) a muted video plays over the image through video_background (loops unless video_loop is false, pauses off screen, respects reduced motion); the image stays as poster, fallback and popup image.",
+  "post_types": [
+    "project",
+    "page"
+  ],
+  "assets": {
+    "php": [
+      "assets/php/block_image.php"
+    ],
+    "html": [
+      "assets/html/template.html",
+      "assets/html/parts/caption.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "image",
+    "popup",
+    "video_background",
+    "theme"
+  ]
+}

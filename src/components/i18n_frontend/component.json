@@ -1,0 +1,17 @@
+{
+  "name": "i18n_frontend",
+  "title": "Frontend translation",
+  "summary": "Translates default-language pages in the browser from the translated data files (languages set to \"frontend\").",
+  "description": "Only rendered by page_constructor when a language in data_settings_languages.json has \"mode\": \"frontend\", and only in dist output. Prints window.dmI18n (languages, the path to src/content/json/data/, the list of data files that exist in each frontend language, a version from their modification times) and the inline loader (assets/js/i18n_frontend_init.js) in <head>: it reads ?lang= or the saved choice (localStorage dm_lang), adds html.i18n-loading and fetches every listed data file in the default language and in the target language (data/en/<file> + data/<lang>/<file>). Both are walked in parallel (lists of entries matched by _id) and every text that differs becomes an English -> translation pair; values with HTML or line breaks are split at tags / line breaks and paired piece by piece when both sides have the same number of pieces. assets/js/i18n_frontend.js replaces text nodes and the tracked attributes (alt, title, placeholder, aria-label, data-label*, meta description / og / twitter, button values) whose whitespace-normalised text matches an English value, keeps the originals so switching back is instant, translates nodes added later (MutationObserver), sets <html lang>, updates the language dropdown and fires dm:i18n-start / dm:i18n-done for the preloader. Text the site builds itself (dates, counts, joined labels) has no data value to match and stays in the default language. Elements with translate=\"no\", data-i18n-skip or .notranslate are left alone. Nothing is generated in dist/.",
+  "assets": {
+    "php": [
+      "assets/php/i18n_frontend.php"
+    ],
+    "js": [
+      "assets/js/i18n_frontend.js"
+    ]
+  },
+  "dependencies": [
+    "preloader"
+  ]
+}

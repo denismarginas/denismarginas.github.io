@@ -1,0 +1,19 @@
+{
+  "name": "card_post_project_visual_devices_media",
+  "title": "Card Post Project Visual - Devices Media",
+  "summary": "Project photo and video shown on tablet mockups.",
+  "description": "Renders a project's media as device mockups: the first photo on a portrait tablet and the first video on a landscape tablet (both, or just one with \"show\"). Photo: same lookup as card_post_project_visual_media. Video: the first video in src/content/vid/projects/<media.path>/ (and its subfolders) with a data_items_video.json video_thumbnail is shown as that image, otherwise the first video. Frames come from data_content_post_projects.json (img.devices.tablet / tablet-landscape). Set \"link\": false to render it without the link.",
+  "post_types": ["project"],
+  "assets": {
+    "php": ["assets/php/card_post_project_visual_devices_media.php"],
+    "html": [
+      "assets/html/template.html",
+      "assets/html/parts/tablet_block.html",
+      "assets/html/parts/tablet_landscape_block.html",
+      "assets/html/parts/video.html"
+    ],
+    "scss": ["assets/scss/**"],
+    "css": ["assets/css/**"]
+  },
+  "dependencies": ["card_post_project_visual_media", "block_video", "image", "svg", "theme"]
+}

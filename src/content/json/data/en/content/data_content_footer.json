@@ -1,0 +1,119 @@
+{
+  "columns": [
+    {
+      "component": "link_list",
+      "data": {
+        "title": "Contact Data",
+        "links": [
+          {
+            "text": "CV English",
+            "_id": "personal-resumes",
+            "anchor": "cv-3-english",
+            "svg": "resume"
+          },
+          {
+            "text": "CV Romanian",
+            "_id": "personal-resumes",
+            "anchor": "cv-3-romanian",
+            "svg": "resume"
+          },
+          {
+            "text": "Contact Form",
+            "_id": "contact",
+            "anchor": "contact-form",
+            "svg": "form"
+          },
+          {
+            "text": "Privacy Policy",
+            "_id": "privacy-policy",
+            "svg": "shield"
+          }
+        ],
+        "title_link": {
+          "_id": "contact"
+        }
+      }
+    },
+    {
+      "component": "link_list",
+      "data": {
+        "title": "Project Types",
+        "links": [
+          {
+            "source": {
+              "taxonomy": "category",
+              "filter_by": {
+                "settings.parent": "projects"
+              }
+            },
+            "svg": "chevron-right"
+          }
+        ],
+        "title_link": {
+          "_id": "projects"
+        }
+      }
+    },
+    {
+      "component": "link_list",
+      "data": {
+        "title": "About",
+        "title_link": {
+          "_id": "about"
+        },
+        "links": [
+          {
+            "text": "About Me",
+            "_id": "about",
+            "svg": "chevron-right"
+          },
+          {
+            "text": "Personal Experience",
+            "_id": "experience",
+            "svg": "chevron-right"
+          },
+          {
+            "text": "Employee Experience",
+            "_id": "employee-experience",
+            "svg": "chevron-right"
+          },
+          {
+            "text": "Education Experience",
+            "_id": "education-experience",
+            "svg": "chevron-right"
+          }
+        ]
+      }
+    },
+    {
+      "class": "footer-column-brand",
+      "children": [
+        {
+          "component": "logo",
+          "data": {
+            "variant": "footer"
+          }
+        },
+        {
+          "component": "social_links",
+          "data": {
+            "title": "Socials",
+            "lists": [
+              "visual"
+            ],
+            "variant": "plain",
+            "filter_by": {
+              "display_footer": true
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "bottom": [
+    {
+      "component": "website_info",
+      "data": {}
+    }
+  ]
+}

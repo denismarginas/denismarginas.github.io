@@ -1,0 +1,21 @@
+{
+  "dates": [
+    {
+      "text": "Online since:",
+      "date": "04-06-2023"
+    },
+    {
+      "text": "Last updated:",
+      "date": "current-date"
+    }
+  ],
+  "date_format": "M j, Y",
+  "cookie_settings": true,
+  "copyright": {
+    "text": "© All rights reserved,",
+    "link": {
+      "text": "Denis Marginas",
+      "_id": "home"
+    }
+  }
+}

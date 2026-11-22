@@ -1,0 +1,20 @@
+{
+  "url": "https://denismarginas.github.io/portfolio/",
+  "routing": {
+    "extension": ".html",
+    "mappings": {
+      "front_post_id": "home",
+      "search_post_id": "search",
+      "404_post_id": "404",
+      "privacy_post_id": "privacy-policy"
+    }
+  },
+  "theme": {
+    "root": "src/components/theme/",
+    "assets": "assets",
+    "compiled_assets": "assets_compiled",
+    "default_mode": "dark",
+    "svg_root": "src/content/svg/",
+    "auto_extract_fonts": true
+  }
+}

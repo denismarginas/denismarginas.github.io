@@ -1,0 +1,34 @@
+{
+  "name": "project_block_visual_and_paragraph",
+  "title": "Project Block - Visual and Paragraph",
+  "summary": "Card with project visual next to text and tags.",
+  "description": "Single card: post visual + paragraph with tags, then an optional full-width text_extra. Mode \"wrap\" (default): plain image (200px, max 100%, height auto) floated left/right with the text flowing next to and under it, stacked below sm. Mode \"columns\": visual and text side by side through the columns component (40-60 from sm, 30-70 at md, 40-60 from lg; changeable with data.columns), image with a fixed height (cover) and overlay_noise. Without data.image the visual is post_short_info_visual (post logo). Tags: block_tags with a chevron instead of the # prefix (tags_prefix). All text comes from data - nothing is generated.",
+  "post_types": [
+    "project"
+  ],
+  "assets": {
+    "php": [
+      "assets/php/project_block_visual_and_paragraph.php"
+    ],
+    "html": [
+      "assets/html/template.html",
+      "assets/html/parts/image.html",
+      "assets/html/parts/content.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "utility_post_thumbnail",
+    "columns",
+    "image",
+    "overlay_noise",
+    "post_short_info_visual",
+    "block_tags",
+    "theme"
+  ]
+}

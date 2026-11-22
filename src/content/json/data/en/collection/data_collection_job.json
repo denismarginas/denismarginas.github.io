@@ -1,0 +1,540 @@
+[
+  {
+    "_id": "experience_pia_soft_product",
+    "settings": {
+      "collection_type": "job",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#141414",
+          "secondary": "#ffcc00",
+          "canvas_primary": "#141414",
+          "canvas_secondary": "#fff"
+        }
+      }
+    },
+    "data": {
+      "seo": {
+        "title": "Pia Soft Product",
+        "description": "Full-Stack Web Developer and Photo-Video Editor, building presentation websites and online stores using WordPress and PrestaShop.",
+        "slug": "experience-pia-soft-product"
+      },
+      "date": {
+        "start": "2019-10-16",
+        "end": "2022-11-18",
+        "publish": "2022-11-18"
+      },
+      "experience": {
+        "type": "Company",
+        "location_types": [
+          "Remote",
+          "On-site",
+          "Hybrid"
+        ],
+        "functions": [
+          "Full-Stack Web Developer",
+          "Photo-Video Editor"
+        ],
+        "work_time_types": [
+          {
+            "name": "full-time",
+            "hours": "8h",
+            "start": "2019-10-17",
+            "end": "2021-12-07"
+          },
+          {
+            "name": "part-time",
+            "hours": "4h",
+            "start": "2021-12-07",
+            "end": "2022-11-18"
+          }
+        ],
+        "heading": "Responsibilities",
+        "attributes": [
+          "Developed and maintained web applications, troubleshooting, creating documentation, cPanel management, phpmyAdmin, XAMPP, and hosting with Romarg",
+          "Proficient in utilizing TPL, PHP, SQL, JavaScript, jQuery, CSS, and HTML for application development and usage",
+          "Create presentation sites and online stores in Wordpress and Prestashop, with a focus on optimizing SEO",
+          "Create video-photo content for promotional purposes, including banners, logos, video ads, 2D/3D animation, using tools such as Sony Vegas, Adobe After Effects, Photopea, and Xara Photo",
+          "Skilled in using the Windows operating system and the Office suite"
+        ]
+      },
+      "media": {
+        "path": "projects",
+        "logo": {
+          "img": "src/content/img/projects/piasoftproduct-presentation-website/logo/logo.webp",
+          "bg": "dark"
+        }
+      },
+      "external_links": [
+        {
+          "name": "website",
+          "link": "https://www.piasoftproduct.com",
+          "svg": "web"
+        },
+        {
+          "name": "facebook",
+          "link": "https://www.facebook.com/pia.pop.31/photos",
+          "svg": "socials_facebook"
+        },
+        {
+          "name": "instagram",
+          "link": "https://www.instagram.com/piasoftproduct/",
+          "svg": "socials_instagram"
+        }
+      ],
+      "taxonomy": {
+        "tag": [
+          "front-end",
+          "back-end",
+          "photo",
+          "video",
+          "seo",
+          "full-stack",
+          "wordpress",
+          "prestashop",
+          "php"
+        ],
+        "category": [
+          "Experience"
+        ]
+      }
+    }
+  },
+  {
+    "_id": "experience_netex_romania",
+    "settings": {
+      "collection_type": "job",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#ed1c24",
+          "secondary": "#fff",
+          "canvas_primary": "#e1e1e2",
+          "canvas_secondary": "#ed1c24"
+        }
+      }
+    },
+    "data": {
+      "seo": {
+        "title": "Netex Romania",
+        "description": "Front-End Developer translating designs from Zeplin into static pages and maintaining WordPress sites.",
+        "slug": "experience-netex-romania"
+      },
+      "date": {
+        "start": "2021-12-07",
+        "end": "2023-04-05",
+        "publish": "2023-04-05"
+      },
+      "experience": {
+        "type": "Company",
+        "location_types": [
+          "Remote"
+        ],
+        "functions": [
+          "Front-End Developer"
+        ],
+        "work_time_types": [
+          {
+            "name": "full-time",
+            "hours": "8h",
+            "start": "2021-12-07",
+            "end": "2023-04-05"
+          }
+        ],
+        "heading": "Responsibilities",
+        "attributes": [
+          "Developed and maintained WordPress sites, troubleshooting, creating documentation",
+          "Designed various web applications, including Newsletter Mail",
+          "Translated design from Zeplin into static pages using: Node.js, JavaScript, jQuery, Bootstrap, SASS, CSS and HTML, GitLab",
+          "Attend conferences in English and present completed tasks on Google Meet",
+          "Familiar with Linux commands and interface, as well as working with the LibreOffice package"
+        ]
+      },
+      "media": {
+        "path": "projects",
+        "logo": {
+          "img": "src/content/img/projects/netexromania-web-maintenance/logo/logo.webp",
+          "bg": "light"
+        }
+      },
+      "external_links": [
+        {
+          "name": "website",
+          "link": "https://www.netex.ro",
+          "svg": "web"
+        },
+        {
+          "name": "facebook",
+          "link": "https://www.facebook.com/netex.ro",
+          "svg": "socials_facebook"
+        },
+        {
+          "name": "instagram",
+          "link": "https://www.instagram.com/netexromania/",
+          "svg": "socials_instagram"
+        },
+        {
+          "name": "linkedin",
+          "link": "https://www.linkedin.com/company/netexgroup/",
+          "svg": "socials_linkedin"
+        },
+        {
+          "name": "x",
+          "link": "https://x.com/NetexConsulting",
+          "svg": "socials_x"
+        }
+      ],
+      "taxonomy": {
+        "tag": [
+          "front-end",
+          "wordpress",
+          "javascript",
+          "sass"
+        ],
+        "category": [
+          "Experience"
+        ]
+      }
+    }
+  },
+  {
+    "_id": "experience_enlivy",
+    "settings": {
+      "collection_type": "job",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#141414",
+          "secondary": "#33c67a",
+          "canvas_primary": "#141414",
+          "canvas_secondary": "#33c67a"
+        }
+      }
+    },
+    "data": {
+      "seo": {
+        "title": "Enlivy",
+        "description": "Junior WordPress Developer developing blocks and pages for a custom WordPress theme using PhpStorm and GitHub.",
+        "slug": "experience-enlivy"
+      },
+      "date": {
+        "start": "2023-05-01",
+        "end": "2023-05-31",
+        "publish": "2023-05-31"
+      },
+      "experience": {
+        "type": "Company",
+        "location_types": [
+          "Remote"
+        ],
+        "functions": [
+          "Junior Wordpress Developer"
+        ],
+        "work_time_types": [
+          {
+            "name": "full-time",
+            "hours": "8h",
+            "start": "2023-05-01",
+            "end": "2023-05-31"
+          }
+        ],
+        "heading": "Responsibilities",
+        "attributes": [
+          "Developed blocks and pages for a custom WordPress theme using PhpStorm and GitHub",
+          "Translated designs from a Figma project into functional web pages",
+          "Utilized Trello for task management and Slack, along with Zoom, for efficient team communication",
+          "Utilized Prepros 7 to compile the SCSS code for streamlined development"
+        ]
+      },
+      "media": {
+        "path": "projects",
+        "logo": {
+          "img": "src/content/img/projects/enlivy-media/logo/logo.webp",
+          "bg": "dark"
+        }
+      },
+      "external_links": [
+        {
+          "name": "website",
+          "link": "https://enlivy.ro",
+          "svg": "web"
+        },
+        {
+          "name": "facebook",
+          "link": "https://www.facebook.com/enlivy",
+          "svg": "socials_facebook"
+        },
+        {
+          "name": "linkedin",
+          "link": "https://www.linkedin.com/company/enlivy/",
+          "svg": "socials_linkedin"
+        }
+      ],
+      "taxonomy": {
+        "tag": [
+          "wordpress",
+          "figma",
+          "php",
+          "scss"
+        ],
+        "category": [
+          "Experience"
+        ]
+      }
+    }
+  },
+  {
+    "_id": "experience_yes_agency",
+    "settings": {
+      "collection_type": "job",
+      "render": false,
+      "appearance": {
+        "colors": {
+          "primary": "#39393c",
+          "secondary": "#fff",
+          "canvas_primary": "#39393c",
+          "canvas_secondary": "#fff"
+        }
+      }
+    },
+    "data": {
+      "seo": {
+        "title": "Yes Agency",
+        "description": "Full-Stack Web Developer building custom WordPress themes with Elementor and PHP.",
+        "slug": "experience-yes-agency"
+      },
+      "date": {
+        "start": "2023-07-31",
+        "end": "2023-08-04",
+        "publish": "2023-08-04"
+      },
+      "experience": {
+        "type": "Company",
+        "location_types": [
+          "On-site"
+        ],
+        "functions": [
+          "Full-Stack Web Developer"
+        ],
+        "work_time_types": [
+          {
+            "name": "full-time",
+            "hours": "8h",
+            "start": "2023-07-31",
+            "end": "2023-08-04"
+          }
+        ],
+        "heading": "Responsibilities",
+        "attributes": [
+          "Developing a new website for this company in Wordpress creating a custom theme and Elementor and PHP",
+          "Creating a custom design for this company website, with animations JS/CSS"
+        ]
+      },
+      "media": {
+        "path": "projects",
+        "logo": {
+          "img": "src/content/img/projects/yesagency-media/logo/logo.webp",
+          "bg": "light"
+        }
+      },
+      "external_links": [
+        {
+          "name": "website",
+          "link": "https://yesagency.ro/",
+          "svg": "web"
+        },
+        {
+          "name": "facebook",
+          "link": "https://www.facebook.com/yesagency.ro",
+          "svg": "socials_facebook"
+        },
+        {
+          "name": "linkedin",
+          "link": "https://www.linkedin.com/company/yesagency/",
+          "svg": "socials_linkedin"
+        }
+      ],
+      "taxonomy": {
+        "tag": [
+          "wordpress",
+          "elementor",
+          "full-stack"
+        ],
+        "category": [
+          "Experience"
+        ]
+      }
+    }
+  },
+  {
+    "_id": "experience_mentor_marketing_experts",
+    "settings": {
+      "collection_type": "job",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#db6106",
+          "secondary": "#fff",
+          "canvas_primary": "#fff",
+          "canvas_secondary": "#0d1166"
+        }
+      }
+    },
+    "data": {
+      "seo": {
+        "title": "Mentor Marketing Experts",
+        "description": "WordPress Developer and Web Page Designer building websites using Elementor and converting Figma designs.",
+        "slug": "experience-mentor-marketing-experts"
+      },
+      "date": {
+        "start": "2024-01-26",
+        "end": "2026-03-31",
+        "publish": "2026-03-31"
+      },
+      "experience": {
+        "type": "Company",
+        "location_types": [
+          "Remote"
+        ],
+        "functions": [
+          "Wordpress Developer",
+          "Web Page Designer"
+        ],
+        "work_time_types": [
+          {
+            "name": "full-time",
+            "hours": "8h",
+            "start": "2024-01-26",
+            "end": "2026-03-31"
+          }
+        ],
+        "heading": "Responsibilities",
+        "attributes": [
+          "Developing websites in Wordpress using Elementor and other addons/plugins for Elementor",
+          "Translated designs from a Figma project into functional web pages using Elementor",
+          "Utilized Trello for task management, along with Zoom and Google Meets, for efficient team communication"
+        ]
+      },
+      "media": {
+        "path": "projects",
+        "logo": {
+          "img": "src/content/img/projects/mentormarketingexperts-landing-page/logo/logo-icon.webp",
+          "bg": "light"
+        }
+      },
+      "external_links": [
+        {
+          "name": "website",
+          "link": "https://mentor-marketing.com/",
+          "svg": "web"
+        },
+        {
+          "name": "linkedin",
+          "link": "https://www.linkedin.com/company/mentor-marketing-experts/",
+          "svg": "socials_linkedin"
+        }
+      ],
+      "taxonomy": {
+        "tag": [
+          "front-end",
+          "back-end",
+          "seo",
+          "wordpress",
+          "elementor",
+          "php",
+          "javascript"
+        ],
+        "category": [
+          "Experience"
+        ]
+      }
+    }
+  },
+  {
+    "_id": "experience_gi_group",
+    "settings": {
+      "collection_type": "job",
+      "render": true,
+      "appearance": {
+        "layout": "wrapper-layout",
+        "colors": {
+          "primary": "#015f87",
+          "secondary": "#fff",
+          "canvas_primary": "#fff",
+          "canvas_secondary": "#636363"
+        }
+      }
+    },
+    "data": {
+      "seo": {
+        "title": "Gi Group",
+        "description": "WordPress Developer and Web Page Designer.",
+        "slug": "experience-gi-group"
+      },
+      "date": {
+        "start": "2026-04-01",
+        "end": "present",
+        "publish": "2026-04-01"
+      },
+      "experience": {
+        "type": "Company",
+        "location_types": [
+          "Remote"
+        ],
+        "functions": [
+          "Wordpress Developer",
+          "Web Page Designer"
+        ],
+        "work_time_types": [
+          {
+            "name": "full-time",
+            "hours": "8h",
+            "start": "2026-04-01",
+            "end": "present"
+          }
+        ],
+        "heading": "Responsibilities",
+        "attributes": [
+          "Working through Gi Group for Mentor Marketing Experts, continuing the same WordPress development and web design role",
+          "Developing websites in Wordpress using Elementor and other addons/plugins for Elementor",
+          "Translating designs from a Figma project into functional web pages using Elementor",
+          "Using Trello for task management, along with Zoom and Google Meets, for efficient team communication"
+        ],
+        "working_for": {
+          "label": "Working for",
+          "items": [
+            "experience_mentor_marketing_experts"
+          ]
+        }
+      },
+      "media": {
+        "path": "projects",
+        "logo": {
+          "img": "src/content/img/projects/gigroup-media/logo/logo-icon.webp",
+          "bg": "light"
+        }
+      },
+      "external_links": [
+        {
+          "name": "website",
+          "link": "https://ro.gigroup.com/",
+          "svg": "web"
+        },
+        {
+          "name": "linkedin",
+          "link": "https://www.linkedin.com/company/gi-group/",
+          "svg": "socials_linkedin"
+        }
+      ],
+      "taxonomy": {
+        "tag": [
+          "wordpress",
+          "web-design"
+        ],
+        "category": [
+          "Experience"
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "name": "experience_timeline",
+  "title": "Experience Timeline",
+  "summary": "Vertical timeline of jobs and education.",
+  "description": "Vertical journey timeline that merges work (data_items_job.json) and education (data_items_education.json) items: newest on top with a pulsing 'Now' marker, oldest at the bottom. Years sit on the center line, cards alternate left / right (single column on mobile), each tinted with the item's brand color. Line fills and cards slide in while scrolling.",
+  "post_types": ["page"],
+  "assets": {
+    "php": ["assets/php/experience_timeline.php"],
+    "html": ["assets/html/template.html"],
+    "scss": ["assets/scss/**"],
+    "css": ["assets/css/**"],
+    "js": ["assets/js/experience_timeline.js"]
+  },
+  "dependencies": ["image", "svg", "theme", "utility_filter"]
+}

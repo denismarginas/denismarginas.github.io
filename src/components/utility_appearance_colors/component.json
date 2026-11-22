@@ -1,0 +1,11 @@
+{
+  "name": "utility_appearance_colors",
+  "title": "Utility Appearance Colors",
+  "summary": "Turns post colors into --post-color-* CSS vars.",
+  "description": "Turns a post's settings.appearance.colors (primary, secondary, canvas_primary, canvas_secondary) into --post-color-* CSS variables, with --dm-color-primary-* fallbacks. A color within 8% of black also gets --post-color-<name>-on-dark: var(--dm-color-gray-light), and one within 8% of white gets --post-color-<name>-on-light: var(--dm-color-gray-dark), so components can stay visible in both theme modes. Output as a style=\"\" attribute, bare declarations, or a <style> tag.",
+  "type": "utility",
+  "assets": {
+    "php": ["assets/php/utility_appearance_colors.php"]
+  },
+  "dependencies": []
+}

@@ -1,0 +1,14 @@
+{
+  "name": "block_title",
+  "title": "Block Title",
+  "summary": "Post section title on the post color with noise texture.",
+  "description": "Section title block of a post (old \"title\" / .dm-post-title-category): text on the post's primary color with the overlay_noise texture. Colors come from the --post-color-* vars (section_layout_aside or the theme defaults).",
+  "post_types": ["project"],
+  "assets": {
+    "php": ["assets/php/block_title.php"],
+    "html": ["assets/html/template.html"],
+    "scss": ["assets/scss/**"],
+    "css": ["assets/css/**"]
+  },
+  "dependencies": ["overlay_noise", "utility_appearance_colors", "theme"]
+}

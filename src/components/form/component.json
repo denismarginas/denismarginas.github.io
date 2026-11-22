@@ -1,0 +1,30 @@
+{
+  "name": "form",
+  "title": "Form",
+  "summary": "Simple or multi-step form sent to an external form.",
+  "description": "Renders a form item from data_collection_form.json (simple or multi-step). On submit the answers are sent to an external form (Google Forms, prefilled link opened in a new tab). Optional \"popup\": { hash } opens the form in the popup from a link to <page>#hash.",
+  "assets": {
+    "php": [
+      "assets/php/form.php"
+    ],
+    "html": [
+      "assets/html/template.html",
+      "assets/html/parts/step.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ],
+    "js": [
+      "assets/js/form.js"
+    ]
+  },
+  "dependencies": [
+    "image",
+    "popup",
+    "svg",
+    "theme"
+  ]
+}

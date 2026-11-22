@@ -1,0 +1,31 @@
+{
+  "name": "social_post_listing",
+  "title": "Social Post Listing",
+  "summary": "Feed of social posts with media and links.",
+  "description": "Feed of social posts (data_items_social_post.json), newest first: author avatar + name + date, the text (Show More / Show Less over 300 characters, links clickable), images (media_grid: 1-4 in a grid, opened in the popup gallery) or a video from data_items_video.json, and link buttons. With \"index\": true a narrow sticky anchor_index of the posts sits next to the feed for jumping to a post.",
+  "assets": {
+    "php": [
+      "assets/php/social_post_listing.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "image",
+    "media_grid",
+    "video",
+    "button",
+    "text_collapse",
+    "popup",
+    "utility_filter",
+    "anchor_index",
+    "theme"
+  ]
+}

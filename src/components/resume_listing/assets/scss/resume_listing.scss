@@ -1,0 +1,358 @@
+@import "theme";
+
+.resume-listing {
+  @include reset-list();
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: var(--dm-spacing-sm);
+  width: 100%;
+
+  &[data-columns] {
+    grid-template-columns: repeat(var(--resume-columns, 2), minmax(0, 1fr));
+  }
+
+  @media (max-width: $dm-screen-xl) {
+    &[data-columns] {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+  }
+
+  @media (max-width: $dm-screen-sm) {
+    &,
+    &[data-columns] {
+      grid-template-columns: 1fr;
+      gap: var(--dm-spacing-xs);
+    }
+  }
+
+  &[data-columns="1"] {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.resume-listing-empty {
+  font-family: var(--dm-font-primary);
+  font-size: var(--dm-font-size-md);
+  text-align: center;
+}
+
+.resume-card {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: var(--dm-spacing-sm);
+  min-width: 0;
+  padding: var(--dm-spacing-xs);
+  border-radius: var(--dm-radius-md);
+  border: 1px solid transparent;
+  transition: var(--dm-transition);
+
+  &:hover {
+    --dm-bg-radial-stop: 65%;
+  }
+
+  [mode="light"] & {
+    border-color: rgb(from var(--dm-color-primary-300) r g b / 0.5);
+    box-shadow: 0 4px 16px rgb(from var(--dm-color-black) r g b / 0.08);
+  }
+
+  [mode="dark"] & {
+    border-color: rgb(from var(--dm-color-white) r g b / 0.12);
+    box-shadow: 0 4px 16px rgb(from var(--dm-color-black) r g b / 0.3);
+  }
+
+  .resume-card-preview {
+    position: relative;
+    flex: 0 0 130px;
+    width: 130px;
+    aspect-ratio: unquote("130 / 184");
+    overflow: hidden;
+    border-radius: var(--dm-radius-sm);
+    background-color: var(--dm-color-white);
+    cursor: var(--cursor-zoom-in, zoom-in);
+
+    > .resume-card-thumbnail {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      transition:
+        transform 0.3s ease-in-out,
+        opacity 0.3s ease-in-out;
+    }
+
+    > .resume-card-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 40px;
+      height: auto;
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.7);
+      transition: all 0.25s ease-in-out;
+      pointer-events: none;
+      filter: drop-shadow(
+        0 2px 6px color-mix(in srgb, var(--dm-color-black) 50%, transparent)
+      );
+      @include svg-color(var(--dm-color-white));
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: color-mix(
+        in srgb,
+        var(--dm-color-primary-900) 55%,
+        transparent
+      );
+      opacity: 0;
+      transition: var(--dm-transition);
+      pointer-events: none;
+    }
+
+    > template {
+      display: none;
+    }
+
+    &:hover,
+    &:focus-within {
+      > .resume-card-thumbnail {
+        transform: scale(1.05);
+      }
+
+      > .resume-card-icon {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+        z-index: 1;
+      }
+
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  .resume-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--dm-spacing-xxs);
+    min-width: 0;
+    flex: 1 1 auto;
+    padding: 4px 0;
+  }
+
+  .resume-card-title {
+    font-family: var(--dm-font-primary);
+    font-size: var(--dm-font-size-sm);
+    font-weight: var(--dm-font-weight-bold);
+    line-height: 1.25;
+    text-decoration: none;
+    transition: var(--dm-transition);
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    [mode="light"] & {
+      color: var(--dm-color-primary-950);
+
+      &:hover {
+        color: var(--dm-color-primary-700);
+      }
+    }
+
+    [mode="dark"] & {
+      color: var(--dm-color-white);
+
+      &:hover {
+        color: var(--dm-color-primary-200);
+      }
+    }
+  }
+
+  .resume-card-description {
+    font-family: var(--dm-font-primary);
+    font-size: var(--dm-font-size-xs);
+
+    [mode="light"] & {
+      color: var(--dm-color-gray-dark);
+    }
+
+    [mode="dark"] & {
+      color: var(--dm-color-primary-100);
+    }
+  }
+
+  .resume-card-meta {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: var(--dm-spacing-xxs);
+
+    &:empty {
+      display: none;
+    }
+  }
+
+  .resume-card-lang {
+    @include pill();
+  }
+
+  .resume-card-date {
+    font-family: var(--dm-font-primary);
+    font-size: var(--dm-font-size-sm);
+
+    [mode="light"] & {
+      color: var(--dm-color-primary-700);
+    }
+
+    [mode="dark"] & {
+      color: var(--dm-color-primary-200);
+    }
+  }
+
+  .resume-card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--dm-spacing-xxs);
+    margin-top: auto;
+  }
+
+  .resume-view-trigger {
+    display: inline-flex;
+    cursor: var(--cursor-pointer, pointer);
+
+    > template {
+      display: none;
+    }
+  }
+
+  .resume-card-view,
+  .resume-card-download {
+    font-size: var(--dm-font-size-md);
+  }
+
+  .resume-card-view {
+    cursor: var(--cursor-pointer, pointer);
+  }
+
+  @media (max-width: $dm-screen-xs) {
+    gap: var(--dm-spacing-xs);
+
+    .resume-card-preview {
+      flex-basis: 100px;
+      width: 100px;
+    }
+
+    .resume-card-title {
+      font-size: var(--dm-font-size-base);
+    }
+  }
+}
+
+.popup .resume-card-full {
+  display: block;
+  max-width: 100%;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+.resume-listing--compact .resume-card {
+  align-items: center;
+  gap: var(--dm-spacing-xs);
+  padding: var(--dm-spacing-xs);
+
+  .resume-card-badge {
+    display: grid;
+    place-items: center;
+    align-self: flex-start;
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--dm-radius-sm);
+
+    [mode="dark"] & {
+      background-color: rgb(from var(--dm-color-white) r g b / 0.08);
+    }
+
+    [mode="light"] & {
+      background-color: rgb(from var(--dm-color-primary-300) r g b / 0.25);
+    }
+
+    > .resume-card-badge-icon {
+      width: 20px;
+      height: auto;
+
+      [mode="dark"] & {
+        @include svg-color(var(--dm-color-primary-100));
+      }
+
+      [mode="light"] & {
+        @include svg-color(var(--dm-color-primary-700));
+      }
+    }
+  }
+
+  .resume-card-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--dm-spacing-xs) var(--dm-spacing-sm);
+    padding: 0;
+  }
+
+  .resume-card-info {
+    display: flex;
+    flex: 1 1 150px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    min-width: 0;
+  }
+
+  .resume-card-title {
+    font-size: var(--dm-font-size-md);
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .resume-card-meta {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: var(--dm-spacing-xxs);
+    white-space: nowrap;
+  }
+
+  .resume-card-actions {
+    flex: 0 0 auto;
+    margin-top: 0;
+  }
+
+  .resume-card-open {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+
+    > .btn-icon {
+      width: 1em;
+      height: auto;
+    }
+  }
+
+  @media (max-width: $dm-screen-xs) {
+    align-items: flex-start;
+
+  }
+}

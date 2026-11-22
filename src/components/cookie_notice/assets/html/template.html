@@ -1,0 +1,23 @@
+<cookie-notice class="cookie-notice" data-cookie-notice data-cookie-notice-version="{{ version }}" data-cookie-notice-days="{{ days }}" data-cookie-notice-defaults="{{ defaults }}" role="region" aria-label="{{ label }}" hidden>
+  <button class="cookie-notice-close" type="button" aria-label="{{ close_label }}" title="{{ close_label }}" data-cookie-notice-close>{{ close_icon }}</button>
+  <div class="cookie-notice-main">
+    <p class="cookie-notice-text">{{ text_html }}</p>
+    <div class="cookie-notice-actions">
+      <button class="btn btn-primary-small py-xxs cookie-notice-settings-toggle" type="button" aria-expanded="false" aria-controls="cookie-notice-settings" aria-label="{{ settings_label }}" title="{{ settings_label }}" data-cookie-notice-toggle>
+        {{ settings_icon }}
+      </button>
+      <button class="btn btn-primary-small py-xxs cookie-notice-accept" type="button" data-cookie-notice-accept>
+        <span class="btn-text">{{ button_text }}</span>
+      </button>
+    </div>
+  </div>
+  <div class="cookie-notice-settings" id="cookie-notice-settings" data-cookie-notice-panel hidden>
+    <p class="cookie-notice-settings-title">{{ settings_title }}</p>
+    <div class="cookie-notice-options">{{ options }}</div>
+    <div class="cookie-notice-settings-actions">
+      <button class="btn btn-primary-small py-xxs" type="button" data-cookie-notice-save>
+        <span class="btn-text">{{ save_text }}</span>
+      </button>
+    </div>
+  </div>
+</cookie-notice>

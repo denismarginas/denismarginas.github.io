@@ -1,0 +1,12 @@
+@import "theme";
+
+.resume-filters {
+  width: 100%;
+  margin-bottom: var(--dm-spacing-sm);
+}
+
+.resume-filters-empty {
+  margin: var(--dm-spacing-sm) 0 0;
+  text-align: center;
+  opacity: 0.75;
+}

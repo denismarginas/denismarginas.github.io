@@ -1,0 +1,27 @@
+{
+  "name": "popup",
+  "title": "Popup",
+  "summary": "Modal popup for images, galleries, HTML or components.",
+  "description": "Modal popup for images, galleries and any HTML or component (optional scrollable panel), with zoom and close. Reusable hooks: popup:open / popup:close events, data-popup-hash (open from the URL #hash), link triggers that open the popup instead of navigating.",
+  "assets": {
+    "php": [
+      "assets/php/popup.php"
+    ],
+    "html": [
+      "assets/html/template.html",
+      "assets/html/parts/trigger.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ],
+    "js": [
+      "assets/js/popup.js"
+    ]
+  },
+  "dependencies": [
+    "utility_slider"
+  ]
+}

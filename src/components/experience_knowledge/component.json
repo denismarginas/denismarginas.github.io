@@ -1,0 +1,26 @@
+{
+  "name": "experience_knowledge",
+  "title": "Experience Knowledge",
+  "summary": "Experience section: portrait, knowledge lists and banner.",
+  "description": "Experience section with portrait, knowledge lists and text banner",
+  "assets": {
+    "php": [
+      "assets/php/experience_knowledge.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "image",
+    "svg",
+    "popup",
+    "text_block"
+  ]
+}

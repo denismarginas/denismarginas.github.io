@@ -1,0 +1,137 @@
+@import "../variables/_breakpoints";
+@import "../variables/_spacing";
+
+$dm-spacers: (
+  '0': 0,
+  'auto': auto,
+  'xxs': $dm-spacing-xxs,
+  'xs': $dm-spacing-xs,
+  'sm': $dm-spacing-sm,
+  'md': $dm-spacing-md,
+  'lg': $dm-spacing-lg,
+  'xl': $dm-spacing-xl,
+  '2xl': $dm-spacing-2xl,
+  '3xl': $dm-spacing-3xl,
+);
+
+$dm-breakpoints: (
+  'xs': $dm-screen-xs,
+  'sm': $dm-screen-sm,
+  'md': $dm-screen-md,
+  'lg': $dm-screen-lg,
+  'xl': $dm-screen-xl,
+  '2xl': $dm-screen-2xl,
+  '3xl': $dm-screen-3xl,
+);
+
+$dm-displays: (
+  'block': block,
+  'inline': inline,
+  'inline-block': inline-block,
+  'flex': flex,
+  'inline-flex': inline-flex,
+  'grid': grid,
+  'none': none,
+);
+
+$dm-flex-direction: (
+  'row': row,
+  'row-reverse': row-reverse,
+  'column': column,
+  'column-reverse': column-reverse,
+);
+
+$dm-flex-wrap: (
+  'wrap': wrap,
+  'nowrap': nowrap,
+  'wrap-reverse': wrap-reverse,
+);
+
+$dm-align-items: (
+  'start': flex-start,
+  'center': center,
+  'end': flex-end,
+  'stretch': stretch,
+  'baseline': baseline,
+);
+
+$dm-justify-content: (
+  'start': flex-start,
+  'center': center,
+  'end': flex-end,
+  'between': space-between,
+  'around': space-around,
+  'evenly': space-evenly,
+);
+
+$dm-align-self: (
+  'auto': auto,
+  'start': flex-start,
+  'center': center,
+  'end': flex-end,
+  'stretch': stretch,
+  'baseline': baseline,
+);
+
+$dm-sizing: (
+  '10': 10%,
+  '20': 20%,
+  '25': 25%,
+  '30': 30%,
+  '40': 40%,
+  '50': 50%,
+  '60': 60%,
+  '70': 70%,
+  '75': 75%,
+  '80': 80%,
+  '90': 90%,
+  '100': 100%,
+  'auto': auto,
+);
+
+$dm-grid-columns: (
+  '1-1': (1fr 1fr),
+  '1-2': (1fr 2fr),
+  '2-1': (2fr 1fr),
+  '1-3': (1fr 3fr),
+  '3-1': (3fr 1fr),
+  '100': (minmax(0, 1fr)),
+  '50-50': (minmax(0, 1fr) minmax(0, 1fr)),
+  '60-40': (minmax(0, 3fr) minmax(0, 2fr)),
+  '40-60': (minmax(0, 2fr) minmax(0, 3fr)),
+  '70-30': (minmax(0, 7fr) minmax(0, 3fr)),
+  '30-70': (minmax(0, 3fr) minmax(0, 7fr)),
+  '75-25': (minmax(0, 3fr) minmax(0, 1fr)),
+  '25-75': (minmax(0, 1fr) minmax(0, 3fr)),
+  '80-20': (minmax(0, 4fr) minmax(0, 1fr)),
+  '20-80': (minmax(0, 1fr) minmax(0, 4fr)),
+  '33-33-33': (minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr)),
+);
+
+$dm-text-align: (
+  'start': left,
+  'center': center,
+  'end': right,
+);
+
+$dm-text-transform: (
+  'lowercase': lowercase,
+  'uppercase': uppercase,
+  'capitalize': capitalize,
+);
+
+$dm-colors: (
+  'primary': var(--dm-color-primary),
+  'secondary': var(--dm-color-secondary),
+  'accent-1': var(--dm-color-accent-1),
+  'accent-2': var(--dm-color-accent-2),
+  'accent-3': var(--dm-color-accent-3),
+  'success': var(--dm-color-success),
+  'warning': var(--dm-color-warning),
+  'error': var(--dm-color-error),
+  'black': var(--dm-color-black),
+  'white': var(--dm-color-white),
+  'gray': var(--dm-color-gray),
+  'gray-light': var(--dm-color-gray-light),
+  'gray-dark': var(--dm-color-gray-dark),
+);

@@ -1,0 +1,25 @@
+{
+  "name": "taxonomy_listing",
+  "title": "Taxonomy Listing",
+  "summary": "Grid of taxonomy term cards for a post type.",
+  "description": "Renders taxonomy terms for a post type using utility_grid_listing and a configurable card template component.",
+  "assets": {
+    "php": [
+      "assets/php/taxonomy_listing.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "utility_grid_listing",
+    "card_taxonomy",
+    "title"
+  ]
+}

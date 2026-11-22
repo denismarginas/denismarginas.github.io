@@ -1,0 +1,292 @@
+[
+    {
+        "_id": "projects",
+        "settings": {
+            "render": true
+        },
+        "data": {
+            "search": {
+                "placeholder": "Caută cuvinte cheie...",
+                "button": "Caută",
+                "toggle": true,
+                "expanded": true
+            },
+            "filters": {
+                "expanded": false,
+                "items": [
+                    {
+                        "_id": "post-category",
+                        "name": "category",
+                        "placeholder": "--select--",
+                        "label": "Categorie:",
+                        "type": "select",
+                        "json-path": "['data']['taxonomy']['category']",
+                        "json-type": "array"
+                    },
+                    {
+                        "_id": "post-date-start",
+                        "name": "date-start",
+                        "placeholder": "--select--",
+                        "label": "După data:",
+                        "type": "select",
+                        "json-path": "['data']['date']['start']",
+                        "json-type": "date",
+                        "json-search-mode": ">="
+                    },
+                    {
+                        "_id": "post-date-end",
+                        "name": "date-end",
+                        "placeholder": "--select--",
+                        "label": "Până la data:",
+                        "type": "select",
+                        "json-path": "['data']['date']['end']",
+                        "json-type": "date",
+                        "json-search-mode": "<="
+                    },
+                    {
+                        "_id": "post-employ",
+                        "name": "employ",
+                        "placeholder": "--select--",
+                        "label": "Angajator:",
+                        "type": "select",
+                        "json-path": "['data']['project']['employer']",
+                        "json-type": "string"
+                    },
+                    {
+                        "_id": "post-web-platform",
+                        "name": "web-platform",
+                        "placeholder": "--select--",
+                        "label": "Platformă web:",
+                        "type": "select",
+                        "json-path": "['data']['web']['platform']",
+                        "json-type": "array",
+                        "json-array-key": "text"
+                    },
+                    {
+                        "_id": "post-web-technology",
+                        "name": "web-technology",
+                        "placeholder": "--select--",
+                        "label": "Tehnologii web:",
+                        "type": "select",
+                        "json-path": "['data']['web']['technology']",
+                        "json-type": "array",
+                        "json-array-key": "text"
+                    },
+                    {
+                        "_id": "post-media-platform",
+                        "name": "media-platform",
+                        "placeholder": "--select--",
+                        "label": "Platformă media:",
+                        "type": "select",
+                        "json-path": "['data']['media']['platforms']",
+                        "json-type": "array",
+                        "json-array-key": "text"
+                    },
+                    {
+                        "_id": "post-project_types",
+                        "name": "project_types",
+                        "placeholder": "--select--",
+                        "label": "Tipuri de proiecte:",
+                        "type": "select",
+                        "style": "text-transform: capitalize;",
+                        "json-path": "['data']['project']['types']",
+                        "json-type": "array"
+                    },
+                    {
+                        "_id": "post-collaboration",
+                        "name": "collaboration",
+                        "placeholder": "--select--",
+                        "label": "Colaborare:",
+                        "type": "select",
+                        "json-path": "['data']['project']['collaboration']",
+                        "json-type": "array"
+                    }
+                ]
+            },
+            "sort": {
+                "default": "Implicit",
+                "expanded": false,
+                "fields": [
+                    {
+                        "label": "Nume",
+                        "by": "seo.title",
+                        "type": "text",
+                        "order": "asc"
+                    },
+                    {
+                        "label": "Data publicării",
+                        "by": "date.publish",
+                        "type": "date",
+                        "order": "desc"
+                    }
+                ]
+            },
+            "results": {
+                "text": "Rezultate afișate: {n}."
+            },
+            "view": {
+                "search": true,
+                "sticky": true
+            }
+        }
+    },
+    {
+        "_id": "pc-video-games",
+        "settings": {
+            "render": true
+        },
+        "data": {
+            "search": {
+                "placeholder": "Caută jocuri...",
+                "button": "Caută"
+            },
+            "filters": {
+                "expanded": true,
+                "items": [
+                    {
+                        "_id": "game-display",
+                        "name": "display",
+                        "placeholder": "Afișare",
+                        "label": "Afișare:",
+                        "type": "display",
+                        "options": [
+                            {
+                                "value": "default",
+                                "label": "Implicit"
+                            },
+                            {
+                                "value": "all",
+                                "label": "Toate"
+                            }
+                        ]
+                    },
+                    {
+                        "_id": "game-tags",
+                        "name": "tags",
+                        "placeholder": "--select--",
+                        "label": "Etichetă:",
+                        "type": "select",
+                        "json-path": "['data']['tags']",
+                        "json-type": "list"
+                    },
+                    {
+                        "_id": "game-rank",
+                        "name": "rank",
+                        "placeholder": "--select--",
+                        "label": "Clasament minim:",
+                        "type": "select",
+                        "json-path": "['data']['rank']",
+                        "json-type": "number",
+                        "json-search-mode": ">="
+                    },
+                    {
+                        "_id": "game-playtime",
+                        "name": "playtime",
+                        "placeholder": "--select--",
+                        "label": "Timp minim de joc:",
+                        "type": "select",
+                        "json-path": "['data']['playtime_hours']",
+                        "json-type": "number",
+                        "json-search-mode": ">=",
+                        "options": [
+                            "10",
+                            "50",
+                            "100",
+                            "250",
+                            "500",
+                            "1000",
+                            "2000"
+                        ],
+                        "option-suffix": "h+"
+                    },
+                    {
+                        "_id": "game-release-date",
+                        "name": "release-date",
+                        "placeholder": "--select--",
+                        "label": "Anul lansării:",
+                        "type": "select",
+                        "json-path": "['data']['release_year']",
+                        "json-type": "date"
+                    }
+                ],
+                "exclude": [
+                    "game-release-date"
+                ]
+            },
+            "sort": {
+                "expanded": false,
+                "fields": [
+                    {
+                        "label": "Nume",
+                        "by": "name",
+                        "type": "text",
+                        "order": "asc"
+                    },
+                    {
+                        "label": "Clasificare",
+                        "by": "rank",
+                        "type": "number",
+                        "order": "desc"
+                    },
+                    {
+                        "label": "Timp de joc",
+                        "by": "playtime",
+                        "type": "number",
+                        "order": "desc"
+                    }
+                ]
+            },
+            "results": {
+                "text": "Jocuri afișate: {n}."
+            },
+            "view": {
+                "details": false
+            }
+        }
+    },
+    {
+        "_id": "search",
+        "settings": {
+            "render": true
+        },
+        "data": {
+            "search": {
+                "label": "Caută",
+                "placeholder": "Caută cuvinte cheie...",
+                "button": "Caută",
+                "min_chars": 2
+            },
+            "filters": {
+                "label": "Filtre",
+                "expanded": false,
+                "items": [
+                    {
+                        "_id": "search-type",
+                        "name": "type",
+                        "placeholder": "--select--",
+                        "label": "Tip:",
+                        "type": "select",
+                        "json-path": "['type']"
+                    }
+                ]
+            },
+            "sort": {
+                "fields": [
+                    {
+                        "label": "Nume",
+                        "by": "title",
+                        "type": "text",
+                        "order": "asc"
+                    }
+                ]
+            },
+            "results": {
+                "label": "Rezultate",
+                "text": "Rezultate afișate: {n}.",
+                "hint": "Scrie cel puțin 2 caractere pentru a căuta în pagini, proiecte și categorii sau activează „Arată tot” din Filtre.",
+                "no_results": "Niciun rezultat pentru „{query}”.",
+                "show_all": "Arată tot"
+            }
+        }
+    }
+]

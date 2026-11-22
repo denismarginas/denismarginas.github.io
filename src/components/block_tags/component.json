@@ -1,0 +1,18 @@
+{
+  "name": "block_tags",
+  "title": "Block Tags",
+  "summary": "Row of #tag pills, linked or plain.",
+  "description": "Row of \"#tag\" pills (same look as .post-short-info-pill, via the theme pill mixin). Tags with a link render as <a> (e.g. \"#photo\" -> the photo gallery), without as <span>. Can be used on its own or as a child of block_paragraph.",
+  "post_types": ["project"],
+  "assets": {
+    "php": ["assets/php/block_tags.php"],
+    "html": [
+      "assets/html/template.html",
+      "assets/html/parts/tag.html",
+      "assets/html/parts/tag_link.html"
+    ],
+    "scss": ["assets/scss/**"],
+    "css": ["assets/css/**"]
+  },
+  "dependencies": ["theme"]
+}

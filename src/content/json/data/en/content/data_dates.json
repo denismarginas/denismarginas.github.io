@@ -1,0 +1,87 @@
+{
+  "months": {
+    "full": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ],
+    "short": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ]
+  },
+  "days": {
+    "full": [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "short": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+  },
+  "time_units": {
+    "second": {
+      "singular": "Second",
+      "plural": "Seconds",
+      "short": "sec"
+    },
+    "minute": {
+      "singular": "Minute",
+      "plural": "Minutes",
+      "short": "min"
+    },
+    "hour": {
+      "singular": "Hour",
+      "plural": "Hours",
+      "short": "hr"
+    },
+    "day": {
+      "singular": "Day",
+      "plural": "Days",
+      "short": "d"
+    },
+    "week": {
+      "singular": "Week",
+      "plural": "Weeks",
+      "short": "wk"
+    },
+    "month": {
+      "singular": "Month",
+      "plural": "Months",
+      "short": "mo"
+    },
+    "year": {
+      "singular": "Year",
+      "plural": "Years",
+      "short": "yr"
+    }
+  },
+  "current_date": {
+    "current_date": "Current Date",
+    "present": "Present",
+    "in_progress": "In progress",
+    "currently": "Currently"
+  }
+}

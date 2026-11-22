@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="UTF-8"><meta name="google-site-verification" content="pT_WebXTJxdIjN7BD7iEkRbbz0QLTUAGryLVW3EjIsk"><title>Search</title><meta name="description" content="Search the pages, projects, categories and tags of my portfolio."><meta name="keywords" content="denis marginas search"><link rel="canonical" href="search.html"><meta name="robots" content="noindex, nofollow"><script type="application/json" data-seo-ga>{"id":"G-GFKNYRN476","require_consent":true,"default_value":true,"track_localhost":false}</script>
+    <script>(function () {
+  "use strict";
+
+  var mode = null;
+  try {
+    var saved = localStorage.getItem("dm_mode_value");
+    if (saved === "dark" || saved === "light") mode = saved;
+  } catch (e) {}
+
+  function applyBody(body) {
+    if (!mode) {
+      mode = body.getAttribute("mode") === "dark" ? "dark" : "light";
+    }
+    if (body.getAttribute("mode") !== mode) body.setAttribute("mode", mode);
+  }
+
+  function syncToggle() {
+    var toggle = document.querySelector(".header-theme-mode-toggle");
+    if (!toggle || !mode) return;
+    toggle.setAttribute("data-mode", mode);
+    var input = toggle.querySelector(".header-theme-mode-toggle-input");
+    if (input) input.checked = mode === "dark";
+    var icons = toggle.querySelectorAll(".header-theme-mode-toggle-icon");
+    for (var i = 0; i < icons.length; i++) {
+      icons[i].setAttribute("active", icons[i].getAttribute("theme-style") === mode ? "true" : "false");
+    }
+  }
+
+  if (document.body) {
+    applyBody(document.body);
+  } else if (window.MutationObserver) {
+    var observer = new MutationObserver(function () {
+      if (!document.body) return;
+      observer.disconnect();
+      applyBody(document.body);
+    });
+    observer.observe(document.documentElement, { childList: true });
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    if (document.body) applyBody(document.body);
+    syncToggle();
+  });
+})();
+</script>
+    <script>document.documentElement.classList.add("is-loading");</script>
+    <style>html.i18n-loading body>:not([data-preloader]){visibility:hidden}</style><script>window.dmI18n={"default":"en","page_lang":"en","langs":["en","ro"],"frontend":["ro"],"root":"../","timeout":6000,"data":"src/content/json/data/","files":{"collection/data_collection_education.json":["ro"],"collection/data_collection_form.json":["ro"],"collection/data_collection_hobby.json":["ro"],"collection/data_collection_hobby_pc_video_game.json":["ro"],"collection/data_collection_job.json":["ro"],"collection/data_collection_knowledge_item.json":["ro"],"collection/data_collection_listing_toolbar.json":["ro"],"collection/data_collection_resume.json":["ro"],"collection/data_collection_social_link.json":["ro"],"collection/data_collection_social_post.json":["ro"],"collection/data_collection_video.json":["ro"],"content/data_content_cookie_notice.json":["ro"],"content/data_content_footer.json":["ro"],"content/data_content_header_menu.json":["ro"],"content/data_content_post_projects.json":["ro"],"content/data_content_project_info.json":["ro"],"content/data_content_ui.json":["ro"],"content/data_dates.json":["ro"],"data_types.json":["ro"],"post/data_post_page.json":["ro"],"post/data_post_project.json":["ro"],"post/data_post_workstation.json":["ro"],"taxonomy/data_taxonomy_category.json":["ro"]},"v":"towlcx","skip":["script","style","noscript","template","svg","math","textarea","iframe","object","canvas"],"attrs":["alt","title","placeholder","aria-label","aria-description","data-tooltip"],"prefixes":["data-label"],"meta":["description","og:title","og:description","og:image:alt","twitter:title","twitter:description","twitter:image:alt"],"inputs":["submit","button","reset"]};(function () {
+  var c = window.dmI18n, d = document.documentElement, key = "dm_lang", lang = null;
+  if (!c) return;
+
+  function store(value) {
+    try { localStorage.setItem(key, value); } catch (e) {}
+  }
+
+  var WS = /\s+/g;
+  var SPLIT = /<[^>]*>|\r?\n/;
+  var decoder = null;
+
+  function normalize(text) {
+    return String(text).replace(WS, " ").replace(/^ | $/g, "");
+  }
+
+  function decode(text) {
+    if (text.indexOf("&") === -1) return text;
+    decoder = decoder || document.createElement("textarea");
+    decoder.innerHTML = text;
+    return decoder.value;
+  }
+
+  function add(map, en, tr) {
+    var a = normalize(decode(en)), b = normalize(decode(tr));
+    if (!a || !b || a === b || a.indexOf("{{") !== -1 || map.has(a)) return;
+    map.set(a, b);
+  }
+
+  function pair(map, en, tr) {
+    if (en === tr) return;
+    if (!SPLIT.test(en)) { add(map, en, tr); return; }
+    var x = en.split(SPLIT), y = tr.split(SPLIT);
+    if (x.length !== y.length) return;
+    for (var i = 0; i < x.length; i++) add(map, x[i], y[i]);
+  }
+
+  function walk(map, en, tr) {
+    if (typeof en === "string") {
+      if (typeof tr === "string") pair(map, en, tr);
+      return;
+    }
+    if (!en || !tr || typeof en !== "object" || typeof tr !== "object") return;
+    if (Array.isArray(en)) {
+      if (!Array.isArray(tr)) return;
+      var byId = null;
+      if (en.length && en[0] && typeof en[0] === "object" && "_id" in en[0]) {
+        byId = {};
+        tr.forEach(function (item) { if (item && item._id != null) byId[item._id] = item; });
+      }
+      for (var i = 0; i < en.length; i++) walk(map, en[i], byId ? (en[i] ? byId[en[i]._id] : null) : tr[i]);
+      return;
+    }
+    for (var k in en) {
+      if (Object.prototype.hasOwnProperty.call(en, k) && Object.prototype.hasOwnProperty.call(tr, k)) walk(map, en[k], tr[k]);
+    }
+  }
+
+  c.store = store;
+  c.fetch = function (target) {
+    var root = (c.root || "") + c.data, v = "?v=" + encodeURIComponent(c.v || "");
+    function get(url) {
+      return fetch(url, { credentials: "same-origin" })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .catch(function () { return null; });
+    }
+    var jobs = Object.keys(c.files || {}).filter(function (file) {
+      return (c.files[file] || []).indexOf(target) !== -1;
+    }).map(function (file) {
+      return Promise.all([get(root + c.default + "/" + file + v), get(root + target + "/" + file + v)]);
+    });
+    return Promise.all(jobs).then(function (results) {
+      var map = new Map();
+      results.forEach(function (r) { if (r[0] && r[1]) walk(map, r[0], r[1]); });
+      return map;
+    });
+  };
+
+  try {
+    var param = new URLSearchParams(location.search).get("lang");
+    if (param && c.langs.indexOf(param) !== -1) { lang = param; store(param); }
+  } catch (e) {}
+
+  if (c.page_lang !== c.default) {
+    if (!lang) store(c.page_lang);
+    return;
+  }
+
+  if (!lang) {
+    try { lang = localStorage.getItem(key); } catch (e) {}
+  }
+  if (!lang || c.frontend.indexOf(lang) === -1 || !window.fetch || !window.Promise || !window.Map) return;
+
+  c.lang = lang;
+  d.classList.add("i18n-loading");
+  c.pending = c.fetch(lang);
+  setTimeout(function () { d.classList.remove("i18n-loading"); }, c.timeout || 6000);
+})();</script>
+    <link rel="stylesheet" href="../src/components/theme/assets_compiled/css/bundle.css"><script src="../src/components/theme/assets_compiled/js/bundle.js"></script>
+
+    <noscript><style>.search .search-results{display:grid !important}.search .search-results > li[hidden]{display:flex !important}.search .search-status,.search .search-filters{display:none}</style></noscript>
+</head>
+
+<body mode="dark">
+    <div class="preloader" data-preloader data-preloader-wait="load" data-preloader-max="4000" aria-hidden="true" translate="no">
+  <span class="preloader-spinner"></span>
+</div>
+
+    <overlay class="overlay-noise"></overlay>
+    <overlay class="animation-grid-background"></overlay>
+    <header>
+  <div class="header-blur" aria-hidden="true"></div>
+  <container>
+    <a href="home.html" class="logo logo-shape-circle" data-variant="header"><div class="logo-container-img"><img class="logo-img" src="../src/content/img/brand/logo/logo.webp" alt="Denis Marginas Logo" width="50" height="50">
+</div><div class="site-title"><span class="primary">Denis</span><span class="secondary">Marginas</span></div></a>
+
+    <nav class="header-menu">
+  <ul><li><a  href="home.html">Home</a></li><li class="has-submenu"><span class="header-menu-row"><a  href="experience.html">Experience</a><button type="button" class="header-submenu-toggle" aria-expanded="false" aria-controls="header-submenu-3" aria-label="Experience submenu"><svg type="fill" viewBox="0 0 512 512" class="header-submenu-toggle-icon"> <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/> </svg></button></span><ul class="header-submenu" id="header-submenu-3"><li><a  href="category/employee-experience.html">Professional Experience</a></li><li><a  href="category/education-experience.html">Education Experience</a></li></ul></li><li class="has-submenu"><span class="header-menu-row"><a  href="category/projects.html">Projects</a><button type="button" class="header-submenu-toggle" aria-expanded="false" aria-controls="header-submenu-4" aria-label="Projects submenu"><svg type="fill" viewBox="0 0 512 512" class="header-submenu-toggle-icon"> <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/> </svg></button></span><ul class="header-submenu" id="header-submenu-4"><li><a  href="category/web-development-projects.html">Web Projects</a></li><li><a  href="category/visual-media-projects.html">Media Projects</a></li><li><a  href="category/personal-and-custom-projects.html">Personal Projects</a></li></ul></li><li><a  href="contact.html">Contact</a></li></ul>
+  <div class="header-menu-utility">
+    <a href="search.html" class="header-search-button active" aria-current="page" aria-label="Search">
+  <svg type="stroke" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" class="header-search-button-icon">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1 8.3746C0.999472 4.85724 3.4837 1.8293 6.9334 1.1426C10.3832 0.455907 13.8376 2.30172 15.184 5.5512C16.5305 8.80072 15.394 12.5488 12.4696 14.5034C9.5452 16.4578 5.64744 16.0744 3.16 13.5874C1.77716 12.2051 1.00017 10.33 1 8.3746Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.5869 13.5886L17.8001 17.8018" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a>
+    <details class="header-language-dropdown" data-language-dropdown translate="no">
+  <summary class="header-language-dropdown-toggle" aria-label="Language: English">
+    <span class="header-language-dropdown-current">EN</span><svg type="fill" viewBox="0 0 512 512" class="header-language-dropdown-chevron"> <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/> </svg>
+  </summary>
+  <ul class="header-language-dropdown-menu"><li><a class="header-language-dropdown-link active" href="search.html" data-i18n-lang="en" hreflang="en" lang="en" aria-current="true" title="English"><svg type="flag" viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice" class="header-language-flag"><clipPath id="flag-en-clip"><path d="M30,15h30v15zv15h-30zh-30v-15zv-15h30z"/></clipPath><rect width="60" height="30" fill="#012169"/><path d="M0,0L60,30M60,0L0,30" stroke="#FFFFFF" stroke-width="6"/><path d="M0,0L60,30M60,0L0,30" clip-path="url(#flag-en-clip)" stroke="#C8102E" stroke-width="4"/><path d="M30,0v30M0,15h60" stroke="#FFFFFF" stroke-width="10"/><path d="M30,0v30M0,15h60" stroke="#C8102E" stroke-width="6"/></svg><span class="header-language-dropdown-code">EN</span></a></li><li><a class="header-language-dropdown-link" href="search.html?lang=ro" data-i18n-lang="ro" rel="nofollow" lang="ro" title="Română"><svg type="flag" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" class="header-language-flag"><rect width="1" height="2" x="0" fill="#002B7F"/><rect width="1" height="2" x="1" fill="#FCD116"/><rect width="1" height="2" x="2" fill="#CE1126"/></svg><span class="header-language-dropdown-code">RO</span></a></li></ul>
+</details>
+
+    <label class="header-theme-mode-toggle" data-mode="dark" aria-label="Toggle color theme">
+  <input type="checkbox" class="header-theme-mode-toggle-input">
+  <span class="header-theme-mode-toggle-track" aria-hidden="true">
+    <span class="header-theme-mode-toggle-icon" theme-style="light" active="false"><svg type="stroke" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-icon">
+<path d="M12.5628 25.0003C17.5333 26.899 23.102 24.4088 25.0006 19.4382C26.8993 14.4676 24.409 8.89902 19.4385 7.00035C14.4679 5.10168 8.8993 7.59194 7.00063 12.5625C5.10196 17.5331 7.59222 23.1017 12.5628 25.0003Z" stroke="#000" stroke-width="2"/>
+<path d="M21.7305 1.00024L21.1575 2.50024" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+<path d="M10.8438 29.5002L10.2708 31.0002" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+<path d="M31.0005 21.73L29.5005 21.157" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+<path d="M2.50049 10.8435L1.00049 10.2705" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+<path d="M30.658 9.44626L29.8438 9.81044" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+<path d="M2.15713 22.1904L1.34275 22.5547" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+<path d="M22.5555 30.657L22.1914 29.8428" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+<path d="M9.80949 2.15712L9.44531 1.34277" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+</svg></span>
+    <span class="header-theme-mode-toggle-icon" theme-style="dark" active="true"><svg type="stroke" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-icon">
+<path d="M1 15.4412C1 24.0342 7.96473 31 16.5561 31C23.1021 31 28.7037 26.9561 31 21.2299C29.2083 21.9501 27.2477 22.3561 25.1984 22.3561C16.6069 22.3561 9.6423 15.3902 9.6423 6.79731C9.6423 4.75731 10.0422 2.78516 10.7558 1C5.03723 3.2998 1 8.89895 1 15.4412Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>
+    <span class="header-theme-mode-toggle-thumb" aria-hidden="true"></span>
+  </span>
+</label>
+  </div>
+</nav>
+<button type="button" class="header-menu-navbar-toggle" aria-label="Toggle menu" aria-expanded="false"
+  aria-controls="header-menu">
+  <svg type="fill" width="21" height="17" viewBox="0 0 21 17"  class="header-menu-navbar-toggle-icon"><path d="M0 0.75C0 0.335786 0.335786 0 0.75 0H10.5H20.25C20.6642 0 21 0.335786 21 0.75V0.75C21 1.16421 20.6642 1.5 20.25 1.5H0.75C0.335786 1.5 0 1.16421 0 0.75V0.75Z"/><path d="M0 8.25C0 7.83579 0.335786 7.5 0.75 7.5H10.5H20.25C20.6642 7.5 21 7.83579 21 8.25V8.25C21 8.66421 20.6642 9 20.25 9H0.75C0.335786 9 0 8.66421 0 8.25V8.25Z"/><path d="M0 15.75C0 15.3358 0.335786 15 0.75 15H10.5H20.25C20.6642 15 21 15.3358 21 15.75V15.75C21 16.1642 20.6642 16.5 20.25 16.5H0.75C0.335786 16.5 0 16.1642 0 15.75V15.75Z"/></svg>
+</button>
+  </container>
+</header>
+
+
+    <main><section class="hero" data-layout="xs">
+    <div class="video-background" data-video-background data-start="0" data-loop="true" data-audio="false" style="--video-bg-overlay: 0.6; --video-bg-position: center; --video-bg-poster: url('../src/content/img/backgrounds/bg-home.webp');" aria-hidden="true">
+  <video class="video-background-video" muted playsinline preload="metadata" poster="../src/content/img/backgrounds/bg-home.webp">
+    <source src="../src/content/vid/backgrounds/bg-home.webm" type="video/webm">
+  </video>
+  <span class="video-background-overlay"></span>
+</div>
+
+
+    <container-md>
+    <h2>Search</h2>
+    <p>Search the pages, projects, categories and tags of my portfolio.</p>
+</container-md>
+    <div class="animation-blurred-lines" data-motion="transition-fade-0" data-duration="0.6s" data-delay="0s">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div><overlay class="overlay-noise"></overlay>
+</section><section class="content-section">
+  <container>
+    <div class="search" data-search>
+  <form class="filters-toolbar search-filters" id="search-results-filters" data-target="search-results" data-min-chars="2" data-filters-number="1" role="search" action="" method="get">
+    <div class="ft-toolbar">
+    <label class="ft-search search-input" id="search-results-search">
+      <span class="ft-search-icon" aria-hidden="true"><svg type="stroke" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" class="filters-icon">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1 8.3746C0.999472 4.85724 3.4837 1.8293 6.9334 1.1426C10.3832 0.455907 13.8376 2.30172 15.184 5.5512C16.5305 8.80072 15.394 12.5488 12.4696 14.5034C9.5452 16.4578 5.64744 16.0744 3.16 13.5874C1.77716 12.2051 1.00017 10.33 1 8.3746Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.5869 13.5886L17.8001 17.8018" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>
+      <input type="search" id="search-results-input" class="item-search" name="q" placeholder="Search keywords.." aria-label="Search" autocomplete="off" spellcheck="false" enterkeyhint="search">
+    </label>
+    <div class="ft-actions">
+      
+      <button type="button" class="ft-icon-btn toggle-filters" aria-haspopup="dialog" aria-expanded="false" aria-controls="search-results-filters-drawer" aria-label="Filters" title="Filters">
+        <svg type="fill" width="700" height="600" viewBox="0 0 700 600" fill="none" class="filters-icon"><path d="M0 185H550V115H0V185ZM650 0C622.386 0 600 22.3858 600 50V250C600 277.614 622.386 300 650 300C677.614 300 700 277.614 700 250V50C700 22.3858 677.614 0 650 0ZM350 415V350C350 322.386 327.614 300 300 300C272.386 300 250 322.386 250 350V550C250 577.614 272.386 600 300 600C327.614 600 350 577.614 350 550V485H700V415H350ZM0 485H200V415H0V485Z" fill="var( --dm-color-black )"/></svg><span class="ft-badge" hidden>0</span>
+      </button>
+    </div>
+  </div>
+  <div class="ft-status">
+    <p class="ft-results query-text" aria-live="polite">Showing <span class="query-amount">0</span> results.</p>
+    <ul class="ft-chips" aria-label="Active filters" data-label-remove="Remove"></ul>
+    <button type="reset" class="ft-clear" hidden>Clear all</button>
+  </div>
+  <dialog class="ft-drawer" id="search-results-filters-drawer" aria-labelledby="search-results-filters-drawer-title">
+    <div class="ft-drawer-panel">
+      <div class="ft-drawer-head">
+        <h2 class="ft-drawer-title" id="search-results-filters-drawer-title"><span class="ft-drawer-title-icon" aria-hidden="true"><svg type="fill" width="700" height="600" viewBox="0 0 700 600" fill="none" class="filters-icon"><path d="M0 185H550V115H0V185ZM650 0C622.386 0 600 22.3858 600 50V250C600 277.614 622.386 300 650 300C677.614 300 700 277.614 700 250V50C700 22.3858 677.614 0 650 0ZM350 415V350C350 322.386 327.614 300 300 300C272.386 300 250 322.386 250 350V550C250 577.614 272.386 600 300 600C327.614 600 350 577.614 350 550V485H700V415H350ZM0 485H200V415H0V485Z" fill="var( --dm-color-black )"/></svg></span>Filters</h2>
+        <button type="button" class="ft-icon-btn ft-drawer-close" aria-label="Close"><svg type="stroke" width="14" height="14" viewBox="0 0 14 14"  class="filters-icon"><path d="M13 1L1 13M1 1L13 13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </div>
+      <div class="ft-drawer-body">
+        <section class="ft-section block-search">
+          <label class="ft-drawer-search">
+            <span class="ft-search-icon" aria-hidden="true"><svg type="stroke" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" class="filters-icon">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1 8.3746C0.999472 4.85724 3.4837 1.8293 6.9334 1.1426C10.3832 0.455907 13.8376 2.30172 15.184 5.5512C16.5305 8.80072 15.394 12.5488 12.4696 14.5034C9.5452 16.4578 5.64744 16.0744 3.16 13.5874C1.77716 12.2051 1.00017 10.33 1 8.3746Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.5869 13.5886L17.8001 17.8018" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>
+            <input type="search" class="ft-drawer-search-input" placeholder="Search keywords.." aria-label="Search" autocomplete="off" spellcheck="false" enterkeyhint="search">
+          </label>
+        </section>
+        <section class="ft-section block-view">
+          <h3 class="ft-section-title">View</h3>
+          <div class="ft-view-controls">
+            <div class="ft-segment toggle-search" data-view="search" role="radiogroup" aria-label="Search bar"><span class="ft-segment-label"><span class="ft-segment-icon" aria-hidden="true"><svg type="stroke" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" class="filters-icon">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1 8.3746C0.999472 4.85724 3.4837 1.8293 6.9334 1.1426C10.3832 0.455907 13.8376 2.30172 15.184 5.5512C16.5305 8.80072 15.394 12.5488 12.4696 14.5034C9.5452 16.4578 5.64744 16.0744 3.16 13.5874C1.77716 12.2051 1.00017 10.33 1 8.3746Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.5869 13.5886L17.8001 17.8018" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>Search bar</span><span class="ft-segment-options"><label class="ft-segment-option"><input type="radio" name="search-results-view-search" value="show" checked><span>Show</span></label><label class="ft-segment-option"><input type="radio" name="search-results-view-search" value="hide"><span>Hide</span></label></span></div><div class="ft-segment toggle-all" data-view="all" role="radiogroup" aria-label="Show all"><span class="ft-segment-label"><span class="ft-segment-icon" aria-hidden="true"><svg type="stroke" width="800" height="600" viewBox="0 0 800 600" fill="none" class="filters-icon"><path d="M33.3335 300C33.3335 300 166.667 33.3335 400 33.3335C633.333 33.3335 766.667 300 766.667 300" stroke="var( --dm-color-black )" stroke-width="66.6667" stroke-linecap="round" stroke-linejoin="round"/><path d="M33.3335 300C33.3335 300 166.667 566.667 400 566.667C633.333 566.667 766.667 300 766.667 300" stroke="var( --dm-color-black )" stroke-width="66.6667" stroke-linecap="round" stroke-linejoin="round"/><path d="M400 400C455.228 400 500 355.228 500 300C500 244.772 455.228 200 400 200C344.772 200 300 244.772 300 300C300 355.228 344.772 400 400 400Z" stroke="var( --dm-color-black )" stroke-width="66.6667" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Show all</span><span class="ft-segment-options"><label class="ft-segment-option"><input type="radio" name="search-results-view-all" value="yes"><span>Yes</span></label><label class="ft-segment-option"><input type="radio" name="search-results-view-all" value="no" checked><span>No</span></label></span></div><div class="ft-segment toggle-results" data-view="results" role="radiogroup" aria-label="Results"><span class="ft-segment-label"><span class="ft-segment-icon" aria-hidden="true"><svg type="stroke" width="668" height="501" viewBox="0 0 668 501" fill="none" class="filters-icon"><path d="M34 133.667H300.667M434 133.667H634M534 233.666V33.6665M134 300.333H434M267.333 467H334" stroke="var( --dm-color-black )" stroke-width="66.6667" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Results</span><span class="ft-segment-options"><label class="ft-segment-option"><input type="radio" name="search-results-view-results" value="show" checked><span>Show</span></label><label class="ft-segment-option"><input type="radio" name="search-results-view-results" value="hide"><span>Hide</span></label></span></div><div class="ft-segment toggle-sticky" data-view="sticky" role="radiogroup" aria-label="Sticky toolbar"><span class="ft-segment-label"><span class="ft-segment-icon" aria-hidden="true"><svg type="stroke" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns:c2pa="http://c2pa.org/manifest" class="filters-icon"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYToyMjI0YTFlZS0yMDcyLTQ4ODAtODkxYy05YWI4YWRjNzQwYzgAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaKvTMBKqqhlPznfyErsaH50AAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo2Zjk4YTI5Ny05M2MzLTQ4MTgtOGI2OS05N2UyNjgyODBmNzlscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNo4ndQdebahqOEKktNVfhdJQAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggH2pSi4WqmKtM5bqFQiDA2OhcK0MiolBjucUtcsm1/PukZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaC/mN5k12hGO3RRqNkM2eq0AAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCCLLgPWPgAIv/uTt7l1uCHrLfbHIGr8Y6mfuOjLkV2SkGRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBiJZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjIyMjRhMWVlLTIwNzItNDg4MC04OTFjLTlhYjhhZGM3NDBjOC9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjIzOGViYWVhLWM4NTctNDc0Mi04OWI4LThlOWEzZWQ5MGQ0YnJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCAfalKLhaqYq0zluoVCIMDY6FwrQyKiUGO5xS1yybX8+6JjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggqTQ1hxjDyc6qi3MZPtvjQbBLqIOQwJjxymVk1ZvmXYmiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggCH7wpIi69+YTSE3bTgrzwJec8v7MphmA10iYTxb5qvx0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQOdOpdiCYMPDddskO+NnFbF3AOR4Utj/DdBapptarvPoP1QEY2VU8EPMIb9ZW9I3iMGxrl2xcyDR4/j7mL7k1VU=</c2pa:manifest></metadata><path d="M9 3H15L14 9.5L17.5 13V15H6.5V13L10 9.5L9 3ZM12 15V21" stroke="var( --dm-color-black )" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Sticky toolbar</span><span class="ft-segment-options"><label class="ft-segment-option"><input type="radio" name="search-results-view-sticky" value="yes"><span>Yes</span></label><label class="ft-segment-option"><input type="radio" name="search-results-view-sticky" value="no" checked><span>No</span></label></span></div>
+          </div>
+        </section>
+        <section class="ft-section block-sort">
+          <h3 class="ft-section-title">Sort</h3>
+          <div class="filters-sort" data-target="search-results" data-grid-listing="2" data-grid-column-balancing="items-divisible-by-2">
+  <div class="filters-sort-field">
+    <label for="search-results-sort-by">Sort by</label>
+    <select id="search-results-sort-by" name="sort_by" class="sort-by">
+      <option value="title" data-type="text" data-order="asc" data-label-asc="A-Z" data-label-desc="Z-A">Name</option>
+    </select>
+  </div>
+  <div class="filters-sort-field">
+    <label for="search-results-sort-order">Order</label>
+    <select id="search-results-sort-order" name="sort_order" class="sort-order">
+      <option value="asc">A-Z</option>
+      <option value="desc">Z-A</option>
+    </select>
+  </div>
+</div>
+
+        </section>
+        <section class="ft-section block-filters">
+          <h3 class="ft-section-title">Filters</h3>
+          <div class="ft-fields">
+            <div class="filter">
+  <label for="search-results-search-type">Type</label>
+  <select id="search-results-search-type" name="type" data-filter="search-type">
+    <option value="">All</option><option value="category">Category</option><option value="page">Page</option><option value="project">Project</option><option value="workstation">Workstation</option>
+  </select>
+</div>
+
+          </div>
+        </section>
+      </div>
+      <div class="ft-drawer-foot">
+        <button type="reset" class="ft-btn ft-btn-ghost ft-reset">Reset</button>
+        <button type="button" class="ft-btn ft-btn-solid ft-apply"><span class="ft-btn-text">Show <span class="query-amount">0</span> results</span></button>
+      </div>
+    </div>
+  </dialog>
+
+    <script type="application/json" class="filters-index">{"home":{"keywords":"home my name is denis ionut marginas and i have experience as a full-stack web developer. since 2019 i have worked on presentation sites, online stores, web applications, seo optimization and web design, after starting out as a freelance video editor for video games.","_sort":{"title":"Home"},"search-type":["page"]},"about":{"keywords":"about my name is denis ionut marginas and i have experience as a full-stack web developer. before web development i focused on video editing for video games; in my free time i enjoy building computer hardware, gaming, cycling and tennis.","_sort":{"title":"About"},"search-type":["page"]},"contact":{"keywords":"contact have a project, a job offer or just a question? reach me on whatsapp, by email, or through the form below.","_sort":{"title":"Contact"},"search-type":["page"]},"experience":{"keywords":"experience i have experience as a full-stack web developer on projects such as presentation websites, online shops, booking web applications, competition form applications, and seo optimization.","_sort":{"title":"Experience"},"search-type":["page"]},"privacy-policy":{"keywords":"privacy policy learn how we collect, use, and protect your personal data. our privacy policy explains our use of cookies, google analytics, and your rights regarding your data.","_sort":{"title":"Privacy Policy"},"search-type":["page"]},"student-courses-bachelor-s-thesis-platform":{"keywords":"student courses bachelor's thesis platform my bachelor's thesis: a website where students upload course materials as images, which are converted and stored as text for reports and projects.","_sort":{"title":"Student Courses Bachelor's Thesis Platform"},"search-type":["project"]},"aatoysfurnitures-presentation-website":{"keywords":"a\u0026a toys \u0026 furniture presentation website presentation website for a\u0026a toys \u0026 furniture, built in wordpress with elementor. one of the first websites of my career.","_sort":{"title":"A\u0026A Toys \u0026 Furniture Presentation Website"},"search-type":["project"]},"acvaticbebeclub-presentation-website":{"keywords":"acvatic bebe club presentation website bilingual wordpress website for a baby and children swimming school, with subscriptions and a blog.","_sort":{"title":"Acvatic Bebe Club Presentation Website"},"search-type":["project"]},"agramix-online-shop":{"keywords":"agramix online shop prestashop online shop for tools, machine parts and agricultural equipment, connected to the emag marketplace.","_sort":{"title":"Agramix Online Shop"},"search-type":["project"]},"agramix-media":{"keywords":"agramix media banners, flyers and video ads made to promote agramix's tools, machine parts and agricultural equipment.","_sort":{"title":"Agramix Media"},"search-type":["project"]},"agromir-online-shop":{"keywords":"agromir online shop prestashop online shop for agricultural tools and tractor tires, with auto-filled request forms, a product feed export and seo work.","_sort":{"title":"Agromir Online Shop"},"search-type":["project"]},"agromir-media":{"keywords":"agromir media product banners, social media images, video ads and a 3d tire animation made in blender to promote agromir's agricultural tires.","_sort":{"title":"Agromir Media"},"search-type":["project"]},"agromir-sh-online-shop":{"keywords":"agromir sh online shop prestashop online shop for second hand tires and industrial equipment, working as a catalog with phone and email contact buttons.","_sort":{"title":"Agromir SH Online Shop"},"search-type":["project"]},"amorino-online-shop":{"keywords":"amorino online shop prestashop online shop selling dresses for girls, with card payments through payu.","_sort":{"title":"Amorino Online Shop"},"search-type":["project"]},"augustinnailtrainer-media":{"keywords":"augustin nail trainer media nail art photo editing for augustin nail trainer, a nail technician trainer.","_sort":{"title":"Augustin Nail Trainer Media"},"search-type":["project"]},"axacompany-presentation-website":{"keywords":"axa company presentation website minimalist presentation website for axa company, built in wordpress with elementor.","_sort":{"title":"AXA Company Presentation Website"},"search-type":["project"]},"boneamed-presentation-website":{"keywords":"bonea med presentation website wordpress website for a medical clinic, with online appointment booking for specific doctors.","_sort":{"title":"Bonea Med Presentation Website"},"search-type":["project"]},"brbhome-presentation-website":{"keywords":"brb home presentation website wordpress presentation website promoting furniture services, one of the first websites i built.","_sort":{"title":"BRB Home Presentation Website"},"search-type":["project"]},"brisascents-online-shop":{"keywords":"brisa scents online shop wordpress and woocommerce online shop for perfumes and room sprays.","_sort":{"title":"Brisa Scents Online Shop"},"search-type":["project"]},"busvip-media":{"keywords":"bus-vip media social media images and animated video ads for bus-vip, a transport company.","_sort":{"title":"Bus-Vip Media"},"search-type":["project"]},"cadredidactice-presentation-website":{"keywords":"centrul de resurse educationale presentation website wordpress platform where teachers submit magazines and books as pdf and sign up for educational projects and contests.","_sort":{"title":"Centrul de Resurse Educationale Presentation Website"},"search-type":["project"]},"cafeagano-online-shop":{"keywords":"cafea gano online shop wordpress and woocommerce online shop for coffee and natural supplements.","_sort":{"title":"Cafea Gano Online Shop"},"search-type":["project"]},"carconcordia-presentation-website":{"keywords":"concordia car presentation website presentation website for concordia car, built in wordpress with goodlayers and slider revolution.","_sort":{"title":"Concordia CAR Presentation Website"},"search-type":["project"]},"casadarius-presentation-website":{"keywords":"casa darius presentation website wordpress presentation website for the casa darius furniture stores.","_sort":{"title":"Casa Darius Presentation Website"},"search-type":["project"]},"casadarius-online-shop":{"keywords":"casa darius online shop prestashop online shop for furniture with mobilpay card payments, product pages and ongoing maintenance.","_sort":{"title":"Casa Darius Online Shop"},"search-type":["project"]},"casadarius-media":{"keywords":"casa darius media edited product photos, banners and video ads made to promote casa darius furniture.","_sort":{"title":"Casa Darius Media"},"search-type":["project"]},"cekan-web-design":{"keywords":"cekan web design case study post template for cekan.ca, built from a figma design with html and scss.","_sort":{"title":"Cekan Web Design"},"search-type":["project"]},"ceramicevo-online-shop":{"keywords":"ceramic \u0026 stone evolutione online shop minimalist prestashop catalog shop for ceramics and stone, with phone and request form contact buttons.","_sort":{"title":"Ceramic \u0026 Stone Evolutione Online Shop"},"search-type":["project"]},"copiatoarealbaiulia-presentation-website":{"keywords":"copiatoare alba iulia presentation website minimalist wordpress presentation website for copiatoare alba iulia.","_sort":{"title":"Copiatoare Alba Iulia Presentation Website"},"search-type":["project"]},"covoarealex-online-shop":{"keywords":"covoare alex online shop prestashop online shop for carpets, with card payments through mobilpay.","_sort":{"title":"Covoare Alex Online Shop"},"search-type":["project"]},"dabo-sm-bm-media":{"keywords":"dabo - sm \u0026 bm media promotional media for dabo satu mare and dabo baia mare during the 2020 pandemic.","_sort":{"title":"Dabo - SM \u0026 BM Media"},"search-type":["project"]},"denismarginas-google-site-presentation-website":{"keywords":"denis marginas google site presentation website personal portfolio website built with google sites, presenting my projects with descriptions, images and links.","_sort":{"title":"Denis Marginas Google Site Presentation Website"},"search-type":["project"]},"denismarginas-media":{"keywords":"denis marginas media my personal media work: banners, logos and workstation photos, plus videos like my portfolio showcase and experience highlights.","_sort":{"title":"Denis Marginas Media"},"search-type":["project"]},"denismarginas-github-pages-presentation-website":{"keywords":"denis marginas github pages presentation website my seo optimized portfolio on github pages, with bulk rendering of pages and projects and a dark and light theme.","_sort":{"title":"Denis Marginas GitHub Pages Presentation Website"},"search-type":["project"]},"dsautocenter-media":{"keywords":"ds auto center media social media banners and a company presentation video for ds auto center.","_sort":{"title":"DS Auto Center Media"},"search-type":["project"]},"freymobdesign-online-shop":{"keywords":"freymob design online shop prestashop furniture catalog shop in 3 languages and 2 currencies, with phone and quote request buttons.","_sort":{"title":"FreyMob Design Online Shop"},"search-type":["project"]},"gamadametal-media":{"keywords":"gamada metal media social media images for gamada metal.","_sort":{"title":"Gamada Metal Media"},"search-type":["project"]},"hartkeepyouthaton-media":{"keywords":"hart media promotional images and a short video for hart, keep your hat on.","_sort":{"title":"HART Media"},"search-type":["project"]},"ilnicelectric-presentation-website":{"keywords":"ilnic electric presentation website wordpress presentation website for ilnic electric, with a custom canvas form where users arrange images before sending.","_sort":{"title":"Ilnic Electric Presentation Website"},"search-type":["project"]},"ambalajelavplast-online-shop":{"keywords":"ambalaje lavplast online shop prestashop online shop for packaging products, with card payments through mobilpay.","_sort":{"title":"Ambalaje Lavplast Online Shop"},"search-type":["project"]},"lavmag-online-shop":{"keywords":"lavmag online shop prestashop online shop with over 4000 products, kept in sync with another store through custom php feed scripts.","_sort":{"title":"Lavmag Online Shop"},"search-type":["project"]},"marasafety-online-shop":{"keywords":"mara safety online shop minimalist prestashop online shop for protective equipment, one of the first websites of my career.","_sort":{"title":"Mara Safety Online Shop"},"search-type":["project"]},"masiniinratebaiamare-presentation-website":{"keywords":"masini in rate baia mare presentation website wordpress catalog website for car sales in installments, where visitors message the seller from each product page.","_sort":{"title":"Masini in Rate Baia Mare Presentation Website"},"search-type":["project"]},"medicalortovit-web-content":{"keywords":"medical ortovit web content product section for the medical ortovit wordpress website, with over 200 connected pages for medical products and services.","_sort":{"title":"Medical Ortovit Web Content"},"search-type":["project"]},"mewi-web-maintenance":{"keywords":"mewi web maintenance maintenance, page redesigns, a live search and html newsletter templates for the mewi wordpress website.","_sort":{"title":"Mewi Web Maintenance"},"search-type":["project"]},"mobilasimexplus-online-shop":{"keywords":"mobila simex plus online shop minimalist prestashop online shop for furniture sold in sets or separately, plus promotional images.","_sort":{"title":"Mobila Simex Plus Online Shop"},"search-type":["project"]},"mycreativedesign-media":{"keywords":"my creative design media promotional images for my creative design.","_sort":{"title":"My Creative Design Media"},"search-type":["project"]},"netexromania-web-maintenance":{"keywords":"netex romania web maintenance maintenance of the netex romania wordpress website: back end fixes, theme code changes, plugin updates and banners.","_sort":{"title":"Netex Romania Web Maintenance"},"search-type":["project"]},"petri-presentation-website":{"keywords":"petri presentation website custom wordpress theme for petri, built in a team from a figma design with gutenberg blocks.","_sort":{"title":"Petri Presentation Website"},"search-type":["project"]},"piasoftproduct-presentation-website":{"keywords":"pia soft product presentation website wordpress presentation website for pia soft product, my first employer, with seo work and ongoing maintenance.","_sort":{"title":"Pia Soft Product Presentation Website"},"search-type":["project"]},"piasoftproduct-media":{"keywords":"pia soft product media logo redesign, promotional photos and a video ad made for pia soft product, my first employer.","_sort":{"title":"Pia Soft Product Media"},"search-type":["project"]},"prismanord-online-shop":{"keywords":"prisma nord online shop prestashop online shop with over 150 roofing products, plus promotional images made for the company.","_sort":{"title":"Prisma Nord Online Shop"},"search-type":["project"]},"promotiimars-contest-application":{"keywords":"promotii mars contest application wordpress website for mars contests and promotions, with over 20 custom php registration forms.","_sort":{"title":"Promotii Mars Contest Application"},"search-type":["project"]},"purstyle-web-maintenance":{"keywords":"pur style web maintenance page reworks, fixes and new booking and contact features for the bilingual pur style wordpress website.","_sort":{"title":"Pur Style Web Maintenance"},"search-type":["project"]},"reifendirekt-web-design":{"keywords":"reifen direkt web design static html pages for the reifen direkt redesign, built from zeplin designs with scss, bootstrap and jquery.","_sort":{"title":"Reifen Direkt Web Design"},"search-type":["project"]},"resurseeducationale-online-shop":{"keywords":"resurse educationale online shop wordpress platform for school projects, contests, courses and a shop, with a paid article upload system.","_sort":{"title":"Resurse Educationale Online Shop"},"search-type":["project"]},"revelnail-avadores-online-shop":{"keywords":"revel nail (avadores) online shop prestashop online shop for revel nail products in romania, with content pages and seo work.","_sort":{"title":"Revel Nail (Avadores) Online Shop"},"search-type":["project"]},"revelnail-avadores-media":{"keywords":"revel nail (avadores) media advertising banners, seasonal campaign visuals and video ads made for revel nail products in romania.","_sort":{"title":"Revel Nail (Avadores) Media"},"search-type":["project"]},"revistaeducatie-presentation-website":{"keywords":"centrul de excelenta presentation website wordpress platform where teachers submit magazines and books as pdf and sign up for educational projects and contests.","_sort":{"title":"Centrul de Excelenta Presentation Website"},"search-type":["project"]},"roundselfie-media":{"keywords":"round selfie media logo and posters for round selfie.","_sort":{"title":"Round Selfie Media"},"search-type":["project"]},"royalcompass-presentation-website":{"keywords":"royal compass presentation website wordpress presentation website for a company promoting outdoor sports.","_sort":{"title":"Royal Compass Presentation Website"},"search-type":["project"]},"spalatorieautomatabaiamare-media":{"keywords":"spalatorie automata baia mare media social media images for spalatorie automata baia mare.","_sort":{"title":"Spalatorie Automata Baia Mare Media"},"search-type":["project"]},"specialevents-media":{"keywords":"special events media wedding invitations, menus and table cards designed for special events.","_sort":{"title":"Special Events Media"},"search-type":["project"]},"speed-sm-media":{"keywords":"speed satu mare media social media images for speed satu mare.","_sort":{"title":"Speed Satu Mare Media"},"search-type":["project"]},"strikerproduction-media":{"keywords":"striker production media my striker production media work since 2016: video game edits, 3d blender renders and video editing contests.","_sort":{"title":"Striker Production Media"},"search-type":["project"]},"strikerproduction-demand-media":{"keywords":"striker production on demand media video editing on demand for striker production customers around the world: intros, logo animations, clan intros and montages with vfx and 3d effects.","_sort":{"title":"Striker Production On Demand Media"},"search-type":["project"]},"strikerproduction-editing-contest-video-media":{"keywords":"video editing contest media the first striker production video editing contest, hosted in 2016 to discover and reward top editing talent.","_sort":{"title":"Video Editing Contest Media"},"search-type":["project"]},"strikerproduction-editing-contest-rust-media":{"keywords":"rust editing contest media a series of rust video editing contests for advanced and new editors, with rust clip, sound and demo packs, from 2018 to the 8th edition.","_sort":{"title":"Rust Editing Contest Media"},"search-type":["project"]},"strikerproduction-editing-contest-pubg-media":{"keywords":"pubg editing contest media the first striker production video editing contest with pubg pre-rendered video clips, a contest intro and prizes for the winners.","_sort":{"title":"PUBG Editing Contest Media"},"search-type":["project"]},"strikerproduction-editing-contest-csgo-media":{"keywords":"csgo editing contest media a striker production video editing contest with cs:go pre-rendered video clips and demos, a contest intro and prizes for the winners.","_sort":{"title":"CSGO Editing Contest Media"},"search-type":["project"]},"strikerproduction-editing-contest-codmw3-media":{"keywords":"cod:mw3 editing contest media a striker production video editing contest with cod:mw3 clip packs and demos, for editors with potential and creativity.","_sort":{"title":"COD:MW3 Editing Contest Media"},"search-type":["project"]},"strikerproduction-google-site-presentation-website":{"keywords":"striker production google site presentation website striker production portfolio website built with google sites, presenting my video editing work and contests.","_sort":{"title":"Striker Production Google Site Presentation Website"},"search-type":["project"]},"strikerproduction-killfeed-generator-rust-content-generator":{"keywords":"rust killfeed generator static web tool that generates rust kill feed overlays for video editing, hosted on github pages.","_sort":{"title":"Rust KillFeed Generator"},"search-type":["project"]},"superbrain-presentation-website":{"keywords":"super brain presentation website wordpress presentation website for super brain, built in a few days on a heavily customized theme.","_sort":{"title":"Super Brain Presentation Website"},"search-type":["project"]},"tinib-online-shop":{"keywords":"tinib online shop wordpress and woocommerce website for heating, pumps, air conditioning and ventilation, with over 200 products.","_sort":{"title":"Tinib Online Shop"},"search-type":["project"]},"promotionalcampaignstndc-orbit-contest-application":{"keywords":"tndc orbit contest application wordpress campaign page for the orbit promotion, with a time limited php registration form.","_sort":{"title":"TNDC Orbit Contest Application"},"search-type":["project"]},"promotionalcampaignstndc-snikers-contest-application":{"keywords":"tndc snickers contest application wordpress campaign page for the snickers promotion, with a time limited php registration form.","_sort":{"title":"TNDC Snickers Contest Application"},"search-type":["project"]},"transportosian-media":{"keywords":"transport osian media promotional image and animated car video ads for transport osian.","_sort":{"title":"Transport Osian Media"},"search-type":["project"]},"vreaualpin-web-maintenance":{"keywords":"vreau alpin web maintenance design improvements, new features and fixes for the vreau alpin wordpress online store.","_sort":{"title":"Vreau Alpin Web Maintenance"},"search-type":["project"]},"vseconstruct-media":{"keywords":"vse construct media social media images for vse construct.","_sort":{"title":"VSE Construct Media"},"search-type":["project"]},"woodworkart-presentation-website":{"keywords":"wood work art presentation website trilingual wordpress website for a maker of solid wood furniture, carved by hand or with cnc.","_sort":{"title":"Wood Work Art Presentation Website"},"search-type":["project"]},"remodelingmv-presentation-website":{"keywords":"modern vision remodeling presentation website wordpress website for modern vision remodeling, built in elementor pro from a figma design.","_sort":{"title":"Modern Vision Remodeling Presentation Website"},"search-type":["project"]},"philadelphiarugcleaning-presentation-website":{"keywords":"philadelphia rug cleaning presentation website wordpress website for philadelphia rug cleaning, built in elementor pro from a figma design.","_sort":{"title":"Philadelphia Rug Cleaning Presentation Website"},"search-type":["project"]},"logistic-brain-presentation-website":{"keywords":"logistic brain presentation website futuristic wordpress website for logistic brain, built in elementor pro from a figma design.","_sort":{"title":"Logistic Brain Presentation Website"},"search-type":["project"]},"merkaz-nadlan-presentation-website":{"keywords":"merkaz ha-ir presentation website futuristic wordpress website for merkaz ha-ir, with a powerpoint style slider landing page.","_sort":{"title":"Merkaz Ha-Ir Presentation Website"},"search-type":["project"]},"troni-landing-page":{"keywords":"troni landing page landing page for troni, designed in figma and built with elementor pro.","_sort":{"title":"Troni Landing Page"},"search-type":["project"]},"mscardetailing-presentation-website":{"keywords":"ms car detailing presentation website presentation website for a car detailing business, designed in figma and built in wordpress with elementor pro.","_sort":{"title":"MS Car Detailing Presentation Website"},"search-type":["project"]},"gla-presentation-website":{"keywords":"gla israel presentation website presentation website for gla israel, designed in figma and built in wordpress with elementor pro and acf.","_sort":{"title":"GLA Israel Presentation Website"},"search-type":["project"]},"earldom-presentation-website":{"keywords":"earldom presentation website futuristic wordpress presentation website with a full screen, slide based landing page that works like a presentation.","_sort":{"title":"Earldom Presentation Website"},"search-type":["project"]},"sosdeepcleaning-presentation-website":{"keywords":"sos deep cleaning presentation website wordpress website for a cleaning company, remade in elementor pro in a few days based on its previous version.","_sort":{"title":"SOS Deep Cleaning Presentation Website"},"search-type":["project"]},"familyfirst-online-shop":{"keywords":"family first online shop woocommerce shop for kids camp subscriptions, with child selection on products, conditional vouchers, a group management admin page and csv exports.","_sort":{"title":"Family First Online Shop"},"search-type":["project"]},"symbol-buildcon-landing-page":{"keywords":"symbol buildcon landing page landing page for symbol buildcon, built in wordpress with elementor pro from a psd design.","_sort":{"title":"Symbol Buildcon Landing Page"},"search-type":["project"]},"ryllo-landing-page":{"keywords":"ryllo landing page landing page for ryllo, built in wordpress with elementor pro from a psd design.","_sort":{"title":"Ryllo Landing Page"},"search-type":["project"]},"maromsteelline-web-content":{"keywords":"marom steel line web content pdf product catalogs turned into categorized wordpress pages with product grids for marom steel line.","_sort":{"title":"Marom Steel Line Web Content"},"search-type":["project"]},"ypages-web-design":{"keywords":"ypages web design figma page designs translated into responsive wordpress pages for ypages.","_sort":{"title":"Ypages Web Design"},"search-type":["project"]},"edlaparis-booking-application":{"keywords":"edlaparis booking application bilingual accommodation booking website for paris, with calendars synchronized with booking.com and airbnb.","_sort":{"title":"EdlaParis Booking Application"},"search-type":["project"]},"sdb-landing-page":{"keywords":"sdb landing page landing page for sdb, built in wordpress with elementor pro from a figma design.","_sort":{"title":"SDB Landing Page"},"search-type":["project"]},"bullionhouse-online-shop":{"keywords":"bullion house online shop woocommerce shop for gold, silver and platinum coins and bars, with live api prices, price graphs and a price lock at checkout.","_sort":{"title":"Bullion House Online Shop"},"search-type":["project"]},"lironpinkhas-presentation-website":{"keywords":"liron pinkhas presentation website bilingual presentation website for liron pinkhas, built in wordpress with elementor pro from a figma design.","_sort":{"title":"Liron Pinkhas Presentation Website"},"search-type":["project"]},"colorplay-presentation-website":{"keywords":"color play presentation website presentation website in 7 languages for color play, built in wordpress with elementor pro from psd designs.","_sort":{"title":"Color Play Presentation Website"},"search-type":["project"]},"barantech-presentation-website":{"keywords":"barantech presentation website barantech presentation website rebuilt from a custom wordpress theme into elementor pro, keeping the original look.","_sort":{"title":"Barantech Presentation Website"},"search-type":["project"]},"offmarket-online-shop":{"keywords":"offmarket online shop woocommerce reseller shop where resellers share coupon links, with discounted prices shown directly on products and in the cart.","_sort":{"title":"Offmarket Online Shop"},"search-type":["project"]},"chezpepe-presentation-website":{"keywords":"chez pepe presentation website simple presentation website for chez pepe, built in wordpress with elementor pro.","_sort":{"title":"Chez Pepe Presentation Website"},"search-type":["project"]},"uppura-presentation-website":{"keywords":"uppura presentation website presentation website for uppura, built in wordpress with elementor pro from a figma design.","_sort":{"title":"Uppura Presentation Website"},"search-type":["project"]},"solveo-presentation-website":{"keywords":"solveo presentation website presentation website for solveo, built in wordpress with elementor pro from psd designs.","_sort":{"title":"Solveo Presentation Website"},"search-type":["project"]},"symbol-podcasts-presentation-website":{"keywords":"symbol podcasts presentation website wordpress website for uploading and showcasing audio podcasts, built with elementor pro from psd designs.","_sort":{"title":"Symbol Podcasts Presentation Website"},"search-type":["project"]},"ideas-rip-presentation-website":{"keywords":"ideas.rip presentation website article website redesigned in elementor pro, with a new ideas page from figma and a custom tag filter carousel.","_sort":{"title":"Ideas.rip Presentation Website"},"search-type":["project"]},"prc-cardio-optic-presentation-website":{"keywords":"prc cardio optic presentation website minimalist wordpress website for prc cardio optic, with pages built from word documents.","_sort":{"title":"PRC Cardio Optic Presentation Website"},"search-type":["project"]},"nationalrugscleaners-online-shop":{"keywords":"national rugs cleaners online shop quote to checkout system for a rug cleaning company, where a quote form leads into ordering up to 10 rugs.","_sort":{"title":"National Rugs Cleaners Online Shop"},"search-type":["project"]},"lockfinity-landing-page":{"keywords":"lockfinity landing page landing page for lockfinity, built in wordpress with elementor pro from a figma design.","_sort":{"title":"Lockfinity Landing Page"},"search-type":["project"]},"noom-web-maintenance":{"keywords":"noom web maintenance maintenance for the noom woocommerce shop, plus a custom ajax mini cart and a free shipping progress bar.","_sort":{"title":"Noom Web Maintenance"},"search-type":["project"]},"lilain-online-shop":{"keywords":"lilain online shop simple woocommerce online shop for lilain, recreated in elementor pro from a custom wordpress theme.","_sort":{"title":"Lilain Online Shop"},"search-type":["project"]},"devillajewelry-online-shop":{"keywords":"de villa jewelry online shop woocommerce jewelry shop with a buy now button, an enhanced product gallery and products imported from excel.","_sort":{"title":"De Villa Jewelry Online Shop"},"search-type":["project"]},"implantsisrael-presentation-website":{"keywords":"implants israel presentation website presentation website for implants israel, designed in figma and built in wordpress with elementor pro.","_sort":{"title":"Implants Israel Presentation Website"},"search-type":["project"]},"corfuprivatecruises-booking-application":{"keywords":"corfu private cruises booking application boat tour booking website for corfu, built with woocommerce variations, custom options and many javascript enhancements.","_sort":{"title":"Corfu Private Cruises Booking Application"},"search-type":["project"]},"polishroots-landing-page":{"keywords":"polish roots landing page landing page promoting a food and culture tour in warsaw and krakow.","_sort":{"title":"Polish Roots Landing Page"},"search-type":["project"]},"lagoafogo-landing-page":{"keywords":"lagoa do fogo landing page travel landing page for lagoa do fogo, with a footer carousel that loads the other travel websites from a custom api.","_sort":{"title":"Lagoa do Fogo Landing Page"},"search-type":["project"]},"pontadaferraria-landing-page":{"keywords":"ponta da ferraria landing page travel landing page for ponta da ferraria, with a footer carousel that loads the other travel websites from a custom api.","_sort":{"title":"Ponta da Ferraria Landing Page"},"search-type":["project"]},"lagoaempadadas-landing-page":{"keywords":"lagoa empadadas landing page travel landing page for lagoa das empadadas, with a footer carousel that loads the other travel websites from a custom api.","_sort":{"title":"Lagoa Empadadas Landing Page"},"search-type":["project"]},"hotspringssaomiguel-presentation-website":{"keywords":"hot springs sao miguel presentation website travel landing page for the hot springs of sao miguel, with a footer carousel that loads the other travel websites from a custom api.","_sort":{"title":"Hot Springs São Miguel Presentation Website"},"search-type":["project"]},"lakefurnas-presentation-website":{"keywords":"lake furnas presentation website travel landing page for lake furnas, with a footer carousel that loads the other travel websites from a custom api.","_sort":{"title":"Lake Furnas Presentation Website"},"search-type":["project"]},"dabocadoinferno-presentation-website":{"keywords":"da boca do inferno presentation website travel landing page for boca do inferno, with a footer carousel that loads the other travel websites from a custom api.","_sort":{"title":"da Boca do Inferno Presentation Website"},"search-type":["project"]},"terranostrapark-landing-page":{"keywords":"terra nostra park landing page travel landing page for terra nostra park, with a footer carousel that loads the other travel websites from a custom api.","_sort":{"title":"Terra Nostra Park Landing Page"},"search-type":["project"]},"dereh-haski-web-maintenance":{"keywords":"dereh haski web maintenance landing page for an international ski and snowboard instructor course in gudauri, georgia.","_sort":{"title":"Dereh Haski Web Maintenance"},"search-type":["project"]},"mentormarketingexperts-landing-page":{"keywords":"mentor marketing experts landing page landing page for mentor marketing experts, designed in figma and built in wordpress with elementor pro.","_sort":{"title":"Mentor Marketing Experts Landing Page"},"search-type":["project"]},"tovtavi-platform":{"keywords":"tovtavi platform custom wordpress platform where users post and exchange travel related offers, with agreed terms, private messaging, reviews and email verification.","_sort":{"title":"TovTavi Platform"},"search-type":["project"]},"betzelhaella-landing-page":{"keywords":"betzel haella landing page landing page for betzel haella, built in wordpress with elementor pro from a figma design.","_sort":{"title":"Betzel Haella Landing Page"},"search-type":["project"]},"module-ai-story-for-kids-wordpress-plugin":{"keywords":"ai story for kids wordpress plugin wordpress plugin that generates short illustrated stories for kids with ai, shown in a slider.","_sort":{"title":"AI Story For Kids WordPress Plugin"},"search-type":["project"]},"module-privacy13-tag-manager-wordpress-plugin":{"keywords":"privacy13 tag manager wordpress plugin wordpress plugin for privacy compliance, with tag exclusion, a cookie notice and consent checkboxes for forms.","_sort":{"title":"Privacy13 Tag Manager WordPress Plugin"},"search-type":["project"]},"neologic-presentation-website":{"keywords":"neologic presentation website presentation website for neologic, built in wordpress with elementor pro, with a careers section where candidates apply with their cv.","_sort":{"title":"Neologic Presentation Website"},"search-type":["project"]},"avivit-online-shop":{"keywords":"avivit online shop avivit woocommerce shop moved from a woodmart layout to elementor, with a free shipping bar and a cross sell popup.","_sort":{"title":"Avivit Online Shop"},"search-type":["project"]},"module-reviste-si-carti-wordpress-plugin":{"keywords":"magazines and books wordpress plugin wordpress plugin for publishing pdf books and magazines from the front end, with a downloadable list.","_sort":{"title":"Magazines and Books WordPress Plugin"},"search-type":["project"]},"module-sell-my-things-wordpress-plugin":{"keywords":"sell my things wordpress plugin wordpress plugin that turns a website into a multi vendor marketplace with seller subscriptions, without woocommerce.","_sort":{"title":"Sell My Things WordPress Plugin"},"search-type":["project"]},"primefixgarage-presentation-website":{"keywords":"primefix presentation website presentation website for primefix garage, designed in figma and built in wordpress with elementor pro.","_sort":{"title":"Primefix Presentation Website"},"search-type":["project"]},"reisr-presentation-website":{"keywords":"reisr presentation website real estate website for reisr, built in wordpress with elementor pro, with a partner portal for agents and brokers.","_sort":{"title":"Reisr Presentation Website"},"search-type":["project"]},"burlenpropertygroup-presentation-website":{"keywords":"burlen property group presentation website presentation website for burlen property group, designed in figma and built in wordpress with elementor pro.","_sort":{"title":"Burlen Property Group Presentation Website"},"search-type":["project"]},"orions-presentation-website":{"keywords":"orions presentation website presentation website for orions, built in wordpress with elementor pro from a design made in lovable.","_sort":{"title":"Orions Presentation Website"},"search-type":["project"]},"umbr-presentation-website":{"keywords":"umbrella presentation website presentation website for umbrella, designed in figma and built in wordpress with elementor pro.","_sort":{"title":"Umbrella Presentation Website"},"search-type":["project"]},"zozo-online-shop":{"keywords":"zozo piercing online shop woocommerce online shop for zozo piercing, designed in figma and built with elementor pro.","_sort":{"title":"Zozo Piercing Online Shop"},"search-type":["project"]},"y-stern-presentation-website":{"keywords":"y-stern presentation website y-stern website built with elementor pro, with product data extracted from documents and imported automatically.","_sort":{"title":"Y-Stern Presentation Website"},"search-type":["project"]},"kaizin-online-shop":{"keywords":"kaizin online shop website and shop for a linkedin browser extension, with accounts, purchases and subscriptions synced to the app.","_sort":{"title":"Kaizin Online Shop"},"search-type":["project"]},"module-wc-colors-product-wordpress-plugin":{"keywords":"wc product color swatches wordpress plugin woocommerce plugin that replaces color dropdowns with visual color swatches on products, shortcodes and filters.","_sort":{"title":"WC Product Color Swatches WordPress Plugin"},"search-type":["project"]},"usaconstructiongroupinc-presentation-website":{"keywords":"usac construction group presentation website seo optimized presentation website for usac construction group, built in wordpress with elementor pro from my own figma templates.","_sort":{"title":"USAC Construction Group Presentation Website"},"search-type":["project"]},"ubertek-presentation-website":{"keywords":"ubertek presentation website presentation website for ubertek, built in wordpress with elementor pro from my own figma templates.","_sort":{"title":"Ubertek Presentation Website"},"search-type":["project"]},"moda-fashion-online-shop":{"keywords":"moda fashion online shop woocommerce fashion shop for moda fashion, designed in figma and built with elementor pro.","_sort":{"title":"Moda Fashion Online Shop"},"search-type":["project"]},"bookstore-angular-online-shop":{"keywords":"bookstore online shop online bookstore app built in angular and typescript, with user and admin panels, hosted on vercel.","_sort":{"title":"BookStore Online Shop"},"search-type":["project"]},"strikerproduction-killfeed-generator-content-generator":{"keywords":"killfeed generator static web tool that generates kill feed overlays for rust, pubg, cs2 and cod mw3, ready for video editing.","_sort":{"title":"KillFeed Generator"},"search-type":["project"]},"personal-workstation-build-1":{"keywords":"personal workstation build 1 this is my productivity setup, designed for both work projects and personal pursuits. with regular updates to keep it efficient and inspiring, this workstation powers my main work and creative endeavors. i’m excited to share the tools and setup that drive my daily productivity.","_sort":{"title":"Personal Workstation Build 1"},"search-type":["workstation"]},"personal-workstation-build-0":{"keywords":"personal workstation build 0 this setup supported my productivity from 2016 to 2022 across university projects, occasional remote work tasks, and video editing as a hobby for 'striker production' projects. regular updates helped me maintain an efficient and inspiring environment for both personal and professional growth.","_sort":{"title":"Personal Workstation Build 0"},"search-type":["workstation"]},"projects":{"keywords":"projects showcase of projects i have created or i was involved, featuring designs and functionality of websites and media content.","_sort":{"title":"Projects"},"search-type":["category"]},"web-development-projects":{"keywords":"web projects showcase of websites and online shops i have created, featuring engaging designs and seamless functionality.","_sort":{"title":"Web Projects"},"search-type":["category"]},"visual-media-projects":{"keywords":"media projects collection of visually captivating projects showcasing my expertise in graphic design, photo editing, and video production.","_sort":{"title":"Media Projects"},"search-type":["category"]},"personal-and-custom-projects":{"keywords":"personal projects non-profit initiatives and personal passion projects that reflect my creative interests outside client work.","_sort":{"title":"Personal Projects"},"search-type":["category"]},"freelancing-projects":{"keywords":"freelancing projects websites, online shops and media projects i built as a freelancer for my own clients.","_sort":{"title":"Freelancing Projects"},"search-type":["category"]},"workstations":{"keywords":"personal workstations the computer setups behind my work, from the 2016 build that carried me through university, remote work and video editing to the one i use every day now: pc components, peripherals and desk accessories, with photos, specs and videos.","_sort":{"title":"Personal Workstations"},"search-type":["category"]},"personal-resumes":{"keywords":"personal resumes browse and download my resumes (cv) in english and romanian. click a preview to see the full page, or download the pdf.","_sort":{"title":"Personal Resumes"},"search-type":["category"]},"employee-experience":{"keywords":"professional experience explore my professional journey through my work experience, where i showcase a chronological record of my employment history. discover insights into my roles, responsibilities, and significant contributions at various companies, along with dates and key attributes.","_sort":{"title":"Professional Experience"},"search-type":["category"]},"education-experience":{"keywords":"education experience discover my educational journey from high school to university, including courses and diplomas attained along the way.","_sort":{"title":"Education Experience"},"search-type":["category"]},"hobby-pc-video-games":{"keywords":"hobby pc video games here you can explore my personal list of top pc video games.","_sort":{"title":"Hobby PC Video Games"},"search-type":["category"]},"social-posts":{"keywords":"social posts dive into the world of a full-stack web developer and skilled photo-video editor. explore the intersection of web development and visual storytelling on denis ionut marginas's insightful blog.","_sort":{"title":"Social Posts"},"search-type":["category"]},"video-archive":{"keywords":"video archive every video i made in one place: advertisements, showreels, video game edits and portfolio showcases. search, filter and watch them.","_sort":{"title":"Video Archive"},"search-type":["category"]}}</script>
+  </form>
+  <p class="search-status" role="status" aria-live="polite" data-search-status data-label-hint="Type at least 2 characters to search the pages, projects and categories, or turn on Show all in Filters." data-label-none="No results for “{query}”.">Type at least 2 characters to search the pages, projects and categories, or turn on Show all in Filters.</p>
+  <ul id="search-results" class="search-results" data-results="0">
+    <li class="search-result" data-item-id="home" data-type="page" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="home.html">Home</a></h2>
+    <p class="card-text search-card-text">My name is Denis Ionuț Mărginaș and I have experience as a full-stack web developer. Since 2019 I...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="about" data-type="page" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="about.html">About</a></h2>
+    <p class="card-text search-card-text">My name is Denis Ionuț Mărginaș and I have experience as a full-stack web developer. Before web d...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="contact" data-type="page" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="contact.html">Contact</a></h2>
+    <p class="card-text search-card-text">Have a project, a job offer or just a question? Reach me on WhatsApp, by email, or through the fo...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="experience" data-type="page" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="experience.html">Experience</a></h2>
+    <p class="card-text search-card-text">I have experience as a Full-Stack Web Developer on projects such as presentation websites, online...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="privacy-policy" data-type="page" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="privacy-policy.html">Privacy Policy</a></h2>
+    <p class="card-text search-card-text">Learn how we collect, use, and protect your personal data. Our Privacy Policy explains our use of...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="student-courses-bachelor-s-thesis-platform" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/student-courses-bachelor-s-thesis-platform.html">Student Courses Bachelor&#039;s Thesis Platform</a></h2>
+    <p class="card-text search-card-text">My Bachelor&#039;s thesis: a website where students upload course materials as images, which are conve...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="aatoysfurnitures-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/aatoysfurnitures-presentation-website.html">A&amp;A Toys &amp; Furniture Presentation Website</a></h2>
+    <p class="card-text search-card-text">Presentation website for A&amp;A Toys &amp; Furniture, built in WordPress with Elementor. One of the firs...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="acvaticbebeclub-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/acvaticbebeclub-presentation-website.html">Acvatic Bebe Club Presentation Website</a></h2>
+    <p class="card-text search-card-text">Bilingual WordPress website for a baby and children swimming school, with subscriptions and a blog.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="agramix-online-shop" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/agramix-online-shop.html">Agramix Online Shop</a></h2>
+    <p class="card-text search-card-text">Prestashop online shop for tools, machine parts and agricultural equipment, connected to the eMAG...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="agramix-media" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/agramix-media.html">Agramix Media</a></h2>
+    <p class="card-text search-card-text">Banners, flyers and video ads made to promote Agramix&#039;s tools, machine parts and agricultural equ...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="agromir-online-shop" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/agromir-online-shop.html">Agromir Online Shop</a></h2>
+    <p class="card-text search-card-text">Prestashop online shop for agricultural tools and tractor tires, with auto-filled request forms,...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="agromir-media" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/agromir-media.html">Agromir Media</a></h2>
+    <p class="card-text search-card-text">Product banners, social media images, video ads and a 3D tire animation made in Blender to promot...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="agromir-sh-online-shop" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/agromir-sh-online-shop.html">Agromir SH Online Shop</a></h2>
+    <p class="card-text search-card-text">Prestashop online shop for second hand tires and industrial equipment, working as a catalog with...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="amorino-online-shop" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/amorino-online-shop.html">Amorino Online Shop</a></h2>
+    <p class="card-text search-card-text">Prestashop online shop selling dresses for girls, with card payments through PayU.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="augustinnailtrainer-media" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/augustinnailtrainer-media.html">Augustin Nail Trainer Media</a></h2>
+    <p class="card-text search-card-text">Nail art photo editing for Augustin Nail Trainer, a nail technician trainer.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="axacompany-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/axacompany-presentation-website.html">AXA Company Presentation Website</a></h2>
+    <p class="card-text search-card-text">Minimalist presentation website for AXA Company, built in WordPress with Elementor.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="boneamed-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/boneamed-presentation-website.html">Bonea Med Presentation Website</a></h2>
+    <p class="card-text search-card-text">WordPress website for a medical clinic, with online appointment booking for specific doctors.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="brbhome-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/brbhome-presentation-website.html">BRB Home Presentation Website</a></h2>
+    <p class="card-text search-card-text">WordPress presentation website promoting furniture services, one of the first websites I built.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="brisascents-online-shop" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/brisascents-online-shop.html">Brisa Scents Online Shop</a></h2>
+    <p class="card-text search-card-text">WordPress and WooCommerce online shop for perfumes and room sprays.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="busvip-media" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/busvip-media.html">Bus-Vip Media</a></h2>
+    <p class="card-text search-card-text">Social media images and animated video ads for Bus-Vip, a transport company.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="cadredidactice-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/cadredidactice-presentation-website.html">Centrul de Resurse Educationale Presentation Website</a></h2>
+    <p class="card-text search-card-text">WordPress platform where teachers submit magazines and books as PDF and sign up for educational p...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="cafeagano-online-shop" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/cafeagano-online-shop.html">Cafea Gano Online Shop</a></h2>
+    <p class="card-text search-card-text">WordPress and WooCommerce online shop for coffee and natural supplements.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="carconcordia-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/carconcordia-presentation-website.html">Concordia CAR Presentation Website</a></h2>
+    <p class="card-text search-card-text">Presentation website for Concordia CAR, built in WordPress with GoodLayers and Slider Revolution.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="casadarius-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/casadarius-presentation-website.html">Casa Darius Presentation Website</a></h2>
+    <p class="card-text search-card-text">WordPress presentation website for the Casa Darius furniture stores.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="casadarius-online-shop" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/casadarius-online-shop.html">Casa Darius Online Shop</a></h2>
+    <p class="card-text search-card-text">Prestashop online shop for furniture with MobilPay card payments, product pages and ongoing maint...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="casadarius-media" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/casadarius-media.html">Casa Darius Media</a></h2>
+    <p class="card-text search-card-text">Edited product photos, banners and video ads made to promote Casa Darius furniture.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="cekan-web-design" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/cekan-web-design.html">Cekan Web Design</a></h2>
+    <p class="card-text search-card-text">Case Study post template for cekan.ca, built from a Figma design with HTML and SCSS.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="ceramicevo-online-shop" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/ceramicevo-online-shop.html">Ceramic &amp; Stone Evolutione Online Shop</a></h2>
+    <p class="card-text search-card-text">Minimalist Prestashop catalog shop for ceramics and stone, with phone and request form contact bu...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="copiatoarealbaiulia-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/copiatoarealbaiulia-presentation-website.html">Copiatoare Alba Iulia Presentation Website</a></h2>
+    <p class="card-text search-card-text">Minimalist WordPress presentation website for Copiatoare Alba Iulia.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="covoarealex-online-shop" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/covoarealex-online-shop.html">Covoare Alex Online Shop</a></h2>
+    <p class="card-text search-card-text">Prestashop online shop for carpets, with card payments through MobilPay.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="dabo-sm-bm-media" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/dabo-sm-bm-media.html">Dabo - SM &amp; BM Media</a></h2>
+    <p class="card-text search-card-text">Promotional media for Dabo Satu Mare and Dabo Baia Mare during the 2020 pandemic.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="denismarginas-google-site-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/denismarginas-google-site-presentation-website.html">Denis Marginas Google Site Presentation Website</a></h2>
+    <p class="card-text search-card-text">Personal portfolio website built with Google Sites, presenting my projects with descriptions, ima...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="denismarginas-media" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/denismarginas-media.html">Denis Marginas Media</a></h2>
+    <p class="card-text search-card-text">My personal media work: banners, logos and workstation photos, plus videos like my portfolio show...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="denismarginas-github-pages-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/denismarginas-github-pages-presentation-website.html">Denis Marginas GitHub Pages Presentation Website</a></h2>
+    <p class="card-text search-card-text">My SEO optimized portfolio on GitHub Pages, with bulk rendering of pages and projects and a dark...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="dsautocenter-media" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/dsautocenter-media.html">DS Auto Center Media</a></h2>
+    <p class="card-text search-card-text">Social media banners and a company presentation video for DS Auto Center.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="freymobdesign-online-shop" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/freymobdesign-online-shop.html">FreyMob Design Online Shop</a></h2>
+    <p class="card-text search-card-text">Prestashop furniture catalog shop in 3 languages and 2 currencies, with phone and quote request b...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="gamadametal-media" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/gamadametal-media.html">Gamada Metal Media</a></h2>
+    <p class="card-text search-card-text">Social media images for Gamada Metal.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="hartkeepyouthaton-media" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/hartkeepyouthaton-media.html">HART Media</a></h2>
+    <p class="card-text search-card-text">Promotional images and a short video for HART, Keep your hat on.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="ilnicelectric-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/ilnicelectric-presentation-website.html">Ilnic Electric Presentation Website</a></h2>
+    <p class="card-text search-card-text">WordPress presentation website for Ilnic Electric, with a custom canvas form where users arrange...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="ambalajelavplast-online-shop" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/ambalajelavplast-online-shop.html">Ambalaje Lavplast Online Shop</a></h2>
+    <p class="card-text search-card-text">Prestashop online shop for packaging products, with card payments through MobilPay.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="lavmag-online-shop" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/lavmag-online-shop.html">Lavmag Online Shop</a></h2>
+    <p class="card-text search-card-text">Prestashop online shop with over 4000 products, kept in sync with another store through custom PH...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="marasafety-online-shop" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/marasafety-online-shop.html">Mara Safety Online Shop</a></h2>
+    <p class="card-text search-card-text">Minimalist Prestashop online shop for protective equipment, one of the first websites of my career.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="masiniinratebaiamare-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/masiniinratebaiamare-presentation-website.html">Masini in Rate Baia Mare Presentation Website</a></h2>
+    <p class="card-text search-card-text">WordPress catalog website for car sales in installments, where visitors message the seller from e...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="medicalortovit-web-content" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/medicalortovit-web-content.html">Medical Ortovit Web Content</a></h2>
+    <p class="card-text search-card-text">Product section for the Medical Ortovit WordPress website, with over 200 connected pages for medi...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="mewi-web-maintenance" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/mewi-web-maintenance.html">Mewi Web Maintenance</a></h2>
+    <p class="card-text search-card-text">Maintenance, page redesigns, a live search and HTML newsletter templates for the Mewi WordPress w...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="mobilasimexplus-online-shop" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/mobilasimexplus-online-shop.html">Mobila Simex Plus Online Shop</a></h2>
+    <p class="card-text search-card-text">Minimalist Prestashop online shop for furniture sold in sets or separately, plus promotional images.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="mycreativedesign-media" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/mycreativedesign-media.html">My Creative Design Media</a></h2>
+    <p class="card-text search-card-text">Promotional images for My Creative Design.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="netexromania-web-maintenance" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/netexromania-web-maintenance.html">Netex Romania Web Maintenance</a></h2>
+    <p class="card-text search-card-text">Maintenance of the Netex Romania WordPress website: back end fixes, theme code changes, plugin up...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="petri-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/petri-presentation-website.html">Petri Presentation Website</a></h2>
+    <p class="card-text search-card-text">Custom WordPress theme for Petri, built in a team from a Figma design with Gutenberg blocks.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="piasoftproduct-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/piasoftproduct-presentation-website.html">Pia Soft Product Presentation Website</a></h2>
+    <p class="card-text search-card-text">WordPress presentation website for Pia Soft Product, my first employer, with SEO work and ongoing...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="piasoftproduct-media" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/piasoftproduct-media.html">Pia Soft Product Media</a></h2>
+    <p class="card-text search-card-text">Logo redesign, promotional photos and a video ad made for Pia Soft Product, my first employer.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="prismanord-online-shop" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/prismanord-online-shop.html">Prisma Nord Online Shop</a></h2>
+    <p class="card-text search-card-text">Prestashop online shop with over 150 roofing products, plus promotional images made for the company.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="promotiimars-contest-application" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/promotiimars-contest-application.html">Promotii Mars Contest Application</a></h2>
+    <p class="card-text search-card-text">WordPress website for Mars contests and promotions, with over 20 custom PHP registration forms.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="purstyle-web-maintenance" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/purstyle-web-maintenance.html">Pur Style Web Maintenance</a></h2>
+    <p class="card-text search-card-text">Page reworks, fixes and new booking and contact features for the bilingual Pur Style WordPress we...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="reifendirekt-web-design" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/reifendirekt-web-design.html">Reifen Direkt Web Design</a></h2>
+    <p class="card-text search-card-text">Static HTML pages for the Reifen Direkt redesign, built from Zeplin designs with SCSS, Bootstrap...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="resurseeducationale-online-shop" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/resurseeducationale-online-shop.html">Resurse Educationale Online Shop</a></h2>
+    <p class="card-text search-card-text">WordPress platform for school projects, contests, courses and a shop, with a paid article upload...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="revelnail-avadores-online-shop" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/revelnail-avadores-online-shop.html">Revel Nail (Avadores) Online Shop</a></h2>
+    <p class="card-text search-card-text">Prestashop online shop for Revel Nail products in Romania, with content pages and SEO work.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="revelnail-avadores-media" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/revelnail-avadores-media.html">Revel Nail (Avadores) Media</a></h2>
+    <p class="card-text search-card-text">Advertising banners, seasonal campaign visuals and video ads made for Revel Nail products in Roma...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="revistaeducatie-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/revistaeducatie-presentation-website.html">Centrul de Excelenta Presentation Website</a></h2>
+    <p class="card-text search-card-text">WordPress platform where teachers submit magazines and books as PDF and sign up for educational p...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="roundselfie-media" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/roundselfie-media.html">Round Selfie Media</a></h2>
+    <p class="card-text search-card-text">Logo and posters for Round Selfie.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="royalcompass-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/royalcompass-presentation-website.html">Royal Compass Presentation Website</a></h2>
+    <p class="card-text search-card-text">WordPress presentation website for a company promoting outdoor sports.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="spalatorieautomatabaiamare-media" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/spalatorieautomatabaiamare-media.html">Spalatorie Automata Baia Mare Media</a></h2>
+    <p class="card-text search-card-text">Social media images for Spalatorie Automata Baia Mare.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="specialevents-media" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/specialevents-media.html">Special Events Media</a></h2>
+    <p class="card-text search-card-text">Wedding invitations, menus and table cards designed for special events.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="speed-sm-media" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/speed-sm-media.html">Speed Satu Mare Media</a></h2>
+    <p class="card-text search-card-text">Social media images for Speed Satu Mare.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="strikerproduction-media" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/strikerproduction-media.html">Striker Production Media</a></h2>
+    <p class="card-text search-card-text">My Striker Production media work since 2016: video game edits, 3D Blender renders and video editi...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="strikerproduction-demand-media" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/strikerproduction-demand-media.html">Striker Production On Demand Media</a></h2>
+    <p class="card-text search-card-text">Video editing on demand for Striker Production customers around the world: intros, logo animation...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="strikerproduction-editing-contest-video-media" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/strikerproduction-editing-contest-video-media.html">Video Editing Contest Media</a></h2>
+    <p class="card-text search-card-text">The first Striker Production video editing contest, hosted in 2016 to discover and reward top edi...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="strikerproduction-editing-contest-rust-media" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/strikerproduction-editing-contest-rust-media.html">Rust Editing Contest Media</a></h2>
+    <p class="card-text search-card-text">A series of Rust video editing contests for advanced and new editors, with Rust clip, sound and d...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="strikerproduction-editing-contest-pubg-media" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/strikerproduction-editing-contest-pubg-media.html">PUBG Editing Contest Media</a></h2>
+    <p class="card-text search-card-text">The first Striker Production video editing contest with PUBG pre-rendered video clips, a contest...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="strikerproduction-editing-contest-csgo-media" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/strikerproduction-editing-contest-csgo-media.html">CSGO Editing Contest Media</a></h2>
+    <p class="card-text search-card-text">A Striker Production video editing contest with CS:GO pre-rendered video clips and demos, a conte...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="strikerproduction-editing-contest-codmw3-media" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/strikerproduction-editing-contest-codmw3-media.html">COD:MW3 Editing Contest Media</a></h2>
+    <p class="card-text search-card-text">A Striker Production video editing contest with COD:MW3 clip packs and demos, for editors with po...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="strikerproduction-google-site-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/strikerproduction-google-site-presentation-website.html">Striker Production Google Site Presentation Website</a></h2>
+    <p class="card-text search-card-text">Striker Production portfolio website built with Google Sites, presenting my video editing work an...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="strikerproduction-killfeed-generator-rust-content-generator" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/strikerproduction-killfeed-generator-rust-content-generator.html">Rust KillFeed Generator</a></h2>
+    <p class="card-text search-card-text">Static web tool that generates Rust kill feed overlays for video editing, hosted on GitHub Pages.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="superbrain-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/superbrain-presentation-website.html">Super Brain Presentation Website</a></h2>
+    <p class="card-text search-card-text">WordPress presentation website for Super Brain, built in a few days on a heavily customized theme.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="tinib-online-shop" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/tinib-online-shop.html">Tinib Online Shop</a></h2>
+    <p class="card-text search-card-text">WordPress and WooCommerce website for heating, pumps, air conditioning and ventilation, with over...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="promotionalcampaignstndc-orbit-contest-application" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/promotionalcampaignstndc-orbit-contest-application.html">TNDC Orbit Contest Application</a></h2>
+    <p class="card-text search-card-text">WordPress campaign page for the Orbit promotion, with a time limited PHP registration form.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="promotionalcampaignstndc-snikers-contest-application" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/promotionalcampaignstndc-snikers-contest-application.html">TNDC Snickers Contest Application</a></h2>
+    <p class="card-text search-card-text">WordPress campaign page for the Snickers promotion, with a time limited PHP registration form.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="transportosian-media" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/transportosian-media.html">Transport Osian Media</a></h2>
+    <p class="card-text search-card-text">Promotional image and animated car video ads for Transport Osian.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="vreaualpin-web-maintenance" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/vreaualpin-web-maintenance.html">Vreau Alpin Web Maintenance</a></h2>
+    <p class="card-text search-card-text">Design improvements, new features and fixes for the Vreau Alpin WordPress online store.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="vseconstruct-media" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/vseconstruct-media.html">VSE Construct Media</a></h2>
+    <p class="card-text search-card-text">Social media images for VSE Construct.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="woodworkart-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/woodworkart-presentation-website.html">Wood Work Art Presentation Website</a></h2>
+    <p class="card-text search-card-text">Trilingual WordPress website for a maker of solid wood furniture, carved by hand or with CNC.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="remodelingmv-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/remodelingmv-presentation-website.html">Modern Vision Remodeling Presentation Website</a></h2>
+    <p class="card-text search-card-text">WordPress website for Modern Vision Remodeling, built in Elementor Pro from a Figma design.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="philadelphiarugcleaning-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/philadelphiarugcleaning-presentation-website.html">Philadelphia Rug Cleaning Presentation Website</a></h2>
+    <p class="card-text search-card-text">WordPress website for Philadelphia Rug Cleaning, built in Elementor Pro from a Figma design.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="logistic-brain-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/logistic-brain-presentation-website.html">Logistic Brain Presentation Website</a></h2>
+    <p class="card-text search-card-text">Futuristic WordPress website for Logistic Brain, built in Elementor Pro from a Figma design.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="merkaz-nadlan-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/merkaz-nadlan-presentation-website.html">Merkaz Ha-Ir Presentation Website</a></h2>
+    <p class="card-text search-card-text">Futuristic WordPress website for Merkaz Ha-Ir, with a PowerPoint style slider landing page.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="troni-landing-page" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/troni-landing-page.html">Troni Landing Page</a></h2>
+    <p class="card-text search-card-text">Landing page for Troni, designed in Figma and built with Elementor Pro.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="mscardetailing-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/mscardetailing-presentation-website.html">MS Car Detailing Presentation Website</a></h2>
+    <p class="card-text search-card-text">Presentation website for a car detailing business, designed in Figma and built in WordPress with...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="gla-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/gla-presentation-website.html">GLA Israel Presentation Website</a></h2>
+    <p class="card-text search-card-text">Presentation website for GLA Israel, designed in Figma and built in WordPress with Elementor Pro...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="earldom-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/earldom-presentation-website.html">Earldom Presentation Website</a></h2>
+    <p class="card-text search-card-text">Futuristic WordPress presentation website with a full screen, slide based landing page that works...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="sosdeepcleaning-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/sosdeepcleaning-presentation-website.html">SOS Deep Cleaning Presentation Website</a></h2>
+    <p class="card-text search-card-text">WordPress website for a cleaning company, remade in Elementor Pro in a few days based on its prev...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="familyfirst-online-shop" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/familyfirst-online-shop.html">Family First Online Shop</a></h2>
+    <p class="card-text search-card-text">WooCommerce shop for kids camp subscriptions, with child selection on products, conditional vouch...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="symbol-buildcon-landing-page" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/symbol-buildcon-landing-page.html">Symbol Buildcon Landing Page</a></h2>
+    <p class="card-text search-card-text">Landing page for Symbol Buildcon, built in WordPress with Elementor Pro from a PSD design.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="ryllo-landing-page" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/ryllo-landing-page.html">Ryllo Landing Page</a></h2>
+    <p class="card-text search-card-text">Landing page for Ryllo, built in WordPress with Elementor Pro from a PSD design.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="maromsteelline-web-content" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/maromsteelline-web-content.html">Marom Steel Line Web Content</a></h2>
+    <p class="card-text search-card-text">PDF product catalogs turned into categorized WordPress pages with product grids for Marom Steel L...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="ypages-web-design" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/ypages-web-design.html">Ypages Web Design</a></h2>
+    <p class="card-text search-card-text">Figma page designs translated into responsive WordPress pages for Ypages.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="edlaparis-booking-application" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/edlaparis-booking-application.html">EdlaParis Booking Application</a></h2>
+    <p class="card-text search-card-text">Bilingual accommodation booking website for Paris, with calendars synchronized with Booking.com a...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="sdb-landing-page" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/sdb-landing-page.html">SDB Landing Page</a></h2>
+    <p class="card-text search-card-text">Landing page for SDB, built in WordPress with Elementor Pro from a Figma design.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="bullionhouse-online-shop" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/bullionhouse-online-shop.html">Bullion House Online Shop</a></h2>
+    <p class="card-text search-card-text">WooCommerce shop for gold, silver and platinum coins and bars, with live API prices, price graphs...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="lironpinkhas-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/lironpinkhas-presentation-website.html">Liron Pinkhas Presentation Website</a></h2>
+    <p class="card-text search-card-text">Bilingual presentation website for Liron Pinkhas, built in WordPress with Elementor Pro from a Fi...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="colorplay-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/colorplay-presentation-website.html">Color Play Presentation Website</a></h2>
+    <p class="card-text search-card-text">Presentation website in 7 languages for Color Play, built in WordPress with Elementor Pro from PS...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="barantech-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/barantech-presentation-website.html">Barantech Presentation Website</a></h2>
+    <p class="card-text search-card-text">Barantech presentation website rebuilt from a custom WordPress theme into Elementor Pro, keeping...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="offmarket-online-shop" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/offmarket-online-shop.html">Offmarket Online Shop</a></h2>
+    <p class="card-text search-card-text">WooCommerce reseller shop where resellers share coupon links, with discounted prices shown direct...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="chezpepe-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/chezpepe-presentation-website.html">Chez Pepe Presentation Website</a></h2>
+    <p class="card-text search-card-text">Simple presentation website for Chez Pepe, built in WordPress with Elementor Pro.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="uppura-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/uppura-presentation-website.html">Uppura Presentation Website</a></h2>
+    <p class="card-text search-card-text">Presentation website for Uppura, built in WordPress with Elementor Pro from a Figma design.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="solveo-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/solveo-presentation-website.html">Solveo Presentation Website</a></h2>
+    <p class="card-text search-card-text">Presentation website for Solveo, built in WordPress with Elementor Pro from PSD designs.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="symbol-podcasts-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/symbol-podcasts-presentation-website.html">Symbol Podcasts Presentation Website</a></h2>
+    <p class="card-text search-card-text">WordPress website for uploading and showcasing audio podcasts, built with Elementor Pro from PSD...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="ideas-rip-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/ideas-rip-presentation-website.html">Ideas.rip Presentation Website</a></h2>
+    <p class="card-text search-card-text">Article website redesigned in Elementor Pro, with a new Ideas page from Figma and a custom tag fi...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="prc-cardio-optic-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/prc-cardio-optic-presentation-website.html">PRC Cardio Optic Presentation Website</a></h2>
+    <p class="card-text search-card-text">Minimalist WordPress website for PRC Cardio Optic, with pages built from Word documents.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="nationalrugscleaners-online-shop" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/nationalrugscleaners-online-shop.html">National Rugs Cleaners Online Shop</a></h2>
+    <p class="card-text search-card-text">Quote to checkout system for a rug cleaning company, where a quote form leads into ordering up to...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="lockfinity-landing-page" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/lockfinity-landing-page.html">Lockfinity Landing Page</a></h2>
+    <p class="card-text search-card-text">Landing page for Lockfinity, built in WordPress with Elementor Pro from a Figma design.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="noom-web-maintenance" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/noom-web-maintenance.html">Noom Web Maintenance</a></h2>
+    <p class="card-text search-card-text">Maintenance for the Noom WooCommerce shop, plus a custom AJAX mini cart and a free shipping progr...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="lilain-online-shop" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/lilain-online-shop.html">Lilain Online Shop</a></h2>
+    <p class="card-text search-card-text">Simple WooCommerce online shop for Lilain, recreated in Elementor Pro from a custom WordPress theme.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="devillajewelry-online-shop" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/devillajewelry-online-shop.html">De Villa Jewelry Online Shop</a></h2>
+    <p class="card-text search-card-text">WooCommerce jewelry shop with a Buy Now button, an enhanced product gallery and products imported...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="implantsisrael-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/implantsisrael-presentation-website.html">Implants Israel Presentation Website</a></h2>
+    <p class="card-text search-card-text">Presentation website for Implants Israel, designed in Figma and built in WordPress with Elementor...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="corfuprivatecruises-booking-application" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/corfuprivatecruises-booking-application.html">Corfu Private Cruises Booking Application</a></h2>
+    <p class="card-text search-card-text">Boat tour booking website for Corfu, built with WooCommerce variations, custom options and many J...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="polishroots-landing-page" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/polishroots-landing-page.html">Polish Roots Landing Page</a></h2>
+    <p class="card-text search-card-text">Landing page promoting a food and culture tour in Warsaw and Krakow.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="lagoafogo-landing-page" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/lagoafogo-landing-page.html">Lagoa do Fogo Landing Page</a></h2>
+    <p class="card-text search-card-text">Travel landing page for Lagoa do Fogo, with a footer carousel that loads the other travel website...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="pontadaferraria-landing-page" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/pontadaferraria-landing-page.html">Ponta da Ferraria Landing Page</a></h2>
+    <p class="card-text search-card-text">Travel landing page for Ponta da Ferraria, with a footer carousel that loads the other travel web...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="lagoaempadadas-landing-page" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/lagoaempadadas-landing-page.html">Lagoa Empadadas Landing Page</a></h2>
+    <p class="card-text search-card-text">Travel landing page for Lagoa das Empadadas, with a footer carousel that loads the other travel w...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="hotspringssaomiguel-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/hotspringssaomiguel-presentation-website.html">Hot Springs São Miguel Presentation Website</a></h2>
+    <p class="card-text search-card-text">Travel landing page for the hot springs of São Miguel, with a footer carousel that loads the othe...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="lakefurnas-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/lakefurnas-presentation-website.html">Lake Furnas Presentation Website</a></h2>
+    <p class="card-text search-card-text">Travel landing page for Lake Furnas, with a footer carousel that loads the other travel websites...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="dabocadoinferno-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/dabocadoinferno-presentation-website.html">da Boca do Inferno Presentation Website</a></h2>
+    <p class="card-text search-card-text">Travel landing page for Boca do Inferno, with a footer carousel that loads the other travel websi...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="terranostrapark-landing-page" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/terranostrapark-landing-page.html">Terra Nostra Park Landing Page</a></h2>
+    <p class="card-text search-card-text">Travel landing page for Terra Nostra Park, with a footer carousel that loads the other travel web...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="dereh-haski-web-maintenance" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/dereh-haski-web-maintenance.html">Dereh Haski Web Maintenance</a></h2>
+    <p class="card-text search-card-text">Landing page for an international ski and snowboard instructor course in Gudauri, Georgia.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="mentormarketingexperts-landing-page" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/mentormarketingexperts-landing-page.html">Mentor Marketing Experts Landing Page</a></h2>
+    <p class="card-text search-card-text">Landing page for Mentor Marketing Experts, designed in Figma and built in WordPress with Elemento...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="tovtavi-platform" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/tovtavi-platform.html">TovTavi Platform</a></h2>
+    <p class="card-text search-card-text">Custom WordPress platform where users post and exchange travel related offers, with agreed terms,...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="betzelhaella-landing-page" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/betzelhaella-landing-page.html">Betzel Haella Landing Page</a></h2>
+    <p class="card-text search-card-text">Landing page for Betzel Haella, built in WordPress with Elementor Pro from a Figma design.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="module-ai-story-for-kids-wordpress-plugin" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/module-ai-story-for-kids-wordpress-plugin.html">AI Story For Kids WordPress Plugin</a></h2>
+    <p class="card-text search-card-text">WordPress plugin that generates short illustrated stories for kids with AI, shown in a slider.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="module-privacy13-tag-manager-wordpress-plugin" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/module-privacy13-tag-manager-wordpress-plugin.html">Privacy13 Tag Manager WordPress Plugin</a></h2>
+    <p class="card-text search-card-text">WordPress plugin for privacy compliance, with tag exclusion, a cookie notice and consent checkbox...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="neologic-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/neologic-presentation-website.html">Neologic Presentation Website</a></h2>
+    <p class="card-text search-card-text">Presentation website for Neologic, built in WordPress with Elementor Pro, with a careers section...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="avivit-online-shop" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/avivit-online-shop.html">Avivit Online Shop</a></h2>
+    <p class="card-text search-card-text">Avivit WooCommerce shop moved from a WoodMart layout to Elementor, with a free shipping bar and a...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="module-reviste-si-carti-wordpress-plugin" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/module-reviste-si-carti-wordpress-plugin.html">Magazines and Books WordPress Plugin</a></h2>
+    <p class="card-text search-card-text">WordPress plugin for publishing PDF books and magazines from the front end, with a downloadable l...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="module-sell-my-things-wordpress-plugin" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/module-sell-my-things-wordpress-plugin.html">Sell My Things WordPress Plugin</a></h2>
+    <p class="card-text search-card-text">WordPress plugin that turns a website into a multi vendor marketplace with seller subscriptions,...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="primefixgarage-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/primefixgarage-presentation-website.html">Primefix Presentation Website</a></h2>
+    <p class="card-text search-card-text">Presentation website for Primefix garage, designed in Figma and built in WordPress with Elementor...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="reisr-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/reisr-presentation-website.html">Reisr Presentation Website</a></h2>
+    <p class="card-text search-card-text">Real estate website for Reisr, built in WordPress with Elementor Pro, with a partner portal for a...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="burlenpropertygroup-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/burlenpropertygroup-presentation-website.html">Burlen Property Group Presentation Website</a></h2>
+    <p class="card-text search-card-text">Presentation website for Burlen Property Group, designed in Figma and built in WordPress with Ele...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="orions-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/orions-presentation-website.html">Orions Presentation Website</a></h2>
+    <p class="card-text search-card-text">Presentation website for Orions, built in WordPress with Elementor Pro from a design made in Lova...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="umbr-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/umbr-presentation-website.html">Umbrella Presentation Website</a></h2>
+    <p class="card-text search-card-text">Presentation website for Umbrella, designed in Figma and built in WordPress with Elementor Pro.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="zozo-online-shop" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/zozo-online-shop.html">Zozo Piercing Online Shop</a></h2>
+    <p class="card-text search-card-text">WooCommerce online shop for Zozo Piercing, designed in Figma and built with Elementor Pro.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="y-stern-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/y-stern-presentation-website.html">Y-Stern Presentation Website</a></h2>
+    <p class="card-text search-card-text">Y-Stern website built with Elementor Pro, with product data extracted from documents and imported...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="kaizin-online-shop" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/kaizin-online-shop.html">Kaizin Online Shop</a></h2>
+    <p class="card-text search-card-text">Website and shop for a LinkedIn browser extension, with accounts, purchases and subscriptions syn...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="module-wc-colors-product-wordpress-plugin" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/module-wc-colors-product-wordpress-plugin.html">WC Product Color Swatches WordPress Plugin</a></h2>
+    <p class="card-text search-card-text">WooCommerce plugin that replaces color dropdowns with visual color swatches on products, shortcod...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="usaconstructiongroupinc-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/usaconstructiongroupinc-presentation-website.html">USAC Construction Group Presentation Website</a></h2>
+    <p class="card-text search-card-text">SEO optimized presentation website for USAC Construction Group, built in WordPress with Elementor...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="ubertek-presentation-website" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/ubertek-presentation-website.html">Ubertek Presentation Website</a></h2>
+    <p class="card-text search-card-text">Presentation website for Ubertek, built in WordPress with Elementor Pro from my own Figma templates.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="moda-fashion-online-shop" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/moda-fashion-online-shop.html">Moda Fashion Online Shop</a></h2>
+    <p class="card-text search-card-text">WooCommerce fashion shop for Moda Fashion, designed in Figma and built with Elementor Pro.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="bookstore-angular-online-shop" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/bookstore-angular-online-shop.html">BookStore Online Shop</a></h2>
+    <p class="card-text search-card-text">Online bookstore app built in Angular and TypeScript, with user and admin panels, hosted on Vercel.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="strikerproduction-killfeed-generator-content-generator" data-type="project" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="project/strikerproduction-killfeed-generator-content-generator.html">KillFeed Generator</a></h2>
+    <p class="card-text search-card-text">Static web tool that generates kill feed overlays for RUST, PUBG, CS2 and COD MW3, ready for vide...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="personal-workstation-build-1" data-type="workstation" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="workstation/personal-workstation-build-1.html">Personal Workstation Build 1</a></h2>
+    <p class="card-text search-card-text">This is my productivity setup, designed for both work projects and personal pursuits. With regula...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="personal-workstation-build-0" data-type="workstation" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="workstation/personal-workstation-build-0.html">Personal Workstation Build 0</a></h2>
+    <p class="card-text search-card-text">This setup supported my productivity from 2016 to 2022 across university projects, occasional rem...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="projects" data-type="category" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="category/projects.html">Projects</a></h2>
+    <p class="card-text search-card-text">Showcase of projects I have created or I was involved, featuring designs and functionality of web...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="web-development-projects" data-type="category" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="category/web-development-projects.html">Web Projects</a></h2>
+    <p class="card-text search-card-text">Showcase of websites and online shops I have created, featuring engaging designs and seamless fun...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="visual-media-projects" data-type="category" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="category/visual-media-projects.html">Media Projects</a></h2>
+    <p class="card-text search-card-text">Collection of visually captivating projects showcasing my expertise in graphic design, photo edit...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="personal-and-custom-projects" data-type="category" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="category/personal-and-custom-projects.html">Personal Projects</a></h2>
+    <p class="card-text search-card-text">Non-profit initiatives and personal passion projects that reflect my creative interests outside c...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="freelancing-projects" data-type="category" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="category/freelancing-projects.html">Freelancing Projects</a></h2>
+    <p class="card-text search-card-text">Websites, online shops and media projects I built as a freelancer for my own clients.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="workstations" data-type="category" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="category/workstations.html">Personal Workstations</a></h2>
+    <p class="card-text search-card-text">The computer setups behind my work, from the 2016 build that carried me through university, remot...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="personal-resumes" data-type="category" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="category/personal-resumes.html">Personal Resumes</a></h2>
+    <p class="card-text search-card-text">Browse and download my resumes (CV) in English and Romanian. Click a preview to see the full page...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="employee-experience" data-type="category" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="category/employee-experience.html">Professional Experience</a></h2>
+    <p class="card-text search-card-text">Explore my professional journey through my work experience, where I showcase a chronological reco...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="education-experience" data-type="category" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="category/education-experience.html">Education Experience</a></h2>
+    <p class="card-text search-card-text">Discover my educational journey from high school to university, including courses and diplomas at...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="hobby-pc-video-games" data-type="category" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="category/hobby-pc-video-games.html">Hobby PC Video Games</a></h2>
+    <p class="card-text search-card-text">Here you can explore my personal list of top pc video games.</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="social-posts" data-type="category" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="category/social-posts.html">Social Posts</a></h2>
+    <p class="card-text search-card-text">Dive into the world of a full-stack web developer and skilled photo-video editor. Explore the int...</p>
+  </article>
+</li>
+<li class="search-result" data-item-id="video-archive" data-type="category" hidden>
+  <article class="card search-card">
+    <h2 class="card-title search-card-title"><a href="category/video-archive.html">Video Archive</a></h2>
+    <p class="card-text search-card-text">Every video I made in one place: advertisements, showreels, video game edits and portfolio showca...</p>
+  </article>
+</li>
+
+  </ul>
+</div>
+
+  </container>
+</section>
+</main>
+    <footer>
+  <container>
+    <div class="footer-columns"><div class="footer-column"><div class="link-list">
+  <h3 class="link-list-title"><a class="link-list-title-link" href="contact.html">Contact Data</a></h3>
+  <ul class="link-list-items">
+    <li><a class="link-list-link" href="category/personal-resumes.html#cv-3-english"><svg type="fill" width="384" height="486" viewBox="0 0 384 486" class="link-list-icon"> <path fill-rule="evenodd" clip-rule="evenodd" d="M191.5 0.199991C193.7 0.0999908 199.1 0.699991 203.5 1.49999C208.7 2.39999 214.5 4.39999 220 7.09999C226.6 10.4 230.3 13.1 236.6 19.4C242.6 25.4 245.7 29.5 252.5 43.1L384 43V427H0V43H131.5L135.4 35.2C138.3 29.6 141.6 25.3 147.4 19.4C153.9 12.9 157.2 10.5 164 7.19999C168.7 4.99999 175 2.69999 178 2.09999C181 1.49999 184.4 0.799991 185.5 0.599991C186.6 0.399991 189.3 0.199991 191.5 0.199991ZM177.7 48.8C176.1 50.3 174 53.2 172.9 55.3C171.8 57.5 171 61.1 171 64C171 66.8 171.7 70.7 172.6 72.8C173.4 74.8 175.1 77.6 176.3 78.8C177.5 80.1 180.3 82.1 182.5 83.3C185.1 84.7 188.4 85.4 192 85.4C196 85.4 198.7 84.8 202 83C204.4 81.6 207.8 78.5 209.5 76.2C211.9 72.7 212.6 70.5 212.9 65.7C213.2 60.9 212.8 58.6 211.2 55.5C210.1 53.3 207.9 50.3 206.3 48.8C204.8 47.3 201.8 45.4 199.7 44.6C197.7 43.7 194.1 43 191.7 43C189.4 43.1 185.9 43.8 184 44.6C182.1 45.4 179.2 47.3 177.7 48.8ZM171 155C168.5 156.3 164.2 159.6 161.5 162.4C158.7 165.2 155.2 170.1 153.7 173.2C152.2 176.4 150.5 181.8 149.9 185.2C149.1 189.8 149.1 193.3 149.9 198.5C150.6 202.3 152.4 208.2 154 211.5C155.6 214.8 159 219.7 161.7 222.4C164.3 225.1 169.2 228.6 172.5 230.1C175.8 231.7 181.7 233.6 185.5 234.2C190.9 235.1 194 235.1 199.2 234.2C203 233.5 208.5 231.8 211.6 230.2C214.7 228.7 219.5 225.2 222.2 222.5C224.9 219.7 228.5 214.8 230 211.5C231.6 208.2 233.4 202.6 234 199C234.8 194.3 234.8 190.6 234.1 185.7C233.5 182 231.9 176.6 230.5 173.7C229.1 170.9 225.9 166.1 223.3 163.1C219.9 159.3 216.3 156.7 211 154.1C204.2 150.8 202.8 150.5 193.5 150.3C187.3 150.1 182 150.5 179.5 151.3C177.3 152.1 173.5 153.7 171 155ZM160.5 259.6C156.1 260.5 149.3 262.4 145.5 263.7C141.7 265.1 135.6 267.7 132 269.6C128.4 271.4 122.8 275.4 119.5 278.3C116.2 281.3 112.2 286.1 110.5 289.1C107.7 294.2 107.5 295.2 107.3 307.3L107 320H277C276.5 295.2 276.3 294.2 273.5 289.1C271.8 286.2 268 281.4 265 278.6C261.9 275.8 256.3 271.8 252.5 269.8C248.6 267.8 241.4 264.8 236.5 263.2C231.6 261.5 223.2 259.5 218 258.6C212.8 257.7 203.1 256.8 196.5 256.6C189.9 256.3 180.9 256.5 176.5 257C172.1 257.5 164.9 258.7 160.5 259.6Z" fill="var(--dm-color-white)"/> </svg><span class="link-list-text">CV English</span></a></li><li><a class="link-list-link" href="category/personal-resumes.html#cv-3-romanian"><svg type="fill" width="384" height="486" viewBox="0 0 384 486" class="link-list-icon"> <path fill-rule="evenodd" clip-rule="evenodd" d="M191.5 0.199991C193.7 0.0999908 199.1 0.699991 203.5 1.49999C208.7 2.39999 214.5 4.39999 220 7.09999C226.6 10.4 230.3 13.1 236.6 19.4C242.6 25.4 245.7 29.5 252.5 43.1L384 43V427H0V43H131.5L135.4 35.2C138.3 29.6 141.6 25.3 147.4 19.4C153.9 12.9 157.2 10.5 164 7.19999C168.7 4.99999 175 2.69999 178 2.09999C181 1.49999 184.4 0.799991 185.5 0.599991C186.6 0.399991 189.3 0.199991 191.5 0.199991ZM177.7 48.8C176.1 50.3 174 53.2 172.9 55.3C171.8 57.5 171 61.1 171 64C171 66.8 171.7 70.7 172.6 72.8C173.4 74.8 175.1 77.6 176.3 78.8C177.5 80.1 180.3 82.1 182.5 83.3C185.1 84.7 188.4 85.4 192 85.4C196 85.4 198.7 84.8 202 83C204.4 81.6 207.8 78.5 209.5 76.2C211.9 72.7 212.6 70.5 212.9 65.7C213.2 60.9 212.8 58.6 211.2 55.5C210.1 53.3 207.9 50.3 206.3 48.8C204.8 47.3 201.8 45.4 199.7 44.6C197.7 43.7 194.1 43 191.7 43C189.4 43.1 185.9 43.8 184 44.6C182.1 45.4 179.2 47.3 177.7 48.8ZM171 155C168.5 156.3 164.2 159.6 161.5 162.4C158.7 165.2 155.2 170.1 153.7 173.2C152.2 176.4 150.5 181.8 149.9 185.2C149.1 189.8 149.1 193.3 149.9 198.5C150.6 202.3 152.4 208.2 154 211.5C155.6 214.8 159 219.7 161.7 222.4C164.3 225.1 169.2 228.6 172.5 230.1C175.8 231.7 181.7 233.6 185.5 234.2C190.9 235.1 194 235.1 199.2 234.2C203 233.5 208.5 231.8 211.6 230.2C214.7 228.7 219.5 225.2 222.2 222.5C224.9 219.7 228.5 214.8 230 211.5C231.6 208.2 233.4 202.6 234 199C234.8 194.3 234.8 190.6 234.1 185.7C233.5 182 231.9 176.6 230.5 173.7C229.1 170.9 225.9 166.1 223.3 163.1C219.9 159.3 216.3 156.7 211 154.1C204.2 150.8 202.8 150.5 193.5 150.3C187.3 150.1 182 150.5 179.5 151.3C177.3 152.1 173.5 153.7 171 155ZM160.5 259.6C156.1 260.5 149.3 262.4 145.5 263.7C141.7 265.1 135.6 267.7 132 269.6C128.4 271.4 122.8 275.4 119.5 278.3C116.2 281.3 112.2 286.1 110.5 289.1C107.7 294.2 107.5 295.2 107.3 307.3L107 320H277C276.5 295.2 276.3 294.2 273.5 289.1C271.8 286.2 268 281.4 265 278.6C261.9 275.8 256.3 271.8 252.5 269.8C248.6 267.8 241.4 264.8 236.5 263.2C231.6 261.5 223.2 259.5 218 258.6C212.8 257.7 203.1 256.8 196.5 256.6C189.9 256.3 180.9 256.5 176.5 257C172.1 257.5 164.9 258.7 160.5 259.6Z" fill="var(--dm-color-white)"/> </svg><span class="link-list-text">CV Romanian</span></a></li><li><a class="link-list-link" href="contact.html#contact-form"><svg type="fill" width="84" height="84" viewBox="0 0 84 84" class="link-list-icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 1L1 0H83L84 1V83H83V84H1V83H0V1ZM34 28H70V16H34V28ZM12 24H28V20H12V24ZM34 52H70V40H34V52ZM12 48H28V44H12V48ZM34 72H42V64H34V72ZM48 70H72V66H48V70ZM0 83L1 84H0V83ZM84 84V83L83 84H84Z" fill="var(--dm-color-white)"/></svg><span class="link-list-text">Contact Form</span></a></li><li><a class="link-list-link" href="privacy-policy.html"><svg type="fill" width="24" height="24" viewBox="0 0 24 24" class="link-list-icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 1L3 4.5V11C3 16.6 6.8 21.7 12 23C17.2 21.7 21 16.6 21 11V4.5L12 1ZM10.5 16.2L6.8 12.5L8.2 11.1L10.5 13.4L15.8 8.1L17.2 9.5L10.5 16.2Z"/></svg><span class="link-list-text">Privacy Policy</span></a></li>
+  </ul>
+</div>
+</div><div class="footer-column"><div class="link-list">
+  <h3 class="link-list-title"><a class="link-list-title-link" href="category/projects.html">Project Types</a></h3>
+  <ul class="link-list-items">
+    <li><a class="link-list-link" href="category/web-development-projects.html"><svg type="fill" viewBox="0 0 320 512" class="link-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="link-list-text">Web Projects</span></a></li><li><a class="link-list-link" href="category/visual-media-projects.html"><svg type="fill" viewBox="0 0 320 512" class="link-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="link-list-text">Media Projects</span></a></li><li><a class="link-list-link" href="category/personal-and-custom-projects.html"><svg type="fill" viewBox="0 0 320 512" class="link-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="link-list-text">Personal Projects</span></a></li>
+  </ul>
+</div>
+</div><div class="footer-column"><div class="link-list">
+  <h3 class="link-list-title"><a class="link-list-title-link" href="about.html">About</a></h3>
+  <ul class="link-list-items">
+    <li><a class="link-list-link" href="about.html"><svg type="fill" viewBox="0 0 320 512" class="link-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="link-list-text">About Me</span></a></li><li><a class="link-list-link" href="experience.html"><svg type="fill" viewBox="0 0 320 512" class="link-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="link-list-text">Personal Experience</span></a></li><li><a class="link-list-link" href="category/employee-experience.html"><svg type="fill" viewBox="0 0 320 512" class="link-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="link-list-text">Employee Experience</span></a></li><li><a class="link-list-link" href="category/education-experience.html"><svg type="fill" viewBox="0 0 320 512" class="link-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="link-list-text">Education Experience</span></a></li>
+  </ul>
+</div>
+</div><div class="footer-column footer-column-brand"><a href="home.html" class="logo logo-shape-circle" data-variant="footer"><div class="logo-container-img"><img class="logo-img" src="../src/content/img/brand/logo/logo.webp" alt="Denis Marginas Logo" width="50" height="50">
+</div><div class="site-title"><span class="primary">Denis</span><span class="secondary">Marginas</span></div></a>
+<div data-transition="fade slide-bottom" data-transition-duration="700" data-transition-distance="30px" data-transition-auto="true" class="social-links" data-variant="plain">
+  <h3 class="social-links-title">Socials</h3>
+  <ul class="social-links-visual"><li><a class="social-links-visual-link" href="https://www.youtube.com/channel/UCZGb7hnkyawMgnSO9T-rnnQ" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube"><svg type="fill" width="44" height="32" viewBox="0 0 44 32" class="social-links-icon"> <path d="M41.8984 5.5C41.5 3.30078 39.6016 1.69922 37.3984 1.19922C34.1016 0.5 28 0 21.3984 0C14.8008 0 8.60156 0.5 5.30078 1.19922C3.10156 1.69922 1.19922 3.19922 0.800781 5.5C0.398438 8 0 11.5 0 16C0 20.5 0.398438 24 0.898438 26.5C1.30078 28.6992 3.19922 30.3008 5.39844 30.8008C8.89844 31.5 14.8984 32 21.5 32C28.1016 32 34.1016 31.5 37.6016 30.8008C39.8008 30.3008 41.6992 28.8008 42.1016 26.5C42.5 24 43 20.3984 43.1016 16C42.8984 11.5 42.3984 8 41.8984 5.5ZM16 23V9L28.1992 16L16 23Z" fill="#FF3D00"/> </svg></a></li><li><a class="social-links-visual-link" href="https://www.facebook.com/denismarginas09" target="_blank" rel="noopener" title="Facebook" aria-label="Facebook"><svg type="fill" width="22" height="42" viewBox="0 0 22 42" class="social-links-icon"><path d="M16 -1.10493e-06C10.477 -1.10493e-06 6 4.477 6 10V15H0V23H6V42H14V23H21L22 15H14V11C14 8.791 15.791 7 18 7H22V0.321999C20.091 0.124999 17.921 -0.00400111 16 -1.10493e-06Z" fill="#0573E7"/> </svg></a></li><li><a class="social-links-visual-link" href="https://www.linkedin.com/in/denismarginas09/" target="_blank" rel="noopener" title="Linkedin" aria-label="Linkedin"><svg type="fill" width="40" height="38" viewBox="0 0 40 38" class="social-links-icon"> <path d="M4.421 9H4.473C7.263 9 9 7 9 4.5C8.948 1.945 7.263 0 4.526 0C1.789 0 0 1.945 0 4.5C0 7 1.736 9 4.421 9ZM0 12H9V38H0V12ZM40 21.5C40 16.253 35.747 12 30.5 12C27.447 12 24.738 13.446 23 15.684V12H14V38H23V23C23 20.791 24.791 19 27 19C29.209 19 31 20.791 31 23V38H40C40 38 40 22.955 40 21.5Z" fill="#0288D1"/> </svg></a></li><li><a class="social-links-visual-link" href="https://github.com/denismarginas" target="_blank" rel="noopener" title="Github" aria-label="Github"><svg type="fill" width="40" height="39" viewBox="0 0 40 39" class="social-links-icon"> <path d="M17.8 0.200015C8.60002 1.20002 1.20002 8.60002 0.200018 17.6C-0.799982 27 4.60002 35.4 12.8 38.6C13.4 38.8 14 38.4 14 37.6V34.4C14 34.4 13.2 34.6 12.2 34.6C9.40002 34.6 8.20002 32.2 8.00002 30.8C7.80002 30 7.40002 29.4 6.80002 28.8C6.20002 28.6 6.00002 28.6 6.00002 28.4C6.00002 28 6.60002 28 6.80002 28C8.00002 28 9.00002 29.4 9.40002 30C10.4 31.6 11.6 32 12.2 32C13 32 13.6 31.8 14 31.6C14.2 30.2 14.8 28.8 16 28C11.4 27 8.00002 24.4 8.00002 20C8.00002 17.8 9.00002 15.6 10.4 14C10.2 13.6 10 12.6 10 11.2C10 10.4 10 9.20002 10.6 8.00002C10.6 8.00002 13.4 8.00002 16.2 10.6C17.2 10.2 18.6 10 20 10C21.4 10 22.8 10.2 24 10.6C26.6 8.00002 29.6 8.00002 29.6 8.00002C30 9.20002 30 10.4 30 11.2C30 12.8 29.8 13.6 29.6 14C31 15.6 32 17.6 32 20C32 24.4 28.6 27 24 28C25.2 29 26 30.8 26 32.6V37.8C26 38.4 26.6 39 27.4 38.8C34.8 35.8 40 28.6 40 20.2C40 8.20002 29.8 -1.19998 17.8 0.200015Z" fill="var(--dm-color-white)"/> </svg></a></li></ul>
+  
+</div>
+</div></div>
+    <div class="footer-bottom"><div class="website-info">
+  <div class="website-info-start"><span class="cookie-settings"><button class="cookie-settings-button" type="button" data-cookie-settings aria-label="Cookie settings" title="Cookie settings"><svg type="stroke" width="24" height="24" viewBox="0 0 24 24" fill="none" class="cookie-settings-icon"><path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1 1.55V21a2 2 0 1 1-4 0v-.09a1.7 1.7 0 0 0-1-1.55 1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.7 1.7 0 0 0 .34-1.87 1.7 1.7 0 0 0-1.55-1H3a2 2 0 1 1 0-4h.09a1.7 1.7 0 0 0 1.55-1 1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.7 1.7 0 0 0 1.87.34 1.7 1.7 0 0 0 1-1.55V3a2 2 0 1 1 4 0v.09a1.7 1.7 0 0 0 1 1.55 1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.7 1.7 0 0 0-.34 1.87 1.7 1.7 0 0 0 1.55 1H21a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-1.55 1z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button></span>
+<ul class="website-info-dates"><li><span class="website-info-label">Online since:</span> <time class="website-info-date" datetime="2023-06-04">Jun 4, 2023</time></li><li><span class="website-info-label">Last updated:</span> <time class="website-info-date" datetime="2026-11-22">Nov 22, 2026</time></li></ul></div>
+  <p class="website-info-copyright">© All rights reserved, <a class="website-info-copyright-link" href="home.html">Denis Marginas</a></p>
+</div>
+</div>
+  </container>
+</footer>
+
+    <cookie-notice class="cookie-notice" data-cookie-notice data-cookie-notice-version="1" data-cookie-notice-days="365" data-cookie-notice-defaults="{&quot;analytics&quot;:true}" role="region" aria-label="Cookie notice" hidden>
+  <button class="cookie-notice-close" type="button" aria-label="Close" title="Close" data-cookie-notice-close><svg type="stroke" width="14" height="14" viewBox="0 0 14 14"  class="cookie-notice-icon"><path d="M13 1L1 13M1 1L13 13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  <div class="cookie-notice-main">
+    <p class="cookie-notice-text">By continuing to use this site, you consent to cookies that enhance your experience and analyze traffic. For more details, please read our <a class="cookie-notice-link" href="privacy-policy.html">Privacy Policy</a>.</p>
+    <div class="cookie-notice-actions">
+      <button class="btn btn-primary-small py-xxs cookie-notice-settings-toggle" type="button" aria-expanded="false" aria-controls="cookie-notice-settings" aria-label="Cookie settings" title="Cookie settings" data-cookie-notice-toggle>
+        <svg type="stroke" width="24" height="24" viewBox="0 0 24 24" fill="none" class="cookie-notice-icon"><path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1 1.55V21a2 2 0 1 1-4 0v-.09a1.7 1.7 0 0 0-1-1.55 1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.7 1.7 0 0 0 .34-1.87 1.7 1.7 0 0 0-1.55-1H3a2 2 0 1 1 0-4h.09a1.7 1.7 0 0 0 1.55-1 1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.7 1.7 0 0 0 1.87.34 1.7 1.7 0 0 0 1-1.55V3a2 2 0 1 1 4 0v.09a1.7 1.7 0 0 0 1 1.55 1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.7 1.7 0 0 0-.34 1.87 1.7 1.7 0 0 0 1.55 1H21a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-1.55 1z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="btn btn-primary-small py-xxs cookie-notice-accept" type="button" data-cookie-notice-accept>
+        <span class="btn-text">Accept</span>
+      </button>
+    </div>
+  </div>
+  <div class="cookie-notice-settings" id="cookie-notice-settings" data-cookie-notice-panel hidden>
+    <p class="cookie-notice-settings-title">Cookie settings</p>
+    <div class="cookie-notice-options"><div class="cookie-notice-option is-locked"><input class="cookie-notice-switch" type="checkbox" id="cookie-notice-necessary" checked disabled aria-describedby="cookie-notice-necessary-text"><label class="cookie-notice-option-copy" for="cookie-notice-necessary"><span class="cookie-notice-option-title">Necessary</span><span class="cookie-notice-option-text" id="cookie-notice-necessary-text">Remembers your cookie choice and the light / dark mode. Always on.</span></label></div><div class="cookie-notice-option"><input class="cookie-notice-switch" type="checkbox" id="cookie-notice-analytics" data-cookie-notice-category="analytics" aria-describedby="cookie-notice-analytics-text"><label class="cookie-notice-option-copy" for="cookie-notice-analytics"><span class="cookie-notice-option-title">Analytics</span><span class="cookie-notice-option-text" id="cookie-notice-analytics-text">Google Analytics: anonymous statistics about the pages you visit, used to improve the site.</span></label></div></div>
+    <div class="cookie-notice-settings-actions">
+      <button class="btn btn-primary-small py-xxs" type="button" data-cookie-notice-save>
+        <span class="btn-text">Save preferences</span>
+      </button>
+    </div>
+  </div>
+</cookie-notice>
+
+    
+</body>
+
+</html>

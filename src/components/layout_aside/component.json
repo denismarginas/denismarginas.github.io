@@ -1,0 +1,14 @@
+{
+  "name": "layout_aside",
+  "title": "Layout Aside",
+  "summary": "Aside-column slot for section_layout_aside.",
+  "description": "Slot for section_layout_aside: holds the children rendered in the aside column. Used on its own it renders a plain wrapper div.",
+  "assets": {
+    "php": [
+      "assets/php/layout_aside.php"
+    ]
+  },
+  "dependencies": [
+    "section"
+  ]
+}

@@ -1,0 +1,230 @@
+.platform-je-root {
+  font-family: monospace;
+  font-size: 12px;
+  line-height: 18px;
+  background-color: var(--platform-bg);
+  width: 100%;
+  max-width: 100%;
+  overflow: auto;
+  container-type: inline-size;
+}
+
+.platform-je-node {
+  margin: 0;
+}
+
+.platform-je-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 0;
+
+  &:hover {
+    background: var(--platform-color-primary-soft);
+  }
+}
+
+.platform-je-key-input {
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--platform-color-text-primary);
+  font-family: monospace;
+  font-size: 12px;
+  padding: 1px 4px;
+  min-width: 80px;
+  outline: none;
+
+  &:focus {
+    border-color: var(--platform-color-border-base);
+    background: var(--platform-color-bg-surface-sunken);
+  }
+
+  &.platform-je-add-key-input {
+    border: 1px dashed var(--platform-color-border-subtle);
+    background: transparent;
+    min-width: 80px;
+  }
+}
+
+.platform-je-colon {
+  color: var(--platform-color-text-secondary);
+  margin-right: 4px;
+}
+
+.platform-je-value-input {
+  background: var(--platform-color-bg-surface-sunken);
+  border: 1px solid var(--platform-color-border-subtle);
+  color: var(--platform-color-text-primary);
+  font-family: monospace;
+  font-size: 12px;
+  padding: 2px 6px;
+  outline: none;
+  flex: 1;
+  min-width: 100px;
+
+  &:focus {
+    border-color: var(--platform-color-primary);
+  }
+}
+
+.platform-je-type-switch {
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--platform-color-text-secondary);
+  font-family: monospace;
+  font-size: 10px;
+  padding: 1px 2px;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  width: 60px;
+
+  &:hover {
+    border-color: var(--platform-color-border-base);
+  }
+
+  option {
+    background: var(--platform-color-bg-base);
+    color: var(--platform-color-text-primary);
+  }
+}
+
+.platform-je-actions {
+  display: inline-flex;
+  gap: 2px;
+  margin-left: 4px;
+  flex-shrink: 0;
+}
+
+.platform-je-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 11px;
+  padding: 1px 4px;
+  line-height: 1;
+  border-radius: 3px;
+  color: var(--platform-color-text-secondary);
+
+  &:hover {
+    background: var(--platform-color-primary-soft);
+  }
+}
+
+.platform-je-btn-del {
+  color: var(--platform-color-status-error);
+}
+
+.platform-je-btn-add {
+  color: var(--platform-color-status-success);
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.platform-je-idx {
+  color: var(--platform-color-text-disabled);
+  font-size: 10px;
+  min-width: 20px;
+  text-align: right;
+}
+
+.platform-je-null {
+  color: var(--platform-color-text-disabled);
+  font-style: italic;
+}
+
+.platform-je-primitive {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  input[type="checkbox"] {
+    margin: 0;
+    cursor: pointer;
+  }
+}
+
+.platform-je-object,
+.platform-je-array {
+  padding-left: 12px;
+  border-left: 1px solid var(--platform-color-border-subtle);
+  margin: 2px 0;
+}
+
+.platform-je-add-row {
+  opacity: 0.6;
+  font-size: 11px;
+  padding: 4px 0;
+  border-top: 1px dashed var(--platform-color-border-subtle);
+  margin-top: 4px;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@mixin je-narrow-layout {
+  .platform-je-row {
+    flex-wrap: wrap;
+  }
+
+  .platform-je-row > .platform-je-primitive,
+  .platform-je-row > .platform-je-object,
+  .platform-je-row > .platform-je-array {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+
+  .platform-je-key-input {
+    min-width: 0;
+    flex: 1 1 45%;
+  }
+
+  .platform-je-value-input {
+    min-width: 0;
+    width: 100%;
+    padding: 6px 8px;
+  }
+
+  .platform-je-object,
+  .platform-je-array {
+    padding-left: 6px;
+  }
+
+  .platform-je-actions {
+    margin-left: auto;
+  }
+
+  .platform-je-type-switch {
+    width: auto;
+    min-width: 56px;
+  }
+}
+
+@container (max-width: 620px) {
+  @include je-narrow-layout;
+}
+
+@media (max-width: 600px) {
+  @include je-narrow-layout;
+}
+
+.platform-je-row.is-flash {
+  border-radius: var(--platform-radius-sm);
+  animation: platform-je-flash 2.4s ease-out;
+}
+
+@keyframes platform-je-flash {
+  0%,
+  35% {
+    background: rgba(255, 255, 255, 0.14);
+    box-shadow: 0 0 0 1px var(--platform-secondary);
+  }
+
+  100% {
+    background: transparent;
+    box-shadow: 0 0 0 1px transparent;
+  }
+}

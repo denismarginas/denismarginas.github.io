@@ -1,0 +1,24 @@
+{
+    "display": true,
+    "version": 1,
+    "expires_days": 365,
+    "description_text": "Continuând să utilizați acest site, sunteți de acord cu utilizarea cookie-urilor, care îmbunătățesc experiența dumneavoastră și analizează traficul.",
+    "page_text": "Pentru mai multe detalii, vă rugăm să consultați pagina noastră dedicată: %s.",
+    "button_text": "Acceptă",
+    "page": {
+        "button_text": "Politica de confidențialitate"
+    },
+    "settings": {
+        "button_label": "Cookie settings",
+        "title": "Cookie settings",
+        "save_text": "Save preferences",
+        "necessary": {
+            "title": "Necessary",
+            "text": "Remembers your cookie choice and the light / dark mode. Always on."
+        },
+        "analytics": {
+            "title": "Analytics",
+            "text": "Google Analytics: anonymous statistics about the pages you visit, used to improve the site."
+        }
+    }
+}

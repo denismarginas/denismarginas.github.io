@@ -1,0 +1,29 @@
+{
+  "name": "hero",
+  "title": "Hero",
+  "summary": "Hero section with background image or video and text.",
+  "description": "Hero section with background image or background video, noise overlay, title, description and layout variants.",
+  "assets": {
+    "php": [
+      "assets/php/hero.php"
+    ],
+    "html": [
+      "assets/html/template.html",
+      "assets/html/text_content.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ],
+    "js": [
+      "assets/js/hero.js"
+    ]
+  },
+  "dependencies": [
+    "animation_waves",
+    "video_background",
+    "overlay_noise"
+  ]
+}

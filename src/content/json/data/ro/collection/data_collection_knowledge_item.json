@@ -1,0 +1,472 @@
+[
+    {
+        "_id": "php",
+        "svg": "php",
+        "external_url": "https://www.php.net/",
+        "text": "PHP",
+        "settings": {
+            "render": true,
+            "order": 10
+        }
+    },
+    {
+        "_id": "html",
+        "svg": "html",
+        "external_url": "https://en.wikipedia.org/wiki/HTML",
+        "text": "HTML",
+        "settings": {
+            "render": true,
+            "order": 20
+        }
+    },
+    {
+        "_id": "css",
+        "svg": "css",
+        "external_url": "https://en.wikipedia.org/wiki/CSS",
+        "text": "CSS",
+        "settings": {
+            "render": true,
+            "order": 30
+        }
+    },
+    {
+        "_id": "sass",
+        "svg": "sass",
+        "external_url": "https://sass-lang.com/",
+        "text": "SASS",
+        "settings": {
+            "render": true,
+            "order": 40
+        }
+    },
+    {
+        "_id": "js",
+        "svg": "js",
+        "external_url": "https://en.wikipedia.org/wiki/JavaScript",
+        "text": "JavaScript",
+        "settings": {
+            "render": true,
+            "order": 50
+        }
+    },
+    {
+        "_id": "jquery",
+        "svg": "jquery",
+        "external_url": "https://jquery.com/",
+        "text": "jQuery",
+        "settings": {
+            "render": true,
+            "order": 60
+        }
+    },
+    {
+        "_id": "bootstrap",
+        "svg": "bootstrap",
+        "external_url": "https://getbootstrap.com/",
+        "text": "Bootstrap",
+        "settings": {
+            "render": true,
+            "order": 70
+        }
+    },
+    {
+        "_id": "nodejs",
+        "svg": "nodejs",
+        "external_url": "https://nodejs.org/en",
+        "text": "Node.js",
+        "settings": {
+            "render": true,
+            "order": 80
+        }
+    },
+    {
+        "_id": "angular",
+        "svg": "angular",
+        "external_url": "https://angular.dev/",
+        "text": "Angular",
+        "settings": {
+            "render": true,
+            "order": 90
+        }
+    },
+    {
+        "_id": "react",
+        "svg": "react",
+        "external_url": "https://react.dev/",
+        "text": "React",
+        "settings": {
+            "render": true,
+            "order": 100
+        }
+    },
+    {
+        "_id": "nextjs",
+        "svg": "nextjs",
+        "external_url": "https://nextjs.org/",
+        "text": "Next.js",
+        "settings": {
+            "render": true,
+            "order": 110
+        }
+    },
+    {
+        "_id": "tpl",
+        "svg": "tpl",
+        "external_url": "https://www.smarty.net/docs/en/what.is.smarty.tpl",
+        "text": "Smarty TPL",
+        "settings": {
+            "render": true,
+            "order": 120
+        }
+    },
+    {
+        "_id": "sql",
+        "svg": "sql",
+        "external_url": "https://en.wikipedia.org/wiki/SQL",
+        "text": "SQL",
+        "settings": {
+            "render": true,
+            "order": 130
+        }
+    },
+    {
+        "_id": "python",
+        "svg": "python",
+        "external_url": "https://www.python.org/",
+        "text": "Python",
+        "settings": {
+            "render": true,
+            "order": 140
+        }
+    },
+    {
+        "_id": "c",
+        "svg": "c",
+        "external_url": "https://en.wikipedia.org/wiki/C_(programming_language)",
+        "text": "C",
+        "settings": {
+            "render": true,
+            "order": 150
+        }
+    },
+    {
+        "_id": "c++",
+        "svg": "c++",
+        "external_url": "https://en.wikipedia.org/wiki/C%2B%2B",
+        "text": "C++",
+        "settings": {
+            "render": true,
+            "order": 160
+        }
+    },
+    {
+        "_id": "wordpress",
+        "svg": "wordpress",
+        "external_url": "https://wordpress.org/",
+        "text": "Wordpress",
+        "settings": {
+            "render": true,
+            "order": 170
+        }
+    },
+    {
+        "_id": "prestashop",
+        "svg": "prestashop",
+        "external_url": "https://prestashop.com/",
+        "text": "Prestashop",
+        "settings": {
+            "render": true,
+            "order": 180
+        }
+    },
+    {
+        "_id": "laragon",
+        "svg": "laragon",
+        "external_url": "https://laragon.org/",
+        "text": "Laragon",
+        "settings": {
+            "render": true,
+            "order": 190
+        }
+    },
+    {
+        "_id": "xampp",
+        "svg": "xampp",
+        "external_url": "https://www.apachefriends.org/",
+        "text": "XAMPP",
+        "settings": {
+            "render": false,
+            "order": 200
+        }
+    },
+    {
+        "_id": "phpmyadmin",
+        "svg": "phpmyadmin",
+        "external_url": "https://www.phpmyadmin.net/",
+        "text": "phpMyAdmin",
+        "settings": {
+            "render": true,
+            "order": 210
+        }
+    },
+    {
+        "_id": "vscode",
+        "svg": "vscode",
+        "external_url": "https://code.visualstudio.com/",
+        "text": "Visual Studio Code",
+        "settings": {
+            "render": true,
+            "order": 220
+        }
+    },
+    {
+        "_id": "phpstorm",
+        "svg": "phpstorm",
+        "external_url": "https://www.jetbrains.com/phpstorm/",
+        "text": "PhpStorm",
+        "settings": {
+            "render": true,
+            "order": 230
+        }
+    },
+    {
+        "_id": "pycharm",
+        "svg": "pycharm",
+        "external_url": "https://www.jetbrains.com/pycharm/",
+        "text": "PyCharm",
+        "settings": {
+            "render": true,
+            "order": 240
+        }
+    },
+    {
+        "_id": "github_colors",
+        "svg": "github_colors",
+        "external_url": "https://github.com/",
+        "text": "GitHub",
+        "settings": {
+            "render": true,
+            "order": 250
+        }
+    },
+    {
+        "_id": "gitlab",
+        "svg": "gitlab",
+        "external_url": "https://about.gitlab.com/",
+        "text": "GitLab",
+        "settings": {
+            "render": true,
+            "order": 260
+        }
+    },
+    {
+        "_id": "sv",
+        "svg": "sv",
+        "external_url": "https://www.vegascreativesoftware.com/us/vegas-pro/",
+        "text": "Sony Vegas",
+        "settings": {
+            "render": true,
+            "order": 270
+        }
+    },
+    {
+        "_id": "ae",
+        "svg": "ae",
+        "external_url": "https://www.adobe.com/products/aftereffects.html",
+        "text": "Adobe After Effects",
+        "settings": {
+            "render": true,
+            "order": 280
+        }
+    },
+    {
+        "_id": "topaz-video",
+        "svg": "topaz-video",
+        "external_url": "https://www.topazlabs.com/topaz-video",
+        "text": "Topaz Video Enhance",
+        "settings": {
+            "render": true,
+            "order": 290
+        }
+    },
+    {
+        "_id": "handbrake",
+        "svg": "handbrake",
+        "external_url": "https://handbrake.fr/",
+        "text": "HandBrake",
+        "settings": {
+            "render": true,
+            "order": 300
+        }
+    },
+    {
+        "_id": "obs",
+        "svg": "obs",
+        "external_url": "https://obsproject.com/",
+        "text": "OBS Studio",
+        "settings": {
+            "render": false,
+            "order": 310
+        }
+    },
+    {
+        "_id": "photopea",
+        "svg": "photopea",
+        "external_url": "https://www.photopea.com/",
+        "text": "Photopea",
+        "settings": {
+            "render": true,
+            "order": 320
+        }
+    },
+    {
+        "_id": "xaraphoto",
+        "svg": "xaraphoto",
+        "external_url": "https://www.xara.com/photo-graphic-plus/",
+        "text": "Xara Photo",
+        "settings": {
+            "render": true,
+            "order": 330
+        }
+    },
+    {
+        "_id": "topaz-gigapixel",
+        "svg": "topaz-gigapixel",
+        "external_url": "https://www.topazlabs.com/gigapixel",
+        "text": "Topaz Gigapixel",
+        "settings": {
+            "render": true,
+            "order": 340
+        }
+    },
+    {
+        "_id": "figma",
+        "svg": "figma",
+        "external_url": "https://www.figma.com/",
+        "text": "Figma",
+        "settings": {
+            "render": true,
+            "order": 350
+        }
+    },
+    {
+        "_id": "blender",
+        "svg": "blender",
+        "external_url": "https://www.blender.org/",
+        "text": "Blender",
+        "settings": {
+            "render": true,
+            "order": 360
+        }
+    },
+    {
+        "_id": "office",
+        "svg": "office",
+        "external_url": "https://www.office.com/",
+        "text": "Birou",
+        "settings": {
+            "render": true,
+            "order": 370
+        }
+    },
+    {
+        "_id": "googledrive",
+        "svg": "googledrive",
+        "external_url": "https://www.google.com/drive/",
+        "text": "Google Drive",
+        "settings": {
+            "render": true,
+            "order": 380
+        }
+    },
+    {
+        "_id": "trello",
+        "svg": "trello",
+        "external_url": "https://trello.com/",
+        "text": "Trello",
+        "settings": {
+            "render": true,
+            "order": 390
+        }
+    },
+    {
+        "_id": "slack",
+        "svg": "slack",
+        "external_url": "https://slack.com/",
+        "text": "Slack",
+        "settings": {
+            "render": true,
+            "order": 400
+        }
+    },
+    {
+        "_id": "discord",
+        "svg": "discord",
+        "external_url": "https://discord.com/",
+        "text": "Discord",
+        "settings": {
+            "render": true,
+            "order": 410
+        }
+    },
+    {
+        "_id": "claude",
+        "svg": "claude",
+        "external_url": "https://claude.ai/",
+        "text": "Claude",
+        "settings": {
+            "render": true,
+            "order": 420
+        }
+    },
+    {
+        "_id": "gemini",
+        "svg": "gemini",
+        "external_url": "https://gemini.google.com/",
+        "text": "Gemini",
+        "settings": {
+            "render": true,
+            "order": 430
+        }
+    },
+    {
+        "_id": "chatgpt",
+        "svg": "chatgpt",
+        "external_url": "https://chat.openai.com/",
+        "text": "ChatGPT",
+        "settings": {
+            "render": true,
+            "order": 440
+        }
+    },
+    {
+        "_id": "deepseek",
+        "svg": "deepseek",
+        "external_url": "https://www.deepseek.com/",
+        "text": "DeepSeek",
+        "settings": {
+            "render": true,
+            "order": 450
+        }
+    },
+    {
+        "_id": "opencode",
+        "svg": "opencode",
+        "external_url": "https://opencode.ai/",
+        "text": "OpenCode",
+        "settings": {
+            "render": true,
+            "order": 460
+        }
+    },
+    {
+        "_id": "comfyui",
+        "svg": "comfyui",
+        "external_url": "https://www.comfy.org/",
+        "text": "ComfyUI",
+        "settings": {
+            "render": true,
+            "order": 470
+        }
+    }
+]

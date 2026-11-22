@@ -1,0 +1,24 @@
+{
+    "name": "edit-posts",
+    "title": "Edit Posts",
+    "summary": "Post editor with content builder.",
+    "description": "Post editor with content builder",
+    "type": "page",
+    "assets": {
+        "php": [
+            "index.php"
+        ],
+        "css": [
+            "assets/css/edit-posts.css"
+        ],
+        "js": [
+            "assets/js/edit-posts-state.js",
+            "assets/js/edit-posts-utils.js",
+            "assets/js/edit-posts-core.js",
+            "assets/js/edit-posts-editor.js",
+            "assets/js/edit-posts-content.js",
+            "assets/js/edit-posts-init.js",
+            "assets/js/img_preview_from_json.js"
+        ]
+    }
+}

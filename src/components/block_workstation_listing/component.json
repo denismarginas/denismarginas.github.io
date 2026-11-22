@@ -1,0 +1,25 @@
+{
+  "name": "block_workstation_listing",
+  "title": "Block Workstation Listing",
+  "summary": "Grid of cards for every workstation post.",
+  "description": "Grid of block_workstation_card for every workstation post (data_post_workstation.json), used by the Workstations category. Columns from utility_grid_listing.",
+  "assets": {
+    "php": [
+      "assets/php/block_workstation_listing.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "block_workstation_card",
+    "utility_grid_listing",
+    "theme"
+  ]
+}

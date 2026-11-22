@@ -1,0 +1,1455 @@
+[
+  {
+    "_id": "index",
+    "data": {
+      "seo": {
+        "title": "Denis Marginas",
+        "description": "My name is Denis Ionut Marginas, I'm 25-year-old, and I've been working as a full-stack web developer and photo-video editor since 2019. Before entering the web development field, I worked as a freelance video editor, specializing in editing videos for video games.",
+        "keywords": "denis marginas portfolio",
+        "slug": "index",
+        "index": true
+      }
+    },
+    "content": [
+      {
+        "component": "utility_duplicate_content",
+        "data": {
+          "post_id": "home",
+          "post_type": "page"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "404",
+    "data": {
+      "seo": {
+        "title": "404",
+        "description": "Page not found.",
+        "keywords": "404",
+        "slug": "404",
+        "index": false
+      }
+    },
+    "content": [
+      {
+        "component": "section",
+        "children": [
+          {
+            "component": "page_not_found",
+            "children": [
+              {
+                "component": "overlay_noise",
+                "data": {}
+              }
+            ],
+            "data": {
+              "code": "404",
+              "title": "Page not found",
+              "text": "The page you are looking for does not exist, was moved or the link is broken. Try one of the links below.",
+              "path": true,
+              "path_label": "Requested address:",
+              "buttons": [
+                {
+                  "text": "Back to Home",
+                  "svg": "chevron-left",
+                  "link": {
+                    "post_id": "home"
+                  },
+                  "class": "btn btn-primary"
+                },
+                {
+                  "text": "Search",
+                  "svg": "search",
+                  "link": {
+                    "post_id": "search"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "home",
+    "data": {
+      "seo": {
+        "title": "Home",
+        "description": "My name is Denis Ionuț Mărginaș and I have experience as a full-stack web developer. Since 2019 I have worked on presentation sites, online stores, web applications, SEO optimization and web design, after starting out as a freelance video editor for video games.",
+        "keywords": "denis marginas home",
+        "slug": "home",
+        "index": true
+      }
+    },
+    "content": [
+      {
+        "component": "hero_home",
+        "children": [
+          {
+            "component": "overlay_noise",
+            "data": {}
+          }
+        ],
+        "data": {
+          "eyebrow": "Full-Stack Web Developer",
+          "title": "*Denis* Mărginaș",
+          "text": "Since 2019 I've built websites, online shops and web apps with PHP, JavaScript and modern frameworks and platforms. Video editing has been both a side job and a hobby for me, so design and visuals get the same care as the code.",
+          "buttons": [
+            {
+              "text": "View Projects",
+              "svg": "folder-open",
+              "link": {
+                "post_id": "experience"
+              },
+              "class": "btn btn-primary"
+            },
+            {
+              "text": "Contact Me",
+              "svg": "envelope",
+              "link": {
+                "post_id": "contact"
+              }
+            }
+          ],
+          "video": {
+            "video_id": "denismarginas-experience-highlights",
+            "src": "backgrounds/bg-home.webm",
+            "poster": "backgrounds/bg-home.webp",
+            "start": 0,
+            "end": "auto",
+            "loop": true,
+            "audio": false,
+            "overlay": 0.7
+          },
+          "scroll": true
+        }
+      },
+      {
+        "component": "section",
+        "children": [
+          {
+            "component": "columns",
+            "data": {
+              "layout": {
+                "base": "100",
+                "lg": "40-60"
+              },
+              "gap": {
+                "base": "lg",
+                "lg": "3xl"
+              },
+              "align": "center"
+            },
+            "children": [
+              {
+                "component": "portrait_home",
+                "data": {
+                  "transition": {
+                    "effect": "fade slide-left",
+                    "duration": 900,
+                    "distance": "60px"
+                  },
+                  "img": "personal-images/dm-personal-image-2.webp",
+                  "alt": "Denis Marginas",
+                  "max_width": "440px",
+                  "chips": [
+                    {
+                      "svg": "php",
+                      "text": "PHP"
+                    },
+                    {
+                      "svg": "js",
+                      "text": "JS"
+                    },
+                    {
+                      "svg": "wordpress",
+                      "text": "WP"
+                    },
+                    {
+                      "svg": "prestashop",
+                      "text": "PS"
+                    },
+                    {
+                      "svg": "visuals",
+                      "text": "Visuals"
+                    }
+                  ]
+                }
+              },
+              {
+                "component": "column",
+                "data": {
+                  "class": "gap-lg-lg",
+                  "transition": {
+                    "effect": "fade slide-right",
+                    "duration": 900,
+                    "delay": 150,
+                    "distance": "60px"
+                  }
+                },
+                "children": [
+                  {
+                    "component": "text_block",
+                    "data": {
+                      "vars": {
+                        "age": {
+                          "component": "utility_age",
+                          "data": {
+                            "date": "09-09-1997"
+                          }
+                        }
+                      },
+                      "elements": [
+                        {
+                          "title": {
+                            "text": "About Me",
+                            "tag": "h2",
+                            "class": "title-divider title-primary font-secondary"
+                          }
+                        },
+                        {
+                          "paragraphs": [
+                            "My name is Denis Ionuț Mărginaș, I'm {{age}} years old, and I have experience as a full-stack web developer. I am passionate about technology and creativity, always seeking to expand my skills and expertise in web development, staying curious about the latest innovations."
+                          ]
+                        },
+                        {
+                          "buttons": [
+                            {
+                              "text": "Get to Know Me",
+                              "link": {
+                                "post_id": "about"
+                              },
+                              "svg": "arrow-right",
+                              "svg_position": "end"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "component": "section",
+        "data": {
+          "class": "bg-radial-primary"
+        },
+        "children": [
+          {
+            "component": "taxonomy_listing",
+            "data": {
+              "transition": {
+                "effect": "fade slide-bottom",
+                "duration": 800,
+                "distance": "50px",
+                "target": ".taxonomy-item",
+                "stagger": 150
+              },
+              "post_type": "project",
+              "taxonomy": "category",
+              "title": {
+                "text": "Projects",
+                "tag": "h2",
+                "class": "title-divider title-primary font-secondary"
+              },
+              "template": {
+                "component": "card_taxonomy",
+                "data": {}
+              }
+            }
+          }
+        ]
+      },
+      {
+        "component": "section",
+        "children": [
+          {
+            "component": "columns",
+            "data": {
+              "layout": {
+                "base": "100",
+                "lg": "50-50",
+                "md": "40-60"
+              },
+              "gap": {
+                "base": "lg",
+                "lg": "3xl"
+              },
+              "align": "center"
+            },
+            "children": [
+              {
+                "component": "column",
+                "data": {
+                  "class": "gap-lg-lg",
+                  "transition": {
+                    "effect": "fade slide-left",
+                    "duration": 900,
+                    "distance": "60px"
+                  }
+                },
+                "children": [
+                  {
+                    "component": "text_block",
+                    "data": {
+                      "elements": [
+                        {
+                          "title": {
+                            "text": "Work Experience",
+                            "tag": "h2",
+                            "class": "title-divider title-primary font-secondary"
+                          }
+                        },
+                        {
+                          "paragraphs": [
+                            "Since 2019, I have actively immersed myself in numerous web projects, collaborating with diverse companies to create a wide range of online solutions. Throughout this period, my expertise has encompassed the development of presentation sites, online stores, web applications, SEO optimization, as well as web design."
+                          ]
+                        },
+                        {
+                          "buttons": [
+                            {
+                              "text": "Explore My Experience",
+                              "link": {
+                                "post_id": "experience"
+                              },
+                              "svg": "arrow-right",
+                              "svg_position": "end"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "component": "projects_previews",
+                "data": {
+                  "class": "px-md-sm px-lg-0",
+                  "transition": {
+                    "effect": "fade slide-right",
+                    "duration": 900,
+                    "delay": 150,
+                    "distance": "60px"
+                  },
+                  "screen": {
+                    "img": "design-elements/monitor-with-project.webp",
+                    "alt": "Monitor showing a website project"
+                  },
+                  "cards": [
+                    {
+                      "img": "projects/agromir-media/highlights/media-3d-tire-animation/3d-editing-blender-agromir-1.webp",
+                      "alt": "Agromir 3D tire animation in Blender"
+                    },
+                    {
+                      "img": "projects/agromir-media/highlights/media-video-editing/video-editing-agromir-1.webp",
+                      "alt": "Agromir video editing"
+                    },
+                    {
+                      "img": "projects/agromir-online-shop/highlights/seo-optimization/seo-optimization-1.webp",
+                      "alt": "Agromir SEO optimization"
+                    },
+                    {
+                      "img": "projects/reifendirekt-web-design/web/website/desktop/web_desktop_0.webp",
+                      "alt": "Reifendirekt website overview"
+                    },
+                    {
+                      "img": "projects/revelnail-avadores-media/highlights/media-photo-editing-banner/photo-editing-revelnail-1.webp",
+                      "alt": "Revelnail photo editing banner"
+                    },
+                    {
+                      "img": "projects/module-sell-my-things-wordpress-plugin/highlights/module-sell-my-things-code/module-sell-my-things-code.webp",
+                      "alt": "Sell My Things WordPress plugin code"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "about",
+    "data": {
+      "seo": {
+        "title": "About",
+        "description": "My name is Denis Ionuț Mărginaș and I have experience as a full-stack web developer. Before web development I focused on video editing for video games; in my free time I enjoy building computer hardware, gaming, cycling and tennis.",
+        "keywords": "denis marginas about",
+        "slug": "about",
+        "index": false
+      }
+    },
+    "content": [
+      {
+        "component": "hero",
+        "children": [
+          {
+            "component": "animation_squares",
+            "data": {}
+          }
+        ],
+        "data": {
+          "variant": "xs",
+          "img": "backgrounds/bg-home.webp",
+          "video": {
+            "src": "backgrounds/bg-home.webm",
+            "loop": true,
+            "audio": false,
+            "overlay": 0.6
+          },
+          "title": "@data.seo.title",
+          "description": "@data.seo.description"
+        }
+      },
+      {
+        "component": "section",
+        "children": [
+          {
+            "component": "columns",
+            "data": {
+              "layout": {
+                "base": "100",
+                "lg": "30-70"
+              },
+              "gap": {
+                "base": "lg",
+                "lg": "xl"
+              },
+              "align": "start"
+            },
+            "children": [
+              {
+                "component": "portrait_about",
+                "data": {
+                  "img": "personal-images/dm-personal-image-1.webp",
+                  "alt": "Denis Marginas",
+                  "max_width": "420px"
+                }
+              },
+              {
+                "component": "column",
+                "children": [
+                  {
+                    "component": "text_block",
+                    "data": {
+                      "vars": {
+                        "age": {
+                          "component": "utility_age",
+                          "data": {
+                            "date": "09-09-1997"
+                          }
+                        }
+                      },
+                      "elements": [
+                        {
+                          "title": {
+                            "text": "About Me",
+                            "tag": "h2",
+                            "class": "title-divider title-primary font-secondary"
+                          }
+                        },
+                        {
+                          "paragraphs": [
+                            "My name is Denis Ionuț Mărginaș, I'm {{age}} years old, and I have experience as a full-stack web developer. I am passionate about technology and creativity, always seeking to expand my skills and expertise in web development, staying curious about the latest innovations.",
+                            "Before entering the web development industry, I focused on video editing, specifically for video games. My interest in cinematic executions and angles led to freelance opportunities where I honed my skills. With a strong background in Mathematics and Informatics, I eventually shifted my focus to web development, which has since become my main area of expertise. In my free time, I enjoy building computer hardware, playing video games, cycling, and playing tennis.",
+                            "Looking ahead, I aim to continue growing as a developer, stay updated with the latest technologies, and make a significant impact in the tech industry. When I’m not coding, I enjoy gaming and exploring new technologies that inspire my work."
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "component": "card_mini_icon_and_text",
+                    "data": {
+                      "variant": "row",
+                      "min_width": "240px",
+                      "items": [
+                        {
+                          "svg": "projects",
+                          "text": "Social Posts",
+                          "link": {
+                            "post_id": "social-posts"
+                          }
+                        },
+                        {
+                          "svg": "workstation",
+                          "text": "Personal Workstation",
+                          "link": {
+                            "post_id": "personal-workstation-build-1"
+                          }
+                        },
+                        {
+                          "svg": "employ",
+                          "text": "Professional Experience",
+                          "link": {
+                            "post_id": "employee-experience"
+                          }
+                        },
+                        {
+                          "svg": "resume",
+                          "text": "Education Experience",
+                          "link": {
+                            "post_id": "education-experience"
+                          }
+                        },
+                        {
+                          "svg": "about-me",
+                          "text": "Projects Experience",
+                          "link": {
+                            "post_id": "projects"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "component": "section",
+        "data": {
+          "class": "bg-radial-primary"
+        },
+        "children": [
+          {
+            "component": "hobby_listing",
+            "data": {
+              "title": {
+                "text": "List of hobbies",
+                "tag": "h2",
+                "class": "title-divider title-primary font-secondary"
+              },
+              "type": "hobby",
+              "columns": 4,
+              "variant": "stack"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "contact",
+    "data": {
+      "seo": {
+        "title": "Contact",
+        "description": "Have a project, a job offer or just a question? Reach me on WhatsApp, by email, or through the form below.",
+        "keywords": "denis marginas contact",
+        "slug": "contact",
+        "index": false
+      }
+    },
+    "content": [
+      {
+        "component": "hero",
+        "children": [
+          {
+            "component": "animation_squares",
+            "data": {}
+          }
+        ],
+        "data": {
+          "variant": "sm",
+          "img": "backgrounds/bg-home.webp",
+          "video": {
+            "src": "backgrounds/bg-home.webm",
+            "loop": true,
+            "audio": false,
+            "overlay": 0.6
+          },
+          "title": "@data.seo.title",
+          "description": "@data.seo.description"
+        }
+      },
+      {
+        "component": "section",
+        "children": [
+          {
+            "component": "columns",
+            "data": {
+              "layout": {
+                "base": "100",
+                "lg": "60-40"
+              },
+              "gap": {
+                "base": "sm",
+                "md": "md",
+                "lg": "xl"
+              },
+              "align": "stretch",
+              "reverse_stacked": true,
+              "class": "contact-main"
+            },
+            "children": [
+              {
+                "component": "form",
+                "data": {
+                  "form": "contact-form",
+                  "popup": {
+                    "hash": "contact-form",
+                    "width": "720px"
+                  },
+                  "type": "form",
+                  "title_class": "font-secondary"
+                }
+              },
+              {
+                "component": "column",
+                "children": [
+                  {
+                    "component": "profile_card",
+                    "data": {
+                      "class": "profile-card-boxed bg-radial-primary",
+                      "img": "personal-images/dm-personal-image-0.webp",
+                      "img_alt": "Denis Marginas",
+                      "image_position": "left",
+                      "image_style": "circle",
+                      "noise": true,
+                      "title": {
+                        "text": "Contact Details",
+                        "tag": "h3",
+                        "class": "title-divider font-secondary"
+                      },
+                      "text": [
+                        "Phone and full address are shared on request, just send me an email."
+                      ],
+                      "details": [
+                        {
+                          "label": "Email",
+                          "svg": "envelope",
+                          "value": "denismarginas09@gmail.com",
+                          "link": "mailto:denismarginas09@gmail.com"
+                        },
+                        {
+                          "label": "Address",
+                          "svg": "location",
+                          "value": "Romania, Baia Mare",
+                          "tooltip": {
+                            "text": "For security reasons, the full address is not displayed. However, you can request the contact address by sending an email to the provided email address.",
+                            "status": "info"
+                          }
+                        },
+                        {
+                          "label": "Phone",
+                          "svg": "phone",
+                          "value": "+40-74*******",
+                          "tooltip": {
+                            "text": "For security reasons, the phone number is not displayed. However, you can request the contact phone number by sending an email to the provided email address.",
+                            "status": "info"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "component": "social_links",
+                    "data": {
+                      "lists": ["visual"],
+                      "variant": "card"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "component": "columns",
+            "data": {
+              "layout": {
+                "base": "100",
+                "lg": "50-50"
+              },
+              "gap": {
+                "base": "sm",
+                "md": "md",
+                "lg": "xl"
+              },
+              "align": "center",
+              "class": "contact-about"
+            },
+            "children": [
+              {
+                "component": "column",
+                "children": [
+                  {
+                    "component": "profile_card",
+                    "data": {
+                      "title": {
+                        "text": "How I Can Help",
+                        "tag": "h3",
+                        "class": "title-card title-divider font-secondary"
+                      },
+                      "text": [
+                        "I'm a web developer who builds dynamic, user-friendly websites, from custom code to page builders, across a range of platforms and languages.",
+                        "I also work with photo and video editing, streaming tools, and everyday suites like Microsoft Office and Google Workspace. I adapt quickly and enjoy turning ideas into finished, working projects."
+                      ]
+                    }
+                  },
+                  {
+                    "component": "text_block",
+                    "data": {
+                      "elements": [
+                        {
+                          "title": {
+                            "text": "Resumes",
+                            "tag": "h3",
+                            "class": "title-card title-divider font-secondary"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "component": "resume_listing",
+                    "data": {
+                      "id": "contact-resumes",
+                      "preview_popup": false,
+                      "type": "resume",
+                      "filter_by": {
+                        "max_items": 2
+                      },
+                      "columns": 2,
+                      "sort": [
+                        {
+                          "by": "date.publish",
+                          "order": "desc"
+                        }
+                      ],
+                      "date_format": "M j, Y",
+                      "download_text": "Download",
+                      "lang_labels": {
+                        "en": "English",
+                        "ro": "Romanian"
+                      },
+                      "variant": "compact",
+                      "view_page": "personal-resumes",
+                      "view_text": "View resume"
+                    }
+                  }
+                ]
+              },
+              {
+                "component": "column",
+                "children": [
+                  {
+                    "component": "block_image",
+                    "data": {
+                      "img": "personal-images/dm-desktop-working.webp",
+                      "alt": "Denis Marginas working at his desk",
+                      "card": false,
+                      "popup": false
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "experience",
+    "data": {
+      "seo": {
+        "title": "Experience",
+        "description": "I have experience as a Full-Stack Web Developer on projects such as presentation websites, online shops, booking web applications, competition form applications, and SEO optimization. ",
+        "keywords": "denis marginas experience",
+        "slug": "experience",
+        "index": true
+      }
+    },
+    "content": [
+      {
+        "component": "hero",
+        "children": [
+          {
+            "component": "animation_squares",
+            "data": {}
+          }
+        ],
+        "data": {
+          "variant": "xs",
+          "img": "backgrounds/bg-home.webp",
+          "video": {
+            "src": "backgrounds/bg-home.webm",
+            "loop": true,
+            "audio": false,
+            "overlay": 0.6
+          },
+          "title": "@data.seo.title",
+          "description": "@data.seo.description"
+        }
+      },
+      {
+        "component": "section",
+        "children": [
+          {
+            "component": "columns",
+            "data": {
+              "layout": {
+                "base": "100",
+                "md": "40-60"
+              },
+              "gap": {
+                "base": "lg",
+                "md": "xl"
+              },
+              "align": "start"
+            },
+            "children": [
+              {
+                "component": "columns",
+                "data": {
+                  "layout": {
+                    "base": "100"
+                  },
+                  "gap": {
+                    "base": "lg"
+                  }
+                },
+                "children": [
+                  {
+                    "component": "portrait_experience",
+                    "data": {
+                      "img": "personal-images/dm-personal-with-laptop.webp",
+                      "alt": "Denis Marginas with his laptop",
+                      "style": "arch",
+                      "badges": [
+                        "Full-Stack Web Developer",
+                        "Photo · Video Editor"
+                      ],
+                      "class": "pt-sm pt-md-xl"
+                    }
+                  },
+                  {
+                    "component": "knowledge_listing",
+                    "data": {
+                      "icons": true,
+                      "buttons": [
+                        {
+                          "text": "Career",
+                          "_id": "employee-experience",
+                          "svg": "employ"
+                        },
+                        {
+                          "text": "Projects",
+                          "_id": "projects",
+                          "svg": "about-me"
+                        }
+                      ],
+                      "class": "d-none d-md-flex"
+                    }
+                  }
+                ]
+              },
+              {
+                "component": "columns",
+                "data": {
+                  "layout": {
+                    "base": "100"
+                  },
+                  "gap": {
+                    "base": "lg"
+                  }
+                },
+                "children": [
+                  {
+                    "component": "knowledge_listing",
+                    "data": {
+                      "title": "Experience",
+                      "text": [
+                        "I work as a full-stack web developer on presentation websites, online shops, booking applications, contest registration forms and SEO. I'm also a photo and video editor, creating ad banners, promotional visuals, company logos, brand content and video ads."
+                      ],
+                      "groups": [
+                        {
+                          "title": "Web Development",
+                          "list": [
+                            "Languages: HTML, CSS, SASS/SCSS, JavaScript, PHP, Smarty TPL, SQL, Python, C/C++",
+                            "Frameworks & Libraries: Angular, React, Next.js, Node.js, jQuery 3, Bootstrap 5",
+                            "Platforms: WordPress, Prestashop, GitHub Pages, Google Site, cPanel",
+                            "Page Builders: Elementor, WPBakery, Gutenberg",
+                            "Tools: Laragon, HeidiSQL, phpMyAdmin, Git, GitHub, GitLab, Visual Studio Code, PhpStorm, PyCharm, Prepros",
+                            "Operating Systems: Windows, Linux"
+                          ],
+                          "svg": "skill-web"
+                        },
+                        {
+                          "title": "Photo-Video Editing & Design",
+                          "list": [
+                            "Video Editing Software: Sony Vegas Pro, Adobe After Effects, Topaz Video Enhance, HandBrake",
+                            "Video Editing Plugins: BCC, RSMB, Sapphire, Ignite Pro, Optical Flares, Plexus, Particular, Element 3D, 3D Camera Tracking",
+                            "Photo Editing Software: Photopea, Photoshop, Paint.net, Xara Photo, Topaz Gigapixel",
+                            "UI Design: Figma",
+                            "3D Programs: Blender"
+                          ],
+                          "svg": "skill-media"
+                        },
+                        {
+                          "title": "Office & Collaboration",
+                          "list": [
+                            "Microsoft Office: Microsoft Excel, Microsoft Word, Microsoft PowerPoint",
+                            "Google Drive: Google Sheets, Google Docs, Google Slides",
+                            "Collaboration: Trello, Slack, Discord"
+                          ],
+                          "svg": "skill-office"
+                        },
+                        {
+                          "title": "AI Tools",
+                          "list": [
+                            "AI Assistants & Agents: Claude, Gemini, ChatGPT, DeepSeek, OpenCode",
+                            "AI Image & Video Generation: ComfyUI"
+                          ],
+                          "svg": "skill-ai"
+                        }
+                      ],
+                      "icons": false
+                    }
+                  },
+                  {
+                    "component": "knowledge_listing",
+                    "data": {
+                      "icons": true,
+                      "buttons": [
+                        {
+                          "text": "Career",
+                          "_id": "employee-experience",
+                          "svg": "employ"
+                        },
+                        {
+                          "text": "Projects",
+                          "_id": "projects",
+                          "svg": "about-me"
+                        }
+                      ],
+                      "class": "d-md-none"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "component": "columns",
+            "data": {
+              "id": "journey",
+              "layout": {
+                "base": "100"
+              },
+              "class": "pt-sm pb-sm"
+            },
+            "children": [
+              {
+                "component": "experience_timeline",
+                "data": {
+                  "types": ["job", "education"],
+                  "exclude_by": [
+                    {
+                      "path": "_id",
+                      "value": [
+                        "education_emil_racovita_high_school",
+                        "experience_enlivy",
+                        "experience_gi_group"
+                      ]
+                    }
+                  ],
+                  "tag_labels": {
+                    "wordpress": "WP",
+                    "prestashop": "PS",
+                    "javascript": "JS",
+                    "php": "PHP",
+                    "seo": "SEO"
+                  },
+                  "max_tags": 10,
+                  "titles": {
+                    "education_technical_university_cluj_napoca_baia_mare": "Technical University of Cluj-Napoca"
+                  },
+                  "links": {
+                    "job": "employee-experience",
+                    "education": "education-experience"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "component": "columns",
+            "data": {
+              "layout": {
+                "base": "100",
+                "md": "60-40"
+              },
+              "gap": {
+                "base": "lg",
+                "md": "xl"
+              },
+              "align": "stretch"
+            },
+            "children": [
+              {
+                "component": "block_paragraph_card",
+                "data": {
+                  "text": [
+                    "Before web development, I worked as a freelance video editor, mostly editing gaming videos. After finishing my university studies in Mathematics and Informatics, I moved into web development and made it my career.",
+                    "In 2019 I joined Pia Soft Product as a web developer and photo-video editor. I built presentation websites and online shops on WordPress and PrestaShop, handled SEO, website and hosting maintenance and client communication, and designed banners, logos and video ads. Apart from video editing, which I already knew, I learned everything on the job, working independently and building web applications with PHP, Smarty TPL, SQL, JavaScript, jQuery, HTML and CSS.",
+                    "At the end of 2021 I moved full time to Netex Romania as a front-end developer, while staying part time at Pia Soft Product until late 2022. I maintained several WordPress websites and turned designs from Zeplin into static pages with HTML, SASS, Node.js, Bootstrap, JavaScript and jQuery. I started on my part of the project alone and later worked alongside a colleague, which taught me GitLab, Git and how to work well in a team.",
+                    "In 2023 I took on shorter roles, as a junior WordPress developer at Enlivy and building a custom WordPress theme for Yes Agency. Since 2024 I have been working with Mentor Marketing Experts as a WordPress developer and web page designer, building Elementor websites from Figma designs, through Gi Group since April 2026."
+                  ]
+                }
+              },
+              {
+                "component": "block_image",
+                "data": {
+                  "img": "personal-images/dm-working-in-office.webp",
+                  "video": "backgrounds/dm-working-in-office.webm",
+                  "alt": "Denis Marginas working in the office",
+                  "card": false,
+                  "popup": true,
+                  "cover": true,
+                  "width": "100%",
+                  "height": "100%",
+                  "height_md": "320px",
+                  "height_sm": "220px"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "component": "section",
+        "data": {
+          "class": "bg-radial-primary"
+        },
+        "children": [
+          {
+            "component": "taxonomy_listing",
+            "data": {
+              "post_type": "project",
+              "taxonomy": "category",
+              "title": {
+                "text": "Projects",
+                "tag": "h2",
+                "class": "title-divider title-primary font-secondary"
+              },
+              "template": {
+                "component": "card_taxonomy",
+                "data": {}
+              }
+            }
+          }
+        ]
+      },
+      {
+        "component": "section",
+        "children": [
+          {
+            "component": "video_listing",
+            "data": {
+              "template": {
+                "component": "video"
+              },
+              "filter": {
+                "_id": [
+                  "denismarginas-experience-highlights",
+                  "denismarginas-portfolio-showcase"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "component": "carousels_projects_items",
+        "children": [
+          {
+            "component": "carousel_projects_items",
+            "data": {
+              "post_type": "project",
+              "class": "show-preview",
+              "filter_by": {
+                "_id": [
+                  "kaizin-online-shop",
+                  "bullionhouse-online-shop",
+                  "familyfirst-online-shop",
+                  "edlaparis-booking-application",
+                  "merkaz-nadlan-presentation-website",
+                  "corfuprivatecruises-booking-application",
+                  "resurseeducationale-online-shop",
+                  "agramix-media",
+                  "casadarius-online-shop",
+                  "lavmag-online-shop",
+                  "promotiimars-contest-application",
+                  "agromir-online-shop",
+                  "busvip-media",
+                  "revelnail-avadores-online-shop",
+                  "reifendirekt-web-design",
+                  "vseconstruct-media"
+                ],
+                "max_items": 16
+              },
+              "sort": [
+                {
+                  "by": "_id",
+                  "values": [
+                    "kaizin-online-shop",
+                    "bullionhouse-online-shop",
+                    "familyfirst-online-shop",
+                    "edlaparis-booking-application",
+                    "merkaz-nadlan-presentation-website",
+                    "corfuprivatecruises-booking-application",
+                    "resurseeducationale-online-shop",
+                    "agramix-media",
+                    "casadarius-online-shop",
+                    "lavmag-online-shop",
+                    "promotiimars-contest-application",
+                    "agromir-online-shop",
+                    "busvip-media",
+                    "revelnail-avadores-online-shop",
+                    "reifendirekt-web-design",
+                    "vseconstruct-media"
+                  ]
+                }
+              ],
+              "template": {
+                "component": "card_post_project_visual_default",
+                "params": {},
+                "width": 180,
+                "height": 180,
+                "width_phone": 120,
+                "height_phone": 120
+              },
+              "direction": "right",
+              "speed": "slow",
+              "pause_on_hover": false,
+              "gap": "--dm-spacing-sm",
+              "gap_phone": "--dm-spacing-xs"
+            }
+          },
+          {
+            "component": "carousel_projects_items",
+            "data": {
+              "post_type": "project",
+              "filter_by": {
+                "_id": [
+                  "agromir-online-shop",
+                  "promotiimars-contest-application",
+                  "lavmag-online-shop",
+                  "casadarius-online-shop",
+                  "agramix-online-shop",
+                  "revelnail-avadores-online-shop",
+                  "resurseeducationale-online-shop",
+                  "merkaz-nadlan-presentation-website",
+                  "familyfirst-online-shop",
+                  "bullionhouse-online-shop",
+                  "kaizin-online-shop",
+                  "edlaparis-booking-application",
+                  "logistic-brain-presentation-website",
+                  "boneamed-presentation-website",
+                  "colorplay-presentation-website"
+                ],
+                "max_items": 15
+              },
+              "sort": [
+                {
+                  "by": "_id",
+                  "values": [
+                    "agromir-online-shop",
+                    "promotiimars-contest-application",
+                    "lavmag-online-shop",
+                    "casadarius-online-shop",
+                    "agramix-online-shop",
+                    "revelnail-avadores-online-shop",
+                    "resurseeducationale-online-shop",
+                    "merkaz-nadlan-presentation-website",
+                    "familyfirst-online-shop",
+                    "bullionhouse-online-shop",
+                    "kaizin-online-shop",
+                    "edlaparis-booking-application",
+                    "logistic-brain-presentation-website",
+                    "boneamed-presentation-website",
+                    "colorplay-presentation-website"
+                  ]
+                }
+              ],
+              "template": {
+                "component": "card_post_project_visual_devices_website",
+                "params": {
+                  "desktop_layout_style": false,
+                  "phone_layout_style": false,
+                  "desktop_device": "model-03",
+                  "phone_device": "model-03"
+                },
+                "width": 320,
+                "height": "auto",
+                "width_phone": 200,
+                "height_phone": 200
+              },
+              "direction": "left",
+              "speed": "slow",
+              "pause_on_hover": false,
+              "gap": "--dm-spacing-lg",
+              "gap_phone": "--dm-spacing-sm"
+            }
+          },
+          {
+            "component": "carousel_projects_items",
+            "data": {
+              "post_type": "project",
+              "filter_by": {
+                "taxonomy.category": "Media Projects",
+                "max_items": 12
+              },
+              "exclude_by": [
+                {
+                  "path": "taxonomy.category",
+                  "value": "Personal Projects"
+                }
+              ],
+              "sort": [
+                {
+                  "by": "project.types",
+                  "value": "personal",
+                  "position": "last"
+                },
+                {
+                  "by": "date.publish",
+                  "order": "desc"
+                }
+              ],
+              "template": {
+                "component": "card_post_project_visual_default",
+                "params": {},
+                "width": 200,
+                "height": 120,
+                "width_phone": 120,
+                "height_phone": 75
+              },
+              "direction": "right",
+              "speed": "slow",
+              "pause_on_hover": false,
+              "gap": "--dm-spacing-sm",
+              "gap_phone": "--dm-spacing-xs"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "search",
+    "data": {
+      "seo": {
+        "title": "Search",
+        "description": "Search the pages, projects, categories and tags of my portfolio.",
+        "keywords": "denis marginas search",
+        "slug": "search",
+        "index": false
+      }
+    },
+    "content": [
+      {
+        "component": "hero",
+        "children": [
+          {
+            "component": "animation_blurred_lines",
+            "data": {}
+          }
+        ],
+        "data": {
+          "variant": "xs",
+          "img": "backgrounds/bg-home.webp",
+          "video": {
+            "src": "backgrounds/bg-home.webm",
+            "loop": true,
+            "audio": false,
+            "overlay": 0.6
+          },
+          "title": "@data.seo.title",
+          "description": "@data.seo.description"
+        }
+      },
+      {
+        "component": "section",
+        "children": [
+          {
+            "component": "search",
+            "data": {
+              "toolbar": "search",
+              "description_max": 100
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "privacy-policy",
+    "data": {
+      "seo": {
+        "title": "Privacy Policy",
+        "description": "Learn how we collect, use, and protect your personal data. Our Privacy Policy explains our use of cookies, Google Analytics, and your rights regarding your data.",
+        "keywords": "denis marginas privacy-policy",
+        "slug": "privacy-policy",
+        "index": false
+      }
+    },
+    "content": [
+      {
+        "component": "hero",
+        "children": [
+          {
+            "component": "animation_squares",
+            "data": {}
+          }
+        ],
+        "data": {
+          "variant": "xs",
+          "img": "backgrounds/bg-home.webp",
+          "video": {
+            "src": "backgrounds/bg-home.webm",
+            "loop": true,
+            "audio": false,
+            "overlay": 0.6
+          },
+          "title": "@data.seo.title",
+          "description": "@data.seo.description"
+        }
+      },
+      {
+        "component": "section",
+        "children": [
+          {
+            "component": "text_block",
+            "data": {
+              "elements": [
+                {
+                  "title": {
+                    "text": "Privacy Policy",
+                    "tag": "h2",
+                    "class": "title-divider title-primary font-secondary"
+                  }
+                },
+                {
+                  "subtitle": {
+                    "text": "Google Analytics",
+                    "tag": "h3",
+                    "class": "title-divider title-secondary font-secondary"
+                  }
+                },
+                {
+                  "paragraphs": [
+                    "We use Google Analytics on this website to analyze and understand how visitors interact with our site. Google Analytics is a web analytics service provided by Google Inc. It helps us track and report website traffic, allowing us to improve our content and user experience based on data collected."
+                  ]
+                },
+                {
+                  "subtitle": {
+                    "text": "What Google Analytics Does",
+                    "tag": "h3",
+                    "class": "title-divider title-secondary font-secondary"
+                  }
+                },
+                {
+                  "paragraphs": [
+                    "Google Analytics collects data about your visit, including your IP address, browser type, and the pages you view. This information is used to generate reports on website activity and user behavior. The data collected by Google Analytics is aggregated and anonymized, meaning it does not personally identify you."
+                  ]
+                },
+                {
+                  "subtitle": {
+                    "text": "How We Use the Data",
+                    "tag": "h3",
+                    "class": "title-divider title-secondary font-secondary"
+                  }
+                },
+                {
+                  "paragraphs": [
+                    "The information collected through Google Analytics helps us understand how users navigate our site, which pages are popular, and how we can enhance our website's performance. We use this data to make informed decisions about our content and services, aiming to provide a better experience for our visitors."
+                  ]
+                },
+                {
+                  "subtitle": {
+                    "text": "Opt-Out",
+                    "tag": "h3",
+                    "class": "title-divider title-secondary font-secondary"
+                  }
+                },
+                {
+                  "paragraphs": [
+                    "You can choose to opt-out of Google Analytics tracking by installing the Google Analytics Opt-out Browser Add-on or by disabling cookies in your browser settings. Please note that opting out may affect your experience on our website."
+                  ]
+                },
+                {
+                  "buttons": [
+                    {
+                      "text": "Google Analytics Opt-out Add-on",
+                      "link": "https://tools.google.com/dlpage/gaoptout",
+                      "svg": "new-tab",
+                      "target": "_blank",
+                      "rel": "noopener",
+                      "class": "btn btn-outline btn-sm"
+                    }
+                  ]
+                },
+                {
+                  "paragraphs": [
+                    "For more details on how Google Analytics handles your data, you can refer to Google's Privacy Policy."
+                  ]
+                },
+                {
+                  "buttons": [
+                    {
+                      "text": "Google's Privacy Policy",
+                      "link": "https://policies.google.com/privacy",
+                      "svg": "new-tab",
+                      "target": "_blank",
+                      "rel": "noopener",
+                      "class": "btn btn-outline btn-sm"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "component": "text_block",
+            "data": {
+              "elements": [
+                {
+                  "subtitle": {
+                    "text": "Your Cookie Settings",
+                    "tag": "h3",
+                    "class": "title-divider title-secondary font-secondary"
+                  }
+                },
+                {
+                  "paragraphs": [
+                    "You can change your choice at any time: open the cookie settings and switch Google Analytics on or off for this browser. Turning it off stops the tracking and removes the Google Analytics cookies."
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "component": "cookie_settings",
+            "data": {
+              "text": "Cookie settings",
+              "class": "btn btn-outline btn-sm",
+              "status": true
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

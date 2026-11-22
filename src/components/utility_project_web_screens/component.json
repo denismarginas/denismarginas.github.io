@@ -1,0 +1,11 @@
+{
+  "name": "utility_project_web_screens",
+  "title": "Utility Project Web Screens",
+  "summary": "Lists a project's desktop / phone screenshots in order.",
+  "description": "Website screenshots of a project from src/content/img/projects/<media.path>/web/website/desktop/ and .../phone/. The \"_0\" image (web_desktop_0.webp, web_phone_0.webp, web_0.webp, web-m-0.webp ...) comes first, then natural order (web_1, web_2 ... web_10). first() is the cover used by device cards, previews and thumbnails; sort() is also used by project_media_gallery so the galleries show the same order.",
+  "type": "utility",
+  "assets": {
+    "php": ["assets/php/utility_project_web_screens.php"]
+  },
+  "dependencies": []
+}

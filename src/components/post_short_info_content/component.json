@@ -1,0 +1,18 @@
+{
+  "name": "post_short_info_content",
+  "title": "Post Short Info - Content",
+  "summary": "Post info card: title, description, links, meta, tags.",
+  "description": "Post info card: title, description, categories, website links, platform / technology / modules, icons, collaboration, status, media links (url -> svg + short url, url + text -> pill), media platforms, project types, school, employer, date and tags. Replaces the old section_post .post-text.",
+  "post_types": ["project"],
+  "assets": {
+    "php": [
+      "assets/php/parts/post_short_info_content_helpers.php",
+      "assets/php/parts/post_short_info_content_blocks.php",
+      "assets/php/post_short_info_content.php"
+    ],
+    "html": ["assets/html/template.html"],
+    "scss": ["assets/scss/**"],
+    "css": ["assets/css/**"]
+  },
+  "dependencies": ["post_short_info_visual", "utility_string_urlto", "utility_date", "image", "svg", "theme"]
+}

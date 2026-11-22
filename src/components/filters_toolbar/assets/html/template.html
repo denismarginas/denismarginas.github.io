@@ -1,0 +1,53 @@
+<div class="ft-toolbar">
+    <label class="ft-search search-input" id="{{ search_id }}">
+      <span class="ft-search-icon" aria-hidden="true">{{ icon_search }}</span>
+      <input type="search"{{ input_attrs }}>
+    </label>
+    <div class="ft-actions">
+      {{ actions }}
+      <button type="button" class="ft-icon-btn toggle-filters" aria-haspopup="dialog" aria-expanded="false" aria-controls="{{ drawer_id }}" aria-label="{{ filters_label }}" title="{{ filters_label }}"{{ drawer_button_hidden }}>
+        {{ icon_filter }}<span class="ft-badge" hidden>0</span>
+      </button>
+    </div>
+  </div>
+  <div class="ft-status">
+    <p class="ft-results query-text" aria-live="polite"{{ results_hidden }}>{{ results_text }}</p>
+    <ul class="ft-chips" aria-label="{{ chips_label }}" data-label-remove="{{ remove_label }}"></ul>
+    <button type="reset" class="ft-clear" hidden>{{ clear_label }}</button>
+  </div>
+  <dialog class="ft-drawer" id="{{ drawer_id }}" aria-labelledby="{{ drawer_id }}-title">
+    <div class="ft-drawer-panel">
+      <div class="ft-drawer-head">
+        <h2 class="ft-drawer-title" id="{{ drawer_id }}-title"><span class="ft-drawer-title-icon" aria-hidden="true">{{ icon_filter }}</span>{{ filters_label }}</h2>
+        <button type="button" class="ft-icon-btn ft-drawer-close" aria-label="{{ close_label }}">{{ icon_close }}</button>
+      </div>
+      <div class="ft-drawer-body">
+        <section class="ft-section block-search"{{ drawer_search_hidden }}>
+          <label class="ft-drawer-search">
+            <span class="ft-search-icon" aria-hidden="true">{{ icon_search }}</span>
+            <input type="search" class="ft-drawer-search-input"{{ drawer_input_attrs }}>
+          </label>
+        </section>
+        <section class="ft-section block-view"{{ view_hidden }}>
+          <h3 class="ft-section-title">{{ view_label }}</h3>
+          <div class="ft-view-controls">
+            {{ view }}
+          </div>
+        </section>
+        <section class="ft-section block-sort"{{ sort_hidden }}>
+          <h3 class="ft-section-title">{{ sort_label }}</h3>
+          {{ sort }}
+        </section>
+        <section class="ft-section block-filters"{{ filters_hidden }}>
+          <h3 class="ft-section-title">{{ filters_label }}</h3>
+          <div class="ft-fields">
+            {{ filters }}
+          </div>
+        </section>
+      </div>
+      <div class="ft-drawer-foot">
+        <button type="reset" class="ft-btn ft-btn-ghost ft-reset">{{ reset_label }}</button>
+        <button type="button" class="ft-btn ft-btn-solid ft-apply"><span class="ft-btn-text">{{ apply_text }}</span></button>
+      </div>
+    </div>
+  </dialog>

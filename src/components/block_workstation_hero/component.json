@@ -1,0 +1,30 @@
+{
+  "name": "block_workstation_hero",
+  "title": "Block Workstation Hero",
+  "summary": "Workstation header: title, description, setup image, status.",
+  "description": "Header of a workstation item (old workstation_header): title + description (data.seo) next to the setup image, on the item colors (radial gradient primary -> canvas_primary) with two waves and the status badge. Used inside block_workstation_containers (item colors and fonts).",
+  "post_types": [
+    "workstation"
+  ],
+  "assets": {
+    "php": [
+      "assets/php/block_workstation_hero.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "image",
+    "svg",
+    "utility_post_thumbnail",
+    "block_workstation_status",
+    "theme"
+  ]
+}

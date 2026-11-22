@@ -1,0 +1,25 @@
+{
+  "name": "hobby_pc_video_games_listing",
+  "title": "Hobby PC Video Games Listing",
+  "summary": "Grid of PC game cards.",
+  "description": "Grid of game cards (banner, rank, playtime, tags, name) from an item file (default data_items_hobby_pc_video_game.json). Items with \"display\": false are rendered hidden (shown by the filters' Display: All). Linked to hobby_pc_video_games_filters by \"id\".",
+  "assets": {
+    "php": [
+      "assets/php/hobby_pc_video_games_listing.php"
+    ],
+    "html": [
+      "assets/html/template.html",
+      "assets/html/parts/item.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "svg",
+    "theme"
+  ]
+}

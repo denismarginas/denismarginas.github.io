@@ -1,0 +1,20 @@
+{
+  "name": "project_visual_web_gallery",
+  "title": "Project Visual Web Gallery",
+  "summary": "Web section: website screenshots and web media galleries.",
+  "description": "Web section of a project page (replaces section_web_project): primary title (block_title) (\"Web Development\") + optional content_section_primary components (e.g. project_block_visual_and_paragraph) + website galleries (web/desktop + web/phone, then web/content-website sub galleries), secondary title (\"Web Media Content\") + web/media-website images. Each part is a project_media_gallery; titles render only when something below them has output.",
+  "post_types": [
+    "project"
+  ],
+  "assets": {
+    "php": [
+      "assets/php/project_visual_web_gallery.php"
+    ]
+  },
+  "dependencies": [
+    "project_media_gallery",
+    "block_title",
+    "section",
+    "theme"
+  ]
+}

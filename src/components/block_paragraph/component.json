@@ -1,0 +1,14 @@
+{
+  "name": "block_paragraph",
+  "title": "Block Paragraph",
+  "summary": "Centered post text in an outlined card.",
+  "description": "Text block of a post (old paragraph_block / .dm-post-title-description): centered text in an outlined card, optional child components (e.g. block_slider_images) below the text.",
+  "post_types": ["project"],
+  "assets": {
+    "php": ["assets/php/block_paragraph.php"],
+    "html": ["assets/html/template.html", "assets/html/parts/text.html"],
+    "scss": ["assets/scss/**"],
+    "css": ["assets/css/**"]
+  },
+  "dependencies": ["section", "theme"]
+}

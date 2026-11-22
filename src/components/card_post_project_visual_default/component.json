@@ -1,0 +1,14 @@
+{
+  "name": "card_post_project_visual_default",
+  "title": "Card Post Project Visual - Default",
+  "summary": "Default project visual: logo with preview image on hover.",
+  "description": "Fallback project card visual: logo (image, svg icon, or the \"projects\" svg when neither exists) on the canvas_primary color, with a preview image (data.media.thumbnail.default, desktop cover (web/website/desktop, \"_0\" image) for web projects, or first media photo) shown on hover.",
+  "post_types": ["project"],
+  "assets": {
+    "php": ["assets/php/card_post_project_visual_default.php"],
+    "html": ["assets/html/template.html"],
+    "scss": ["assets/scss/card_post_project_visual_default.scss"],
+    "css": ["assets/css/**"]
+  },
+  "dependencies": ["utility_post_thumbnail", "utility_project_web_screens", "image", "svg", "theme"]
+}

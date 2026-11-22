@@ -1,0 +1,15 @@
+<div class="filters-sort" data-target="{{ target }}"{{ grid_attrs }}>
+  <div class="filters-sort-field">
+    <label for="{{ by_id }}">{{ by_label }}</label>
+    <select id="{{ by_id }}" name="sort_by" class="sort-by">
+      {{ by_options }}
+    </select>
+  </div>
+  <div class="filters-sort-field">
+    <label for="{{ order_id }}">{{ order_label }}</label>
+    <select id="{{ order_id }}" name="sort_order" class="sort-order"{{ order_disabled }}>
+      <option value="asc">{{ asc_label }}</option>
+      <option value="desc"{{ desc_selected }}>{{ desc_label }}</option>
+    </select>
+  </div>
+</div>

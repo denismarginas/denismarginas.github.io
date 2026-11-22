@@ -1,0 +1,1 @@
+html.tx-js [data-transition]:not(.tx-ready){visibility:hidden}html.tx-sliding,html.tx-sliding body{overflow-x:clip}.transitions{display:block}.transitions.transitions-contents{display:contents}

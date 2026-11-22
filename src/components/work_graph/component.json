@@ -1,0 +1,25 @@
+{
+  "name": "work_graph",
+  "title": "Work Graph",
+  "summary": "Work and jobs timeline with total experience.",
+  "description": "Renders work timeline and jobs timeline with total experience summary, using utility_sort and utility_calc_date_interval.",
+  "assets": {
+    "php": [
+      "assets/php/work_graph.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "utility_sort",
+    "utility_calc_date_interval",
+    "utility_datetime_amount"
+  ]
+}

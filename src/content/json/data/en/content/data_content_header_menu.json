@@ -1,0 +1,45 @@
+{
+    "menu_name": "Header Menu",
+    "menu_list": [
+        {
+            "_id": "home",
+            "text": "Home"
+        },
+        {
+            "_id": "experience",
+            "text": "Experience",
+            "submenu": [
+                {
+                    "_id": "employee-experience",
+                    "text": "Professional Experience"
+                },
+                {
+                    "_id": "education-experience",
+                    "text": "Education Experience"
+                }
+            ]
+        },
+        {
+            "_id": "projects",
+            "text": "Projects",
+            "submenu": [
+                {
+                    "_id": "web-development-projects",
+                    "text": "Web Projects"
+                },
+                {
+                    "_id": "visual-media-projects",
+                    "text": "Media Projects"
+                },
+                {
+                    "_id": "personal-and-custom-projects",
+                    "text": "Personal Projects"
+                }
+            ]
+        },
+        {
+            "_id": "contact",
+            "text": "Contact"
+        }
+    ]
+}

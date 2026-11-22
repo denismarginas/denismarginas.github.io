@@ -1,0 +1,289 @@
+[
+    {
+        "_id": "contact-form",
+        "settings": {
+            "collection_type": "form",
+            "render": true
+        },
+        "data": {
+            "seo": {
+                "title": "Contact Form"
+            },
+            "type": "steps",
+            "external": {
+                "type": "google-forms",
+                "url": "https://docs.google.com/forms/d/e/1FAIpQLSdkMKYQyLa4H7yxU7RMUK97urwK5LMvbk-dFs9-wKpCRCO_Ng/viewform",
+                "submit_note": "Your message opens in Google Forms (in a new tab) with everything already filled in. Press Submit there to send it.",
+                "link_text": "Proceed to the form"
+            },
+            "fields": [
+                {
+                    "name": "name",
+                    "type": "text",
+                    "placeholder": "Your Name",
+                    "external_name": "entry.372576771"
+                },
+                {
+                    "name": "email",
+                    "type": "email",
+                    "placeholder": "Your Email",
+                    "external_name": "entry.1216480420"
+                },
+                {
+                    "name": "phone",
+                    "type": "tel",
+                    "placeholder": "Your Phone Number",
+                    "external_name": "entry.839463599"
+                },
+                {
+                    "name": "message",
+                    "type": "textarea",
+                    "placeholder": "Your Message",
+                    "external_name": "entry.401433199",
+                    "compose": "lines"
+                }
+            ],
+            "progress": [
+                {
+                    "label": "About You",
+                    "steps": [
+                        "1"
+                    ]
+                },
+                {
+                    "label": "Subject",
+                    "steps": [
+                        "2"
+                    ]
+                },
+                {
+                    "label": "Details",
+                    "steps": [
+                        "3",
+                        "4",
+                        "5"
+                    ]
+                }
+            ],
+            "steps": [
+                {
+                    "id": "1",
+                    "icon": "about-me",
+                    "label": "About You",
+                    "fields": [
+                        {
+                            "name": "step-name",
+                            "type": "text",
+                            "placeholder": "Your Name",
+                            "label": "Name",
+                            "target": "name",
+                            "required": true,
+                            "width": "half"
+                        },
+                        {
+                            "name": "step-email",
+                            "type": "email",
+                            "placeholder": "Your Email",
+                            "label": "Email",
+                            "target": "email",
+                            "required": true,
+                            "width": "half"
+                        },
+                        {
+                            "name": "step-phone",
+                            "type": "tel",
+                            "placeholder": "Your Phone Number (optional)",
+                            "label": "Phone",
+                            "target": "phone"
+                        }
+                    ],
+                    "buttons": [
+                        {
+                            "type": "next",
+                            "text": "Next Step",
+                            "step": "2"
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "icon": "faq",
+                    "label": "Subject",
+                    "fields": [
+                        {
+                            "name": "subject",
+                            "type": "radio",
+                            "label": "Subject",
+                            "target": "message",
+                            "required": true,
+                            "options": [
+                                {
+                                    "value": "Send a Message",
+                                    "svg": "envelope",
+                                    "step": "3",
+                                    "label": "Send a Message"
+                                },
+                                {
+                                    "value": "Hire me for a freelance project",
+                                    "svg": "folder-open",
+                                    "step": "4",
+                                    "label": "Hire me for a freelance project"
+                                },
+                                {
+                                    "value": "Offer me a position at your company",
+                                    "svg": "employ",
+                                    "step": "5",
+                                    "label": "Offer me a position at your company"
+                                }
+                            ]
+                        }
+                    ],
+                    "buttons": [
+                        {
+                            "type": "prev",
+                            "text": "Previous Step"
+                        },
+                        {
+                            "type": "next",
+                            "text": "Next Step",
+                            "step": "@subject"
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "icon": "envelope",
+                    "label": "Send a Message",
+                    "fields": [
+                        {
+                            "name": "step-message",
+                            "type": "textarea",
+                            "placeholder": "Your Message",
+                            "label": "Message",
+                            "target": "message",
+                            "required": true
+                        }
+                    ],
+                    "buttons": [
+                        {
+                            "type": "prev",
+                            "text": "Previous Step"
+                        },
+                        {
+                            "type": "submit",
+                            "text": "Submit"
+                        }
+                    ]
+                },
+                {
+                    "id": "4",
+                    "icon": "folder-open",
+                    "label": "Project Request",
+                    "fields": [
+                        {
+                            "name": "step-project-type",
+                            "type": "radio",
+                            "label": "Project Type",
+                            "target": "message",
+                            "required": true,
+                            "options": [
+                                {
+                                    "value": "Web Development",
+                                    "svg": "hobby-web-design",
+                                    "label": "Web Development"
+                                },
+                                {
+                                    "value": "Video Editing",
+                                    "svg": "hobby-video-editing",
+                                    "label": "Video Editing"
+                                },
+                                {
+                                    "value": "Photo Editing",
+                                    "svg": "hobby-photo-editing",
+                                    "label": "Photo Editing"
+                                },
+                                {
+                                    "value": "Other",
+                                    "svg": "hobby-unknown",
+                                    "label": "Other"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "step-budget",
+                            "type": "text",
+                            "placeholder": "Project Budget",
+                            "label": "Project Budget",
+                            "target": "message"
+                        },
+                        {
+                            "name": "step-project-details",
+                            "type": "textarea",
+                            "placeholder": "Project Details",
+                            "label": "Project Details",
+                            "target": "message",
+                            "required": true
+                        }
+                    ],
+                    "buttons": [
+                        {
+                            "type": "prev",
+                            "text": "Previous Step"
+                        },
+                        {
+                            "type": "submit",
+                            "text": "Submit"
+                        }
+                    ]
+                },
+                {
+                    "id": "5",
+                    "icon": "employ",
+                    "label": "Job Offer",
+                    "fields": [
+                        {
+                            "name": "step-job-title",
+                            "type": "text",
+                            "placeholder": "Job Title",
+                            "label": "Job Title",
+                            "target": "message",
+                            "required": true
+                        },
+                        {
+                            "name": "step-salary",
+                            "type": "text",
+                            "placeholder": "Salary Offer",
+                            "label": "Salary Offer",
+                            "target": "message"
+                        },
+                        {
+                            "name": "step-offer-details",
+                            "type": "textarea",
+                            "placeholder": "Offer Details",
+                            "label": "Offer Details",
+                            "target": "message",
+                            "required": true
+                        },
+                        {
+                            "name": "step-company",
+                            "type": "text",
+                            "placeholder": "Company (optional)",
+                            "label": "Company",
+                            "target": "message"
+                        }
+                    ],
+                    "buttons": [
+                        {
+                            "type": "prev",
+                            "text": "Previous Step"
+                        },
+                        {
+                            "type": "submit",
+                            "text": "Submit"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]

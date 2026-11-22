@@ -1,0 +1,15 @@
+{
+    "name": "json-editor",
+    "title": "JSON Editor",
+    "summary": "Editable tree for any JSON value.",
+    "description": "Generic editable tree for any JSON value",
+    "type": "util",
+    "assets": {
+        "css": [
+            "assets/css/json-editor.css"
+        ],
+        "js": [
+            "assets/js/json-editor.js"
+        ]
+    }
+}

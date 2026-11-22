@@ -1,0 +1,1 @@
+.portrait-about{width:100%;max-width:var(--portrait-about-max-width, 100%);margin-inline:auto}.portrait-about .portrait-about-img{display:block;width:100%;height:auto}@media(max-width: 1024px){.portrait-about{max-width:min(var(--portrait-about-max-width, 100%),360px)}}@media(max-width: 480px){.portrait-about{max-width:min(var(--portrait-about-max-width, 100%),260px)}}

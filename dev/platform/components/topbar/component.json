@@ -1,0 +1,15 @@
+{
+    "name": "topbar",
+    "title": "Topbar",
+    "summary": "Admin topbar: logo, title and action buttons.",
+    "description": "Platform topbar with logo, title, subtitle and actions",
+    "type": "util",
+    "assets": {
+        "php": [
+            "index.php"
+        ],
+        "css": [
+            "assets/css/topbar.css"
+        ]
+    }
+}

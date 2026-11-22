@@ -1,0 +1,54 @@
+ul,
+ol {
+  font-family: var(--dm-font-primary);
+  font-size: var(--dm-font-size-base);
+  font-style: normal;
+  font-weight: var(--dm-font-weight-regular);
+  line-height: 1.6;
+  color: var(--dm-color-gray);
+}
+div,
+nav,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+b,
+span,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd,
+svg,
+path,
+label {
+  margin: 0;
+  transition: var(--dm-transition);
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    color: var(--dm-link);
+  }
+}
+
+svg[data-svg-type="fill"] > path,
+svg[data-svg-type="stroke"] > path {
+  -webkit-transition: var(--dm-transition);
+  -o-transition: var(--dm-transition);
+  transition: var(--dm-transition);
+}
+body,
+body * {
+  box-sizing: border-box;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "project_visual_media_gallery_photo",
+  "title": "Project Visual Media Gallery - Photo",
+  "summary": "Photo galleries part of a project's visual media.",
+  "description": "Photo part of a project's visual media: title (block_title, default \"Photo Media Content\") + photo galleries from src/content/img/projects/<media.path>/media/ (project_media_gallery \"images\", one list per folder, id \"photo\"). Renders nothing (no title) when there are no images. Used by project_visual_media_gallery, can also be placed on its own.",
+  "post_types": [
+    "project"
+  ],
+  "assets": {
+    "php": [
+      "assets/php/project_visual_media_gallery_photo.php"
+    ]
+  },
+  "dependencies": [
+    "project_visual_web_gallery",
+    "project_media_gallery",
+    "block_title",
+    "theme"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "portrait_experience",
+  "title": "Portrait Experience",
+  "summary": "Cut-out portrait with decorative background.",
+  "description": "Portrait photo (transparent cutout) with a decorative background. data.style: \"circle\" (default: gradient circle, dots graphic, colored bottom bar) or \"arch\" (arch panel behind the person, head and laptop breaking out, outline arch, optional floating badges).",
+  "assets": {
+    "php": [
+      "assets/php/portrait_experience.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "image",
+    "svg",
+    "theme"
+  ]
+}

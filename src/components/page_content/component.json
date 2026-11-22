@@ -1,0 +1,9 @@
+{
+    "name": "page_content",
+    "summary": "The <main> region with the page body content.",
+    "description": "Renders the <main> content region with page body content.",
+    "assets": {
+        "php": ["assets/php/page_content.php"]
+    },
+    "dependencies": []
+}

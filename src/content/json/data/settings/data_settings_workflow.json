@@ -1,0 +1,74 @@
+{
+    "render": {
+        "debug_post_data": false,
+        "hoist_to_head": true,
+        "html_compile": true,
+        "html_compile_folder": true
+    },
+    "compile_scss": {
+        "compile_scss_platform_components": true,
+        "compile_scss_platform_assets": true,
+        "compile_scss_src_components": true,
+        "compile_scss_assets": true,
+        "compile_assets": true,
+        "compile_scss_everytime": true
+    },
+    "live_preview": {
+        "post_type": "page",
+        "_id": "home"
+    },
+    "project_structure": {
+        "header": "header",
+        "footer": "footer",
+        "page_structure": "page_constructor",
+        "body_wrapper": ""
+    },
+    "page_structure": {
+        "header": "header",
+        "footer": "footer",
+        "page_structure": "page_constructor"
+    },
+    "seo_project": {
+        "title_max": "50",
+        "description_max": "140",
+        "index": "index",
+        "keywords_source": "_id"
+    },
+    "seo_page": {
+        "index": "index"
+    },
+    "translation": {
+        "default_lang": "en",
+        "target_langs": "ro",
+        "provider": "ollama",
+        "model": "translategemma:4b",
+        "ollama_url": "http://127.0.0.1:11434"
+    },
+    "thumbnails": {
+        "skip_projects_with_thumbnail": true,
+        "overwrite": false,
+        "overwrite_if_bigger": false,
+        "overwrite_bigger_than_kb": "19",
+        "quality": "42"
+    },
+    "resumes": {
+        "output_folder": "resumes",
+        "width": "1000",
+        "thumbnail_width": "130",
+        "quality": "34",
+        "thumbnail_quality": "35",
+        "page": "1",
+        "skip_existing": true,
+        "update_json": true
+    },
+    "seo_files": {
+        "site_url": "https://denismarginas.github.io/",
+        "robots_disallow": "",
+        "sitemap": true,
+        "robots": true,
+        "include_noindex": false,
+        "front_page_as_root": true,
+        "lastmod": true,
+        "build_on_html_render": true
+    }
+}

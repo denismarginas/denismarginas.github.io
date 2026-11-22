@@ -1,0 +1,14 @@
+{
+  "name": "video_background",
+  "title": "Video Background",
+  "summary": "Muted autoplaying background video for any container.",
+  "description": "Muted, autoplaying background video for any container (hero, section, card): cover fit, optional segment (start / end seconds), loop or play once, optional sound with a mute toggle, tint overlay that follows light / dark mode, poster image, pauses when off screen and respects reduced motion. Also works on any HTML element through data-video-bg attributes (see video_background.js).",
+  "assets": {
+    "php": ["assets/php/video_background.php"],
+    "html": ["assets/html/template.html"],
+    "scss": ["assets/scss/**"],
+    "css": ["assets/css/**"],
+    "js": ["assets/js/video_background.js"]
+  },
+  "dependencies": ["svg", "theme"]
+}

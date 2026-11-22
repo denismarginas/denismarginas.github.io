@@ -1,0 +1,289 @@
+[
+    {
+        "_id": "contact-form",
+        "settings": {
+            "collection_type": "form",
+            "render": true
+        },
+        "data": {
+            "seo": {
+                "title": "Formular de contact"
+            },
+            "type": "steps",
+            "external": {
+                "type": "google-forms",
+                "url": "https://docs.google.com/forms/d/e/1FAIpQLSdkMKYQyLa4H7yxU7RMUK97urwK5LMvbk-dFs9-wKpCRCO_Ng/viewform",
+                "submit_note": "Mesajul dumneavoastră va fi deschis în Google Forms (într-o nouă fereastră) cu toate câmpurile deja completate. Apăsați butonul \"Trimite\" pentru a-l trimite.",
+                "link_text": "Accesați formularul"
+            },
+            "fields": [
+                {
+                    "name": "name",
+                    "type": "text",
+                    "placeholder": "Numele dumneavoastră",
+                    "external_name": "entry.372576771"
+                },
+                {
+                    "name": "email",
+                    "type": "email",
+                    "placeholder": "Adresa dumneavoastră de e-mail",
+                    "external_name": "entry.1216480420"
+                },
+                {
+                    "name": "phone",
+                    "type": "tel",
+                    "placeholder": "Numărul dvs. de telefon",
+                    "external_name": "entry.839463599"
+                },
+                {
+                    "name": "message",
+                    "type": "textarea",
+                    "placeholder": "Mesajul dumneavoastră",
+                    "external_name": "entry.401433199",
+                    "compose": "lines"
+                }
+            ],
+            "progress": [
+                {
+                    "label": "Despre mine",
+                    "steps": [
+                        "1"
+                    ]
+                },
+                {
+                    "label": "Subiect",
+                    "steps": [
+                        "2"
+                    ]
+                },
+                {
+                    "label": "Detalii",
+                    "steps": [
+                        "3",
+                        "4",
+                        "5"
+                    ]
+                }
+            ],
+            "steps": [
+                {
+                    "id": "1",
+                    "icon": "about-me",
+                    "label": "Despre mine",
+                    "fields": [
+                        {
+                            "name": "step-name",
+                            "type": "text",
+                            "placeholder": "Numele dumneavoastră",
+                            "label": "Nume",
+                            "target": "name",
+                            "required": true,
+                            "width": "half"
+                        },
+                        {
+                            "name": "step-email",
+                            "type": "email",
+                            "placeholder": "Adresa dumneavoastră de e-mail",
+                            "label": "Adresă de e-mail",
+                            "target": "email",
+                            "required": true,
+                            "width": "half"
+                        },
+                        {
+                            "name": "step-phone",
+                            "type": "tel",
+                            "placeholder": "Numărul dvs. de telefon (opțional)",
+                            "label": "Număr de telefon",
+                            "target": "phone"
+                        }
+                    ],
+                    "buttons": [
+                        {
+                            "type": "next",
+                            "text": "Pasul următor",
+                            "step": "2"
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "icon": "faq",
+                    "label": "Subiect",
+                    "fields": [
+                        {
+                            "name": "subject",
+                            "type": "radio",
+                            "label": "Subiect",
+                            "target": "message",
+                            "required": true,
+                            "options": [
+                                {
+                                    "value": "Send a Message",
+                                    "svg": "envelope",
+                                    "step": "3",
+                                    "label": "Trimite un mesaj"
+                                },
+                                {
+                                    "value": "Hire me for a freelance project",
+                                    "svg": "folder-open",
+                                    "step": "4",
+                                    "label": "Angajează-mă pentru un proiect freelance"
+                                },
+                                {
+                                    "value": "Offer me a position at your company",
+                                    "svg": "employ",
+                                    "step": "5",
+                                    "label": "Oferă-mi un post în compania ta"
+                                }
+                            ]
+                        }
+                    ],
+                    "buttons": [
+                        {
+                            "type": "prev",
+                            "text": "Pasul anterior"
+                        },
+                        {
+                            "type": "next",
+                            "text": "Pasul următor",
+                            "step": "@subject"
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "icon": "envelope",
+                    "label": "Trimite un mesaj",
+                    "fields": [
+                        {
+                            "name": "step-message",
+                            "type": "textarea",
+                            "placeholder": "Mesajul dumneavoastră",
+                            "label": "Mesaj",
+                            "target": "message",
+                            "required": true
+                        }
+                    ],
+                    "buttons": [
+                        {
+                            "type": "prev",
+                            "text": "Pasul anterior"
+                        },
+                        {
+                            "type": "submit",
+                            "text": "Trimite"
+                        }
+                    ]
+                },
+                {
+                    "id": "4",
+                    "icon": "folder-open",
+                    "label": "Cerere de proiect",
+                    "fields": [
+                        {
+                            "name": "step-project-type",
+                            "type": "radio",
+                            "label": "Tipul proiectului",
+                            "target": "message",
+                            "required": true,
+                            "options": [
+                                {
+                                    "value": "Web Development",
+                                    "svg": "hobby-web-design",
+                                    "label": "Dezvoltare web"
+                                },
+                                {
+                                    "value": "Video Editing",
+                                    "svg": "hobby-video-editing",
+                                    "label": "Editare video"
+                                },
+                                {
+                                    "value": "Photo Editing",
+                                    "svg": "hobby-photo-editing",
+                                    "label": "Editare foto"
+                                },
+                                {
+                                    "value": "Other",
+                                    "svg": "hobby-unknown",
+                                    "label": "Altceva"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "step-budget",
+                            "type": "text",
+                            "placeholder": "Bugetul proiectului",
+                            "label": "Bugetul proiectului",
+                            "target": "message"
+                        },
+                        {
+                            "name": "step-project-details",
+                            "type": "textarea",
+                            "placeholder": "Detalii despre proiect",
+                            "label": "Detalii despre proiect",
+                            "target": "message",
+                            "required": true
+                        }
+                    ],
+                    "buttons": [
+                        {
+                            "type": "prev",
+                            "text": "Pasul anterior"
+                        },
+                        {
+                            "type": "submit",
+                            "text": "Trimite"
+                        }
+                    ]
+                },
+                {
+                    "id": "5",
+                    "icon": "employ",
+                    "label": "Oferta de angajare",
+                    "fields": [
+                        {
+                            "name": "step-job-title",
+                            "type": "text",
+                            "placeholder": "Titlul postului",
+                            "label": "Titlul postului",
+                            "target": "message",
+                            "required": true
+                        },
+                        {
+                            "name": "step-salary",
+                            "type": "text",
+                            "placeholder": "Oferta salarială",
+                            "label": "Oferta salarială",
+                            "target": "message"
+                        },
+                        {
+                            "name": "step-offer-details",
+                            "type": "textarea",
+                            "placeholder": "Detalii despre ofertă",
+                            "label": "Detalii despre ofertă",
+                            "target": "message",
+                            "required": true
+                        },
+                        {
+                            "name": "step-company",
+                            "type": "text",
+                            "placeholder": "(Opțional)",
+                            "label": "Companie",
+                            "target": "message"
+                        }
+                    ],
+                    "buttons": [
+                        {
+                            "type": "prev",
+                            "text": "Pasul anterior"
+                        },
+                        {
+                            "type": "submit",
+                            "text": "Trimite"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]

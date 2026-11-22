@@ -1,0 +1,21 @@
+<div class="project-screens" data-project-screens data-popup-group-name="{{ group }}">
+  <div class="project-screens-stage" data-screens-stage role="button" tabindex="0" aria-label="{{ open_label }}">{{ stage }}</div>
+  <div class="project-screens-meta">
+    <div class="project-screens-meta-text">
+      <span class="project-screens-counter text-label text-label-sm" data-screens-counter>{{ counter }}</span>
+      <h3 class="project-screens-title title-tertiary" data-screens-title>{{ title }}</h3>
+    </div>
+    <div class="project-screens-nav">
+      <button type="button" class="project-screens-nav-btn" data-screens-prev aria-label="{{ prev_label }}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+      <button type="button" class="project-screens-nav-btn" data-screens-next aria-label="{{ next_label }}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+      <button type="button" class="project-screens-nav-btn project-screens-open" data-screens-open aria-label="{{ open_text }}" title="{{ open_text }}"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="3" width="14" height="14" rx="2"/><path d="M7 13l3.5-3.5L14 13l2-2 5 5"/><circle cx="16.5" cy="7.5" r="1.25"/><path d="M3 7v12a2 2 0 0 0 2 2h12"/></svg></button>
+    </div>
+  </div>
+  <div class="project-screens-rail">
+    <button type="button" class="project-screens-arrow" data-screens-prev aria-label="{{ prev_label }}">&larr;</button>
+    <div class="project-screens-thumbs" data-screens-thumbs role="list">{{ thumbs }}</div>
+    <button type="button" class="project-screens-arrow" data-screens-next aria-label="{{ next_label }}">&rarr;</button>
+  </div>
+  <div class="project-screens-pairs" hidden>{{ pairs }}</div>
+  <div class="project-screens-source" hidden>{{ source }}</div>
+</div>

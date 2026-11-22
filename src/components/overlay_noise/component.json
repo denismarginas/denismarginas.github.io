@@ -1,0 +1,22 @@
+{
+  "name": "overlay_noise",
+  "title": "Overlay Noise",
+  "summary": "Provides the .overlay-noise texture class.",
+  "description": "Style-only component providing the .overlay-noise class with a repeating noise texture background.",
+  "type": "utility",
+  "assets": {
+    "php": [
+      "assets/php/overlay_noise.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": []
+}

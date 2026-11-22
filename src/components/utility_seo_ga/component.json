@@ -1,0 +1,11 @@
+{
+  "name": "utility_seo_ga",
+  "title": "Utility SEO Google Analytics",
+  "summary": "Loads Google Analytics after cookie consent.",
+  "description": "Loads Google Analytics (gtag.js) with the id of data_settings_seo.json, only when the visitor allows analytics in the cookie notice (require_consent, default true). Turning analytics off later disables tracking and clears the _ga cookies. Rendered in the page head by page_constructor.",
+  "assets": {
+    "php": ["assets/php/utility_seo_ga.php"],
+    "js": ["assets/js/utility_seo_ga.js"]
+  },
+  "dependencies": ["cookie_notice"]
+}

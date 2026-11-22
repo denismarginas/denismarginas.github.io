@@ -1,0 +1,14 @@
+{
+  "name": "preloader",
+  "title": "Preloader",
+  "summary": "Full-screen loader shown while the page loads and while the frontend translation runs.",
+  "description": "Rendered by page_constructor at the start of <body>; an inline head script (assets/js/preloader_init.js, value part \"head\") adds html.is-loading before the first paint, so without JavaScript the loader never shows. It hides when the page is ready (window load, or DOMContentLoaded with \"wait\": \"dom\") and, when i18n_frontend is translating, only after the dm:i18n-done event. A safety limit (max_ms) always hides it. Other scripts can use window.dmPreloader.show(key) / hide(key); the language switcher shows it when a language is chosen. Options in data_settings_site.json: \"preloader\": { \"enabled\": true, \"wait\": \"load\" | \"dom\", \"max_ms\": 4000 } or \"preloader\": false.",
+  "assets": {
+    "php": ["assets/php/preloader.php"],
+    "html": ["assets/html/template.html"],
+    "scss": ["assets/scss/**"],
+    "css": ["assets/css/**"],
+    "js": ["assets/js/preloader.js"]
+  },
+  "dependencies": ["theme"]
+}

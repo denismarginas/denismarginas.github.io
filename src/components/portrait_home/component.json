@@ -1,0 +1,15 @@
+{
+  "name": "portrait_home",
+  "title": "Portrait Home",
+  "summary": "Home portrait in an arch with floating skill chips.",
+  "description": "Home page portrait: cut-out photo standing in a tall arch (.bg-radial-primary), the head breaking out of the top, with floating skill chips (icon + text) around it and a subtle scroll parallax. Colors follow light / dark mode.",
+  "post_types": ["page"],
+  "assets": {
+    "php": ["assets/php/portrait_home.php"],
+    "html": ["assets/html/template.html"],
+    "scss": ["assets/scss/**"],
+    "css": ["assets/css/**"],
+    "js": ["assets/js/portrait_home.js"]
+  },
+  "dependencies": ["image", "svg", "theme"]
+}

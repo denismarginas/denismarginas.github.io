@@ -1,0 +1,14 @@
+{
+  "name": "hero_home",
+  "title": "Hero Home",
+  "summary": "Home page hero with background video, intro and buttons.",
+  "description": "Home page hero: full-width section with a background video (video_background, e.g. the Experience Highlights video), tint that follows light / dark mode, eyebrow line, h1 name, short intro, buttons, a scroll-down cue (scroll_down component) and a staggered fade-in. Children render as extra overlays.",
+  "post_types": ["page"],
+  "assets": {
+    "php": ["assets/php/hero_home.php"],
+    "html": ["assets/html/template.html"],
+    "scss": ["assets/scss/**"],
+    "css": ["assets/css/**"]
+  },
+  "dependencies": ["video_background", "button", "section", "svg", "scroll_down", "theme"]
+}

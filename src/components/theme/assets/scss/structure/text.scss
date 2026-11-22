@@ -1,0 +1,29 @@
+p,
+span,
+a,
+ul,
+ol,
+li,
+nav,
+label,
+input,
+table th,
+table td {
+  margin: 0;
+  font-family: var(--dm-font-primary);
+  font-size: var(--dm-font-size-base);
+  font-style: normal;
+  font-weight: var(--dm-font-weight-regular);
+  line-height: 1.6;
+  color: var(--dm-color-gray);
+  transition: var(--dm-transition);
+
+  [mode="light"] & {
+    color: var(--dm-color-gray);
+    transition: var(--dm-transition);
+  }
+  [mode="dark"] & {
+    color: var(--dm-color-gray-light);
+    transition: var(--dm-transition);
+  }
+}

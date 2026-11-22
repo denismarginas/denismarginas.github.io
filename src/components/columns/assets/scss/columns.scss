@@ -1,0 +1,34 @@
+@import "theme";
+
+:where(.columns > .column) {
+  gap: var(--dm-spacing-sm);
+}
+
+.columns {
+  display: grid;
+  grid-auto-columns: minmax(0, 1fr);
+  width: 100%;
+
+  &[data-align="start"] { align-items: start; }
+  &[data-align="center"] { align-items: center; }
+  &[data-align="end"] { align-items: end; }
+  &[data-align="stretch"] { align-items: stretch; }
+
+  > .column {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+
+  &[data-reverse-stacked="true"][data-stack-below="none"] > .column:last-child {
+    order: -1;
+  }
+}
+
+@each $bp, $width in $dm-breakpoints {
+  @media (max-width: $width - 1px) {
+    .columns[data-reverse-stacked="true"][data-stack-below="#{$bp}"] > .column:last-child {
+      order: -1;
+    }
+  }
+}

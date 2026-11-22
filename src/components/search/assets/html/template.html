@@ -1,0 +1,11 @@
+<div class="search" data-search>
+  <form class="filters-toolbar search-filters" id="{{ form_id }}" data-target="{{ target }}" data-min-chars="{{ min_chars }}" data-filters-number="{{ filters_number }}" role="search" action="" method="get">{{ hidden }}
+    {{ toolbar }}
+    <script type="application/json" class="filters-index">{{ index }}</script>
+  </form>
+  <p class="search-status" role="status" aria-live="polite" data-search-status data-label-hint="{{ hint }}" data-label-none="{{ no_results }}">{{ hint }}</p>
+  <ul id="{{ target }}" class="search-results" data-results="0">
+    {{ items }}
+  </ul>
+  <noscript><style>.search .search-results{display:grid !important}.search .search-results > li[hidden]{display:flex !important}.search .search-status,.search .search-filters{display:none}</style></noscript>
+</div>

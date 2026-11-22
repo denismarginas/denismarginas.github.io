@@ -1,0 +1,43 @@
+{
+  "name": "tab_items_listing",
+  "title": "Tab Items Listing",
+  "summary": "Items of a type with badge labels beside their content.",
+  "description": "Renders items of a given type with badge labels aside the item content sections. Jobs: data.experience.attributes (with data.experience.heading above) is shown as an icon_list (.tab-items-listing-list) with flex, one full-width item per row; data.experience.working_for ({\"label\": \"Working for\", \"items\": [\"<job _id>\", ...]}) shows the client jobs as small links (logo 28px high + name) to their card on the same page (#<seo.slug>), or plain text when the client job has render: false.",
+  "assets": {
+    "php": [
+      "assets/php/tab_items_listing.php"
+    ],
+    "html": [
+      "assets/html/template.html",
+      "assets/html/parts/label.html",
+      "assets/html/parts/education/template.html",
+      "assets/html/parts/job/template.html",
+      "assets/html/parts/job/worktime_types_container.html",
+      "assets/html/parts/job/worktime_type.html",
+      "assets/html/parts/education/logo.html",
+      "assets/html/parts/education/meta.html",
+      "assets/html/parts/education/type.html",
+      "assets/html/parts/education/profession.html",
+      "assets/html/parts/education/links.html",
+      "assets/html/parts/education/links_container.html",
+      "assets/html/parts/education/projects.html",
+      "assets/html/parts/education/project_plain.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "image",
+    "icon_list",
+    "svg",
+    "theme",
+    "utility_sort",
+    "utility_grid_listing",
+    "utility_calc_date_interval",
+    "utility_datetime_amount"
+  ]
+}

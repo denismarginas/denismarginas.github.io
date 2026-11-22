@@ -1,0 +1,22 @@
+{
+  "name": "utility_datetime_amount",
+  "title": "Utility DateTime Amount",
+  "summary": "Date interval as readable text (2 years, 3 months).",
+  "description": "Renders date interval as human-readable text (years, months, weeks, days) with proper singular/plural forms.",
+  "type": "component",
+  "assets": {
+    "php": [
+      "assets/php/utility_datetime_amount.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": []
+}

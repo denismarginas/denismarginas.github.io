@@ -1,0 +1,11 @@
+{
+  "name"        : "utility_sort",
+  "title"       : "Utility Sort",
+  "summary": "Sorts lists by date, group or text rules.",
+  "description" : "Sorts a list of posts/items by one or more rules. Date rule (date.*), group rule (value + position, e.g. project.types = personal last), text rule (anything else).",
+  "type"        : "utility",
+  "assets"      : {
+    "php" : ["assets/php/utility_sort.php"]
+  },
+  "dependencies": []
+}

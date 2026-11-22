@@ -1,0 +1,211 @@
+@import "theme";
+
+$ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+
+.project-hero-stage-media {
+  padding: var(--dm-spacing-sm) 0 var(--dm-spacing-lg);
+
+  .project-hero-window {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border: 1px solid var(--project-line, rgb(from var(--dm-color-gray) r g b / 0.2));
+    border-radius: 14px;
+    background-color: var(--hero-frame-deep);
+    box-shadow: var(--project-shadow, 0 30px 80px rgb(from var(--dm-color-black) r g b / 0.4));
+    transform: rotateY(-8deg) rotateX(2deg);
+    animation: project-hero-sway-window 9s ease-in-out infinite alternate;
+
+    > img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+    }
+  }
+
+  .project-hero-window-bar {
+    @include window-bar(var(--hero-frame), var(--hero-frame-line));
+  }
+
+  .project-hero-square {
+    position: absolute;
+    left: -4%;
+    top: 16%;
+    width: 30%;
+    padding: 4px;
+    border: 1px solid var(--hero-frame-line);
+    border-radius: var(--dm-radius-md);
+    background-color: var(--post-color-canvas-primary, var(--hero-frame-deep));
+    box-shadow: var(--hero-frame-shadow);
+    transform: rotate(-5deg);
+    animation: project-hero-sway-square 7s ease-in-out -3s infinite alternate;
+    pointer-events: none;
+
+    > img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: var(--dm-radius-sm);
+
+      &.project-hero-square-logo {
+        padding: 18%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .project-hero-video-trigger {
+    position: absolute;
+    right: -2%;
+    bottom: 6%;
+    width: 44%;
+    transform: rotate(2.5deg);
+    animation: project-hero-sway-card 8s ease-in-out -1s infinite alternate;
+  }
+
+  .project-hero-video {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid var(--hero-frame-line);
+    border-radius: var(--dm-radius-md);
+    background-color: var(--hero-frame-deep);
+    box-shadow: var(--hero-frame-shadow);
+    cursor: var(--cursor-pointer, pointer);
+    font: inherit;
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgb(from var(--dm-color-black) r g b / 0.62), transparent 58%);
+      pointer-events: none;
+    }
+
+    > img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.9;
+      transition: opacity 0.3s, transform 0.6s $ease;
+    }
+
+    &:hover > img {
+      opacity: 1;
+      transform: scale(1.04);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--project-accent, var(--post-color-primary));
+      outline-offset: 4px;
+    }
+
+    &.project-hero-video-no-thumb {
+      background-color: var(--project-panel, var(--dm-color-gray-light));
+
+      &::after {
+        background: none;
+      }
+
+      > .project-hero-video-label {
+        --text-label-color: var(--project-ink, var(--dm-color-gray-dark));
+      }
+    }
+  }
+
+  .project-hero-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: grid;
+    place-items: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: var(--project-accent, var(--post-color-primary));
+    color: var(--post-color-secondary, var(--dm-color-white));
+    box-shadow: 0 0 0 8px color-mix(in srgb, var(--project-accent, var(--post-color-primary)) 22%, transparent), 0 10px 30px rgb(from var(--dm-color-black) r g b / 0.4);
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s $ease;
+
+    > svg {
+      width: 16px;
+      height: 16px;
+      margin-left: 2px;
+    }
+  }
+
+  .project-hero-video:hover .project-hero-play {
+    transform: translate(-50%, -50%) scale(1.08);
+  }
+
+  .project-hero-video-label {
+    position: absolute;
+    left: var(--dm-spacing-xs);
+    right: var(--dm-spacing-xs);
+    bottom: var(--dm-spacing-xs);
+    z-index: 2;
+    overflow: hidden;
+    @include text-label();
+    --text-label-color: var(--dm-color-white);
+    text-align: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  @media (max-width: $dm-screen-sm) {
+    .project-hero-window {
+      transform: none;
+      animation: none;
+    }
+
+    .project-hero-video-trigger {
+      width: 52%;
+    }
+
+    .project-hero-play {
+      width: 38px;
+      height: 38px;
+    }
+  }
+}
+
+.project-hero-video-popup {
+  width: min(1100px, 92vw);
+
+  .video-container {
+    width: 100%;
+  }
+}
+
+@keyframes project-hero-sway-window {
+  from { transform: rotateY(-8deg) rotateX(2deg); }
+  to { transform: rotateY(-3deg) rotateX(0.5deg) translateY(-4px); }
+}
+
+@keyframes project-hero-sway-square {
+  from { transform: rotate(-5deg); }
+  to { transform: rotate(-2.5deg) translateY(-8px); }
+}
+
+@keyframes project-hero-sway-card {
+  from { transform: rotate(2.5deg); }
+  to { transform: rotate(0.5deg) translateY(-6px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-hero-stage-media .project-hero-window,
+  .project-hero-stage-media .project-hero-square,
+  .project-hero-stage-media .project-hero-video-trigger {
+    animation: none;
+  }
+}

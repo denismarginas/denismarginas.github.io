@@ -1,0 +1,183 @@
+{
+  "enabled": true,
+  "defaults": {
+    "duration": 700,
+    "distance": "30px"
+  },
+  "components": {
+    "column": {
+      "effect": "fade slide-bottom",
+      "stagger": 150
+    },
+    "text_block": "fade slide-bottom",
+    "block_title": "fade slide-bottom",
+    "block_paragraph": "fade slide-bottom",
+    "block_paragraph_card": "fade slide-bottom",
+    "block_highlight": {
+      "effect": "fade",
+      "parts": [
+        {
+          "target": ".block-highlight-title",
+          "effect": "fade slide-left",
+          "distance": "24px",
+          "delay": 150
+        },
+        {
+          "target": ".block-highlight-media",
+          "effect": "fade zoom",
+          "scale": 0.96,
+          "delay": 200
+        },
+        {
+          "target": ".block-highlight-text",
+          "effect": "fade slide-bottom",
+          "distance": "16px",
+          "delay": 250
+        },
+        {
+          "target": ".block-highlight-tag",
+          "effect": "fade slide-bottom",
+          "distance": "12px",
+          "stagger": 50,
+          "delay": 300
+        }
+      ]
+    },
+    "block_image": "fade slide-bottom",
+    "block_video": "fade slide-bottom",
+    "block_tags": "fade slide-bottom",
+    "block_slider_images": "fade",
+    "note": "fade slide-bottom",
+    "profile_card": "fade slide-bottom",
+    "video": "fade slide-bottom",
+    "form": "fade slide-bottom",
+    "work_graph": "fade slide-bottom",
+    "experience_timeline": "fade slide-bottom",
+    "resume_listing": "fade slide-bottom",
+    "knowledge_listing": "fade slide-bottom",
+    "hobby_listing": "fade slide-bottom",
+    "video_listing": "fade slide-bottom",
+    "social_links": "fade slide-bottom",
+    "tab_items_listing": "fade",
+    "carousel_projects_items": "fade",
+    "carousels_projects_items": "fade",
+    "projects_previews": "fade slide-bottom",
+    "portrait_home": "fade zoom",
+    "portrait_about": "fade zoom",
+    "portrait_experience": "fade zoom",
+    "project_block_visual_and_paragraph": {
+      "effect": "fade",
+      "parts": [
+        {
+          "target": ".project-block-visual-and-paragraph-img",
+          "effect": "fade zoom",
+          "scale": 0.96,
+          "delay": 150
+        },
+        {
+          "target": ".project-block-visual-and-paragraph-text",
+          "effect": "fade slide-bottom",
+          "distance": "16px",
+          "delay": 200
+        },
+        {
+          "target": ".block-tags-tag",
+          "effect": "fade slide-bottom",
+          "distance": "12px",
+          "stagger": 50,
+          "delay": 250
+        }
+      ]
+    },
+    "project_block_video": "fade slide-bottom",
+    "project_visual_web_gallery": "fade slide-bottom",
+    "project_visual_media_gallery": "fade slide-bottom",
+    "project_visual_media_gallery_video": "fade slide-bottom",
+    "post_items": {
+      "effect": "none",
+      "parts": [
+        {
+          "target": ".listing > li",
+          "effect": "fade slide-bottom",
+          "stagger": 80
+        },
+        {
+          "target": ".card-post-project-column-visual",
+          "effect": "fade slide-left",
+          "distance": "24px",
+          "delay": 100
+        },
+        {
+          "target": ".card-post-project-column-body",
+          "effect": "fade slide-right",
+          "distance": "24px",
+          "delay": 150
+        }
+      ]
+    },
+    "taxonomy_listing": {
+      "effect": "fade slide-bottom",
+      "target": ".taxonomy-item",
+      "stagger": 150
+    },
+    "card_mini_icon_and_text": {
+      "effect": "fade slide-bottom",
+      "target": "children",
+      "stagger": 80
+    },
+    "hobby_pc_video_games_listing": {
+      "effect": "fade zoom",
+      "target": ".hobby-pc-video-games-listing > li",
+      "stagger": 30,
+      "each": true
+    },
+    "section_layout_aside": {
+      "effect": "none",
+      "parts": [
+        {
+          "target": ".project-feature-hero",
+          "effect": "fade zoom",
+          "scale": 0.97,
+          "duration": 900
+        },
+        {
+          "target": ".project-media-gallery-list > li",
+          "effect": "fade",
+          "stagger": 80
+        },
+        {
+          "target": ".section-layout-aside-aside .post-short-info-visual",
+          "effect": "fade"
+        },
+        {
+          "target": ".section-layout-aside-aside .post-short-info-content:not(.anchor-index)",
+          "effect": "fade"
+        },
+        {
+          "target": ".post-short-info-title, .post-short-info-description",
+          "effect": "fade slide-left",
+          "distance": "20px",
+          "stagger": 80,
+          "delay": 100
+        },
+        {
+          "target": ".post-short-info-content > .post-short-info-pills, .post-short-info-content > .post-short-info-field, .post-short-info-status, .post-short-info-employer, .post-short-info-icons",
+          "effect": "fade slide-right",
+          "distance": "20px",
+          "stagger": 60,
+          "delay": 150
+        },
+        {
+          "target": ".section-layout-aside-aside img, .post-short-info-icons svg",
+          "effect": "fade blur",
+          "blur": "8px",
+          "delay": 250
+        },
+        {
+          "target": ".anchor-index",
+          "effect": "fade"
+        }
+      ]
+    }
+  }
+}

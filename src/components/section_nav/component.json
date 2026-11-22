@@ -1,0 +1,33 @@
+{
+  "name": "section_nav",
+  "title": "Section Nav",
+  "summary": "Sticky in-page section navbar with progress line.",
+  "description": "Secondary navbar that sticks under the site header: a row of links to the sections of the page (anchor_index - the section in view is marked, links to sections that are not on the page are hidden) and a scroll_progress line on its bottom edge. Below 1024px the links fold into a dropdown opened by a toggle (menu-sections icon + the name of the section in view).",
+  "post_types": [
+    "project",
+    "page"
+  ],
+  "assets": {
+    "php": [
+      "assets/php/section_nav.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ],
+    "js": [
+      "assets/js/section_nav.js"
+    ]
+  },
+  "dependencies": [
+    "anchor_index",
+    "scroll_progress",
+    "svg",
+    "theme"
+  ]
+}

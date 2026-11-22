@@ -1,0 +1,153 @@
+@import "theme";
+
+.project-page {
+  --project-accent: var(--post-color-primary-on-light, var(--post-color-primary, var(--dm-color-primary)));
+  --project-accent-text: color-mix(in srgb, var(--project-accent) 88%, var(--dm-color-black));
+  --project-bg: color-mix(in srgb, var(--project-accent) 3%, var(--dm-color-white));
+  --project-panel: color-mix(in srgb, var(--project-accent) 4%, color-mix(in srgb, var(--dm-color-gray-light) 18%, var(--dm-color-white)));
+  --project-panel-edge: color-mix(in srgb, var(--project-accent) 8%, color-mix(in srgb, var(--dm-color-gray-light) 32%, var(--dm-color-white)));
+  --project-glow: color-mix(in srgb, var(--project-accent) 14%, var(--project-bg));
+  --project-surface: var(--dm-color-white);
+  --project-ink: var(--dm-color-gray-dark);
+  --project-muted: var(--dm-color-gray);
+  --project-line: rgb(from var(--dm-color-gray) r g b / 0.2);
+  --project-line-strong: rgb(from var(--dm-color-gray) r g b / 0.4);
+  --project-shadow: 0 30px 70px rgb(from var(--dm-color-black) r g b / 0.16);
+
+  --section-panel-bg: var(--project-panel);
+  --section-glow-bg: var(--project-bg);
+  --section-glow-color: var(--project-accent);
+  --section-glow-line: var(--project-line);
+  --section-dark-bg: color-mix(in srgb, var(--project-accent) 5%, var(--dm-color-black));
+  --scroll-progress-color: var(--project-accent);
+  --text-label-color: var(--project-muted);
+
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--project-bg);
+  color: var(--project-ink);
+
+  [mode="dark"] & {
+    --project-accent: var(--post-color-primary-on-dark, var(--post-color-primary, var(--dm-color-primary)));
+    --project-accent-text: color-mix(in srgb, var(--project-accent) 70%, var(--dm-color-white));
+    --project-bg: color-mix(in srgb, var(--project-accent) 4%, color-mix(in srgb, var(--dm-color-gray-dark) 55%, var(--dm-color-black)));
+    --project-panel: color-mix(in srgb, var(--project-accent) 5%, color-mix(in srgb, var(--dm-color-gray-dark) 80%, var(--dm-color-black)));
+    --project-panel-edge: color-mix(in srgb, var(--project-accent) 3%, color-mix(in srgb, var(--dm-color-gray-dark) 45%, var(--dm-color-black)));
+    --project-glow: color-mix(in srgb, var(--project-accent) 16%, var(--project-bg));
+    --project-surface: color-mix(in srgb, var(--project-accent) 5%, var(--dm-color-gray-dark));
+    --project-ink: color-mix(in srgb, var(--dm-color-white) 92%, var(--dm-color-gray-light));
+    --project-muted: var(--dm-color-gray-light);
+    --project-line: rgb(from var(--dm-color-gray-light) r g b / 0.16);
+    --project-line-strong: rgb(from var(--dm-color-gray-light) r g b / 0.32);
+    --project-shadow: 0 30px 80px rgb(from var(--dm-color-black) r g b / 0.6);
+  }
+
+  .title-divider::after {
+    background-color: var(--project-accent);
+  }
+
+  .block-paragraph-card {
+    border: 1px solid var(--project-line);
+    background: color-mix(in srgb, var(--project-accent) 5%, var(--project-surface));
+  }
+
+  ::selection {
+    background-color: var(--project-accent);
+    color: var(--post-color-secondary, var(--dm-color-white));
+  }
+
+  > .project-section {
+    position: relative;
+    background-color: transparent;
+
+    &.content-section-panel {
+      @include radial-surface(var(--project-panel), var(--project-panel-edge), ellipse 75% 90% at 50% 50%);
+    }
+
+    &.content-section-dark {
+      @include radial-surface(
+        color-mix(in srgb, var(--project-accent) 10%, var(--section-dark-bg)),
+        var(--section-dark-bg),
+        ellipse 70% 90% at 50% 40%
+      );
+    }
+
+    &.content-section-glow {
+      background-color: transparent;
+    }
+
+    > container {
+      display: block;
+    }
+  }
+
+  > .project-section-block > container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--dm-spacing-md);
+  }
+}
+
+html:has(.project-page) {
+  scroll-padding-top: 140px;
+}
+
+html:has(.project-page),
+.project-page {
+  --project-scrollbar-track: var(--dm-color-white);
+  --project-scrollbar-thumb: var(--dm-color-gray-light);
+}
+
+html:has(body[mode="dark"] .project-page),
+[mode="dark"] .project-page {
+  --project-scrollbar-track: var(--dm-color-gray-dark);
+  --project-scrollbar-thumb: var(--dm-color-gray-light);
+}
+
+html:has(.project-page)::-webkit-scrollbar,
+.project-page ::-webkit-scrollbar {
+  width: var(--dm-space-scroollbar, 12px);
+  height: var(--dm-space-scroollbar, 12px);
+}
+
+.project-page ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+html:has(.project-page)::-webkit-scrollbar-track,
+.project-page ::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: var(--project-scrollbar-track);
+  box-shadow: inset 0 0 6px rgb(0 0 0 / 0.25);
+}
+
+html:has(.project-page)::-webkit-scrollbar-thumb,
+.project-page ::-webkit-scrollbar-thumb {
+  border: 2px solid var(--project-scrollbar-track);
+  border-radius: 0;
+  background-color: var(--project-scrollbar-thumb);
+  box-shadow: none;
+}
+
+html:has(.project-page)::-webkit-scrollbar-button,
+.project-page ::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+html:has(.project-page)::-webkit-scrollbar-corner,
+.project-page ::-webkit-scrollbar-corner {
+  background-color: var(--project-scrollbar-track);
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  html:has(.project-page),
+  .project-page * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--project-scrollbar-thumb) var(--project-scrollbar-track);
+  }
+}

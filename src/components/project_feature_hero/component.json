@@ -1,0 +1,32 @@
+{
+  "name": "project_feature_hero",
+  "title": "Project Feature Hero",
+  "summary": "Project hero with website and media device mockups.",
+  "description": "Project page hero: post-colored panel with the background texture and shapes, the website devices (card_post_project_visual_devices_website, tag \"web\") and the media devices (card_post_project_visual_devices_media, tags \"photo\" / \"video\"), and animated waves at the bottom.",
+  "post_types": [
+    "project"
+  ],
+  "assets": {
+    "php": [
+      "assets/php/project_feature_hero.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "card_post_project_visual_devices_website",
+    "card_post_project_visual_devices_media",
+    "animation_waves",
+    "overlay_noise",
+    "image",
+    "svg",
+    "theme"
+  ]
+}

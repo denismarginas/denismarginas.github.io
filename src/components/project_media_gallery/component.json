@@ -1,0 +1,36 @@
+{
+  "name": "project_media_gallery",
+  "title": "Project Media Gallery",
+  "summary": "Gallery of project screenshots, images or videos.",
+  "description": "Gallery of a project's media from src/content/img/projects/<media.path>/<source_gallery_dir_devices>/ (or src/content/vid/projects/... for videos). \"devices\": desktop/phone screenshots rendered in card_post_project_visual_devices_website mockups; \"images\": plain images; \"videos\": video players (project_block_video). Can auto-find sub galleries and render them as one list or one list per folder. Grid columns via utility_grid_listing (max 4 by default), or balanced rows via utility_grid_column_balancing (\"column_balancing\": true). Images open in the popup gallery.",
+  "post_types": [
+    "project"
+  ],
+  "assets": {
+    "php": [
+      "assets/php/project_media_gallery.php"
+    ],
+    "html": [
+      "assets/html/template.html",
+      "assets/html/parts/list.html",
+      "assets/html/parts/item.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "card_post_project_visual_devices_website",
+    "project_block_video",
+    "utility_grid_listing",
+    "utility_grid_column_balancing",
+    "utility_project_web_screens",
+    "popup",
+    "overlay_noise",
+    "image",
+    "theme"
+  ]
+}

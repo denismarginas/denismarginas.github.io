@@ -1,0 +1,47 @@
+@import "theme";
+
+.website-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--dm-spacing-md);
+  flex-wrap: wrap;
+
+  .website-info-start {
+    display: flex;
+    align-items: center;
+    gap: var(--dm-spacing-xs);
+  }
+
+  .website-info-dates {
+    @include reset-list();
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: var(--dm-spacing-md);
+    row-gap: 0;
+
+    > li,
+    .website-info-label,
+    .website-info-date {
+      font-size: var(--dm-font-size-sm);
+    }
+  }
+
+  .website-info-copyright {
+    font-size: var(--dm-font-size-sm);
+  }
+
+  .website-info-copyright-link {
+    font-size: inherit;
+    font-weight: var(--dm-font-weight-bold);
+    text-decoration: none;
+    text-underline-offset: 3px;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--dm-link);
+      text-decoration: underline;
+    }
+  }
+}

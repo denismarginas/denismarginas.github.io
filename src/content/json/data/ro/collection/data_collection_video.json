@@ -1,0 +1,1752 @@
+[
+    {
+        "_id": "denismarginas-experience-highlights",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#5d6977"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Apr 14, 2025"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/denismarginas-media/personal-portfolio/denismarginas_experience_highlights.webm",
+                    "video_thumbnail": "thumbnails/denismarginas_experience_highlights.webp",
+                    "video_data": {
+                        "title": "Repere din experiența mea",
+                        "description": "Aceasta este o prezentare a celor mai importante proiecte și activități pe care le-am realizat între 2019 și 2025. În câteva secunde, veți putea vedea o prezentare a unor exemple unice și reprezentative din experiența mea profesională.<br><br>Software de editare: Adobe After Effects 2023, Sony Vegas Pro 20, Photopea, Topaz Video Enhance AI<br>Muzică de fundal: Lorn - Yo2_Rustlin<br><br>Cronologia videoclipului:<ul><li>00:00 - 00:08 – Introducere</li><li>00:08 – 00:22 – Momente cheie din experiență</li><li>00:22 - 00:28 - Contactați-ne</li></ul>"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=HxGdZ_embL8",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "portfolio showcase"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "denismarginas-portfolio-showcase",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#5d6977"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Apr 20, 2023"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/denismarginas-media/personal-portfolio/denismarginas_portfolio_showcase.webm",
+                    "video_thumbnail": "thumbnails/denismarginas_portfolio_showcase.webp",
+                    "video_data": {
+                        "title": "Prezentare portofoliu",
+                        "description": "Descoperiți o călătorie captivantă prin proiectele mele profesionale, realizate între 2019 și 2023, în acest scurt videoclip. De la o introducere captivantă în domeniul dezvoltării web, editării foto și video, veți putea observa expertiza mea diversificată, totul în aproximativ două minute.<br><br>Software de editare: Sony Vegas Pro 20, Photopea, Topaz Video Enhance AI<br>Melodie de fundal: Skeler - Tel Aviv (Remix modificat)<br><br>Cronologia videoclipului:<ul><li>00:00 – 00:04 – Introducere</li><li>00:04 – 00:55 – Dezvoltare web</li><li>00:55 – 01:14 – Editare foto</li><li>01:14 – 01:52 – Editare video</li><li>01:52 - 01:56 - Finalul</li></ul>"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=ilz2avyGG_U",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "portfolio showcase"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "denismarginas-github-portfolio",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#5d6977"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Dec 14, 2025"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/denismarginas-media/github-portfolio/denismarginas_github_portfolio.webm",
+                    "video_thumbnail": "thumbnails/denismarginas_github_portfolio.webp",
+                    "video_data": {
+                        "title": "Portofoliu GitHub",
+                        "description": "Utilizând proiectele și experiența mea ca dezvoltator web full-stack, am creat un singur proiect de portofoliu care prezintă datele mele profesionale, folosind hosting gratuit GitHub Pages, PHP pentru generarea prealabilă a conținutului și JavaScript pentru interacțiunea cu utilizatorul.<br><br>Piesa: Pavel Dovgal - Transition<br><br>Categorie: Editare video realistă (în viață)<br>Detalii proiect: 1920x1080 pixeli, 18 cadre pe secundă<br>Software: Adobe After Effects 2023, Sony Vegas Pro 20, Photopea, Topaz Video Enhance AI<br>Plugin-uri: BBC, Sapphire, Element 3d, RSMB, MeshiAI<br>Mărire: Videoclipul a fost mărit de la rezoluție HD la 4K, folosind software-ul Topaz Video Enhance AI.<br>Etichete: Portofoliu, Editare<br><br>Specificații generale ale sistemului:<br>Procesor: AMD Ryzen™ 5 7600X, 38MB, frecvență de bază 4.7/5.3 GHz<br>GPU: GIGABYTE GeForce RTX 3070 GAMING OC LHR, 8GB GDDR6, 256-bit<br>RAM: Kingston FURY Beast, kit de 32GB, 5200MHz, CL40, cu două canale"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=9PRqXelnc9o",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "portfolio showcase"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "denismarginas-desktop-setup-irl",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#2662c1"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Oct 30, 2025"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/denismarginas-media/personal-workstation/denismarginas_desktop_setup_irl.webm",
+                    "video_thumbnail": "thumbnails/denismarginas_desktop_setup_irl.webp",
+                    "video_data": {
+                        "title": "Configurare pentru desktop | IRL",
+                        "description": "Configurația PC#1:<ul><li>Carcasă pentru computer AQIRYS Antares, cu iluminare RGB</li><li>Placă de bază ASUS TUF GAMING B650-PLUS AM5</li><li>RAM Kingston FURY Beast, 32GB, DDR5, 5200MHz, CL40, Dual Channel</li><li>Procesor AMD Ryzen™ 5 7600X, 38MB, frecvență de bază 4.7/5.3 GHz</li><li>Răcitorul ARCTIC Freezer 34 eSports DUO, culoare gri</li><li>Placă video GIGABYTE GeForce RTX 3070 OC, 8GB GDDR6, lățime de bandă de 256 biți</li><li>SSD GIGABYTE, 480GB, SATA-III, 2.5 inch</li><li>SSD Kingston NV2, 1TB, PCI Express 4.0 x4, M.2 2280</li><li>Sursă de alimentare GIGABYTE P850GM, certificată 80+ Gold, 850W</li></ul><br>Accesorii pentru PC#1:<ul><li>Căști wireless HyperX Cloud Stinger Core 7.1</li><li>Carcasă de mouse GENESIS Carbon 700 Maxi, din material Cordura</li><li>Mouse LOGITECH G203 LIGHTSYNC RGB, rezoluție de 8.000 dpi</li><li>Tastatură mecanică LOGITECH G512 GX, culoră roșie, tip linear</li><li>Utilizatorii recomandă setul Arys Compact RGB 2.0</li><li>Monitor IPS SAMSUNG Odyssey G5, 27\", rezoluție WQHD, 165Hz</li></ul><br>Data: Aprilie, 2023<br><br>Piese: LXST CXNTURY - MIRAX<br><br>Categorie: Editare video realistă (în viață)<br>Detalii proiect: 1920x1080 pixeli, 29.970 cadre pe secundă<br>Software: Sony Vegas Pro 20, Photopea, Topaz Video Enhance AI<br>Plugin(uri): BCC, Sapphire<br>Mărire: Videoclipul a fost mărit de la rezoluție HD la 4K, folosind software-ul Topaz Video Enhance AI.<br>Etichete: Editare IRL, Editare auto<br><br>Dispozitiv de înregistrare: Samsung A52s<br>Camera principală: 64 MP, f/1.8, 26mm (unghi larg), 1/1.7\", 12 MP f/2.2 (unghi foarte larg), 5 MP f/2.4.<br>Înregistrat în calitate de 1080p la 30 cadre pe secundă.<br><br>Specificații generale ale sistemului:<br>Procesor: AMD Ryzen™ 5 7600X, 38MB, frecvență de bază 4.7/5.3 GHz<br>GPU: GIGABYTE GeForce RTX 3070 GAMING OC LHR, 8GB GDDR6, 256-bit<br>RAM: Kingston FURY Beast, kit de 32GB, 5200MHz, CL40, cu două canale<br><br>Cronologia videoclipului:<ul><li>00:00 - 00:06 – Introducere</li><li>00:06 - 00:14 - Informații despre proiect</li><li>00:14 – 00:41 – Prezentarea perifericelor și accesoriilor</li><li>00:41 – 01:05 – Prezentarea componentelor pentru PC</li><li>01:05 – 01:15 – Finalul</li></ul>"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=zE0KW6r0mV0",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "workstation"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "agramix-1-advertisement",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#ae0000"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Jun 12, 2022"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/agramix-media/videos_1/agramix_1_advertisement.webm",
+                    "video_thumbnail": "thumbnails/agramix_1_advertisement.webp",
+                    "video_data": {
+                        "title": "Agramix #1 | Anunț",
+                        "description": "Editor: Denis Marginas<br><br>Categorie: Publicitate<br>Etichete: Agramix"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=E9GYFvxCJM4",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "advertisement"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "agramix-2-advertisement",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#ae0000"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Jun 12, 2022"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/agramix-media/videos_2/agramix_2_advertisement.webm",
+                    "video_thumbnail": "thumbnails/agramix_2_advertisement.webp",
+                    "video_data": {
+                        "title": "Agramix #2 | Anunț",
+                        "description": "Editor: Denis Marginas<br><br>Melodie: -<br>Pagina de Facebook: https://www.facebook.com/agramix.mm<br><br>Categorie: Publicitate<br>Detalii proiect: 1080x1080 pixeli, 30 cadre pe secundă<br>Software: Adobe After Effects 2020, Photopea, Topaz Gigapixel AI<br>Plugin-uri: BCC, Sapphire, RSMB, MBL<br>Etichete: Agramix<br><br>Specificații generale ale sistemului:<br>Procesor: Intel Coffee Lake, Core i5 9400F, 2.9 GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC, 6GB GDDR6, 192-bit<br>Memorie RAM: 16 GB, frecvență 2666 MHz"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=v0b5uexdGrw",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "advertisement"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "agramix-3-advertisement",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#ae0000"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Jun 12, 2022"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/agramix-media/videos_2/agramix_3_advertisement.webm",
+                    "video_thumbnail": "thumbnails/agramix_3_advertisement.webp",
+                    "video_data": {
+                        "title": "Agramix #3 | Anunț",
+                        "description": "Editor: Denis Marginas<br><br>Melodie: -<br>Pagina de Facebook: https://www.facebook.com/agramix.mm<br><br>Categorie: Publicitate<br>Detalii proiect: 1080x1080 pixeli, 30 cadre pe secundă<br>Software: Adobe After Effects 2020, Photopea, Topaz Gigapixel AI<br>Plugin-uri: BCC, Sapphire, RSMB, MBL<br>Etichete: Agramix<br><br>Specificații generale ale sistemului:<br>Procesor: Intel Coffee Lake, Core i5 9400F, 2.9 GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC, 6GB GDDR6, 192-bit<br>Memorie RAM: 16 GB, frecvență 2666 MHz"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=iQj85ZJx3tk",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "advertisement"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "agromir-1-advertisement",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#72b334"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "May 25, 2021"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/agromir-media/videos_2/agromir_1_advertisement.webm",
+                    "video_thumbnail": "thumbnails/agromir_1_advertisement.webp",
+                    "video_data": {
+                        "title": "Agromir #1 | Anunț",
+                        "description": "Editor: Denis Marginas<br><br>Melodie: -<br>Pagina de Facebook: https://www.facebook.com/cauciucuriagricole<br><br>Categorie: Publicitate<br>Detalii proiect: 1920x1080 pixeli, 25 cadre pe secundă<br>Software: Blender, Adobe After Effects 2020, Sony Vegas Pro 16, Photopea<br>Plugin-uri: BCC, Sapphire, RSMB, MBL<br>Etichete: Agromir<br><br>Specificații generale ale sistemului:<br>Procesor: Intel Coffee Lake, Core i5 9400F, 2.9 GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC, 6GB GDDR6, 192-bit<br>Memorie RAM: 16 GB, frecvență 2666 MHz"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=qwn8ZH_H7rU",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "advertisement"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "agromir-2-advertisement",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#72b334"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "May 25, 2021"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/agromir-media/videos_4/agromir_2_advertisement.webm",
+                    "video_thumbnail": "thumbnails/agromir_2_advertisement.webp",
+                    "video_data": {
+                        "title": "Agromir #2 | Anunț",
+                        "description": "Editor: Denis Marginas<br><br>Melodie: -<br>Pagina de Facebook: https://www.facebook.com/cauciucuriagricole<br><br>Categorie: Publicitate<br>Detalii proiect: 1920x1080 pixeli, 25 cadre pe secundă<br>Software: Adobe After Effects 2020, Sony Vegas Pro 16, Photopea<br>Plugin-uri: BCC, Sapphire, RSMB, MBL<br>Etichete: Agromir<br><br>Specificații generale ale sistemului:<br>Procesor: Intel Coffee Lake, Core i5 9400F, 2.9 GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC, 6GB GDDR6, 192-bit<br>Memorie RAM: 16 GB, frecvență 2666 MHz"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=EmheH5xQXJg",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "advertisement"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "agromir-3-advertisement",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#72b334"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Jun 12, 2022"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/agromir-media/videos_4/agromir_3_advertisement.webm",
+                    "video_thumbnail": "thumbnails/agromir_3_advertisement.webp",
+                    "video_data": {
+                        "title": "Agromir #3 | Anunț",
+                        "description": "Editor: Denis Marginas<br><br>Melodie: -<br>Pagina de Facebook: https://www.facebook.com/cauciucuriagricole<br><br>Categorie: Publicitate<br>Detalii proiect: 1920x1080 pixeli, 30 cadre pe secundă<br>Software: Adobe After Effects 2020, Sony Vegas Pro 16, Photopea<br>Plugin-uri: BCC, Sapphire, RSMB, MBL<br>Etichete: Agromir<br><br>Specificații generale ale sistemului:<br>Procesor: Intel Coffee Lake, Core i5 9400F, 2.9 GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC, 6GB GDDR6, 192-bit<br>Memorie RAM: 16 GB, frecvență 2666 MHz"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=nRM1v0O33WY",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "advertisement"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "agromir-4-advertisement",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#72b334"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Jun 12, 2022"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/agromir-media/videos_3/agromir_4_advertisement.webm",
+                    "video_thumbnail": "thumbnails/agromir_4_advertisement.webp",
+                    "video_data": {
+                        "title": "Agromir #4 | Anunț",
+                        "description": "Editor: Denis Marginas<br><br>Melodie: -<br>Pagina de Facebook: https://www.facebook.com/cauciucuriagricole<br><br>Categorie: Publicitate<br>Detalii proiect: 1920x1080 pixeli, 25 cadre pe secundă<br>Software: Adobe After Effects 2020, Sony Vegas Pro 16, Photopea<br>Plugin-uri: BCC, Sapphire, RSMB, MBL<br>Etichete: Agromir<br><br>Specificații generale ale sistemului:<br>Procesor: Intel Coffee Lake, Core i5 9400F, 2.9 GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC, 6GB GDDR6, 192-bit<br>Memorie RAM: 16 GB, frecvență 2666 MHz"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=R7RoiEeHnx4",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "advertisement"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "agromir-5-advertisement",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#72b334"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Jun 12, 2022"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/agromir-media/videos_2/agromir_5_advertisement.webm",
+                    "video_thumbnail": "thumbnails/agromir_5_advertisement.webp",
+                    "video_data": {
+                        "title": "Agromir #5 | Anunț",
+                        "description": "Editor: Denis Marginas<br><br>Melodie: -<br>Pagina de Facebook: https://www.facebook.com/cauciucuriagricole<br><br>Categorie: Publicitate<br>Detalii proiect: 1920x1080 pixeli, 25 cadre pe secundă<br>Software: Blender, Adobe After Effects 2020, Sony Vegas Pro 16, Photopea<br>Plugin-uri: BCC, Sapphire, RSMB, MBL<br>Etichete: Agromir<br><br>Specificații generale ale sistemului:<br>Procesor: Intel Coffee Lake, Core i5 9400F, 2.9 GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC, 6GB GDDR6, 192-bit<br>Memorie RAM: 16 GB, frecvență 2666 MHz"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=8BQHEDfQTaA",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "advertisement"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "agromir-6-advertisement",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#72b334"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Jun 12, 2022"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/agromir-media/videos_3/agromir_6_advertisement.webm",
+                    "video_thumbnail": "thumbnails/agromir_6_advertisement.webp",
+                    "video_data": {
+                        "title": "Agromir #6 | Anunț",
+                        "description": "Editor: Denis Marginas<br><br>Melodie: -<br>Pagina de Facebook: https://www.facebook.com/cauciucuriagricole<br><br>Categorie: Publicitate<br>Detalii proiect: 1920x1080 pixeli, 30 cadre pe secundă<br>Software: Sony Vegas Pro 16, Photopea<br>Plugin-uri: BCC, Sapphire, RSMB, MBL<br>Etichete: Agromir<br><br>Specificații generale ale sistemului:<br>Procesor: Intel Coffee Lake, Core i5 9400F, 2.9 GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC, 6GB GDDR6, 192-bit<br>Memorie RAM: 16 GB, frecvență 2666 MHz"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=yXthYdWGHRk",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "advertisement"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "agromir-7-advertisement",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#72b334"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Oct 24, 2022"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/agromir-media/videos_1/agromir_7_advertisement.webm",
+                    "video_thumbnail": "thumbnails/agromir_7_advertisement.webp",
+                    "video_data": {
+                        "title": "Agromir #7 | Anunț",
+                        "description": "Editor: Denis Marginas<br><br>Melodie: Muzică ambientală gratuită _ Muzică abstractă pentru știință și tehnologie, gratuită, de la MUSIC4VIDEO<br>Pagina de Facebook: https://www.facebook.com/cauciucuriagricole<br><br>Categorie: Publicitate<br>Detalii proiect: 1920x1080, 29.970 cadre pe secundă<br>Software: Sony Vegas Pro 16, Sony Vegas Pro 18, Photopea, Topaz Video Enhance, Topaz Gigapixel AI<br>Plugin(uri): -<br>Etichete: Agromir<br><br>Specificații generale ale sistemului:<br>Procesor: Intel Coffee Lake, Core i5 9400F, 2.9 GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC, 6GB GDDR6, 192-bit<br>Memorie RAM: 16 GB, frecvență 2666 MHz"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=TgjiRgNm-uo",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "advertisement"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "agromir-8-advertisement",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#72b334"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Feb 1, 2020"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/agromir-media/videos_5/agromir_video_tractour.webm",
+                    "video_thumbnail": "thumbnails/agromir_video_tractour.webp",
+                    "video_data": {
+                        "title": "Agromir #8 | Anunț pentru tractoare",
+                        "description": "Editor: Denis Marginas<br><br>Pagina de Facebook: https://www.facebook.com/cauciucuriagricole<br><br>Categorie: Publicitate<br>Detalii proiect: 1280x720 pixeli, 30 cadre pe secundă<br>Etichete: Agromir"
+                    }
+                }
+            },
+            "taxonomy": {
+                "tag": [
+                    "advertisement"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "avadores-1-advertisement",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#f121a5"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "May 25, 2021"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/revelnail-avadores-media/videos_3/avadores_1_advertisement.webm",
+                    "video_thumbnail": "thumbnails/avadores_1_advertisement.webp",
+                    "video_data": {
+                        "title": "Avadores #1 | Anunț",
+                        "description": "Editor: Denis Marginas<br><br>Piesa: SwuM - Lucid<br>Pagina de Facebook: https://www.facebook.com/revelromania<br><br>Categorie: Publicitate<br>Detalii proiect: 1920x1080 pixeli, 29.970 cadre pe secundă<br>Software: Sony Vegas Pro 16, Photopea<br>Plugin-uri: BCC, Sapphire, RSMB, MBL<br>Etichete: Revel Nail, Avadores<br><br>Specificații generale ale sistemului:<br>Procesor: Intel Coffee Lake, Core i5 9400F, 2.9 GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC, 6GB GDDR6, 192-bit<br>Memorie RAM: 16 GB, frecvență 2666 MHz"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=FNUCERotDAY",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "advertisement"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "avadores-2-advertisement",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#f121a5"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "May 27, 2021"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/revelnail-avadores-media/videos_3/avadores_2_advertisement.webm",
+                    "video_thumbnail": "thumbnails/avadores_2_advertisement.webp",
+                    "video_data": {
+                        "title": "Avadores #2 | Anunț",
+                        "description": "Editor: Denis Marginas<br><br>Piesa: Hysics - Selective Company<br>Pagina de Facebook: https://www.facebook.com/revelromania<br><br>Categorie: Publicitate<br>Detalii proiect: 1280x720 pixeli, 29.97 cadre pe secundă<br>Software: Sony Vegas Pro 16, Photopea<br>Plugin-uri: BCC, Sapphire, RSMB, MBL<br>Etichete: Revel Nail, Avadores<br><br>Specificații generale ale sistemului:<br>Procesor: Intel Coffee Lake, Core i5 9400F, 2.9 GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC, 6GB GDDR6, 192-bit<br>Memorie RAM: 16 GB, frecvență 2666 MHz"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=dbZ6UvItckQ",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "advertisement"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "avadores-3-advertisement",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#f121a5"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Jun 12, 2022"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/revelnail-avadores-media/videos_2/avadores_3_advertisement.webm",
+                    "video_thumbnail": "thumbnails/avadores_3_advertisement.webp",
+                    "video_data": {
+                        "title": "Avadores #3 | Anunț",
+                        "description": "Editor: Denis Marginas<br><br>Piesa: 2B Studio - Activități de team building<br>Pagina de Facebook: https://www.facebook.com/revelromania<br><br>Categorie: Publicitate<br>Detalii proiect: 1920x1080 pixeli, 29.970 cadre pe secundă<br>Software: Adobe After Effects 2020, Sony Vegas Pro 16, Photopea<br>Plugin-uri: BCC, Sapphire, RSMB, MBL<br>Etichete: Revel Nail, Avadores<br><br>Specificații generale ale sistemului:<br>Procesor: Intel Coffee Lake, Core i5 9400F, 2.9 GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC, 6GB GDDR6, 192-bit<br>Memorie RAM: 16 GB, frecvență 2666 MHz"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=BzsWfTAK9Z8",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "advertisement"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "avadores-4-advertisement",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#f121a5"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Jun 12, 2022"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/revelnail-avadores-media/videos_2/avadores_4_advertisement.webm",
+                    "video_thumbnail": "thumbnails/avadores_4_advertisement.webp",
+                    "video_data": {
+                        "title": "Avadores #4 | Anunț",
+                        "description": "Editor: Denis Marginas<br><br>Piesa: EBM - DAMSEL<br>Pagina de Facebook: https://www.facebook.com/revelromania<br><br>Categorie: Publicitate<br>Detalii proiect: 1080x1920 pixeli, 29.97 cadre pe secundă<br>Software: Sony Vegas Pro 16, Photopea, Topaz Video Enhance, Topaz Gigapixel AI<br>Plugin-uri: BCC, Sapphire, MBL<br>Etichete: Revel Nail, Avadores<br><br>Specificații generale ale sistemului:<br>Procesor: Intel Coffee Lake, Core i5 9400F, 2.9 GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC, 6GB GDDR6, 192-bit<br>Memorie RAM: 16 GB, frecvență 2666 MHz"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=jPUgmaaQWWw",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "advertisement"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "avadores-5-advertisement",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#f121a5"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Oct 18, 2022"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/revelnail-avadores-media/videos_1/avadores_5_advertisement.webm",
+                    "video_thumbnail": "thumbnails/avadores_5_advertisement.webp",
+                    "video_data": {
+                        "title": "Avadores #5 | Anunț",
+                        "description": "Editor: Denis Marginas<br><br>Melodie: Muzică ambientală gratuită _ Muzică abstractă pentru știință și tehnologie, gratuită, de la MUSIC4VIDEO<br>Pagina de Facebook: https://www.facebook.com/revelromania<br><br>Categorie: Publicitate<br>Detalii proiect: 1920x1080, 29.970 cadre pe secundă<br>Software: Sony Vegas Pro 16, Sony Vegas Pro 18, Photopea, Topaz Video Enhance, Topaz Gigapixel AI<br>Plugin(uri): -<br>Etichete: Revel Nail, Avadores<br><br>Specificații generale ale sistemului:<br>Procesor: Intel Coffee Lake, Core i5 9400F, 2.9 GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC, 6GB GDDR6, 192-bit<br>Memorie RAM: 16 GB, frecvență 2666 MHz"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=l_CsBNFNH1Q",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "advertisement"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "busvip-1-advertisement",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#ffae02"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "May 25, 2021"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/busvip-media/videos_3/busvip_1_advertisement.webm",
+                    "video_thumbnail": "thumbnails/busvip_1_advertisement.webp",
+                    "video_data": {
+                        "title": "Busvip #1 | Anunț",
+                        "description": "Editor: Denis Marginas<br><br>Melodie: -<br>Pagina de Facebook: https://www.facebook.com/curseocazionalebusvip<br><br>Categorie: Publicitate<br>Detalii proiect: 1920x1080 pixeli, 30 cadre pe secundă<br>Software: Adobe After Effects 2020, Photopea<br>Plugin-uri: BCC, Sapphire, RSMB, MBL<br>Etichete: Bus-VIP<br><br>Specificații generale ale sistemului:<br>Procesor: Intel Coffee Lake, Core i5 9400F, 2.9 GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC, 6GB GDDR6, 192-bit<br>Memorie RAM: 16 GB, frecvență 2666 MHz"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=QIwKGmHaEIw",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "advertisement"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "busvip-2-advertisement",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#ffae02"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Jun 12, 2022"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/busvip-media/videos_3/busvip_2_advertisement.webm",
+                    "video_thumbnail": "thumbnails/busvip_2_advertisement.webp",
+                    "video_data": {
+                        "title": "Busvip #2 | Anunț",
+                        "description": "Editor: Denis Marginas<br><br>Melodie: -<br>Pagina de Facebook: https://www.facebook.com/curseocazionalebusvip<br><br>Categorie: Publicitate<br>Detalii proiect: 1920x1080 pixeli, 30 cadre pe secundă<br>Software: Adobe After Effects 2020, Sony Vegas Pro 16, Photopea, Topaz Gigapixel AI<br>Plugin-uri: BCC, Sapphire, RSMB, MBL<br>Etichete: Bus-VIP<br><br>Specificații generale ale sistemului:<br>Procesor: Intel Coffee Lake, Core i5 9400F, 2.9 GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC, 6GB GDDR6, 192-bit<br>Memorie RAM: 16 GB, frecvență 2666 MHz"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=KCsbHL7gfxU",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "advertisement"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "busvip-3-advertisement",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#ffae02"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Jun 12, 2022"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/busvip-media/videos_2/busvip_3_advertisement.webm",
+                    "video_thumbnail": "thumbnails/busvip_3_advertisement.webp",
+                    "video_data": {
+                        "title": "Busvip #3 | Anunț",
+                        "description": "Editor: Denis Marginas<br><br>Melodie: 2B Studio - Fundal pentru tutorial<br>Pagina de Facebook: https://www.facebook.com/curseocazionalebusvip<br><br>Categorie: Publicitate<br>Detalii proiect: 1920x1080 pixeli, 30 cadre pe secundă<br>Software: Sony Vegas Pro 16, Photopea<br>Plugin-uri: BCC, Sapphire, RSMB, MBL<br>Etichete: Bus-VIP<br><br>Specificații generale ale sistemului:<br>Procesor: Intel Coffee Lake, Core i5 9400F, 2.9 GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC, 6GB GDDR6, 192-bit<br>Memorie RAM: 16 GB, frecvență 2666 MHz"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=cBOLQedtF1Q",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "advertisement"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "busvip-4-advertisement",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#ffae02"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Oct 21, 2022"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/busvip-media/videos_1/busvip_4_advertisement.webm",
+                    "video_thumbnail": "thumbnails/busvip_4_advertisement.webp",
+                    "video_data": {
+                        "title": "Busvip #4 | Anunț",
+                        "description": "Editor: Denis Marginas<br><br>Melodie: Muzică ambientală gratuită _ Muzică abstractă pentru știință și tehnologie, gratuită, de la MUSIC4VIDEO<br>Pagina de Facebook: https://www.facebook.com/curseocazionalebusvip<br><br>Categorie: Publicitate<br>Detalii proiect: 1920x1080, 29.970 cadre pe secundă<br>Software: Sony Vegas Pro 16, Sony Vegas Pro 18, Photopea, Topaz Video Enhance, Topaz Gigapixel AI<br>Plugin(uri): -<br>Etichete: Busvip<br><br>Specificații generale ale sistemului:<br>Procesor: Intel Coffee Lake, Core i5 9400F, 2.9 GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC, 6GB GDDR6, 192-bit<br>Memorie RAM: 16 GB, frecvență 2666 MHz"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=tge_tTOKlFE",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "advertisement"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "casadarius-1-advertisement",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#ccb06a"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Jun 12, 2022"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/casadarius-media/videos_2/casadarius_1_advertisement.webm",
+                    "video_thumbnail": "thumbnails/casadarius_1_advertisement.webp",
+                    "video_data": {
+                        "title": "CasaDarius #1 | Anunț",
+                        "description": "Editor: Denis Marginas<br><br>Piesa: 2B Studio – Trailer promoțional<br>Pagina de Facebook: https://www.facebook.com/casadariuscluj<br><br>Categorie: Publicitate<br>Detalii proiect: 1920x1080 pixeli, 30 cadre pe secundă<br>Software: Adobe After Effects 2020, Sony Vegas Pro 16, Photopea<br>Plugin-uri: BCC, Sapphire, RSMB, MBL<br>Etichete: Casa Darius<br><br>Specificații generale ale sistemului:<br>Procesor: Intel Coffee Lake, Core i5 9400F, 2.9 GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC, 6GB GDDR6, 192-bit<br>Memorie RAM: 16 GB, frecvență 2666 MHz"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=wZD1ZtaT69k",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "advertisement"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "casadarius-2-advertisement",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#ccb06a"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Jun 12, 2022"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/casadarius-media/videos_2/casadarius_2_advertisement.webm",
+                    "video_thumbnail": "thumbnails/casadarius_2_advertisement.webp",
+                    "video_data": {
+                        "title": "CasaDarius #2 | Anunț",
+                        "description": "Editor: Denis Marginas<br><br>Melodie: -<br>Pagina de Facebook: https://www.facebook.com/casadariuscluj<br><br>Categorie: Publicitate<br>Detalii proiect: 1920x1080 pixeli, 30 cadre pe secundă<br>Software: Adobe After Effects 2020, Sony Vegas Pro 16, Photopea<br>Plugin-uri: BCC, Sapphire, RSMB, MBL<br>Etichete: Casa Darius<br><br>Specificații generale ale sistemului:<br>Procesor: Intel Coffee Lake, Core i5 9400F, 2.9 GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC, 6GB GDDR6, 192-bit<br>Memorie RAM: 16 GB, frecvență 2666 MHz"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=DDwGCi_Mk5Y",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "advertisement"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "casadarius-3-advertisement",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#ccb06a"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Oct 19, 2022"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/casadarius-media/videos_1/casadarius_3_advertisement.webm",
+                    "video_thumbnail": "thumbnails/casadarius_3_advertisement.webp",
+                    "video_data": {
+                        "title": "CasaDarius #3 | Anunț",
+                        "description": "Editor: Denis Marginas<br><br>Melodie: Muzică ambientală gratuită _ Muzică abstractă pentru știință și tehnologie, gratuită, de la MUSIC4VIDEO<br>Pagina de Facebook: https://www.facebook.com/casadariuscluj<br><br>Categorie: Publicitate<br>Detalii proiect: 1920x1080, 29.970 cadre pe secundă<br>Software: Sony Vegas Pro 16, Sony Vegas Pro 18, Photopea, Topaz Video Enhance, Topaz Gigapixel AI<br>Plugin(uri): -<br>Etichete: Casa Darius<br><br>Specificații generale ale sistemului:<br>Procesor: Intel Coffee Lake, Core i5 9400F, 2.9 GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC, 6GB GDDR6, 192-bit<br>Memorie RAM: 16 GB, frecvență 2666 MHz"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=qJ37wVcmJlQ",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "advertisement"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "dabo-1-advertisement",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#f08119"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "May 25, 2021"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/dabo-sm-bm-media/dabo_1_advertisement.webm",
+                    "video_thumbnail": "thumbnails/dabo_1_advertisement.webp",
+                    "video_data": {
+                        "title": "Dabo #1 | Anunț",
+                        "description": "Editor: Denis Marginas<br><br>Melodie: -<br>Pagina de Facebook: https://www.facebook.com/pages/Dabo-Döner-Baia-Mare/184203015478663<br><br>Categorie: Publicitate<br>Detalii proiect: 974x711, 25 cadre pe secundă<br>Software: Sony Vegas Pro 16, Photopea<br>Plugin-uri: BCC, Sapphire, RSMB, MBL<br>Etichete: Dabo Doner<br><br>Specificații generale ale sistemului:<br>Procesor: Intel Coffee Lake, Core i5 9400F, 2.9 GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC, 6GB GDDR6, 192-bit<br>Memorie RAM: 16 GB, frecvență 2666 MHz"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=ZsvK8j82zA4",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "advertisement"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "dsautocenter-1-advertisement",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#2f3647"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Jun 12, 2022"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/dsautocenter-media/dsautocenter_1_advertisement.webm",
+                    "video_thumbnail": "thumbnails/dsautocenter_1_advertisement.webp",
+                    "video_data": {
+                        "title": "DSAutoCenter – Numărul 1 | Anunț",
+                        "description": "Editor: Denis Marginas<br><br>Melodie: -<br><br>Categorie: Publicitate<br>Detalii proiect: 1080x1920 pixeli, 29.97 cadre pe secundă<br>Software: Adobe After Effects 2020, Sony Vegas Pro 16, Photopea, Topaz Video Enhance, Topaz Gigapixel AI<br>Plugin-uri: BCC, Sapphire, MBL, RSMB<br>Etichete: DS Auto Center<br><br>Specificații generale ale sistemului:<br>Procesor: Intel Coffee Lake, Core i5 9400F, 2.9 GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC, 6GB GDDR6, 192-bit<br>Memorie RAM: 16 GB, frecvență 2666 MHz"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=bvN2lHDhQcs",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "advertisement"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "piasoftproduct-4-advertisement",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#ffcc00"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "May 25, 2021"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/piasoftproduct-media/piasoftproduct_4_advertisement.webm",
+                    "video_thumbnail": "thumbnails/piasoftproduct_4_advertisement.webp",
+                    "video_data": {
+                        "title": "PiaSoftProduct #4 | Anunț",
+                        "description": "Editor: Denis Marginas<br><br>Melodie: -<br>Pagina de Facebook: https://www.facebook.com/piasoftproduct<br><br>Categorie: Publicitate<br>Detalii proiect: 1920x1080 pixeli, 30 cadre pe secundă<br>Software: Adobe After Effects 2020, Photopea<br>Plugin-uri: BCC, Sapphire, RSMB, MBL<br>Etichete: Pia Soft Product<br><br>Specificații generale ale sistemului:<br>Procesor: Intel Coffee Lake, Core i5 9400F, 2.9 GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC, 6GB GDDR6, 192-bit<br>Memorie RAM: 16 GB, frecvență 2666 MHz"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=BwKbq5hYETE",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "advertisement"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "transportosian-1-advertisement",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#b7b7b7"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Jun 12, 2022"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/transportosian-media/transportosian_1_advertisement.webm",
+                    "video_thumbnail": "thumbnails/transportosian_1_advertisement.webp",
+                    "video_data": {
+                        "title": "Transport Osian #1 | Anunț",
+                        "description": "Editor: Denis Marginas<br><br>Melodie: -<br>Pagina de Facebook: https://www.facebook.com/transportosian<br><br>Categorie: Publicitate<br>Detalii proiect: 1920x1080 pixeli, 30 cadre pe secundă<br>Software: Sony Vegas Pro 16, Photopea<br>Plugin-uri: BCC, Sapphire, RSMB, MBL<br>Etichete: Transport în Osian<br><br>Specificații generale ale sistemului:<br>Procesor: Intel Coffee Lake, Core i5 9400F, 2.9 GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC, 6GB GDDR6, 192-bit<br>Memorie RAM: 16 GB, frecvență 2666 MHz"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=aOH9YF4hgFo",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "advertisement"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "transportosian-2-advertisement",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#b7b7b7"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Jun 12, 2022"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/transportosian-media/transportosian_2_advertisement.webm",
+                    "video_thumbnail": "thumbnails/transportosian_2_advertisement.webp",
+                    "video_data": {
+                        "title": "Transport Osian #2 | Anunț",
+                        "description": "Editor: Denis Marginas<br><br>Melodie: -<br>Pagina de Facebook: https://www.facebook.com/transportosian<br><br>Categorie: Publicitate<br>Detalii proiect: 1920x1080 pixeli, 30 cadre pe secundă<br>Software: Sony Vegas Pro 16, Photopea<br>Plugin-uri: BCC, Sapphire, RSMB, MBL<br>Etichete: Transport în Osian<br><br>Specificații generale ale sistemului:<br>Procesor: Intel Coffee Lake, Core i5 9400F, 2.9 GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC, 6GB GDDR6, 192-bit<br>Memorie RAM: 16 GB, frecvență 2666 MHz"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=7d5Uph7cl_A",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "advertisement"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "grandconstructpeter-1-advertisement",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#ffdc41"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Nov 12, 2020"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/grandconstructpeter-media/grandconstructpeter_video_1.webm",
+                    "video_thumbnail": "thumbnails/grandconstructpeter_video_1.webp",
+                    "video_data": {
+                        "title": "GrandconstructPeter #1 | Anunț",
+                        "description": "Editor: Denis Marginas<br><br>Melodie: -<br>Pagina de Facebook: https://www.facebook.com/Grandconstruct-Peter-106808967582217<br><br>Categorie: Publicitate<br>Detalii proiect: 1920x1080 pixeli, 30 cadre pe secundă<br>Software: Adobe After Effects 2020, Photopea<br>Plugin-uri: BCC, Sapphire, RSMB, MBL<br>Etichete: Grandconstruct Peter<br><br>Specificații generale ale sistemului:<br>Procesor: Intel Coffee Lake, Core i5 9400F, 2.9 GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC, 6GB GDDR6, 192-bit<br>Memorie RAM: 16 GB, frecvență 2666 MHz"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=-KGhKXIs06E",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "advertisement"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "strikerproduction-showreel-demand-2017-2021",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#5d6977"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Oct 11, 2026"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/strikerproduction-demand-media/showreel/strikerproduction_showreel_demand_2017_2021.webm",
+                    "video_thumbnail": "thumbnails/strikerproduction_showreel_demand_2017_2021.webp",
+                    "video_data": {
+                        "title": "Videoclipuri promoționale pentru Striker Production, perioada 2017-2021",
+                        "description": "O selecție de videoclipuri realizate pentru jocuri, care include editare rapidă pentru Rust și CS, sincronizare dinamică, ritm alert și introduceri personalizate cu logo-uri. Proiectat pentru a oferi povești vizuale puternice și design de mișcare curat, destinat creatorilor de conținut, echipelor de e-sport și canalelor dedicate jocurilor.<br><br>Playlistă cu piese solicitate: https://www.youtube.com/watch?v=65D6qJ9NIJk&list=PLm3Prvo0l7fO0-H0G_TuiHhUbOKW29xPo<br>Drepturi de autor: https://docs.google.com/spreadsheets/d/1kh0jtIb0irRPO1DoYO4w3KCN6WP2ykL_70rqKoGmbIM/edit?gid=327844194#gid=327844194"
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=_jesbR2I-fI",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "video game edit"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "strikerproduction-showreel-2016-2022",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#5d6977"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Oct 12, 2026"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/strikerproduction-media/showreel/striker_production_showreel_2016_2022.webm",
+                    "video_thumbnail": "thumbnails/striker_production_showreel_2016_2022.webp",
+                    "video_data": {
+                        "title": "Galerie de proiecte video – Striker Production, 2016-2022",
+                        "description": "Bine ați venit la prezentarea \"Striker Production 2016–2022\", o selecție atentă de cele mai bune proiecte de editare video, realizate pe parcursul a șase ani de activitate creativă. Această prezentare include clipuri scurte și momente memorabile din proiecte non-profit, contribuții de editare comunitare și lucrări create pentru concursuri de editare. Accentul este pus în principal pe înregistrări de gaming cu un stil cinematografic, fiecare secvență fiind sincronizată ritmic cu muzica și îmbogățită cu efecte vizuale expresive și un design sonor captivant, pentru a crea o atmosferă distinctă și memorabilă.<br><br>Fluxul de lucru pentru aceste proiecte a presupus utilizarea versiunilor 14 și 16 de Sony Vegas Pro, împreună cu Adobe After Effects pentru compoziție și animație. Stiluri vizuale avansate și mișcări fluide au fost obținute folosind plugin-uri standard din industrie, inclusiv ReelSmart Motion Blur, Boris Continuum Complete, Sapphire, Magic Bullet Looks, Element 3D, Trapcode Particular și Pixel Sorter AE. În plus, Topaz Video Enhance AI a fost utilizat pentru a îmbunătăți și a rafina calitatea video, în timp ce grafica și miniaturi video au fost create folosind Photopea. Vă mulțumim tuturor celor care au susținut acest proiect de-a lungul anilor – creșteți volumul și bucurați-vă de secțiunea cu cele mai importante momente."
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=1p3nACAFb5k",
+                        "svg": "socials_youtube"
+                    },
+                    {
+                        "text": "Videoclipuri",
+                        "url": "https://www.youtube.com/@strikerproduction/videos",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "video game edit"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "strikerproduction-video-editing-contests-showreel",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#02c2e2"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Oct 12, 2026"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/strikerproduction-editing-contest-video-media/showreel/strikerproduction_video_editing_contests_showreel.webm",
+                    "video_thumbnail": "thumbnails/strikerproduction_video_editing_contests_showreel.webp",
+                    "video_data": {
+                        "title": "Showreel concurs de editare video",
+                        "description": "Material promoțional al concursului de editare video, primul concurs organizat de Striker Production în 2016, cu scopul de a descoperi și recompensa talentul în editare. Include momente memorabile extrase din toate materialele depuse, evaluate pe baza creativității, a narativului, a tăierilor, a intro-urilor și a outro-urilor, a aspectului cinematografic, a efectelor vizuale și sonore, precum și a fluxului general, în special a sincronizării cu muzica."
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=s5Ivtehav9k",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "video game edit"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "strikerproduction-rust-editing-contests-showreel",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#ab3a27"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Oct 12, 2026"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/strikerproduction-editing-contest-rust-media/showreel/strikerproduction_rust_editing_contests_showreel.webm",
+                    "video_thumbnail": "thumbnails/strikerproduction_rust_editing_contests_showreel.webp",
+                    "video_data": {
+                        "title": "Showreel concursuri de editare Rust",
+                        "description": "Material promoțional al concursului de editare \"Rust Editing Contest\", organizat de Striker Production. Acesta include cele mai impresionante momente din toate proiectele depuse în cele 8 ediții desfășurate începând cu 2018, unde editorii experimentați și noi au transformat clipurile, pachetele audio și demo-urile furnizate în editări cinematografice, sincronizate cu muzica, cu efecte vizuale și design sonor creative."
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=bFKv02w4Vh0",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "video game edit"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "strikerproduction-pubg-editing-contests-showreel",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#2a3240"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Oct 12, 2026"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/strikerproduction-editing-contest-pubg-media/showreel/strikerproduction_pubg_editing_contests_showreel.webm",
+                    "video_thumbnail": "thumbnails/strikerproduction_pubg_editing_contests_showreel.webp",
+                    "video_data": {
+                        "title": "Showreel concurs de editare PUBG",
+                        "description": "Material promoțional al concursului de editare PUBG, prima competiție organizată de Striker Production, bazată pe clipuri video pre-renderizate din PUBG, desfășurată în perioada octombrie-decembrie 2021. Materialul prezintă cele mai notabile momente din participanți, unde editorii au folosit clipurile și intro-ul concursului pentru a crea editări, evaluate pe baza creativității, execuției conținutului, efectelor vizuale și sonore, precum și a ritmului."
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=uM8EqmTzywQ",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "video game edit"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "strikerproduction-csgo-editing-contests-showreel",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#017842"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Oct 12, 2026"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/strikerproduction-editing-contest-csgo-media/showreel/strikerproduction_csgo_editing_contests_showreel.webm",
+                    "video_thumbnail": "thumbnails/strikerproduction_csgo_editing_contests_showreel.webp",
+                    "video_data": {
+                        "title": "Showreel concurs de editare CSGO",
+                        "description": "Material promoțional al concursului de editare CS:GO, organizat de Striker Production în primăvara anului 2022. Prezentă momentele cele mai notabile din înregistrările participanților, unde editorii au transformat clipurile și demo-urile pre-renderizate CS:GO, prezentate la începutul concursului, în editări, evaluate pe baza creativității, execuției conținutului, efectelor vizuale și sonore, precum și a sincronizării cu muzica."
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=FTpzUJ-zoa4",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "video game edit"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "strikerproduction-codmw3-editing-contests-showreel",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#9dc139"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Oct 12, 2026"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/strikerproduction-editing-contest-codmw3-media/showreel/strikerproduction_codmw3_editing_contests_showreel.webm",
+                    "video_thumbnail": "thumbnails/strikerproduction_codmw3_editing_contests_showreel.webp",
+                    "video_data": {
+                        "title": "Showreel concurs de editare COD:MW3",
+                        "description": "Material promoțional al concursului de editare COD:MW3, organizat de Striker Production la sfârșitul anului 2022, destinat editorilor talentați și creativi. Include cele mai impresionante momente din înregistrările participanților, realizate folosind pachetele de clip-uri COD:MW3 sau înregistrări proprii din demo-uri, și este evaluat pe baza creativității, calității execuției, efectelor vizuale și sonore, precum și a ritmului."
+                    }
+                },
+                "buttons": [
+                    {
+                        "text": "Vezi pe YouTube",
+                        "url": "https://www.youtube.com/watch?v=Qc90G10zfNk",
+                        "svg": "socials_youtube"
+                    }
+                ]
+            },
+            "taxonomy": {
+                "tag": [
+                    "video game edit"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "hartkeepyouthaton-1-product-showcase",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#f1d199"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Feb 1, 2020"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/hartkeepyouthaton-media/vids_1/hartkeepyouthaton_slider-2.webm",
+                    "video_thumbnail": "thumbnails/hartkeepyouthaton_slider-2.webp",
+                    "video_data": {
+                        "title": "PROIECT #1 | Prezentarea produselor",
+                        "description": "Editor: Denis Marginas<br><br>Categorie: Publicitate<br>Detalii proiect: 600x600 pixeli, 10 cadre pe secundă<br>Etichete: HART, Păstrați-vă calmul"
+                    }
+                }
+            },
+            "taxonomy": {
+                "tag": [
+                    "advertisement"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "reifendirekt-1-web-preview",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#3c7fb5"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Dec 1, 2021"
+            },
+            "media": {
+                "video": {
+                    "video": "projects/reifendirekt-web-design/web/reifendirekt_preview_1.webm",
+                    "video_thumbnail": "thumbnails/reifendirekt_preview_1.webp",
+                    "video_data": {
+                        "title": "Reifen Direkt #1 | Prezentare preliminară a site-ului",
+                        "description": "Înregistrare video a refacerii site-ului Reifen Direkt: pagini HTML statice create pe baza design-urilor din Zeplin, folosind SCSS, Bootstrap și jQuery.<br><br>Categorie: Prezentare web<br>Detalii proiect: 1280x520 pixeli, 20 cadre pe secundă<br>Etichete: Reifen Direkt"
+                    }
+                }
+            },
+            "taxonomy": {
+                "tag": [
+                    "web preview"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "category-projects",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#5d6977"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Oct 18, 2026"
+            },
+            "media": {
+                "video": {
+                    "video": "categories/category_projects.webm",
+                    "video_thumbnail": "thumbnails/category_projects.webp",
+                    "video_data": {
+                        "title": "Categorii: Proiecte",
+                        "description": "Fundal animat pentru pagina \"Proiecte\": o prezentare rapidă a diverselor proiecte realizate, incluzând site-uri web, magazine online și producții video din portofoliul meu."
+                    }
+                }
+            },
+            "taxonomy": {
+                "tag": [
+                    "category"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "category-web-development-projects",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#5d6977"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Oct 18, 2026"
+            },
+            "media": {
+                "video": {
+                    "video": "categories/category_web-development.webm",
+                    "video_thumbnail": "thumbnails/category_web_development.webp",
+                    "video_data": {
+                        "title": "Categorie: Proiecte web",
+                        "description": "Secvență de fundal pentru pagina \"Proiecte web\": prezentări ale site-urilor web și ale magazinelor online pe care le-am proiectat și dezvoltat."
+                    }
+                }
+            },
+            "taxonomy": {
+                "tag": [
+                    "category"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "category-visual-media-projects",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#5d6977"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Oct 18, 2026"
+            },
+            "media": {
+                "video": {
+                    "video": "categories/category_visual_media_projects.webm",
+                    "video_thumbnail": "thumbnails/category_visual_media_projects.webp",
+                    "video_data": {
+                        "title": "Categorie: Proiecte media",
+                        "description": "Fundal animat pentru pagina \"Proiecte media\": include design grafic, editare foto și producție video."
+                    }
+                }
+            },
+            "taxonomy": {
+                "tag": [
+                    "category"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "category-personal-and-custom-projects",
+        "settings": {
+            "type": "video",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#5d6977"
+                }
+            }
+        },
+        "data": {
+            "date": {
+                "publish": "Oct 18, 2026"
+            },
+            "media": {
+                "video": {
+                    "video": "categories/category_personal_and_custom_projects.webm",
+                    "video_thumbnail": "thumbnails/category_personal_and_custom_projects.webp",
+                    "video_data": {
+                        "title": "Categorie: Proiecte personale",
+                        "description": "Fundal animat pentru pagina \"Proiecte personale\": inițiative non-profit și proiecte realizate din pasiune."
+                    }
+                }
+            },
+            "taxonomy": {
+                "tag": [
+                    "category"
+                ]
+            }
+        }
+    }
+]

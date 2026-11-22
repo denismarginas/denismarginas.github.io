@@ -1,0 +1,11 @@
+{
+  "name"        : "utility_post_get_img",
+  "title"       : "Utility Post Get Image",
+  "summary": "Finds the best project image from candidate paths.",
+  "description" : "Resolves the best project image by trying ordered candidate paths, falling back to scanning a media folder while excluding paths/images by string.",
+  "type"        : "utility",
+  "assets"      : {
+    "php" : ["assets/php/utility_post_get_img.php"]
+  },
+  "dependencies": []
+}

@@ -1,0 +1,18 @@
+<svg width="223" height="236" viewBox="0 0 223 236" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="angular-g1" x1="41.025" y1="28.344" x2="156.741" y2="160.344" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E40035"/>
+<stop offset="0.24" stop-color="#F60A48"/>
+<stop offset="0.352" stop-color="#F20755"/>
+<stop offset="0.494" stop-color="#DC087D"/>
+<stop offset="0.745" stop-color="#9717E7"/>
+<stop offset="1" stop-color="#6C00F5"/>
+</linearGradient>
+<linearGradient id="angular-g2" x1="41.025" y1="28.344" x2="156.741" y2="160.344" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF31D9"/>
+<stop offset="1" stop-color="#FF5BE1" stop-opacity="0"/>
+</linearGradient>
+</defs>
+<path d="M222.077 39.192L214.058 165.115L137.387 0L222.077 39.192ZM168.972 202.017L111.039 235.073L53.105 202.017L64.888 173.461H157.189L168.972 202.017ZM111.039 62.675L141.396 136.478H80.681L111.039 62.675ZM7.937 165.115L0 39.192L84.69 0L7.937 165.115Z" fill="url(#angular-g1)"/>
+<path d="M222.077 39.192L214.058 165.115L137.387 0L222.077 39.192ZM168.972 202.017L111.039 235.073L53.105 202.017L64.888 173.461H157.189L168.972 202.017ZM111.039 62.675L141.396 136.478H80.681L111.039 62.675ZM7.937 165.115L0 39.192L84.69 0L7.937 165.115Z" fill="url(#angular-g2)"/>
+</svg>

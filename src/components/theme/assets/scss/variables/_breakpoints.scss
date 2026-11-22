@@ -1,0 +1,18 @@
+$dm-screen-xs: 320px;
+$dm-screen-sm: 480px;
+$dm-screen-md: 768px;
+$dm-screen-lg: 1024px;
+$dm-screen-xl: 1280px;
+$dm-screen-2xl: 1440px;
+$dm-screen-3xl: 1920px;
+
+$dm-screens: (
+  'xs': $dm-screen-xs,
+  'sm': $dm-screen-sm,
+  'md': $dm-screen-md,
+  'lg': $dm-screen-lg,
+  'xl': $dm-screen-xl,
+  '2xl': $dm-screen-2xl,
+  '3xl': $dm-screen-3xl,
+);
+

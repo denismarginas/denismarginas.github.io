@@ -1,0 +1,13 @@
+{
+  "name"        : "utility_filter",
+  "title"       : "Utility Filter",
+  "summary": "Filters, sorts and limits lists of posts / items / terms.",
+  "description" : "Filters, sorts and limits a list of posts / items / taxonomy terms: filter_by, exclude_by, sort (utility_sort), max_items. Shared by resume_listing, social_links and link_list.",
+  "type"        : "utility",
+  "assets"      : {
+    "php" : ["assets/php/utility_filter.php"]
+  },
+  "dependencies": [
+    "utility_sort"
+  ]
+}

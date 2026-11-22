@@ -1,0 +1,459 @@
+{
+  "title"           : "Workflow",
+  "pageTitleSuffix" : "| Portfolio CMS",
+  "meta_description": "Portfolio CMS: manage, render and publish the portfolio content",
+  "header"          : {"kicker": "by Denis Marginas", "title": "Workflow UI", "description": "Create cards, link ports, and save the canvas as JSON."},
+  "topbar"          : {
+    "title"   : "Portfolio CMS",
+    "subtitle": "by Denis Marginas",
+    "logo"    : {"svg": "cms"},
+    "menu": "Menu",
+    "nav": "Main menu",
+    "viewFrontpage": "View",
+    "viewFrontpageTitle": "View the front page"
+  },
+  "actions"         : {
+    "reload"      : "Reload",
+    "saveGraph"   : "Save graph",
+    "addCard"     : "Add card",
+    "saveVariable": "Save variable",
+    "delete"      : "Delete",
+    "compileScss" : "Render",
+    "editPosts"   : "Edit Posts",
+    "view"        : "View",
+    "translate"   : "Generate Translations",
+    "thumbnails"  : "Generate Thumbnails",
+    "generate"    : "Generate",
+    "renderHtml"  : "HTML Bulk Render"
+  },
+  "contentTypes"    : {
+    "label"          : "Content Types",
+    "posts"          : "Posts",
+    "taxonomies"     : "Taxonomies",
+    "collections"    : "Collections",
+    "postsDesc"      : "Pages with their own URL: pages, projects, workstations.",
+    "taxonomiesDesc" : "Terms that group posts, like categories.",
+    "collectionsDesc": "Data used inside pages: jobs, education, videos, socials...",
+    "description"    : "Posts, taxonomies and collections of data_settings_types.json."
+  },
+  "sections"        : {"createCard": "Create card", "setVariable": "Set variable", "inspector": "Inspector", "links": "Links"},
+  "templates"       : {
+    "database"         : "DataBase",
+    "selectfile"       : "Select File",
+    "project_structure": "Project Structure",
+    "page_structure"   : "Page Structure",
+    "seo_project"      : "Seo Projects",
+    "seo_page"         : "Seo Page",
+    "render"           : "Preview Render",
+    "compile_scss"     : "Compile SCSS",
+    "live_preview"     : "Live Preview",
+    "translation"      : "Translation",
+    "custom"           : "Custom"
+  },
+  "fields"          : {"title": "Title", "type": "Type", "action": "Action", "inputs": "Inputs", "outputs": "Outputs", "variables": "Variables", "name": "Name", "value": "Value"},
+  "placeholders"    : {
+    "title"    : "Hero block",
+    "type"     : "content",
+    "action"   : "renderHero",
+    "inputs"   : "copy, image, theme",
+    "outputs"  : "html, data",
+    "variables": "headline:Portfolio,accent:#47cbe3",
+    "name"     : "accent",
+    "value"    : "#47cbe3"
+  },
+  "canvas"          : {
+    "ready"        : "Ready",
+    "hint"         : "Click an output port, then an input port to link them.",
+    "loading"      : "Loading graph...",
+    "loaded"       : "Graph loaded",
+    "saved"        : "Graph saved",
+    "linkCreated"  : "Link created",
+    "cardAdded"    : "Card added",
+    "variableSaved": "Variable saved",
+    "noVariables"  : "No variables set yet.",
+    "noLinks"      : "No links yet.",
+    "selectCard"   : "Select a card to inspect it.",
+    "selectedPort" : "Selected {kind} port {name}",
+    "fitView"      : "Fit view"
+  },
+  "card"            : {"label": "Card", "nodeType": "node", "actionPrefix": "Action:", "inputs": "Inputs", "outputs": "Outputs"},
+  "inspector"       : {"update": "Update", "note": "Note"},
+  "editPosts"       : {
+    "kicker"           : "by Denis Marginas",
+    "pageTitle"        : "Post Editor",
+    "metaDescription"  : "Edit portfolio posts with a visual content builder.",
+    "back"             : "Back to Workflow",
+    "save"             : "Save Post",
+    "postTypes"        : "Post Types",
+    "loadingPostTypes" : "Loading post types...",
+    "routable"         : "Routable",
+    "posts"            : "Posts",
+    "searchPosts"      : "Search posts...",
+    "post"             : "Post",
+    "contentBuilder"   : "Content Builder",
+    "addComponent"     : "Add Component",
+    "noContent"        : "No content items. Click \"Add Component\" to add one.",
+    "components"       : "Components",
+    "filterComponents" : "Filter components...",
+    "ready"            : "Ready",
+    "noPostTypes"      : "No post types found. Configure SelectFile cards in the workflow first.",
+    "noPostsMatch"     : "No posts match your search.",
+    "postsLoaded"      : "{count} {type} posts loaded",
+    "postLoaded"       : "Post loaded",
+    "saving"           : "Saving...",
+    "saved"            : "Post saved",
+    "saveFailed"       : "Save failed: {message}",
+    "added"            : "Added: {name}",
+    "noDataFields"     : "No data fields",
+    "noComponentsMatch": "No components match.",
+    "invalidJson"      : "Invalid JSON: {message}",
+    "jsonMode"         : "JSON Mode",
+    "jsonModeOn"       : "JSON mode",
+    "jsonModeOff"      : "Standard mode",
+    "duplicate"        : "Duplicate",
+    "duplicated"       : "Duplicated as: {id}",
+    "delete"           : "Delete",
+    "confirmDelete"    : "Delete this post permanently?",
+    "deleted"          : "Post deleted",
+    "deleteFailed"     : "Delete failed: {message}",
+    "loading"          : "Loading...",
+    "errorLoading"     : "Error loading data: {message}",
+    "error"            : "Error: {message}"
+  },
+  "editTaxonomies"  : {
+    "pageTitle"  : "Taxonomy Editor",
+    "types"      : "Taxonomy Types",
+    "terms"      : "Terms",
+    "new"        : "New",
+    "delete"     : "Delete",
+    "save"       : "Save",
+    "searchTerms": "Search terms...",
+    "noTypes"    : "No taxonomy types found",
+    "noTerms"    : "No terms match your search."
+  },
+  "contentOverview" : {
+    "title"   : "Content",
+    "new"     : "New",
+    "entries" : "entries",
+    "routable": "own pages"
+  },
+  "menu"            : {
+    "render": "Render",
+    "compileScss": "Compile SCSS",
+    "livePreview": "Live Preview",
+    "seoFiles": "SEO Files",
+    "translate": "Generate Translations",
+    "thumbnails": "Generate Thumbnails",
+    "resumes": "Generate Resume Images"
+  },
+  "dashboardStatus" : {
+    "title": "Status",
+    "checkAll": "Check all",
+    "check": "Check again",
+    "loading": "Checking...",
+    "translations": "Translations",
+    "html": "HTML Render",
+    "projects": "Projects",
+    "openTranslate": "Open Translate",
+    "openRender": "Open HTML Render",
+    "runRender": "Render all pages",
+    "openThumbnails": "Generate Thumbnails",
+    "openProjects": "All projects"
+  },
+  "vars"            : {
+    "title": "Params",
+    "save": "Save params",
+    "idle": "Idle",
+    "render": {
+      "debug_post_data": {
+        "label": "Debug post data",
+        "hint": "Show the entry JSON instead of the rendered page body."
+      },
+      "hoist_to_head": {
+        "label": "Move assets to head",
+        "hint": "Move stylesheets and script tags printed in the body into <head>."
+      },
+      "html_compile": {
+        "label": "Write HTML to dist",
+        "hint": "Write static HTML files to dist/ on preview and bulk render."
+      },
+      "html_compile_folder": {
+        "label": "Use type folders",
+        "hint": "Write posts into their type folder (project/zozo.html); pages stay at the root."
+      }
+    },
+    "compile_scss": {
+      "compile_scss_src_components": {
+        "label": "Site components",
+        "hint": "Compile the SCSS of src/components."
+      },
+      "compile_scss_platform_components": {
+        "label": "Admin components",
+        "hint": "Compile the SCSS of dev/platform/components."
+      },
+      "compile_scss_platform_assets": {
+        "label": "Admin layout",
+        "hint": "Compile dev/platform/assets/scss (admin layout and elements)."
+      },
+      "compile_scss_assets": {
+        "label": "Production bundle",
+        "hint": "Build bundle.css and bundle.js in theme/assets_compiled."
+      },
+      "compile_assets": {
+        "label": "Use the bundle in pages",
+        "hint": "Pages load the single bundle instead of one file per component."
+      },
+      "compile_scss_everytime": {
+        "label": "Compile on every preview",
+        "hint": "Delete old CSS and recompile on each preview and render. Slower, always fresh."
+      }
+    },
+    "live_preview": {
+      "post_type": {
+        "label": "Post type",
+        "hint": "Type opened in Live Preview.",
+        "placeholder": "page"
+      },
+      "_id": {
+        "label": "Entry ID",
+        "hint": "Entry opened in Live Preview.",
+        "placeholder": "home"
+      }
+    },
+    "translation": {
+      "default_lang": {
+        "label": "Source language",
+        "hint": "Language the content is written in (ISO code).",
+        "placeholder": "en"
+      },
+      "target_langs": {
+        "label": "Target languages",
+        "hint": "Comma separated ISO codes to translate into.",
+        "placeholder": "ro, de"
+      },
+      "provider": {
+        "label": "Provider",
+        "hint": "ollama (local), google, or copy (sync the structure only).",
+        "placeholder": "ollama"
+      },
+      "model": {
+        "label": "Model",
+        "hint": "Ollama model used for the translation.",
+        "placeholder": "translategemma:4b"
+      },
+      "ollama_url": {
+        "label": "Ollama URL",
+        "hint": "Address of the local Ollama server.",
+        "placeholder": "http://127.0.0.1:11434"
+      }
+    },
+    "thumbnails": {
+      "skip_projects_with_thumbnail": {
+        "label": "Skip existing thumbnails",
+        "hint": "Only generate for projects that have no thumbnail yet."
+      },
+      "overwrite": {
+        "label": "Overwrite",
+        "hint": "Replace existing thumbnail files."
+      },
+      "overwrite_if_bigger": {
+        "label": "Overwrite only if bigger",
+        "hint": "Replace a thumbnail only when the existing file is larger than the size limit."
+      },
+      "overwrite_bigger_than_kb": {
+        "label": "Size limit (KB)",
+        "hint": "Used by “Overwrite only if bigger”.",
+        "placeholder": "20"
+      },
+      "quality": {
+        "label": "WebP quality",
+        "hint": "0–100. Lower gives smaller files.",
+        "placeholder": "42"
+      }
+    },
+    "resumes": {
+      "output_folder": {
+        "label": "Output folder",
+        "hint": "Folder the resume images are saved to.",
+        "placeholder": "resumes"
+      },
+      "width": {
+        "label": "Image width (px)",
+        "hint": "Width of the full resume image.",
+        "placeholder": "1000"
+      },
+      "thumbnail_width": {
+        "label": "Thumbnail width (px)",
+        "hint": "Width of the small preview image.",
+        "placeholder": "130"
+      },
+      "quality": {
+        "label": "Image quality",
+        "hint": "WebP quality of the full image, 0–100.",
+        "placeholder": "34"
+      },
+      "thumbnail_quality": {
+        "label": "Thumbnail quality",
+        "hint": "WebP quality of the thumbnail, 0–100.",
+        "placeholder": "35"
+      },
+      "page": {
+        "label": "PDF page",
+        "hint": "Which page of each PDF is rendered.",
+        "placeholder": "1"
+      },
+      "skip_existing": {
+        "label": "Skip existing",
+        "hint": "Don't render resumes that already have images."
+      },
+      "update_json": {
+        "label": "Update the resume entries",
+        "hint": "Write the new image paths into the resume collection."
+      }
+    },
+    "seo_files": {
+      "sitemap": {
+        "label": "Build sitemap.xml",
+        "hint": "List every rendered page for search engines."
+      },
+      "robots": {
+        "label": "Build robots.txt",
+        "hint": "Tell crawlers what to skip and where the sitemap is."
+      },
+      "site_url": {
+        "label": "Site URL",
+        "hint": "Absolute address used in the sitemap. Leave empty to use the url from routing settings.",
+        "placeholder": "{routing_url}"
+      },
+      "include_noindex": {
+        "label": "Include noindex pages",
+        "hint": "Also list pages whose seo.index is false."
+      },
+      "front_page_as_root": {
+        "label": "Front page as root",
+        "hint": "List the front page as the site root (/) instead of home.html."
+      },
+      "lastmod": {
+        "label": "Last modified dates",
+        "hint": "Add <lastmod> from the entry date or the file time."
+      },
+      "robots_disallow": {
+        "label": "Disallow paths",
+        "hint": "Comma separated paths crawlers should skip. Leave empty to allow everything.",
+        "placeholder": "search.html, privacy-policy.html"
+      },
+      "build_on_html_render": {
+        "label": "Build after HTML render",
+        "hint": "Rebuild both files after every HTML bulk render."
+      }
+    }
+  },
+  "settingsSearch"  : {
+    "title"       : "Settings",
+    "open"        : "All settings",
+    "placeholder" : "Search settings, site data and tools...",
+    "shortcutHint": "Press Ctrl+J to search settings",
+    "kindSettings": "Settings",
+    "kindData"    : "Site data",
+    "kindTools"   : "Tools",
+    "file"        : "File",
+    "keys"        : "keys",
+    "invalid"     : "Invalid JSON",
+    "performanceMonitor"    : "Performance monitor",
+    "performanceMonitorDesc": "FPS, frame times, long tasks and layout shifts on preview pages."
+  },
+  "contentSearch"   : {
+    "placeholder" : "Search posts, taxonomies and collections...",
+    "shortcutHint": "Press Ctrl+K or / to search",
+    "filter"      : "Filter by kind",
+    "all"         : "All",
+    "result"      : "1 result",
+    "results"     : "{count} results",
+    "more"        : "Showing {shown} of {count}",
+    "none"        : "Nothing matches \"{query}\".",
+    "loading"     : "Loading content...",
+    "error"       : "Could not load content: {message}",
+    "view"        : "View",
+    "hidden"      : "Hidden"
+  },
+  "contentListing"  : {
+    "pageTitle"      : "Content",
+    "addNew"         : "Add New {singular}",
+    "preferences"    : "Listing preferences",
+    "preferencesHint": "Saved for every listing in the platform.",
+    "showAll"        : "Show all",
+    "limitMax"       : "Items per page",
+    "mode"           : "Loading",
+    "modePagination" : "Pagination",
+    "modeScroll"     : "Load on scroll",
+    "routable"       : "Routable (own pages)",
+    "search"         : "Search by title, ID or taxonomy...",
+    "colId"          : "ID",
+    "colTitle"       : "Title",
+    "colType"        : "Type",
+    "colTaxonomies"  : "Taxonomies",
+    "colPublish"     : "Publish date",
+    "colActions"     : "Actions",
+    "edit"           : "Edit",
+    "view"           : "View",
+    "hidden"         : "Hidden",
+    "untitled"       : "(no title)",
+    "loading"        : "Loading...",
+    "empty"          : "Nothing here yet.",
+    "noMatch"        : "No entries match your search.",
+    "range"          : "Showing {from}–{to} of {total}",
+    "rangeAll"       : "{total} entries",
+    "loadingMore"    : "Scroll to load more",
+    "saved"          : "Saved",
+    "saveFailed"     : "Could not save",
+    "prev"           : "Previous",
+    "next"           : "Next",
+    "backToList"     : "All {plural}"
+  },
+  "editCollections" : {
+    "pageTitle"    : "Collection Editor",
+    "types"        : "Collection Types",
+    "entries"      : "Entries",
+    "new"          : "New",
+    "delete"       : "Delete",
+    "save"         : "Save",
+    "searchEntries": "Search entries...",
+    "noTypes"      : "No collections found",
+    "noEntries"    : "No entries match your search."
+  },
+  "home"            : {
+    "title"          : "Dashboard",
+    "description"    : "Build, render and publish the portfolio.",
+    "editPosts"      : "Edit Posts",
+    "editPostsDesc"  : "Manage pages, projects and workstations.",
+    "settings"       : "Settings",
+    "settingsDesc"   : "Site, routing, languages and SEO configuration.",
+    "compileScss"    : "Compile SCSS",
+    "compileScssDesc": "Build CSS from component stylesheets.",
+    "livePreview"    : "Live Preview",
+    "livePreviewDesc": "Preview any post rendered by the page constructor.",
+    "compileHtml"    : "Compile HTML",
+    "compileHtmlDesc": "Write static HTML for every post to the dist folder.",
+    "translate"      : "Generate Translations",
+    "translateDesc"  : "Synchronise content data across languages.",
+    "ready"          : "Ready"
+  },
+  "footer"          : {
+    "text"       : "Platform — Portfolio CMS",
+    "description": "File-based CMS and static site generator for the portfolio.",
+    "search"     : "Search content",
+    "tools"      : "Tools",
+    "site"       : "Site",
+    "frontPage"  : "Front page preview",
+    "builtSite"  : "Built site (dist)",
+    "sitemap"    : "sitemap.xml",
+    "liveSite"   : "Live site"
+  },
+  "errors"          : {
+    "component_not_found": "Component not found: {name}",
+    "no_php_files"       : "No PHP files for component: {name}",
+    "class_not_found"    : "Component class not found: {class}",
+    "class_not_loaded"   : "Component class not loaded: {class}",
+    "no_render_method"   : "Component has no render method: {class}"
+  }
+}

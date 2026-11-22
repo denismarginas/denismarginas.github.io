@@ -1,0 +1,14 @@
+{
+  "name": "project_overview",
+  "title": "Project Overview",
+  "summary": "Project overview: logo, text, facts and links.",
+  "description": "Overview section of a project: left - kicker, optional title and quote, the logo tile + thumbnail; right - the project text, the facts (key_value_list: Client, Role, Platform, Technology, Modules, Tools, Timeline, Worked at - from the post data) and project_links.",
+  "post_types": ["project"],
+  "assets": {
+    "php": ["assets/php/project_overview.php"],
+    "html": ["assets/html/template.html"],
+    "scss": ["assets/scss/**"],
+    "css": ["assets/css/**"]
+  },
+  "dependencies": ["section", "section_head", "key_value_list", "project_links", "utility_project_media", "image", "svg", "theme"]
+}

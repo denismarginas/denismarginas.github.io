@@ -1,0 +1,134 @@
+[
+  {
+    "_id": "cv-3-english",
+    "settings": {
+      "render": true
+    },
+    "data": {
+      "model": 3,
+      "lang": "en",
+      "seo": {
+        "title": "Resume English",
+        "description": "CV - Model 3"
+      },
+      "date": {
+        "publish": "2024-09-27"
+      },
+      "media": {
+        "image": "src/content/img/resumes/cv-3-english/cv-3-english.webp",
+        "thumbnail": "src/content/img/resumes/cv-3-english/cv-3-english-thumbnail.webp",
+        "pdf": "src/content/pdf/cv/cv-3/dm-cv-3-english-public-compressed.pdf"
+      }
+    }
+  },
+  {
+    "_id": "cv-3-romanian",
+    "settings": {
+      "render": true
+    },
+    "data": {
+      "model": 3,
+      "lang": "ro",
+      "seo": {
+        "title": "Resume Romanian",
+        "description": "CV - Model 3"
+      },
+      "date": {
+        "publish": "2024-09-27"
+      },
+      "media": {
+        "image": "src/content/img/resumes/cv-3-romanian/cv-3-romanian.webp",
+        "thumbnail": "src/content/img/resumes/cv-3-romanian/cv-3-romanian-thumbnail.webp",
+        "pdf": "src/content/pdf/cv/cv-3/dm-cv-3-romanian-public-compressed.pdf"
+      }
+    }
+  },
+  {
+    "_id": "cv-2-english",
+    "settings": {
+      "render": true
+    },
+    "data": {
+      "model": 2,
+      "lang": "en",
+      "seo": {
+        "title": "Resume English",
+        "description": "CV - Model 2"
+      },
+      "date": {
+        "publish": "2023-06-03"
+      },
+      "media": {
+        "image": "src/content/img/resumes/cv-2-english/cv-2-english.webp",
+        "thumbnail": "src/content/img/resumes/cv-2-english/cv-2-english-thumbnail.webp",
+        "pdf": "src/content/pdf/cv/cv-2/dm-cv-2-english-public-compressed.pdf"
+      }
+    }
+  },
+  {
+    "_id": "cv-2-romanian",
+    "settings": {
+      "render": true
+    },
+    "data": {
+      "model": 2,
+      "lang": "ro",
+      "seo": {
+        "title": "Resume Romanian",
+        "description": "CV - Model 2"
+      },
+      "date": {
+        "publish": "2023-06-03"
+      },
+      "media": {
+        "image": "src/content/img/resumes/cv-2-romanian/cv-2-romanian.webp",
+        "thumbnail": "src/content/img/resumes/cv-2-romanian/cv-2-romanian-thumbnail.webp",
+        "pdf": "src/content/pdf/cv/cv-2/dm-cv-2-romanian-public-compressed.pdf"
+      }
+    }
+  },
+  {
+    "_id": "cv-1-english",
+    "settings": {
+      "render": true
+    },
+    "data": {
+      "model": 1,
+      "lang": "en",
+      "seo": {
+        "title": "Resume English",
+        "description": "CV - Model 1"
+      },
+      "date": {
+        "publish": "2023-05-16"
+      },
+      "media": {
+        "image": "src/content/img/resumes/cv-1-english/cv-1-english.webp",
+        "thumbnail": "src/content/img/resumes/cv-1-english/cv-1-english-thumbnail.webp",
+        "pdf": "src/content/pdf/cv/cv-1/dm-cv-1-english-public-compressed.pdf"
+      }
+    }
+  },
+  {
+    "_id": "cv-1-romanian",
+    "settings": {
+      "render": true
+    },
+    "data": {
+      "model": 1,
+      "lang": "ro",
+      "seo": {
+        "title": "Resume Romanian",
+        "description": "CV - Model 1"
+      },
+      "date": {
+        "publish": "2023-05-16"
+      },
+      "media": {
+        "image": "src/content/img/resumes/cv-1-romanian/cv-1-romanian.webp",
+        "thumbnail": "src/content/img/resumes/cv-1-romanian/cv-1-romanian-thumbnail.webp",
+        "pdf": "src/content/pdf/cv/cv-1/dm-cv-1-romanian-public-compressed.pdf"
+      }
+    }
+  }
+]

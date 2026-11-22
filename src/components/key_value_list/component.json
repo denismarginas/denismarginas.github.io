@@ -1,0 +1,13 @@
+{
+  "name": "key_value_list",
+  "title": "Key Value List",
+  "summary": "Label / value rows (client, role, timeline...).",
+  "description": "Definition list of label / value rows (Client, Role, Platform, Timeline ...). Rows without a value are skipped. \"grid\": bordered rows in 1 or 2 columns; \"inline\": compact labels over values in one wrapping row (e.g. under a hero).",
+  "assets": {
+    "php": ["assets/php/key_value_list.php"],
+    "html": ["assets/html/template.html"],
+    "scss": ["assets/scss/**"],
+    "css": ["assets/css/**"]
+  },
+  "dependencies": ["theme"]
+}

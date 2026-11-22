@@ -1,0 +1,26 @@
+{
+  "name": "section_layout_aside",
+  "title": "Section Layout Aside",
+  "summary": "Two-column section: content + aside slots.",
+  "description": "Two-column <section> with a main content column and an aside column. Children are slot components: layout_content and layout_aside, each holding its own children. Renders the post colors (utility_appearance_colors) as --post-color-* vars on its style=\"\".",
+  "assets": {
+    "php": [
+      "assets/php/section_layout_aside.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "section",
+    "layout_content",
+    "layout_aside",
+    "utility_appearance_colors"
+  ]
+}

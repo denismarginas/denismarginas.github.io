@@ -1,0 +1,29 @@
+{
+  "name": "post_short_info_visual",
+  "title": "Post Short Info - Visual",
+  "summary": "Post logo on the post canvas color.",
+  "description": "Post logo (media.logo.img or media.logo.svg) on the post canvas color. Replaces the old section_post .post-image.",
+  "post_types": [
+    "project"
+  ],
+  "assets": {
+    "php": [
+      "assets/php/post_short_info_post.php",
+      "assets/php/post_short_info_visual.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "image",
+    "svg",
+    "theme"
+  ]
+}

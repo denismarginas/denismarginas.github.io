@@ -1,0 +1,14 @@
+{
+  "name": "project_block_video",
+  "title": "Project Block Video",
+  "summary": "Project video with thumbnail fallback to the post logo.",
+  "description": "Video of a project post: block_video (thumbnail from data_items_video.json). When the video has no thumbnail there, the thumbnail is the post logo (data.media.logo.img, or data.media.logo.svg) over the workpreview overlay on the post primary color.",
+  "post_types": ["project"],
+  "assets": {
+    "php": ["assets/php/project_block_video.php"],
+    "html": ["assets/html/template.html"],
+    "scss": ["assets/scss/**"],
+    "css": ["assets/css/**"]
+  },
+  "dependencies": ["block_video", "image", "svg", "theme"]
+}

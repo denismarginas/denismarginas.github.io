@@ -1,0 +1,20 @@
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="video-enhance-g1" x1="99.8067" y1="0" x2="400.08" y2="499.487" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1E7DF2"/>
+<stop offset="0.5" stop-color="#1268D6"/>
+<stop offset="1" stop-color="#0B52B5"/>
+</linearGradient>
+<linearGradient id="video-enhance-g2" x1="103.638" y1="82.8" x2="388.367" y2="415.22" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0D1626"/>
+<stop offset="1" stop-color="#060B14"/>
+</linearGradient>
+<linearGradient id="video-enhance-g3" x1="185.517" y1="137.842" x2="374.965" y2="292.681" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1C79EB"/>
+<stop offset="1" stop-color="#0E5EC9"/>
+</linearGradient>
+</defs>
+<path d="M249.517 0C378.517 0 488.517 30 498.517 142C508.517 256 371.517 500 249.517 500C127.517 500 -9.48323 256 0.516765 142C10.5168 30 120.517 0 249.517 0Z" fill="url(#video-enhance-g1)"/>
+<path d="M249.517 42C358.517 42 449.517 66 457.517 160C465.517 256 351.517 450 249.517 450C147.517 450 33.5168 256 41.5168 160C49.5168 66 140.517 42 249.517 42Z" fill="url(#video-enhance-g2)"/>
+<path d="M185.517 156C185.517 141 201.517 133 214.517 141L334.517 218C346.517 226 346.517 243 334.517 251L214.517 328C201.517 336 185.517 328 185.517 313V156Z" fill="url(#video-enhance-g3)"/>
+</svg>

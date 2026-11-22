@@ -1,0 +1,31 @@
+{
+  "name": "resume_listing",
+  "title": "Resume Listing",
+  "summary": "Grid of resume cards with view and download.",
+  "description": "Grid of resume cards from data_items_resume.json (each <li> has the item _id as id): thumbnail and View button open resume_view in the popup (preview_popup: false turns it off), title opens the PDF, description, language, publish date and a Download button. \"variant\": \"compact\" drops the thumbnail and Download button: an icon, title, description, language, date and one View button (view_text) that links to view_page#<item _id>, where the popup opens from the hash; without view_page the button opens resume_view in a popup on the same page. Put a resume_filters with the same \"id\" before it for language / model filters, search and sort.",
+  "assets": {
+    "php": [
+      "assets/php/resume_listing.php"
+    ],
+    "html": [
+      "assets/html/template.html",
+      "assets/html/parts/item.html",
+      "assets/html/parts/item_compact.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "image",
+    "popup",
+    "resume_view",
+    "svg",
+    "theme",
+    "utility_filter",
+    "utility_sort"
+  ]
+}

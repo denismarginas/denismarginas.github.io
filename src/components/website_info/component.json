@@ -1,0 +1,24 @@
+{
+  "name": "website_info",
+  "title": "Website Info",
+  "summary": "Site start / update dates and copyright line.",
+  "description": "About this website: start / last update dates and the copyright line. Reads data_content_project_info.json by default; component data overrides it. Used in the footer.",
+  "assets": {
+    "php": [
+      "assets/php/website_info.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "theme",
+    "cookie_settings"
+  ]
+}

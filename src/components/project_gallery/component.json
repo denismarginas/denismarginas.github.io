@@ -1,0 +1,39 @@
+{
+  "name": "project_gallery",
+  "title": "Project Gallery",
+  "summary": "Photo gallery section of a project page.",
+  "description": "Photo gallery section of a project page (folders found by utility_project_media): one filter chip per folder with its count (\"All\" first), a masonry grid (every image at its own shape, the first one bigger on \"All\", logos on the canvas color), a label per tile (folder + number), \"Showing X of Y\" with Load more / Show all, and the popup gallery of the visible frames. Default folder: media (media/<sub folders>). A <section> of its own with a section_head.",
+  "post_types": [
+    "project"
+  ],
+  "assets": {
+    "php": [
+      "assets/php/project_gallery.php"
+    ],
+    "html": [
+      "assets/html/parts/chip.html",
+      "assets/html/parts/filters.html",
+      "assets/html/parts/foot.html",
+      "assets/html/parts/tile.html",
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ],
+    "js": [
+      "assets/js/project_gallery.js"
+    ]
+  },
+  "dependencies": [
+    "section",
+    "section_head",
+    "utility_project_media",
+    "popup",
+    "image",
+    "svg",
+    "theme"
+  ]
+}

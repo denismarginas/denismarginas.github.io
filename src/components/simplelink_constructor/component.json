@@ -1,0 +1,9 @@
+{
+    "name": "simplelink_constructor",
+    "summary": "Resolves a link key to its page URL or anchor tag.",
+    "description": "Resolves a link key (e.g. 'home') to its correct page URL, or renders an anchor tag.",
+    "assets": {
+        "php": ["assets/php/simplelink_constructor.php"]
+    },
+    "dependencies": []
+}

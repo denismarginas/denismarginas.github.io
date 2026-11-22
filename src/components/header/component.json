@@ -1,0 +1,34 @@
+{
+  "name": "header",
+  "summary": "Site header: logo, menu, search, language dropdown, theme toggle, page heading.",
+  "description": "Page header wrapper component.",
+  "assets": {
+    "php": [
+      "assets/php/header.php"
+    ],
+    "html": [
+      "assets/html/template.html",
+      "assets/html/template_menu.html",
+      "assets/html/template_menu_item.html",
+      "assets/html/template_menu_navbar_toggle.html",
+      "assets/html/template_search_button.html",
+      "assets/html/template_language_switcher.html",
+      "assets/html/template_theme_toggle.html",
+      "assets/html/template_page_heading.html"
+    ],
+    "css": [
+      "assets/css/**"
+    ],
+    "js": [
+      "assets/js/header-scroll.js",
+      "assets/js/header-menu-navbar-toggle.js",
+      "assets/js/header-submenu.js",
+      "assets/js/header-theme-mode-toggle.js",
+      "assets/js/header-language-dropdown.js"
+    ]
+  },
+  "dependencies": [
+    "svg",
+    "logo"
+  ]
+}

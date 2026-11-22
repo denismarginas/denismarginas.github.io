@@ -1,0 +1,556 @@
+[
+    {
+        "_id": "personal-workstation-build-1",
+        "settings": {
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#2866c8",
+                    "secondary": "#ffffff",
+                    "canvas_primary": "#273f65",
+                    "canvas_secondary": "#ffffff"
+                }
+            }
+        },
+        "data": {
+            "seo": {
+                "title": "Configurare stație de lucru personală, versiunea 1",
+                "description": "Aceasta este configurația mea de lucru, concepută atât pentru proiecte profesionale, cât și pentru activități personale. Prin actualizări regulate, această stație de lucru asigură eficiența și inspirația, alimentând astfel principalele mele activități de lucru și creative. Sunt încântat să împărtășesc instrumentele și configurația care mă ajută să-mi ating obiectivele zilnice.",
+                "keywords": "denis marginas personal workstation build 1, pc setup, ryzen 5 7600x, rtx 3070",
+                "slug": "personal-workstation-build-1",
+                "index": false
+            },
+            "workstation": {
+                "status": "active",
+                "period": "2023 – Până în prezent"
+            },
+            "media": {
+                "path": "pc-01",
+                "thumbnail": {
+                    "default": "src/content/img/workstation/pc-01/pc_setup_1.webp"
+                }
+            },
+            "configuration": {
+                "gpu": {
+                    "name": "GPU GIGABYTE GeForce RTX 3070 OC 8GB GDDR6 256-bit",
+                    "img_src": "gpu_gigabyte_geforce_rtx_3070_gaming_oc_lhr_8gb_gddr6_256_bit.webp",
+                    "img_src_box": "gpu_gigabyte_geforce_rtx_3070_gaming_oc_lhr_8gb_gddr6_256_bit_box.webp",
+                    "tag": "GPU",
+                    "description": "Frecvența de ceas a GPU-ului: 1815 MHz\nNumărul de tranzistori: 17.400 milioane\nNuclee CUDA: 5888\nTipul memoriei: GDDR6\nCapacitate de memorie: 8 GB\nMemorie RAM: 256 biți\nFrecvență de operare eficientă: 14000 MHz\nDimensiuni: 286 x 115 x 51 mm"
+                },
+                "cpu": {
+                    "name": "CPU AMD Ryzen 5 7600X 38MB 4.7/5.3GHz Boost",
+                    "img_src": "cpu_amd_ryzen_5_7600x_38mb_4.7_5.3ghz_boost.webp",
+                    "img_src_box": "cpu_amd_ryzen_5_7600x_38mb_4.7_5.3ghz_boost_box.webp",
+                    "tag": "CPU",
+                    "description": "Memorie cache: 38 MB\nTip socket: AM5\nFrecvența procesorului (MHz): 4,7 GHz\nFrecvență maximă de boost: 5,3 GHz\nNumăr de nuclee: 6\nNumărul de fire: 12\nTehnologia de fabricație (nanometri): 5 nm\nPutere termică (W): 105 W\n"
+                },
+                "cpu-cooler": {
+                    "name": "Cooler ARCTIC Freezer 34 eSports DUO Grey",
+                    "img_src": "cooler_arctic_freezer_34_esports_duo_grey.webp",
+                    "tag": "CPU Cooler",
+                    "description": "Tip de răcire: Aer\nViteza de rotație (rotați pe minut): 200 - 2100\nDimensiuni (lățime x adâncime x înălțime cm): 124 x 103 x 157"
+                },
+                "motherboard": {
+                    "name": "Motherboard ASUS TUF GAMING B650-PLUS AM5",
+                    "img_src": "motherboard_asus_tuf_gaming_b650_plus_socket_am5.webp",
+                    "tag": "Motherboard",
+                    "description": "Format: ATX\nTip socket: AM5\nPlacă de bază: AMD B650\nProcesoare suportate: Seria AMD Ryzen 7000\nTipul memoriei: DDR5\nConectivitate: 5 x porturi audio, 1 x port Display Port, 1 x port USB 3.2 Gen 2x2 (1 x USB Type-C®), 3 x porturi USB 3.2 Gen 2 (2 x Type-A + 1 x USB Type-C®), 1 x RJ-45 2.5G LAN, 4 x USB 2.0, 1 x HDMI, 2 x PCI Express x1, 2 x PCIe 4.0 x16, 4 x SATA III"
+                },
+                "ram": {
+                    "name": "RAM Kingston FURY Beast 32GB DDR5 5200MHz CL40 Dual Channel",
+                    "img_src": "ram_kingston_fury_beast_32gb_ddr5_5200mhz_cl40_dual_channel_kit.webp",
+                    "tag": "RAM Memory",
+                    "description": "Seria: FURY Beast\nTip: DDR5\nCapacitate: 32 GB\nFrecvență: 5200 MHz\nKit cu două canale: 2 x 16 GB\nLatenta CAS: 40 CL"
+                },
+                "computer-case": {
+                    "name": "Computer Case AQIRYS Antares ARGB",
+                    "img_src": "computer_case_aqirys_antares_argb.webp",
+                    "tag": "Computer Case",
+                    "description": "Tip: Turnul central\nDimensiuni (înălțime x lățime x adâncime): 450 x 410 x 205 mm\nNumărul total de fani: 4\nIluminare LED: ARGB"
+                },
+                "ssd-sata-3": {
+                    "name": "SSD GIGABYTE 480GB SATA-III 2.5 inch",
+                    "img_src": "ssd_gigabyte_480gb_sata_iii_25_inch.webp",
+                    "tag": "Secondary SSD",
+                    "description": "Dimensiuni: 2,5 inch\nInterfață: SATA-III\nCapacitate: 480 GB\nMax: 480 MB/s\nMax: 550 MB/s"
+                },
+                "ssd-m2": {
+                    "name": "SSD Kingston NV2 1TB PCI Express 4.0 x4 M.2 2280",
+                    "img_src": "ssd_kingston_nv2_1tb_pci_express_40_x4_m2_2280.webp",
+                    "tag": "Primary SSD",
+                    "description": "Seria: NV2\nTip: SSD intern\nTip: M.2\nInterfață: PCI Express 4.0 x4\nCapacitate: 1 TB\nMax: 2100 MB/s\nMax: 3500 MB/s"
+                },
+                "psu": {
+                    "name": "PSU GIGABYTE P850GM 80+ Gold 850W",
+                    "img_src": "psu_gigabyte_p850gm_80_plus_gold_850w.webp",
+                    "tag": "PSU",
+                    "description": "Tip: ATX 12V V2.31\nPutere: 850 W\nNumăr de ventilatoare: 1 x de 120 mm\nTensiune/Curent: 100-240VAC\nEficiență: 90%\nCertificare: Peste 80 de premii de aur\nDimensiuni: 150 x 140 x 86 mm\nModularitate: Da, modularitate completă\nMăsuri de protecție: OCP, OTP, OVP, OPP, UVP, SCP"
+                }
+            },
+            "accessories": {
+                "headset": {
+                    "name": "Headset wireless HyperX Cloud Stinger Core 7.1",
+                    "img_src": "headset_wireless_hyperx_cloud_stinger_core_71.webp",
+                    "tag": "Headset",
+                    "description": "Tehnologie: Fără fir\nFrecvența de răspuns (Hz): 20 – 20000\nConectare: Fără fir\nDiametrul difuzorului: 40 mm\nDimensiuni: 210 x 87 x 190 mm"
+                },
+                "mouse": {
+                    "name": "Mouse LOGITECH G203 LIGHTSYNC RGB, 8.000 dpi",
+                    "img_src": "mouse_logitech_g203_lightsync_rgb_8000_dpi.webp",
+                    "tag": "Mouse",
+                    "description": "Conexiune: Cablată\nInterfață: USB\nDimensiuni (l x î x adâncime cm): 11,66 x 6,215 x 3,82\nSenzor: Optic\nRezoluție: 200 – 8.000 DPI\nButoane: 6, programabile\nIluminare: RGB"
+                },
+                "keyboard": {
+                    "name": "Mechanical Keyboard LOGITECH G512 GX Red Linear",
+                    "img_src": "mechanical_keyboard_logitech_g512_gx_red_linear.webp",
+                    "tag": "Keyboard",
+                    "description": "Tip: Mecanică\nTehnologie: GX Red Linear\nConexiune: Cablată\nInterfață: USB\nCuloarea LED: RGB\nComutare: Da"
+                },
+                "mouse-pad": {
+                    "name": "Mouse Pad GENESIS Carbon 700 Maxi Cordura",
+                    "img_src": "mouse_pad_genesis_carbon_700_maxi_cordura.webp",
+                    "tag": "Mouse Pad",
+                    "description": "Suprafață: Impermeabilă\nMaterial: Bază din cauciuc\nDimensiuni (lățime x înălțime x adâncime cm): 45 x 40 x 0,3"
+                },
+                "speakers": {
+                    "name": "Speakers Trust Arys Compact RGB 2.0 Set",
+                    "img_src": "speakers_trust_arys_compact_rgb_20_set.webp",
+                    "tag": "Speakers",
+                    "description": "Putere RMS: 6W\nBanda de frecvență: 100 – 20000 Hz\nIluminare: RGB\nConexiune USB: Da\nDimensiunile satelitului (lățime x adâncime x înălțime mm): 165 x 160 x 75"
+                },
+                "monitor-primary": {
+                    "name": "Monitor IPS SAMSUNG Odyssey G5, 27 Inch, WQHD, 165Hz",
+                    "img_src": "monitor_ips_samsung_odyssey_g5_27_wqhd_165hz.webp",
+                    "tag": "Primary Monitor",
+                    "description": "Ecran: Plat\nTip panou: IPS\nEcran (Iluminare): LED\nDiagonala (în inci): 27\nLuminozitate (cd/m²): 350\nRezoluție (pixeli): 2560 x 1440\nRata de reîmprospătare: 165Hz\nAlte caracteristici ale ecranului: HDR 400"
+                },
+                "monitor-secondary": {
+                    "name": "Monitor LED ASUS PB277Q 27 Inch, WQHD, 75Hz",
+                    "img_src": "monitor_led_asus_pb277q_27_inch_wqhd_75hz.webp",
+                    "tag": "Secondary Monitor",
+                    "description": "Ecran: Plat\nTip panou: TN\nEcran (Iluminare): LED\nDiagonala (în inci): 27\nLuminozitate (cd/m²): 350\nRezoluție (pixeli): 2560 x 1440\nRata de reîmprospătare: 75Hz"
+                },
+                "usb-hub": {
+                    "name": "ORICO USB C HUB 3.0 Desktop",
+                    "img_src": "orico_usb_c_hub_3.0_desktop.webp",
+                    "tag": "USB Hub",
+                    "description": "Hub USB 3.0 cu 4 porturi"
+                },
+                "hdd-extern-model-1": {
+                    "name": "2x HDD Extern Seagate Expansion Portable 1TB 2.5 Inch USB 3.0",
+                    "img_src": "hdd_extern_seagate_expansion_portable_1tb_2.5_inch_usb_3.0_model_1.webp",
+                    "tag": "HDD Extern",
+                    "description": "Capacitate: 1 TB\nDimensiuni (L x l x î cm): 115,3 x 80 x 12,6 mm\nInterfață: USB 3.0"
+                },
+                "hdd-extern-model-2": {
+                    "name": "1x HDD Extern Seagate Expansion Portable 1TB 2.5 Inch USB 3.0",
+                    "img_src": "hdd_extern_seagate_expansion_portable_1tb_2.5_inch_usb_3.0_model_2.webp",
+                    "tag": "HDD Extern",
+                    "description": "Capacitate: 1 TB\nInterfață: USB 3.0"
+                }
+            }
+        },
+        "content": [
+            {
+                "component": "section",
+                "data": {
+                    "class": "section-workstation"
+                },
+                "children": [
+                    {
+                        "component": "block_workstation_containers",
+                        "children": [
+                            {
+                                "component": "block_workstation_hero",
+                                "data": {
+                                    "image": "pc_setup_1.webp",
+                                    "tag": "h2"
+                                }
+                            },
+                            {
+                                "component": "block_workstation_container",
+                                "data": {
+                                    "id": "w-configuration",
+                                    "title": "Configurarea sistemului"
+                                },
+                                "children": [
+                                    {
+                                        "component": "columns",
+                                        "data": {
+                                            "layout": {
+                                                "base": "100",
+                                                "lg": "30-70"
+                                            },
+                                            "gap": {
+                                                "base": "sm",
+                                                "lg": "lg"
+                                            },
+                                            "align": "start"
+                                        },
+                                        "children": [
+                                            {
+                                                "component": "column",
+                                                "children": [
+                                                    {
+                                                        "component": "block_slider_images",
+                                                        "data": {
+                                                            "img_array_path_dir": "pc-01",
+                                                            "images": [
+                                                                "pc-00.webp",
+                                                                "pc-01.webp"
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "component": "block_workstation_item_listing",
+                                                        "data": {
+                                                            "source": "configuration",
+                                                            "display": "list"
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "component": "block_workstation_item_listing",
+                                                "data": {
+                                                    "source": "configuration",
+                                                    "columns": 3
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "component": "block_workstation_container",
+                                "data": {
+                                    "id": "w-accessories",
+                                    "title": "Accesorii și periferice"
+                                },
+                                "children": [
+                                    {
+                                        "component": "columns",
+                                        "data": {
+                                            "layout": {
+                                                "base": "100",
+                                                "lg": "70-30"
+                                            },
+                                            "gap": {
+                                                "base": "sm",
+                                                "lg": "lg"
+                                            },
+                                            "align": "start",
+                                            "reverse_stacked": true
+                                        },
+                                        "children": [
+                                            {
+                                                "component": "block_workstation_item_listing",
+                                                "data": {
+                                                    "source": "accessories",
+                                                    "columns": 3
+                                                }
+                                            },
+                                            {
+                                                "component": "column",
+                                                "children": [
+                                                    {
+                                                        "component": "block_slider_images",
+                                                        "data": {
+                                                            "img_array_path_dir": "pc-01",
+                                                            "images": [
+                                                                "pc_setup_1.webp",
+                                                                "pc_setup_2.webp",
+                                                                "pc_setup_3.webp",
+                                                                "pc_setup_4.webp"
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "component": "block_workstation_item_listing",
+                                                        "data": {
+                                                            "source": "accessories",
+                                                            "display": "list"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "component": "video_listing",
+                                "data": {
+                                    "filter": {
+                                        "taxonomy": {
+                                            "tag": [
+                                                "workstation"
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "personal-workstation-build-0",
+        "settings": {
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#3f5161",
+                    "secondary": "#ffffff",
+                    "canvas_primary": "#28323b",
+                    "canvas_secondary": "#ffffff"
+                }
+            }
+        },
+        "data": {
+            "seo": {
+                "title": "Configurare stație de lucru personală, versiunea 0",
+                "description": "Această configurație mi-a permis să-mi mențin productivitatea între 2016 și 2022, în cadrul proiectelor universitare, sarcinilor ocazionale de lucru de la distanță și, de asemenea, în activitatea mea de editare video, pentru proiectele „Striker Production”. Actualizările regulate mi-au ajutat să mențin un mediu eficient și încurajator, atât pentru dezvoltarea mea personală, cât și profesională.",
+                "keywords": "denis marginas personal workstation build 0, pc setup, i5 6500, rx 480",
+                "slug": "personal-workstation-build-0",
+                "index": false
+            },
+            "workstation": {
+                "status": "inactive",
+                "period": "2016 - 2022"
+            },
+            "media": {
+                "path": "pc-00",
+                "thumbnail": {
+                    "default": "src/content/img/workstation/pc-00/pc_setup_0.webp"
+                }
+            },
+            "configuration": {
+                "gpu": {
+                    "name": "GPU Sapphire Radeon RX 480 NITRO+ 8GB DDR5 256-bit Lite",
+                    "img_src": "rx480_8gb_nitro.webp",
+                    "tag": "GPU",
+                    "description": "Frecvența de funcționare a GPU-ului: 1306 MHz\nNumărul de tranzistori: 6.2 miliarde\nTipul memoriei: GDDR5\nCapacitate de memorie: 8 GB\nMemorie RAM: 256 biți\nFrecvență de operare eficientă: 8000 MHz\nDimensiuni: 240 x 120 x 41 mm"
+                },
+                "cpu": {
+                    "name": "CPU Intel Skylake, Core i5 6500 3.20GHz",
+                    "img_src": "cpu_i5_6500.webp",
+                    "tag": "CPU",
+                    "description": "Memorie cache: 6 MB\nTipul de socket: 1151\nFrecvența procesorului (MHz): 3,2 GHz\nFrecvență maximă de funcționare: 3,6 GHz\nNumăr de nuclee: 4\nNumărul de fire: 4\nTehnologia de fabricație (nanometri): 14 nm\nPutere termică (W): 65 W\n"
+                },
+                "cpu-cooler": {
+                    "name": "Cooler CPU Stock Intel Skylake",
+                    "img_src": "cpu_cooler_i5_6500.webp",
+                    "tag": "CPU Cooler",
+                    "description": ""
+                },
+                "motherboard": {
+                    "name": "Motherboard ASRock B150A-X1",
+                    "img_src": "motherboard_asrock_b150a-x1.webp",
+                    "tag": "Motherboard",
+                    "description": "Format: ATX\nSocket CPU: 1151\nPlacă de bază: B150\nProcesoare compatibile: Intel, generația a 6-a\nTipul memoriei: DDR4"
+                },
+                "ram": {
+                    "name": "RAM HyperX Fury Black 16GB DDR4 2133MHz CL14 Dual Channel Kit",
+                    "img_src": "ram_hyperx_ddr4_16gb.webp",
+                    "tag": "RAM Memory",
+                    "description": "Seria: Fury\nTip: DDR4\nCapacitate: 16 GB\nFrecvență: 2133 MHz\nKit cu două canale: 2 x 8 GB\nLatenta CAS: 14 CL"
+                },
+                "computer-case": {
+                    "name": "Computer Zalman Z1 Neo",
+                    "img_src": "pc_case_zalman_z1_neo.webp",
+                    "tag": "Computer Case",
+                    "description": "Tip: Turnul central\nDimensiuni (înălțime x lățime x adâncime): 445 x 464 x 203 mm\nNumărul total de fani: 3\nIluminare LED: Albastru"
+                },
+                "ssd-sata-3": {
+                    "name": "SSD Patriot P200, 512GB, 2.5 SATA III",
+                    "img_src": "ssd_sata3_patriot_p200_512gb.webp",
+                    "tag": "SSD",
+                    "description": "Dimensiuni: 3,5 inci\nInterfață: SATA-III\nCapacitate: 512 GB\nMax: 530 MB/s\nViteză maximă de citire: 460 MB/s"
+                },
+                "sshd": {
+                    "name": "SSHD Seagate FireCuda 1TB SATA-III 7200RPM 64MB",
+                    "img_src": "sshd_seagate_fire_cuda_1tb.webp",
+                    "tag": "SSHD",
+                    "description": "Seria: FireCuda\nCapacitate: 1 TB\nInterfață: SATA-III\nViteză: 7200 RPM\nDimensiuni: 3,5 inci"
+                },
+                "psu": {
+                    "name": "PSU Sirtec High Power Element BRONZE II 700W",
+                    "img_src": "psu_sirtec_high_power_element_700w.webp",
+                    "tag": "PSU",
+                    "description": "Tip: ATX 2.3\nPutere: 700 W\nNumăr de ventilatoare: 1 x de 120 mm\nTensiune/Curent: 230V AC\nEficiență: 85%\nCertificare: Peste 80 de medalii de bronz\nDimensiuni: 150 x 140 x 86 mm\nProtecții: împotriva razelor UV, supraîncărcării, sufoacerii și scurtcircuitului."
+                }
+            },
+            "accessories": {
+                "headset": {
+                    "name": "Headset HyperX Cloud Stinger Core stereo",
+                    "img_src": "headset_hyperx_cloud_stinger_core.webp",
+                    "tag": "Headset",
+                    "description": "Tehnologie: Cablu\nFrecvența de răspuns (Hz): 20 – 20000\nConexiune: Jack de 3,5 mm"
+                },
+                "mouse": {
+                    "name": "Mouse Gaming Redragon Invader Black RGB",
+                    "img_src": "mouse_redragon_invader_black_rgb.webp",
+                    "tag": "Mouse",
+                    "description": "Conexiune: Cablată\nInterfață: USB\nDimensiuni: 117 x 64 x 39 mm\nSenzor: Optic\nRezoluție: 12400 DPI\nButoane: 8\nIluminare: RGB"
+                },
+                "keyboard": {
+                    "name": "Mechanical Redragon Dark Avenger RGB",
+                    "img_src": "mechanical_keyboard_redragon_dark_avenger_rgb.webp",
+                    "tag": "Keyboard",
+                    "description": "Tip: Mecanică\nTehnologie: Outemu Blue\nConexiune: Cablată\nInterfață: USB\nCuloarea LED: RGB\nComutare: Da"
+                },
+                "mouse-pad": {
+                    "name": "Mouse Pad White shark GMP-1899",
+                    "img_src": "mouse_pad_shite_shark_800.webp",
+                    "tag": "Mouse Pad",
+                    "description": "Suprafață: Anti-alunecare\nDimensiuni: 800 x 350 mm"
+                },
+                "speakers": {
+                    "name": "Speakers Tellur 6W USB",
+                    "img_src": "speakers_tellur_6w.webp",
+                    "tag": "Speakers",
+                    "description": "Putere RMS: 6W\nBanda de frecvență: 100 – 18000 Hz\nIluminare: Nu\nConexiune USB: Da\nDimensiunile satelitului: 150 x 95 x 75"
+                },
+                "monitor-primary": {
+                    "name": "Monitor LED IPS LG 23, Full HD 23MP48HQ-P",
+                    "img_src": "monitor_lg_23_ips_23mp48hq-p.webp",
+                    "tag": "Primary Monitor",
+                    "description": "Ecran: Plat\nTip panou: IPS\nEcran (Iluminare): LED\nDiagonala (în inci): 23\nLuminozitate (cd/m²): 250\nRezoluție (pixeli): 1920 x 1080\nRata de reîmprospătare: 75Hz\n"
+                }
+            }
+        },
+        "content": [
+            {
+                "component": "section",
+                "data": {
+                    "class": "section-workstation"
+                },
+                "children": [
+                    {
+                        "component": "block_workstation_containers",
+                        "children": [
+                            {
+                                "component": "block_workstation_hero",
+                                "data": {
+                                    "image": "pc_setup_0.webp",
+                                    "tag": "h2"
+                                }
+                            },
+                            {
+                                "component": "block_workstation_container",
+                                "data": {
+                                    "id": "w-configuration",
+                                    "title": "Configurarea sistemului"
+                                },
+                                "children": [
+                                    {
+                                        "component": "columns",
+                                        "data": {
+                                            "layout": {
+                                                "base": "100",
+                                                "lg": "30-70"
+                                            },
+                                            "gap": {
+                                                "base": "sm",
+                                                "lg": "lg"
+                                            },
+                                            "align": "start"
+                                        },
+                                        "children": [
+                                            {
+                                                "component": "column",
+                                                "children": [
+                                                    {
+                                                        "component": "block_slider_images",
+                                                        "data": {
+                                                            "img_array_path_dir": "pc-00",
+                                                            "images": [
+                                                                "pc-00.webp"
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "component": "block_workstation_item_listing",
+                                                        "data": {
+                                                            "source": "configuration",
+                                                            "display": "list"
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "component": "block_workstation_item_listing",
+                                                "data": {
+                                                    "source": "configuration",
+                                                    "columns": 3
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "component": "block_workstation_container",
+                                "data": {
+                                    "id": "w-accessories",
+                                    "title": "Accesorii și periferice"
+                                },
+                                "children": [
+                                    {
+                                        "component": "columns",
+                                        "data": {
+                                            "layout": {
+                                                "base": "100",
+                                                "lg": "70-30"
+                                            },
+                                            "gap": {
+                                                "base": "sm",
+                                                "lg": "lg"
+                                            },
+                                            "align": "start",
+                                            "reverse_stacked": true
+                                        },
+                                        "children": [
+                                            {
+                                                "component": "block_workstation_item_listing",
+                                                "data": {
+                                                    "source": "accessories",
+                                                    "columns": 3
+                                                }
+                                            },
+                                            {
+                                                "component": "column",
+                                                "children": [
+                                                    {
+                                                        "component": "block_slider_images",
+                                                        "data": {
+                                                            "img_array_path_dir": "pc-00",
+                                                            "images": [
+                                                                "pc_setup_0.webp"
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "component": "block_workstation_item_listing",
+                                                        "data": {
+                                                            "source": "accessories",
+                                                            "display": "list"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

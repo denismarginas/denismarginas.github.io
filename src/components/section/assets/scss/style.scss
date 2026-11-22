@@ -1,0 +1,44 @@
+@import "theme";
+
+.content-section {
+  container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--dm-spacing-xl);
+
+    @media (max-width: $dm-screen-md) {
+      gap: var(--dm-spacing-lg);
+    }
+  }
+}
+
+.content-section-panel {
+  background-color: var(--section-panel-bg, rgb(from var(--dm-color-gray) r g b / 0.08));
+}
+
+.content-section-dark {
+  background-color: var(--section-dark-bg, var(--dm-color-black));
+}
+
+.content-section-glow {
+  position: relative;
+  isolation: isolate;
+  background-color: var(--section-glow-bg, var(--dm-color-white));
+
+  [mode="dark"] & {
+    background-color: var(--section-glow-bg, var(--dm-color-gray-dark));
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background:
+      radial-gradient(50% 65% at 20% 55%, color-mix(in srgb, var(--section-glow-color, var(--post-color-primary, var(--dm-color-primary))) 16%, transparent), transparent 72%),
+      radial-gradient(30% 45% at 85% 35%, color-mix(in srgb, var(--section-glow-color, var(--post-color-primary, var(--dm-color-primary))) 9%, transparent), transparent 75%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 22%, #000 78%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, #000 22%, #000 78%, transparent 100%);
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "block_social_profile",
+  "title": "Block Social Profile",
+  "summary": "Profile header: wallpaper, round avatar, title and description.",
+  "description": "Profile header (old dm-blog-user): wide wallpaper with a round avatar overlapping it, next to a box with the title and description. Used on the Social Posts page above social_post_listing. \"layout\": \"stacked\" puts the avatar centered over the box, for a narrow aside.",
+  "assets": {
+    "php": [
+      "assets/php/block_social_profile.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "image",
+    "theme"
+  ]
+}

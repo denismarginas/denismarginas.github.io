@@ -1,0 +1,37 @@
+@import 'utilities/maps';
+
+@each $name, $value in $dm-spacers {
+  @if $name != 'auto' {
+    .gap-#{$name} {
+      gap: $value;
+    }
+
+    .gap-x-#{$name} {
+      column-gap: $value;
+    }
+
+    .gap-y-#{$name} {
+      row-gap: $value;
+    }
+  }
+}
+
+@each $bp, $width in $dm-breakpoints {
+  @media (min-width: $width) {
+    @each $name, $value in $dm-spacers {
+      @if $name != 'auto' {
+        .gap-#{$bp}-#{$name} {
+          gap: $value;
+        }
+
+        .gap-x-#{$bp}-#{$name} {
+          column-gap: $value;
+        }
+
+        .gap-y-#{$bp}-#{$name} {
+          row-gap: $value;
+        }
+      }
+    }
+  }
+}

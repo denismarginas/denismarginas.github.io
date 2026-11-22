@@ -1,0 +1,11 @@
+{
+  "name": "utility_project_media",
+  "title": "Utility Project Media",
+  "summary": "Finds a project's screenshots, galleries, videos and logo.",
+  "description": "Finds a project's media by its data.media.path: website screenshots (web/website/desktop|phone), photo galleries (one per folder, e.g. media/*), web media galleries (web/media-website/*), videos (src/content/vid/projects/<path>/**, with their data_items_video.json item), logo and thumbnail. Shared by project_page, project_hero, project_gallery, project_brand and project_videos. No output of its own.",
+  "post_types": ["project"],
+  "assets": {
+    "php": ["assets/php/utility_project_media.php"]
+  },
+  "dependencies": ["project_media_gallery", "utility_project_web_screens", "utility_post_thumbnail", "block_video"]
+}

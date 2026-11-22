@@ -1,0 +1,441 @@
+[
+    {
+        "_id": "blog-post-my-full-name-is-ma-rginae",
+        "settings": {
+            "collection_type": "social_post",
+            "render": true
+        },
+        "data": {
+            "date": {
+                "publish": "2022-12-06"
+            },
+            "description": "Numele meu complet este Mărginaș Denis Ionuț, am 25 de ani, și lucrez ca dezvoltator web (front-end) și editor de fotografii și video începând cu 2019. Am început să lucrez după ce am terminat facultatea, specializarea Matematică-Informație, și până atunci, aveam câteva hobby-uri, cum ar fi editarea video cu cinematografie în jocuri, și chiar am lucrat ca freelancer cu acest hobby. În 2019, am început să lucrez la Pia Soft Product ca dezvoltator web și editor de video-fotografie. Acolo, am creat site-uri de prezentare și magazine online pe platforme precum WordPress și PrestaShop, optimizare SEO, întreținere site-uri și hosting, comunicare cu clienții, bannere, logo-uri și reclame video. În acest rol, am avut responsabilitatea de a lucra singur, ceea ce însemna că trebuia să învăț totul de la zero. De asemenea, dezvolt aplicații web în PHP, TPL, SQL, JavaScript, jQuery, HTML, CSS și multe altele. De la sfârșitul anului 2021, rolul a devenit part-time, de 4 ore, și am început să lucrez full-time la Netex Romania. Acolo, am fost angajat ca dezvoltator front-end, și am avut responsabilitatea de a menține câteva site-uri în WordPress și de a realiza design web. Partea de design web a fost mai complexă, am primit șabloane de pagini în diferite formate, similare cu cele de fotografii, și secțiuni de pagini, cu instrucțiuni limitate, și trebuia să le recreez în pagini web statice folosind HTML, SASS, Node.js, Bootstrap, JavaScript și jQuery. Proiectul a fost mare, așa că am început să lucrez singur la partea mea, dar de asemenea am avut întâlniri cu echipa de dezvoltatori back-end, și după câteva luni, un nou coleg mi-a venit în ajutor pentru aceeași parte a proiectului. Acolo, am învățat pentru prima dată platforma GitLab, comenzile Git, și, cel mai important, cum să lucrez în echipă.",
+            "media": {
+                "images": [
+                    "src/content/img/projects/denismarginas-media/media/banners-1-1/banner-004.webp"
+                ]
+            },
+            "buttons": [
+                {
+                    "text": "CV în engleză",
+                    "link": "src/content/pdf/cv/cv-1/dm-cv-1-english-public-compressed.pdf",
+                    "svg": "pdf"
+                },
+                {
+                    "text": "CV în română",
+                    "link": "src/content/pdf/cv/cv-1/dm-cv-1-romanian-public-compressed.pdf",
+                    "svg": "pdf"
+                }
+            ]
+        }
+    },
+    {
+        "_id": "blog-post-contact-form-https-forms-gl",
+        "settings": {
+            "collection_type": "social_post",
+            "render": true
+        },
+        "data": {
+            "date": {
+                "publish": "2022-12-21"
+            },
+            "description": "Formular de contact: https://forms.gle/vTHeLVkc1TwXCxBJA",
+            "media": {
+                "images": [
+                    "src/content/img/projects/denismarginas-media/media/banners-ultra-wide/wallpaper-contact-02.webp"
+                ]
+            },
+            "buttons": [
+                {
+                    "text": "Formular de contact",
+                    "link": "https://forms.gle/vTHeLVkc1TwXCxBJA",
+                    "svg": "web"
+                }
+            ]
+        }
+    },
+    {
+        "_id": "blog-post-denis-marginas-a-portfo",
+        "settings": {
+            "collection_type": "social_post",
+            "render": true
+        },
+        "data": {
+            "date": {
+                "publish": "2022-12-21"
+            },
+            "description": "Denis Marginas:\n● Portofoliu: https://sites.google.com/view/denis-marginas/portfolio\n● Contactați-ne: https://forms.gle/vTHeLVkc1TwXCxBJA\n● Pagina de Facebook: https://www.facebook.com/denismarginas09/\n● LinkedIn: www.linkedin.com/in/denismarginas09\n● CV în limba engleză: https://drive.google.com/file/d/1-RYU6uYovCR_LT48nD7CZ1sa6xQ8QJh_/view\n● CV în limba română: https://drive.google.com/file/d/1_gPqX2MgLJD7bYCgZ977GHX25pVC_ihz/view",
+            "media": {
+                "images": [
+                    "src/content/img/projects/denismarginas-media/media/bannners-facebook/banner-facebook-01.webp"
+                ]
+            },
+            "buttons": [
+                {
+                    "text": "Portofoliu Google",
+                    "link": "https://sites.google.com/view/denis-marginas/portfolio",
+                    "svg": "web"
+                },
+                {
+                    "text": "Contact",
+                    "link": "https://forms.gle/vTHeLVkc1TwXCxBJA",
+                    "svg": "about-me"
+                }
+            ]
+        }
+    },
+    {
+        "_id": "blog-post-experience-web-platforms",
+        "settings": {
+            "collection_type": "social_post",
+            "render": true
+        },
+        "data": {
+            "date": {
+                "publish": "2022-12-21"
+            },
+            "description": "Experiență:\n - Platforme web: WordPress, PrestaShop, Google Site\n - Limbaje de programare pentru dezvoltarea web: PHP, TPL, SQL, JS, HTML, CSS, SASS/SCSS\n - Programe de dezvoltare web: cPanel, HeidiSQL, phpMyAdmin, XAMPP, Git, Visual Studio Code, Git, Node.js\n - Software pentru editarea fotografiilor: Photopea, Photoshop, Paint.net, Xara Photo, Topaz Gigapixel. \n - Biblioteci: jQuery 3, Bootstrap 5, Font Awesome 4, MaterialDesignWebfront\n - Software pentru editarea video: Adobe After Effects, Sony Vegas Pro, Topaz Enhance.\n - Software pentru modelare 3D: Blender\n - Programe de streaming: OBS, Google Meet\n - Alte programe: Microsoft Excel, Microsoft Word, Microsoft PowerPoint, Google Sheets, Google Docs, Google Slides\nPortofoliu: https://sites.google.com/view/denis-marginas/",
+            "media": {
+                "images": [
+                    "src/content/img/projects/denismarginas-media/media/banners-1-1/banner-003.webp"
+                ]
+            },
+            "buttons": [
+                {
+                    "text": "CV în engleză",
+                    "link": "src/content/pdf/cv/cv-1/dm-cv-1-english-public-compressed.pdf",
+                    "svg": "pdf"
+                },
+                {
+                    "text": "CV în română",
+                    "link": "src/content/pdf/cv/cv-1/dm-cv-1-romanian-public-compressed.pdf",
+                    "svg": "pdf"
+                }
+            ]
+        }
+    },
+    {
+        "_id": "blog-post-pc-0-setup",
+        "settings": {
+            "collection_type": "social_post",
+            "render": true
+        },
+        "data": {
+            "date": {
+                "publish": "2023-03-07"
+            },
+            "description": "Configurarea PC#0\n--------------------------------------------\nConfigurația PC#0:\n- Carcasă de computer Zalman Z1 Neo\n- Placă de bază ASRock B150A-X1\n- Memorie RAM Corsair Value Select, 16GB, DDR4, 2133MHz, CL15\n- Procesor Intel Skylake Core i5 6500, 3.20 GHz, în cutie\n- Placă video Sapphire Radeon RX 480 NITRO+ 8GB DDR5, lățime de magistrală de 256 biți\n- SSD Patriot P200, 512 GB, 2.5\" SATA III\n- Discul SSD Seagate FireCuda de 1TB, cu interfață SATA-III, 7200 RPM, 64MB\n- PSU Sirtec, component de înaltă putere, seria BRONZE II, 700W\nAccesorii pentru PC#0:\n- Monitor LG de 23 inch, cu ecran LED IPS, model 23MP48HQ-P \n- Căști HyperX Cloud Stinger Core Wireless\n- Mouse Logitech G102 Lightsync\n- Tastatură mecanică Logitech G512 Lightsync RGB GX Red Linear",
+            "media": {
+                "images": [
+                    "src/content/img/projects/denismarginas-media/media/workstation-01/PC0_1.webp",
+                    "src/content/img/projects/denismarginas-media/media/workstation-01/PC0_2.webp",
+                    "src/content/img/projects/denismarginas-media/media/workstation-01/PC0_3.webp"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "blog-post-pc-1-setup",
+        "settings": {
+            "collection_type": "social_post",
+            "render": true
+        },
+        "data": {
+            "date": {
+                "publish": "2023-03-07"
+            },
+            "description": "Configurarea PC-ului #1\n--------------------------------------------\nConfigurația PC#1:\n- Carcasă de computer AQIRYS Antares, cu iluminare RGB\n- Placă de bază ASUS TUF GAMING B650-PLUS AM5\n- Memorie RAM Kingston FURY Beast, 32GB, DDR5, 5200MHz, CL40, Dual Channel\n- Procesor AMD Ryzen™ 5 7600X, 38MB, frecvență de bază 4.7/5.3 GHz\n- Răcitor Arctic Freezer 34 eSports DUO, culoare gri\n- Placă video GIGABYTE GeForce RTX 3070 OC, 8GB GDDR6, lățime de bandă de 256 biți\n- SSD GIGABYTE de 480 GB, cu interfață SATA-III, dimensiune 2.5 inch\n- SSD Kingston NV2, 1TB, PCI Express 4.0, x4, M.2 2280\n- Sursă GIGABYTE P850GM, certificată 80+ Gold, 850W\nAccesorii pentru PC#1:\n- Căști wireless HyperX Cloud Stinger Core 7.1\n- Cămașă de mouse GENESIS Carbon 700 Maxi, material Cordura \n- Mouse LOGITECH G203 LIGHTSYNC RGB, rezoluție de 8.000 dpi\n- Tastatură mecanică LOGITECH G512 GX, culoare roșie, tip linear\n- Utilizatorii recomandă setul Arys Compact RGB 2.0\n- Monitor IPS SAMSUNG Odyssey G5, 27\", rezoluție WQHD, 165Hz",
+            "media": {
+                "images": [
+                    "src/content/img/projects/denismarginas-media/media/workstation-02/PC1_1.webp",
+                    "src/content/img/projects/denismarginas-media/media/workstation-02/PC1_2.webp",
+                    "src/content/img/projects/denismarginas-media/media/workstation-02/PC1_3.webp",
+                    "src/content/img/projects/denismarginas-media/media/workstation-02/PC1_4.webp"
+                ]
+            },
+            "buttons": [
+                {
+                    "text": "Stație de lucru",
+                    "link": "https://www.youtube.com/watch?v=r4C-DG8hVW8",
+                    "svg": "workstation"
+                }
+            ]
+        }
+    },
+    {
+        "_id": "blog-post-portfolio-showcase-denis-mar",
+        "settings": {
+            "collection_type": "social_post",
+            "render": true
+        },
+        "data": {
+            "date": {
+                "publish": "2023-04-20"
+            },
+            "description": "Prezentare portofoliu | Denis Marginas\n-------------------------------------\nAcest videoclip conține exemple scurte din proiectele mele profesionale, realizate între 2019 și 2023.\n Am cunoștințe și abilități în următoarele domenii:\n - Platforme web: WordPress, PrestaShop, Elementor, Google Site\n - Limbaje de programare pentru dezvoltarea web: PHP, TPL, SQL, JS, HTML, CSS, SASS/SCSS\n - Programe de dezvoltare web: cPanel, HeidiSQL, phpMyAdmin, XAMPP, Git, Visual Studio Code, Git, Node.js\n - Software pentru editarea fotografiilor: Photopea, Photoshop, Paint.net, Xara Photo, Topaz Gigapixel. \n - Biblioteci: jQuery 3, Bootstrap 5, Font Awesome 4, MaterialDesignWebfront\n - Software pentru editarea video: Adobe After Effects, Sony Vegas Pro, Topaz Enhance.\n - Software pentru modelare 3D: Blender\n - Programe de streaming: OBS, Google Meet\n - Alte programe: Microsoft Excel, Microsoft Word, Microsoft PowerPoint, Google Sheets, Google Docs, Google Slides\n-------------------------------------\n● Portofoliu: https://sites.google.com/view/denis-marginas/portfolio\n● Contactați-ne: https://forms.gle/vTHeLVkc1TwXCxBJA\n● Pagina de Facebook: https://www.facebook.com/denismarginas09/\n● LinkedIn: www.linkedin.com/in/denismarginas09\n● CV în limba engleză: https://drive.google.com/file/d/1-RYU6uYovCR_LT48nD7CZ1sa6xQ8QJh_/view\n● CV în limba română: https://drive.google.com/file/d/1_gPqX2MgLJD7bYCgZ977GHX25pVC_ihz/view\n-------------------------------------\nPiesa: SKELER - TEL AVIV (versiune remixată)\n---------------------------------\nCategorie: Editare video realistă (în viață)\nDetalii proiect: 1920x810 pixeli, 29.97 cadre pe secundă\nSoftware: Sony Vegas Pro 20, Photopea, Topaz Video Enhance AI\nMărire: Videoclipul a fost mărit de la rezoluție HD la 4K, folosind software-ul Topaz Video Enhance AI.\nEtichete: Prezentare, Portofoliu, Editare\n---------------------------------\nSpecificații generale ale sistemului:\nProcesor: AMD Ryzen™ 5 7600X, 38MB, frecvență de bază 4.7/5.3 GHz\nGPU: GIGABYTE GeForce RTX 3070 GAMING OC LHR, 8GB GDDR6, 256-bit\nRAM: Kingston FURY Beast, kit de 32GB, 5200MHz, CL40, cu două canale",
+            "media": {
+                "video": "denismarginas-portfolio-showcase"
+            },
+            "buttons": [
+                {
+                    "text": "Galerie de videoclipuri",
+                    "link": "https://www.youtube.com/watch?v=ilz2avyGG_U",
+                    "svg": "socials_youtube"
+                },
+                {
+                    "text": "CV în engleză",
+                    "link": "src/content/pdf/cv/cv-2/dm-cv-2-english-public-compressed.pdf",
+                    "svg": "pdf"
+                },
+                {
+                    "text": "CV în română",
+                    "link": "src/content/pdf/cv/cv-2/dm-cv-2-romanian-public-compressed.pdf",
+                    "svg": "pdf"
+                }
+            ]
+        }
+    },
+    {
+        "_id": "blog-post-cv-resume-english-public-v",
+        "settings": {
+            "collection_type": "social_post",
+            "render": true
+        },
+        "data": {
+            "date": {
+                "publish": "2023-06-01"
+            },
+            "description": "CV | Resume în limba engleză | Versiune publică",
+            "media": {
+                "images": [
+                    "src/content/img/resumes/cv-1-english/cv-1-english.webp"
+                ]
+            },
+            "buttons": [
+                {
+                    "text": "CV în engleză",
+                    "link": "src/content/pdf/cv/cv-1/dm-cv-1-english-public-compressed.pdf",
+                    "svg": "pdf"
+                },
+                {
+                    "text": "CV în română",
+                    "link": "src/content/pdf/cv/cv-1/dm-cv-1-romanian-public-compressed.pdf",
+                    "svg": "pdf"
+                }
+            ]
+        }
+    },
+    {
+        "_id": "blog-post-pc-1-configuration-computer",
+        "settings": {
+            "collection_type": "social_post",
+            "render": true
+        },
+        "data": {
+            "date": {
+                "publish": "2023-06-18"
+            },
+            "description": "Configurația PC#1:\n- Carcasă de computer AQIRYS Antares, cu iluminare RGB\n- Placă de bază ASUS TUF GAMING B650-PLUS AM5\n- Memorie RAM Kingston FURY Beast, 32GB, DDR5, 5200MHz, CL40, Dual Channel\n- Procesor AMD Ryzen™ 5 7600X, 38MB, frecvență de bază 4.7/5.3 GHz\n- Răcitor Arctic Freezer 34 eSports DUO, culoare gri\n- Placă video GIGABYTE GeForce RTX 3070 OC, 8GB GDDR6, lățime de bandă de 256 biți\n- SSD GIGABYTE de 480 GB, cu interfață SATA-III, dimensiune 2.5 inch\n- SSD Kingston NV2, 1TB, PCI Express 4.0, x4, M.2 2280\n- Sursă GIGABYTE P850GM, certificată 80+ Gold, 850W\n\n\nAccesorii pentru PC#1:\n- Căști wireless HyperX Cloud Stinger Core 7.1\n- Cămașă de mouse GENESIS Carbon 700 Maxi, material Cordura \n- Mouse LOGITECH G203 LIGHTSYNC RGB, rezoluție de 8.000 dpi\n- Tastatură mecanică LOGITECH G512 GX, culoare roșie, tip linear\n- Utilizatorii recomandă setul Arys Compact RGB 2.0\n- Monitor IPS SAMSUNG Odyssey G5, 27\", rezoluție WQHD, 165Hz\n\nData: Aprilie, 2023\n\nCronologia videoclipului:\n 00:00 – 00:03 – Introducere\n 00:03 – 00:16 – Informații despre proiect\n 00:16 – 01:30 – Prezentarea perifericelor și accesoriilor\n 01:30 – 01:52 – Prezentarea componentelor de calculatoare\n 02:29 – 02:42 – Finalul\n\n-------------------------------------\nPiese:  \n - LXST CXNTURY - LACURI DE SÂNGE\n - LXST CXNTURY - MIRAX\n\n---------------------------------\nCategorie: Editare video realistă (în viață)\nDetalii proiect: 1920x1080 pixeli, 29.97 cadre pe secundă\nSoftware: Sony Vegas Pro 20, Photopea, Topaz Video Enhance AI\nPlugin(uri): BCC, Sapphire\nMărire: Videoclipul a fost mărit de la rezoluție HD la 4K, folosind software-ul Topaz Video Enhance AI.\nEtichete: Editare IRL, Editare auto\n\n---------------------------------\nDispozitiv de înregistrare: Samsung A52s\nCamera principală: 64 MP, f/1.8, 26mm (unghi larg), 1/1.7\", 12 MP f/2.2 (unghi foarte larg), 5 MP f/2.4.\nÎnregistrat în calitate de 1080p la 30 cadre pe secundă.\n\n---------------------------------\nSpecificații generale ale sistemului:\nProcesor: AMD Ryzen™ 5 7600X, 38MB, frecvență de bază 4.7/5.3 GHz\nGPU: GIGABYTE GeForce RTX 3070 GAMING OC LHR, 8GB GDDR6, 256-bit\nRAM: Kingston FURY Beast, kit de 32GB, 5200MHz, CL40, cu două canale",
+            "media": {
+                "video": "denismarginas-desktop-setup-irl"
+            },
+            "buttons": [
+                {
+                    "text": "Prezentarea stațiilor de lucru",
+                    "link": "https://www.youtube.com/watch?v=r4C-DG8hVW8",
+                    "svg": "socials_youtube"
+                },
+                {
+                    "text": "Detalii despre echipamentul de lucru",
+                    "link": {
+                        "_id": "personal-workstation-build-1"
+                    },
+                    "svg": "workstation"
+                }
+            ]
+        }
+    },
+    {
+        "_id": "blog-post-i-have-knowledge-and-skills-in",
+        "settings": {
+            "collection_type": "social_post",
+            "render": true
+        },
+        "data": {
+            "date": {
+                "publish": "2023-06-25"
+            },
+            "description": "Dețin cunoștințe și abilități în următoarele domenii:\n ● Platforme web: WordPress, PrestaShop, Google Site\n ● Instrumente de creare de pagini: Elementor, WpBakery, Gutenberg\n ● Sistemele de operare: Windows, Linux\n ● Limbaje de programare: PHP, TPL, SQL, JS, HTML, CSS, SASS/SCSS, Python, C/C++\n ● Biblioteci: jQuery 3, Bootstrap 5, Font Awesome 4, MaterialDesignWebfront\n ● Programe de dezvoltare web: cPanel, HeidiSQL, phpMyAdmin, XAMPP, GitLab, GitHub, Visual Studio Code, PhpStorm, PyCharm, Node.js, Prepros, Figma\n ● Programe de editare foto: Photopea, Photoshop, Paint.net, Xara Photo, Topaz Gigapixel\n ● Software de editare video: Adobe After Effects, Sony Vegas Pro, Topaz Enhance, BCC, RSMB, Sapphire, Ignite Pro, Optical Flares, Plexus, Particular, Element 3d, 3D Camera Tracking\n ● Software pentru modelare 3D: Blender\n ● Programe de streaming: OBS, Google Meet, Zoom\n ● Alte programe: Microsoft Excel, Microsoft Word, Microsoft PowerPoint, Google Sheets, Google Docs, Google Slides\nContactați-ne:\n ● Adresă de e-mail: denismarginas09@gmail.com\n ● Google Forms: https://forms.gle/vTHeLVkc1TwXCxBJA\nRezumat:\n ● CV în limba engleză: https://drive.google.com/file/d/1-RYU6uYovCR_LT48nD7CZ1sa6xQ8QJh_/view\n ● CV în limba română: https://drive.google.com/file/d/1_gPqX2MgLJD7bYCgZ977GHX25pVC_ihz/view\nRețele sociale:\n ● Pagina de Facebook: https://www.facebook.com/denismarginas09/\n ● Profil LinkedIn: www.linkedin.com/in/denismarginas09\n ● Cont GitHub: https://github.com/denismarginas\nPortofoliu:\n ● Site Google: https://sites.google.com/view/denis-marginas/portfolio\n ● Prezentare video: https://www.youtube.com/watch?v=ilz2avyGG_U",
+            "media": {
+                "images": [
+                    "src/content/img/projects/denismarginas-media/media/banners-1-1/banner-001.webp"
+                ]
+            },
+            "buttons": [
+                {
+                    "text": "Facebook",
+                    "link": "https://www.facebook.com/denismarginas09/",
+                    "svg": "socials_facebook"
+                },
+                {
+                    "text": "Linkedin",
+                    "link": "https://www.linkedin.com/in/denismarginas09",
+                    "svg": "socials_linkedin"
+                },
+                {
+                    "text": "Github",
+                    "link": "https://github.com/denismarginas",
+                    "svg": "socials_github"
+                }
+            ]
+        }
+    },
+    {
+        "_id": "blog-post-i-am-excited-for-the-new-chall",
+        "settings": {
+            "collection_type": "social_post",
+            "render": true
+        },
+        "data": {
+            "date": {
+                "publish": "2023-06-25"
+            },
+            "description": "Sunt entuziasmat de noile provocări pe care le va aduce o nouă poziție în domeniul dezvoltării web. Datorită experienței mele extinse în lucrul cu diferite platforme web, software-uri grafice și limbaje de programare, pot dezvolta site-uri web, aplicații web și conținut grafic.\nContactați-ne:\n ● Adresă de e-mail: denismarginas09@gmail.com\n ● Google Forms: https://forms.gle/vTHeLVkc1TwXCxBJA\nRezumat:\n ● CV în limba engleză: https://drive.google.com/file/d/1-RYU6uYovCR_LT48nD7CZ1sa6xQ8QJh_/view\n ● CV în limba română: https://drive.google.com/file/d/1_gPqX2MgLJD7bYCgZ977GHX25pVC_ihz/view\nRețele sociale:\n ● Pagina de Facebook: https://www.facebook.com/denismarginas09/\n ● Profil LinkedIn: www.linkedin.com/in/denismarginas09\n ● Cont GitHub: https://github.com/denismarginas\nPortofoliu:\n ● Site Google: https://sites.google.com/view/denis-marginas/portfolio\n ● Prezentare video: https://www.youtube.com/watch?v=ilz2avyGG_U",
+            "media": {
+                "images": [
+                    "src/content/img/projects/denismarginas-media/media/banners-1-1/banner-002.webp"
+                ]
+            },
+            "buttons": [
+                {
+                    "text": "Google Site",
+                    "link": "https://sites.google.com/view/denis-marginas/portfolio",
+                    "svg": "socials-google-site"
+                },
+                {
+                    "text": "Prezentare video",
+                    "link": "https://www.youtube.com/watch?v=ilz2avyGG_U",
+                    "svg": "socials_youtube"
+                }
+            ]
+        }
+    },
+    {
+        "_id": "blog-post-cv-resume-english-public-v-2",
+        "settings": {
+            "collection_type": "social_post",
+            "render": true
+        },
+        "data": {
+            "date": {
+                "publish": "2023-12-01"
+            },
+            "description": "CV | Resume în limba engleză | Versiune publică",
+            "media": {
+                "images": [
+                    "src/content/img/resumes/cv-2-english/cv-2-english.webp"
+                ]
+            },
+            "buttons_title": "Link-uri:",
+            "buttons": [
+                {
+                    "text": "CV în engleză",
+                    "link": "src/content/pdf/cv/cv-2/dm-cv-2-english-public-compressed.pdf",
+                    "svg": "pdf"
+                },
+                {
+                    "text": "CV în română",
+                    "link": "src/content/pdf/cv/cv-2/dm-cv-2-romanian-public-compressed.pdf",
+                    "svg": "pdf"
+                }
+            ]
+        }
+    },
+    {
+        "_id": "blog-post-projects-i-have-created-or-i-w",
+        "settings": {
+            "collection_type": "social_post",
+            "render": true
+        },
+        "data": {
+            "date": {
+                "publish": "2025-01-04"
+            },
+            "description": "Proiecte pe care le-am creat sau în care am fost implicat, incluzând designul și funcționalitatea site-urilor web și a conținutului foto-video.",
+            "media": {
+                "images": [
+                    "src/content/img/projects/denismarginas-media/media/banners-1-1/banner-005.webp"
+                ]
+            },
+            "buttons_title": "Link-uri:",
+            "buttons": [
+                {
+                    "text": "Portofoliu personal",
+                    "link": "https://denismarginas.github.io/portfolio/",
+                    "svg": "web"
+                }
+            ]
+        }
+    },
+    {
+        "_id": "blog-post-experience-highlights-denis",
+        "settings": {
+            "collection_type": "social_post",
+            "render": true
+        },
+        "data": {
+            "date": {
+                "publish": "2025-04-16"
+            },
+            "description": "Puncte forte ale experienței | Denis Marginas\n-------------------------------------\nAceasta este o prezentare a celor mai importante proiecte și activități pe care le-am realizat între 2019 și 2025. În câteva secunde, veți putea vedea o prezentare a unor exemple unice și reprezentative din experiența mea profesională. \n-------------------------------------\n● Portofoliu: https://sites.google.com/view/denis-marginas/portfolio\n● https://denismarginas.github.io/portfolio/\n-------------------------------------\nMelodie: Lorn - Yo2_Rustlin\n---------------------------------\nCategorie: Editare video realistă (în viață)\nDetalii proiect: 1920x1080 pixeli, 24 cadre pe secundă\nSoftware: Adobe After Effects 2023, Sony Vegas Pro 20, Photopea, Topaz Video Enhance AI\nPlugin-uri: BBC, Sapphire, Element 3d, RSMB\nMărire: Videoclipul a fost mărit de la rezoluție HD la 4K, folosind software-ul Topaz Video Enhance AI.\nEtichete: Momente cheie, Portofoliu, Editare\n---------------------------------\nSpecificații generale ale sistemului:\nProcesor: AMD Ryzen™ 5 7600X, 38MB, frecvență de bază 4.7/5.3 GHz\nGPU: GIGABYTE GeForce RTX 3070 GAMING OC LHR, 8GB GDDR6, 256-bit\nRAM: Kingston FURY Beast, kit de 32GB, 5200MHz, CL40, cu două canale",
+            "media": {
+                "video": "denismarginas-experience-highlights"
+            },
+            "buttons": [
+                {
+                    "text": "Momente cheie din videoclipuri",
+                    "link": "https://www.youtube.com/watch?v=HxGdZ_embL8",
+                    "svg": "socials_youtube"
+                },
+                {
+                    "text": "Site web",
+                    "link": "https://denismarginas.github.io/portfolio/",
+                    "svg": "web"
+                }
+            ]
+        }
+    },
+    {
+        "_id": "blog-post-github-portfolio-denis-margi",
+        "settings": {
+            "collection_type": "social_post",
+            "render": true
+        },
+        "data": {
+            "date": {
+                "publish": "2025-12-14"
+            },
+            "description": "Portofoliu GitHub | Denis Marginas\n-------------------------------------\nUtilizând proiectele și experiența mea ca dezvoltator web full-stack, am creat un singur proiect de portofoliu care prezintă datele mele profesionale, folosind hosting gratuit GitHub Pages, PHP pentru generarea prealabilă a conținutului și JavaScript pentru interacțiunea cu utilizatorul.\n-------------------------------------\n● Prezentare generală a proiectului: https://denismarginas.github.io/portfolio/\n● Detalii proiect: https://denismarginas.github.io/portfolio/project-denismarginas-github-portfolio\n-------------------------------------\nPiesa: Pavel Dovgal - Transition\n---------------------------------\nCategorie: Editare video realistă (în viață)\nDetalii proiect: 1920x1080 pixeli, 18 cadre pe secundă\nSoftware: Adobe After Effects 2023, Sony Vegas Pro 20, Photopea, Topaz Video Enhance AI\nPlugin-uri: BBC, Sapphire, Element 3d, RSMB\nMărire: Videoclipul a fost mărit de la rezoluție HD la 4K, folosind software-ul Topaz Video Enhance AI.\nEtichete: Portofoliu, Editare\n---------------------------------\nSpecificații generale ale sistemului:\nProcesor: AMD Ryzen™ 5 7600X, 38MB, frecvență de bază 4.7/5.3 GHz\nGPU: GIGABYTE GeForce RTX 3070 GAMING OC LHR, 8GB GDDR6, 256-bit\nRAM: Kingston FURY Beast, kit de 32GB, 5200MHz, CL40, cu două canale",
+            "media": {
+                "video": "denismarginas-github-portfolio"
+            },
+            "buttons": [
+                {
+                    "text": "Prezentare video",
+                    "link": "https://www.youtube.com/watch?v=9PRqXelnc9o",
+                    "svg": "socials_youtube"
+                },
+                {
+                    "text": "Prezentare generală a proiectului",
+                    "link": "https://denismarginas.github.io/portfolio/",
+                    "svg": "web"
+                },
+                {
+                    "text": "Detalii despre proiect",
+                    "link": "https://denismarginas.github.io/portfolio/project-denismarginas-github-portfolio",
+                    "svg": "socials_github"
+                }
+            ]
+        }
+    }
+]

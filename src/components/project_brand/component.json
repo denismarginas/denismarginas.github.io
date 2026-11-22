@@ -1,0 +1,19 @@
+{
+  "name": "project_brand",
+  "title": "Project Brand & Media",
+  "summary": "Brand & media section of a project page.",
+  "description": "Brand & media section: a project's web media images (default web/media-website/*: banners, logo, wallpapers) in the same masonry as the photo gallery (renders project_gallery, no filters / paging by default): every image at its own shape, logos first on the canvas color, each opens in the popup gallery. A <section> of its own with a section_head.",
+  "post_types": [
+    "project"
+  ],
+  "assets": {
+    "php": [
+      "assets/php/project_brand.php"
+    ]
+  },
+  "dependencies": [
+    "project_gallery",
+    "utility_project_media",
+    "theme"
+  ]
+}

@@ -1,0 +1,10 @@
+<div class="video-archive">
+  <form class="filters-toolbar video-archive-filters" id="{{ form_id }}" data-target="{{ id }}" role="search">
+    {{ toolbar }}
+    <script type="application/json" class="filters-index">{{ index }}</script>
+  </form>
+  <ul id="{{ id }}" class="video-archive-listing" data-results="{{ count }}">
+    {{ items }}
+  </ul>
+  <p class="video-archive-empty" hidden>{{ empty_text }}</p>
+</div>

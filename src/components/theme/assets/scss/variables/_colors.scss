@@ -1,0 +1,92 @@
+$dm-color-primary: #656c7a !default;
+
+$dm-color-primary-50: scale-color(
+  $dm-color-primary,
+  $lightness: 95%,
+  $saturation: 70%
+);
+$dm-color-primary-100: scale-color(
+  $dm-color-primary,
+  $lightness: 90%,
+  $saturation: 20%
+);
+$dm-color-primary-200: scale-color(
+  $dm-color-primary,
+  $lightness: 70%,
+  $saturation: 15%
+);
+$dm-color-primary-300: scale-color(
+  $dm-color-primary,
+  $lightness: 40%,
+  $saturation: 10%
+);
+$dm-color-primary-400: scale-color(
+  $dm-color-primary,
+  $lightness: 20%,
+  $saturation: 5%
+);
+$dm-color-primary-500: $dm-color-primary;
+$dm-color-primary-600: scale-color(
+  $dm-color-primary,
+  $lightness: -20%,
+  $saturation: -5%
+);
+$dm-color-primary-700: scale-color(
+  $dm-color-primary,
+  $lightness: -40%,
+  $saturation: -10%
+);
+$dm-color-primary-800: scale-color(
+  $dm-color-primary,
+  $lightness: -70%,
+  $saturation: -15%
+);
+$dm-color-primary-900: scale-color(
+  $dm-color-primary,
+  $lightness: -80%,
+  $saturation: -20%
+);
+$dm-color-primary-950: scale-color(
+  $dm-color-primary,
+  $lightness: -85%,
+  $saturation: -80%
+);
+
+$dm-color-accent-1: scale-color(
+  $dm-color-primary,
+  $lightness: 25%,
+  $saturation: 30%
+);
+$dm-color-accent-2: adjust-color(
+  $dm-color-primary,
+  $hue: 30deg,
+  $lightness: 15%,
+  $saturation: 20%
+);
+$dm-color-accent-3: adjust-color(
+  $dm-color-primary,
+  $hue: -50deg,
+  $lightness: 35%,
+  $saturation: 45%
+);
+
+$dm-color-secondary: $dm-color-primary-800;
+$dm-color-tertiary: $dm-color-primary-200;
+
+$dm-color-info: #187ba1;
+$dm-color-success: #399017;
+$dm-color-warning: #eaaa07;
+$dm-color-error: #b23620;
+
+$dm-color-black: #000000;
+$dm-color-white: #ffffff;
+$dm-color-gray: #5e5e5e;
+$dm-color-transparent: #acacac00;
+
+$base-gray-light: #aaaaad;
+$base-gray-dark: #1b1b1b;
+
+$dm-color-gray-light: mix($dm-color-primary, $base-gray-light, 5%);
+$dm-color-gray-dark: mix($dm-color-primary, $base-gray-dark, 5%);
+
+$dm-link: var(--dm-color-primary);

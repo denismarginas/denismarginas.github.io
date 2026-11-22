@@ -1,0 +1,14 @@
+{
+  "name": "card_post_project_visual_media",
+  "title": "Card Post Project Visual - Media",
+  "summary": "Project photo + logo visual for media projects.",
+  "description": "Photo + logo card for \"Visual Media Projects\". Photo: data.media.thumbnail.media, else .default, else data.media.overview_media, else media/overview/, else the first media subfolder without \"logo\" in its name. Logo: data.media.logo.img (image) or .svg (svg icon).",
+  "post_types": ["project"],
+  "assets": {
+    "php": ["assets/php/card_post_project_visual_media.php"],
+    "html": ["assets/html/template.html"],
+    "scss": ["assets/scss/**"],
+    "css": ["assets/css/**"]
+  },
+  "dependencies": ["utility_post_thumbnail", "image", "svg", "theme"]
+}

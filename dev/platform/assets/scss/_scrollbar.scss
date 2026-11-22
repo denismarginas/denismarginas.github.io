@@ -1,0 +1,31 @@
+.platform-body::-webkit-scrollbar,
+.platform-body *::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.platform-body::-webkit-scrollbar-track,
+.platform-body *::-webkit-scrollbar-track {
+  background: var(--platform-color-bg-surface-sunken);
+}
+
+.platform-body::-webkit-scrollbar-thumb,
+.platform-body *::-webkit-scrollbar-thumb {
+  background: var(--platform-color-border-base);
+
+  &:hover {
+    background: var(--platform-color-primary);
+  }
+}
+
+.platform-body::-webkit-scrollbar-corner,
+.platform-body *::-webkit-scrollbar-corner {
+  background: var(--platform-color-bg-surface-sunken);
+}
+
+.platform-body::-webkit-resizer,
+.platform-body *::-webkit-resizer {
+  background:
+    linear-gradient(135deg, transparent 0 55%, var(--platform-color-border-base) 55% 62%, transparent 62% 72%, var(--platform-color-border-base) 72% 79%, transparent 79%)
+    var(--platform-color-bg-surface-sunken);
+}

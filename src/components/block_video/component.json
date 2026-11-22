@@ -1,0 +1,11 @@
+{
+  "name": "block_video",
+  "title": "Block Video",
+  "summary": "Post video with thumbnail and color from the video items.",
+  "description": "Video block of a post: renders the video component for a video file and looks it up in data_items_video.json (by path / file name). When found, the item's thumbnail (media.video.video_thumbnail) and color are used; otherwise the given thumbnail_bg / color.",
+  "post_types": ["project"],
+  "assets": {
+    "php": ["assets/php/block_video.php"]
+  },
+  "dependencies": ["video"]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "card_taxonomy",
+  "title": "Card Taxonomy",
+  "summary": "Card for a taxonomy term: image, icon and text.",
+  "description": "Standalone card for a taxonomy term: feature image with the overlay_noise texture (\"noise\": false turns it off; \"overlay\" adds an extra image overlay), svg wrapper and text (seo title + description).",
+  "assets": {
+    "php": [
+      "assets/php/card_taxonomy.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "image",
+    "svg",
+    "card_outline_style",
+    "overlay_noise"
+  ]
+}

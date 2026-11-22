@@ -1,0 +1,26 @@
+{
+  "name": "link_list",
+  "title": "Link List",
+  "summary": "Titled list of static or query-based links.",
+  "description": "Titled list of links. Each link is static (page _id + anchor, or url) or a query on collections / posts / taxonomy terms (utility_filter: filter_by, exclude_by, sort, max_items) that expands into one link per result. Any link can open a component in the popup instead (\"popup\": { component, data, hash }). Used by the footer.",
+  "assets": {
+    "php": [
+      "assets/php/link_list.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "popup",
+    "svg",
+    "theme",
+    "utility_filter"
+  ]
+}

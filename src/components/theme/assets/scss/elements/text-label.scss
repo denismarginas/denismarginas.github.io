@@ -1,0 +1,11 @@
+@import "theme";
+
+.text-label,
+[mode] .text-label {
+  @include text-label();
+}
+
+.text-label.text-label-sm,
+[mode] .text-label.text-label-sm {
+  font-size: var(--dm-font-size-sm);
+}

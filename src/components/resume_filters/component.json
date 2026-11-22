@@ -1,0 +1,32 @@
+{
+  "name": "resume_filters",
+  "title": "Resume Filters",
+  "summary": "Language / model filters, sort and search for a resume_listing.",
+  "description": "Toolbar for a resume_listing (look and drawer from filters_toolbar), linked by \"id\" to the <ul id> of the listing; give it the same type, lang, filter_by and exclude_by as the listing. \"filters\" picks the filters and their order (default [\"lang\", \"model\"]); a filter with fewer than two options is left out. Language labels come from lang_labels, models from model_label (\"Model {n}\"). Texts: lang_label, model_label_filter, search_placeholder, results_text (\"Showing {n} resumes.\"), empty_text. Sort: sort_fields (default publish date, then title).",
+  "type": "utility",
+  "assets": {
+    "php": [
+      "assets/php/resume_filters.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ],
+    "js": [
+      "assets/js/resume_filters.js"
+    ]
+  },
+  "dependencies": [
+    "resume_listing",
+    "listing_toolbar",
+    "filters_sort",
+    "filters_toolbar",
+    "svg",
+    "theme"
+  ]
+}

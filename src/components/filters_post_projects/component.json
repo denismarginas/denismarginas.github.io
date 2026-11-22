@@ -1,0 +1,38 @@
+{
+  "name": "filters_post_projects",
+  "title": "Filters Post Projects",
+  "summary": "Filters, sort and search toolbar for project listings.",
+  "description": "Filter + keyword search toolbar for a post-items listing (look and drawer from filters_toolbar). Linked by \"id\" to the <ul id> of the listing; filters, sort and texts come from the \"projects\" toolbar in data_items_listing_toolbar.json, options from the same posts the listing shows (post_type, filter_by, exclude_by, sort).",
+  "post_types": [
+    "project"
+  ],
+  "assets": {
+    "php": [
+      "assets/php/filters_post_projects.php"
+    ],
+    "html": [
+      "assets/html/template.html",
+      "assets/html/parts/filter.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ],
+    "js": [
+      "assets/js/filters_post_projects.js"
+    ]
+  },
+  "dependencies": [
+    "listing_toolbar",
+    "post_items",
+    "utility_sort",
+    "filters_sort",
+    "filters_toolbar",
+    "utility_grid_listing",
+    "utility_grid_column_balancing",
+    "svg",
+    "theme"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "filters_toolbar",
+  "title": "Filters Toolbar",
+  "summary": "Shared toolbar UI: search, filter drawer, chips, count.",
+  "description": "Shared look and UI of the listing toolbars (filters_post_projects, hobby_pc_video_games_filters, search): search input, icon Filters button with the active-filter count, chips of the active filters + Clear all, results count, and a <dialog> drawer (right side on desktop, bottom sheet on phones) with the View, Sort and Filters sections. Light / dark mode. Each toolbar keeps its own filtering logic and calls window.filtersToolbar.init(form, ...) for the UI.",
+  "type": "utility",
+  "assets": {
+    "php": [
+      "assets/php/filters_toolbar.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ],
+    "js": [
+      "assets/js/filters_toolbar.js"
+    ]
+  },
+  "dependencies": [
+    "svg",
+    "theme"
+  ]
+}

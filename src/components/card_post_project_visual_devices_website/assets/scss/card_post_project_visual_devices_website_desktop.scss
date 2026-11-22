@@ -1,0 +1,52 @@
+@import "theme";
+
+.dm-post-view.visual-devices-website {
+  .device-layout-laptop {
+    filter: drop-shadow(
+      2px 3px 4px color-mix(in srgb, var(--dm-color-black) 50%, transparent)
+    );
+
+    &.desktop-model-01 {
+      > .screen {
+        top: 1.4%;
+        left: 1%;
+        width: 98.5%;
+        height: 79%;
+      }
+    }
+
+    &.desktop-model-02 {
+      > .screen {
+        top: 5%;
+        left: 11.5%;
+        width: 78%;
+        height: 88%;
+      }
+    }
+
+    &.desktop-model-03 {
+      > .screen {
+        top: 2%;
+        left: 2.1%;
+        width: 96.5%;
+        height: 82%;
+      }
+    }
+
+    > .screen {
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: var(--dm-color-white);
+        top: -50%;
+        left: 50%;
+        z-index: 2;
+        transform: rotate(45deg);
+        opacity: 0.3;
+        filter: blur(10px);
+      }
+    }
+  }
+}

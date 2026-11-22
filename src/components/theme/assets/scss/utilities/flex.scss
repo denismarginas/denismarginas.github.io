@@ -1,0 +1,81 @@
+@import 'utilities/maps';
+
+@each $name, $value in $dm-flex-direction {
+  .flex-#{$name} {
+    flex-direction: $value;
+  }
+}
+
+@each $name, $value in $dm-flex-wrap {
+  .flex-#{$name} {
+    flex-wrap: $value;
+  }
+}
+
+@each $name, $value in $dm-align-items {
+  .align-items-#{$name} {
+    align-items: $value;
+  }
+}
+
+@each $name, $value in $dm-justify-content {
+  .justify-content-#{$name} {
+    justify-content: $value;
+  }
+}
+
+@each $name, $value in $dm-align-self {
+  .align-self-#{$name} {
+    align-self: $value;
+  }
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-shrink-1 {
+  flex-shrink: 1;
+}
+
+@each $bp, $width in $dm-breakpoints {
+  @media (min-width: $width) {
+    @each $name, $value in $dm-flex-direction {
+      .flex-#{$bp}-#{$name} {
+        flex-direction: $value;
+      }
+    }
+
+    @each $name, $value in $dm-flex-wrap {
+      .flex-#{$bp}-#{$name} {
+        flex-wrap: $value;
+      }
+    }
+
+    @each $name, $value in $dm-align-items {
+      .align-items-#{$bp}-#{$name} {
+        align-items: $value;
+      }
+    }
+
+    @each $name, $value in $dm-justify-content {
+      .justify-content-#{$bp}-#{$name} {
+        justify-content: $value;
+      }
+    }
+
+    @each $name, $value in $dm-align-self {
+      .align-self-#{$bp}-#{$name} {
+        align-self: $value;
+      }
+    }
+
+    .flex-#{$bp}-grow-1 {
+      flex-grow: 1;
+    }
+
+    .flex-#{$bp}-shrink-1 {
+      flex-shrink: 1;
+    }
+  }
+}

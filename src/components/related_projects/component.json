@@ -1,0 +1,31 @@
+{
+  "name": "related_projects",
+  "title": "Related Projects",
+  "summary": "Related projects section with project cards.",
+  "description": "Related projects section: the project cards of the old design (post-items + card_post_project with card_post_project_visual_default: logo + thumbnail, title, description) in auto balanced columns (utility_grid_column_balancing: 1 project full width, 2 in 2 columns, 3 in 3 ...; 1 column on phones). Projects picked like post-items (filter_by, exclude_by, sort, exclude_current).",
+  "post_types": [
+    "project"
+  ],
+  "assets": {
+    "php": [
+      "assets/php/related_projects.php"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "section",
+    "section_head",
+    "post_items",
+    "card_post_project",
+    "card_post_project_visual_default",
+    "utility_grid_column_balancing",
+    "utility_filter",
+    "utility_project_media",
+    "theme"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "logo",
+  "title": "Logo",
+  "summary": "Site logo and title linked to the front page.",
+  "description": "Site logo (visual + site title) from data_settings_site.json, linked to the front page. Variants: header (default), footer. Visual shape classes logo-shape-circle / logo-shape-square (the header scroll script toggles them).",
+  "assets": {
+    "php": [
+      "assets/php/logo.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "image",
+    "theme"
+  ]
+}

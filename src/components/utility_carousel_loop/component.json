@@ -1,0 +1,14 @@
+{
+  "name": "utility_carousel_loop",
+  "title": "Utility Carousel Loop",
+  "summary": "Shared infinite-loop carousel engine.",
+  "description": "Shared infinite-loop engine (like utility_slider is for sliders): renders any list of items in a row that scrolls forever. The JS duplicates the items once (aria-hidden, not focusable) so the CSS animation loops seamlessly; reduced motion / no JS = the items simply wrap, centered. Options: direction, speed, pause_on_hover, gap / gap_phone. Used by carousel_projects_items and project_taxonomy_marquee.",
+  "assets": {
+    "php": ["assets/php/utility_carousel_loop.php"],
+    "html": ["assets/html/template.html"],
+    "scss": ["assets/scss/**"],
+    "css": ["assets/css/**"],
+    "js": ["assets/js/utility_carousel_loop.js"]
+  },
+  "dependencies": ["theme"]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "project_links",
+  "title": "Project Links",
+  "summary": "Project website / media links as pills.",
+  "description": "Label + pill links of a project: data.web.urls and data.media.urls ({ url, svg, text }), opened in a new tab. Text: the item text, else the url without https://.",
+  "post_types": ["project"],
+  "assets": {
+    "php": ["assets/php/project_links.php"],
+    "scss": ["assets/scss/**"],
+    "css": ["assets/css/**"]
+  },
+  "dependencies": ["utility_string_urlto", "utility_project_media", "svg", "theme"]
+}

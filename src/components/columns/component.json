@@ -1,0 +1,24 @@
+{
+  "name": "columns",
+  "title": "Columns",
+  "summary": "Puts child components side by side in columns.",
+  "description": "Puts its children side by side: 50-50, 60-40, 40-60, 70-30, 30-70 or 33-33-33 (theme cols-* grid classes). Each child is one column; a \"column\" child groups several components in one column. Stacks on smaller screens.",
+  "assets": {
+    "php": [
+      "assets/php/columns.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "section",
+    "theme"
+  ]
+}

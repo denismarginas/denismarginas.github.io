@@ -1,0 +1,18 @@
+{
+  "name": "card_post_project_visual_devices_website",
+  "title": "Card Post Project Visual - Devices Website",
+  "summary": "Project website shown on laptop + phone mockups.",
+  "description": "Renders a project's website preview as a laptop + phone device mockup (formerly card_post_project_visual_website). Device model (per type) is auto-picked from the project's type/start year, or can be forced. Device frame images come from data_content_post_projects.json (img.devices). Set \"link\": false to render it without the link (e.g. inside project_feature_hero).",
+  "post_types": ["project"],
+  "assets": {
+    "php": ["assets/php/card_post_project_visual_devices_website.php"],
+    "html": [
+      "assets/html/template.html",
+      "assets/html/parts/desktop_block.html",
+      "assets/html/parts/phone_block.html"
+    ],
+    "scss": ["assets/scss/**"],
+    "css": ["assets/css/**"]
+  },
+  "dependencies": ["utility_project_web_screens", "image", "theme"]
+}

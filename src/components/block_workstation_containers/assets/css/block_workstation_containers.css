@@ -1,0 +1,1 @@
+.block-workstation-containers{display:flex;flex-direction:column;gap:var(--dm-spacing-xl);width:100%;--dm-color-primary: var(--post-color-primary);--dm-color-secondary: var(--post-color-secondary);--dm-color-tertiary: var(--post-color-canvas-primary)}@media(max-width: 768px){.block-workstation-containers{gap:var(--dm-spacing-lg)}}

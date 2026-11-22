@@ -1,0 +1,15 @@
+{
+  "name": "video_playlist",
+  "title": "Video Playlist",
+  "summary": "Video player with scrolling playlist.",
+  "description": "Video section of a project: a player (project_block_video -> block_video -> video, thumbnails and colors from data_items_video.json) with the title, year and a \"More details\" button, next to a scrolling playlist (number, thumbnail, title, year). Videos without a thumbnail get a box in the page color (light / dark) with the play icon. \"More details\" opens the video in the popup in the video_listing layout (one video: title, description, buttons). Default videos: every video of the project folder.",
+  "post_types": ["project"],
+  "assets": {
+    "php": ["assets/php/video_playlist.php"],
+    "html": ["assets/html/template.html"],
+    "scss": ["assets/scss/**"],
+    "css": ["assets/css/**"],
+    "js": ["assets/js/video_playlist.js"]
+  },
+  "dependencies": ["section", "section_head", "utility_project_media", "project_block_video", "video_listing", "video", "popup", "image", "svg", "theme"]
+}

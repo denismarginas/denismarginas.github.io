@@ -1,0 +1,1 @@
+.platform-svg{display:inline-block;width:var(--platform-svg-size, 18px);height:var(--platform-svg-size, 18px);vertical-align:middle;flex:none;line-height:0}.platform-svg svg{width:100%;height:100%;display:block;stroke:currentColor}.platform-svg svg [stroke="#000"],.platform-svg svg [fill="#000"]{stroke:currentColor}.platform-button .platform-svg{pointer-events:none}

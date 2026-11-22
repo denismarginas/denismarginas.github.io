@@ -1,0 +1,14 @@
+.platform-img-thumb {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  background: var(--platform-color-white, #ffffff);
+  border: 1px solid var(--platform-color-bg-surface-sunken);
+  border-radius: var(--platform-radius-sm);
+  display: block;
+}
+
+.platform-img-not-found {
+  font-size: 11px;
+  color: var(--platform-danger);
+}

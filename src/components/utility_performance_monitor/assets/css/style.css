@@ -1,0 +1,143 @@
+performance-monitor.performance-monitor {
+  position: fixed;
+  left: 12px;
+  bottom: 12px;
+  z-index: 2147483000;
+  display: block;
+  width: 300px;
+  max-width: calc(100vw - 24px);
+  padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  background: rgba(14, 14, 18, 0.92);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+  color: #e8e8ea;
+  font: 11px/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  text-align: left;
+  contain: layout paint;
+}
+
+performance-monitor.performance-monitor[hidden] { display: none; }
+performance-monitor.performance-monitor.is-collapsed { width: auto; }
+performance-monitor.performance-monitor.is-collapsed .pm-body,
+performance-monitor.performance-monitor.is-collapsed .pm-actions { display: none; }
+performance-monitor.performance-monitor.is-testing { border-color: rgba(62, 207, 142, 0.6); }
+
+.performance-monitor .pm-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 8px;
+}
+
+.performance-monitor .pm-btn {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #e8e8ea;
+  font: inherit;
+  cursor: pointer;
+}
+
+.performance-monitor .pm-btn:hover { background: rgba(255, 255, 255, 0.16); }
+.performance-monitor .pm-btn:focus-visible { outline: 1px solid #3ecf8e; }
+.performance-monitor .pm-toggle { background: transparent; padding: 0 2px; }
+
+.performance-monitor .pm-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #777;
+}
+
+.performance-monitor .pm-dot.pm-good { background: #3ecf8e; }
+.performance-monitor .pm-dot.pm-ok { background: #f5a524; }
+.performance-monitor .pm-dot.pm-poor { background: #f55a5a; }
+
+.performance-monitor .pm-fps {
+  min-width: 2.2em;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.performance-monitor .pm-unit,
+.performance-monitor .pm-label { color: #9a9aa3; }
+
+.performance-monitor .pm-score {
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #e8e8ea;
+  font-weight: 700;
+}
+
+.performance-monitor .pm-actions {
+  display: flex;
+  gap: 4px;
+  margin-left: auto;
+}
+
+.performance-monitor .pm-body { margin-top: 8px; }
+
+.performance-monitor .pm-graph {
+  display: block;
+  width: 100%;
+  height: 44px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.performance-monitor .pm-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px 8px;
+  margin-top: 8px;
+}
+
+.performance-monitor .pm-cell {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.performance-monitor .pm-label { font-size: 10px; }
+.performance-monitor .pm-value { color: #e8e8ea; white-space: nowrap; }
+
+.performance-monitor .pm-hint,
+.performance-monitor .pm-result {
+  margin-top: 8px;
+  color: #c4c4cc;
+}
+
+.performance-monitor .pm-result {
+  padding: 4px 6px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.performance-monitor .pm-result[hidden] { display: none; }
+
+.performance-monitor .pm-value.pm-good,
+.performance-monitor .pm-score.pm-good,
+.performance-monitor .pm-result.pm-good { color: #3ecf8e; }
+
+.performance-monitor .pm-value.pm-ok,
+.performance-monitor .pm-score.pm-ok,
+.performance-monitor .pm-result.pm-ok { color: #f5a524; }
+
+.performance-monitor .pm-value.pm-poor,
+.performance-monitor .pm-score.pm-poor,
+.performance-monitor .pm-result.pm-poor { color: #f55a5a; }
+
+.performance-monitor .pm-result.pm-diagnose {
+  color: #e8e8ea;
+  white-space: pre-wrap;
+  font-size: 10.5px;
+}

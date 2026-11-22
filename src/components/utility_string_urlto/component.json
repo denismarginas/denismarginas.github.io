@@ -1,0 +1,11 @@
+{
+  "name"        : "utility_string_urlto",
+  "title"       : "Utility String Url To",
+  "summary": "Adds or strips http(s) from URL strings.",
+  "description" : "URL string processor. Synthesize strips the http/https prefix (https://www.youtube.com/ to www.youtube.com) and transform adds it back when missing (www.youtube.com to https://www.youtube.com).",
+  "type"        : "utility",
+  "assets"      : {
+    "php" : ["assets/php/utility_string_urlto.php"]
+  },
+  "dependencies": []
+}

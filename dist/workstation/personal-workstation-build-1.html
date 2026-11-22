@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="UTF-8"><meta name="google-site-verification" content="pT_WebXTJxdIjN7BD7iEkRbbz0QLTUAGryLVW3EjIsk"><title>Personal Workstation Build 1</title><meta name="description" content="This is my productivity setup, designed for both work projects and personal pursuits. With regular updates to keep it efficient and inspiring, this workstation powers my main work and creative endeavors. I’m excited to share the tools and setup that drive my daily productivity."><meta name="keywords" content="denis marginas personal workstation build 1, pc setup, ryzen 5 7600x, rtx 3070"><link rel="canonical" href="personal-workstation-build-1.html"><meta name="robots" content="noindex, nofollow"><meta property="og:image" content="https://denismarginas.github.io/portfolio/src/content/img/workstation/pc-01/pc_setup_1.webp"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://denismarginas.github.io/portfolio/src/content/img/workstation/pc-01/pc_setup_1.webp"><script type="application/json" data-seo-ga>{"id":"G-GFKNYRN476","require_consent":true,"default_value":true,"track_localhost":false}</script>
+    <script>(function () {
+  "use strict";
+
+  var mode = null;
+  try {
+    var saved = localStorage.getItem("dm_mode_value");
+    if (saved === "dark" || saved === "light") mode = saved;
+  } catch (e) {}
+
+  function applyBody(body) {
+    if (!mode) {
+      mode = body.getAttribute("mode") === "dark" ? "dark" : "light";
+    }
+    if (body.getAttribute("mode") !== mode) body.setAttribute("mode", mode);
+  }
+
+  function syncToggle() {
+    var toggle = document.querySelector(".header-theme-mode-toggle");
+    if (!toggle || !mode) return;
+    toggle.setAttribute("data-mode", mode);
+    var input = toggle.querySelector(".header-theme-mode-toggle-input");
+    if (input) input.checked = mode === "dark";
+    var icons = toggle.querySelectorAll(".header-theme-mode-toggle-icon");
+    for (var i = 0; i < icons.length; i++) {
+      icons[i].setAttribute("active", icons[i].getAttribute("theme-style") === mode ? "true" : "false");
+    }
+  }
+
+  if (document.body) {
+    applyBody(document.body);
+  } else if (window.MutationObserver) {
+    var observer = new MutationObserver(function () {
+      if (!document.body) return;
+      observer.disconnect();
+      applyBody(document.body);
+    });
+    observer.observe(document.documentElement, { childList: true });
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    if (document.body) applyBody(document.body);
+    syncToggle();
+  });
+})();
+</script>
+    <script>document.documentElement.classList.add("is-loading");</script>
+    <style>html.i18n-loading body>:not([data-preloader]){visibility:hidden}</style><script>window.dmI18n={"default":"en","page_lang":"en","langs":["en","ro"],"frontend":["ro"],"root":"../../","timeout":6000,"data":"src/content/json/data/","files":{"collection/data_collection_education.json":["ro"],"collection/data_collection_form.json":["ro"],"collection/data_collection_hobby.json":["ro"],"collection/data_collection_hobby_pc_video_game.json":["ro"],"collection/data_collection_job.json":["ro"],"collection/data_collection_knowledge_item.json":["ro"],"collection/data_collection_listing_toolbar.json":["ro"],"collection/data_collection_resume.json":["ro"],"collection/data_collection_social_link.json":["ro"],"collection/data_collection_social_post.json":["ro"],"collection/data_collection_video.json":["ro"],"content/data_content_cookie_notice.json":["ro"],"content/data_content_footer.json":["ro"],"content/data_content_header_menu.json":["ro"],"content/data_content_post_projects.json":["ro"],"content/data_content_project_info.json":["ro"],"content/data_content_ui.json":["ro"],"content/data_dates.json":["ro"],"data_types.json":["ro"],"post/data_post_page.json":["ro"],"post/data_post_project.json":["ro"],"post/data_post_workstation.json":["ro"],"taxonomy/data_taxonomy_category.json":["ro"]},"v":"towkn7","skip":["script","style","noscript","template","svg","math","textarea","iframe","object","canvas"],"attrs":["alt","title","placeholder","aria-label","aria-description","data-tooltip"],"prefixes":["data-label"],"meta":["description","og:title","og:description","og:image:alt","twitter:title","twitter:description","twitter:image:alt"],"inputs":["submit","button","reset"]};(function () {
+  var c = window.dmI18n, d = document.documentElement, key = "dm_lang", lang = null;
+  if (!c) return;
+
+  function store(value) {
+    try { localStorage.setItem(key, value); } catch (e) {}
+  }
+
+  var WS = /\s+/g;
+  var SPLIT = /<[^>]*>|\r?\n/;
+  var decoder = null;
+
+  function normalize(text) {
+    return String(text).replace(WS, " ").replace(/^ | $/g, "");
+  }
+
+  function decode(text) {
+    if (text.indexOf("&") === -1) return text;
+    decoder = decoder || document.createElement("textarea");
+    decoder.innerHTML = text;
+    return decoder.value;
+  }
+
+  function add(map, en, tr) {
+    var a = normalize(decode(en)), b = normalize(decode(tr));
+    if (!a || !b || a === b || a.indexOf("{{") !== -1 || map.has(a)) return;
+    map.set(a, b);
+  }
+
+  function pair(map, en, tr) {
+    if (en === tr) return;
+    if (!SPLIT.test(en)) { add(map, en, tr); return; }
+    var x = en.split(SPLIT), y = tr.split(SPLIT);
+    if (x.length !== y.length) return;
+    for (var i = 0; i < x.length; i++) add(map, x[i], y[i]);
+  }
+
+  function walk(map, en, tr) {
+    if (typeof en === "string") {
+      if (typeof tr === "string") pair(map, en, tr);
+      return;
+    }
+    if (!en || !tr || typeof en !== "object" || typeof tr !== "object") return;
+    if (Array.isArray(en)) {
+      if (!Array.isArray(tr)) return;
+      var byId = null;
+      if (en.length && en[0] && typeof en[0] === "object" && "_id" in en[0]) {
+        byId = {};
+        tr.forEach(function (item) { if (item && item._id != null) byId[item._id] = item; });
+      }
+      for (var i = 0; i < en.length; i++) walk(map, en[i], byId ? (en[i] ? byId[en[i]._id] : null) : tr[i]);
+      return;
+    }
+    for (var k in en) {
+      if (Object.prototype.hasOwnProperty.call(en, k) && Object.prototype.hasOwnProperty.call(tr, k)) walk(map, en[k], tr[k]);
+    }
+  }
+
+  c.store = store;
+  c.fetch = function (target) {
+    var root = (c.root || "") + c.data, v = "?v=" + encodeURIComponent(c.v || "");
+    function get(url) {
+      return fetch(url, { credentials: "same-origin" })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .catch(function () { return null; });
+    }
+    var jobs = Object.keys(c.files || {}).filter(function (file) {
+      return (c.files[file] || []).indexOf(target) !== -1;
+    }).map(function (file) {
+      return Promise.all([get(root + c.default + "/" + file + v), get(root + target + "/" + file + v)]);
+    });
+    return Promise.all(jobs).then(function (results) {
+      var map = new Map();
+      results.forEach(function (r) { if (r[0] && r[1]) walk(map, r[0], r[1]); });
+      return map;
+    });
+  };
+
+  try {
+    var param = new URLSearchParams(location.search).get("lang");
+    if (param && c.langs.indexOf(param) !== -1) { lang = param; store(param); }
+  } catch (e) {}
+
+  if (c.page_lang !== c.default) {
+    if (!lang) store(c.page_lang);
+    return;
+  }
+
+  if (!lang) {
+    try { lang = localStorage.getItem(key); } catch (e) {}
+  }
+  if (!lang || c.frontend.indexOf(lang) === -1 || !window.fetch || !window.Promise || !window.Map) return;
+
+  c.lang = lang;
+  d.classList.add("i18n-loading");
+  c.pending = c.fetch(lang);
+  setTimeout(function () { d.classList.remove("i18n-loading"); }, c.timeout || 6000);
+})();</script>
+    <link rel="stylesheet" href="../../src/components/theme/assets_compiled/css/bundle.css"><script src="../../src/components/theme/assets_compiled/js/bundle.js"></script>
+</head>
+
+<body mode="dark">
+    <div class="preloader" data-preloader data-preloader-wait="load" data-preloader-max="4000" aria-hidden="true" translate="no">
+  <span class="preloader-spinner"></span>
+</div>
+
+    <overlay class="overlay-noise"></overlay>
+    <overlay class="animation-grid-background"></overlay>
+    <header>
+  <div class="header-blur" aria-hidden="true"></div>
+  <container>
+    <a href="../home.html" class="logo logo-shape-circle" data-variant="header"><div class="logo-container-img"><img class="logo-img" src="../../src/content/img/brand/logo/logo.webp" alt="Denis Marginas Logo" width="50" height="50">
+</div><div class="site-title"><span class="primary">Denis</span><span class="secondary">Marginas</span></div></a>
+
+    <nav class="header-menu">
+  <ul><li><a  href="../home.html">Home</a></li><li class="has-submenu"><span class="header-menu-row"><a  href="../experience.html">Experience</a><button type="button" class="header-submenu-toggle" aria-expanded="false" aria-controls="header-submenu-305" aria-label="Experience submenu"><svg type="fill" viewBox="0 0 512 512" class="header-submenu-toggle-icon"> <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/> </svg></button></span><ul class="header-submenu" id="header-submenu-305"><li><a  href="../category/employee-experience.html">Professional Experience</a></li><li><a  href="../category/education-experience.html">Education Experience</a></li></ul></li><li class="has-submenu"><span class="header-menu-row"><a  href="../category/projects.html">Projects</a><button type="button" class="header-submenu-toggle" aria-expanded="false" aria-controls="header-submenu-306" aria-label="Projects submenu"><svg type="fill" viewBox="0 0 512 512" class="header-submenu-toggle-icon"> <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/> </svg></button></span><ul class="header-submenu" id="header-submenu-306"><li><a  href="../category/web-development-projects.html">Web Projects</a></li><li><a  href="../category/visual-media-projects.html">Media Projects</a></li><li><a  href="../category/personal-and-custom-projects.html">Personal Projects</a></li></ul></li><li><a  href="../contact.html">Contact</a></li></ul>
+  <div class="header-menu-utility">
+    <a href="../search.html" class="header-search-button "  aria-label="Search">
+  <svg type="stroke" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" class="header-search-button-icon">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1 8.3746C0.999472 4.85724 3.4837 1.8293 6.9334 1.1426C10.3832 0.455907 13.8376 2.30172 15.184 5.5512C16.5305 8.80072 15.394 12.5488 12.4696 14.5034C9.5452 16.4578 5.64744 16.0744 3.16 13.5874C1.77716 12.2051 1.00017 10.33 1 8.3746Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.5869 13.5886L17.8001 17.8018" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a>
+    <details class="header-language-dropdown" data-language-dropdown translate="no">
+  <summary class="header-language-dropdown-toggle" aria-label="Language: English">
+    <span class="header-language-dropdown-current">EN</span><svg type="fill" viewBox="0 0 512 512" class="header-language-dropdown-chevron"> <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/> </svg>
+  </summary>
+  <ul class="header-language-dropdown-menu"><li><a class="header-language-dropdown-link active" href="../workstation/personal-workstation-build-1.html" data-i18n-lang="en" hreflang="en" lang="en" aria-current="true" title="English"><svg type="flag" viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice" class="header-language-flag"><clipPath id="flag-en-clip"><path d="M30,15h30v15zv15h-30zh-30v-15zv-15h30z"/></clipPath><rect width="60" height="30" fill="#012169"/><path d="M0,0L60,30M60,0L0,30" stroke="#FFFFFF" stroke-width="6"/><path d="M0,0L60,30M60,0L0,30" clip-path="url(#flag-en-clip)" stroke="#C8102E" stroke-width="4"/><path d="M30,0v30M0,15h60" stroke="#FFFFFF" stroke-width="10"/><path d="M30,0v30M0,15h60" stroke="#C8102E" stroke-width="6"/></svg><span class="header-language-dropdown-code">EN</span></a></li><li><a class="header-language-dropdown-link" href="../workstation/personal-workstation-build-1.html?lang=ro" data-i18n-lang="ro" rel="nofollow" lang="ro" title="Română"><svg type="flag" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" class="header-language-flag"><rect width="1" height="2" x="0" fill="#002B7F"/><rect width="1" height="2" x="1" fill="#FCD116"/><rect width="1" height="2" x="2" fill="#CE1126"/></svg><span class="header-language-dropdown-code">RO</span></a></li></ul>
+</details>
+
+    <label class="header-theme-mode-toggle" data-mode="dark" aria-label="Toggle color theme">
+  <input type="checkbox" class="header-theme-mode-toggle-input">
+  <span class="header-theme-mode-toggle-track" aria-hidden="true">
+    <span class="header-theme-mode-toggle-icon" theme-style="light" active="false"><svg type="stroke" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-icon">
+<path d="M12.5628 25.0003C17.5333 26.899 23.102 24.4088 25.0006 19.4382C26.8993 14.4676 24.409 8.89902 19.4385 7.00035C14.4679 5.10168 8.8993 7.59194 7.00063 12.5625C5.10196 17.5331 7.59222 23.1017 12.5628 25.0003Z" stroke="#000" stroke-width="2"/>
+<path d="M21.7305 1.00024L21.1575 2.50024" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+<path d="M10.8438 29.5002L10.2708 31.0002" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+<path d="M31.0005 21.73L29.5005 21.157" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+<path d="M2.50049 10.8435L1.00049 10.2705" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+<path d="M30.658 9.44626L29.8438 9.81044" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+<path d="M2.15713 22.1904L1.34275 22.5547" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+<path d="M22.5555 30.657L22.1914 29.8428" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+<path d="M9.80949 2.15712L9.44531 1.34277" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+</svg></span>
+    <span class="header-theme-mode-toggle-icon" theme-style="dark" active="true"><svg type="stroke" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-icon">
+<path d="M1 15.4412C1 24.0342 7.96473 31 16.5561 31C23.1021 31 28.7037 26.9561 31 21.2299C29.2083 21.9501 27.2477 22.3561 25.1984 22.3561C16.6069 22.3561 9.6423 15.3902 9.6423 6.79731C9.6423 4.75731 10.0422 2.78516 10.7558 1C5.03723 3.2998 1 8.89895 1 15.4412Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>
+    <span class="header-theme-mode-toggle-thumb" aria-hidden="true"></span>
+  </span>
+</label>
+  </div>
+</nav>
+<button type="button" class="header-menu-navbar-toggle" aria-label="Toggle menu" aria-expanded="false"
+  aria-controls="header-menu">
+  <svg type="fill" width="21" height="17" viewBox="0 0 21 17"  class="header-menu-navbar-toggle-icon"><path d="M0 0.75C0 0.335786 0.335786 0 0.75 0H10.5H20.25C20.6642 0 21 0.335786 21 0.75V0.75C21 1.16421 20.6642 1.5 20.25 1.5H0.75C0.335786 1.5 0 1.16421 0 0.75V0.75Z"/><path d="M0 8.25C0 7.83579 0.335786 7.5 0.75 7.5H10.5H20.25C20.6642 7.5 21 7.83579 21 8.25V8.25C21 8.66421 20.6642 9 20.25 9H0.75C0.335786 9 0 8.66421 0 8.25V8.25Z"/><path d="M0 15.75C0 15.3358 0.335786 15 0.75 15H10.5H20.25C20.6642 15 21 15.3358 21 15.75V15.75C21 16.1642 20.6642 16.5 20.25 16.5H0.75C0.335786 16.5 0 16.1642 0 15.75V15.75Z"/></svg>
+</button>
+  </container>
+</header>
+
+
+    <main><section class="content-section section-workstation">
+  <container>
+    <div class="block-workstation-containers" style="--post-color-primary: #2866c8; --post-color-secondary: #ffffff; --post-color-secondary-on-light: var(--dm-color-gray-dark); --post-color-canvas-primary: #273f65; --post-color-canvas-secondary: #ffffff; --post-color-canvas-secondary-on-light: var(--dm-color-gray-dark);">
+  <div class="block-workstation-hero">
+  <div class="block-workstation-hero-inner">
+    <div class="block-workstation-hero-text">
+      <h2 class="block-workstation-hero-title title-secondary font-secondary">Personal Workstation Build 1</h2>
+      <p class="block-workstation-hero-description">This is my productivity setup, designed for both work projects and personal pursuits. With regular updates to keep it efficient and inspiring, this workstation powers my main work and creative endeavors. I’m excited to share the tools and setup that drive my daily productivity.</p>
+    </div>
+    <div class="block-workstation-hero-visual"><img class="block-workstation-hero-img" src="../../src/content/img/workstation/pc-01/pc_setup_1.webp" alt="Personal Workstation Build 1" width="1008" height="1000">
+</div>
+  </div>
+  <div class="block-workstation-status" data-status="active"><span class="block-workstation-status-dot" aria-hidden="true"></span><span class="block-workstation-status-text">Active</span></div>
+
+  <svg class="block-workstation-wave block-workstation-wave-primary" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true"><path d="M0,192L60,192C120,192,240,192,360,213.3C480,235,600,277,720,272C840,267,960,213,1080,208C1200,203,1320,245,1380,266.7L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+  <svg class="block-workstation-wave block-workstation-wave-secondary" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true"><path d="M0,224L80,202.7C160,181,320,139,480,138.7C640,139,800,181,960,176C1120,171,1280,117,1360,90.7L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+</div>
+<div class="block-workstation-container" id="w-configuration">
+  <h2 class="title-divider title-tertiary font-primary">PC Configuration</h2>
+  <div class="columns cols-100 cols-lg-30-70 gap-sm gap-lg-lg" data-layout="base:100 lg:30-70" data-align="start">
+  <div class="column" data-transition="fade slide-bottom" data-transition-duration="700" data-transition-delay="0" data-transition-distance="30px" data-transition-auto="true"><div class="block-slider-images utility-slider" data-utility-slider data-slider-arrows="true" data-slider-counter="true" data-slider-dots="false">
+  <div class="utility-slider-viewport block-slider-images-viewport" tabindex="0" aria-label="Personal Workstation Build 1 - images">
+    <ul class="utility-slider-track"><li class="utility-slider-slide block-slider-images-slide" data-slide-index="0" data-popup="true" data-popup-group="block-slider-images-09da45dc-17"><img class="block-slider-images-img" src="../../src/content/img/workstation/pc-01/pc-00.webp" alt="Personal Workstation Build 1" width="864" height="1000">
+</li>
+<li class="utility-slider-slide block-slider-images-slide" data-slide-index="1" data-popup="true" data-popup-group="block-slider-images-09da45dc-17"><img class="block-slider-images-img" src="../../src/content/img/workstation/pc-01/pc-01.webp" alt="Personal Workstation Build 1" loading="lazy" width="767" height="1000">
+</li>
+</ul>
+  </div>
+</div>
+<ul class="icon-list"><li class="icon-list-item"><svg type="fill" viewBox="0 0 320 512" class="icon-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="icon-list-text">GPU GIGABYTE GeForce RTX 3070 OC 8GB GDDR6 256-bit</span></li><li class="icon-list-item"><svg type="fill" viewBox="0 0 320 512" class="icon-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="icon-list-text">CPU AMD Ryzen 5 7600X 38MB 4.7/5.3GHz Boost</span></li><li class="icon-list-item"><svg type="fill" viewBox="0 0 320 512" class="icon-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="icon-list-text">Cooler ARCTIC Freezer 34 eSports DUO Grey</span></li><li class="icon-list-item"><svg type="fill" viewBox="0 0 320 512" class="icon-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="icon-list-text">Motherboard ASUS TUF GAMING B650-PLUS AM5</span></li><li class="icon-list-item"><svg type="fill" viewBox="0 0 320 512" class="icon-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="icon-list-text">RAM Kingston FURY Beast 32GB DDR5 5200MHz CL40 Dual Channel</span></li><li class="icon-list-item"><svg type="fill" viewBox="0 0 320 512" class="icon-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="icon-list-text">Computer Case AQIRYS Antares ARGB</span></li><li class="icon-list-item"><svg type="fill" viewBox="0 0 320 512" class="icon-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="icon-list-text">SSD GIGABYTE 480GB SATA-III 2.5 inch</span></li><li class="icon-list-item"><svg type="fill" viewBox="0 0 320 512" class="icon-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="icon-list-text">SSD Kingston NV2 1TB PCI Express 4.0 x4 M.2 2280</span></li><li class="icon-list-item"><svg type="fill" viewBox="0 0 320 512" class="icon-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="icon-list-text">PSU GIGABYTE P850GM 80+ Gold 850W</span></li></ul></div><div class="column"><ul class="block-workstation-item-listing"><li><div class="block-workstation-item-card" id="configuration-gpu" tabindex="0">
+  <div class="block-workstation-item-card-visual" data-tag="gpu" data-popup="true" data-popup-group="block-workstation-configuration-2f9a30"><img class="block-workstation-item-card-img" src="../../src/content/img/workstation/pc-01/gpu_gigabyte_geforce_rtx_3070_gaming_oc_lhr_8gb_gddr6_256_bit.webp" alt="GPU GIGABYTE GeForce RTX 3070 OC 8GB GDDR6 256-bit" loading="lazy" width="200" height="87">
+<span class="block-workstation-item-card-tag">GPU</span></div>
+  <div class="block-workstation-item-card-text">
+    <h3 class="block-workstation-item-card-title">GPU GIGABYTE GeForce RTX 3070 OC 8GB GDDR6 256-bit</h3>
+    <div class="block-workstation-item-card-hover"><dl class="block-workstation-item-card-specs"><div class="block-workstation-item-card-spec"><dt>GPU Boost clock</dt><dd>1815 MHz</dd></div><div class="block-workstation-item-card-spec"><dt>Number of transistors</dt><dd>17400 million</dd></div><div class="block-workstation-item-card-spec"><dt>CUDA Cores</dt><dd>5888</dd></div><div class="block-workstation-item-card-spec"><dt>Memory type</dt><dd>GDDR6</dd></div><div class="block-workstation-item-card-spec"><dt>Memory size</dt><dd>8 GB</dd></div><div class="block-workstation-item-card-spec"><dt>BUS memory</dt><dd>256 bit</dd></div><div class="block-workstation-item-card-spec"><dt>Effective memory frequency</dt><dd>14000 MHz</dd></div><div class="block-workstation-item-card-spec"><dt>Dimensions</dt><dd>286 x 115 x 51 mm</dd></div></dl></div>
+  </div>
+</div>
+</li><li><div class="block-workstation-item-card" id="configuration-cpu" tabindex="0">
+  <div class="block-workstation-item-card-visual" data-tag="cpu" data-popup="true" data-popup-group="block-workstation-configuration-2f9a30"><img class="block-workstation-item-card-img" src="../../src/content/img/workstation/pc-01/cpu_amd_ryzen_5_7600x_38mb_4.7_5.3ghz_boost.webp" alt="CPU AMD Ryzen 5 7600X 38MB 4.7/5.3GHz Boost" loading="lazy" width="200" height="200">
+<span class="block-workstation-item-card-tag">CPU</span></div>
+  <div class="block-workstation-item-card-text">
+    <h3 class="block-workstation-item-card-title">CPU AMD Ryzen 5 7600X 38MB 4.7/5.3GHz Boost</h3>
+    <div class="block-workstation-item-card-hover"><dl class="block-workstation-item-card-specs"><div class="block-workstation-item-card-spec"><dt>Cache memory</dt><dd>38 MB</dd></div><div class="block-workstation-item-card-spec"><dt>Socket</dt><dd>AM5</dd></div><div class="block-workstation-item-card-spec"><dt>Processor frequency (MHz)</dt><dd>4.7 GHz</dd></div><div class="block-workstation-item-card-spec"><dt>Turbo Boost up to</dt><dd>5.3 GHz</dd></div><div class="block-workstation-item-card-spec"><dt>Number of cores</dt><dd>6</dd></div><div class="block-workstation-item-card-spec"><dt>Number of threads</dt><dd>12</dd></div><div class="block-workstation-item-card-spec"><dt>Manufacturing technology (nanometers)</dt><dd>5 nm</dd></div><div class="block-workstation-item-card-spec"><dt>Thermal power (W)</dt><dd>105 W</dd></div></dl></div>
+  </div>
+</div>
+</li><li><div class="block-workstation-item-card" id="configuration-cpu-cooler" tabindex="0">
+  <div class="block-workstation-item-card-visual" data-tag="cpu cooler" data-popup="true" data-popup-group="block-workstation-configuration-2f9a30"><img class="block-workstation-item-card-img" src="../../src/content/img/workstation/pc-01/cooler_arctic_freezer_34_esports_duo_grey.webp" alt="Cooler ARCTIC Freezer 34 eSports DUO Grey" loading="lazy" width="169" height="200">
+<span class="block-workstation-item-card-tag">CPU Cooler</span></div>
+  <div class="block-workstation-item-card-text">
+    <h3 class="block-workstation-item-card-title">Cooler ARCTIC Freezer 34 eSports DUO Grey</h3>
+    <div class="block-workstation-item-card-hover"><dl class="block-workstation-item-card-specs"><div class="block-workstation-item-card-spec"><dt>Cooling type</dt><dd>Air</dd></div><div class="block-workstation-item-card-spec"><dt>Rotation speed (rpm)</dt><dd>200 - 2100</dd></div><div class="block-workstation-item-card-spec"><dt>Dimensions (W x D x H cm)</dt><dd>124 x 103 x 157</dd></div></dl></div>
+  </div>
+</div>
+</li><li><div class="block-workstation-item-card" id="configuration-motherboard" tabindex="0">
+  <div class="block-workstation-item-card-visual" data-tag="motherboard" data-popup="true" data-popup-group="block-workstation-configuration-2f9a30"><img class="block-workstation-item-card-img" src="../../src/content/img/workstation/pc-01/motherboard_asus_tuf_gaming_b650_plus_socket_am5.webp" alt="Motherboard ASUS TUF GAMING B650-PLUS AM5" loading="lazy" width="200" height="177">
+<span class="block-workstation-item-card-tag">Motherboard</span></div>
+  <div class="block-workstation-item-card-text">
+    <h3 class="block-workstation-item-card-title">Motherboard ASUS TUF GAMING B650-PLUS AM5</h3>
+    <div class="block-workstation-item-card-hover"><dl class="block-workstation-item-card-specs"><div class="block-workstation-item-card-spec"><dt>Format</dt><dd>ATX</dd></div><div class="block-workstation-item-card-spec"><dt>CPU Socket</dt><dd>AM5</dd></div><div class="block-workstation-item-card-spec"><dt>Chipset</dt><dd>AMD B650</dd></div><div class="block-workstation-item-card-spec"><dt>Supported processors</dt><dd>AMD Ryzen 7000 Series</dd></div><div class="block-workstation-item-card-spec"><dt>Memory type</dt><dd>DDR5</dd></div><div class="block-workstation-item-card-spec"><dt>Connectivity</dt><dd>5 x Audio Jacks, 1 x Display Port, 1 x USB 3.2 Gen 2x2 port(s) (1 x USB Type-C®), 3 x USB 3.2 Gen 2 (2 x Type-A+1 x USB Type-C®), 1 x RJ-45 2.5G LAN, 4 x USB 2.0, 1 x HDMI, 2 x PCI Express x1, 2 x PCIe 4.0 x16, 4 x SATA III</dd></div></dl></div>
+  </div>
+</div>
+</li><li><div class="block-workstation-item-card" id="configuration-ram" tabindex="0">
+  <div class="block-workstation-item-card-visual" data-tag="ram memory" data-popup="true" data-popup-group="block-workstation-configuration-2f9a30"><img class="block-workstation-item-card-img" src="../../src/content/img/workstation/pc-01/ram_kingston_fury_beast_32gb_ddr5_5200mhz_cl40_dual_channel_kit.webp" alt="RAM Kingston FURY Beast 32GB DDR5 5200MHz CL40 Dual Channel" loading="lazy" width="200" height="116">
+<span class="block-workstation-item-card-tag">RAM Memory</span></div>
+  <div class="block-workstation-item-card-text">
+    <h3 class="block-workstation-item-card-title">RAM Kingston FURY Beast 32GB DDR5 5200MHz CL40 Dual Channel</h3>
+    <div class="block-workstation-item-card-hover"><dl class="block-workstation-item-card-specs"><div class="block-workstation-item-card-spec"><dt>Series</dt><dd>FURY Beast</dd></div><div class="block-workstation-item-card-spec"><dt>Type</dt><dd>DDR5</dd></div><div class="block-workstation-item-card-spec"><dt>Capacity</dt><dd>32 GB</dd></div><div class="block-workstation-item-card-spec"><dt>Frequency</dt><dd>5200 MHz</dd></div><div class="block-workstation-item-card-spec"><dt>Dual Channel kit</dt><dd>2x 16 GB</dd></div><div class="block-workstation-item-card-spec"><dt>CAS latency</dt><dd>40 CL</dd></div></dl></div>
+  </div>
+</div>
+</li><li><div class="block-workstation-item-card" id="configuration-computer-case" tabindex="0">
+  <div class="block-workstation-item-card-visual" data-tag="computer case" data-popup="true" data-popup-group="block-workstation-configuration-2f9a30"><img class="block-workstation-item-card-img" src="../../src/content/img/workstation/pc-01/computer_case_aqirys_antares_argb.webp" alt="Computer Case AQIRYS Antares ARGB" loading="lazy" width="132" height="200">
+<span class="block-workstation-item-card-tag">Computer Case</span></div>
+  <div class="block-workstation-item-card-text">
+    <h3 class="block-workstation-item-card-title">Computer Case AQIRYS Antares ARGB</h3>
+    <div class="block-workstation-item-card-hover"><dl class="block-workstation-item-card-specs"><div class="block-workstation-item-card-spec"><dt>Type</dt><dd>Middle Tower</dd></div><div class="block-workstation-item-card-spec"><dt>Dimensions (H x D x W)</dt><dd>450 x 410 x 205 mm</dd></div><div class="block-workstation-item-card-spec"><dt>Total fans included</dt><dd>4</dd></div><div class="block-workstation-item-card-spec"><dt>Illumination LED</dt><dd>ARGB</dd></div></dl></div>
+  </div>
+</div>
+</li><li><div class="block-workstation-item-card" id="configuration-ssd-sata-3" tabindex="0">
+  <div class="block-workstation-item-card-visual" data-tag="secondary ssd" data-popup="true" data-popup-group="block-workstation-configuration-2f9a30"><img class="block-workstation-item-card-img" src="../../src/content/img/workstation/pc-01/ssd_gigabyte_480gb_sata_iii_25_inch.webp" alt="SSD GIGABYTE 480GB SATA-III 2.5 inch" loading="lazy" width="200" height="154">
+<span class="block-workstation-item-card-tag">Secondary SSD</span></div>
+  <div class="block-workstation-item-card-text">
+    <h3 class="block-workstation-item-card-title">SSD GIGABYTE 480GB SATA-III 2.5 inch</h3>
+    <div class="block-workstation-item-card-hover"><dl class="block-workstation-item-card-specs"><div class="block-workstation-item-card-spec"><dt>Form factor</dt><dd>2.5 inches</dd></div><div class="block-workstation-item-card-spec"><dt>Interface</dt><dd>SATA-III</dd></div><div class="block-workstation-item-card-spec"><dt>Capacity</dt><dd>480 GB</dd></div><div class="block-workstation-item-card-spec"><dt>Max write</dt><dd>480 MB/s</dd></div><div class="block-workstation-item-card-spec"><dt>Max read</dt><dd>550 MB/s</dd></div></dl></div>
+  </div>
+</div>
+</li><li><div class="block-workstation-item-card" id="configuration-ssd-m2" tabindex="0">
+  <div class="block-workstation-item-card-visual" data-tag="primary ssd" data-popup="true" data-popup-group="block-workstation-configuration-2f9a30"><img class="block-workstation-item-card-img" src="../../src/content/img/workstation/pc-01/ssd_kingston_nv2_1tb_pci_express_40_x4_m2_2280.webp" alt="SSD Kingston NV2 1TB PCI Express 4.0 x4 M.2 2280" loading="lazy" width="200" height="57">
+<span class="block-workstation-item-card-tag">Primary SSD</span></div>
+  <div class="block-workstation-item-card-text">
+    <h3 class="block-workstation-item-card-title">SSD Kingston NV2 1TB PCI Express 4.0 x4 M.2 2280</h3>
+    <div class="block-workstation-item-card-hover"><dl class="block-workstation-item-card-specs"><div class="block-workstation-item-card-spec"><dt>Series</dt><dd>NV2</dd></div><div class="block-workstation-item-card-spec"><dt>SSD type</dt><dd>Internal</dd></div><div class="block-workstation-item-card-spec"><dt>Form factor</dt><dd>M.2</dd></div><div class="block-workstation-item-card-spec"><dt>Interface</dt><dd>PCI Express 4.0 x4</dd></div><div class="block-workstation-item-card-spec"><dt>Capacity</dt><dd>1 TB</dd></div><div class="block-workstation-item-card-spec"><dt>Max write</dt><dd>2100 MB/s</dd></div><div class="block-workstation-item-card-spec"><dt>Max read</dt><dd>3500 MB/s</dd></div></dl></div>
+  </div>
+</div>
+</li><li><div class="block-workstation-item-card" id="configuration-psu" tabindex="0">
+  <div class="block-workstation-item-card-visual" data-tag="psu" data-popup="true" data-popup-group="block-workstation-configuration-2f9a30"><img class="block-workstation-item-card-img" src="../../src/content/img/workstation/pc-01/psu_gigabyte_p850gm_80_plus_gold_850w.webp" alt="PSU GIGABYTE P850GM 80+ Gold 850W" loading="lazy" width="200" height="158">
+<span class="block-workstation-item-card-tag">PSU</span></div>
+  <div class="block-workstation-item-card-text">
+    <h3 class="block-workstation-item-card-title">PSU GIGABYTE P850GM 80+ Gold 850W</h3>
+    <div class="block-workstation-item-card-hover"><dl class="block-workstation-item-card-specs"><div class="block-workstation-item-card-spec"><dt>Type</dt><dd>ATX 12V V2.31</dd></div><div class="block-workstation-item-card-spec"><dt>Power</dt><dd>850 W</dd></div><div class="block-workstation-item-card-spec"><dt>Number of fans</dt><dd>1x 120 mm</dd></div><div class="block-workstation-item-card-spec"><dt>Voltage/Amperage</dt><dd>100-240Vac</dd></div><div class="block-workstation-item-card-spec"><dt>Efficiency</dt><dd>90%</dd></div><div class="block-workstation-item-card-spec"><dt>Certification</dt><dd>80+ Gold</dd></div><div class="block-workstation-item-card-spec"><dt>Dimensions</dt><dd>150 x 140 x 86 mm</dd></div><div class="block-workstation-item-card-spec"><dt>Modularity</dt><dd>Yes, Full Modularity</dd></div><div class="block-workstation-item-card-spec"><dt>Protections</dt><dd>OCP, OTP, OVP, OPP, UVP, SCP</dd></div></dl></div>
+  </div>
+</div>
+</li></ul></div>
+</div>
+
+</div>
+<div class="block-workstation-container" id="w-accessories">
+  <h2 class="title-divider title-tertiary font-primary">Peripherals &amp; Accessories</h2>
+  <div class="columns cols-100 cols-lg-70-30 gap-sm gap-lg-lg" data-layout="base:100 lg:70-30" data-align="start" data-reverse-stacked="true" data-stack-below="lg">
+  <div class="column"><ul class="block-workstation-item-listing"><li><div class="block-workstation-item-card" id="accessories-headset" tabindex="0">
+  <div class="block-workstation-item-card-visual" data-tag="headset" data-popup="true" data-popup-group="block-workstation-accessories-2f9a30"><img class="block-workstation-item-card-img" src="../../src/content/img/workstation/pc-01/headset_wireless_hyperx_cloud_stinger_core_71.webp" alt="Headset wireless HyperX Cloud Stinger Core 7.1" loading="lazy" width="200" height="177">
+<span class="block-workstation-item-card-tag">Headset</span></div>
+  <div class="block-workstation-item-card-text">
+    <h3 class="block-workstation-item-card-title">Headset wireless HyperX Cloud Stinger Core 7.1</h3>
+    <div class="block-workstation-item-card-hover"><dl class="block-workstation-item-card-specs"><div class="block-workstation-item-card-spec"><dt>Technology</dt><dd>Wireless</dd></div><div class="block-workstation-item-card-spec"><dt>Response frequency (Hz)</dt><dd>20 - 20000</dd></div><div class="block-workstation-item-card-spec"><dt>Connection</dt><dd>Wireless</dd></div><div class="block-workstation-item-card-spec"><dt>Diffuser diameter</dt><dd>40 mm</dd></div><div class="block-workstation-item-card-spec"><dt>Dimensions</dt><dd>210 x 87 x 190mm</dd></div></dl></div>
+  </div>
+</div>
+</li><li><div class="block-workstation-item-card" id="accessories-mouse" tabindex="0">
+  <div class="block-workstation-item-card-visual" data-tag="mouse" data-popup="true" data-popup-group="block-workstation-accessories-2f9a30"><img class="block-workstation-item-card-img" src="../../src/content/img/workstation/pc-01/mouse_logitech_g203_lightsync_rgb_8000_dpi.webp" alt="Mouse LOGITECH G203 LIGHTSYNC RGB, 8.000 dpi" loading="lazy" width="200" height="131">
+<span class="block-workstation-item-card-tag">Mouse</span></div>
+  <div class="block-workstation-item-card-text">
+    <h3 class="block-workstation-item-card-title">Mouse LOGITECH G203 LIGHTSYNC RGB, 8.000 dpi</h3>
+    <div class="block-workstation-item-card-hover"><dl class="block-workstation-item-card-specs"><div class="block-workstation-item-card-spec"><dt>Connection</dt><dd>Wired</dd></div><div class="block-workstation-item-card-spec"><dt>Interface</dt><dd>USB</dd></div><div class="block-workstation-item-card-spec"><dt>Dimensions (W x H x I cm)</dt><dd>11.66 x 6.215 x 3.82</dd></div><div class="block-workstation-item-card-spec"><dt>Sensor</dt><dd>Optical</dd></div><div class="block-workstation-item-card-spec"><dt>Resolution</dt><dd>200 – 8,000 DPI</dd></div><div class="block-workstation-item-card-spec"><dt>Buttons</dt><dd>6 programmable</dd></div><div class="block-workstation-item-card-spec"><dt>Lighting</dt><dd>RGB</dd></div></dl></div>
+  </div>
+</div>
+</li><li><div class="block-workstation-item-card" id="accessories-keyboard" tabindex="0">
+  <div class="block-workstation-item-card-visual" data-tag="keyboard" data-popup="true" data-popup-group="block-workstation-accessories-2f9a30"><img class="block-workstation-item-card-img" src="../../src/content/img/workstation/pc-01/mechanical_keyboard_logitech_g512_gx_red_linear.webp" alt="Mechanical Keyboard LOGITECH G512 GX Red Linear" loading="lazy" width="200" height="115">
+<span class="block-workstation-item-card-tag">Keyboard</span></div>
+  <div class="block-workstation-item-card-text">
+    <h3 class="block-workstation-item-card-title">Mechanical Keyboard LOGITECH G512 GX Red Linear</h3>
+    <div class="block-workstation-item-card-hover"><dl class="block-workstation-item-card-specs"><div class="block-workstation-item-card-spec"><dt>Type</dt><dd>Mechanics</dd></div><div class="block-workstation-item-card-spec"><dt>Technology</dt><dd>GX Red Linear</dd></div><div class="block-workstation-item-card-spec"><dt>Connection</dt><dd>Wired</dd></div><div class="block-workstation-item-card-spec"><dt>Interface</dt><dd>USB</dd></div><div class="block-workstation-item-card-spec"><dt>LED color</dt><dd>RGB</dd></div><div class="block-workstation-item-card-spec"><dt>Switch</dt><dd>Yes</dd></div></dl></div>
+  </div>
+</div>
+</li><li><div class="block-workstation-item-card" id="accessories-mouse-pad" tabindex="0">
+  <div class="block-workstation-item-card-visual" data-tag="mouse pad" data-popup="true" data-popup-group="block-workstation-accessories-2f9a30"><img class="block-workstation-item-card-img" src="../../src/content/img/workstation/pc-01/mouse_pad_genesis_carbon_700_maxi_cordura.webp" alt="Mouse Pad GENESIS Carbon 700 Maxi Cordura" loading="lazy" width="200" height="108">
+<span class="block-workstation-item-card-tag">Mouse Pad</span></div>
+  <div class="block-workstation-item-card-text">
+    <h3 class="block-workstation-item-card-title">Mouse Pad GENESIS Carbon 700 Maxi Cordura</h3>
+    <div class="block-workstation-item-card-hover"><dl class="block-workstation-item-card-specs"><div class="block-workstation-item-card-spec"><dt>Surface</dt><dd>Waterproof</dd></div><div class="block-workstation-item-card-spec"><dt>Material</dt><dd>Rubber base</dd></div><div class="block-workstation-item-card-spec"><dt>Dimensions (W x H x I cm)</dt><dd>45 x 40 x 0.3</dd></div></dl></div>
+  </div>
+</div>
+</li><li><div class="block-workstation-item-card" id="accessories-speakers" tabindex="0">
+  <div class="block-workstation-item-card-visual" data-tag="speakers" data-popup="true" data-popup-group="block-workstation-accessories-2f9a30"><img class="block-workstation-item-card-img" src="../../src/content/img/workstation/pc-01/speakers_trust_arys_compact_rgb_20_set.webp" alt="Speakers Trust Arys Compact RGB 2.0 Set" loading="lazy" width="200" height="183">
+<span class="block-workstation-item-card-tag">Speakers</span></div>
+  <div class="block-workstation-item-card-text">
+    <h3 class="block-workstation-item-card-title">Speakers Trust Arys Compact RGB 2.0 Set</h3>
+    <div class="block-workstation-item-card-hover"><dl class="block-workstation-item-card-specs"><div class="block-workstation-item-card-spec"><dt>RMS power</dt><dd>6W</dd></div><div class="block-workstation-item-card-spec"><dt>Frequency band</dt><dd>100 - 20000 Hz</dd></div><div class="block-workstation-item-card-spec"><dt>Lighting</dt><dd>RGB</dd></div><div class="block-workstation-item-card-spec"><dt>USB connection</dt><dd>Yes</dd></div><div class="block-workstation-item-card-spec"><dt>Satellite size (W x D x H mm)</dt><dd>165 x 160 x 75</dd></div></dl></div>
+  </div>
+</div>
+</li><li><div class="block-workstation-item-card" id="accessories-monitor-primary" tabindex="0">
+  <div class="block-workstation-item-card-visual" data-tag="primary monitor" data-popup="true" data-popup-group="block-workstation-accessories-2f9a30"><img class="block-workstation-item-card-img" src="../../src/content/img/workstation/pc-01/monitor_ips_samsung_odyssey_g5_27_wqhd_165hz.webp" alt="Monitor IPS SAMSUNG Odyssey G5, 27 Inch, WQHD, 165Hz" loading="lazy" width="199" height="200">
+<span class="block-workstation-item-card-tag">Primary Monitor</span></div>
+  <div class="block-workstation-item-card-text">
+    <h3 class="block-workstation-item-card-title">Monitor IPS SAMSUNG Odyssey G5, 27 Inch, WQHD, 165Hz</h3>
+    <div class="block-workstation-item-card-hover"><dl class="block-workstation-item-card-specs"><div class="block-workstation-item-card-spec"><dt>Screen</dt><dd>Flat</dd></div><div class="block-workstation-item-card-spec"><dt>Panel type</dt><dd>IPS</dd></div><div class="block-workstation-item-card-spec"><dt>Screen (Lighting)</dt><dd>LED</dd></div><div class="block-workstation-item-card-spec"><dt>Diagonal (inch)</dt><dd>27</dd></div><div class="block-workstation-item-card-spec"><dt>Brightness (cd/m2)</dt><dd>350</dd></div><div class="block-workstation-item-card-spec"><dt>Resolution (pixels)</dt><dd>2560 x 1440</dd></div><div class="block-workstation-item-card-spec"><dt>Refresh rate</dt><dd>165Hz</dd></div><div class="block-workstation-item-card-spec"><dt>Other screen features</dt><dd>HDR 400</dd></div></dl></div>
+  </div>
+</div>
+</li><li><div class="block-workstation-item-card" id="accessories-monitor-secondary" tabindex="0">
+  <div class="block-workstation-item-card-visual" data-tag="secondary monitor" data-popup="true" data-popup-group="block-workstation-accessories-2f9a30"><img class="block-workstation-item-card-img" src="../../src/content/img/workstation/pc-01/monitor_led_asus_pb277q_27_inch_wqhd_75hz.webp" alt="Monitor LED ASUS PB277Q 27 Inch, WQHD, 75Hz" loading="lazy" width="184" height="200">
+<span class="block-workstation-item-card-tag">Secondary Monitor</span></div>
+  <div class="block-workstation-item-card-text">
+    <h3 class="block-workstation-item-card-title">Monitor LED ASUS PB277Q 27 Inch, WQHD, 75Hz</h3>
+    <div class="block-workstation-item-card-hover"><dl class="block-workstation-item-card-specs"><div class="block-workstation-item-card-spec"><dt>Screen</dt><dd>Flat</dd></div><div class="block-workstation-item-card-spec"><dt>Panel type</dt><dd>TN</dd></div><div class="block-workstation-item-card-spec"><dt>Screen (Lighting)</dt><dd>LED</dd></div><div class="block-workstation-item-card-spec"><dt>Diagonal (inch)</dt><dd>27</dd></div><div class="block-workstation-item-card-spec"><dt>Brightness (cd/m2)</dt><dd>350</dd></div><div class="block-workstation-item-card-spec"><dt>Resolution (pixels)</dt><dd>2560 x 1440</dd></div><div class="block-workstation-item-card-spec"><dt>Refresh rate</dt><dd>75Hz</dd></div></dl></div>
+  </div>
+</div>
+</li><li><div class="block-workstation-item-card" id="accessories-usb-hub" tabindex="0">
+  <div class="block-workstation-item-card-visual" data-tag="usb hub" data-popup="true" data-popup-group="block-workstation-accessories-2f9a30"><img class="block-workstation-item-card-img" src="../../src/content/img/workstation/pc-01/orico_usb_c_hub_3.0_desktop.webp" alt="ORICO USB C HUB 3.0 Desktop" loading="lazy" width="200" height="196">
+<span class="block-workstation-item-card-tag">USB Hub</span></div>
+  <div class="block-workstation-item-card-text">
+    <h3 class="block-workstation-item-card-title">ORICO USB C HUB 3.0 Desktop</h3>
+    <div class="block-workstation-item-card-hover"><dl class="block-workstation-item-card-specs"><div class="block-workstation-item-card-spec"><dd>4 Port USB 3.0 HUB</dd></div></dl></div>
+  </div>
+</div>
+</li><li><div class="block-workstation-item-card" id="accessories-hdd-extern-model-1" tabindex="0">
+  <div class="block-workstation-item-card-visual" data-tag="hdd extern" data-popup="true" data-popup-group="block-workstation-accessories-2f9a30"><img class="block-workstation-item-card-img" src="../../src/content/img/workstation/pc-01/hdd_extern_seagate_expansion_portable_1tb_2.5_inch_usb_3.0_model_1.webp" alt="2x HDD Extern Seagate Expansion Portable 1TB 2.5 Inch USB 3.0" loading="lazy" width="113" height="200">
+<span class="block-workstation-item-card-tag">HDD Extern</span></div>
+  <div class="block-workstation-item-card-text">
+    <h3 class="block-workstation-item-card-title">2x HDD Extern Seagate Expansion Portable 1TB 2.5 Inch USB 3.0</h3>
+    <div class="block-workstation-item-card-hover"><dl class="block-workstation-item-card-specs"><div class="block-workstation-item-card-spec"><dt>Capacity</dt><dd>1 TB</dd></div><div class="block-workstation-item-card-spec"><dt>Dimensions (L x W x H cm)</dt><dd>115.3 x 80 x 12.6 mm</dd></div><div class="block-workstation-item-card-spec"><dt>Interface</dt><dd>USB 3.0</dd></div></dl></div>
+  </div>
+</div>
+</li><li><div class="block-workstation-item-card" id="accessories-hdd-extern-model-2" tabindex="0">
+  <div class="block-workstation-item-card-visual" data-tag="hdd extern" data-popup="true" data-popup-group="block-workstation-accessories-2f9a30"><img class="block-workstation-item-card-img" src="../../src/content/img/workstation/pc-01/hdd_extern_seagate_expansion_portable_1tb_2.5_inch_usb_3.0_model_2.webp" alt="1x HDD Extern Seagate Expansion Portable 1TB 2.5 Inch USB 3.0" loading="lazy" width="114" height="200">
+<span class="block-workstation-item-card-tag">HDD Extern</span></div>
+  <div class="block-workstation-item-card-text">
+    <h3 class="block-workstation-item-card-title">1x HDD Extern Seagate Expansion Portable 1TB 2.5 Inch USB 3.0</h3>
+    <div class="block-workstation-item-card-hover"><dl class="block-workstation-item-card-specs"><div class="block-workstation-item-card-spec"><dt>Capacity</dt><dd>1 TB</dd></div><div class="block-workstation-item-card-spec"><dt>Interface</dt><dd>USB 3.0</dd></div></dl></div>
+  </div>
+</div>
+</li></ul></div><div class="column" data-transition="fade slide-bottom" data-transition-duration="700" data-transition-delay="150" data-transition-distance="30px" data-transition-auto="true"><div class="block-slider-images utility-slider" data-utility-slider data-slider-arrows="true" data-slider-counter="true" data-slider-dots="false">
+  <div class="utility-slider-viewport block-slider-images-viewport" tabindex="0" aria-label="Personal Workstation Build 1 - images">
+    <ul class="utility-slider-track"><li class="utility-slider-slide block-slider-images-slide" data-slide-index="0" data-popup="true" data-popup-group="block-slider-images-09da45dc-18"><img class="block-slider-images-img" src="../../src/content/img/workstation/pc-01/pc_setup_1.webp" alt="Personal Workstation Build 1" width="1008" height="1000">
+</li>
+<li class="utility-slider-slide block-slider-images-slide" data-slide-index="1" data-popup="true" data-popup-group="block-slider-images-09da45dc-18"><img class="block-slider-images-img" src="../../src/content/img/workstation/pc-01/pc_setup_2.webp" alt="Personal Workstation Build 1" loading="lazy" width="1216" height="1000">
+</li>
+<li class="utility-slider-slide block-slider-images-slide" data-slide-index="2" data-popup="true" data-popup-group="block-slider-images-09da45dc-18"><img class="block-slider-images-img" src="../../src/content/img/workstation/pc-01/pc_setup_3.webp" alt="Personal Workstation Build 1" loading="lazy" width="1207" height="1000">
+</li>
+<li class="utility-slider-slide block-slider-images-slide" data-slide-index="3" data-popup="true" data-popup-group="block-slider-images-09da45dc-18"><img class="block-slider-images-img" src="../../src/content/img/workstation/pc-01/pc_setup_4.webp" alt="Personal Workstation Build 1" loading="lazy" width="1017" height="1000">
+</li>
+</ul>
+  </div>
+</div>
+<ul class="icon-list"><li class="icon-list-item"><svg type="fill" viewBox="0 0 320 512" class="icon-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="icon-list-text">Headset wireless HyperX Cloud Stinger Core 7.1</span></li><li class="icon-list-item"><svg type="fill" viewBox="0 0 320 512" class="icon-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="icon-list-text">Mouse LOGITECH G203 LIGHTSYNC RGB, 8.000 dpi</span></li><li class="icon-list-item"><svg type="fill" viewBox="0 0 320 512" class="icon-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="icon-list-text">Mechanical Keyboard LOGITECH G512 GX Red Linear</span></li><li class="icon-list-item"><svg type="fill" viewBox="0 0 320 512" class="icon-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="icon-list-text">Mouse Pad GENESIS Carbon 700 Maxi Cordura</span></li><li class="icon-list-item"><svg type="fill" viewBox="0 0 320 512" class="icon-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="icon-list-text">Speakers Trust Arys Compact RGB 2.0 Set</span></li><li class="icon-list-item"><svg type="fill" viewBox="0 0 320 512" class="icon-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="icon-list-text">Monitor IPS SAMSUNG Odyssey G5, 27 Inch, WQHD, 165Hz</span></li><li class="icon-list-item"><svg type="fill" viewBox="0 0 320 512" class="icon-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="icon-list-text">Monitor LED ASUS PB277Q 27 Inch, WQHD, 75Hz</span></li><li class="icon-list-item"><svg type="fill" viewBox="0 0 320 512" class="icon-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="icon-list-text">ORICO USB C HUB 3.0 Desktop</span></li><li class="icon-list-item"><svg type="fill" viewBox="0 0 320 512" class="icon-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="icon-list-text">2x HDD Extern Seagate Expansion Portable 1TB 2.5 Inch USB 3.0</span></li><li class="icon-list-item"><svg type="fill" viewBox="0 0 320 512" class="icon-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="icon-list-text">1x HDD Extern Seagate Expansion Portable 1TB 2.5 Inch USB 3.0</span></li></ul></div>
+</div>
+
+</div>
+<div data-transition="fade slide-bottom" data-transition-duration="700" data-transition-distance="30px" data-transition-auto="true" class="video-listing">
+  <div class="video-listing-item"><div class="video-wrapper"><div class="video-container paused" data-volume-level="high" style="--dm-color-primary:#2662c1;">
+  <div class="thumbnail" style="background-image: url('../../src/content/img/thumbnails/denismarginas_desktop_setup_irl.webp')"></div>
+  <div class="show-play" style="display:flex;">
+    <svg type="fill" class="play-icon" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M8,5.14V19.14L19,12.14L8,5.14Z" />
+    </svg>
+  </div>
+  <div class="show-pause" style="display:none;">
+    <svg type="fill" class="pause-icon" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M14,19H18V5H14M6,19H10V5H6V19Z" />
+    </svg>
+  </div>
+  <div class="video-controls-container">
+    <div class="timeline-container">
+      <div class="timeline">
+        <div class="thumb-indicator"></div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="play-pause-btn">
+        <svg type="fill" class="play-icon" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M8,5.14V19.14L19,12.14L8,5.14Z" />
+        </svg>
+        <svg type="fill" class="pause-icon" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M14,19H18V5H14M6,19H10V5H6V19Z" />
+        </svg>
+      </button>
+      <div class="volume-container">
+        <button class="mute-btn">
+          <svg type="fill" class="volume-high-icon" viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z" />
+          </svg>
+          <svg type="fill" class="volume-low-icon" viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="M5,9V15H9L14,20V4L9,9M18.5,12C18.5,10.23 17.5,8.71 16,7.97V16C17.5,15.29 18.5,13.76 18.5,12Z" />
+          </svg>
+          <svg type="fill" class="volume-muted-icon" viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="M12,4L9.91,6.09L12,8.18M4.27,3L3,4.27L7.73,9H3V15H7L12,20V13.27L16.25,17.53C15.58,18.04 14.83,18.46 14,18.7V20.77C15.38,20.45 16.63,19.82 17.68,18.96L19.73,21L21,19.73L12,10.73M19,12C19,12.94 18.8,13.82 18.46,14.64L19.97,16.15C20.62,14.91 21,13.5 21,12C21,7.72 18,4.14 14,3.23V5.29C16.89,6.15 19,8.83 19,12M16.5,12C16.5,10.23 15.5,8.71 14,7.97V10.18L16.45,12.63C16.5,12.43 16.5,12.21 16.5,12Z" />
+          </svg>
+        </button>
+        <input class="volume-slider progress" type="range" min="0" max="1" step="any" value="0.5">
+      </div>
+      <div class="duration-container">
+        <div class="current-time">0:00</div> / <div class="total-time"></div>
+      </div>
+      <button class="speed-btn wide-btn">1x</button>
+      <button class="full-screen-btn">
+        <svg type="fill" class="open" viewBox="0 0 24 24">
+          <path fill="currentColor"
+            d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z" />
+        </svg>
+        <svg type="fill" class="close" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <video src="../../src/content/vid/projects/denismarginas-media/personal-workstation/denismarginas_desktop_setup_irl.webm"></video>
+</div></div><div class="video-text"><h3>Desktop Setup | IRL</h3><time class="video-date" datetime="2025-10-30">Oct 30, 2025</time><div class="text-collapse video-description" data-text-collapse>
+  <div class="text-collapse-short">PC#1 Configuration:Computer Case AQIRYS Antares ARGB<br />
+Motherboard ASUS TUF GAMING B650-PLUS AM5<br />
+RAM Kingston FURY Beast 32GB DDR5 5200MHz CL40 Dual Channel<br />
+CPU AMD Ryzen™ 5 7600X 38MB 4.7/5.3GHz Boost<br />
+Cooler ARCTIC Freezer 34 eSports DUO Grey<br />
+GPU GIGABYTE GeForce RTX 3070 OC 8GB GDDR6 256-bit<br />
+SSD...</div>
+  <div class="text-collapse-full" hidden>PC#1 Configuration:<ul><li>Computer Case AQIRYS Antares ARGB</li><li>Motherboard ASUS TUF GAMING B650-PLUS AM5</li><li>RAM Kingston FURY Beast 32GB DDR5 5200MHz CL40 Dual Channel</li><li>CPU AMD Ryzen™ 5 7600X 38MB 4.7/5.3GHz Boost</li><li>Cooler ARCTIC Freezer 34 eSports DUO Grey</li><li>GPU GIGABYTE GeForce RTX 3070 OC 8GB GDDR6 256-bit</li><li>SSD GIGABYTE 480GB SATA-III 2.5 inch</li><li>SSD Kingston NV2 1TB PCI Express 4.0 x4 M.2 2280</li><li>PSU GIGABYTE P850GM 80+ Gold 850W</li></ul><br>PC#1 Accessories:<ul><li>Headset wireless HyperX Cloud Stinger Core 7.1</li><li>Mouse Pad GENESIS Carbon 700 Maxi Cordura</li><li>Mouse LOGITECH G203 LIGHTSYNC RGB, 8.000 dpi</li><li>Mechanical Keyboard LOGITECH G512 GX Red Linear</li><li>Speakers Trust Arys Compact RGB 2.0 Set</li><li>Monitor IPS SAMSUNG Odyssey G5, 27", WQHD, 165Hz</li></ul><br>Date: April, 2023<br><br>Songs: LXST CXNTURY - MIRAX<br><br>Category: Cinematic Edit IRL<br>Project Details: 1920x1080p 29.970 FPS<br>Software(s): Sony Vegas Pro 20, Photopea, Topaz Video Enhance AI<br>Plugin(s): BCC, Sapphire<br>Scaled up: The video was scaled up from HD to 4k with Topaz Video Enhance AI.<br>Tags: IRL Edit, Car Edit<br><br>Recording Device: Samsung A52s<br>Main camera: 64 MP, f/1.8, 26mm (wide), 1/1.7", 12 MP f/2.2, (ultrawide), 5 MP f/2.4,<br>Recorded in 1080p@30fps<br><br>Render PC Summary Specs:<br>CPU: AMD Ryzen™ 5 7600X, 38MB, 4.7/5.3GHz Boost<br>GPU: GIGABYTE GeForce RTX 3070 GAMING OC LHR 8GB GDDR6 256-bit<br>RAM: Kingston FURY Beast 32GB 5200MHz CL40 Dual Channel Kit<br><br>Video Timeline:<ul><li>00:00 - 00:06 - Intro</li><li>00:06 - 00:14 - Setup Info</li><li>00:14 - 00:41 - Showcase Peripherals and Accessories</li><li>00:41 - 01:05 - Showcase PC Components</li><li>01:05 - 01:15 - Outro</li></ul></div>
+  <button type="button" class="text-collapse-toggle btn-soft" aria-expanded="false" data-text-collapse-toggle data-label-more="Show More" data-label-less="Show Less"><svg type="fill" viewBox="0 0 512 512" class="text-collapse-toggle-icon"> <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/> </svg><span class="text-collapse-label">Show More</span></button>
+</div>
+<div class="content-wrapper"><a class="btn btn-primary" href="https://www.youtube.com/watch?v=zE0KW6r0mV0">
+  <svg type="fill" width="44" height="32" viewBox="0 0 44 32" class="btn-icon"> <path d="M41.8984 5.5C41.5 3.30078 39.6016 1.69922 37.3984 1.19922C34.1016 0.5 28 0 21.3984 0C14.8008 0 8.60156 0.5 5.30078 1.19922C3.10156 1.69922 1.19922 3.19922 0.800781 5.5C0.398438 8 0 11.5 0 16C0 20.5 0.398438 24 0.898438 26.5C1.30078 28.6992 3.19922 30.3008 5.39844 30.8008C8.89844 31.5 14.8984 32 21.5 32C28.1016 32 34.1016 31.5 37.6016 30.8008C39.8008 30.3008 41.6992 28.8008 42.1016 26.5C42.5 24 43 20.3984 43.1016 16C42.8984 11.5 42.3984 8 41.8984 5.5ZM16 23V9L28.1992 16L16 23Z" fill="#FF3D00"/> </svg><span class="btn-text">Watch on YouTube</span>
+</a>
+</div></div></div>
+</div>
+</div>
+
+  </container>
+</section>
+</main>
+    <footer>
+  <container>
+    <div class="footer-columns"><div class="footer-column"><div class="link-list">
+  <h3 class="link-list-title"><a class="link-list-title-link" href="../contact.html">Contact Data</a></h3>
+  <ul class="link-list-items">
+    <li><a class="link-list-link" href="../category/personal-resumes.html#cv-3-english"><svg type="fill" width="384" height="486" viewBox="0 0 384 486" class="link-list-icon"> <path fill-rule="evenodd" clip-rule="evenodd" d="M191.5 0.199991C193.7 0.0999908 199.1 0.699991 203.5 1.49999C208.7 2.39999 214.5 4.39999 220 7.09999C226.6 10.4 230.3 13.1 236.6 19.4C242.6 25.4 245.7 29.5 252.5 43.1L384 43V427H0V43H131.5L135.4 35.2C138.3 29.6 141.6 25.3 147.4 19.4C153.9 12.9 157.2 10.5 164 7.19999C168.7 4.99999 175 2.69999 178 2.09999C181 1.49999 184.4 0.799991 185.5 0.599991C186.6 0.399991 189.3 0.199991 191.5 0.199991ZM177.7 48.8C176.1 50.3 174 53.2 172.9 55.3C171.8 57.5 171 61.1 171 64C171 66.8 171.7 70.7 172.6 72.8C173.4 74.8 175.1 77.6 176.3 78.8C177.5 80.1 180.3 82.1 182.5 83.3C185.1 84.7 188.4 85.4 192 85.4C196 85.4 198.7 84.8 202 83C204.4 81.6 207.8 78.5 209.5 76.2C211.9 72.7 212.6 70.5 212.9 65.7C213.2 60.9 212.8 58.6 211.2 55.5C210.1 53.3 207.9 50.3 206.3 48.8C204.8 47.3 201.8 45.4 199.7 44.6C197.7 43.7 194.1 43 191.7 43C189.4 43.1 185.9 43.8 184 44.6C182.1 45.4 179.2 47.3 177.7 48.8ZM171 155C168.5 156.3 164.2 159.6 161.5 162.4C158.7 165.2 155.2 170.1 153.7 173.2C152.2 176.4 150.5 181.8 149.9 185.2C149.1 189.8 149.1 193.3 149.9 198.5C150.6 202.3 152.4 208.2 154 211.5C155.6 214.8 159 219.7 161.7 222.4C164.3 225.1 169.2 228.6 172.5 230.1C175.8 231.7 181.7 233.6 185.5 234.2C190.9 235.1 194 235.1 199.2 234.2C203 233.5 208.5 231.8 211.6 230.2C214.7 228.7 219.5 225.2 222.2 222.5C224.9 219.7 228.5 214.8 230 211.5C231.6 208.2 233.4 202.6 234 199C234.8 194.3 234.8 190.6 234.1 185.7C233.5 182 231.9 176.6 230.5 173.7C229.1 170.9 225.9 166.1 223.3 163.1C219.9 159.3 216.3 156.7 211 154.1C204.2 150.8 202.8 150.5 193.5 150.3C187.3 150.1 182 150.5 179.5 151.3C177.3 152.1 173.5 153.7 171 155ZM160.5 259.6C156.1 260.5 149.3 262.4 145.5 263.7C141.7 265.1 135.6 267.7 132 269.6C128.4 271.4 122.8 275.4 119.5 278.3C116.2 281.3 112.2 286.1 110.5 289.1C107.7 294.2 107.5 295.2 107.3 307.3L107 320H277C276.5 295.2 276.3 294.2 273.5 289.1C271.8 286.2 268 281.4 265 278.6C261.9 275.8 256.3 271.8 252.5 269.8C248.6 267.8 241.4 264.8 236.5 263.2C231.6 261.5 223.2 259.5 218 258.6C212.8 257.7 203.1 256.8 196.5 256.6C189.9 256.3 180.9 256.5 176.5 257C172.1 257.5 164.9 258.7 160.5 259.6Z" fill="var(--dm-color-white)"/> </svg><span class="link-list-text">CV English</span></a></li><li><a class="link-list-link" href="../category/personal-resumes.html#cv-3-romanian"><svg type="fill" width="384" height="486" viewBox="0 0 384 486" class="link-list-icon"> <path fill-rule="evenodd" clip-rule="evenodd" d="M191.5 0.199991C193.7 0.0999908 199.1 0.699991 203.5 1.49999C208.7 2.39999 214.5 4.39999 220 7.09999C226.6 10.4 230.3 13.1 236.6 19.4C242.6 25.4 245.7 29.5 252.5 43.1L384 43V427H0V43H131.5L135.4 35.2C138.3 29.6 141.6 25.3 147.4 19.4C153.9 12.9 157.2 10.5 164 7.19999C168.7 4.99999 175 2.69999 178 2.09999C181 1.49999 184.4 0.799991 185.5 0.599991C186.6 0.399991 189.3 0.199991 191.5 0.199991ZM177.7 48.8C176.1 50.3 174 53.2 172.9 55.3C171.8 57.5 171 61.1 171 64C171 66.8 171.7 70.7 172.6 72.8C173.4 74.8 175.1 77.6 176.3 78.8C177.5 80.1 180.3 82.1 182.5 83.3C185.1 84.7 188.4 85.4 192 85.4C196 85.4 198.7 84.8 202 83C204.4 81.6 207.8 78.5 209.5 76.2C211.9 72.7 212.6 70.5 212.9 65.7C213.2 60.9 212.8 58.6 211.2 55.5C210.1 53.3 207.9 50.3 206.3 48.8C204.8 47.3 201.8 45.4 199.7 44.6C197.7 43.7 194.1 43 191.7 43C189.4 43.1 185.9 43.8 184 44.6C182.1 45.4 179.2 47.3 177.7 48.8ZM171 155C168.5 156.3 164.2 159.6 161.5 162.4C158.7 165.2 155.2 170.1 153.7 173.2C152.2 176.4 150.5 181.8 149.9 185.2C149.1 189.8 149.1 193.3 149.9 198.5C150.6 202.3 152.4 208.2 154 211.5C155.6 214.8 159 219.7 161.7 222.4C164.3 225.1 169.2 228.6 172.5 230.1C175.8 231.7 181.7 233.6 185.5 234.2C190.9 235.1 194 235.1 199.2 234.2C203 233.5 208.5 231.8 211.6 230.2C214.7 228.7 219.5 225.2 222.2 222.5C224.9 219.7 228.5 214.8 230 211.5C231.6 208.2 233.4 202.6 234 199C234.8 194.3 234.8 190.6 234.1 185.7C233.5 182 231.9 176.6 230.5 173.7C229.1 170.9 225.9 166.1 223.3 163.1C219.9 159.3 216.3 156.7 211 154.1C204.2 150.8 202.8 150.5 193.5 150.3C187.3 150.1 182 150.5 179.5 151.3C177.3 152.1 173.5 153.7 171 155ZM160.5 259.6C156.1 260.5 149.3 262.4 145.5 263.7C141.7 265.1 135.6 267.7 132 269.6C128.4 271.4 122.8 275.4 119.5 278.3C116.2 281.3 112.2 286.1 110.5 289.1C107.7 294.2 107.5 295.2 107.3 307.3L107 320H277C276.5 295.2 276.3 294.2 273.5 289.1C271.8 286.2 268 281.4 265 278.6C261.9 275.8 256.3 271.8 252.5 269.8C248.6 267.8 241.4 264.8 236.5 263.2C231.6 261.5 223.2 259.5 218 258.6C212.8 257.7 203.1 256.8 196.5 256.6C189.9 256.3 180.9 256.5 176.5 257C172.1 257.5 164.9 258.7 160.5 259.6Z" fill="var(--dm-color-white)"/> </svg><span class="link-list-text">CV Romanian</span></a></li><li><a class="link-list-link" href="../contact.html#contact-form"><svg type="fill" width="84" height="84" viewBox="0 0 84 84" class="link-list-icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 1L1 0H83L84 1V83H83V84H1V83H0V1ZM34 28H70V16H34V28ZM12 24H28V20H12V24ZM34 52H70V40H34V52ZM12 48H28V44H12V48ZM34 72H42V64H34V72ZM48 70H72V66H48V70ZM0 83L1 84H0V83ZM84 84V83L83 84H84Z" fill="var(--dm-color-white)"/></svg><span class="link-list-text">Contact Form</span></a></li><li><a class="link-list-link" href="../privacy-policy.html"><svg type="fill" width="24" height="24" viewBox="0 0 24 24" class="link-list-icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 1L3 4.5V11C3 16.6 6.8 21.7 12 23C17.2 21.7 21 16.6 21 11V4.5L12 1ZM10.5 16.2L6.8 12.5L8.2 11.1L10.5 13.4L15.8 8.1L17.2 9.5L10.5 16.2Z"/></svg><span class="link-list-text">Privacy Policy</span></a></li>
+  </ul>
+</div>
+</div><div class="footer-column"><div class="link-list">
+  <h3 class="link-list-title"><a class="link-list-title-link" href="../category/projects.html">Project Types</a></h3>
+  <ul class="link-list-items">
+    <li><a class="link-list-link" href="../category/web-development-projects.html"><svg type="fill" viewBox="0 0 320 512" class="link-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="link-list-text">Web Projects</span></a></li><li><a class="link-list-link" href="../category/visual-media-projects.html"><svg type="fill" viewBox="0 0 320 512" class="link-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="link-list-text">Media Projects</span></a></li><li><a class="link-list-link" href="../category/personal-and-custom-projects.html"><svg type="fill" viewBox="0 0 320 512" class="link-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="link-list-text">Personal Projects</span></a></li>
+  </ul>
+</div>
+</div><div class="footer-column"><div class="link-list">
+  <h3 class="link-list-title"><a class="link-list-title-link" href="../about.html">About</a></h3>
+  <ul class="link-list-items">
+    <li><a class="link-list-link" href="../about.html"><svg type="fill" viewBox="0 0 320 512" class="link-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="link-list-text">About Me</span></a></li><li><a class="link-list-link" href="../experience.html"><svg type="fill" viewBox="0 0 320 512" class="link-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="link-list-text">Personal Experience</span></a></li><li><a class="link-list-link" href="../category/employee-experience.html"><svg type="fill" viewBox="0 0 320 512" class="link-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="link-list-text">Employee Experience</span></a></li><li><a class="link-list-link" href="../category/education-experience.html"><svg type="fill" viewBox="0 0 320 512" class="link-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="link-list-text">Education Experience</span></a></li>
+  </ul>
+</div>
+</div><div class="footer-column footer-column-brand"><a href="../home.html" class="logo logo-shape-circle" data-variant="footer"><div class="logo-container-img"><img class="logo-img" src="../../src/content/img/brand/logo/logo.webp" alt="Denis Marginas Logo" width="50" height="50">
+</div><div class="site-title"><span class="primary">Denis</span><span class="secondary">Marginas</span></div></a>
+<div data-transition="fade slide-bottom" data-transition-duration="700" data-transition-distance="30px" data-transition-auto="true" class="social-links" data-variant="plain">
+  <h3 class="social-links-title">Socials</h3>
+  <ul class="social-links-visual"><li><a class="social-links-visual-link" href="https://www.youtube.com/channel/UCZGb7hnkyawMgnSO9T-rnnQ" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube"><svg type="fill" width="44" height="32" viewBox="0 0 44 32" class="social-links-icon"> <path d="M41.8984 5.5C41.5 3.30078 39.6016 1.69922 37.3984 1.19922C34.1016 0.5 28 0 21.3984 0C14.8008 0 8.60156 0.5 5.30078 1.19922C3.10156 1.69922 1.19922 3.19922 0.800781 5.5C0.398438 8 0 11.5 0 16C0 20.5 0.398438 24 0.898438 26.5C1.30078 28.6992 3.19922 30.3008 5.39844 30.8008C8.89844 31.5 14.8984 32 21.5 32C28.1016 32 34.1016 31.5 37.6016 30.8008C39.8008 30.3008 41.6992 28.8008 42.1016 26.5C42.5 24 43 20.3984 43.1016 16C42.8984 11.5 42.3984 8 41.8984 5.5ZM16 23V9L28.1992 16L16 23Z" fill="#FF3D00"/> </svg></a></li><li><a class="social-links-visual-link" href="https://www.facebook.com/denismarginas09" target="_blank" rel="noopener" title="Facebook" aria-label="Facebook"><svg type="fill" width="22" height="42" viewBox="0 0 22 42" class="social-links-icon"><path d="M16 -1.10493e-06C10.477 -1.10493e-06 6 4.477 6 10V15H0V23H6V42H14V23H21L22 15H14V11C14 8.791 15.791 7 18 7H22V0.321999C20.091 0.124999 17.921 -0.00400111 16 -1.10493e-06Z" fill="#0573E7"/> </svg></a></li><li><a class="social-links-visual-link" href="https://www.linkedin.com/in/denismarginas09/" target="_blank" rel="noopener" title="Linkedin" aria-label="Linkedin"><svg type="fill" width="40" height="38" viewBox="0 0 40 38" class="social-links-icon"> <path d="M4.421 9H4.473C7.263 9 9 7 9 4.5C8.948 1.945 7.263 0 4.526 0C1.789 0 0 1.945 0 4.5C0 7 1.736 9 4.421 9ZM0 12H9V38H0V12ZM40 21.5C40 16.253 35.747 12 30.5 12C27.447 12 24.738 13.446 23 15.684V12H14V38H23V23C23 20.791 24.791 19 27 19C29.209 19 31 20.791 31 23V38H40C40 38 40 22.955 40 21.5Z" fill="#0288D1"/> </svg></a></li><li><a class="social-links-visual-link" href="https://github.com/denismarginas" target="_blank" rel="noopener" title="Github" aria-label="Github"><svg type="fill" width="40" height="39" viewBox="0 0 40 39" class="social-links-icon"> <path d="M17.8 0.200015C8.60002 1.20002 1.20002 8.60002 0.200018 17.6C-0.799982 27 4.60002 35.4 12.8 38.6C13.4 38.8 14 38.4 14 37.6V34.4C14 34.4 13.2 34.6 12.2 34.6C9.40002 34.6 8.20002 32.2 8.00002 30.8C7.80002 30 7.40002 29.4 6.80002 28.8C6.20002 28.6 6.00002 28.6 6.00002 28.4C6.00002 28 6.60002 28 6.80002 28C8.00002 28 9.00002 29.4 9.40002 30C10.4 31.6 11.6 32 12.2 32C13 32 13.6 31.8 14 31.6C14.2 30.2 14.8 28.8 16 28C11.4 27 8.00002 24.4 8.00002 20C8.00002 17.8 9.00002 15.6 10.4 14C10.2 13.6 10 12.6 10 11.2C10 10.4 10 9.20002 10.6 8.00002C10.6 8.00002 13.4 8.00002 16.2 10.6C17.2 10.2 18.6 10 20 10C21.4 10 22.8 10.2 24 10.6C26.6 8.00002 29.6 8.00002 29.6 8.00002C30 9.20002 30 10.4 30 11.2C30 12.8 29.8 13.6 29.6 14C31 15.6 32 17.6 32 20C32 24.4 28.6 27 24 28C25.2 29 26 30.8 26 32.6V37.8C26 38.4 26.6 39 27.4 38.8C34.8 35.8 40 28.6 40 20.2C40 8.20002 29.8 -1.19998 17.8 0.200015Z" fill="var(--dm-color-white)"/> </svg></a></li></ul>
+  
+</div>
+</div></div>
+    <div class="footer-bottom"><div class="website-info">
+  <div class="website-info-start"><span class="cookie-settings"><button class="cookie-settings-button" type="button" data-cookie-settings aria-label="Cookie settings" title="Cookie settings"><svg type="stroke" width="24" height="24" viewBox="0 0 24 24" fill="none" class="cookie-settings-icon"><path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1 1.55V21a2 2 0 1 1-4 0v-.09a1.7 1.7 0 0 0-1-1.55 1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.7 1.7 0 0 0 .34-1.87 1.7 1.7 0 0 0-1.55-1H3a2 2 0 1 1 0-4h.09a1.7 1.7 0 0 0 1.55-1 1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.7 1.7 0 0 0 1.87.34 1.7 1.7 0 0 0 1-1.55V3a2 2 0 1 1 4 0v.09a1.7 1.7 0 0 0 1 1.55 1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.7 1.7 0 0 0-.34 1.87 1.7 1.7 0 0 0 1.55 1H21a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-1.55 1z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button></span>
+<ul class="website-info-dates"><li><span class="website-info-label">Online since:</span> <time class="website-info-date" datetime="2023-06-04">Jun 4, 2023</time></li><li><span class="website-info-label">Last updated:</span> <time class="website-info-date" datetime="2026-11-22">Nov 22, 2026</time></li></ul></div>
+  <p class="website-info-copyright">© All rights reserved, <a class="website-info-copyright-link" href="../home.html">Denis Marginas</a></p>
+</div>
+</div>
+  </container>
+</footer>
+
+    <cookie-notice class="cookie-notice" data-cookie-notice data-cookie-notice-version="1" data-cookie-notice-days="365" data-cookie-notice-defaults="{&quot;analytics&quot;:true}" role="region" aria-label="Cookie notice" hidden>
+  <button class="cookie-notice-close" type="button" aria-label="Close" title="Close" data-cookie-notice-close><svg type="stroke" width="14" height="14" viewBox="0 0 14 14"  class="cookie-notice-icon"><path d="M13 1L1 13M1 1L13 13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  <div class="cookie-notice-main">
+    <p class="cookie-notice-text">By continuing to use this site, you consent to cookies that enhance your experience and analyze traffic. For more details, please read our <a class="cookie-notice-link" href="../privacy-policy.html">Privacy Policy</a>.</p>
+    <div class="cookie-notice-actions">
+      <button class="btn btn-primary-small py-xxs cookie-notice-settings-toggle" type="button" aria-expanded="false" aria-controls="cookie-notice-settings" aria-label="Cookie settings" title="Cookie settings" data-cookie-notice-toggle>
+        <svg type="stroke" width="24" height="24" viewBox="0 0 24 24" fill="none" class="cookie-notice-icon"><path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1 1.55V21a2 2 0 1 1-4 0v-.09a1.7 1.7 0 0 0-1-1.55 1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.7 1.7 0 0 0 .34-1.87 1.7 1.7 0 0 0-1.55-1H3a2 2 0 1 1 0-4h.09a1.7 1.7 0 0 0 1.55-1 1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.7 1.7 0 0 0 1.87.34 1.7 1.7 0 0 0 1-1.55V3a2 2 0 1 1 4 0v.09a1.7 1.7 0 0 0 1 1.55 1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.7 1.7 0 0 0-.34 1.87 1.7 1.7 0 0 0 1.55 1H21a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-1.55 1z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="btn btn-primary-small py-xxs cookie-notice-accept" type="button" data-cookie-notice-accept>
+        <span class="btn-text">Accept</span>
+      </button>
+    </div>
+  </div>
+  <div class="cookie-notice-settings" id="cookie-notice-settings" data-cookie-notice-panel hidden>
+    <p class="cookie-notice-settings-title">Cookie settings</p>
+    <div class="cookie-notice-options"><div class="cookie-notice-option is-locked"><input class="cookie-notice-switch" type="checkbox" id="cookie-notice-necessary" checked disabled aria-describedby="cookie-notice-necessary-text"><label class="cookie-notice-option-copy" for="cookie-notice-necessary"><span class="cookie-notice-option-title">Necessary</span><span class="cookie-notice-option-text" id="cookie-notice-necessary-text">Remembers your cookie choice and the light / dark mode. Always on.</span></label></div><div class="cookie-notice-option"><input class="cookie-notice-switch" type="checkbox" id="cookie-notice-analytics" data-cookie-notice-category="analytics" aria-describedby="cookie-notice-analytics-text"><label class="cookie-notice-option-copy" for="cookie-notice-analytics"><span class="cookie-notice-option-title">Analytics</span><span class="cookie-notice-option-text" id="cookie-notice-analytics-text">Google Analytics: anonymous statistics about the pages you visit, used to improve the site.</span></label></div></div>
+    <div class="cookie-notice-settings-actions">
+      <button class="btn btn-primary-small py-xxs" type="button" data-cookie-notice-save>
+        <span class="btn-text">Save preferences</span>
+      </button>
+    </div>
+  </div>
+</cookie-notice>
+
+    
+</body>
+
+</html>

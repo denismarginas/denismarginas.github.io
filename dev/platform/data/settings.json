@@ -1,0 +1,7 @@
+{
+    "listing": {
+        "show_all": false,
+        "limit_max": 20,
+        "mode": "pagination"
+    }
+}

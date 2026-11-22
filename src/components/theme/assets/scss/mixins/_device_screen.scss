@@ -1,0 +1,72 @@
+@mixin device-screen($glare: null) {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 100%;
+    object-fit: unset;
+    height: auto;
+    mask-size: 100% 100%;
+  }
+
+  &.top img {
+    align-self: flex-start;
+  }
+
+  &.center img {
+    align-self: center;
+  }
+
+  &.bg-white {
+    background-color: #fff;
+  }
+
+  &.bg-primary {
+    background-color: var(--post-color-primary);
+  }
+
+  &.fade-under {
+    img {
+      mask-image: linear-gradient(
+        to bottom,
+        black 0%,
+        black 40%,
+        transparent 80%,
+        transparent 100%
+      );
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    pointer-events: none;
+    height: 100%;
+    top: 70%;
+    width: 200%;
+    left: -50%;
+    filter: blur(15px);
+    background-color: var(--post-color-primary);
+  }
+
+  @if $glare != null {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: var(--dm-color-white);
+      top: -50%;
+      left: 50%;
+      z-index: 2;
+      transform: rotate($glare);
+      opacity: 0.3;
+      filter: blur(10px);
+    }
+  }
+}

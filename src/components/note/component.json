@@ -1,0 +1,21 @@
+{
+  "name": "note",
+  "title": "Note",
+  "summary": "Note box with info / success / warning / error status.",
+  "description": "Renders a note with optional status (info, success, warning, error).",
+  "assets": {
+    "php": [
+      "assets/php/note.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": []
+}

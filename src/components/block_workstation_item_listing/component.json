@@ -1,0 +1,29 @@
+{
+  "name": "block_workstation_item_listing",
+  "title": "Block Workstation Item Listing",
+  "summary": "Workstation parts as a card grid or plain list.",
+  "description": "Parts of a workstation item from data.<source> (configuration / accessories): a grid of block_workstation_item_card (3 columns on desktop, 2 on tablet, 1 on mobile), or with \"display\": \"list\" the part names as a plain icon_list (chevron-right by default).",
+  "post_types": [
+    "workstation"
+  ],
+  "assets": {
+    "php": [
+      "assets/php/block_workstation_item_listing.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "block_workstation_item_card",
+    "icon_list",
+    "svg",
+    "theme"
+  ]
+}

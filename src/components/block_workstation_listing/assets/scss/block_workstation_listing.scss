@@ -1,0 +1,13 @@
+@import "theme";
+
+.block-workstation-listing {
+  gap: var(--dm-spacing-xl) var(--dm-spacing-lg);
+
+  > li {
+    min-width: 0;
+  }
+
+  @media (max-width: $dm-screen-md) {
+    gap: var(--dm-spacing-lg) var(--dm-spacing-sm);
+  }
+}

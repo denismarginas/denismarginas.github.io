@@ -1,0 +1,73 @@
+@import 'utilities/maps';
+
+@each $suffix, $property in (
+  '': padding,
+  't': padding-top,
+  'b': padding-bottom,
+  's': padding-inline-start,
+  'e': padding-inline-end,
+  'x': padding-inline,
+  'y': padding-block,
+) {
+  @each $name, $value in $dm-spacers {
+    @if $name != 'auto' {
+      .p#{$suffix}-#{$name} {
+        #{$property}: $value;
+      }
+    }
+  }
+}
+
+@each $suffix, $property in (
+  '': margin,
+  't': margin-top,
+  'b': margin-bottom,
+  's': margin-inline-start,
+  'e': margin-inline-end,
+  'x': margin-inline,
+  'y': margin-block,
+) {
+  @each $name, $value in $dm-spacers {
+    .m#{$suffix}-#{$name} {
+      #{$property}: $value;
+    }
+  }
+}
+
+@each $bp, $width in $dm-breakpoints {
+  @media (min-width: $width) {
+    @each $suffix, $property in (
+      '': padding,
+      't': padding-top,
+      'b': padding-bottom,
+      's': padding-inline-start,
+      'e': padding-inline-end,
+      'x': padding-inline,
+      'y': padding-block,
+    ) {
+      @each $name, $value in $dm-spacers {
+        @if $name != 'auto' {
+          .p#{$suffix}-#{$bp}-#{$name} {
+            #{$property}: $value;
+          }
+        }
+      }
+    }
+
+    @each $suffix, $property in (
+      '': margin,
+      't': margin-top,
+      'b': margin-bottom,
+      's': margin-inline-start,
+      'e': margin-inline-end,
+      'x': margin-inline,
+      'y': margin-block,
+    ) {
+      @each $name, $value in $dm-spacers {
+        .m#{$suffix}-#{$bp}-#{$name} {
+          #{$property}: $value;
+        }
+      }
+    }
+  }
+}

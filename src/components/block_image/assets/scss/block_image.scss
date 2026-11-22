@@ -1,0 +1,88 @@
+@import "theme";
+
+.block-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--dm-spacing-xs);
+  margin: 0;
+  padding: var(--dm-spacing-sm);
+  box-sizing: border-box;
+  cursor: var(--cursor-pointer, pointer);
+
+  > img.block-image-img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    border-radius: var(--dm-radius-sm);
+    transition: var(--dm-transition);
+  }
+
+  &:hover > img.block-image-img {
+    opacity: 0.9;
+  }
+
+  > .block-image-caption {
+    font-size: var(--dm-font-size-sm);
+    text-align: center;
+    opacity: 0.8;
+  }
+}
+
+.block-image.block-image-plain {
+  padding: 0;
+
+  > img.block-image-img {
+    border-radius: var(--dm-radius-md);
+  }
+}
+
+.block-image.block-image-sized {
+  width: var(--block-image-width, auto);
+  max-width: 100%;
+  height: var(--block-image-height, auto);
+
+  @media (max-width: $dm-screen-lg) {
+    height: var(--block-image-height-lg, var(--block-image-height, auto));
+  }
+  @media (max-width: $dm-screen-md) {
+    height: var(--block-image-height-md, var(--block-image-height-lg, var(--block-image-height, auto)));
+  }
+  @media (max-width: $dm-screen-sm) {
+    height: var(--block-image-height-sm, var(--block-image-height-md, var(--block-image-height-lg, var(--block-image-height, auto))));
+  }
+  @media (max-width: $dm-screen-xs) {
+    height: var(--block-image-height-xs, var(--block-image-height-sm, var(--block-image-height-md, var(--block-image-height-lg, var(--block-image-height, auto)))));
+  }
+}
+
+.block-image.block-image-fill {
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+.block-image.block-image-cover > img.block-image-img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
+}
+
+.block-image.block-image-has-video {
+  position: relative;
+  isolation: isolate;
+
+  > .block-image-video {
+    inset: var(--dm-spacing-sm);
+    z-index: 1;
+    border-radius: var(--dm-radius-sm);
+  }
+
+  &.block-image-plain > .block-image-video {
+    inset: 0;
+    border-radius: var(--dm-radius-md);
+  }
+}

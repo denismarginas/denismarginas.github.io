@@ -1,0 +1,14 @@
+<div class="video-playlist" data-video-playlist>
+  <div class="video-playlist-player">
+    <div class="video-playlist-screen" data-video-screen>{{ player }}</div>
+    <div class="video-playlist-head">
+      <div class="video-playlist-head-text">
+        <h3 class="video-playlist-title title-tertiary" data-video-title>{{ title }}</h3>
+        <span class="video-playlist-meta text-label" data-video-meta>{{ meta }}</span>
+      </div>
+      <button type="button" class="btn-soft video-playlist-details" data-video-details-open{{ details_hidden }}>{{ details_icon }}<span>{{ details_text }}</span></button>
+    </div>
+  </div>
+  <ol class="video-playlist-list" data-video-list>{{ items }}</ol>
+  <div class="video-playlist-templates" hidden>{{ templates }}</div>
+</div>

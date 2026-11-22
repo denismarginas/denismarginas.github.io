@@ -1,0 +1,540 @@
+[
+    {
+        "_id": "experience_pia_soft_product",
+        "settings": {
+            "collection_type": "job",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#141414",
+                    "secondary": "#ffcc00",
+                    "canvas_primary": "#141414",
+                    "canvas_secondary": "#fff"
+                }
+            }
+        },
+        "data": {
+            "seo": {
+                "title": "Pia Soft Product",
+                "description": "Dezvoltator web full-stack și editor de fotografii și videoclipuri, specializat în crearea de site-uri de prezentare și magazine online folosind WordPress și PrestaShop.",
+                "slug": "experience-pia-soft-product"
+            },
+            "date": {
+                "start": "2019-10-16",
+                "end": "2022-11-18",
+                "publish": "2022-11-18"
+            },
+            "experience": {
+                "type": "Companie",
+                "location_types": [
+                    "De la distanță",
+                    "On-site",
+                    "Hibrid"
+                ],
+                "functions": [
+                    "Dezvoltator web full-stack",
+                    "Editor de fotografii și video"
+                ],
+                "work_time_types": [
+                    {
+                        "name": "full-time",
+                        "hours": "8h",
+                        "start": "2019-10-17",
+                        "end": "2021-12-07"
+                    },
+                    {
+                        "name": "part-time",
+                        "hours": "4h",
+                        "start": "2021-12-07",
+                        "end": "2022-11-18"
+                    }
+                ],
+                "heading": "Responsabilități",
+                "attributes": [
+                    "Am dezvoltat și întreținut aplicații web, am rezolvat probleme, am creat documentație, am administrat cPanel, phpMyAdmin, XAMPP, și am oferit servicii de găzduire prin intermediul Romarg.",
+                    "Expert în utilizarea TPL, PHP, SQL, JavaScript, jQuery, CSS și HTML pentru dezvoltarea și utilizarea aplicațiilor.",
+                    "Creați site-uri de prezentare și magazine online folosind WordPress și PrestaShop, cu accent pe optimizarea SEO.",
+                    "Creați conținut video și foto pentru scopuri promoționale, inclusiv bannere, logo-uri, reclame video, animații 2D/3D, folosind instrumente precum Sony Vegas, Adobe After Effects, Photopea și Xara Photo.",
+                    "Experiență în utilizarea sistemului de operare Windows și a suitei de aplicații Office."
+                ]
+            },
+            "media": {
+                "path": "projects",
+                "logo": {
+                    "img": "src/content/img/projects/piasoftproduct-presentation-website/logo/logo.webp",
+                    "bg": "dark"
+                }
+            },
+            "external_links": [
+                {
+                    "name": "website",
+                    "link": "https://www.piasoftproduct.com",
+                    "svg": "web"
+                },
+                {
+                    "name": "facebook",
+                    "link": "https://www.facebook.com/pia.pop.31/photos",
+                    "svg": "socials_facebook"
+                },
+                {
+                    "name": "instagram",
+                    "link": "https://www.instagram.com/piasoftproduct/",
+                    "svg": "socials_instagram"
+                }
+            ],
+            "taxonomy": {
+                "tag": [
+                    "front-end",
+                    "back-end",
+                    "photo",
+                    "video",
+                    "seo",
+                    "full-stack",
+                    "wordpress",
+                    "prestashop",
+                    "php"
+                ],
+                "category": [
+                    "Experience"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "experience_netex_romania",
+        "settings": {
+            "collection_type": "job",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#ed1c24",
+                    "secondary": "#fff",
+                    "canvas_primary": "#e1e1e2",
+                    "canvas_secondary": "#ed1c24"
+                }
+            }
+        },
+        "data": {
+            "seo": {
+                "title": "Netex Romania",
+                "description": "Dezvoltator front-end, responsabil cu traducerea design-urilor din Zeplin în pagini statice și cu menținerea site-urilor WordPress.",
+                "slug": "experience-netex-romania"
+            },
+            "date": {
+                "start": "2021-12-07",
+                "end": "2023-04-05",
+                "publish": "2023-04-05"
+            },
+            "experience": {
+                "type": "Companie",
+                "location_types": [
+                    "De la distanță"
+                ],
+                "functions": [
+                    "Dezvoltator Front-End"
+                ],
+                "work_time_types": [
+                    {
+                        "name": "full-time",
+                        "hours": "8h",
+                        "start": "2021-12-07",
+                        "end": "2023-04-05"
+                    }
+                ],
+                "heading": "Responsabilități",
+                "attributes": [
+                    "Am dezvoltat și întreținut site-uri WordPress, am oferit asistență tehnică, am creat documentație.",
+                    "Am dezvoltat diverse aplicații web, inclusiv sistem de e-mail pentru newsletter-e.",
+                    "Traducerea design-ului din Zeplin în pagini statice, folosind: Node.js, JavaScript, jQuery, Bootstrap, SASS, CSS și HTML, GitLab.",
+                    "Participați la conferințe în limba engleză și prezentați sarcinile finalizate prin intermediul Google Meet.",
+                    "Familiarizat cu comenzile și interfața sistemului Linux, precum și cu pachetul LibreOffice."
+                ]
+            },
+            "media": {
+                "path": "projects",
+                "logo": {
+                    "img": "src/content/img/projects/netexromania-web-maintenance/logo/logo.webp",
+                    "bg": "light"
+                }
+            },
+            "external_links": [
+                {
+                    "name": "website",
+                    "link": "https://www.netex.ro",
+                    "svg": "web"
+                },
+                {
+                    "name": "facebook",
+                    "link": "https://www.facebook.com/netex.ro",
+                    "svg": "socials_facebook"
+                },
+                {
+                    "name": "instagram",
+                    "link": "https://www.instagram.com/netexromania/",
+                    "svg": "socials_instagram"
+                },
+                {
+                    "name": "linkedin",
+                    "link": "https://www.linkedin.com/company/netexgroup/",
+                    "svg": "socials_linkedin"
+                },
+                {
+                    "name": "x",
+                    "link": "https://x.com/NetexConsulting",
+                    "svg": "socials_x"
+                }
+            ],
+            "taxonomy": {
+                "tag": [
+                    "front-end",
+                    "wordpress",
+                    "javascript",
+                    "sass"
+                ],
+                "category": [
+                    "Experience"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "experience_enlivy",
+        "settings": {
+            "collection_type": "job",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#141414",
+                    "secondary": "#33c67a",
+                    "canvas_primary": "#141414",
+                    "canvas_secondary": "#33c67a"
+                }
+            }
+        },
+        "data": {
+            "seo": {
+                "title": "Enlivy",
+                "description": "Dezvoltator WordPress junior, care creează module și pagini pentru un temă WordPress personalizată, folosind PhpStorm și GitHub.",
+                "slug": "experience-enlivy"
+            },
+            "date": {
+                "start": "2023-05-01",
+                "end": "2023-05-31",
+                "publish": "2023-05-31"
+            },
+            "experience": {
+                "type": "Companie",
+                "location_types": [
+                    "De la distanță"
+                ],
+                "functions": [
+                    "Dezvoltator WordPress junior"
+                ],
+                "work_time_types": [
+                    {
+                        "name": "full-time",
+                        "hours": "8h",
+                        "start": "2023-05-01",
+                        "end": "2023-05-31"
+                    }
+                ],
+                "heading": "Responsabilități",
+                "attributes": [
+                    "Am dezvoltat module și pagini pentru un temă WordPress personalizată, folosind PhpStorm și GitHub.",
+                    "Transformarea design-urilor create într-un proiect Figma în pagini web funcționale.",
+                    "Am utilizat Trello pentru gestionarea sarcinilor și Slack, împreună cu Zoom, pentru o comunicare eficientă în cadrul echipei.",
+                    "Am folosit Prepros 7 pentru a compila codul SCSS, facilitând astfel procesul de dezvoltare."
+                ]
+            },
+            "media": {
+                "path": "projects",
+                "logo": {
+                    "img": "src/content/img/projects/enlivy-media/logo/logo.webp",
+                    "bg": "dark"
+                }
+            },
+            "external_links": [
+                {
+                    "name": "website",
+                    "link": "https://enlivy.ro",
+                    "svg": "web"
+                },
+                {
+                    "name": "facebook",
+                    "link": "https://www.facebook.com/enlivy",
+                    "svg": "socials_facebook"
+                },
+                {
+                    "name": "linkedin",
+                    "link": "https://www.linkedin.com/company/enlivy/",
+                    "svg": "socials_linkedin"
+                }
+            ],
+            "taxonomy": {
+                "tag": [
+                    "wordpress",
+                    "figma",
+                    "php",
+                    "scss"
+                ],
+                "category": [
+                    "Experience"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "experience_yes_agency",
+        "settings": {
+            "collection_type": "job",
+            "render": false,
+            "appearance": {
+                "colors": {
+                    "primary": "#39393c",
+                    "secondary": "#fff",
+                    "canvas_primary": "#39393c",
+                    "canvas_secondary": "#fff"
+                }
+            }
+        },
+        "data": {
+            "seo": {
+                "title": "Yes Agency",
+                "description": "Dezvoltator web full-stack, specializat în crearea de teme WordPress personalizate, folosind Elementor și PHP.",
+                "slug": "experience-yes-agency"
+            },
+            "date": {
+                "start": "2023-07-31",
+                "end": "2023-08-04",
+                "publish": "2023-08-04"
+            },
+            "experience": {
+                "type": "Companie",
+                "location_types": [
+                    "On-site"
+                ],
+                "functions": [
+                    "Dezvoltator web full-stack"
+                ],
+                "work_time_types": [
+                    {
+                        "name": "full-time",
+                        "hours": "8h",
+                        "start": "2023-07-31",
+                        "end": "2023-08-04"
+                    }
+                ],
+                "heading": "Responsabilități",
+                "attributes": [
+                    "Dezvoltarea unui nou site web pentru această companie, folosind WordPress, crearea unui temă personalizată și Elementor, precum și PHP.",
+                    "Crearea unui design personalizat pentru acest site web, cu animații folosind JavaScript și CSS."
+                ]
+            },
+            "media": {
+                "path": "projects",
+                "logo": {
+                    "img": "src/content/img/projects/yesagency-media/logo/logo.webp",
+                    "bg": "light"
+                }
+            },
+            "external_links": [
+                {
+                    "name": "website",
+                    "link": "https://yesagency.ro/",
+                    "svg": "web"
+                },
+                {
+                    "name": "facebook",
+                    "link": "https://www.facebook.com/yesagency.ro",
+                    "svg": "socials_facebook"
+                },
+                {
+                    "name": "linkedin",
+                    "link": "https://www.linkedin.com/company/yesagency/",
+                    "svg": "socials_linkedin"
+                }
+            ],
+            "taxonomy": {
+                "tag": [
+                    "wordpress",
+                    "elementor",
+                    "full-stack"
+                ],
+                "category": [
+                    "Experience"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "experience_mentor_marketing_experts",
+        "settings": {
+            "collection_type": "job",
+            "render": true,
+            "appearance": {
+                "colors": {
+                    "primary": "#db6106",
+                    "secondary": "#fff",
+                    "canvas_primary": "#fff",
+                    "canvas_secondary": "#0d1166"
+                }
+            }
+        },
+        "data": {
+            "seo": {
+                "title": "Mentor Marketing Experts",
+                "description": "Dezvoltator WordPress și designer de pagini web, care construiește site-uri folosind Elementor și transformă design-urile create în Figma.",
+                "slug": "experience-mentor-marketing-experts"
+            },
+            "date": {
+                "start": "2024-01-26",
+                "end": "2026-03-31",
+                "publish": "2026-03-31"
+            },
+            "experience": {
+                "type": "Companie",
+                "location_types": [
+                    "De la distanță"
+                ],
+                "functions": [
+                    "Dezvoltator WordPress",
+                    "Designer de pagini web"
+                ],
+                "work_time_types": [
+                    {
+                        "name": "full-time",
+                        "hours": "8h",
+                        "start": "2024-01-26",
+                        "end": "2026-03-31"
+                    }
+                ],
+                "heading": "Responsabilități",
+                "attributes": [
+                    "Dezvoltarea de site-uri pe platforma WordPress, folosind Elementor și alte extensii/plugin-uri pentru Elementor.",
+                    "Am transformat design-urile create într-un proiect Figma în pagini web funcționale, folosind Elementor.",
+                    "Am utilizat Trello pentru gestionarea sarcinilor, împreună cu Zoom și Google Meets, pentru o comunicare eficientă în cadrul echipei."
+                ]
+            },
+            "media": {
+                "path": "projects",
+                "logo": {
+                    "img": "src/content/img/projects/mentormarketingexperts-landing-page/logo/logo-icon.webp",
+                    "bg": "light"
+                }
+            },
+            "external_links": [
+                {
+                    "name": "website",
+                    "link": "https://mentor-marketing.com/",
+                    "svg": "web"
+                },
+                {
+                    "name": "linkedin",
+                    "link": "https://www.linkedin.com/company/mentor-marketing-experts/",
+                    "svg": "socials_linkedin"
+                }
+            ],
+            "taxonomy": {
+                "tag": [
+                    "front-end",
+                    "back-end",
+                    "seo",
+                    "wordpress",
+                    "elementor",
+                    "php",
+                    "javascript"
+                ],
+                "category": [
+                    "Experience"
+                ]
+            }
+        }
+    },
+    {
+        "_id": "experience_gi_group",
+        "settings": {
+            "collection_type": "job",
+            "render": true,
+            "appearance": {
+                "layout": "wrapper-layout",
+                "colors": {
+                    "primary": "#015f87",
+                    "secondary": "#fff",
+                    "canvas_primary": "#fff",
+                    "canvas_secondary": "#636363"
+                }
+            }
+        },
+        "data": {
+            "seo": {
+                "title": "Gi Group",
+                "description": "Dezvoltator WordPress și designer de pagini web.",
+                "slug": "experience-gi-group"
+            },
+            "date": {
+                "start": "2026-04-01",
+                "end": "present",
+                "publish": "2026-04-01"
+            },
+            "experience": {
+                "type": "Companie",
+                "location_types": [
+                    "De la distanță"
+                ],
+                "functions": [
+                    "Dezvoltator WordPress",
+                    "Designer de pagini web"
+                ],
+                "work_time_types": [
+                    {
+                        "name": "full-time",
+                        "hours": "8h",
+                        "start": "2026-04-01",
+                        "end": "present"
+                    }
+                ],
+                "heading": "Responsabilități",
+                "attributes": [
+                    "Lucrez prin Gi Group pentru Mentor Marketing Experts, continuând același rol de dezvoltator WordPress și designer de pagini web.",
+                    "Dezvoltarea de site-uri pe platforma WordPress, folosind Elementor și alte extensii/plugin-uri pentru Elementor.",
+                    "Transform design-urile create într-un proiect Figma în pagini web funcționale, folosind Elementor.",
+                    "Utilizez Trello pentru gestionarea sarcinilor, împreună cu Zoom și Google Meets, pentru o comunicare eficientă în cadrul echipei."
+                ],
+                "working_for": {
+                    "label": "Lucrez pentru",
+                    "items": [
+                        "experience_mentor_marketing_experts"
+                    ]
+                }
+            },
+            "media": {
+                "path": "projects",
+                "logo": {
+                    "img": "src/content/img/projects/gigroup-media/logo/logo-icon.webp",
+                    "bg": "light"
+                }
+            },
+            "external_links": [
+                {
+                    "name": "website",
+                    "link": "https://ro.gigroup.com/",
+                    "svg": "web"
+                },
+                {
+                    "name": "linkedin",
+                    "link": "https://www.linkedin.com/company/gi-group/",
+                    "svg": "socials_linkedin"
+                }
+            ],
+            "taxonomy": {
+                "tag": [
+                    "wordpress",
+                    "web-design"
+                ],
+                "category": [
+                    "Experience"
+                ]
+            }
+        }
+    }
+]

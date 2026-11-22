@@ -1,0 +1,90 @@
+@import "../variables/_breakpoints";
+@import "../variables/_spacing";
+
+%dm-container-base {
+  display: flex;
+  flex-direction: row;
+  width: var(--dm-screen-xl);
+  max-width: 100%;
+  margin-inline: auto;
+  padding-block: var(--dm-spacing-2xl);
+  padding-inline: var(--dm-spacing-xl);
+  position: relative;
+}
+
+container,
+.container,
+container-full,
+.container-full {
+  @extend %dm-container-base;
+}
+
+@each $name, $width in $dm-screens {
+  container-#{$name},
+  .container-#{$name} {
+    @extend %dm-container-base;
+    width: var(--dm-screen-#{$name});
+  }
+}
+
+container-sm,
+.container-sm {
+  padding-block: var(--dm-spacing-xl);
+}
+
+container-full,
+.container-full {
+  width: 100%;
+}
+
+@media (max-width: $dm-screen-xl) {
+  container,
+  .container,
+  container-full,
+  .container-full {
+    padding-block: var(--dm-spacing-xl);
+  }
+
+  @each $name, $width in $dm-screens {
+    container-#{$name},
+    .container-#{$name} {
+      padding-block: var(--dm-spacing-xl);
+    }
+  }
+}
+
+@media (max-width: $dm-screen-lg) {
+  container,
+  .container,
+  container-full,
+  .container-full {
+    padding-inline: var(--dm-spacing-lg);
+    padding-block: var(--dm-spacing-lg);
+  }
+
+  @each $name, $width in $dm-screens {
+    container-#{$name},
+    .container-#{$name} {
+      padding-inline: var(--dm-spacing-lg);
+      padding-block: var(--dm-spacing-lg);
+    }
+  }
+}
+
+@media (max-width: $dm-screen-md) {
+  container,
+  .container,
+  container-full,
+  .container-full {
+    padding-inline: var(--dm-spacing-sm);
+    padding-block: var(--dm-spacing-md);
+  }
+
+  @each $name, $width in $dm-screens {
+    container-#{$name},
+    .container-#{$name} {
+      padding-inline: var(--dm-spacing-sm);
+      padding-block: var(--dm-spacing-md);
+    }
+  }
+}

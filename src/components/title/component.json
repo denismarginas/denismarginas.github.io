@@ -1,0 +1,14 @@
+{
+  "name": "title",
+  "title": "Title",
+  "summary": "Heading h1-h6 with title styles.",
+  "description": "Heading h1-h6 with title classes (default \"title-divider title-primary\": responsive size + divider line). Usable in page content or from other components (text_block, profile_card, taxonomy_listing, hobby_listing).",
+  "assets": {
+    "php": [
+      "assets/php/title.php"
+    ]
+  },
+  "dependencies": [
+    "theme"
+  ]
+}

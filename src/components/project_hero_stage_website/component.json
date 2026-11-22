@@ -1,0 +1,29 @@
+{
+  "name": "project_hero_stage_website",
+  "title": "Project Hero Stage: Website",
+  "summary": "Website stage of the project hero (browser + phone).",
+  "description": "The website stage of project_hero: the cover desktop screenshot in a browser frame (the project name in its bar) + the cover phone screenshot in a phone frame, both tilting in a slow loop. The screenshots look like the device card screens (theme mixin device-screen + project_desktop_layout_style placement classes). Links to the screens section. Rendered by project_hero; frame colors, the stage base and the tag come from it.",
+  "post_types": [
+    "project"
+  ],
+  "assets": {
+    "php": [
+      "assets/php/project_hero_stage_website.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "utility_project_media",
+    "card_post_project_visual_devices_website",
+    "image",
+    "theme"
+  ]
+}

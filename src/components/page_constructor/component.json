@@ -1,0 +1,23 @@
+{
+  "name": "page_constructor",
+  "summary": "Full HTML page: head, header, main and footer.",
+  "description": "Full HTML page structure: head, header, main content, footer.",
+  "assets": {
+    "php": ["assets/php/page_constructor.php"],
+    "html": ["assets/html/template.html"],
+    "js": ["assets/js/check_js_init.js"]
+  },
+  "dependencies": [
+    "utility_post_thumbnail",
+    "preloader",
+    "header",
+    "footer",
+    "cookie_notice",
+    "utility_seo_ga",
+    "utility_performance_monitor",
+    "page_content",
+    "animation_grid_background",
+    "overlay_noise",
+    "cursor"
+  ]
+}

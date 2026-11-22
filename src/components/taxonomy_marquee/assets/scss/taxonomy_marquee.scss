@@ -1,0 +1,40 @@
+@import "theme";
+
+.taxonomy-marquee {
+  position: relative;
+  overflow: hidden;
+  --text-label-color: var(--post-color-secondary, var(--dm-color-white));
+  padding-block: var(--dm-spacing-xs);
+  border-block: 1px solid color-mix(in srgb, var(--post-color-primary, var(--dm-color-primary)) 60%, var(--dm-color-black));
+  background-color: var(--post-color-primary, var(--dm-color-primary));
+
+  .taxonomy-marquee-item {
+    display: inline-flex;
+    align-items: baseline;
+    gap: var(--dm-spacing-xs);
+    white-space: nowrap;
+
+    &::after {
+      content: "";
+      align-self: center;
+      width: 5px;
+      height: 5px;
+      margin-left: var(--dm-spacing-sm);
+      border-radius: 50%;
+      background-color: currentColor;
+      opacity: 0.7;
+    }
+  }
+
+  .taxonomy-marquee-label {
+    opacity: 0.62;
+  }
+
+  .taxonomy-marquee-value {
+    font-weight: var(--dm-font-weight-medium);
+  }
+
+  .taxonomy-marquee-item {
+    color: var(--post-color-secondary, var(--dm-color-white));
+  }
+}

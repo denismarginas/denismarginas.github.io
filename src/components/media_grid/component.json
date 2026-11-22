@@ -1,0 +1,12 @@
+{
+  "name": "media_grid",
+  "title": "Media Grid",
+  "summary": "1-4 media cells grid (social post layout).",
+  "description": "Grid of 1-4 media cells in the social post layout (1 = full width, 2 = side by side, 3 = one wide + two, 4 = 2 x 2): images open in the popup gallery, videos play in place. More items than \"max\": the last cell shows \"+N\" and the rest is in the popup gallery. Used by social_post_listing and the block_highlight case study layout.",
+  "assets": {
+    "php": ["assets/php/media_grid.php"],
+    "scss": ["assets/scss/**"],
+    "css": ["assets/css/**"]
+  },
+  "dependencies": ["image", "popup", "theme"]
+}

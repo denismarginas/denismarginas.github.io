@@ -1,0 +1,18 @@
+{
+  "name": "card_post_project_visual_website",
+  "title": "Card Post Project Visual - Website",
+  "summary": "Project website on laptop + phone mockups (web category).",
+  "description": "Renders a project's website preview as a laptop + phone device mockup, for posts in the \"Web Development Projects\" category. Device model (per type) is auto-picked from the project's type/start year, or can be forced. Device frame images and per-type/model paths come from data_content_post_projects.json (img.devices).",
+  "post_types": ["project"],
+  "assets": {
+    "php": ["assets/php/card_post_project_visual_website.php"],
+    "html": [
+      "assets/html/template.html",
+      "assets/html/parts/desktop_block.html",
+      "assets/html/parts/phone_block.html"
+    ],
+    "scss": ["assets/scss/**"],
+    "css": ["assets/css/**"]
+  },
+  "dependencies": ["utility_project_web_screens", "image", "theme"]
+}

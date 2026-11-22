@@ -1,0 +1,22 @@
+{
+  "name": "card_post_project",
+  "title": "Card Post Project",
+  "summary": "Project card: visual on the left, title and excerpt right.",
+  "description": "Project card: renders a visual on the left (delegated to a card_post_project_visual_* component chosen by category, or forced via visual_component) and title + excerpt on the right.",
+  "post_types": ["project"],
+  "assets": {
+    "php": ["assets/php/card_post_project.php"],
+    "html": ["assets/html/template.html", "assets/html/parts/visual.html", "assets/html/parts/body.html"],
+    "scss": ["assets/scss/card_post_project.scss"],
+    "css": ["assets/css/**"]
+  },
+  "dependencies": [
+    "card_post_project_visual_devices_website",
+    "card_post_project_visual_devices_media",
+    "card_post_project_visual_media",
+    "card_post_project_visual_default",
+    "utility_appearance_colors",
+    "columns",
+    "theme"
+  ]
+}

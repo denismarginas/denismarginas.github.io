@@ -1,0 +1,15 @@
+@import "theme";
+
+@mixin bg-radial($center, $edge) {
+  @include radial-surface(var(--dm-color-#{$center}), var(--dm-color-#{$edge}));
+  transition: var(--dm-transition);
+}
+
+.bg-radial-primary {
+  [mode="light"] & {
+    @include bg-radial("primary-200", "primary-100");
+  }
+  [mode="dark"] & {
+    @include bg-radial("primary-700", "primary-800");
+  }
+}

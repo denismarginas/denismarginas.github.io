@@ -1,0 +1,32 @@
+{
+  "name": "block_workstation_containers",
+  "title": "Block Workstation Containers",
+  "summary": "Workstation page wrapper that applies the item colors.",
+  "description": "Wrapper of a workstation item page: renders its children (block_workstation_hero, block_workstation_container, video_listing ...) and puts the item custom colors (settings.appearance.colors -> --post-color-*) on its style, so every block inside uses them.",
+  "post_types": [
+    "workstation"
+  ],
+  "assets": {
+    "php": [
+      "assets/php/block_workstation_containers.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "section",
+    "utility_appearance_colors",
+    "block_workstation_hero",
+    "block_workstation_container",
+    "block_workstation_item_listing",
+    "block_workstation_item_card",
+    "theme"
+  ]
+}

@@ -1,0 +1,17 @@
+@import 'utilities/maps';
+
+@each $name, $value in $dm-grid-columns {
+  .cols-#{$name} {
+    grid-template-columns: #{$value};
+  }
+}
+
+@each $bp, $width in $dm-breakpoints {
+  @media (min-width: $width) {
+    @each $name, $value in $dm-grid-columns {
+      .cols-#{$bp}-#{$name} {
+        grid-template-columns: #{$value};
+      }
+    }
+  }
+}

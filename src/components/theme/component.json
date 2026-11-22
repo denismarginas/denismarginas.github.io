@@ -1,0 +1,14 @@
+{
+  "name": "theme",
+  "title": "Site Theme",
+  "summary": "Core theme CSS and fonts.",
+  "description": "Core theme: CSS and font assets",
+  "minify": false,
+  "assets": {
+    "php": ["assets/php/compile_css.php", "assets/php/compile_bundle.php"],
+    "css": ["assets/css/**"],
+    "scss": ["assets/scss/**"],
+    "fonts": ["assets/fonts/**"]
+  },
+  "dependencies": ["transitions"]
+}

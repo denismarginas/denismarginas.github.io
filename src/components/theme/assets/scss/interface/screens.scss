@@ -1,0 +1,11 @@
+@import "../variables/_breakpoints";
+
+:root {
+  --dm-screen-xs: #{$dm-screen-xs};
+  --dm-screen-sm: #{$dm-screen-sm};
+  --dm-screen-md: #{$dm-screen-md};
+  --dm-screen-lg: #{$dm-screen-lg};
+  --dm-screen-xl: #{$dm-screen-xl};
+  --dm-screen-2xl: #{$dm-screen-2xl};
+  --dm-screen-3xl: #{$dm-screen-3xl};
+}

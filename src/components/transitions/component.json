@@ -1,0 +1,27 @@
+{
+  "name": "transitions",
+  "title": "Transitions",
+  "summary": "Scroll-in entrance animations for any element.",
+  "description": "Entrance animations when an element scrolls into view: fade, slide-left / -right / -top / -bottom, rotate, zoom, zoom-out, blur, combinable, with duration, delay, easing, distance, stagger. Use \"transition\" in any component's data (attributes on its own root element, no wrapper; on <div class=\"column\"> inside columns), this component as a wrapper for groups, or data-transition=\"\u2026\" on any element. Played with the Web Animations API, so the element's own CSS is never overwritten; respects prefers-reduced-motion.",
+  "type": "utility",
+  "assets": {
+    "php": [
+      "assets/php/transitions.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ],
+    "js": [
+      "assets/js/transitions.js"
+    ]
+  },
+  "dependencies": [
+    "section"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "project_hero",
+  "title": "Project Hero",
+  "summary": "Top of a project page: title, intro, meta and visual stage.",
+  "description": "Top of a project page (the h1): eyebrow (type + date), the title (first word on its own line, the last word in the post color), the SEO description, two buttons, meta (website: Platform / Scope / Status) or stats (media: photos / videos / galleries), and a stage on the right: project_hero_stage_website (browser + phone) or project_hero_stage_media (window + square + video card), else the thumbnail in a frame. Background: grid lines + a glow in the post color. Also holds what the stages share: the frame colors (--hero-frame*), the stage base and its tag.",
+  "post_types": [
+    "project"
+  ],
+  "assets": {
+    "php": [
+      "assets/php/project_hero.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "project_hero_stage_website",
+    "project_hero_stage_media",
+    "utility_project_media",
+    "key_value_list",
+    "button",
+    "image",
+    "svg",
+    "theme"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "block_workstation_card",
+  "title": "Block Workstation Card",
+  "summary": "Workstation card: setup image, status badge and title link.",
+  "description": "Card of one workstation item for the Workstations category (old section_workstation_list item): setup image on the item colors with the status badge, and the title, both linking to the workstation page.",
+  "assets": {
+    "php": [
+      "assets/php/block_workstation_card.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "image",
+    "svg",
+    "utility_post_thumbnail",
+    "utility_appearance_colors",
+    "block_workstation_status",
+    "theme"
+  ]
+}

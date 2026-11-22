@@ -1,0 +1,27 @@
+@import "theme";
+
+.block-tags {
+  @include pills();
+
+  > .block-tags-tag {
+    @include pill();
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+
+    > .block-tags-chevron {
+      width: auto;
+      height: var(--dm-font-size-xs);
+      flex: 0 0 auto;
+      transition: transform 0.2s ease;
+    }
+  }
+
+  > a.block-tags-tag:hover {
+    @include pill-hover();
+
+    > .block-tags-chevron {
+      transform: translateX(2px);
+    }
+  }
+}

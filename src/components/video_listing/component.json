@@ -1,0 +1,26 @@
+{
+  "name": "video_listing",
+  "title": "Video Listing",
+  "summary": "List of videos filtered by taxonomy, alternating layout.",
+  "description": "Lists videos filtered by taxonomy with 60/40 layout and reverse for odd items. Descriptions longer than data.description_max (default 300) get Show More / Show Less (text_collapse) unless data.description_collapse is false (default true).",
+  "assets": {
+    "php": [
+      "assets/php/video_listing.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "video",
+    "button",
+    "text_block",
+    "text_collapse"
+  ]
+}

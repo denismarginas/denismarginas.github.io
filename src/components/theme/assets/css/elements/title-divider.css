@@ -1,0 +1,1 @@
+.title-divider::after{content:"";display:block;width:48px;height:5px;margin-top:8px;background-color:var(--dm-color-primary)}

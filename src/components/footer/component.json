@@ -1,0 +1,27 @@
+{
+  "name": "footer",
+  "summary": "Site footer built from footer content blocks.",
+  "description": "Page footer. Content comes from data_content_footer.json: \"columns\" and \"bottom\" are lists of component blocks ({ component, data, children }), same shape as page content.",
+  "assets": {
+    "php": [
+      "assets/php/footer.php"
+    ],
+    "html": [
+      "assets/html/template.html",
+      "assets/html/template_copyrights.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "theme",
+    "section",
+    "link_list",
+    "social_links",
+    "website_info"
+  ]
+}

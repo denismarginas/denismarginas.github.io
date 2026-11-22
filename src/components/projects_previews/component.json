@@ -1,0 +1,24 @@
+{
+  "name": "projects_previews",
+  "title": "Projects Previews",
+  "summary": "Decorative 3D collage of project screenshots.",
+  "description": "Decorative projects collage: up to 6 project screenshots tilted in 3D over a soft glow, next to a monitor image (home page, work experience).",
+  "assets": {
+    "php": [
+      "assets/php/projects_previews.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "image",
+    "theme"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "utility_post_thumbnail",
+  "title": "Utility Post Thumbnail",
+  "summary": "Resolves a post's default / web / media thumbnails.",
+  "description": "Thumbnails of a post from data.media.thumbnail = { \"default\", \"web\", \"media\" } (paths relative to src/content/img/projects/). get() falls back to \"default\"; reference() resolves \"@thumbnail.<key>\" values. Old forms still work as \"default\": a plain string in data.media.thumbnail, or data.media.thumbnail_img.",
+  "type": "utility",
+  "assets": {
+    "php": ["assets/php/utility_post_thumbnail.php"]
+  },
+  "dependencies": []
+}

@@ -1,0 +1,19 @@
+@import "theme";
+
+[layout-style="light"] {
+  background-color: rgb(from var(--dm-color-white) r g b / 1);
+  background-image: radial-gradient(
+    circle,
+    rgb(from var(--dm-color-white) r g b / 1) 10%,
+    rgb(from var(--dm-color-gray-light) r g b / 1) 145%
+  );
+}
+
+[layout-style="dark"] {
+  background-color: rgb(from var(--dm-color-black) r g b / 1);
+  background-image: radial-gradient(
+    circle,
+    rgb(from var(--dm-color-black) r g b / 1) 0%,
+    rgb(from var(--dm-color-gray-dark) r g b / 1) 125%
+  );
+}

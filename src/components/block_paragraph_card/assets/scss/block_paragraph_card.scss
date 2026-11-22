@@ -1,0 +1,29 @@
+@import "theme";
+
+.block-paragraph-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--dm-spacing-sm);
+  padding: var(--dm-spacing-md);
+  border-radius: var(--dm-radius-md);
+  background: color-mix(in srgb, var(--dm-color-primary) 8%, transparent);
+  box-sizing: border-box;
+
+  &.block-paragraph-card-fill {
+    flex: 1 1 auto;
+  }
+
+  .block-paragraph-card-title {
+    margin: 0;
+    font-size: var(--dm-font-size-xl);
+  }
+
+  > p {
+    margin: 0;
+    font-size: var(--dm-font-size-md);
+  }
+
+  @media (max-width: $dm-screen-md) {
+    padding: var(--dm-spacing-sm);
+  }
+}

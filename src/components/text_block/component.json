@@ -1,0 +1,15 @@
+{
+  "name": "text_block",
+  "title": "Text Block",
+  "summary": "Renders title, subtitle, paragraphs, list and buttons.",
+  "description": "Generic renderer for structured text elements (title, subtitle, paragraphs, list, buttons) reusable across components.",
+  "assets": {
+    "php": [
+      "assets/php/text_block.php"
+    ]
+  },
+  "dependencies": [
+    "button",
+    "title"
+  ]
+}

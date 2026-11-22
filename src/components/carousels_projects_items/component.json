@@ -1,0 +1,13 @@
+{
+  "name": "carousels_projects_items",
+  "title": "Carousels Projects Items",
+  "summary": "Section that stacks several project carousels.",
+  "description": "Section wrapper that stacks several carousel_projects_items blocks (its \"children\").",
+  "assets": {
+    "php": ["assets/php/carousels_projects_items.php"],
+    "html": ["assets/html/template.html"],
+    "scss": ["assets/scss/**"],
+    "css": ["assets/css/**"]
+  },
+  "dependencies": ["carousel_projects_items", "theme"]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "post_short_info",
+  "title": "Post Short Info",
+  "summary": "Post summary: visual + info card + children.",
+  "description": "Post summary (the old section_post aside): renders post_short_info_visual, post_short_info_content, then any children - no wrapper element, the parent (e.g. layout_aside) handles the layout.",
+  "post_types": [
+    "project"
+  ],
+  "assets": {
+    "php": [
+      "assets/php/post_short_info.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ]
+  },
+  "dependencies": [
+    "post_short_info_visual",
+    "post_short_info_content",
+    "section"
+  ]
+}

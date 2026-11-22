@@ -1,0 +1,21 @@
+{
+  "name": "animation_squares",
+  "title": "Animation Squares",
+  "summary": "Grid background with scrolling squares.",
+  "description": "Grid background animation with scrolling squares effect.",
+  "assets": {
+    "php": [
+      "assets/php/animation_squares.php"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ],
+    "js": [
+      "assets/js/animation_squares.js"
+    ]
+  },
+  "dependencies": []
+}

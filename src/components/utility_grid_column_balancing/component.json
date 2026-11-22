@@ -1,0 +1,13 @@
+{
+  "name": "utility_grid_column_balancing",
+  "title": "Utility Grid Column Balancing",
+  "summary": "Picks a balanced row pattern from the item count.",
+  "description": "Balanced grid for galleries (port of the old element-list-design): picks a row pattern from the item count (items-divisible-by-13 / 7 / 6 / 5 / 4 / 3 / 2, items-exactly-1, or items-rest-N) so rows are filled. Used by project_media_gallery when column_balancing is true.",
+  "type": "utility",
+  "assets": {
+    "php": ["assets/php/utility_grid_column_balancing.php"],
+    "scss": ["assets/scss/**"],
+    "css": ["assets/css/**"]
+  },
+  "dependencies": ["theme"]
+}

@@ -1,0 +1,67 @@
+@import "theme";
+
+.cookie-settings {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--dm-spacing-xxs) var(--dm-spacing-xs);
+  flex-wrap: wrap;
+}
+
+.cookie-settings-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: -2px;
+  border: 0;
+  border-radius: 50%;
+  background: none;
+  color: var(--dm-color-gray);
+  cursor: var(--cursor-pointer, pointer);
+  opacity: 0.6;
+  transition: opacity 0.2s ease, color 0.2s ease;
+
+  [mode="dark"] & {
+    color: var(--dm-color-gray-light);
+  }
+
+  > .cookie-settings-icon {
+    width: var(--dm-font-size-sm);
+    height: var(--dm-font-size-sm);
+    transition: transform 0.4s ease;
+  }
+
+  &:hover,
+  &:focus-visible {
+    opacity: 1;
+    color: var(--dm-link);
+
+    > .cookie-settings-icon {
+      transform: rotate(60deg);
+    }
+  }
+
+  &:focus-visible {
+    outline: 1px solid var(--dm-link);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    > .cookie-settings-icon {
+      transition: none;
+    }
+  }
+}
+
+.cookie-settings-icon[type="stroke"] path:not([fill="none"]) {
+  stroke: currentColor;
+}
+
+.cookie-settings-icon[type="fill"] path:not([stroke="none"]) {
+  fill: currentColor;
+}
+
+.cookie-settings .cookie-settings-status {
+  font-size: var(--dm-font-size-sm);
+  line-height: 1.4;
+}

@@ -1,0 +1,108 @@
+@import "theme";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--dm-spacing-xs);
+  padding: var(--dm-spacing-sm);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: var(--dm-radius-md);
+  box-shadow: 1px 2px 5px
+    color-mix(in srgb, var(--dm-color-black) 40%, transparent);
+  box-sizing: border-box;
+  color: var(--dm-color-gray-dark);
+  transition: var(--dm-transition);
+
+  &:hover {
+    box-shadow: 1px 4px 8px
+      color-mix(in srgb, var(--dm-color-black) 40%, transparent);
+    transition: var(--dm-transition);
+  }
+  [mode="light"] & {
+    background-color: var(--dm-color-white);
+    border-color: var(--dm-color-gray-light);
+    transition: var(--dm-transition);
+  }
+  [mode="dark"] & {
+    background-color: var(--dm-color-gray-dark);
+    border-color: var(--dm-color-gray);
+    transition: var(--dm-transition);
+  }
+}
+
+.card-media {
+  display: block;
+  overflow: hidden;
+  border-radius: var(--dm-radius-md);
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.card-title,
+.card-title > a {
+  margin: 0;
+  font-family: var(--dm-font-primary);
+  font-size: var(--dm-font-size-lg);
+  font-weight: var(--dm-font-weight-bold);
+  transition: var(--dm-transition);
+
+  [mode="light"] & {
+    color: var(--dm-color-primary-900);
+    transition: var(--dm-transition);
+  }
+  [mode="dark"] & {
+    color: var(--dm-color-primary-100);
+    transition: var(--dm-transition);
+  }
+}
+
+.card-text {
+  margin: 0;
+  font-size: var(--dm-font-size-md);
+  line-height: 1.4;
+  transition: var(--dm-transition);
+
+  [mode="light"] & {
+    color: var(--dm-color-primary-900);
+    transition: var(--dm-transition);
+  }
+  [mode="dark"] & {
+    color: var(--dm-color-primary-100);
+    transition: var(--dm-transition);
+  }
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--dm-spacing-xs);
+  margin-top: auto;
+  padding-top: var(--dm-spacing-xs);
+  border-top: 1px solid var(--dm-color-gray);
+}
+
+.card-elevated {
+  border-color: var(--dm-color-gray-light);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+  }
+}
+
+.card-md {
+  gap: var(--dm-spacing-md);
+  padding: var(--dm-spacing-md);
+
+  @media (max-width: $dm-screen-md) {
+    padding: var(--dm-spacing-sm);
+    gap: var(--dm-spacing-sm);
+  }
+}

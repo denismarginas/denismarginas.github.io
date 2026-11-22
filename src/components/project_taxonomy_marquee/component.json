@@ -1,0 +1,24 @@
+{
+  "name": "project_taxonomy_marquee",
+  "title": "Project Taxonomy Marquee",
+  "summary": "Scrolling band of the project's taxonomy chips.",
+  "description": "Band in the post color with the project's taxonomy (Category, Type, Tag, Platform, Collaboration, Client) as label + value chips, scrolling forever (utility_carousel_loop). Items come from the post data; \"items\" adds or replaces them.",
+  "post_types": [
+    "project"
+  ],
+  "assets": {
+    "php": [
+      "assets/php/project_taxonomy_marquee.php"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "utility_carousel_loop",
+    "theme"
+  ]
+}

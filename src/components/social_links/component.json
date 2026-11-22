@@ -1,0 +1,25 @@
+{
+  "name": "social_links",
+  "title": "Social Links",
+  "summary": "Social links as icon row and/or text list.",
+  "description": "Social links from data_items_social_link.json: icon row (visual_list) and/or text list (text_list). For the contact page and the footer.",
+  "assets": {
+    "php": [
+      "assets/php/social_links.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "svg",
+    "theme",
+    "utility_filter"
+  ]
+}

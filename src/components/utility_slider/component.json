@@ -1,0 +1,14 @@
+{
+  "name": "utility_slider",
+  "title": "Utility Slider",
+  "summary": "Shared slider engine and styles.",
+  "description": "Shared slider engine + styles (left / right sliding with scroll-snap, prev / next arrows, \"i / N\" counter, optional dots, keyboard, loop). Used by block_slider_images and by the popup gallery, so the slider JS / CSS / arrow markup exist only once.",
+  "type": "utility",
+  "assets": {
+    "php": ["assets/php/utility_slider.php"],
+    "scss": ["assets/scss/**"],
+    "css": ["assets/css/**"],
+    "js": ["assets/js/utility_slider.js"]
+  },
+  "dependencies": ["theme"]
+}

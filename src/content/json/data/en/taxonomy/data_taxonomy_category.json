@@ -1,0 +1,1032 @@
+[
+    {
+        "_id": "projects",
+        "data": {
+            "settings": {
+                "type": "taxonomy",
+                "taxonomy_type": "category",
+                "post_types": [
+                    "project"
+                ],
+                "render": true,
+                "listing": false
+            },
+            "seo": {
+                "title": "Projects",
+                "description": "Showcase of projects I have created or I was involved, featuring designs and functionality of websites and media content.",
+                "keywords": "denis marginas projects",
+                "slug": "projects",
+                "index": true
+            },
+            "media": []
+        },
+        "content": [
+            {
+                "component": "hero",
+                "children": [
+                    {
+                        "component": "animation_waves",
+                        "data": []
+                    }
+                ],
+                "data": {
+                    "variant": "sm",
+                    "img": "backgrounds/bg-home.webp",
+                    "video": {
+                        "src": "categories/category_projects.webm",
+                        "poster": "thumbnails/category_projects.webp",
+                        "loop": true,
+                        "overlay": 0.8
+                    },
+                    "title": "@data.seo.title",
+                    "description": "@data.seo.description"
+                }
+            },
+            {
+                "component": "section",
+                "children": [
+                    {
+                        "component": "filters_post_projects",
+                        "data": {
+                            "id": "projects",
+                            "toolbar": "projects",
+                            "preview_toggle": true,
+                            "post_type": "project",
+                            "exclude_by": [
+                                "settings.exclude_from_categories"
+                            ],
+                            "sort": [
+                                {
+                                    "by": "project.types",
+                                    "value": "personal",
+                                    "position": "last"
+                                },
+                                {
+                                    "by": "date.publish",
+                                    "order": "desc"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "component": "post-items",
+                        "data": {
+                            "id": "projects",
+                            "class": "gap-xs gap-sm-sm show-preview listing-5",
+                            "post_type": "project",
+                            "exclude_by": [
+                                "settings.exclude_from_categories"
+                            ],
+                            "sort": [
+                                {
+                                    "by": "project.types",
+                                    "value": "personal",
+                                    "position": "last"
+                                },
+                                {
+                                    "by": "date.publish",
+                                    "order": "desc"
+                                }
+                            ],
+                            "template": {
+                                "component": "card_post_project",
+                                "params": {
+                                    "visual_component": "card_post_project_visual_default"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "web-development-projects",
+        "data": {
+            "settings": {
+                "type": "taxonomy",
+                "taxonomy_type": "category",
+                "post_types": [
+                    "project"
+                ],
+                "render": true,
+                "parent": "projects"
+            },
+            "seo": {
+                "title": "Web Projects",
+                "description": "Showcase of websites and online shops I have created, featuring engaging designs and seamless functionality.",
+                "keywords": "denis marginas web projects",
+                "slug": "web-development-projects",
+                "index": false
+            },
+            "media": {
+                "svg": "category-web",
+                "feature_img": "categories/category-cover-web-development.webp"
+            }
+        },
+        "content": [
+            {
+                "component": "hero",
+                "children": [
+                    {
+                        "component": "animation_waves",
+                        "data": []
+                    }
+                ],
+                "data": {
+                    "variant": "xs",
+                    "img": "categories/category-cover-web-development.webp",
+                    "video": {
+                        "src": "categories/category_web-development.webm",
+                        "poster": "thumbnails/category_web_development.webp",
+                        "loop": true,
+                        "overlay": 0.8
+                    },
+                    "title": "@data.seo.title",
+                    "description": "@data.seo.description"
+                }
+            },
+            {
+                "component": "section",
+                "children": [
+                    {
+                        "component": "filters_post_projects",
+                        "data": {
+                            "id": "projects",
+                            "toolbar": "projects",
+                            "preview_toggle": true,
+                            "post_type": "project",
+                            "filter_by": {
+                                "taxonomy.category": "Web Projects"
+                            },
+                            "filters_exclude": [
+                                "post-category",
+                                "post-media-platform"
+                            ],
+                            "exclude_by": [
+                                {
+                                    "path": "taxonomy.category",
+                                    "value": "Personal Projects"
+                                },
+                                "settings.exclude_from_categories"
+                            ],
+                            "sort": {
+                                "by": "date.publish",
+                                "order": "desc"
+                            }
+                        }
+                    },
+                    {
+                        "component": "post-items",
+                        "data": {
+                            "id": "projects",
+                            "class": "gap-xs gap-sm-sm show-preview",
+                            "post_type": "project",
+                            "filter_by": {
+                                "taxonomy.category": "Web Projects"
+                            },
+                            "exclude_by": [
+                                {
+                                    "path": "taxonomy.category",
+                                    "value": "Personal Projects"
+                                },
+                                "settings.exclude_from_categories"
+                            ],
+                            "sort": {
+                                "by": "date.publish",
+                                "order": "desc"
+                            },
+                            "template": {
+                                "component": "card_post_project",
+                                "params": {
+                                    "visual_component": "card_post_project_visual_devices_website",
+                                    "visual_params": {
+                                        "desktop_device": "model-03",
+                                        "phone_device": "model-03",
+                                        "devices_conditions_render": false,
+                                        "desktop_layout_style": false,
+                                        "phone_layout_style": false
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "visual-media-projects",
+        "data": {
+            "settings": {
+                "type": "taxonomy",
+                "taxonomy_type": "category",
+                "post_types": [
+                    "project"
+                ],
+                "render": true,
+                "parent": "projects"
+            },
+            "seo": {
+                "title": "Media Projects",
+                "description": "Collection of visually captivating projects showcasing my expertise in graphic design, photo editing, and video production.",
+                "keywords": "denis marginas media projects",
+                "slug": "visual-media-projects",
+                "index": false
+            },
+            "media": {
+                "svg": "category-media",
+                "feature_img": "categories/category-cover-visual-media.webp"
+            }
+        },
+        "content": [
+            {
+                "component": "hero",
+                "children": [
+                    {
+                        "component": "animation_waves",
+                        "data": []
+                    }
+                ],
+                "data": {
+                    "variant": "xs",
+                    "img": "categories/category-cover-visual-media.webp",
+                    "video": {
+                        "src": "categories/category_visual_media_projects.webm",
+                        "poster": "thumbnails/category_visual_media_projects.webp",
+                        "loop": true,
+                        "overlay": 0.8
+                    },
+                    "title": "@data.seo.title",
+                    "description": "@data.seo.description"
+                }
+            },
+            {
+                "component": "section",
+                "children": [
+                    {
+                        "component": "filters_post_projects",
+                        "data": {
+                            "id": "projects",
+                            "toolbar": "projects",
+                            "preview_toggle": true,
+                            "post_type": "project",
+                            "filter_by": {
+                                "taxonomy.category": "Media Projects"
+                            },
+                            "filters_exclude": [
+                                "post-category",
+                                "post-web-platform",
+                                "post-web-technology"
+                            ],
+                            "exclude_by": [
+                                {
+                                    "path": "taxonomy.category",
+                                    "value": "Personal Projects"
+                                },
+                                "settings.exclude_from_categories"
+                            ],
+                            "sort": {
+                                "by": "date.publish",
+                                "order": "desc"
+                            }
+                        }
+                    },
+                    {
+                        "component": "post-items",
+                        "data": {
+                            "id": "projects",
+                            "class": "gap-xs gap-sm-sm show-preview",
+                            "post_type": "project",
+                            "filter_by": {
+                                "taxonomy.category": "Media Projects"
+                            },
+                            "exclude_by": [
+                                {
+                                    "path": "taxonomy.category",
+                                    "value": "Personal Projects"
+                                },
+                                "settings.exclude_from_categories"
+                            ],
+                            "sort": {
+                                "by": "date.publish",
+                                "order": "desc"
+                            },
+                            "template": {
+                                "component": "card_post_project",
+                                "params": {
+                                    "visual_component": "card_post_project_visual_media"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "personal-and-custom-projects",
+        "data": {
+            "settings": {
+                "type": "taxonomy",
+                "taxonomy_type": "category",
+                "post_types": [
+                    "project"
+                ],
+                "render": true,
+                "parent": "projects"
+            },
+            "seo": {
+                "title": "Personal Projects",
+                "description": "Non-profit initiatives and personal passion projects that reflect my creative interests outside client work.",
+                "keywords": "denis marginas personal projects",
+                "slug": "personal-and-custom-projects",
+                "index": false
+            },
+            "media": {
+                "svg": "category-personal",
+                "feature_img": "categories/category-cover-personal-and-custom.webp"
+            }
+        },
+        "content": [
+            {
+                "component": "hero",
+                "children": [
+                    {
+                        "component": "animation_waves",
+                        "data": []
+                    }
+                ],
+                "data": {
+                    "variant": "xs",
+                    "img": "categories/category-cover-personal-and-custom.webp",
+                    "video": {
+                        "src": "categories/category_personal_and_custom_projects.webm",
+                        "poster": "thumbnails/category_personal_and_custom_projects.webp",
+                        "loop": true,
+                        "overlay": 0.8
+                    },
+                    "title": "@data.seo.title",
+                    "description": "@data.seo.description"
+                }
+            },
+            {
+                "component": "section",
+                "children": [
+                    {
+                        "component": "filters_post_projects",
+                        "data": {
+                            "id": "projects",
+                            "toolbar": "projects",
+                            "preview_toggle": true,
+                            "post_type": "project",
+                            "exclude_by": [
+                                "settings.exclude_from_categories"
+                            ],
+                            "filter_by": {
+                                "taxonomy.category": "Personal Projects"
+                            },
+                            "filters_exclude": [
+                                "post-category"
+                            ],
+                            "sort": {
+                                "by": "date.publish",
+                                "order": "desc"
+                            }
+                        }
+                    },
+                    {
+                        "component": "post-items",
+                        "data": {
+                            "id": "projects",
+                            "class": "gap-xs gap-sm-sm show-preview",
+                            "post_type": "project",
+                            "exclude_by": [
+                                "settings.exclude_from_categories"
+                            ],
+                            "filter_by": {
+                                "taxonomy.category": "Personal Projects"
+                            },
+                            "sort": {
+                                "by": "date.publish",
+                                "order": "desc"
+                            },
+                            "template": {
+                                "component": "card_post_project",
+                                "params": {
+                                    "visual_params": {
+                                        "desktop_device": "model-03",
+                                        "phone_device": "model-03",
+                                        "devices_conditions_render": false,
+                                        "desktop_layout_style": false,
+                                        "phone_layout_style": false
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "freelancing-projects",
+        "data": {
+            "settings": {
+                "type": "taxonomy",
+                "taxonomy_type": "category",
+                "post_types": [
+                    "project"
+                ],
+                "render": true,
+                "listing": false
+            },
+            "seo": {
+                "title": "Freelancing Projects",
+                "description": "Websites, online shops and media projects I built as a freelancer for my own clients.",
+                "keywords": "denis marginas freelancing projects",
+                "slug": "freelancing-projects",
+                "index": false
+            },
+            "media": []
+        },
+        "content": [
+            {
+                "component": "hero",
+                "children": [
+                    {
+                        "component": "animation_waves",
+                        "data": []
+                    }
+                ],
+                "data": {
+                    "variant": "sm",
+                    "img": "backgrounds/bg-home.webp",
+                    "video": {
+                        "src": "categories/category_projects.webm",
+                        "poster": "thumbnails/category_projects.webp",
+                        "loop": true,
+                        "overlay": 0.8
+                    },
+                    "title": "@data.seo.title",
+                    "description": "@data.seo.description"
+                }
+            },
+            {
+                "component": "section",
+                "children": [
+                    {
+                        "component": "filters_post_projects",
+                        "data": {
+                            "id": "projects",
+                            "toolbar": "projects",
+                            "preview_toggle": true,
+                            "post_type": "project",
+                            "sort": [
+                                {
+                                    "by": "date.publish",
+                                    "order": "desc"
+                                }
+                            ],
+                            "filter_by": {
+                                "project.employer": "Freelancer"
+                            },
+                            "filters_exclude": [
+                                "post-category"
+                            ]
+                        }
+                    },
+                    {
+                        "component": "post-items",
+                        "data": {
+                            "id": "projects",
+                            "class": "gap-xs gap-sm-sm show-preview listing-5",
+                            "post_type": "project",
+                            "sort": [
+                                {
+                                    "by": "date.publish",
+                                    "order": "desc"
+                                }
+                            ],
+                            "template": {
+                                "component": "card_post_project",
+                                "params": {
+                                    "visual_component": "card_post_project_visual_default"
+                                }
+                            },
+                            "filter_by": {
+                                "project.employer": "Freelancer"
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "workstations",
+        "data": {
+            "settings": {
+                "type": "taxonomy",
+                "taxonomy_type": "category",
+                "post_types": [
+                    "workstation"
+                ],
+                "render": true,
+                "listing": false
+            },
+            "seo": {
+                "title": "Personal Workstations",
+                "description": "The computer setups behind my work, from the 2016 build that carried me through university, remote work and video editing to the one I use every day now: PC components, peripherals and desk accessories, with photos, specs and videos.",
+                "keywords": "denis marginas workstations, pc setup, desktop setup, pc build",
+                "slug": "workstations",
+                "index": false
+            },
+            "media": {
+                "svg": "workstation",
+                "feature_img": "backgrounds/bg-workstation.webp"
+            }
+        },
+        "content": [
+            {
+                "component": "hero",
+                "children": [
+                    {
+                        "component": "animation_squares",
+                        "data": []
+                    }
+                ],
+                "data": {
+                    "variant": "xs",
+                    "img": "backgrounds/bg-workstation.webp",
+                    "title": "@data.seo.title",
+                    "description": "@data.seo.description"
+                }
+            },
+            {
+                "component": "section",
+                "children": [
+                    {
+                        "component": "block_workstation_listing",
+                        "data": {
+                            "id": "workstations",
+                            "type": "workstation",
+                            "columns": 2
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "personal-resumes",
+        "data": {
+            "settings": {
+                "type": "taxonomy",
+                "taxonomy_type": "category",
+                "collection_types": [
+                    "resume"
+                ],
+                "render": true,
+                "listing": false
+            },
+            "seo": {
+                "title": "Personal Resumes",
+                "description": "Browse and download my resumes (CV) in English and Romanian. Click a preview to see the full page, or download the PDF.",
+                "keywords": "denis marginas resumes cv",
+                "slug": "personal-resumes",
+                "index": false
+            },
+            "media": {
+                "svg": "resume",
+                "feature_img": "backgrounds/bg-home.webp"
+            }
+        },
+        "content": [
+            {
+                "component": "hero",
+                "children": [
+                    {
+                        "component": "animation_blurred_lines",
+                        "data": []
+                    }
+                ],
+                "data": {
+                    "variant": "xs",
+                    "img": "backgrounds/bg-home.webp",
+                    "video": {
+                        "src": "backgrounds/bg-home.webm",
+                        "loop": true,
+                        "audio": false,
+                        "overlay": 0.6
+                    },
+                    "title": "@data.seo.title",
+                    "description": "@data.seo.description"
+                }
+            },
+            {
+                "component": "section",
+                "children": [
+                    {
+                        "component": "resume_filters",
+                        "data": {
+                            "id": "resumes",
+                            "type": "resume",
+                            "lang_labels": {
+                                "en": "English",
+                                "ro": "Romanian"
+                            },
+                            "filters": [
+                                "lang",
+                                "model"
+                            ],
+                            "lang_label": "Language",
+                            "model_label_filter": "Model",
+                            "model_label": "Model {n}",
+                            "search_placeholder": "Search resumes...",
+                            "results_text": "Showing {n} resumes.",
+                            "empty_text": "No resumes match the filters."
+                        }
+                    },
+                    {
+                        "component": "resume_listing",
+                        "data": {
+                            "id": "resumes",
+                            "type": "resume",
+                            "sort": [
+                                {
+                                    "by": "date.publish",
+                                    "order": "desc"
+                                }
+                            ],
+                            "date_format": "M j, Y",
+                            "download_text": "Download",
+                            "lang_labels": {
+                                "en": "English",
+                                "ro": "Romanian"
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "employee-experience",
+        "data": {
+            "settings": {
+                "type": "taxonomy",
+                "taxonomy_type": "category",
+                "collection_types": [
+                    "job"
+                ],
+                "render": true,
+                "listing": false
+            },
+            "seo": {
+                "title": "Professional Experience",
+                "description": "Explore my professional journey through my work experience, where I showcase a chronological record of my employment history. Discover insights into my roles, responsibilities, and significant contributions at various companies, along with dates and key attributes.",
+                "keywords": "denis marginas professional experience",
+                "slug": "employee-experience",
+                "index": false
+            },
+            "media": {
+                "svg": "employ",
+                "feature_img": "backgrounds/bg-home.webp"
+            }
+        },
+        "content": [
+            {
+                "component": "hero",
+                "children": [
+                    {
+                        "component": "animation_blurred_lines",
+                        "data": []
+                    }
+                ],
+                "data": {
+                    "variant": "xs",
+                    "img": "backgrounds/bg-home.webp",
+                    "video": {
+                        "src": "backgrounds/bg-home.webm",
+                        "loop": true,
+                        "audio": false,
+                        "overlay": 0.6
+                    },
+                    "title": "@data.seo.title",
+                    "description": "@data.seo.description"
+                }
+            },
+            {
+                "component": "tab_items_listing",
+                "data": {
+                    "type": "job",
+                    "layout": "labels_top",
+                    "sort": {
+                        "by": "date.publish",
+                        "order": "desc"
+                    },
+                    "external_links_social_text": false,
+                    "external_links_text": false,
+                    "exist_item_render_false": {
+                        "condition": true,
+                        "content": {
+                            "component": "note",
+                            "text": "Note: Please be aware that this is not an completed list, and there may be additional professional experiences not mentioned here. If you have specific inquiries about my work history or would like more details, feel free to reach out.",
+                            "status": "warning"
+                        }
+                    },
+                    "children": [
+                        {
+                            "component": "work_graph",
+                            "data": {
+                                "list": "job",
+                                "total_work_exp_text": "Total Work Experience:",
+                                "total_work_timeline_text": "Total Work Timeline:"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "_id": "education-experience",
+        "data": {
+            "settings": {
+                "type": "taxonomy",
+                "taxonomy_type": "category",
+                "collection_types": [
+                    "education"
+                ],
+                "render": true,
+                "listing": false
+            },
+            "seo": {
+                "title": "Education Experience",
+                "description": "Discover my educational journey from high school to university, including courses and diplomas attained along the way.",
+                "keywords": "denis marginas education experience",
+                "slug": "education-experience",
+                "index": false
+            },
+            "media": {
+                "svg": "education",
+                "feature_img": "backgrounds/bg-home.webp"
+            }
+        },
+        "content": [
+            {
+                "component": "hero",
+                "children": [
+                    {
+                        "component": "animation_blurred_lines",
+                        "data": []
+                    }
+                ],
+                "data": {
+                    "variant": "xs",
+                    "img": "backgrounds/bg-home.webp",
+                    "video": {
+                        "src": "backgrounds/bg-home.webm",
+                        "loop": true,
+                        "audio": false,
+                        "overlay": 0.6
+                    },
+                    "title": "@data.seo.title",
+                    "description": "@data.seo.description"
+                }
+            },
+            {
+                "component": "tab_items_listing",
+                "data": {
+                    "type": "education",
+                    "layout": "labels_aside",
+                    "sort": {
+                        "by": "date.publish",
+                        "order": "desc"
+                    },
+                    "external_links_social_text": false
+                }
+            }
+        ]
+    },
+    {
+        "_id": "hobby-pc-video-games",
+        "data": {
+            "settings": {
+                "type": "taxonomy",
+                "taxonomy_type": "category",
+                "collection_types": [
+                    "hobby_pc_video_game"
+                ],
+                "render": true,
+                "listing": false
+            },
+            "seo": {
+                "title": "Hobby PC Video Games",
+                "description": "Here you can explore my personal list of top pc video games.",
+                "keywords": "denis marginas pc-video-games",
+                "slug": "hobby-pc-video-games",
+                "index": false
+            },
+            "media": {
+                "svg": "hobby-video-games",
+                "feature_img": "backgrounds/bg-hobby-video-games.webp"
+            }
+        },
+        "content": [
+            {
+                "component": "hero",
+                "children": [
+                    {
+                        "component": "animation_squares",
+                        "data": []
+                    }
+                ],
+                "data": {
+                    "variant": "xs",
+                    "img": "backgrounds/bg-hobby-video-games.webp",
+                    "title": "@data.seo.title",
+                    "description": "@data.seo.description"
+                }
+            },
+            {
+                "component": "section",
+                "children": [
+                    {
+                        "component": "hobby_pc_video_games_filters",
+                        "data": {
+                            "id": "hobby-pc-video-games",
+                            "type": "hobby_pc_video_game",
+                            "toolbar": "pc-video-games"
+                        }
+                    },
+                    {
+                        "component": "hobby_pc_video_games_listing",
+                        "data": {
+                            "id": "hobby-pc-video-games",
+                            "type": "hobby_pc_video_game",
+                            "sort": [
+                                {
+                                    "by": "name",
+                                    "order": "asc"
+                                }
+                            ],
+                            "empty_text": "No games match the selected filters."
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "social-posts",
+        "data": {
+            "settings": {
+                "type": "taxonomy",
+                "taxonomy_type": "category",
+                "collection_types": [
+                    "social_post"
+                ],
+                "render": true,
+                "listing": false
+            },
+            "seo": {
+                "title": "Social Posts",
+                "description": "Dive into the world of a full-stack web developer and skilled photo-video editor. Explore the intersection of web development and visual storytelling on Denis Ionut Marginas's insightful blog.",
+                "keywords": "denis marginas social posts",
+                "slug": "social-posts",
+                "index": true
+            },
+            "media": {
+                "svg": "projects",
+                "feature_img": "backgrounds/bg-home.webp"
+            }
+        },
+        "content": [
+            {
+                "component": "hero",
+                "children": [
+                    {
+                        "component": "animation_blurred_lines",
+                        "data": []
+                    }
+                ],
+                "data": {
+                    "variant": "xs",
+                    "img": "backgrounds/bg-home.webp",
+                    "video": {
+                        "src": "backgrounds/bg-home.webm",
+                        "loop": true,
+                        "audio": false,
+                        "overlay": 0.6
+                    },
+                    "title": "@data.seo.title"
+                }
+            },
+            {
+                "component": "section_layout_aside",
+                "data": {
+                    "aside_position": "left",
+                    "aside_width": "300px",
+                    "aside_mobile": "top",
+                    "aside_sticky": true,
+                    "appearance_colors": false,
+                    "class": "social-posts"
+                },
+                "children": [
+                    {
+                        "component": "layout_aside",
+                        "children": [
+                            {
+                                "component": "block_social_profile",
+                                "data": {
+                                    "wallpaper": "src/content/img/projects/denismarginas-media/media/banner-linkedin/banner-linkedin-01.webp",
+                                    "avatar": "src/content/img/projects/denismarginas-media/media/logo/logo3.webp",
+                                    "title": "Denis Marginas",
+                                    "description": "@data.seo.description",
+                                    "layout": "stacked"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "component": "layout_content",
+                        "children": [
+                            {
+                                "component": "social_post_listing",
+                                "data": {
+                                    "author": {
+                                        "name": "Denis Marginas",
+                                        "avatar": "src/content/img/projects/denismarginas-media/media/logo/logo3.webp"
+                                    },
+                                    "index": true,
+                                    "index_title": "Posts"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "video-archive",
+        "data": {
+            "settings": {
+                "type": "taxonomy",
+                "taxonomy_type": "category",
+                "collection_types": [
+                    "video"
+                ],
+                "render": true,
+                "listing": false
+            },
+            "seo": {
+                "title": "Video Archive",
+                "description": "Every video I made in one place: advertisements, showreels, video game edits and portfolio showcases. Search, filter and watch them.",
+                "keywords": "denis marginas videos, video archive",
+                "slug": "video-archive",
+                "index": false
+            },
+            "media": {
+                "svg": "projects",
+                "feature_img": "backgrounds/bg-home.webp"
+            }
+        },
+        "content": [
+            {
+                "component": "hero",
+                "children": [
+                    {
+                        "component": "animation_blurred_lines",
+                        "data": []
+                    }
+                ],
+                "data": {
+                    "variant": "xs",
+                    "img": "backgrounds/bg-home.webp",
+                    "video": {
+                        "src": "backgrounds/bg-home.webm",
+                        "loop": true,
+                        "audio": false,
+                        "overlay": 0.6
+                    },
+                    "title": "@data.seo.title",
+                    "description": "@data.seo.description"
+                }
+            },
+            {
+                "component": "section",
+                "children": [
+                    {
+                        "component": "video_archive",
+                        "data": {
+                            "id": "video-archive"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

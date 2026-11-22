@@ -1,0 +1,110 @@
+@import "theme";
+
+.project-hero-stage-website {
+  isolation: isolate;
+  padding: var(--dm-spacing-xs) 0 var(--dm-spacing-lg);
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -45% -30%;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 1;
+    background:
+      repeating-linear-gradient(90deg, var(--project-line, rgb(from var(--dm-color-gray) r g b / 0.2)) 0 1px, transparent 1px 44px),
+      repeating-linear-gradient(0deg, var(--project-line, rgb(from var(--dm-color-gray) r g b / 0.2)) 0 1px, transparent 1px 44px);
+    background-position: center;
+    -webkit-mask-image: radial-gradient(closest-side, #000 45%, transparent);
+    mask-image: radial-gradient(closest-side, #000 45%, transparent);
+  }
+
+  .project-hero-browser {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    border: 1px solid var(--project-line, rgb(from var(--dm-color-gray) r g b / 0.2));
+    border-radius: var(--dm-radius-md);
+    background-color: var(--hero-frame-deep);
+    box-shadow: var(--project-shadow, 0 30px 70px rgb(from var(--dm-color-black) r g b / 0.25));
+    transform: rotateY(-9deg) rotateX(2.5deg);
+    animation: project-hero-sway-browser 9s ease-in-out infinite alternate;
+  }
+
+  .project-hero-browser-bar {
+    @include window-bar(var(--hero-frame), var(--hero-frame-line));
+  }
+
+  .project-hero-browser-screen {
+    position: relative;
+    aspect-ratio: 16 / 9.6;
+    @include device-screen(45deg);
+  }
+
+  .project-hero-phone {
+    position: absolute;
+    z-index: 1;
+    right: 2%;
+    bottom: 8px;
+    width: clamp(104px, 16%, 156px);
+    padding: 5px;
+    border: 1px solid var(--hero-frame-line);
+    border-radius: 22px;
+    background-color: var(--hero-frame-deep);
+    box-shadow: var(--hero-frame-shadow);
+    transform: rotate(4deg);
+    animation: project-hero-sway-phone 7s ease-in-out -2s infinite alternate;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: 50%;
+      z-index: 2;
+      width: 32%;
+      height: 5px;
+      border-radius: 999px;
+      background-color: var(--dm-color-black);
+      transform: translateX(-50%);
+    }
+
+    > .project-hero-phone-screen {
+      position: relative;
+      aspect-ratio: 291 / 590;
+      border-radius: 17px;
+      @include device-screen(310deg);
+    }
+  }
+
+  @media (max-width: $dm-screen-sm) {
+    &::before {
+      inset: -20% -6%;
+    }
+
+    .project-hero-browser {
+      transform: none;
+      animation: none;
+    }
+
+    .project-hero-phone {
+      width: 26%;
+    }
+  }
+}
+
+@keyframes project-hero-sway-browser {
+  from { transform: rotateY(-9deg) rotateX(2.5deg); }
+  to { transform: rotateY(-4deg) rotateX(1deg) translateY(-4px); }
+}
+
+@keyframes project-hero-sway-phone {
+  from { transform: rotate(4deg); }
+  to { transform: rotate(1deg) translateY(-8px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-hero-stage-website .project-hero-browser,
+  .project-hero-stage-website .project-hero-phone {
+    animation: none;
+  }
+}

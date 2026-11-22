@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="UTF-8"><meta name="google-site-verification" content="pT_WebXTJxdIjN7BD7iEkRbbz0QLTUAGryLVW3EjIsk"><title>Lagoa do Fogo Landing Page</title><meta name="description" content="Travel landing page for Lagoa do Fogo, with a footer carousel that loads the other travel websites from a custom API."><link rel="canonical" href="lagoafogo-landing-page.html"><meta name="robots" content="noindex, nofollow"><meta property="og:image" content="https://denismarginas.github.io/portfolio/src/content/img/projects/lagoafogo-landing-page/thumbnail/thumbnail.webp"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://denismarginas.github.io/portfolio/src/content/img/projects/lagoafogo-landing-page/thumbnail/thumbnail.webp"><script type="application/json" data-seo-ga>{"id":"G-GFKNYRN476","require_consent":true,"default_value":true,"track_localhost":false}</script>
+    <script>(function () {
+  "use strict";
+
+  var mode = null;
+  try {
+    var saved = localStorage.getItem("dm_mode_value");
+    if (saved === "dark" || saved === "light") mode = saved;
+  } catch (e) {}
+
+  function applyBody(body) {
+    if (!mode) {
+      mode = body.getAttribute("mode") === "dark" ? "dark" : "light";
+    }
+    if (body.getAttribute("mode") !== mode) body.setAttribute("mode", mode);
+  }
+
+  function syncToggle() {
+    var toggle = document.querySelector(".header-theme-mode-toggle");
+    if (!toggle || !mode) return;
+    toggle.setAttribute("data-mode", mode);
+    var input = toggle.querySelector(".header-theme-mode-toggle-input");
+    if (input) input.checked = mode === "dark";
+    var icons = toggle.querySelectorAll(".header-theme-mode-toggle-icon");
+    for (var i = 0; i < icons.length; i++) {
+      icons[i].setAttribute("active", icons[i].getAttribute("theme-style") === mode ? "true" : "false");
+    }
+  }
+
+  if (document.body) {
+    applyBody(document.body);
+  } else if (window.MutationObserver) {
+    var observer = new MutationObserver(function () {
+      if (!document.body) return;
+      observer.disconnect();
+      applyBody(document.body);
+    });
+    observer.observe(document.documentElement, { childList: true });
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    if (document.body) applyBody(document.body);
+    syncToggle();
+  });
+})();
+</script>
+    <script>document.documentElement.classList.add("is-loading");</script>
+    <style>html.i18n-loading body>:not([data-preloader]){visibility:hidden}</style><script>window.dmI18n={"default":"en","page_lang":"en","langs":["en","ro"],"frontend":["ro"],"root":"../../","timeout":6000,"data":"src/content/json/data/","files":{"collection/data_collection_education.json":["ro"],"collection/data_collection_form.json":["ro"],"collection/data_collection_hobby.json":["ro"],"collection/data_collection_hobby_pc_video_game.json":["ro"],"collection/data_collection_job.json":["ro"],"collection/data_collection_knowledge_item.json":["ro"],"collection/data_collection_listing_toolbar.json":["ro"],"collection/data_collection_resume.json":["ro"],"collection/data_collection_social_link.json":["ro"],"collection/data_collection_social_post.json":["ro"],"collection/data_collection_video.json":["ro"],"content/data_content_cookie_notice.json":["ro"],"content/data_content_footer.json":["ro"],"content/data_content_header_menu.json":["ro"],"content/data_content_post_projects.json":["ro"],"content/data_content_project_info.json":["ro"],"content/data_content_ui.json":["ro"],"content/data_dates.json":["ro"],"data_types.json":["ro"],"post/data_post_page.json":["ro"],"post/data_post_project.json":["ro"],"post/data_post_workstation.json":["ro"],"taxonomy/data_taxonomy_category.json":["ro"]},"v":"towkn7","skip":["script","style","noscript","template","svg","math","textarea","iframe","object","canvas"],"attrs":["alt","title","placeholder","aria-label","aria-description","data-tooltip"],"prefixes":["data-label"],"meta":["description","og:title","og:description","og:image:alt","twitter:title","twitter:description","twitter:image:alt"],"inputs":["submit","button","reset"]};(function () {
+  var c = window.dmI18n, d = document.documentElement, key = "dm_lang", lang = null;
+  if (!c) return;
+
+  function store(value) {
+    try { localStorage.setItem(key, value); } catch (e) {}
+  }
+
+  var WS = /\s+/g;
+  var SPLIT = /<[^>]*>|\r?\n/;
+  var decoder = null;
+
+  function normalize(text) {
+    return String(text).replace(WS, " ").replace(/^ | $/g, "");
+  }
+
+  function decode(text) {
+    if (text.indexOf("&") === -1) return text;
+    decoder = decoder || document.createElement("textarea");
+    decoder.innerHTML = text;
+    return decoder.value;
+  }
+
+  function add(map, en, tr) {
+    var a = normalize(decode(en)), b = normalize(decode(tr));
+    if (!a || !b || a === b || a.indexOf("{{") !== -1 || map.has(a)) return;
+    map.set(a, b);
+  }
+
+  function pair(map, en, tr) {
+    if (en === tr) return;
+    if (!SPLIT.test(en)) { add(map, en, tr); return; }
+    var x = en.split(SPLIT), y = tr.split(SPLIT);
+    if (x.length !== y.length) return;
+    for (var i = 0; i < x.length; i++) add(map, x[i], y[i]);
+  }
+
+  function walk(map, en, tr) {
+    if (typeof en === "string") {
+      if (typeof tr === "string") pair(map, en, tr);
+      return;
+    }
+    if (!en || !tr || typeof en !== "object" || typeof tr !== "object") return;
+    if (Array.isArray(en)) {
+      if (!Array.isArray(tr)) return;
+      var byId = null;
+      if (en.length && en[0] && typeof en[0] === "object" && "_id" in en[0]) {
+        byId = {};
+        tr.forEach(function (item) { if (item && item._id != null) byId[item._id] = item; });
+      }
+      for (var i = 0; i < en.length; i++) walk(map, en[i], byId ? (en[i] ? byId[en[i]._id] : null) : tr[i]);
+      return;
+    }
+    for (var k in en) {
+      if (Object.prototype.hasOwnProperty.call(en, k) && Object.prototype.hasOwnProperty.call(tr, k)) walk(map, en[k], tr[k]);
+    }
+  }
+
+  c.store = store;
+  c.fetch = function (target) {
+    var root = (c.root || "") + c.data, v = "?v=" + encodeURIComponent(c.v || "");
+    function get(url) {
+      return fetch(url, { credentials: "same-origin" })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .catch(function () { return null; });
+    }
+    var jobs = Object.keys(c.files || {}).filter(function (file) {
+      return (c.files[file] || []).indexOf(target) !== -1;
+    }).map(function (file) {
+      return Promise.all([get(root + c.default + "/" + file + v), get(root + target + "/" + file + v)]);
+    });
+    return Promise.all(jobs).then(function (results) {
+      var map = new Map();
+      results.forEach(function (r) { if (r[0] && r[1]) walk(map, r[0], r[1]); });
+      return map;
+    });
+  };
+
+  try {
+    var param = new URLSearchParams(location.search).get("lang");
+    if (param && c.langs.indexOf(param) !== -1) { lang = param; store(param); }
+  } catch (e) {}
+
+  if (c.page_lang !== c.default) {
+    if (!lang) store(c.page_lang);
+    return;
+  }
+
+  if (!lang) {
+    try { lang = localStorage.getItem(key); } catch (e) {}
+  }
+  if (!lang || c.frontend.indexOf(lang) === -1 || !window.fetch || !window.Promise || !window.Map) return;
+
+  c.lang = lang;
+  d.classList.add("i18n-loading");
+  c.pending = c.fetch(lang);
+  setTimeout(function () { d.classList.remove("i18n-loading"); }, c.timeout || 6000);
+})();</script>
+    <link rel="stylesheet" href="../../src/components/theme/assets_compiled/css/bundle.css"><script src="../../src/components/theme/assets_compiled/js/bundle.js"></script>
+</head>
+
+<body mode="dark">
+    <div class="preloader" data-preloader data-preloader-wait="load" data-preloader-max="4000" aria-hidden="true" translate="no">
+  <span class="preloader-spinner"></span>
+</div>
+
+    <overlay class="overlay-noise"></overlay>
+    <overlay class="animation-grid-background"></overlay>
+    <header>
+  <div class="header-blur" aria-hidden="true"></div>
+  <container>
+    <a href="../home.html" class="logo logo-shape-circle" data-variant="header"><div class="logo-container-img"><img class="logo-img" src="../../src/content/img/brand/logo/logo.webp" alt="Denis Marginas Logo" width="50" height="50">
+</div><div class="site-title"><span class="primary">Denis</span><span class="secondary">Marginas</span></div></a>
+
+    <nav class="header-menu">
+  <ul><li><a  href="../home.html">Home</a></li><li class="has-submenu"><span class="header-menu-row"><a  href="../experience.html">Experience</a><button type="button" class="header-submenu-toggle" aria-expanded="false" aria-controls="header-submenu-241" aria-label="Experience submenu"><svg type="fill" viewBox="0 0 512 512" class="header-submenu-toggle-icon"> <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/> </svg></button></span><ul class="header-submenu" id="header-submenu-241"><li><a  href="../category/employee-experience.html">Professional Experience</a></li><li><a  href="../category/education-experience.html">Education Experience</a></li></ul></li><li class="has-submenu"><span class="header-menu-row"><a  href="../category/projects.html">Projects</a><button type="button" class="header-submenu-toggle" aria-expanded="false" aria-controls="header-submenu-242" aria-label="Projects submenu"><svg type="fill" viewBox="0 0 512 512" class="header-submenu-toggle-icon"> <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/> </svg></button></span><ul class="header-submenu" id="header-submenu-242"><li><a  href="../category/web-development-projects.html">Web Projects</a></li><li><a  href="../category/visual-media-projects.html">Media Projects</a></li><li><a  href="../category/personal-and-custom-projects.html">Personal Projects</a></li></ul></li><li><a  href="../contact.html">Contact</a></li></ul>
+  <div class="header-menu-utility">
+    <a href="../search.html" class="header-search-button "  aria-label="Search">
+  <svg type="stroke" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" class="header-search-button-icon">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1 8.3746C0.999472 4.85724 3.4837 1.8293 6.9334 1.1426C10.3832 0.455907 13.8376 2.30172 15.184 5.5512C16.5305 8.80072 15.394 12.5488 12.4696 14.5034C9.5452 16.4578 5.64744 16.0744 3.16 13.5874C1.77716 12.2051 1.00017 10.33 1 8.3746Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.5869 13.5886L17.8001 17.8018" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a>
+    <details class="header-language-dropdown" data-language-dropdown translate="no">
+  <summary class="header-language-dropdown-toggle" aria-label="Language: English">
+    <span class="header-language-dropdown-current">EN</span><svg type="fill" viewBox="0 0 512 512" class="header-language-dropdown-chevron"> <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/> </svg>
+  </summary>
+  <ul class="header-language-dropdown-menu"><li><a class="header-language-dropdown-link active" href="../project/lagoafogo-landing-page.html" data-i18n-lang="en" hreflang="en" lang="en" aria-current="true" title="English"><svg type="flag" viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice" class="header-language-flag"><clipPath id="flag-en-clip"><path d="M30,15h30v15zv15h-30zh-30v-15zv-15h30z"/></clipPath><rect width="60" height="30" fill="#012169"/><path d="M0,0L60,30M60,0L0,30" stroke="#FFFFFF" stroke-width="6"/><path d="M0,0L60,30M60,0L0,30" clip-path="url(#flag-en-clip)" stroke="#C8102E" stroke-width="4"/><path d="M30,0v30M0,15h60" stroke="#FFFFFF" stroke-width="10"/><path d="M30,0v30M0,15h60" stroke="#C8102E" stroke-width="6"/></svg><span class="header-language-dropdown-code">EN</span></a></li><li><a class="header-language-dropdown-link" href="../project/lagoafogo-landing-page.html?lang=ro" data-i18n-lang="ro" rel="nofollow" lang="ro" title="Română"><svg type="flag" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" class="header-language-flag"><rect width="1" height="2" x="0" fill="#002B7F"/><rect width="1" height="2" x="1" fill="#FCD116"/><rect width="1" height="2" x="2" fill="#CE1126"/></svg><span class="header-language-dropdown-code">RO</span></a></li></ul>
+</details>
+
+    <label class="header-theme-mode-toggle" data-mode="dark" aria-label="Toggle color theme">
+  <input type="checkbox" class="header-theme-mode-toggle-input">
+  <span class="header-theme-mode-toggle-track" aria-hidden="true">
+    <span class="header-theme-mode-toggle-icon" theme-style="light" active="false"><svg type="stroke" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-icon">
+<path d="M12.5628 25.0003C17.5333 26.899 23.102 24.4088 25.0006 19.4382C26.8993 14.4676 24.409 8.89902 19.4385 7.00035C14.4679 5.10168 8.8993 7.59194 7.00063 12.5625C5.10196 17.5331 7.59222 23.1017 12.5628 25.0003Z" stroke="#000" stroke-width="2"/>
+<path d="M21.7305 1.00024L21.1575 2.50024" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+<path d="M10.8438 29.5002L10.2708 31.0002" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+<path d="M31.0005 21.73L29.5005 21.157" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+<path d="M2.50049 10.8435L1.00049 10.2705" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+<path d="M30.658 9.44626L29.8438 9.81044" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+<path d="M2.15713 22.1904L1.34275 22.5547" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+<path d="M22.5555 30.657L22.1914 29.8428" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+<path d="M9.80949 2.15712L9.44531 1.34277" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+</svg></span>
+    <span class="header-theme-mode-toggle-icon" theme-style="dark" active="true"><svg type="stroke" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-icon">
+<path d="M1 15.4412C1 24.0342 7.96473 31 16.5561 31C23.1021 31 28.7037 26.9561 31 21.2299C29.2083 21.9501 27.2477 22.3561 25.1984 22.3561C16.6069 22.3561 9.6423 15.3902 9.6423 6.79731C9.6423 4.75731 10.0422 2.78516 10.7558 1C5.03723 3.2998 1 8.89895 1 15.4412Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>
+    <span class="header-theme-mode-toggle-thumb" aria-hidden="true"></span>
+  </span>
+</label>
+  </div>
+</nav>
+<button type="button" class="header-menu-navbar-toggle" aria-label="Toggle menu" aria-expanded="false"
+  aria-controls="header-menu">
+  <svg type="fill" width="21" height="17" viewBox="0 0 21 17"  class="header-menu-navbar-toggle-icon"><path d="M0 0.75C0 0.335786 0.335786 0 0.75 0H10.5H20.25C20.6642 0 21 0.335786 21 0.75V0.75C21 1.16421 20.6642 1.5 20.25 1.5H0.75C0.335786 1.5 0 1.16421 0 0.75V0.75Z"/><path d="M0 8.25C0 7.83579 0.335786 7.5 0.75 7.5H10.5H20.25C20.6642 7.5 21 7.83579 21 8.25V8.25C21 8.66421 20.6642 9 20.25 9H0.75C0.335786 9 0 8.66421 0 8.25V8.25Z"/><path d="M0 15.75C0 15.3358 0.335786 15 0.75 15H10.5H20.25C20.6642 15 21 15.3358 21 15.75V15.75C21 16.1642 20.6642 16.5 20.25 16.5H0.75C0.335786 16.5 0 16.1642 0 15.75V15.75Z"/></svg>
+</button>
+  </container>
+</header>
+
+
+    <main><div class="project-page project-page-website" style="--post-color-primary: #467d2a; --post-color-secondary: #ffffff; --post-color-secondary-on-light: var(--dm-color-gray-dark); --post-color-canvas-primary: #467d2a; --post-color-canvas-secondary: #ffffff; --post-color-canvas-secondary-on-light: var(--dm-color-gray-dark);" data-project-page>
+  <section class="project-hero project-hero-website" id="top">
+  <div class="project-hero-bg" aria-hidden="true"><span class="overlay-noise project-hero-noise"></span></div>
+  <container class="project-hero-inner">
+    <div class="project-hero-copy">
+      <div class="project-hero-eyebrow"><span class="project-hero-dot" aria-hidden="true"></span><span>Landing page</span><span>Mar 2025</span></div>
+      <h1 class="project-hero-title"><span class="project-hero-title-main">Lagoa</span> <span class="project-hero-title-rest">do Fogo Landing <em>Page</em></span></h1>
+      <p class="project-hero-lead">Travel landing page for Lagoa do Fogo, with a footer carousel that loads the other travel websites from a custom API.</p>
+      <div class="project-hero-actions"><a class="btn btn-accent project-hero-btn" href="#screens">
+  <svg type="stroke" width="24" height="24" viewBox="0 0 24 24" fill="none" class="btn-icon"><path d="M14 16H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 21h7M10 16v5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 10h4a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1z" stroke-width="2" stroke-linejoin="round"/><path d="M18.5 18.5h1" stroke-width="2" stroke-linecap="round"/></svg><span class="btn-text">View the showcase</span>
+</a>
+<a class="btn btn-ghost project-hero-btn" href="https://lagoafogo.com" target="_blank" rel="noopener">
+  <svg type="fill" width="36" height="36" viewBox="0 0 36 36" class="btn-icon"><path d="M32 36H4C1.8 36 0 34.2 0 32V4C0 1.8 1.8 0 4 0H18V4H4V32H32V18H36V32C36 34.2 34.2 36 32 36Z"/><path d="M36 14H32V4H22V0H36V14Z"/><path d="M10.5551 22.6168L32.6164 0.554706L35.4449 3.38308L13.3835 25.4452L10.5551 22.6168Z"/></svg><span class="btn-text">Visit website</span>
+</a>
+</div>
+      <dl class="key-value-list key-value-list-inline key-value-list-cols-2 project-hero-meta"><div class="key-value-list-row"><dt class="text-label">Platform</dt><dd>Wordpress</dd></div><div class="key-value-list-row"><dt class="text-label">Scope</dt><dd>Landing page</dd></div><div class="key-value-list-row"><dt class="text-label">Status</dt><dd>Delivered</dd></div></dl>
+
+    </div>
+    <a class="project-hero-stage project-hero-stage-website" href="#screens" aria-label="View the showcase">
+  <div class="project-hero-browser">
+    <div class="project-hero-browser-bar"><i></i><i></i><i></i><span class="project-hero-browser-url">Lagoa do Fogo Landing Page</span></div>
+    <div class="project-hero-browser-screen screen top bg-primary"><img class="responsive-image" src="../../src/content/img/projects/lagoafogo-landing-page/web/website/desktop/web_desktop_0.webp" alt="Lagoa do Fogo Landing Page - desktop" width="1280" height="720">
+</div>
+  </div>
+  <span class="project-hero-phone"><span class="project-hero-phone-screen screen top bg-primary fade-under"><img class="responsive-image" src="../../src/content/img/projects/lagoafogo-landing-page/web/website/phone/web_phone_0.webp" alt="Lagoa do Fogo Landing Page - mobile" width="420" height="1000">
+</span></span>
+  <span class="project-hero-stage-tag">Desktop + mobile</span>
+</a>
+
+  </container>
+</section>
+
+  <div class="project-taxonomy-marquee"><div class="carousel-loop project-taxonomy-marquee-loop width-limit-2k mask-fade-x" data-carousel-loop data-direction="left" data-pause-on-hover="false" style="--carousel-duration: 100s; --carousel-gap: var(--dm-spacing-md); --carousel-gap-phone: var(--dm-spacing-sm);">
+  <ul class="carousel-loop-list">
+    <li class="carousel-loop-item project-taxonomy-marquee-item"><span class="project-taxonomy-marquee-label text-label">Category</span><span class="project-taxonomy-marquee-value text-label text-label-sm">Web Projects</span></li><li class="carousel-loop-item project-taxonomy-marquee-item"><span class="project-taxonomy-marquee-label text-label">Type</span><span class="project-taxonomy-marquee-value text-label text-label-sm">Landing page</span></li><li class="carousel-loop-item project-taxonomy-marquee-item"><span class="project-taxonomy-marquee-label text-label">Type</span><span class="project-taxonomy-marquee-value text-label text-label-sm">Web design</span></li><li class="carousel-loop-item project-taxonomy-marquee-item"><span class="project-taxonomy-marquee-label text-label">Tag</span><span class="project-taxonomy-marquee-value text-label text-label-sm">Web</span></li><li class="carousel-loop-item project-taxonomy-marquee-item"><span class="project-taxonomy-marquee-label text-label">Platform</span><span class="project-taxonomy-marquee-value text-label text-label-sm">Wordpress</span></li><li class="carousel-loop-item project-taxonomy-marquee-item"><span class="project-taxonomy-marquee-label text-label">Collaboration</span><span class="project-taxonomy-marquee-value text-label text-label-sm">Teamwork</span></li><li class="carousel-loop-item project-taxonomy-marquee-item"><span class="project-taxonomy-marquee-label text-label">Category</span><span class="project-taxonomy-marquee-value text-label text-label-sm">Web Projects</span></li><li class="carousel-loop-item project-taxonomy-marquee-item"><span class="project-taxonomy-marquee-label text-label">Type</span><span class="project-taxonomy-marquee-value text-label text-label-sm">Landing page</span></li><li class="carousel-loop-item project-taxonomy-marquee-item"><span class="project-taxonomy-marquee-label text-label">Type</span><span class="project-taxonomy-marquee-value text-label text-label-sm">Web design</span></li><li class="carousel-loop-item project-taxonomy-marquee-item"><span class="project-taxonomy-marquee-label text-label">Tag</span><span class="project-taxonomy-marquee-value text-label text-label-sm">Web</span></li><li class="carousel-loop-item project-taxonomy-marquee-item"><span class="project-taxonomy-marquee-label text-label">Platform</span><span class="project-taxonomy-marquee-value text-label text-label-sm">Wordpress</span></li><li class="carousel-loop-item project-taxonomy-marquee-item"><span class="project-taxonomy-marquee-label text-label">Collaboration</span><span class="project-taxonomy-marquee-value text-label text-label-sm">Teamwork</span></li>
+  </ul>
+</div>
+</div>
+  <div class="section-nav" data-section-nav data-open="false">
+  <container class="section-nav-inner">
+    <button type="button" class="section-nav-toggle" aria-label="Page sections" aria-expanded="false" aria-controls="section-nav-links-226"><svg type="fill" width="21" height="17" viewBox="0 0 21 17"  xmlns:c2pa="http://c2pa.org/manifest" class="section-nav-toggle-icon"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTplYTE1ZGRlOC0yZTA1LTRiMzgtOWNhOS03N2YyN2U3MzkyNGMAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaOXy4lkoDf1tcOnMuUA8tXwAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDozZWVjYjRhNC0xYzVhLTRmNDQtOGY2Mi1kMDQyZGZjNzMyZGZscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoOxxBdZV8OWtdsrOjaS4HfgAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggrdgyhyIuEug9poXwPFJlfkxIVWire4MN4ICQENgJO2GkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaM7EDveHshB+0erBobutIp8AAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCD91V69TxugVnM5FM3wiYiaqKQZPLDa/SmxNZNGAhUw1WRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBh8Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmVhMTVkZGU4LTJlMDUtNGIzOC05Y2E5LTc3ZjI3ZTczOTI0Yy9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmMzZjQ5NGZhLTc2N2EtNDk2Mi1hZTU5LTY1ZGIzMmEwMmY5N3JjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCCt2DKHIi4S6D2mhfA8UmV+TEhVaKt7gw3ggJAQ2Ak7YaJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggjXLSwj10LmCICZb/AV+q2adbXIcse1Z44JjgdcWEABGiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggol7zb5axf3oJkBAMbe6usUj8lGu+RJJhZodZzKG/7ld0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQE9LD7HWrBjTEVVzq45/PaPdOJbFzoR47/g1ulVvgrZP8EkMrkSWTMVrCsjeBmZylUQzmcBCVZNy6yKGbQYRfuk=</c2pa:manifest></metadata><path class="menu-sections-dot" d="M0.75 0A0.75 0.75 0 0 1 0.75 1.5A0.75 0.75 0 0 1 0.75 0Z"/><path class="menu-sections-bar" d="M5.25 0H20.25A0.75 0.75 0 0 1 20.25 1.5H5.25A0.75 0.75 0 0 1 5.25 0Z"/><path class="menu-sections-dot" d="M0.75 7.5A0.75 0.75 0 0 1 0.75 9A0.75 0.75 0 0 1 0.75 7.5Z"/><path class="menu-sections-bar" d="M5.25 7.5H14.25A0.75 0.75 0 0 1 14.25 9H5.25A0.75 0.75 0 0 1 5.25 7.5Z"/><path class="menu-sections-dot" d="M0.75 15A0.75 0.75 0 0 1 0.75 16.5A0.75 0.75 0 0 1 0.75 15Z"/><path class="menu-sections-bar" d="M5.25 15H17.25A0.75 0.75 0 0 1 17.25 16.5H5.25A0.75 0.75 0 0 1 5.25 15Z"/></svg><span class="section-nav-current" data-section-nav-current>Overview</span></button>
+    <nav class="anchor-index section-nav-index" id="section-nav-links-226" aria-label="Page sections" data-anchor-index data-anchor-index-min="1"><ul class="anchor-index-list"><li><a class="anchor-index-link" href="#overview"><span class="anchor-index-text">Overview</span></a></li><li><a class="anchor-index-link" href="#screens"><span class="anchor-index-text">Screens</span></a></li><li><a class="anchor-index-link" href="#related"><span class="anchor-index-text">Related</span></a></li></ul></nav>
+
+  </container>
+  <div class="scroll-progress scroll-progress-bottom section-nav-progress" data-scroll-progress aria-hidden="true"><div class="scroll-progress-bar"></div></div>
+
+</div>
+
+  <section data-transition="none" data-transition-parts="[{&quot;target&quot;:&quot;.project-overview-intro&quot;,&quot;effect&quot;:&quot;fade slide-bottom&quot;,&quot;distance&quot;:&quot;24px&quot;},{&quot;target&quot;:&quot;.project-overview-body&quot;,&quot;effect&quot;:&quot;fade slide-bottom&quot;,&quot;distance&quot;:&quot;24px&quot;,&quot;delay&quot;:120}]" class="content-section project-section project-overview-section" id="overview">
+  <container>
+    <div class="project-overview">
+  <div class="project-overview-intro">
+    <span class="project-overview-kicker text-label">Overview</span>
+    <h2 class="project-overview-title title-secondary title-divider">The <em>project</em>.</h2>
+    <p class="project-overview-subtitle">Landing page, Web design · Mar 2025</p>
+    
+    <div class="project-overview-cover"><figure class="project-overview-tile project-overview-logo"><img class="responsive-image" src="../../src/content/img/projects/lagoafogo-landing-page/logo/logo.webp" alt="Logo - Lagoa do Fogo Landing Page" loading="lazy" width="695" height="161">
+</figure><figure class="project-overview-tile project-overview-thumb"><img class="responsive-image" src="../../src/content/img/projects/lagoafogo-landing-page/thumbnail/thumbnail.webp" alt="Lagoa do Fogo Landing Page" loading="lazy" width="400" height="400">
+</figure></div>
+  </div>
+  <div class="project-overview-body">
+    <p class="project-overview-text">Simple landing page made in WordPress with Elementor Pro and Yoast SEO, presenting Lagoa do Fogo with the most important information for visitors. It is part of the Mentor Marketing travel websites. The footer has a custom carousel I built with vanilla JavaScript, HTML and CSS, which loads the list of travel websites from a custom mentor-marketing.com API and generates its items on page load.</p>
+    <dl class="key-value-list key-value-list-grid key-value-list-cols-2 project-overview-meta"><div class="key-value-list-row"><dt class="text-label">Collaboration</dt><dd>Teamwork</dd></div><div class="key-value-list-row"><dt class="text-label">Platform</dt><dd>Wordpress</dd></div><div class="key-value-list-row"><dt class="text-label">Technology</dt><dd>HTML, CSS, JS, SQL, PHP, jQuery</dd></div><div class="key-value-list-row"><dt class="text-label">Modules</dt><dd>Elementor Website Builder Pro, Yoast SEO</dd></div><div class="key-value-list-row"><dt class="text-label">Timeline</dt><dd>Mar 2025</dd></div><div class="key-value-list-row"><dt class="text-label">Worked at</dt><dd><a href="../category/employee-experience.html#experience-mentor-marketing-experts">Mentor Marketing Experts</a></dd></div></dl>
+
+    <div class="project-links project-overview-links"><span class="project-links-label text-label">Project links</span><div class="project-links-list"><a class="project-links-link" href="https://lagoafogo.com" target="_blank" rel="noopener"><svg type="fill" width="92" height="92" viewBox="0 0 92 92" class="project-links-icon"><path d="M46 0C20.6 0 0 20.6 0 46C0 71.4 20.6 92 46 92C71.4 92 92 71.4 92 46C92 20.6 71.4 0 46 0ZM49.7 83.8C49.5 83.8 49.3 83.8 49 83.9V62.2C54.2 62.1 58.9 62 63.2 61.7C59.4 73.4 52.3 81.2 49.7 83.8ZM42.3 83.8C39.6 81.1 32.6 73.3 28.8 61.7C33 62 37.8 62.2 43 62.2V83.9C42.8 83.9 42.6 83.8 42.3 83.8ZM8 46C8 43.5 8.3 41 8.7 38.6C10.9 38.2 15.1 37.6 21 37C20.5 39.9 20.2 42.9 20.2 46.1C20.2 49.3 20.5 52.3 20.9 55.1C15.1 54.5 10.8 53.9 8.6 53.5C8.3 51 8 48.5 8 46ZM26.3 46C26.3 42.6 26.7 39.4 27.3 36.4C31.9 36.1 37.1 35.8 43 35.8V56.2C37.2 56.1 31.9 55.9 27.2 55.5C26.7 52.6 26.3 49.4 26.3 46ZM49.6 8.2C52.3 10.9 59.2 18.9 63.1 30.3C58.9 30 54.2 29.8 49 29.8V8.1C49.2 8.1 49.4 8.2 49.6 8.2ZM43 8.1V29.8C37.8 29.9 33.1 30 28.9 30.3C32.7 18.9 39.7 10.9 42.3 8.2C42.6 8.2 42.8 8.1 43 8.1ZM49 56.2V35.8C54.8 35.9 60.1 36.1 64.7 36.4C65.3 39.4 65.7 42.6 65.7 46C65.7 49.4 65.4 52.6 64.8 55.6C60.2 55.9 54.9 56.1 49 56.2ZM70.9 37C76.8 37.6 81 38.2 83.2 38.6C83.7 41 84 43.5 84 46C84 48.5 83.7 51 83.3 53.4C81.1 53.8 76.9 54.4 71 55C71.5 52.1 71.7 49.1 71.7 45.9C71.7 42.9 71.4 39.8 70.9 37ZM81.4 32.2C78.6 31.8 74.6 31.3 69.5 30.8C67.1 22.2 62.9 15.3 59.4 10.4C69.5 14.2 77.5 22.2 81.4 32.2ZM32.6 10.4C29 15.2 24.9 22.1 22.5 30.7C17.5 31.1 13.5 31.7 10.6 32.1C14.5 22.2 22.6 14.2 32.6 10.4ZM10.6 59.8C13.4 60.2 17.4 60.7 22.4 61.2C24.8 69.8 28.8 76.7 32.4 81.5C22.4 77.6 14.5 69.7 10.6 59.8ZM59.6 81.5C63.2 76.7 67.2 69.9 69.6 61.3C74.6 60.9 78.6 60.3 81.4 59.9C77.5 69.7 69.6 77.6 59.6 81.5Z"/></svg><span>lagoafogo.com</span><svg type="fill" width="36" height="36" viewBox="0 0 36 36" class="project-links-external"><path d="M32 36H4C1.8 36 0 34.2 0 32V4C0 1.8 1.8 0 4 0H18V4H4V32H32V18H36V32C36 34.2 34.2 36 32 36Z"/><path d="M36 14H32V4H22V0H36V14Z"/><path d="M10.5551 22.6168L32.6164 0.554706L35.4449 3.38308L13.3835 25.4452L10.5551 22.6168Z"/></svg></a></div></div>
+  </div>
+</div>
+
+  </container>
+</section>
+<section data-transition="none" data-transition-parts="[{&quot;target&quot;:&quot;.section-head&quot;,&quot;effect&quot;:&quot;fade slide-bottom&quot;,&quot;distance&quot;:&quot;20px&quot;},{&quot;target&quot;:&quot;.project-screens&quot;,&quot;effect&quot;:&quot;fade slide-bottom&quot;,&quot;distance&quot;:&quot;24px&quot;,&quot;delay&quot;:120}]" class="content-section content-section-panel project-section project-screens-section" id="screens">
+  <container>
+    <div class="section-head">
+  <div class="section-head-main"><span class="section-head-kicker text-label">Screens</span><h2 class="section-head-title title-secondary title-divider">Website <em>showcase</em></h2><p class="section-head-text">4 desktop and 3 mobile views, shown in pairs. Pick a screen from the rail; open the stage for the full capture.</p></div>
+  <span class="section-head-count text-label">7 views</span>
+</div>
+<div class="project-screens" data-project-screens data-popup-group-name="project-screens-lagoafogo-landing-page-174">
+  <div class="project-screens-stage" data-screens-stage role="button" tabindex="0" aria-label="Open the full capture"><div class="dm-post-view visual-devices-website desktop-and-phone-devices">
+    <div class="device-layout-laptop desktop-model-03" style="--device-ratio: 1.406;">
+    <div class="screen top bg-primary" data-aspect-ratio="1.78">
+        <img class="web-desktop-image" src="../../src/content/img/projects/lagoafogo-landing-page/web/website/desktop/web_desktop_0.webp" alt="Website preview" width="1280" height="720">
+
+    </div>
+    <img class="laptop" src="../../src/content/img/design-elements/device-layout-desktop-model-003.webp" alt="Laptop frame" width="800" height="569">
+
+</div>
+
+    <div class="device-layout-phone phone-model-03" style="--device-ratio: 0.4963;">
+    <div class="screen top bg-primary fade-under" data-aspect-ratio="0.42">
+        <img class="web-phone-image" src="../../src/content/img/projects/lagoafogo-landing-page/web/website/phone/web_phone_0.webp" alt="Website preview mobile" width="420" height="1000">
+
+    </div>
+    <img class="phone" src="../../src/content/img/design-elements/device-layout-phone-model-003.webp" alt="Phone frame" width="335" height="675">
+
+</div>
+
+</div>
+</div>
+  <div class="project-screens-meta">
+    <div class="project-screens-meta-text">
+      <span class="project-screens-counter text-label text-label-sm" data-screens-counter>01 / 07</span>
+      <h3 class="project-screens-title title-tertiary" data-screens-title>Desktop 01</h3>
+    </div>
+    <div class="project-screens-nav">
+      <button type="button" class="project-screens-nav-btn" data-screens-prev aria-label="Previous"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+      <button type="button" class="project-screens-nav-btn" data-screens-next aria-label="Next"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+      <button type="button" class="project-screens-nav-btn project-screens-open" data-screens-open aria-label="View all 7 screens" title="View all 7 screens"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="3" width="14" height="14" rx="2"/><path d="M7 13l3.5-3.5L14 13l2-2 5 5"/><circle cx="16.5" cy="7.5" r="1.25"/><path d="M3 7v12a2 2 0 0 0 2 2h12"/></svg></button>
+    </div>
+  </div>
+  <div class="project-screens-rail">
+    <button type="button" class="project-screens-arrow" data-screens-prev aria-label="Previous">&larr;</button>
+    <div class="project-screens-thumbs" data-screens-thumbs role="list"><button type="button" class="project-screens-thumb project-screens-thumb-desktop" role="listitem" data-screens-index="0" data-title="Desktop 01" data-sub="" aria-label="Desktop 01" aria-current="true"><span class="project-screens-thumb-shot"><overlay class="overlay-noise"></overlay><div class="dm-post-view visual-devices-website">
+    <div class="device-layout-laptop desktop-model-03" style="--device-ratio: 1.406;">
+    <div class="screen top bg-primary" data-aspect-ratio="1.78">
+        <img loading="lazy" class="web-desktop-image" src="../../src/content/img/projects/lagoafogo-landing-page/web/website/desktop/web_desktop_0.webp" alt="Website preview" width="1280" height="720">
+
+    </div>
+    <img loading="lazy" class="laptop" src="../../src/content/img/design-elements/device-layout-desktop-model-003.webp" alt="Laptop frame" width="800" height="569">
+
+</div>
+
+    
+</div>
+</span><span class="project-screens-thumb-label text-label"><b>01</b> Desktop</span></button><button type="button" class="project-screens-thumb project-screens-thumb-desktop" role="listitem" data-screens-index="1" data-title="Desktop 02" data-sub="" aria-label="Desktop 02"><span class="project-screens-thumb-shot"><overlay class="overlay-noise"></overlay><div class="dm-post-view visual-devices-website">
+    <div class="device-layout-laptop desktop-model-03" style="--device-ratio: 1.406;">
+    <div class="screen top bg-primary" data-aspect-ratio="0.84">
+        <img loading="lazy" class="web-desktop-image" src="../../src/content/img/projects/lagoafogo-landing-page/web/website/desktop/web-desktop-01.webp" alt="Website preview" width="1920" height="2278">
+
+    </div>
+    <img loading="lazy" class="laptop" src="../../src/content/img/design-elements/device-layout-desktop-model-003.webp" alt="Laptop frame" width="800" height="569">
+
+</div>
+
+    
+</div>
+</span><span class="project-screens-thumb-label text-label"><b>02</b> Desktop</span></button><button type="button" class="project-screens-thumb project-screens-thumb-desktop" role="listitem" data-screens-index="2" data-title="Desktop 03" data-sub="" aria-label="Desktop 03"><span class="project-screens-thumb-shot"><overlay class="overlay-noise"></overlay><div class="dm-post-view visual-devices-website">
+    <div class="device-layout-laptop desktop-model-03" style="--device-ratio: 1.406;">
+    <div class="screen top bg-primary" data-aspect-ratio="0.76">
+        <img loading="lazy" class="web-desktop-image" src="../../src/content/img/projects/lagoafogo-landing-page/web/website/desktop/web-desktop-02.webp" alt="Website preview" width="1920" height="2529">
+
+    </div>
+    <img loading="lazy" class="laptop" src="../../src/content/img/design-elements/device-layout-desktop-model-003.webp" alt="Laptop frame" width="800" height="569">
+
+</div>
+
+    
+</div>
+</span><span class="project-screens-thumb-label text-label"><b>03</b> Desktop</span></button><button type="button" class="project-screens-thumb project-screens-thumb-desktop" role="listitem" data-screens-index="3" data-title="Desktop 04" data-sub="" aria-label="Desktop 04"><span class="project-screens-thumb-shot"><overlay class="overlay-noise"></overlay><div class="dm-post-view visual-devices-website">
+    <div class="device-layout-laptop desktop-model-03" style="--device-ratio: 1.406;">
+    <div class="screen top bg-primary fade-under" data-aspect-ratio="0.66">
+        <img loading="lazy" class="web-desktop-image" src="../../src/content/img/projects/lagoafogo-landing-page/web/website/desktop/web-desktop-03.webp" alt="Website preview" width="1920" height="2899">
+
+    </div>
+    <img loading="lazy" class="laptop" src="../../src/content/img/design-elements/device-layout-desktop-model-003.webp" alt="Laptop frame" width="800" height="569">
+
+</div>
+
+    
+</div>
+</span><span class="project-screens-thumb-label text-label"><b>04</b> Desktop</span></button><button type="button" class="project-screens-thumb project-screens-thumb-phone" role="listitem" data-screens-index="4" data-title="Mobile 01" data-sub="" aria-label="Mobile 01"><span class="project-screens-thumb-shot"><overlay class="overlay-noise"></overlay><div class="dm-post-view visual-devices-website">
+    
+    <div class="device-layout-phone phone-model-03" style="--device-ratio: 0.4963;">
+    <div class="screen top bg-primary fade-under" data-aspect-ratio="0.42">
+        <img loading="lazy" class="web-phone-image" src="../../src/content/img/projects/lagoafogo-landing-page/web/website/phone/web_phone_0.webp" alt="Website preview mobile" width="420" height="1000">
+
+    </div>
+    <img loading="lazy" class="phone" src="../../src/content/img/design-elements/device-layout-phone-model-003.webp" alt="Phone frame" width="335" height="675">
+
+</div>
+
+</div>
+</span><span class="project-screens-thumb-label text-label"><b>05</b> Mobile</span></button><button type="button" class="project-screens-thumb project-screens-thumb-phone" role="listitem" data-screens-index="5" data-title="Mobile 02" data-sub="" aria-label="Mobile 02"><span class="project-screens-thumb-shot"><overlay class="overlay-noise"></overlay><div class="dm-post-view visual-devices-website">
+    
+    <div class="device-layout-phone phone-model-03" style="--device-ratio: 0.4963;">
+    <div class="screen top bg-primary fade-under" data-aspect-ratio="0.42">
+        <img loading="lazy" class="web-phone-image" src="../../src/content/img/projects/lagoafogo-landing-page/web/website/phone/web-phone-02.webp" alt="Website preview mobile" width="420" height="1000">
+
+    </div>
+    <img loading="lazy" class="phone" src="../../src/content/img/design-elements/device-layout-phone-model-003.webp" alt="Phone frame" width="335" height="675">
+
+</div>
+
+</div>
+</span><span class="project-screens-thumb-label text-label"><b>06</b> Mobile</span></button><button type="button" class="project-screens-thumb project-screens-thumb-phone" role="listitem" data-screens-index="6" data-title="Mobile 03" data-sub="" aria-label="Mobile 03"><span class="project-screens-thumb-shot"><overlay class="overlay-noise"></overlay><div class="dm-post-view visual-devices-website">
+    
+    <div class="device-layout-phone phone-model-03" style="--device-ratio: 0.4963;">
+    <div class="screen top bg-primary fade-under" data-aspect-ratio="0.42">
+        <img loading="lazy" class="web-phone-image" src="../../src/content/img/projects/lagoafogo-landing-page/web/website/phone/web-phone-03.webp" alt="Website preview mobile" width="420" height="1000">
+
+    </div>
+    <img loading="lazy" class="phone" src="../../src/content/img/design-elements/device-layout-phone-model-003.webp" alt="Phone frame" width="335" height="675">
+
+</div>
+
+</div>
+</span><span class="project-screens-thumb-label text-label"><b>07</b> Mobile</span></button></div>
+    <button type="button" class="project-screens-arrow" data-screens-next aria-label="Next">&rarr;</button>
+  </div>
+  <div class="project-screens-pairs" hidden><template data-screens-pair="0"><div class="dm-post-view visual-devices-website">
+    <div class="device-layout-laptop desktop-model-03" style="--device-ratio: 1.406;">
+    <div class="screen top bg-primary" data-aspect-ratio="1.78">
+        <img class="web-desktop-image" src="../../src/content/img/projects/lagoafogo-landing-page/web/website/desktop/web_desktop_0.webp" alt="Website preview" width="1280" height="720">
+
+    </div>
+    <img class="laptop" src="../../src/content/img/design-elements/device-layout-desktop-model-003.webp" alt="Laptop frame" width="800" height="569">
+
+</div>
+
+    
+</div>
+</template><template data-screens-pair="1"><div class="dm-post-view visual-devices-website">
+    <div class="device-layout-laptop desktop-model-03" style="--device-ratio: 1.406;">
+    <div class="screen top bg-primary" data-aspect-ratio="0.84">
+        <img class="web-desktop-image" src="../../src/content/img/projects/lagoafogo-landing-page/web/website/desktop/web-desktop-01.webp" alt="Website preview" width="1920" height="2278">
+
+    </div>
+    <img class="laptop" src="../../src/content/img/design-elements/device-layout-desktop-model-003.webp" alt="Laptop frame" width="800" height="569">
+
+</div>
+
+    
+</div>
+</template><template data-screens-pair="2"><div class="dm-post-view visual-devices-website">
+    <div class="device-layout-laptop desktop-model-03" style="--device-ratio: 1.406;">
+    <div class="screen top bg-primary" data-aspect-ratio="0.76">
+        <img class="web-desktop-image" src="../../src/content/img/projects/lagoafogo-landing-page/web/website/desktop/web-desktop-02.webp" alt="Website preview" width="1920" height="2529">
+
+    </div>
+    <img class="laptop" src="../../src/content/img/design-elements/device-layout-desktop-model-003.webp" alt="Laptop frame" width="800" height="569">
+
+</div>
+
+    
+</div>
+</template><template data-screens-pair="3"><div class="dm-post-view visual-devices-website">
+    <div class="device-layout-laptop desktop-model-03" style="--device-ratio: 1.406;">
+    <div class="screen top bg-primary fade-under" data-aspect-ratio="0.66">
+        <img class="web-desktop-image" src="../../src/content/img/projects/lagoafogo-landing-page/web/website/desktop/web-desktop-03.webp" alt="Website preview" width="1920" height="2899">
+
+    </div>
+    <img class="laptop" src="../../src/content/img/design-elements/device-layout-desktop-model-003.webp" alt="Laptop frame" width="800" height="569">
+
+</div>
+
+    
+</div>
+</template><template data-screens-pair="4"><div class="dm-post-view visual-devices-website">
+    
+    <div class="device-layout-phone phone-model-03" style="--device-ratio: 0.4963;">
+    <div class="screen top bg-primary fade-under" data-aspect-ratio="0.42">
+        <img class="web-phone-image" src="../../src/content/img/projects/lagoafogo-landing-page/web/website/phone/web_phone_0.webp" alt="Website preview mobile" width="420" height="1000">
+
+    </div>
+    <img class="phone" src="../../src/content/img/design-elements/device-layout-phone-model-003.webp" alt="Phone frame" width="335" height="675">
+
+</div>
+
+</div>
+</template><template data-screens-pair="5"><div class="dm-post-view visual-devices-website">
+    
+    <div class="device-layout-phone phone-model-03" style="--device-ratio: 0.4963;">
+    <div class="screen top bg-primary fade-under" data-aspect-ratio="0.42">
+        <img class="web-phone-image" src="../../src/content/img/projects/lagoafogo-landing-page/web/website/phone/web-phone-02.webp" alt="Website preview mobile" width="420" height="1000">
+
+    </div>
+    <img class="phone" src="../../src/content/img/design-elements/device-layout-phone-model-003.webp" alt="Phone frame" width="335" height="675">
+
+</div>
+
+</div>
+</template><template data-screens-pair="6"><div class="dm-post-view visual-devices-website">
+    
+    <div class="device-layout-phone phone-model-03" style="--device-ratio: 0.4963;">
+    <div class="screen top bg-primary fade-under" data-aspect-ratio="0.42">
+        <img class="web-phone-image" src="../../src/content/img/projects/lagoafogo-landing-page/web/website/phone/web-phone-03.webp" alt="Website preview mobile" width="420" height="1000">
+
+    </div>
+    <img class="phone" src="../../src/content/img/design-elements/device-layout-phone-model-003.webp" alt="Phone frame" width="335" height="675">
+
+</div>
+
+</div>
+</template></div>
+  <div class="project-screens-source" hidden><span class="project-screens-source-item" data-popup="true" data-popup-group="project-screens-lagoafogo-landing-page-174"><img class="responsive-image" src="../../src/content/img/projects/lagoafogo-landing-page/web/website/desktop/web_desktop_0.webp" alt="Desktop 01" loading="lazy" width="1280" height="720">
+</span><span class="project-screens-source-item" data-popup="true" data-popup-group="project-screens-lagoafogo-landing-page-174"><img class="responsive-image" src="../../src/content/img/projects/lagoafogo-landing-page/web/website/desktop/web-desktop-01.webp" alt="Desktop 02" loading="lazy" width="1920" height="2278">
+</span><span class="project-screens-source-item" data-popup="true" data-popup-group="project-screens-lagoafogo-landing-page-174"><img class="responsive-image" src="../../src/content/img/projects/lagoafogo-landing-page/web/website/desktop/web-desktop-02.webp" alt="Desktop 03" loading="lazy" width="1920" height="2529">
+</span><span class="project-screens-source-item" data-popup="true" data-popup-group="project-screens-lagoafogo-landing-page-174"><img class="responsive-image" src="../../src/content/img/projects/lagoafogo-landing-page/web/website/desktop/web-desktop-03.webp" alt="Desktop 04" loading="lazy" width="1920" height="2899">
+</span><span class="project-screens-source-item" data-popup="true" data-popup-group="project-screens-lagoafogo-landing-page-174"><img class="responsive-image" src="../../src/content/img/projects/lagoafogo-landing-page/web/website/phone/web_phone_0.webp" alt="Mobile 01" loading="lazy" width="420" height="1000">
+</span><span class="project-screens-source-item" data-popup="true" data-popup-group="project-screens-lagoafogo-landing-page-174"><img class="responsive-image" src="../../src/content/img/projects/lagoafogo-landing-page/web/website/phone/web-phone-02.webp" alt="Mobile 02" loading="lazy" width="420" height="1000">
+</span><span class="project-screens-source-item" data-popup="true" data-popup-group="project-screens-lagoafogo-landing-page-174"><img class="responsive-image" src="../../src/content/img/projects/lagoafogo-landing-page/web/website/phone/web-phone-03.webp" alt="Mobile 03" loading="lazy" width="420" height="1000">
+</span></div>
+</div>
+
+  </container>
+</section>
+<section data-transition="none" data-transition-parts="[{&quot;target&quot;:&quot;.section-head&quot;,&quot;effect&quot;:&quot;fade slide-bottom&quot;,&quot;distance&quot;:&quot;20px&quot;},{&quot;target&quot;:&quot;.project-related-listing &gt; li&quot;,&quot;effect&quot;:&quot;fade slide-bottom&quot;,&quot;distance&quot;:&quot;24px&quot;,&quot;stagger&quot;:100,&quot;delay&quot;:100}]" class="content-section content-section-panel project-section project-related-section" id="related">
+  <container>
+    <div class="section-head">
+  <div class="section-head-main"><span class="section-head-kicker text-label">Related</span><h2 class="section-head-title title-secondary title-divider">Related <em>projects</em></h2></div>
+  
+</div>
+<div class="project-related"><div class="post-items">
+  <ul class="listing gap-md show-preview project-related-listing">
+    <li data-post-id="terranostrapark-landing-page">
+  <div class="card-post-project card-post-project-columns" visual-type="card_post_project_visual_default" style="--post-color-primary: #2d9556; --post-color-secondary: #ffffff; --post-color-secondary-on-light: var(--dm-color-gray-dark); --post-color-canvas-primary: #ffffff; --post-color-canvas-primary-on-light: var(--dm-color-gray-dark); --post-color-canvas-secondary: #2d9556;">
+    <div class="columns cols-100 cols-xs-40-60 cols-sm-30-70 gap-sm" data-layout="base:100 xs:40-60 sm:30-70" data-align="center">
+  <div class="column card-post-project-column-visual"><div class="card-visual">
+        <a class="card-outline dm-post-view-default" href="../project/terranostrapark-landing-page.html" style="background-color: #ffffff; --primary-color-post: #2d9556;">
+    <img class="default-visual-image default-visual-logo" src="../../src/content/img/projects/terranostrapark-landing-page/logo/logo.webp" alt="Image: logo" loading="lazy" width="579" height="85">
+
+    <img class="default-visual-preview" src="../../src/content/img/projects/terranostrapark-landing-page/thumbnail/thumbnail.webp" alt="Image: thumbnail" loading="lazy" width="400" height="400">
+
+    <div class="overlay-noise"></div>
+</a>
+
+    </div></div><div class="column card-post-project-column-body"><div class="card-body">
+        <div class="card-meta">
+            <a class="card-title" href="../project/terranostrapark-landing-page.html">Terra Nostra Park Landing Page</a>
+            <p class="card-description">Travel landing page for Terra Nostra Park, with a footer carousel that loads the other travel websites from a custom API.</p>
+        </div>
+    </div></div>
+</div>
+
+</div>
+
+</li><li data-post-id="lakefurnas-presentation-website">
+  <div class="card-post-project card-post-project-columns" visual-type="card_post_project_visual_default" style="--post-color-primary: #135559; --post-color-secondary: #ffffff; --post-color-secondary-on-light: var(--dm-color-gray-dark); --post-color-canvas-primary: #135559; --post-color-canvas-secondary: #ffffff; --post-color-canvas-secondary-on-light: var(--dm-color-gray-dark);">
+    <div class="columns cols-100 cols-xs-40-60 cols-sm-30-70 gap-sm" data-layout="base:100 xs:40-60 sm:30-70" data-align="center">
+  <div class="column card-post-project-column-visual"><div class="card-visual">
+        <a class="card-outline dm-post-view-default" href="../project/lakefurnas-presentation-website.html" style="background-color: #135559; --primary-color-post: #135559;">
+    <img class="default-visual-image default-visual-logo" src="../../src/content/img/projects/lakefurnas-presentation-website/logo/logo.webp" alt="Image: logo" loading="lazy" width="645" height="161">
+
+    <img class="default-visual-preview" src="../../src/content/img/projects/lakefurnas-presentation-website/thumbnail/thumbnail.webp" alt="Image: thumbnail" loading="lazy" width="400" height="400">
+
+    <div class="overlay-noise"></div>
+</a>
+
+    </div></div><div class="column card-post-project-column-body"><div class="card-body">
+        <div class="card-meta">
+            <a class="card-title" href="../project/lakefurnas-presentation-website.html">Lake Furnas Presentation Website</a>
+            <p class="card-description">Travel landing page for Lake Furnas, with a footer carousel that loads the other travel websites from a custom API.</p>
+        </div>
+    </div></div>
+</div>
+
+</div>
+
+</li><li data-post-id="dabocadoinferno-presentation-website">
+  <div class="card-post-project card-post-project-columns" visual-type="card_post_project_visual_default" style="--post-color-primary: #363e4a; --post-color-secondary: #ffffff; --post-color-secondary-on-light: var(--dm-color-gray-dark); --post-color-canvas-primary: #363e4a; --post-color-canvas-secondary: #ffffff; --post-color-canvas-secondary-on-light: var(--dm-color-gray-dark);">
+    <div class="columns cols-100 cols-xs-40-60 cols-sm-30-70 gap-sm" data-layout="base:100 xs:40-60 sm:30-70" data-align="center">
+  <div class="column card-post-project-column-visual"><div class="card-visual">
+        <a class="card-outline dm-post-view-default" href="../project/dabocadoinferno-presentation-website.html" style="background-color: #363e4a; --primary-color-post: #363e4a;">
+    <img class="default-visual-image default-visual-logo" src="../../src/content/img/projects/dabocadoinferno-presentation-website/logo/logo.webp" alt="Image: logo" loading="lazy" width="500" height="109">
+
+    <img class="default-visual-preview" src="../../src/content/img/projects/dabocadoinferno-presentation-website/thumbnail/thumbnail.webp" alt="Image: thumbnail" loading="lazy" width="400" height="400">
+
+    <div class="overlay-noise"></div>
+</a>
+
+    </div></div><div class="column card-post-project-column-body"><div class="card-body">
+        <div class="card-meta">
+            <a class="card-title" href="../project/dabocadoinferno-presentation-website.html">da Boca do Inferno Presentation Website</a>
+            <p class="card-description">Travel landing page for Boca do Inferno, with a footer carousel that loads the other travel websites from a custom API.</p>
+        </div>
+    </div></div>
+</div>
+
+</div>
+
+</li><li data-post-id="hotspringssaomiguel-presentation-website">
+  <div class="card-post-project card-post-project-columns" visual-type="card_post_project_visual_default" style="--post-color-primary: #6d7e51; --post-color-secondary: #ffffff; --post-color-secondary-on-light: var(--dm-color-gray-dark); --post-color-canvas-primary: #6d7e51; --post-color-canvas-secondary: #ffffff; --post-color-canvas-secondary-on-light: var(--dm-color-gray-dark);">
+    <div class="columns cols-100 cols-xs-40-60 cols-sm-30-70 gap-sm" data-layout="base:100 xs:40-60 sm:30-70" data-align="center">
+  <div class="column card-post-project-column-visual"><div class="card-visual">
+        <a class="card-outline dm-post-view-default" href="../project/hotspringssaomiguel-presentation-website.html" style="background-color: #6d7e51; --primary-color-post: #6d7e51;">
+    <img class="default-visual-image default-visual-logo" src="../../src/content/img/projects/hotspringssaomiguel-presentation-website/logo/logo.webp" alt="Image: logo" loading="lazy" width="520" height="161">
+
+    <img class="default-visual-preview" src="../../src/content/img/projects/hotspringssaomiguel-presentation-website/thumbnail/thumbnail.webp" alt="Image: thumbnail" loading="lazy" width="400" height="400">
+
+    <div class="overlay-noise"></div>
+</a>
+
+    </div></div><div class="column card-post-project-column-body"><div class="card-body">
+        <div class="card-meta">
+            <a class="card-title" href="../project/hotspringssaomiguel-presentation-website.html">Hot Springs São Miguel Presentation Website</a>
+            <p class="card-description">Travel landing page for the hot springs of São Miguel, with a footer carousel that loads the other travel websites from a custom API.</p>
+        </div>
+    </div></div>
+</div>
+
+</div>
+
+</li><li data-post-id="pontadaferraria-landing-page">
+  <div class="card-post-project card-post-project-columns" visual-type="card_post_project_visual_default" style="--post-color-primary: #415d7d; --post-color-secondary: #ffffff; --post-color-secondary-on-light: var(--dm-color-gray-dark); --post-color-canvas-primary: #415d7d; --post-color-canvas-secondary: #ffffff; --post-color-canvas-secondary-on-light: var(--dm-color-gray-dark);">
+    <div class="columns cols-100 cols-xs-40-60 cols-sm-30-70 gap-sm" data-layout="base:100 xs:40-60 sm:30-70" data-align="center">
+  <div class="column card-post-project-column-visual"><div class="card-visual">
+        <a class="card-outline dm-post-view-default" href="../project/pontadaferraria-landing-page.html" style="background-color: #415d7d; --primary-color-post: #415d7d;">
+    <img class="default-visual-image default-visual-logo" src="../../src/content/img/projects/pontadaferraria-landing-page/logo/logo.webp" alt="Image: logo" loading="lazy" width="507" height="161">
+
+    <img class="default-visual-preview" src="../../src/content/img/projects/pontadaferraria-landing-page/thumbnail/thumbnail.webp" alt="Image: thumbnail" loading="lazy" width="400" height="400">
+
+    <div class="overlay-noise"></div>
+</a>
+
+    </div></div><div class="column card-post-project-column-body"><div class="card-body">
+        <div class="card-meta">
+            <a class="card-title" href="../project/pontadaferraria-landing-page.html">Ponta da Ferraria Landing Page</a>
+            <p class="card-description">Travel landing page for Ponta da Ferraria, with a footer carousel that loads the other travel websites from a custom API.</p>
+        </div>
+    </div></div>
+</div>
+
+</div>
+
+</li><li data-post-id="lagoaempadadas-landing-page">
+  <div class="card-post-project card-post-project-columns" visual-type="card_post_project_visual_default" style="--post-color-primary: #3e533f; --post-color-secondary: #ffffff; --post-color-secondary-on-light: var(--dm-color-gray-dark); --post-color-canvas-primary: #3e533f; --post-color-canvas-secondary: #ffffff; --post-color-canvas-secondary-on-light: var(--dm-color-gray-dark);">
+    <div class="columns cols-100 cols-xs-40-60 cols-sm-30-70 gap-sm" data-layout="base:100 xs:40-60 sm:30-70" data-align="center">
+  <div class="column card-post-project-column-visual"><div class="card-visual">
+        <a class="card-outline dm-post-view-default" href="../project/lagoaempadadas-landing-page.html" style="background-color: #3e533f; --primary-color-post: #3e533f;">
+    <img class="default-visual-image default-visual-logo" src="../../src/content/img/projects/lagoaempadadas-landing-page/logo/logo.webp" alt="Image: logo" loading="lazy" width="645" height="161">
+
+    <img class="default-visual-preview" src="../../src/content/img/projects/lagoaempadadas-landing-page/thumbnail/thumbnail.webp" alt="Image: thumbnail" loading="lazy" width="400" height="400">
+
+    <div class="overlay-noise"></div>
+</a>
+
+    </div></div><div class="column card-post-project-column-body"><div class="card-body">
+        <div class="card-meta">
+            <a class="card-title" href="../project/lagoaempadadas-landing-page.html">Lagoa Empadadas Landing Page</a>
+            <p class="card-description">Travel landing page for Lagoa das Empadadas, with a footer carousel that loads the other travel websites from a custom API.</p>
+        </div>
+    </div></div>
+</div>
+
+</div>
+
+</li>
+  </ul>
+</div></div>
+  </container>
+</section>
+</div>
+</main>
+    <footer>
+  <container>
+    <div class="footer-columns"><div class="footer-column"><div class="link-list">
+  <h3 class="link-list-title"><a class="link-list-title-link" href="../contact.html">Contact Data</a></h3>
+  <ul class="link-list-items">
+    <li><a class="link-list-link" href="../category/personal-resumes.html#cv-3-english"><svg type="fill" width="384" height="486" viewBox="0 0 384 486" class="link-list-icon"> <path fill-rule="evenodd" clip-rule="evenodd" d="M191.5 0.199991C193.7 0.0999908 199.1 0.699991 203.5 1.49999C208.7 2.39999 214.5 4.39999 220 7.09999C226.6 10.4 230.3 13.1 236.6 19.4C242.6 25.4 245.7 29.5 252.5 43.1L384 43V427H0V43H131.5L135.4 35.2C138.3 29.6 141.6 25.3 147.4 19.4C153.9 12.9 157.2 10.5 164 7.19999C168.7 4.99999 175 2.69999 178 2.09999C181 1.49999 184.4 0.799991 185.5 0.599991C186.6 0.399991 189.3 0.199991 191.5 0.199991ZM177.7 48.8C176.1 50.3 174 53.2 172.9 55.3C171.8 57.5 171 61.1 171 64C171 66.8 171.7 70.7 172.6 72.8C173.4 74.8 175.1 77.6 176.3 78.8C177.5 80.1 180.3 82.1 182.5 83.3C185.1 84.7 188.4 85.4 192 85.4C196 85.4 198.7 84.8 202 83C204.4 81.6 207.8 78.5 209.5 76.2C211.9 72.7 212.6 70.5 212.9 65.7C213.2 60.9 212.8 58.6 211.2 55.5C210.1 53.3 207.9 50.3 206.3 48.8C204.8 47.3 201.8 45.4 199.7 44.6C197.7 43.7 194.1 43 191.7 43C189.4 43.1 185.9 43.8 184 44.6C182.1 45.4 179.2 47.3 177.7 48.8ZM171 155C168.5 156.3 164.2 159.6 161.5 162.4C158.7 165.2 155.2 170.1 153.7 173.2C152.2 176.4 150.5 181.8 149.9 185.2C149.1 189.8 149.1 193.3 149.9 198.5C150.6 202.3 152.4 208.2 154 211.5C155.6 214.8 159 219.7 161.7 222.4C164.3 225.1 169.2 228.6 172.5 230.1C175.8 231.7 181.7 233.6 185.5 234.2C190.9 235.1 194 235.1 199.2 234.2C203 233.5 208.5 231.8 211.6 230.2C214.7 228.7 219.5 225.2 222.2 222.5C224.9 219.7 228.5 214.8 230 211.5C231.6 208.2 233.4 202.6 234 199C234.8 194.3 234.8 190.6 234.1 185.7C233.5 182 231.9 176.6 230.5 173.7C229.1 170.9 225.9 166.1 223.3 163.1C219.9 159.3 216.3 156.7 211 154.1C204.2 150.8 202.8 150.5 193.5 150.3C187.3 150.1 182 150.5 179.5 151.3C177.3 152.1 173.5 153.7 171 155ZM160.5 259.6C156.1 260.5 149.3 262.4 145.5 263.7C141.7 265.1 135.6 267.7 132 269.6C128.4 271.4 122.8 275.4 119.5 278.3C116.2 281.3 112.2 286.1 110.5 289.1C107.7 294.2 107.5 295.2 107.3 307.3L107 320H277C276.5 295.2 276.3 294.2 273.5 289.1C271.8 286.2 268 281.4 265 278.6C261.9 275.8 256.3 271.8 252.5 269.8C248.6 267.8 241.4 264.8 236.5 263.2C231.6 261.5 223.2 259.5 218 258.6C212.8 257.7 203.1 256.8 196.5 256.6C189.9 256.3 180.9 256.5 176.5 257C172.1 257.5 164.9 258.7 160.5 259.6Z" fill="var(--dm-color-white)"/> </svg><span class="link-list-text">CV English</span></a></li><li><a class="link-list-link" href="../category/personal-resumes.html#cv-3-romanian"><svg type="fill" width="384" height="486" viewBox="0 0 384 486" class="link-list-icon"> <path fill-rule="evenodd" clip-rule="evenodd" d="M191.5 0.199991C193.7 0.0999908 199.1 0.699991 203.5 1.49999C208.7 2.39999 214.5 4.39999 220 7.09999C226.6 10.4 230.3 13.1 236.6 19.4C242.6 25.4 245.7 29.5 252.5 43.1L384 43V427H0V43H131.5L135.4 35.2C138.3 29.6 141.6 25.3 147.4 19.4C153.9 12.9 157.2 10.5 164 7.19999C168.7 4.99999 175 2.69999 178 2.09999C181 1.49999 184.4 0.799991 185.5 0.599991C186.6 0.399991 189.3 0.199991 191.5 0.199991ZM177.7 48.8C176.1 50.3 174 53.2 172.9 55.3C171.8 57.5 171 61.1 171 64C171 66.8 171.7 70.7 172.6 72.8C173.4 74.8 175.1 77.6 176.3 78.8C177.5 80.1 180.3 82.1 182.5 83.3C185.1 84.7 188.4 85.4 192 85.4C196 85.4 198.7 84.8 202 83C204.4 81.6 207.8 78.5 209.5 76.2C211.9 72.7 212.6 70.5 212.9 65.7C213.2 60.9 212.8 58.6 211.2 55.5C210.1 53.3 207.9 50.3 206.3 48.8C204.8 47.3 201.8 45.4 199.7 44.6C197.7 43.7 194.1 43 191.7 43C189.4 43.1 185.9 43.8 184 44.6C182.1 45.4 179.2 47.3 177.7 48.8ZM171 155C168.5 156.3 164.2 159.6 161.5 162.4C158.7 165.2 155.2 170.1 153.7 173.2C152.2 176.4 150.5 181.8 149.9 185.2C149.1 189.8 149.1 193.3 149.9 198.5C150.6 202.3 152.4 208.2 154 211.5C155.6 214.8 159 219.7 161.7 222.4C164.3 225.1 169.2 228.6 172.5 230.1C175.8 231.7 181.7 233.6 185.5 234.2C190.9 235.1 194 235.1 199.2 234.2C203 233.5 208.5 231.8 211.6 230.2C214.7 228.7 219.5 225.2 222.2 222.5C224.9 219.7 228.5 214.8 230 211.5C231.6 208.2 233.4 202.6 234 199C234.8 194.3 234.8 190.6 234.1 185.7C233.5 182 231.9 176.6 230.5 173.7C229.1 170.9 225.9 166.1 223.3 163.1C219.9 159.3 216.3 156.7 211 154.1C204.2 150.8 202.8 150.5 193.5 150.3C187.3 150.1 182 150.5 179.5 151.3C177.3 152.1 173.5 153.7 171 155ZM160.5 259.6C156.1 260.5 149.3 262.4 145.5 263.7C141.7 265.1 135.6 267.7 132 269.6C128.4 271.4 122.8 275.4 119.5 278.3C116.2 281.3 112.2 286.1 110.5 289.1C107.7 294.2 107.5 295.2 107.3 307.3L107 320H277C276.5 295.2 276.3 294.2 273.5 289.1C271.8 286.2 268 281.4 265 278.6C261.9 275.8 256.3 271.8 252.5 269.8C248.6 267.8 241.4 264.8 236.5 263.2C231.6 261.5 223.2 259.5 218 258.6C212.8 257.7 203.1 256.8 196.5 256.6C189.9 256.3 180.9 256.5 176.5 257C172.1 257.5 164.9 258.7 160.5 259.6Z" fill="var(--dm-color-white)"/> </svg><span class="link-list-text">CV Romanian</span></a></li><li><a class="link-list-link" href="../contact.html#contact-form"><svg type="fill" width="84" height="84" viewBox="0 0 84 84" class="link-list-icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 1L1 0H83L84 1V83H83V84H1V83H0V1ZM34 28H70V16H34V28ZM12 24H28V20H12V24ZM34 52H70V40H34V52ZM12 48H28V44H12V48ZM34 72H42V64H34V72ZM48 70H72V66H48V70ZM0 83L1 84H0V83ZM84 84V83L83 84H84Z" fill="var(--dm-color-white)"/></svg><span class="link-list-text">Contact Form</span></a></li><li><a class="link-list-link" href="../privacy-policy.html"><svg type="fill" width="24" height="24" viewBox="0 0 24 24" class="link-list-icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 1L3 4.5V11C3 16.6 6.8 21.7 12 23C17.2 21.7 21 16.6 21 11V4.5L12 1ZM10.5 16.2L6.8 12.5L8.2 11.1L10.5 13.4L15.8 8.1L17.2 9.5L10.5 16.2Z"/></svg><span class="link-list-text">Privacy Policy</span></a></li>
+  </ul>
+</div>
+</div><div class="footer-column"><div class="link-list">
+  <h3 class="link-list-title"><a class="link-list-title-link" href="../category/projects.html">Project Types</a></h3>
+  <ul class="link-list-items">
+    <li><a class="link-list-link" href="../category/web-development-projects.html"><svg type="fill" viewBox="0 0 320 512" class="link-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="link-list-text">Web Projects</span></a></li><li><a class="link-list-link" href="../category/visual-media-projects.html"><svg type="fill" viewBox="0 0 320 512" class="link-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="link-list-text">Media Projects</span></a></li><li><a class="link-list-link" href="../category/personal-and-custom-projects.html"><svg type="fill" viewBox="0 0 320 512" class="link-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="link-list-text">Personal Projects</span></a></li>
+  </ul>
+</div>
+</div><div class="footer-column"><div class="link-list">
+  <h3 class="link-list-title"><a class="link-list-title-link" href="../about.html">About</a></h3>
+  <ul class="link-list-items">
+    <li><a class="link-list-link" href="../about.html"><svg type="fill" viewBox="0 0 320 512" class="link-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="link-list-text">About Me</span></a></li><li><a class="link-list-link" href="../experience.html"><svg type="fill" viewBox="0 0 320 512" class="link-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="link-list-text">Personal Experience</span></a></li><li><a class="link-list-link" href="../category/employee-experience.html"><svg type="fill" viewBox="0 0 320 512" class="link-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="link-list-text">Employee Experience</span></a></li><li><a class="link-list-link" href="../category/education-experience.html"><svg type="fill" viewBox="0 0 320 512" class="link-list-icon"> <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/> </svg><span class="link-list-text">Education Experience</span></a></li>
+  </ul>
+</div>
+</div><div class="footer-column footer-column-brand"><a href="../home.html" class="logo logo-shape-circle" data-variant="footer"><div class="logo-container-img"><img class="logo-img" src="../../src/content/img/brand/logo/logo.webp" alt="Denis Marginas Logo" width="50" height="50">
+</div><div class="site-title"><span class="primary">Denis</span><span class="secondary">Marginas</span></div></a>
+<div data-transition="fade slide-bottom" data-transition-duration="700" data-transition-distance="30px" data-transition-auto="true" class="social-links" data-variant="plain">
+  <h3 class="social-links-title">Socials</h3>
+  <ul class="social-links-visual"><li><a class="social-links-visual-link" href="https://www.youtube.com/channel/UCZGb7hnkyawMgnSO9T-rnnQ" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube"><svg type="fill" width="44" height="32" viewBox="0 0 44 32" class="social-links-icon"> <path d="M41.8984 5.5C41.5 3.30078 39.6016 1.69922 37.3984 1.19922C34.1016 0.5 28 0 21.3984 0C14.8008 0 8.60156 0.5 5.30078 1.19922C3.10156 1.69922 1.19922 3.19922 0.800781 5.5C0.398438 8 0 11.5 0 16C0 20.5 0.398438 24 0.898438 26.5C1.30078 28.6992 3.19922 30.3008 5.39844 30.8008C8.89844 31.5 14.8984 32 21.5 32C28.1016 32 34.1016 31.5 37.6016 30.8008C39.8008 30.3008 41.6992 28.8008 42.1016 26.5C42.5 24 43 20.3984 43.1016 16C42.8984 11.5 42.3984 8 41.8984 5.5ZM16 23V9L28.1992 16L16 23Z" fill="#FF3D00"/> </svg></a></li><li><a class="social-links-visual-link" href="https://www.facebook.com/denismarginas09" target="_blank" rel="noopener" title="Facebook" aria-label="Facebook"><svg type="fill" width="22" height="42" viewBox="0 0 22 42" class="social-links-icon"><path d="M16 -1.10493e-06C10.477 -1.10493e-06 6 4.477 6 10V15H0V23H6V42H14V23H21L22 15H14V11C14 8.791 15.791 7 18 7H22V0.321999C20.091 0.124999 17.921 -0.00400111 16 -1.10493e-06Z" fill="#0573E7"/> </svg></a></li><li><a class="social-links-visual-link" href="https://www.linkedin.com/in/denismarginas09/" target="_blank" rel="noopener" title="Linkedin" aria-label="Linkedin"><svg type="fill" width="40" height="38" viewBox="0 0 40 38" class="social-links-icon"> <path d="M4.421 9H4.473C7.263 9 9 7 9 4.5C8.948 1.945 7.263 0 4.526 0C1.789 0 0 1.945 0 4.5C0 7 1.736 9 4.421 9ZM0 12H9V38H0V12ZM40 21.5C40 16.253 35.747 12 30.5 12C27.447 12 24.738 13.446 23 15.684V12H14V38H23V23C23 20.791 24.791 19 27 19C29.209 19 31 20.791 31 23V38H40C40 38 40 22.955 40 21.5Z" fill="#0288D1"/> </svg></a></li><li><a class="social-links-visual-link" href="https://github.com/denismarginas" target="_blank" rel="noopener" title="Github" aria-label="Github"><svg type="fill" width="40" height="39" viewBox="0 0 40 39" class="social-links-icon"> <path d="M17.8 0.200015C8.60002 1.20002 1.20002 8.60002 0.200018 17.6C-0.799982 27 4.60002 35.4 12.8 38.6C13.4 38.8 14 38.4 14 37.6V34.4C14 34.4 13.2 34.6 12.2 34.6C9.40002 34.6 8.20002 32.2 8.00002 30.8C7.80002 30 7.40002 29.4 6.80002 28.8C6.20002 28.6 6.00002 28.6 6.00002 28.4C6.00002 28 6.60002 28 6.80002 28C8.00002 28 9.00002 29.4 9.40002 30C10.4 31.6 11.6 32 12.2 32C13 32 13.6 31.8 14 31.6C14.2 30.2 14.8 28.8 16 28C11.4 27 8.00002 24.4 8.00002 20C8.00002 17.8 9.00002 15.6 10.4 14C10.2 13.6 10 12.6 10 11.2C10 10.4 10 9.20002 10.6 8.00002C10.6 8.00002 13.4 8.00002 16.2 10.6C17.2 10.2 18.6 10 20 10C21.4 10 22.8 10.2 24 10.6C26.6 8.00002 29.6 8.00002 29.6 8.00002C30 9.20002 30 10.4 30 11.2C30 12.8 29.8 13.6 29.6 14C31 15.6 32 17.6 32 20C32 24.4 28.6 27 24 28C25.2 29 26 30.8 26 32.6V37.8C26 38.4 26.6 39 27.4 38.8C34.8 35.8 40 28.6 40 20.2C40 8.20002 29.8 -1.19998 17.8 0.200015Z" fill="var(--dm-color-white)"/> </svg></a></li></ul>
+  
+</div>
+</div></div>
+    <div class="footer-bottom"><div class="website-info">
+  <div class="website-info-start"><span class="cookie-settings"><button class="cookie-settings-button" type="button" data-cookie-settings aria-label="Cookie settings" title="Cookie settings"><svg type="stroke" width="24" height="24" viewBox="0 0 24 24" fill="none" class="cookie-settings-icon"><path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1 1.55V21a2 2 0 1 1-4 0v-.09a1.7 1.7 0 0 0-1-1.55 1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.7 1.7 0 0 0 .34-1.87 1.7 1.7 0 0 0-1.55-1H3a2 2 0 1 1 0-4h.09a1.7 1.7 0 0 0 1.55-1 1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.7 1.7 0 0 0 1.87.34 1.7 1.7 0 0 0 1-1.55V3a2 2 0 1 1 4 0v.09a1.7 1.7 0 0 0 1 1.55 1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.7 1.7 0 0 0-.34 1.87 1.7 1.7 0 0 0 1.55 1H21a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-1.55 1z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button></span>
+<ul class="website-info-dates"><li><span class="website-info-label">Online since:</span> <time class="website-info-date" datetime="2023-06-04">Jun 4, 2023</time></li><li><span class="website-info-label">Last updated:</span> <time class="website-info-date" datetime="2026-11-22">Nov 22, 2026</time></li></ul></div>
+  <p class="website-info-copyright">© All rights reserved, <a class="website-info-copyright-link" href="../home.html">Denis Marginas</a></p>
+</div>
+</div>
+  </container>
+</footer>
+
+    <cookie-notice class="cookie-notice" data-cookie-notice data-cookie-notice-version="1" data-cookie-notice-days="365" data-cookie-notice-defaults="{&quot;analytics&quot;:true}" role="region" aria-label="Cookie notice" hidden>
+  <button class="cookie-notice-close" type="button" aria-label="Close" title="Close" data-cookie-notice-close><svg type="stroke" width="14" height="14" viewBox="0 0 14 14"  class="cookie-notice-icon"><path d="M13 1L1 13M1 1L13 13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  <div class="cookie-notice-main">
+    <p class="cookie-notice-text">By continuing to use this site, you consent to cookies that enhance your experience and analyze traffic. For more details, please read our <a class="cookie-notice-link" href="../privacy-policy.html">Privacy Policy</a>.</p>
+    <div class="cookie-notice-actions">
+      <button class="btn btn-primary-small py-xxs cookie-notice-settings-toggle" type="button" aria-expanded="false" aria-controls="cookie-notice-settings" aria-label="Cookie settings" title="Cookie settings" data-cookie-notice-toggle>
+        <svg type="stroke" width="24" height="24" viewBox="0 0 24 24" fill="none" class="cookie-notice-icon"><path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1 1.55V21a2 2 0 1 1-4 0v-.09a1.7 1.7 0 0 0-1-1.55 1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.7 1.7 0 0 0 .34-1.87 1.7 1.7 0 0 0-1.55-1H3a2 2 0 1 1 0-4h.09a1.7 1.7 0 0 0 1.55-1 1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.7 1.7 0 0 0 1.87.34 1.7 1.7 0 0 0 1-1.55V3a2 2 0 1 1 4 0v.09a1.7 1.7 0 0 0 1 1.55 1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.7 1.7 0 0 0-.34 1.87 1.7 1.7 0 0 0 1.55 1H21a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-1.55 1z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="btn btn-primary-small py-xxs cookie-notice-accept" type="button" data-cookie-notice-accept>
+        <span class="btn-text">Accept</span>
+      </button>
+    </div>
+  </div>
+  <div class="cookie-notice-settings" id="cookie-notice-settings" data-cookie-notice-panel hidden>
+    <p class="cookie-notice-settings-title">Cookie settings</p>
+    <div class="cookie-notice-options"><div class="cookie-notice-option is-locked"><input class="cookie-notice-switch" type="checkbox" id="cookie-notice-necessary" checked disabled aria-describedby="cookie-notice-necessary-text"><label class="cookie-notice-option-copy" for="cookie-notice-necessary"><span class="cookie-notice-option-title">Necessary</span><span class="cookie-notice-option-text" id="cookie-notice-necessary-text">Remembers your cookie choice and the light / dark mode. Always on.</span></label></div><div class="cookie-notice-option"><input class="cookie-notice-switch" type="checkbox" id="cookie-notice-analytics" data-cookie-notice-category="analytics" aria-describedby="cookie-notice-analytics-text"><label class="cookie-notice-option-copy" for="cookie-notice-analytics"><span class="cookie-notice-option-title">Analytics</span><span class="cookie-notice-option-text" id="cookie-notice-analytics-text">Google Analytics: anonymous statistics about the pages you visit, used to improve the site.</span></label></div></div>
+    <div class="cookie-notice-settings-actions">
+      <button class="btn btn-primary-small py-xxs" type="button" data-cookie-notice-save>
+        <span class="btn-text">Save preferences</span>
+      </button>
+    </div>
+  </div>
+</cookie-notice>
+
+    
+</body>
+
+</html>

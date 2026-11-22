@@ -1,0 +1,10 @@
+{
+  "name": "image",
+  "summary": "Image tag with correct url and dimensions.",
+  "description": "Renders an image tag from a project-relative path with render-target aware urls and intrinsic dimensions.",
+  "assets": {
+    "php": ["assets/php/image.php"],
+    "html": ["assets/html/template.html"]
+  },
+  "dependencies": []
+}

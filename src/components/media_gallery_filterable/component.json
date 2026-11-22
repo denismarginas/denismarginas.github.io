@@ -1,0 +1,33 @@
+{
+  "name": "media_gallery_filterable",
+  "title": "Media Gallery Filterable",
+  "summary": "Project photo gallery with folder filters and load more.",
+  "description": "Photo gallery of a project (based on project_media_gallery's folder finder): one filter chip per gallery folder with its count (\"All\" first), a grid with a larger first frame, a label per tile (folder + number), \"Showing X of Y\" with Load more / Show all, and the popup gallery of the visible frames. Default folder: media (media/<sub folders>). A <section> of its own with a section_head.",
+  "post_types": [
+    "project"
+  ],
+  "assets": {
+    "php": [
+      "assets/php/media_gallery_filterable.php"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ],
+    "js": [
+      "assets/js/media_gallery_filterable.js"
+    ]
+  },
+  "dependencies": [
+    "section",
+    "section_head",
+    "utility_project_media",
+    "project_media_gallery",
+    "popup",
+    "image",
+    "svg",
+    "theme"
+  ]
+}

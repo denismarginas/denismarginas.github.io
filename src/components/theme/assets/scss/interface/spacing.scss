@@ -1,0 +1,12 @@
+@import "../variables/_spacing";
+
+:root {
+  --dm-spacing-xxs: #{$dm-spacing-xxs};
+  --dm-spacing-xs: #{$dm-spacing-xs};
+  --dm-spacing-sm: #{$dm-spacing-sm};
+  --dm-spacing-md: #{$dm-spacing-md};
+  --dm-spacing-lg: #{$dm-spacing-lg};
+  --dm-spacing-xl: #{$dm-spacing-xl};
+  --dm-spacing-2xl: #{$dm-spacing-2xl};
+  --dm-spacing-3xl: #{$dm-spacing-3xl};
+}

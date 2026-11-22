@@ -1,0 +1,219 @@
+@import "theme";
+
+.hobby-pc-video-games {
+  display: flex;
+  flex-direction: column;
+  gap: var(--dm-spacing-sm);
+  width: 100%;
+}
+
+.hobby-pc-video-games-listing {
+  @include reset-list();
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: var(--dm-spacing-xs);
+  width: 100%;
+
+  > li[hidden] {
+    display: none !important;
+  }
+
+  @media (max-width: $dm-screen-sm) {
+    grid-template-columns: repeat(auto-fill, minmax(84px, 1fr));
+    gap: var(--dm-spacing-xxs);
+  }
+}
+
+.hobby-pc-video-games-empty {
+  font-family: var(--dm-font-primary);
+  font-size: var(--dm-font-size-md);
+  text-align: center;
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+.hobby-pc-video-game {
+  position: relative;
+  min-width: 0;
+
+  > .hobby-pc-video-game-box {
+    position: relative;
+    width: 100%;
+    aspect-ratio: unquote("2 / 3");
+    overflow: hidden;
+    border-radius: var(--dm-radius-sm);
+    background-color: var(--dm-color-primary-900);
+    box-shadow: 0 4px 12px color-mix(in srgb, var(--dm-color-black) 25%, transparent);
+  }
+
+  .hobby-pc-video-game-banner {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .hobby-pc-video-game-details {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 6px 8px;
+    background: linear-gradient(
+      to bottom right,
+      color-mix(in srgb, var(--dm-color-secondary) 70%, transparent) 20%,
+      transparent 100%
+    );
+    background-color: transparent;
+    transition: var(--dm-transition);
+
+    > * {
+      opacity: 0.5;
+      transition: var(--dm-transition);
+    }
+  }
+
+  .hobby-pc-video-game-rank,
+  .hobby-pc-video-game-playtime {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    > span {
+      font-family: var(--dm-font-primary);
+      color: var(--dm-color-white);
+      line-height: 1;
+      opacity: 0;
+      transform: rotate(100deg) scale(0.8) translateY(6px);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  .hobby-pc-video-game-rank > span {
+    font-size: var(--dm-font-size-base);
+    font-weight: var(--dm-font-weight-light);
+  }
+
+  .hobby-pc-video-game-playtime > span {
+    font-size: var(--dm-font-size-xs);
+    font-weight: var(--dm-font-weight-regular);
+  }
+
+  .hobby-pc-video-game-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    object-fit: contain;
+    opacity: 0;
+    transform: scale(0.6);
+    transition: all 0.2s ease-in-out;
+    @include svg-color(var(--dm-color-white));
+  }
+
+  .hobby-pc-video-game-tags {
+    > summary {
+      display: inline-flex;
+      cursor: var(--cursor-pointer, pointer);
+      list-style: none;
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      &:hover > .hobby-pc-video-game-icon {
+        @include svg-color(var(--dm-color-primary-200));
+      }
+    }
+
+    > ul {
+      @include reset-list();
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2px;
+      margin-top: 4px;
+      max-width: 80px;
+
+      > li {
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-family: var(--dm-font-primary);
+        font-size: var(--dm-font-size-xs);
+        font-weight: var(--dm-font-weight-regular);
+        line-height: 1.2;
+        color: var(--dm-color-white);
+        background-color: var(--dm-color-secondary);
+      }
+    }
+  }
+
+  .hobby-pc-video-game-name {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 5px 4px;
+    font-family: var(--dm-font-primary);
+    font-size: var(--dm-font-size-xs);
+    font-weight: var(--dm-font-weight-regular);
+    line-height: 1.3;
+    text-align: center;
+    color: var(--dm-color-white);
+    background-color: color-mix(in srgb, var(--dm-color-gray-dark) 70%, transparent);
+    opacity: 0;
+    transition: var(--dm-transition);
+    @include limit-line-text(3);
+  }
+
+  &:hover,
+  &:focus-within {
+    .hobby-pc-video-game-banner {
+      transform: scale(1.05);
+    }
+  }
+
+  &:hover,
+  &:focus-within,
+  &.active,
+  .show-details > & {
+    .hobby-pc-video-game-details {
+      background-color: color-mix(in srgb, var(--dm-color-gray-dark) 30%, transparent);
+
+      > * {
+        opacity: 1;
+      }
+    }
+
+    .hobby-pc-video-game-rank > span,
+    .hobby-pc-video-game-playtime > span {
+      opacity: 1;
+      transform: rotate(0deg) scale(1) translateY(0);
+    }
+
+    .hobby-pc-video-game-icon {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .hobby-pc-video-game-name {
+      opacity: 1;
+    }
+  }
+
+  @media (hover: none) {
+    .hobby-pc-video-game-details > *,
+    .hobby-pc-video-game-icon,
+    .hobby-pc-video-game-name,
+    .hobby-pc-video-game-rank > span,
+    .hobby-pc-video-game-playtime > span {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}

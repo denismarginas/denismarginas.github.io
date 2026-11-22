@@ -1,0 +1,45 @@
+{
+    "menu_name": "Header Menu",
+    "menu_list": [
+        {
+            "_id": "home",
+            "text": "Acasă"
+        },
+        {
+            "_id": "experience",
+            "text": "Experiență",
+            "submenu": [
+                {
+                    "_id": "employee-experience",
+                    "text": "Experiență profesională"
+                },
+                {
+                    "_id": "education-experience",
+                    "text": "Studii și certificări"
+                }
+            ]
+        },
+        {
+            "_id": "projects",
+            "text": "Proiecte",
+            "submenu": [
+                {
+                    "_id": "web-development-projects",
+                    "text": "Proiecte web"
+                },
+                {
+                    "_id": "visual-media-projects",
+                    "text": "Proiecte media"
+                },
+                {
+                    "_id": "personal-and-custom-projects",
+                    "text": "Proiecte personale"
+                }
+            ]
+        },
+        {
+            "_id": "contact",
+            "text": "Contact"
+        }
+    ]
+}

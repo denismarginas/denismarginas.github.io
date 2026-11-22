@@ -1,0 +1,14 @@
+{
+  "name": "cookie_notice",
+  "title": "Cookie Notice",
+  "summary": "Cookie consent bar at the bottom of every page.",
+  "description": "Cookie consent bar fixed to the bottom of every page (rendered by page_constructor). Text, button and the privacy page link come from data_content_cookie_notice.json. Accepting stores the choice (localStorage + cookie) so the bar stays hidden; changing \"version\" shows it again. Fires a cookie-notice:accept event on document.",
+  "assets": {
+    "php": ["assets/php/cookie_notice.php"],
+    "html": ["assets/html/template.html"],
+    "scss": ["assets/scss/**"],
+    "css": ["assets/css/**"],
+    "js": ["assets/js/cookie_notice.js"]
+  },
+  "dependencies": ["theme"]
+}

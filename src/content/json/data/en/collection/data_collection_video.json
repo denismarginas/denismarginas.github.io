@@ -1,0 +1,1660 @@
+[
+  {
+    "_id": "denismarginas-experience-highlights",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#5d6977"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Apr 14, 2025"
+      },
+      "media": {
+        "video": {
+          "video": "projects/denismarginas-media/personal-portfolio/denismarginas_experience_highlights.webm",
+          "video_thumbnail": "thumbnails/denismarginas_experience_highlights.webp",
+          "video_data": {
+            "title": "Experience Highlights",
+            "description": "This is a summary of my most impactful projects and tasks from 2019 to 2025. In just a few seconds, you'll see a presentation of some of the most unique and defining examples from my professional experience.<br><br>Editing Software: Adobe After Effects 2023, Sony Vegas Pro 20, Photopea, Topaz Video Enhance AI<br>Sondtrack: Lorn - Yo2_Rustlin<br><br>Video Timeline:<ul><li>00:00 - 00:08 - Intro</li><li>00:08 - 00:22 - Experience Highlights</li><li>00:22 - 00:28 - Contact</li></ul>"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=HxGdZ_embL8",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["portfolio showcase"]
+      }
+    }
+  },
+  {
+    "_id": "denismarginas-portfolio-showcase",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#5d6977"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Apr 20, 2023"
+      },
+      "media": {
+        "video": {
+          "video": "projects/denismarginas-media/personal-portfolio/denismarginas_portfolio_showcase.webm",
+          "video_thumbnail": "thumbnails/denismarginas_portfolio_showcase.webp",
+          "video_data": {
+            "title": "Portfolio Showcase",
+            "description": "Experience a captivating journey through my professional work from 2019 to 2023 in this short video. From a captivating intro to web development, photo editing, and video editing, witness my diverse expertise in just under two minutes.<br><br>Editing Software: Sony Vegas Pro 20, Photopea, Topaz Video Enhance AI<br>Sondtrack: Skeler - Tel Aviv (Hijacked Remix)<br><br>Video Timeline:<ul><li>00:00 - 00:04 - Intro</li><li>00:04 - 00:55 - Web Development</li><li>00:55 - 01:14 - Photo Editing</li><li>01:14 - 01:52 - Video Editing</li><li>01:52 - 01:56 - Outro</li></ul>"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=ilz2avyGG_U",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["portfolio showcase"]
+      }
+    }
+  },
+  {
+    "_id": "denismarginas-github-portfolio",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#5d6977"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Dec 14, 2025"
+      },
+      "media": {
+        "video": {
+          "video": "projects/denismarginas-media/github-portfolio/denismarginas_github_portfolio.webm",
+          "video_thumbnail": "thumbnails/denismarginas_github_portfolio.webp",
+          "video_data": {
+            "title": "Github Portfolio",
+            "description": "Using my projects and experience as a Full-Stack Web Developer, I have created a single portfolio project that showcases my professional data, using free GitHub Pages hosting, PHP for prerendering content, and JavaScript for front-end interaction.<br><br>Song: Pavel Dovgal - Transition<br><br>Category: Cinematic Edit IRL<br>Project Details: 1920x1080p 18 FPS<br>Software(s): Adobe After Effects 2023, Sony Vegas Pro 20, Photopea, Topaz Video Enhance AI<br>Plugin(s): BBC, Sapphire, Element 3d, RSMB, MeshiAI<br>Scaled up: The video was scaled up from HD to 4k with Topaz Video Enhance AI.<br>Tags: Portfolio, Edit<br><br>Render PC Summary Specs:<br>CPU: AMD Ryzen™ 5 7600X, 38MB, 4.7/5.3GHz Boost<br>GPU: GIGABYTE GeForce RTX 3070 GAMING OC LHR 8GB GDDR6 256-bit<br>RAM: Kingston FURY Beast 32GB 5200MHz CL40 Dual Channel Kit"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=9PRqXelnc9o",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["portfolio showcase"]
+      }
+    }
+  },
+  {
+    "_id": "denismarginas-desktop-setup-irl",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#2662c1"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Oct 30, 2025"
+      },
+      "media": {
+        "video": {
+          "video": "projects/denismarginas-media/personal-workstation/denismarginas_desktop_setup_irl.webm",
+          "video_thumbnail": "thumbnails/denismarginas_desktop_setup_irl.webp",
+          "video_data": {
+            "title": "Desktop Setup | IRL",
+            "description": "PC#1 Configuration:<ul><li>Computer Case AQIRYS Antares ARGB</li><li>Motherboard ASUS TUF GAMING B650-PLUS AM5</li><li>RAM Kingston FURY Beast 32GB DDR5 5200MHz CL40 Dual Channel</li><li>CPU AMD Ryzen™ 5 7600X 38MB 4.7/5.3GHz Boost</li><li>Cooler ARCTIC Freezer 34 eSports DUO Grey</li><li>GPU GIGABYTE GeForce RTX 3070 OC 8GB GDDR6 256-bit</li><li>SSD GIGABYTE 480GB SATA-III 2.5 inch</li><li>SSD Kingston NV2 1TB PCI Express 4.0 x4 M.2 2280</li><li>PSU GIGABYTE P850GM 80+ Gold 850W</li></ul><br>PC#1 Accessories:<ul><li>Headset wireless HyperX Cloud Stinger Core 7.1</li><li>Mouse Pad GENESIS Carbon 700 Maxi Cordura</li><li>Mouse LOGITECH G203 LIGHTSYNC RGB, 8.000 dpi</li><li>Mechanical Keyboard LOGITECH G512 GX Red Linear</li><li>Speakers Trust Arys Compact RGB 2.0 Set</li><li>Monitor IPS SAMSUNG Odyssey G5, 27\", WQHD, 165Hz</li></ul><br>Date: April, 2023<br><br>Songs: LXST CXNTURY - MIRAX<br><br>Category: Cinematic Edit IRL<br>Project Details: 1920x1080p 29.970 FPS<br>Software(s): Sony Vegas Pro 20, Photopea, Topaz Video Enhance AI<br>Plugin(s): BCC, Sapphire<br>Scaled up: The video was scaled up from HD to 4k with Topaz Video Enhance AI.<br>Tags: IRL Edit, Car Edit<br><br>Recording Device: Samsung A52s<br>Main camera: 64 MP, f/1.8, 26mm (wide), 1/1.7\", 12 MP f/2.2, (ultrawide), 5 MP f/2.4,<br>Recorded in 1080p@30fps<br><br>Render PC Summary Specs:<br>CPU: AMD Ryzen™ 5 7600X, 38MB, 4.7/5.3GHz Boost<br>GPU: GIGABYTE GeForce RTX 3070 GAMING OC LHR 8GB GDDR6 256-bit<br>RAM: Kingston FURY Beast 32GB 5200MHz CL40 Dual Channel Kit<br><br>Video Timeline:<ul><li>00:00 - 00:06 - Intro</li><li>00:06 - 00:14 - Setup Info</li><li>00:14 - 00:41 - Showcase Peripherals and Accessories</li><li>00:41 - 01:05 - Showcase PC Components</li><li>01:05 - 01:15 - Outro</li></ul>"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=zE0KW6r0mV0",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["workstation"]
+      }
+    }
+  },
+  {
+    "_id": "agramix-1-advertisement",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#ae0000"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Jun 12, 2022"
+      },
+      "media": {
+        "video": {
+          "video": "projects/agramix-media/videos_1/agramix_1_advertisement.webm",
+          "video_thumbnail": "thumbnails/agramix_1_advertisement.webp",
+          "video_data": {
+            "title": "Agramix #1 | Advertisement",
+            "description": "Editor: Denis Marginas<br><br>Category: Advertisement<br>Tags: Agramix"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=E9GYFvxCJM4",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["advertisement"]
+      }
+    }
+  },
+  {
+    "_id": "agramix-2-advertisement",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#ae0000"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Jun 12, 2022"
+      },
+      "media": {
+        "video": {
+          "video": "projects/agramix-media/videos_2/agramix_2_advertisement.webm",
+          "video_thumbnail": "thumbnails/agramix_2_advertisement.webp",
+          "video_data": {
+            "title": "Agramix #2 | Advertisement",
+            "description": "Editor: Denis Marginas<br><br>Song: -<br>Facebook Page: https://www.facebook.com/agramix.mm<br><br>Category: Advertisement<br>Project Details: 1080x1080p 30 FPS<br>Software(s): Adobe After Effects 2020, Photopea, Topaz Gigapixel AI<br>Plugin(s): BCC, Sapphire, RSMB, MBL<br>Tags: Agramix<br><br>Render PC Summary Specs:<br>CPU: Intel Coffee Lake, Core i5 9400F 2.9GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC 6GB GDDR6 192-bit<br>RAM: 16 GB 2666 MHz"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=v0b5uexdGrw",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["advertisement"]
+      }
+    }
+  },
+  {
+    "_id": "agramix-3-advertisement",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#ae0000"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Jun 12, 2022"
+      },
+      "media": {
+        "video": {
+          "video": "projects/agramix-media/videos_2/agramix_3_advertisement.webm",
+          "video_thumbnail": "thumbnails/agramix_3_advertisement.webp",
+          "video_data": {
+            "title": "Agramix #3 | Advertisement",
+            "description": "Editor: Denis Marginas<br><br>Song: -<br>Facebook Page: https://www.facebook.com/agramix.mm<br><br>Category: Advertisement<br>Project Details: 1080x1080p 30 FPS<br>Software(s): Adobe After Effects 2020, Photopea, Topaz Gigapixel AI<br>Plugin(s): BCC, Sapphire, RSMB, MBL<br>Tags: Agramix<br><br>Render PC Summary Specs:<br>CPU: Intel Coffee Lake, Core i5 9400F 2.9GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC 6GB GDDR6 192-bit<br>RAM: 16 GB 2666 MHz"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=iQj85ZJx3tk",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["advertisement"]
+      }
+    }
+  },
+  {
+    "_id": "agromir-1-advertisement",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#72b334"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "May 25, 2021"
+      },
+      "media": {
+        "video": {
+          "video": "projects/agromir-media/videos_2/agromir_1_advertisement.webm",
+          "video_thumbnail": "thumbnails/agromir_1_advertisement.webp",
+          "video_data": {
+            "title": "Agromir #1 | Advertisement",
+            "description": "Editor: Denis Marginas<br><br>Song: -<br>Facebook Page: https://www.facebook.com/cauciucuriagricole<br><br>Category: Advertisement<br>Project Details: 1920x1080p 25 FPS<br>Software(s): Blender, Adobe After Effects 2020, Sony Vegas Pro 16, Photopea<br>Plugin(s): BCC, Sapphire, RSMB, MBL<br>Tags: Agromir<br><br>Render PC Summary Specs:<br>CPU: Intel Coffee Lake, Core i5 9400F 2.9GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC 6GB GDDR6 192-bit<br>RAM: 16 GB 2666 MHz"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=qwn8ZH_H7rU",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["advertisement"]
+      }
+    }
+  },
+  {
+    "_id": "agromir-2-advertisement",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#72b334"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "May 25, 2021"
+      },
+      "media": {
+        "video": {
+          "video": "projects/agromir-media/videos_4/agromir_2_advertisement.webm",
+          "video_thumbnail": "thumbnails/agromir_2_advertisement.webp",
+          "video_data": {
+            "title": "Agromir #2 | Advertisement",
+            "description": "Editor: Denis Marginas<br><br>Song: -<br>Facebook Page: https://www.facebook.com/cauciucuriagricole<br><br>Category: Advertisement<br>Project Details: 1920x1080p 25 FPS<br>Software(s): Adobe After Effects 2020, Sony Vegas Pro 16, Photopea<br>Plugin(s): BCC, Sapphire, RSMB, MBL<br>Tags: Agromir<br><br>Render PC Summary Specs:<br>CPU: Intel Coffee Lake, Core i5 9400F 2.9GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC 6GB GDDR6 192-bit<br>RAM: 16 GB 2666 MHz"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=EmheH5xQXJg",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["advertisement"]
+      }
+    }
+  },
+  {
+    "_id": "agromir-3-advertisement",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#72b334"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Jun 12, 2022"
+      },
+      "media": {
+        "video": {
+          "video": "projects/agromir-media/videos_4/agromir_3_advertisement.webm",
+          "video_thumbnail": "thumbnails/agromir_3_advertisement.webp",
+          "video_data": {
+            "title": "Agromir #3 | Advertisement",
+            "description": "Editor: Denis Marginas<br><br>Song: -<br>Facebook Page: https://www.facebook.com/cauciucuriagricole<br><br>Category: Advertisement<br>Project Details: 1920x1080p 30 FPS<br>Software(s): Adobe After Effects 2020, Sony Vegas Pro 16, Photopea<br>Plugin(s): BCC, Sapphire, RSMB, MBL<br>Tags: Agromir<br><br>Render PC Summary Specs:<br>CPU: Intel Coffee Lake, Core i5 9400F 2.9GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC 6GB GDDR6 192-bit<br>RAM: 16 GB 2666 MHz"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=nRM1v0O33WY",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["advertisement"]
+      }
+    }
+  },
+  {
+    "_id": "agromir-4-advertisement",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#72b334"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Jun 12, 2022"
+      },
+      "media": {
+        "video": {
+          "video": "projects/agromir-media/videos_3/agromir_4_advertisement.webm",
+          "video_thumbnail": "thumbnails/agromir_4_advertisement.webp",
+          "video_data": {
+            "title": "Agromir #4 | Advertisement",
+            "description": "Editor: Denis Marginas<br><br>Song: -<br>Facebook Page: https://www.facebook.com/cauciucuriagricole<br><br>Category: Advertisement<br>Project Details: 1920x1080p 25 FPS<br>Software(s): Adobe After Effects 2020, Sony Vegas Pro 16, Photopea<br>Plugin(s): BCC, Sapphire, RSMB, MBL<br>Tags: Agromir<br><br>Render PC Summary Specs:<br>CPU: Intel Coffee Lake, Core i5 9400F 2.9GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC 6GB GDDR6 192-bit<br>RAM: 16 GB 2666 MHz"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=R7RoiEeHnx4",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["advertisement"]
+      }
+    }
+  },
+  {
+    "_id": "agromir-5-advertisement",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#72b334"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Jun 12, 2022"
+      },
+      "media": {
+        "video": {
+          "video": "projects/agromir-media/videos_2/agromir_5_advertisement.webm",
+          "video_thumbnail": "thumbnails/agromir_5_advertisement.webp",
+          "video_data": {
+            "title": "Agromir #5 | Advertisement",
+            "description": "Editor: Denis Marginas<br><br>Song: -<br>Facebook Page: https://www.facebook.com/cauciucuriagricole<br><br>Category: Advertisement<br>Project Details: 1920x1080p 25 FPS<br>Software(s): Blender, Adobe After Effects 2020, Sony Vegas Pro 16, Photopea<br>Plugin(s): BCC, Sapphire, RSMB, MBL<br>Tags: Agromir<br><br>Render PC Summary Specs:<br>CPU: Intel Coffee Lake, Core i5 9400F 2.9GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC 6GB GDDR6 192-bit<br>RAM: 16 GB 2666 MHz"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=8BQHEDfQTaA",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["advertisement"]
+      }
+    }
+  },
+  {
+    "_id": "agromir-6-advertisement",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#72b334"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Jun 12, 2022"
+      },
+      "media": {
+        "video": {
+          "video": "projects/agromir-media/videos_3/agromir_6_advertisement.webm",
+          "video_thumbnail": "thumbnails/agromir_6_advertisement.webp",
+          "video_data": {
+            "title": "Agromir #6 | Advertisement",
+            "description": "Editor: Denis Marginas<br><br>Song: -<br>Facebook Page: https://www.facebook.com/cauciucuriagricole<br><br>Category: Advertisement<br>Project Details: 1920x1080p 30 FPS<br>Software(s): Sony Vegas Pro 16, Photopea<br>Plugin(s): BCC, Sapphire, RSMB, MBL<br>Tags: Agromir<br><br>Render PC Summary Specs:<br>CPU: Intel Coffee Lake, Core i5 9400F 2.9GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC 6GB GDDR6 192-bit<br>RAM: 16 GB 2666 MHz"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=yXthYdWGHRk",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["advertisement"]
+      }
+    }
+  },
+  {
+    "_id": "agromir-7-advertisement",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#72b334"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Oct 24, 2022"
+      },
+      "media": {
+        "video": {
+          "video": "projects/agromir-media/videos_1/agromir_7_advertisement.webm",
+          "video_thumbnail": "thumbnails/agromir_7_advertisement.webp",
+          "video_data": {
+            "title": "Agromir #7 | Advertisement",
+            "description": "Editor: Denis Marginas<br><br>Song: ROYALTY FREE Ambient Music _ Science Technology Abstract Music Royalty Free by MUSIC4VIDEO<br>Facebook Page: https://www.facebook.com/cauciucuriagricole<br><br>Category: Advertisement<br>Project Details: 1920x1080 29.970 FPS<br>Software(s): Sony Vegas Pro 16, Sony Vegas Pro 18, Photopea, Topaz Video Enhance, Topaz Gigapixel AI<br>Plugin(s): -<br>Tags: Agromir<br><br>Render PC Summary Specs:<br>CPU: Intel Coffee Lake, Core i5 9400F 2.9GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC 6GB GDDR6 192-bit<br>RAM: 16 GB 2666 MHz"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=TgjiRgNm-uo",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["advertisement"]
+      }
+    }
+  },
+  {
+    "_id": "agromir-8-advertisement",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#72b334"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Feb 1, 2020"
+      },
+      "media": {
+        "video": {
+          "video": "projects/agromir-media/videos_5/agromir_video_tractour.webm",
+          "video_thumbnail": "thumbnails/agromir_video_tractour.webp",
+          "video_data": {
+            "title": "Agromir #8 | Tractor Advertisement",
+            "description": "Editor: Denis Marginas<br><br>Facebook Page: https://www.facebook.com/cauciucuriagricole<br><br>Category: Advertisement<br>Project Details: 1280x720p 30 FPS<br>Tags: Agromir"
+          }
+        }
+      },
+      "taxonomy": {
+        "tag": ["advertisement"]
+      }
+    }
+  },
+  {
+    "_id": "avadores-1-advertisement",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#f121a5"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "May 25, 2021"
+      },
+      "media": {
+        "video": {
+          "video": "projects/revelnail-avadores-media/videos_3/avadores_1_advertisement.webm",
+          "video_thumbnail": "thumbnails/avadores_1_advertisement.webp",
+          "video_data": {
+            "title": "Avadores #1 | Advertisement",
+            "description": "Editor: Denis Marginas<br><br>Song: SwuM - Lucid<br>Facebook Page: https://www.facebook.com/revelromania<br><br>Category: Advertisement<br>Project Details: 1920x1080p 29.970 FPS<br>Software(s): Sony Vegas Pro 16, Photopea<br>Plugin(s): BCC, Sapphire, RSMB, MBL<br>Tags: Revel Nail, Avadores<br><br>Render PC Summary Specs:<br>CPU: Intel Coffee Lake, Core i5 9400F 2.9GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC 6GB GDDR6 192-bit<br>RAM: 16 GB 2666 MHz"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=FNUCERotDAY",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["advertisement"]
+      }
+    }
+  },
+  {
+    "_id": "avadores-2-advertisement",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#f121a5"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "May 27, 2021"
+      },
+      "media": {
+        "video": {
+          "video": "projects/revelnail-avadores-media/videos_3/avadores_2_advertisement.webm",
+          "video_thumbnail": "thumbnails/avadores_2_advertisement.webp",
+          "video_data": {
+            "title": "Avadores #2 | Advertisement",
+            "description": "Editor: Denis Marginas<br><br>Song: Hysics - Selective Company<br>Facebook Page: https://www.facebook.com/revelromania<br><br>Category: Advertisement<br>Project Details: 1280x720p 29.970 FPS<br>Software(s):  Sony Vegas Pro 16, Photopea<br>Plugin(s): BCC, Sapphire, RSMB, MBL<br>Tags: Revel Nail, Avadores<br><br>Render PC Summary Specs:<br>CPU: Intel Coffee Lake, Core i5 9400F 2.9GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC 6GB GDDR6 192-bit<br>RAM: 16 GB 2666 MHz"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=dbZ6UvItckQ",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["advertisement"]
+      }
+    }
+  },
+  {
+    "_id": "avadores-3-advertisement",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#f121a5"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Jun 12, 2022"
+      },
+      "media": {
+        "video": {
+          "video": "projects/revelnail-avadores-media/videos_2/avadores_3_advertisement.webm",
+          "video_thumbnail": "thumbnails/avadores_3_advertisement.webp",
+          "video_data": {
+            "title": "Avadores #3 | Advertisement",
+            "description": "Editor: Denis Marginas<br><br>Song: 2B Studio - Team Building<br>Facebook Page: https://www.facebook.com/revelromania<br><br>Category: Advertisement<br>Project Details: 1920x1080p 29.970 FPS<br>Software(s): Adobe After Effects 2020, Sony Vegas Pro 16, Photopea<br>Plugin(s): BCC, Sapphire, RSMB, MBL<br>Tags: Revel Nail, Avadores<br><br>Render PC Summary Specs:<br>CPU: Intel Coffee Lake, Core i5 9400F 2.9GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC 6GB GDDR6 192-bit<br>RAM: 16 GB 2666 MHz"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=BzsWfTAK9Z8",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["advertisement"]
+      }
+    }
+  },
+  {
+    "_id": "avadores-4-advertisement",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#f121a5"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Jun 12, 2022"
+      },
+      "media": {
+        "video": {
+          "video": "projects/revelnail-avadores-media/videos_2/avadores_4_advertisement.webm",
+          "video_thumbnail": "thumbnails/avadores_4_advertisement.webp",
+          "video_data": {
+            "title": "Avadores #4 | Advertisement",
+            "description": "Editor: Denis Marginas<br><br>Song: EBM - DAMSEL<br>Facebook Page: https://www.facebook.com/revelromania<br><br>Category: Advertisement<br>Project Details: 1080x1920p 29.970 FPS<br>Software(s): Sony Vegas Pro 16, Photopea, Topaz Video Enhance, Topaz Gigapixel AI<br>Plugin(s): BCC, Sapphire, MBL<br>Tags: Revel Nail, Avadores<br><br>Render PC Summary Specs:<br>CPU: Intel Coffee Lake, Core i5 9400F 2.9GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC 6GB GDDR6 192-bit<br>RAM: 16 GB 2666 MHz"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=jPUgmaaQWWw",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["advertisement"]
+      }
+    }
+  },
+  {
+    "_id": "avadores-5-advertisement",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#f121a5"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Oct 18, 2022"
+      },
+      "media": {
+        "video": {
+          "video": "projects/revelnail-avadores-media/videos_1/avadores_5_advertisement.webm",
+          "video_thumbnail": "thumbnails/avadores_5_advertisement.webp",
+          "video_data": {
+            "title": "Avadores #5 | Advertisement",
+            "description": "Editor: Denis Marginas<br><br>Song: ROYALTY FREE Ambient Music _ Science Technology Abstract Music Royalty Free by MUSIC4VIDEO<br>Facebook Page: https://www.facebook.com/revelromania<br><br>Category: Advertisement<br>Project Details: 1920x1080 29.970 FPS<br>Software(s): Sony Vegas Pro 16, Sony Vegas Pro 18, Photopea, Topaz Video Enhance, Topaz Gigapixel AI<br>Plugin(s): -<br>Tags: Revel Nail, Avadores<br><br>Render PC Summary Specs:<br>CPU: Intel Coffee Lake, Core i5 9400F 2.9GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC 6GB GDDR6 192-bit<br>RAM: 16 GB 2666 MHz"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=l_CsBNFNH1Q",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["advertisement"]
+      }
+    }
+  },
+  {
+    "_id": "busvip-1-advertisement",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#ffae02"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "May 25, 2021"
+      },
+      "media": {
+        "video": {
+          "video": "projects/busvip-media/videos_3/busvip_1_advertisement.webm",
+          "video_thumbnail": "thumbnails/busvip_1_advertisement.webp",
+          "video_data": {
+            "title": "Busvip #1 | Advertisement",
+            "description": "Editor: Denis Marginas<br><br>Song: -<br>Facebook Page: https://www.facebook.com/curseocazionalebusvip<br><br>Category: Advertisement<br>Project Details: 1920x1080p 30 FPS<br>Software(s): Adobe After Effects 2020, Photopea<br>Plugin(s): BCC, Sapphire, RSMB, MBL<br>Tags: Bus-VIP<br><br>Render PC Summary Specs:<br>CPU: Intel Coffee Lake, Core i5 9400F 2.9GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC 6GB GDDR6 192-bit<br>RAM: 16 GB 2666 MHz"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=QIwKGmHaEIw",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["advertisement"]
+      }
+    }
+  },
+  {
+    "_id": "busvip-2-advertisement",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#ffae02"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Jun 12, 2022"
+      },
+      "media": {
+        "video": {
+          "video": "projects/busvip-media/videos_3/busvip_2_advertisement.webm",
+          "video_thumbnail": "thumbnails/busvip_2_advertisement.webp",
+          "video_data": {
+            "title": "Busvip #2 | Advertisement",
+            "description": "Editor: Denis Marginas<br><br>Song: -<br>Facebook Page: https://www.facebook.com/curseocazionalebusvip<br><br>Category: Advertisement<br>Project Details: 1920x1080p 30 FPS<br>Software(s): Adobe After Effects 2020, Sony Vegas Pro 16, Photopea, Topaz Gigapixel AI<br>Plugin(s): BCC, Sapphire, RSMB, MBL<br>Tags: Bus-VIP<br><br>Render PC Summary Specs:<br>CPU: Intel Coffee Lake, Core i5 9400F 2.9GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC 6GB GDDR6 192-bit<br>RAM: 16 GB 2666 MHz"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=KCsbHL7gfxU",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["advertisement"]
+      }
+    }
+  },
+  {
+    "_id": "busvip-3-advertisement",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#ffae02"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Jun 12, 2022"
+      },
+      "media": {
+        "video": {
+          "video": "projects/busvip-media/videos_2/busvip_3_advertisement.webm",
+          "video_thumbnail": "thumbnails/busvip_3_advertisement.webp",
+          "video_data": {
+            "title": "Busvip #3 | Advertisement",
+            "description": "Editor: Denis Marginas<br><br>Song: 2B Studio - Tutorial Background<br>Facebook Page: https://www.facebook.com/curseocazionalebusvip<br><br>Category: Advertisement<br>Project Details: 1920x1080p 30 FPS<br>Software(s): Sony Vegas Pro 16, Photopea<br>Plugin(s): BCC, Sapphire, RSMB, MBL<br>Tags: Bus-VIP<br><br>Render PC Summary Specs:<br>CPU: Intel Coffee Lake, Core i5 9400F 2.9GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC 6GB GDDR6 192-bit<br>RAM: 16 GB 2666 MHz"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=cBOLQedtF1Q",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["advertisement"]
+      }
+    }
+  },
+  {
+    "_id": "busvip-4-advertisement",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#ffae02"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Oct 21, 2022"
+      },
+      "media": {
+        "video": {
+          "video": "projects/busvip-media/videos_1/busvip_4_advertisement.webm",
+          "video_thumbnail": "thumbnails/busvip_4_advertisement.webp",
+          "video_data": {
+            "title": "Busvip #4 | Advertisement",
+            "description": "Editor: Denis Marginas<br><br>Song: ROYALTY FREE Ambient Music _ Science Technology Abstract Music Royalty Free by MUSIC4VIDEO<br>Facebook Page: https://www.facebook.com/curseocazionalebusvip<br><br>Category: Advertisement<br>Project Details: 1920x1080 29.970 FPS<br>Software(s): Sony Vegas Pro 16, Sony Vegas Pro 18, Photopea, Topaz Video Enhance, Topaz Gigapixel AI<br>Plugin(s): -<br>Tags: Busvip<br><br>Render PC Summary Specs:<br>CPU: Intel Coffee Lake, Core i5 9400F 2.9GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC 6GB GDDR6 192-bit<br>RAM: 16 GB 2666 MHz"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=tge_tTOKlFE",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["advertisement"]
+      }
+    }
+  },
+  {
+    "_id": "casadarius-1-advertisement",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#ccb06a"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Jun 12, 2022"
+      },
+      "media": {
+        "video": {
+          "video": "projects/casadarius-media/videos_2/casadarius_1_advertisement.webm",
+          "video_thumbnail": "thumbnails/casadarius_1_advertisement.webp",
+          "video_data": {
+            "title": "CasaDarius #1 | Advertisement",
+            "description": "Editor: Denis Marginas<br><br>Song: 2B Studio - Showreel Trailer<br>Facebook Page: https://www.facebook.com/casadariuscluj<br><br>Category: Advertisement<br>Project Details: 1920x1080p 30 FPS<br>Software(s): Adobe After Effects 2020, Sony Vegas Pro 16, Photopea<br>Plugin(s): BCC, Sapphire, RSMB, MBL<br>Tags: Casa Darius<br><br>Render PC Summary Specs:<br>CPU: Intel Coffee Lake, Core i5 9400F 2.9GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC 6GB GDDR6 192-bit<br>RAM: 16 GB 2666 MHz"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=wZD1ZtaT69k",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["advertisement"]
+      }
+    }
+  },
+  {
+    "_id": "casadarius-2-advertisement",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#ccb06a"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Jun 12, 2022"
+      },
+      "media": {
+        "video": {
+          "video": "projects/casadarius-media/videos_2/casadarius_2_advertisement.webm",
+          "video_thumbnail": "thumbnails/casadarius_2_advertisement.webp",
+          "video_data": {
+            "title": "CasaDarius #2 | Advertisement",
+            "description": "Editor: Denis Marginas<br><br>Song: -<br>Facebook Page: https://www.facebook.com/casadariuscluj<br><br>Category: Advertisement<br>Project Details: 1920x1080p 30 FPS<br>Software(s): Adobe After Effects 2020, Sony Vegas Pro 16, Photopea<br>Plugin(s): BCC, Sapphire, RSMB, MBL<br>Tags: Casa Darius<br><br>Render PC Summary Specs:<br>CPU: Intel Coffee Lake, Core i5 9400F 2.9GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC 6GB GDDR6 192-bit<br>RAM: 16 GB 2666 MHz"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=DDwGCi_Mk5Y",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["advertisement"]
+      }
+    }
+  },
+  {
+    "_id": "casadarius-3-advertisement",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#ccb06a"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Oct 19, 2022"
+      },
+      "media": {
+        "video": {
+          "video": "projects/casadarius-media/videos_1/casadarius_3_advertisement.webm",
+          "video_thumbnail": "thumbnails/casadarius_3_advertisement.webp",
+          "video_data": {
+            "title": "CasaDarius #3 | Advertisement",
+            "description": "Editor: Denis Marginas<br><br>Song: ROYALTY FREE Ambient Music _ Science Technology Abstract Music Royalty Free by MUSIC4VIDEO<br>Facebook Page: https://www.facebook.com/casadariuscluj<br><br>Category: Advertisement<br>Project Details: 1920x1080 29.970 FPS<br>Software(s): Sony Vegas Pro 16, Sony Vegas Pro 18, Photopea, Topaz Video Enhance, Topaz Gigapixel AI<br>Plugin(s): -<br>Tags: Casa Darius<br><br>Render PC Summary Specs:<br>CPU: Intel Coffee Lake, Core i5 9400F 2.9GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC 6GB GDDR6 192-bit<br>RAM: 16 GB 2666 MHz"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=qJ37wVcmJlQ",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["advertisement"]
+      }
+    }
+  },
+  {
+    "_id": "dabo-1-advertisement",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#f08119"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "May 25, 2021"
+      },
+      "media": {
+        "video": {
+          "video": "projects/dabo-sm-bm-media/dabo_1_advertisement.webm",
+          "video_thumbnail": "thumbnails/dabo_1_advertisement.webp",
+          "video_data": {
+            "title": "Dabo #1 | Advertisement",
+            "description": "Editor: Denis Marginas<br><br>Song: -<br>Facebook Page: https://www.facebook.com/pages/Dabo-D%C3%B6ner-Baia-Mare/184203015478663<br><br>Category: Advertisement<br>Project Details: 974x711p 25 FPS<br>Software(s): Sony Vegas Pro 16, Photopea<br>Plugin(s): BCC, Sapphire, RSMB, MBL<br>Tags: Dabo Doner<br><br>Render PC Summary Specs:<br>CPU: Intel Coffee Lake, Core i5 9400F 2.9GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC 6GB GDDR6 192-bit<br>RAM: 16 GB 2666 MHz"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=ZsvK8j82zA4",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["advertisement"]
+      }
+    }
+  },
+  {
+    "_id": "dsautocenter-1-advertisement",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#2f3647"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Jun 12, 2022"
+      },
+      "media": {
+        "video": {
+          "video": "projects/dsautocenter-media/dsautocenter_1_advertisement.webm",
+          "video_thumbnail": "thumbnails/dsautocenter_1_advertisement.webp",
+          "video_data": {
+            "title": "DSAutoCenter #1 | Advertisement",
+            "description": "Editor: Denis Marginas<br><br>Song: -<br><br>Category: Advertisement<br>Project Details: 1080x1920p 29.970 FPS<br>Software(s): Adobe After Effects 2020, Sony Vegas Pro 16, Photopea, Topaz Video Enhance, Topaz Gigapixel AI<br>Plugin(s): BCC, Sapphire, MBL, RSMB<br>Tags: DS Auto Center<br><br>Render PC Summary Specs:<br>CPU: Intel Coffee Lake, Core i5 9400F 2.9GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC 6GB GDDR6 192-bit<br>RAM: 16 GB 2666 MHz"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=bvN2lHDhQcs",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["advertisement"]
+      }
+    }
+  },
+  {
+    "_id": "piasoftproduct-4-advertisement",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#ffcc00"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "May 25, 2021"
+      },
+      "media": {
+        "video": {
+          "video": "projects/piasoftproduct-media/piasoftproduct_4_advertisement.webm",
+          "video_thumbnail": "thumbnails/piasoftproduct_4_advertisement.webp",
+          "video_data": {
+            "title": "PiaSoftProduct #4 | Advertisement",
+            "description": "Editor: Denis Marginas<br><br>Song: -<br>Facebook Page: https://www.facebook.com/piasoftproduct<br><br>Category: Advertisement<br>Project Details: 1920x1080p 30 FPS<br>Software(s): Adobe After Effects 2020, Photopea<br>Plugin(s): BCC, Sapphire, RSMB, MBL<br>Tags: Pia Soft Product<br><br>Render PC Summary Specs:<br>CPU: Intel Coffee Lake, Core i5 9400F 2.9GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC 6GB GDDR6 192-bit<br>RAM: 16 GB 2666 MHz"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=BwKbq5hYETE",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["advertisement"]
+      }
+    }
+  },
+  {
+    "_id": "transportosian-1-advertisement",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#b7b7b7"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Jun 12, 2022"
+      },
+      "media": {
+        "video": {
+          "video": "projects/transportosian-media/transportosian_1_advertisement.webm",
+          "video_thumbnail": "thumbnails/transportosian_1_advertisement.webp",
+          "video_data": {
+            "title": "Transport Osian #1 | Advertisement",
+            "description": "Editor: Denis Marginas<br><br>Song: -<br>Facebook Page: https://www.facebook.com/transportosian<br><br>Category: Advertisement<br>Project Details: 1920x1080p 30 FPS<br>Software(s): Sony Vegas Pro 16, Photopea<br>Plugin(s): BCC, Sapphire, RSMB, MBL<br>Tags: Transport Osian<br><br>Render PC Summary Specs:<br>CPU: Intel Coffee Lake, Core i5 9400F 2.9GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC 6GB GDDR6 192-bit<br>RAM: 16 GB 2666 MHz"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=aOH9YF4hgFo",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["advertisement"]
+      }
+    }
+  },
+  {
+    "_id": "transportosian-2-advertisement",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#b7b7b7"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Jun 12, 2022"
+      },
+      "media": {
+        "video": {
+          "video": "projects/transportosian-media/transportosian_2_advertisement.webm",
+          "video_thumbnail": "thumbnails/transportosian_2_advertisement.webp",
+          "video_data": {
+            "title": "Transport Osian #2 | Advertisement",
+            "description": "Editor: Denis Marginas<br><br>Song: -<br>Facebook Page: https://www.facebook.com/transportosian<br><br>Category: Advertisement<br>Project Details: 1920x1080p 30 FPS<br>Software(s): Sony Vegas Pro 16, Photopea<br>Plugin(s): BCC, Sapphire, RSMB, MBL<br>Tags: Transport Osian<br><br>Render PC Summary Specs:<br>CPU: Intel Coffee Lake, Core i5 9400F 2.9GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC 6GB GDDR6 192-bit<br>RAM: 16 GB 2666 MHz"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=7d5Uph7cl_A",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["advertisement"]
+      }
+    }
+  },
+  {
+    "_id": "grandconstructpeter-1-advertisement",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#ffdc41"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Nov 12, 2020"
+      },
+      "media": {
+        "video": {
+          "video": "projects/grandconstructpeter-media/grandconstructpeter_video_1.webm",
+          "video_thumbnail": "thumbnails/grandconstructpeter_video_1.webp",
+          "video_data": {
+            "title": "GrandconstructPeter #1 | Advertisement",
+            "description": "Editor: Denis Marginas<br><br>Song: -<br>Facebook Page: https://www.facebook.com/Grandconstruct-Peter-106808967582217<br><br>Category: Advertisement<br>Project Details: 1920x1080p 30 FPS<br>Software(s): Adobe After Effects 2020, Photopea<br>Plugin(s): BCC, Sapphire, RSMB, MBL<br>Tags: Grandconstruct Peter<br><br>Render PC Summary Specs:<br>CPU: Intel Coffee Lake, Core i5 9400F 2.9GHz<br>GPU: GIGABYTE GeForce GTX 1660 SUPER OC 6GB GDDR6 192-bit<br>RAM: 16 GB 2666 MHz"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=-KGhKXIs06E",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["advertisement"]
+      }
+    }
+  },
+  {
+    "_id": "strikerproduction-showreel-demand-2017-2021",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#5d6977"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Oct 11, 2026"
+      },
+      "media": {
+        "video": {
+          "video": "projects/strikerproduction-demand-media/showreel/strikerproduction_showreel_demand_2017_2021.webm",
+          "video_thumbnail": "thumbnails/strikerproduction_showreel_demand_2017_2021.webp",
+          "video_data": {
+            "title": "Striker Production ShowReel Demand 2017-2021",
+            "description": "A highlight showcase of gaming video editing, featuring fast-paced Rust and CS frags, dynamic sync, high-energy pacing, and custom logo intros. Built to deliver high-impact visual storytelling and clean motion design for creators, esports teams, and gaming channels.<br><br>Demand Playlist: https://www.youtube.com/watch?v=65D6qJ9NIJk&list=PLm3Prvo0l7fO0-H0G_TuiHhUbOKW29xPo<br>Copyrights: https://docs.google.com/spreadsheets/d/1kh0jtIb0irRPO1DoYO4w3KCN6WP2ykL_70rqKoGmbIM/edit?gid=327844194#gid=327844194"
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=_jesbR2I-fI",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["video game edit"]
+      }
+    }
+  },
+  {
+    "_id": "strikerproduction-showreel-2016-2022",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#5d6977"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Oct 12, 2026"
+      },
+      "media": {
+        "video": {
+          "video": "projects/strikerproduction-media/showreel/striker_production_showreel_2016_2022.webm",
+          "video_thumbnail": "thumbnails/striker_production_showreel_2016_2022.webp",
+          "video_data": {
+            "title": "Striker Production Showreel 2016-2022",
+            "description": "Welcome to the Striker Production 2016–2022 Showreel, a curated compilation featuring a selection of my finest video editing work crafted over a six-year creative journey. This showcase highlights short clips and standout moments from non-profit passion projects, community editing submissions, and entries created for competitive editing contests. Focused primarily on cinematic gaming footage, each sequence is rhythmically synced to music and layered with expressive visual effects and immersive sound design to establish a distinct, captivating atmosphere.<br><br>The editing workflow for these projects relied on Sony Vegas Pro versions 14 and 16 along with Adobe After Effects for primary compositing and animation. Advanced visual styles and fluid motion were achieved using industry-standard plugins including ReelSmart Motion Blur, Boris Continuum Complete, Sapphire, Magic Bullet Looks, Element 3D, Trapcode Particular, and Pixel Sorter AE. Additionally, Topaz Video Enhance AI was utilized to upscale and refine video quality, while graphic artwork and video thumbnails were designed using Photopea. Thank you to everyone who supported this work throughout the years—turn up the volume and enjoy the highlight reel."
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=1p3nACAFb5k",
+            "svg": "socials_youtube"
+          },
+          {
+            "text": "Videos",
+            "url": "https://www.youtube.com/@strikerproduction/videos",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["video game edit"]
+      }
+    }
+  },
+  {
+    "_id": "strikerproduction-video-editing-contests-showreel",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#02c2e2"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Oct 12, 2026"
+      },
+      "media": {
+        "video": {
+          "video": "projects/strikerproduction-editing-contest-video-media/showreel/strikerproduction_video_editing_contests_showreel.webm",
+          "video_thumbnail": "thumbnails/strikerproduction_video_editing_contests_showreel.webp",
+          "video_data": {
+            "title": "Video Editing Contest Showreel",
+            "description": "Showreel of the Video Editing Contest, the first competition hosted by Striker Production, in 2016, to discover and reward top editing talent. It gathers standout moments from the submitted entries, judged on creativity, storytelling, cuts, intro and outro, cinematics, VFX, SFX and overall flow, especially the synchronization with the music."
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=s5Ivtehav9k",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["video game edit"]
+      }
+    }
+  },
+  {
+    "_id": "strikerproduction-rust-editing-contests-showreel",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#ab3a27"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Oct 12, 2026"
+      },
+      "media": {
+        "video": {
+          "video": "projects/strikerproduction-editing-contest-rust-media/showreel/strikerproduction_rust_editing_contests_showreel.webm",
+          "video_thumbnail": "thumbnails/strikerproduction_rust_editing_contests_showreel.webp",
+          "video_data": {
+            "title": "Rust Editing Contests Showreel",
+            "description": "Showreel of the Rust Editing Contest, hosted by Striker Production. It gathers standout moments from the entries submitted across the 8 editions held since 2018, where advanced and new editors turned the provided Rust clips, sound packs and demos into cinematic edits synced to music, with creative VFX and sound design."
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=bFKv02w4Vh0",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["video game edit"]
+      }
+    }
+  },
+  {
+    "_id": "strikerproduction-pubg-editing-contests-showreel",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#2a3240"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Oct 12, 2026"
+      },
+      "media": {
+        "video": {
+          "video": "projects/strikerproduction-editing-contest-pubg-media/showreel/strikerproduction_pubg_editing_contests_showreel.webm",
+          "video_thumbnail": "thumbnails/strikerproduction_pubg_editing_contests_showreel.webp",
+          "video_data": {
+            "title": "PUBG Editing Contest Showreel",
+            "description": "Showreel of the PUBG Editing Contest, the first Striker Production competition built on PUBG pre-rendered video clips, hosted from October to December 2021. It gathers standout moments from the entries, where editors used the provided clips and the contest intro to create edits judged on creativity, content execution, VFX, SFX and flow."
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=uM8EqmTzywQ",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["video game edit"]
+      }
+    }
+  },
+  {
+    "_id": "strikerproduction-csgo-editing-contests-showreel",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#017842"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Oct 12, 2026"
+      },
+      "media": {
+        "video": {
+          "video": "projects/strikerproduction-editing-contest-csgo-media/showreel/strikerproduction_csgo_editing_contests_showreel.webm",
+          "video_thumbnail": "thumbnails/strikerproduction_csgo_editing_contests_showreel.webp",
+          "video_data": {
+            "title": "CSGO Editing Contest Showreel",
+            "description": "Showreel of the CS:GO Editing Contest, hosted by Striker Production in early 2022. It gathers standout moments from the entries, where editors turned the provided CS:GO pre-rendered clips and demos, opened by the contest intro, into edits judged on creativity, content execution, VFX, SFX and the synchronization with the music."
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=FTpzUJ-zoa4",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["video game edit"]
+      }
+    }
+  },
+  {
+    "_id": "strikerproduction-codmw3-editing-contests-showreel",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#9dc139"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Oct 12, 2026"
+      },
+      "media": {
+        "video": {
+          "video": "projects/strikerproduction-editing-contest-codmw3-media/showreel/strikerproduction_codmw3_editing_contests_showreel.webm",
+          "video_thumbnail": "thumbnails/strikerproduction_codmw3_editing_contests_showreel.webp",
+          "video_data": {
+            "title": "COD:MW3 Editing Contest Showreel",
+            "description": "Showreel of the COD:MW3 Editing Contest, hosted by Striker Production at the end of 2022 for editors with potential and creativity. It gathers standout moments from the entries, made with the provided COD:MW3 clip packs or with own footage recorded from the demos, and judged on creativity, content execution, VFX, SFX and flow."
+          }
+        },
+        "buttons": [
+          {
+            "text": "Watch on YouTube",
+            "url": "https://www.youtube.com/watch?v=Qc90G10zfNk",
+            "svg": "socials_youtube"
+          }
+        ]
+      },
+      "taxonomy": {
+        "tag": ["video game edit"]
+      }
+    }
+  },
+  {
+    "_id": "hartkeepyouthaton-1-product-showcase",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#f1d199"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Feb 1, 2020"
+      },
+      "media": {
+        "video": {
+          "video": "projects/hartkeepyouthaton-media/vids_1/hartkeepyouthaton_slider-2.webm",
+          "video_thumbnail": "thumbnails/hartkeepyouthaton_slider-2.webp",
+          "video_data": {
+            "title": "HART #1 | Product Showcase",
+            "description": "Editor: Denis Marginas<br><br>Category: Advertisement<br>Project Details: 600x600p 10 FPS<br>Tags: HART, Keep your hat on"
+          }
+        }
+      },
+      "taxonomy": {
+        "tag": ["advertisement"]
+      }
+    }
+  },
+  {
+    "_id": "reifendirekt-1-web-preview",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#3c7fb5"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Dec 1, 2021"
+      },
+      "media": {
+        "video": {
+          "video": "projects/reifendirekt-web-design/web/reifendirekt_preview_1.webm",
+          "video_thumbnail": "thumbnails/reifendirekt_preview_1.webp",
+          "video_data": {
+            "title": "Reifen Direkt #1 | Web Preview",
+            "description": "Screen recording of the Reifen Direkt redesign: static HTML pages built from Zeplin designs with SCSS, Bootstrap and jQuery.<br><br>Category: Web Preview<br>Project Details: 1280x520p 20 FPS<br>Tags: Reifen Direkt"
+          }
+        }
+      },
+      "taxonomy": {
+        "tag": ["web preview"]
+      }
+    }
+  },
+  {
+    "_id": "category-projects",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#5d6977"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Oct 18, 2026"
+      },
+      "media": {
+        "video": {
+          "video": "categories/category_projects.webm",
+          "video_thumbnail": "thumbnails/category_projects.webp",
+          "video_data": {
+            "title": "Category Projects",
+            "description": "Background loop for the Projects page: a quick look across the websites, online shops and visual media work in my portfolio."
+          }
+        }
+      },
+      "taxonomy": {
+        "tag": ["category"]
+      }
+    }
+  },
+  {
+    "_id": "category-web-development-projects",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#5d6977"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Oct 18, 2026"
+      },
+      "media": {
+        "video": {
+          "video": "categories/category_web-development.webm",
+          "video_thumbnail": "thumbnails/category_web_development.webp",
+          "video_data": {
+            "title": "Category Web Projects",
+            "description": "Background loop for the Web Projects page: previews of websites and online shops I have designed and built."
+          }
+        }
+      },
+      "taxonomy": {
+        "tag": ["category"]
+      }
+    }
+  },
+  {
+    "_id": "category-visual-media-projects",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#5d6977"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Oct 18, 2026"
+      },
+      "media": {
+        "video": {
+          "video": "categories/category_visual_media_projects.webm",
+          "video_thumbnail": "thumbnails/category_visual_media_projects.webp",
+          "video_data": {
+            "title": "Category Media Projects",
+            "description": "Background loop for the Media Projects page: graphic design, photo editing and video production work."
+          }
+        }
+      },
+      "taxonomy": {
+        "tag": ["category"]
+      }
+    }
+  },
+  {
+    "_id": "category-personal-and-custom-projects",
+    "settings": {
+      "type": "video",
+      "render": true,
+      "appearance": {
+        "colors": {
+          "primary": "#5d6977"
+        }
+      }
+    },
+    "data": {
+      "date": {
+        "publish": "Oct 18, 2026"
+      },
+      "media": {
+        "video": {
+          "video": "categories/category_personal_and_custom_projects.webm",
+          "video_thumbnail": "thumbnails/category_personal_and_custom_projects.webp",
+          "video_data": {
+            "title": "Category Personal Projects",
+            "description": "Background loop for the Personal Projects page: non-profit initiatives and passion projects."
+          }
+        }
+      },
+      "taxonomy": {
+        "tag": ["category"]
+      }
+    }
+  }
+]

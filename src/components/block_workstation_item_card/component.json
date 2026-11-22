@@ -1,0 +1,28 @@
+{
+  "name": "block_workstation_item_card",
+  "title": "Block Workstation Item Card",
+  "summary": "Workstation part card with specs panel on hover.",
+  "description": "Card of one workstation part (old workstation_product_card): image on the item gradient with the tag, name, and the specs (\"Label: value\" lines) in a panel that slides up on hover / focus. The image opens in the popup gallery.",
+  "post_types": [
+    "workstation"
+  ],
+  "assets": {
+    "php": [
+      "assets/php/block_workstation_item_card.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "image",
+    "popup",
+    "theme"
+  ]
+}

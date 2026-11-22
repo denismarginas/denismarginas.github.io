@@ -1,0 +1,173 @@
+@import "theme";
+
+.block-workstation-item-card {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: var(--dm-radius-md);
+  outline: none;
+  scroll-margin-top: var(--dm-spacing-xl);
+
+  > .block-workstation-item-card-visual {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    overflow: hidden;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    background-color: var(--post-color-primary, var(--dm-color-primary));
+    background-image: radial-gradient(
+      var(--post-color-primary, var(--dm-color-primary)) 0%,
+      var(--post-color-canvas-primary, var(--dm-color-gray-dark)) 200%
+    );
+
+    &[data-popup="true"] {
+      cursor: var(--cursor-zoom-in, zoom-in);
+    }
+
+    > img {
+      box-sizing: border-box;
+      width: auto;
+      max-width: 90%;
+      max-height: 90%;
+      height: auto;
+      padding: var(--dm-spacing-xs);
+      object-fit: contain;
+      object-position: center;
+      filter: drop-shadow(4px 6px 4px rgba(0, 0, 0, 0.4));
+    }
+
+    &[data-tag="cpu"] > img,
+    &[data-tag="cpu cooler"] > img {
+      width: 60%;
+    }
+
+    &[data-tag*="ssd"] > img {
+      width: 70%;
+    }
+
+    > .block-workstation-item-card-tag {
+      position: absolute;
+      left: var(--dm-spacing-xs);
+      bottom: 8px;
+      padding: 5px 8px;
+      border-radius: var(--dm-radius-sm);
+      font-size: var(--dm-font-size-xs);
+      font-weight: var(--dm-font-weight-semibold);
+      text-transform: uppercase;
+      color: var(--post-color-secondary, var(--dm-color-white));
+      background-color: var(
+        --post-color-canvas-primary,
+        var(--dm-color-gray-dark)
+      );
+      box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  > .block-workstation-item-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--dm-spacing-xxs);
+    padding: var(--dm-spacing-xs);
+  }
+
+  .block-workstation-item-card-title {
+    margin: 0;
+    font-size: var(--dm-font-size-sm);
+    font-weight: var(--dm-font-weight-semibold);
+    line-height: 1.4;
+  }
+
+  .block-workstation-item-card-hover {
+    position: absolute;
+    z-index: 4;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 55%;
+    box-sizing: border-box;
+    padding: var(--dm-spacing-xs);
+    overflow-y: auto;
+    opacity: 0;
+    transform: translateY(100%);
+    background-color: var(
+      --post-color-canvas-primary,
+      var(--dm-color-gray-dark)
+    );
+    transition: var(--dm-transition);
+  }
+
+  &:hover .block-workstation-item-card-hover,
+  &:focus-within .block-workstation-item-card-hover {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .block-workstation-item-card-specs {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-size: var(--dm-font-size-xs);
+    line-height: 1.4;
+    color: var(--post-color-secondary, var(--dm-color-white));
+
+    > .block-workstation-item-card-spec {
+      display: flex;
+      justify-content: space-between;
+      gap: var(--dm-spacing-xs);
+      padding: 3px 0;
+      border-bottom: 1px solid
+        rgb(
+          from var(--post-color-secondary, var(--dm-color-white)) r g b / 0.15
+        );
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      > dt {
+        flex-shrink: 0;
+        opacity: 0.75;
+      }
+
+      > dd {
+        margin: 0;
+        text-align: right;
+        overflow-wrap: anywhere;
+      }
+    }
+  }
+
+  [mode="dark"] & {
+    border-color: rgb(from var(--dm-color-white) r g b / 0.2);
+    background-color: rgb(from var(--dm-color-gray-dark) r g b / 0.8);
+
+    > .block-workstation-item-card-visual {
+      border-color: rgb(from var(--dm-color-white) r g b / 0.2);
+    }
+
+    .block-workstation-item-card-title {
+      color: var(--dm-color-white);
+    }
+  }
+
+  [mode="light"] & {
+    border-color: rgb(from var(--dm-color-gray) r g b / 0.2);
+    background-color: rgb(from var(--dm-color-white) r g b / 0.8);
+
+    > .block-workstation-item-card-visual {
+      border-color: rgb(from var(--dm-color-gray) r g b / 0.2);
+    }
+
+    .block-workstation-item-card-title {
+      color: var(--dm-color-gray-dark);
+    }
+  }
+}

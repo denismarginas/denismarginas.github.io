@@ -1,0 +1,80 @@
+{
+  "post": {
+    "singular": "Post",
+    "plural": "Posts",
+    "types": {
+      "page": {
+        "singular": "Page",
+        "plural": "Pages"
+      },
+      "project": {
+        "singular": "Project",
+        "plural": "Projects"
+      },
+      "workstation": {
+        "singular": "Workstation",
+        "plural": "Workstations"
+      }
+    }
+  },
+  "taxonomy": {
+    "singular": "Taxonomy",
+    "plural": "Taxonomies",
+    "types": {
+      "category": {
+        "singular": "Category",
+        "plural": "Categories"
+      }
+    }
+  },
+  "collection": {
+    "singular": "Collection",
+    "plural": "Collections",
+    "types": {
+      "job": {
+        "singular": "Job",
+        "plural": "Jobs"
+      },
+      "education": {
+        "singular": "Education",
+        "plural": "Education"
+      },
+      "resume": {
+        "singular": "Resume",
+        "plural": "Resumes"
+      },
+      "hobby_pc_video_game": {
+        "singular": "Hobby PC Video Game",
+        "plural": "Hobby PC Video Games"
+      },
+      "social_post": {
+        "singular": "Social Post",
+        "plural": "Social Posts"
+      },
+      "social_link": {
+        "singular": "Social Link",
+        "plural": "Social Links"
+      },
+      "form": {
+        "singular": "Form",
+        "plural": "Forms"
+      },
+      "video": {
+        "singular": "Video",
+        "plural": "Videos"
+      },
+      "knowledge_item": {
+        "singular": "Knowledge Item",
+        "plural": "Knowledge Items"
+      },
+      "listing_toolbar": {
+        "singular": "Listing Toolbar",
+        "plural": "Listing Toolbars"
+      },
+      "hobby": {
+        "singular": "Hobby",
+        "plural": "Hobbies"
+      }
+    }
+  }
+}

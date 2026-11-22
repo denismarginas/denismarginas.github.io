@@ -1,0 +1,149 @@
+@import "theme";
+
+.knowledge-listing {
+  display: flex;
+  flex-direction: column;
+  gap: var(--dm-spacing-sm);
+  min-width: 0;
+
+  &.d-none {
+    display: none;
+  }
+
+  @media (min-width: $dm-screen-md) {
+    &.d-md-flex {
+      display: flex;
+    }
+
+    &.d-md-none {
+      display: none;
+    }
+  }
+
+  .knowledge-groups {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
+    gap: var(--dm-spacing-md) var(--dm-spacing-lg);
+  }
+
+  .knowledge-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--dm-spacing-xs);
+
+    > ul {
+      @include reset-list();
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding-left: 20px;
+
+      > li {
+        position: relative;
+        font-size: var(--dm-font-size-md);
+        line-height: 1.55;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0.7em;
+          left: -14px;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background-color: var(--dm-color-primary-300);
+        }
+      }
+    }
+  }
+
+  .knowledge-item-label {
+    font-weight: var(--dm-font-weight-medium);
+
+    [mode="dark"] & {
+      color: var(--dm-color-gray-light);
+    }
+
+    [mode="light"] & {
+      color: var(--dm-color-primary-900);
+    }
+  }
+
+  .knowledge-group-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+    font-size: var(--dm-font-size-lg);
+    font-weight: var(--dm-font-weight-bold);
+
+    [mode="dark"] & {
+      color: var(--dm-color-white);
+    }
+
+    [mode="light"] & {
+      color: var(--dm-color-primary-950);
+    }
+  }
+
+  .knowledge-group-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    flex-shrink: 0;
+
+    svg {
+      width: auto;
+      height: var(--dm-font-size-xl);
+    }
+
+    [mode="dark"] & svg {
+      @include svg-color(var(--dm-color-white));
+    }
+
+    [mode="light"] & svg {
+      @include svg-color(var(--dm-color-primary-700));
+    }
+  }
+
+  .knowledge-icons {
+    @include reset-list();
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 16px;
+
+    > li,
+    > li > a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    > li > a {
+      transition: var(--dm-transition);
+
+      &:hover,
+      &:focus-visible {
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  .knowledge-icon {
+    width: auto;
+    height: 22px;
+  }
+
+  .knowledge-listing-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--dm-spacing-sm);
+
+    @media (max-width: $dm-screen-sm) {
+      justify-content: center;
+      gap: var(--dm-spacing-xs);
+    }
+  }
+}

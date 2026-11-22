@@ -1,0 +1,109 @@
+{
+    "post": {
+        "page": {
+            "label": "Pages",
+            "file": "data_post_page.json",
+            "root": "/",
+            "structure": "page_structure",
+            "seo": "seo_page",
+            "routable": true,
+            "global_content_path": "src/content/",
+            "global_img_path": "src/content/img/pages",
+            "global_vid_path": "src/content/vid/pages"
+        },
+        "project": {
+            "label": "Projects",
+            "file": "data_post_project.json",
+            "root": "/project/",
+            "structure": "project_structure",
+            "seo": "seo_project",
+            "routable": true,
+            "global_content_path": "src/content/",
+            "global_img_path": "src/content/img/projects",
+            "global_vid_path": "src/content/vid/projects"
+        },
+        "workstation": {
+            "label": "Workstations",
+            "file": "data_post_workstation.json",
+            "root": "/workstation/",
+            "structure": "page_structure",
+            "seo": "seo_page",
+            "routable": true,
+            "global_content_path": "src/content/",
+            "global_img_path": "src/content/img/workstation",
+            "global_vid_path": "src/content/vid/projects"
+        }
+    },
+    "taxonomy": {
+        "category": {
+            "label": "Categories",
+            "file": "data_taxonomy_category.json",
+            "root": "/category/",
+            "routable": true,
+            "post_types": [
+                "project",
+                "workstation"
+            ]
+        }
+    },
+    "collection": {
+        "job": {
+            "label": "Jobs",
+            "file": "data_collection_job.json",
+            "routable": false
+        },
+        "education": {
+            "label": "Education",
+            "file": "data_collection_education.json",
+            "routable": false
+        },
+        "hobby_pc_video_game": {
+            "label": "Hobby PC Video Games",
+            "file": "data_collection_hobby_pc_video_game.json",
+            "routable": false
+        },
+        "social_post": {
+            "label": "Social Posts",
+            "file": "data_collection_social_post.json",
+            "title_path": "data.description",
+            "routable": false
+        },
+        "resume": {
+            "label": "Resumes",
+            "file": "data_collection_resume.json",
+            "routable": false
+        },
+        "listing_toolbar": {
+            "label": "Listing Toolbars",
+            "file": "data_collection_listing_toolbar.json",
+            "routable": false
+        },
+        "video": {
+            "label": "Videos",
+            "file": "data_collection_video.json",
+            "title_path": "data.media.video.video_data.title",
+            "routable": false
+        },
+        "knowledge_item": {
+            "label": "Knowledge Items",
+            "file": "data_collection_knowledge_item.json",
+            "title_path": "text",
+            "routable": false
+        },
+        "social_link": {
+            "label": "Social Links",
+            "file": "data_collection_social_link.json",
+            "routable": false
+        },
+        "form": {
+            "label": "Forms",
+            "file": "data_collection_form.json",
+            "routable": false
+        },
+        "hobby": {
+            "label": "Hobbies",
+            "file": "data_collection_hobby.json",
+            "routable": false
+        }
+    }
+}

@@ -1,0 +1,80 @@
+@import "theme";
+
+.dm-post-view-default {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 150px;
+  border-radius: var(--dm-radius-md);
+  overflow: hidden;
+  text-decoration: none;
+  padding: var(--dm-spacing-sm);
+  box-sizing: border-box;
+
+  >img.default-visual-logo {
+    position: relative;
+    z-index: 1;
+    display: block;
+    box-sizing: border-box;
+    width: auto;
+    max-width: 70%;
+    height: auto;
+    max-height: 70%;
+    object-fit: contain;
+    object-position: center;
+    transition: var(--dm-transition);
+  }
+
+  >svg.default-visual-logo {
+    @include svg-color(var(--dm-color-white));
+    width: 60%;
+    height: 60%;
+    transition: var(--dm-transition);
+  }
+
+  >img.default-visual-preview {
+    position: absolute;
+    z-index: 0;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    background-color: var(--primary-color-post);
+    opacity: 0;
+    transition: var(--dm-transition);
+    pointer-events: none;
+  }
+
+  &:hover>img.default-visual-preview,
+  .card-post-project:hover &>img.default-visual-preview {
+    opacity: 0.2;
+  }
+
+  .show-preview & {
+    img.default-visual-preview {
+      opacity: 0.7;
+      mask: linear-gradient(0deg, transparent, white 50%, white 100%, transparent);
+    }
+
+    .default-visual-logo {
+      opacity: 0;
+    }
+
+    &:hover {
+      img.default-visual-preview {
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+.show-preview {
+  .card-post-project:hover {
+    img.default-visual-preview {
+      opacity: 0.9;
+    }
+  }
+}

@@ -1,0 +1,1460 @@
+[
+    {
+        "_id": "index",
+        "data": {
+            "seo": {
+                "title": "Denis Marginas",
+                "description": "Numele meu este Denis Ionut Marginas, am 25 de ani și lucrez ca dezvoltator full-stack și editor de fotografii și video începând cu 2019. Înainte de a mă orienta spre dezvoltarea web, am lucrat ca editor de video independent, specializându-mă în editarea videoclipurilor pentru jocuri video.",
+                "keywords": "denis marginas portfolio",
+                "slug": "index",
+                "index": true
+            }
+        },
+        "content": [
+            {
+                "component": "utility_duplicate_content",
+                "data": {
+                    "post_id": "home",
+                    "post_type": "page"
+                }
+            }
+        ]
+    },
+    {
+        "_id": "404",
+        "data": {
+            "seo": {
+                "title": "404",
+                "description": "Pagina nu a fost găsită.",
+                "keywords": "404",
+                "slug": "404",
+                "index": false
+            }
+        },
+        "content": [
+            {
+                "component": "section",
+                "children": [
+                    {
+                        "component": "page_not_found",
+                        "children": [
+                            {
+                                "component": "overlay_noise",
+                                "data": []
+                            }
+                        ],
+                        "data": {
+                            "code": "404",
+                            "title": "Pagina nu a fost găsită",
+                            "text": "Pagina pe care o căutați nu există, a fost mutată sau link-ul este defect. Încercați unul dintre link-urile de mai jos.",
+                            "path": true,
+                            "path_label": "Adresa solicitată:",
+                            "buttons": [
+                                {
+                                    "text": "Înapoi la pagina principală",
+                                    "svg": "chevron-left",
+                                    "link": {
+                                        "post_id": "home"
+                                    },
+                                    "class": "btn btn-primary"
+                                },
+                                {
+                                    "text": "Caută",
+                                    "svg": "search",
+                                    "link": {
+                                        "post_id": "search"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "home",
+        "data": {
+            "seo": {
+                "title": "Acasă",
+                "description": "Numele meu este Denis Ionuț Mărginaș și am experiență ca dezvoltator full-stack. Din 2019, am lucrat la crearea de site-uri de prezentare, magazine online, aplicații web, optimizare SEO și design web, începând cu activitatea mea ca editor video independent pentru jocuri video.",
+                "keywords": "denis marginas home",
+                "slug": "home",
+                "index": true
+            }
+        },
+        "content": [
+            {
+                "component": "hero_home",
+                "children": [
+                    {
+                        "component": "overlay_noise",
+                        "data": []
+                    }
+                ],
+                "data": {
+                    "eyebrow": "Dezvoltator web full-stack",
+                    "title": "*Denis* Mărginaș",
+                    "text": "Din 2019 construiesc site-uri web, magazine online și aplicații web cu PHP, JavaScript și framework-uri și platforme moderne. Editarea video a fost pentru mine atât un job secundar, cât și un hobby, așa că designul și partea vizuală primesc aceeași atenție ca și codul.",
+                    "buttons": [
+                        {
+                            "text": "Vizualizează proiecte",
+                            "svg": "folder-open",
+                            "link": {
+                                "post_id": "experience"
+                            },
+                            "class": "btn btn-primary"
+                        },
+                        {
+                            "text": "Contact",
+                            "svg": "envelope",
+                            "link": {
+                                "post_id": "contact"
+                            }
+                        }
+                    ],
+                    "video": {
+                        "video_id": "denismarginas-experience-highlights",
+                        "src": "backgrounds/bg-home.webm",
+                        "poster": "backgrounds/bg-home.webp",
+                        "start": 0,
+                        "end": "auto",
+                        "loop": true,
+                        "audio": false,
+                        "overlay": 0.7
+                    },
+                    "scroll": true
+                }
+            },
+            {
+                "component": "section",
+                "children": [
+                    {
+                        "component": "columns",
+                        "data": {
+                            "layout": {
+                                "base": "100",
+                                "lg": "40-60"
+                            },
+                            "gap": {
+                                "base": "lg",
+                                "lg": "3xl"
+                            },
+                            "align": "center"
+                        },
+                        "children": [
+                            {
+                                "component": "portrait_home",
+                                "data": {
+                                    "transition": {
+                                        "effect": "fade slide-left",
+                                        "duration": 900,
+                                        "distance": "60px"
+                                    },
+                                    "img": "personal-images/dm-personal-image-2.webp",
+                                    "alt": "Denis Marginas",
+                                    "max_width": "440px",
+                                    "chips": [
+                                        {
+                                            "svg": "php",
+                                            "text": "PHP"
+                                        },
+                                        {
+                                            "svg": "js",
+                                            "text": "JS"
+                                        },
+                                        {
+                                            "svg": "wordpress",
+                                            "text": "WordPress"
+                                        },
+                                        {
+                                            "svg": "prestashop",
+                                            "text": "PS"
+                                        },
+                                        {
+                                            "svg": "visuals",
+                                            "text": "Elemente vizuale"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "component": "column",
+                                "data": {
+                                    "class": "gap-lg-lg",
+                                    "transition": {
+                                        "effect": "fade slide-right",
+                                        "duration": 900,
+                                        "delay": 150,
+                                        "distance": "60px"
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "component": "text_block",
+                                        "data": {
+                                            "vars": {
+                                                "age": {
+                                                    "component": "utility_age",
+                                                    "data": {
+                                                        "date": "09-09-1997"
+                                                    }
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "title": {
+                                                        "text": "Despre mine",
+                                                        "tag": "h2",
+                                                        "class": "title-divider title-primary font-secondary"
+                                                    }
+                                                },
+                                                {
+                                                    "paragraphs": [
+                                                        "Numele meu este Denis Ionuț Mărginaș, am {{age}} ani și am experiență ca dezvoltator web full-stack. Sunt pasionat de tehnologie și creativitate, și caut constant să-mi îmbunătățesc abilitățile și expertiza în dezvoltarea web, fiind mereu interesat de cele mai recente inovații."
+                                                    ]
+                                                },
+                                                {
+                                                    "buttons": [
+                                                        {
+                                                            "text": "Despre mine",
+                                                            "link": {
+                                                                "post_id": "about"
+                                                            },
+                                                            "svg": "arrow-right",
+                                                            "svg_position": "end"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "component": "section",
+                "data": {
+                    "class": "bg-radial-primary"
+                },
+                "children": [
+                    {
+                        "component": "taxonomy_listing",
+                        "data": {
+                            "transition": {
+                                "effect": "fade slide-bottom",
+                                "duration": 800,
+                                "distance": "50px",
+                                "target": ".taxonomy-item",
+                                "stagger": 150
+                            },
+                            "post_type": "project",
+                            "taxonomy": "category",
+                            "title": {
+                                "text": "Proiecte",
+                                "tag": "h2",
+                                "class": "title-divider title-primary font-secondary"
+                            },
+                            "template": {
+                                "component": "card_taxonomy",
+                                "data": []
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "component": "section",
+                "children": [
+                    {
+                        "component": "columns",
+                        "data": {
+                            "layout": {
+                                "base": "100",
+                                "lg": "50-50",
+                                "md": "40-60"
+                            },
+                            "gap": {
+                                "base": "lg",
+                                "lg": "3xl"
+                            },
+                            "align": "center"
+                        },
+                        "children": [
+                            {
+                                "component": "column",
+                                "data": {
+                                    "class": "gap-lg-lg",
+                                    "transition": {
+                                        "effect": "fade slide-left",
+                                        "duration": 900,
+                                        "distance": "60px"
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "component": "text_block",
+                                        "data": {
+                                            "elements": [
+                                                {
+                                                    "title": {
+                                                        "text": "Experiență profesională",
+                                                        "tag": "h2",
+                                                        "class": "title-divider title-primary font-secondary"
+                                                    }
+                                                },
+                                                {
+                                                    "paragraphs": [
+                                                        "Începând cu 2019, m-am implicat activ în numeroase proiecte web, colaborând cu diverse companii pentru a crea o gamă largă de soluții online. Pe parcursul acestui interval, expertiza mea a inclus dezvoltarea de site-uri de prezentare, magazine online, aplicații web, optimizarea SEO, precum și design web."
+                                                    ]
+                                                },
+                                                {
+                                                    "buttons": [
+                                                        {
+                                                            "text": "Experiența mea",
+                                                            "link": {
+                                                                "post_id": "experience"
+                                                            },
+                                                            "svg": "arrow-right",
+                                                            "svg_position": "end"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "component": "projects_previews",
+                                "data": {
+                                    "class": "px-md-sm px-lg-0",
+                                    "transition": {
+                                        "effect": "fade slide-right",
+                                        "duration": 900,
+                                        "delay": 150,
+                                        "distance": "60px"
+                                    },
+                                    "screen": {
+                                        "img": "design-elements/monitor-with-project.webp",
+                                        "alt": "Ecran care afișează un proiect web"
+                                    },
+                                    "cards": [
+                                        {
+                                            "img": "projects/agromir-media/highlights/media-3d-tire-animation/3d-editing-blender-agromir-1.webp",
+                                            "alt": "Animație 3D pentru pneuri Agromir, realizată în Blender"
+                                        },
+                                        {
+                                            "img": "projects/agromir-media/highlights/media-video-editing/video-editing-agromir-1.webp",
+                                            "alt": "Editare video pentru Agromir"
+                                        },
+                                        {
+                                            "img": "projects/agromir-online-shop/highlights/seo-optimization/seo-optimization-1.webp",
+                                            "alt": "Optimizare SEO pentru Agromir"
+                                        },
+                                        {
+                                            "img": "projects/reifendirekt-web-design/web/website/desktop/web_desktop_0.webp",
+                                            "alt": "Prezentare generală a site-ului Reifendirekt"
+                                        },
+                                        {
+                                            "img": "projects/revelnail-avadores-media/highlights/media-photo-editing-banner/photo-editing-revelnail-1.webp",
+                                            "alt": "Banner pentru editarea fotografiilor de la Revelnail"
+                                        },
+                                        {
+                                            "img": "projects/module-sell-my-things-wordpress-plugin/highlights/module-sell-my-things-code/module-sell-my-things-code.webp",
+                                            "alt": "Codul plugin-ului \"Sell My Things\" pentru WordPress"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "about",
+        "data": {
+            "seo": {
+                "title": "Despre",
+                "description": "Numele meu este Denis Ionuț Mărginaș și am experiență ca dezvoltator web full-stack. Înainte de a mă concentra pe dezvoltarea web, am lucrat la editarea video pentru jocuri video. În timpul liber, îmi place să construiesc componente hardware pentru calculatoare, să joc jocuri, să merg cu bicicleta și să practic tenis.",
+                "keywords": "denis marginas about",
+                "slug": "about",
+                "index": false
+            }
+        },
+        "content": [
+            {
+                "component": "hero",
+                "children": [
+                    {
+                        "component": "animation_squares",
+                        "data": []
+                    }
+                ],
+                "data": {
+                    "variant": "xs",
+                    "img": "backgrounds/bg-home.webp",
+                    "video": {
+                        "src": "backgrounds/bg-home.webm",
+                        "loop": true,
+                        "audio": false,
+                        "overlay": 0.6
+                    },
+                    "title": "@data.seo.title",
+                    "description": "@data.seo.description"
+                }
+            },
+            {
+                "component": "section",
+                "children": [
+                    {
+                        "component": "columns",
+                        "data": {
+                            "layout": {
+                                "base": "100",
+                                "lg": "30-70"
+                            },
+                            "gap": {
+                                "base": "lg",
+                                "lg": "xl"
+                            },
+                            "align": "start"
+                        },
+                        "children": [
+                            {
+                                "component": "portrait_about",
+                                "data": {
+                                    "img": "personal-images/dm-personal-image-1.webp",
+                                    "alt": "Denis Marginas",
+                                    "max_width": "420px"
+                                }
+                            },
+                            {
+                                "component": "column",
+                                "children": [
+                                    {
+                                        "component": "text_block",
+                                        "data": {
+                                            "vars": {
+                                                "age": {
+                                                    "component": "utility_age",
+                                                    "data": {
+                                                        "date": "09-09-1997"
+                                                    }
+                                                }
+                                            },
+                                            "elements": [
+                                                {
+                                                    "title": {
+                                                        "text": "Despre mine",
+                                                        "tag": "h2",
+                                                        "class": "title-divider title-primary font-secondary"
+                                                    }
+                                                },
+                                                {
+                                                    "paragraphs": [
+                                                        "Numele meu este Denis Ionuț Mărginaș, am {{age}} ani și am experiență ca dezvoltator web full-stack. Sunt pasionat de tehnologie și creativitate, și caut constant să-mi îmbunătățesc abilitățile și expertiza în dezvoltarea web, fiind mereu interesat de cele mai recente inovații.",
+                                                        "Înainte de a intra în domeniul dezvoltării web, m-am concentrat pe editarea video, în special pentru jocuri video. Interesul meu pentru realizările cinematografice și unghiurile a dus la oportunități de freelance, unde am perfecționat abilitățile mele. Având o bază solidă în matematică și informatică, am decis să mă concentrez ulterior pe dezvoltarea web, care de atunci a devenit domeniul meu principal de expertiză. În timpul liber, îmi place să construiesc componente hardware pentru calculatoare, să joc jocuri video, să merg cu bicicleta și să joc tenis.",
+                                                        "În viitor, îmi propun să continui să mă dezvolt ca dezvoltator, să rămân la curent cu cele mai recente tehnologii și să am un impact semnificativ în industria tehnologică. Când nu sunt ocupat cu programarea, îmi place să joc și să explorez noi tehnologii care mă inspiră în munca mea."
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "component": "card_mini_icon_and_text",
+                                        "data": {
+                                            "variant": "row",
+                                            "min_width": "240px",
+                                            "items": [
+                                                {
+                                                    "svg": "projects",
+                                                    "text": "Postări pe rețelele sociale",
+                                                    "link": {
+                                                        "post_id": "social-posts"
+                                                    }
+                                                },
+                                                {
+                                                    "svg": "workstation",
+                                                    "text": "Stație de lucru personală",
+                                                    "link": {
+                                                        "post_id": "personal-workstation-build-1"
+                                                    }
+                                                },
+                                                {
+                                                    "svg": "employ",
+                                                    "text": "Experiență profesională",
+                                                    "link": {
+                                                        "post_id": "employee-experience"
+                                                    }
+                                                },
+                                                {
+                                                    "svg": "resume",
+                                                    "text": "Studii și certificări",
+                                                    "link": {
+                                                        "post_id": "education-experience"
+                                                    }
+                                                },
+                                                {
+                                                    "svg": "about-me",
+                                                    "text": "Proiecte și experiență",
+                                                    "link": {
+                                                        "post_id": "projects"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "component": "section",
+                "data": {
+                    "class": "bg-radial-primary"
+                },
+                "children": [
+                    {
+                        "component": "hobby_listing",
+                        "data": {
+                            "title": {
+                                "text": "Lista hobby-urilor",
+                                "tag": "h2",
+                                "class": "title-divider title-primary font-secondary"
+                            },
+                            "type": "hobby",
+                            "columns": 4,
+                            "variant": "stack"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "contact",
+        "data": {
+            "seo": {
+                "title": "Contact",
+                "description": "Aveți un proiect, o ofertă de muncă sau pur și simplu o întrebare? Puteți să mă contactați prin WhatsApp, e-mail sau prin formularul de mai jos.",
+                "keywords": "denis marginas contact",
+                "slug": "contact",
+                "index": false
+            }
+        },
+        "content": [
+            {
+                "component": "hero",
+                "children": [
+                    {
+                        "component": "animation_squares",
+                        "data": []
+                    }
+                ],
+                "data": {
+                    "variant": "sm",
+                    "img": "backgrounds/bg-home.webp",
+                    "video": {
+                        "src": "backgrounds/bg-home.webm",
+                        "loop": true,
+                        "audio": false,
+                        "overlay": 0.6
+                    },
+                    "title": "@data.seo.title",
+                    "description": "@data.seo.description"
+                }
+            },
+            {
+                "component": "section",
+                "children": [
+                    {
+                        "component": "columns",
+                        "data": {
+                            "layout": {
+                                "base": "100",
+                                "lg": "60-40"
+                            },
+                            "gap": {
+                                "base": "sm",
+                                "md": "md",
+                                "lg": "xl"
+                            },
+                            "align": "stretch",
+                            "reverse_stacked": true,
+                            "class": "contact-main"
+                        },
+                        "children": [
+                            {
+                                "component": "form",
+                                "data": {
+                                    "form": "contact-form",
+                                    "popup": {
+                                        "hash": "contact-form",
+                                        "width": "720px"
+                                    },
+                                    "type": "form",
+                                    "title_class": "font-secondary"
+                                }
+                            },
+                            {
+                                "component": "column",
+                                "children": [
+                                    {
+                                        "component": "profile_card",
+                                        "data": {
+                                            "class": "profile-card-boxed bg-radial-primary",
+                                            "img": "personal-images/dm-personal-image-0.webp",
+                                            "img_alt": "Denis Marginas",
+                                            "image_position": "left",
+                                            "image_style": "circle",
+                                            "noise": true,
+                                            "title": {
+                                                "text": "Date de contact",
+                                                "tag": "h3",
+                                                "class": "title-divider font-secondary"
+                                            },
+                                            "text": [
+                                                "Numărul de telefon și adresa completă pot fi furnizate la cerere. Trimiteți-mi pur și simplu un e-mail."
+                                            ],
+                                            "details": [
+                                                {
+                                                    "label": "Adresă de e-mail",
+                                                    "svg": "envelope",
+                                                    "value": "denismarginas09@gmail.com",
+                                                    "link": "mailto:denismarginas09@gmail.com"
+                                                },
+                                                {
+                                                    "label": "Adresă",
+                                                    "svg": "location",
+                                                    "value": "Romania, Baia Mare",
+                                                    "tooltip": {
+                                                        "text": "Din motive de securitate, adresa completă nu este afișată. Cu toate acestea, puteți solicita adresa de contact trimitând un e-mail la adresa de e-mail furnizată.",
+                                                        "status": "info"
+                                                    }
+                                                },
+                                                {
+                                                    "label": "Număr de telefon",
+                                                    "svg": "phone",
+                                                    "value": "+40-74*******",
+                                                    "tooltip": {
+                                                        "text": "Din motive de securitate, numărul de telefon nu este afișat. Cu toate acestea, puteți solicita numărul de telefon pentru contact prin trimiterea unui e-mail la adresa de e-mail furnizată.",
+                                                        "status": "info"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "component": "social_links",
+                                        "data": {
+                                            "lists": [
+                                                "visual"
+                                            ],
+                                            "variant": "card"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "component": "columns",
+                        "data": {
+                            "layout": {
+                                "base": "100",
+                                "lg": "50-50"
+                            },
+                            "gap": {
+                                "base": "sm",
+                                "md": "md",
+                                "lg": "xl"
+                            },
+                            "align": "center",
+                            "class": "contact-about"
+                        },
+                        "children": [
+                            {
+                                "component": "column",
+                                "children": [
+                                    {
+                                        "component": "profile_card",
+                                        "data": {
+                                            "title": {
+                                                "text": "Cum vă pot ajuta",
+                                                "tag": "h3",
+                                                "class": "title-card title-divider font-secondary"
+                                            },
+                                            "text": [
+                                                "Sunt un dezvoltator web care creează site-uri dinamice și ușor de utilizat, de la cod personalizat până la instrumente de creare de pagini, pe o varietate de platforme și în diferite limbaje de programare.",
+                                                "De asemenea, lucrez cu software pentru editarea foto și video, instrumente de streaming și suite de utilizare zilnică, cum ar fi Microsoft Office și Google Workspace. Sunt adaptabil și îmi place să transform ideile în proiecte concrete și funcționale."
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "component": "text_block",
+                                        "data": {
+                                            "elements": [
+                                                {
+                                                    "title": {
+                                                        "text": "CV-uri",
+                                                        "tag": "h3",
+                                                        "class": "title-card title-divider font-secondary"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "component": "resume_listing",
+                                        "data": {
+                                            "id": "contact-resumes",
+                                            "preview_popup": false,
+                                            "type": "resume",
+                                            "filter_by": {
+                                                "max_items": 2
+                                            },
+                                            "columns": 2,
+                                            "sort": [
+                                                {
+                                                    "by": "date.publish",
+                                                    "order": "desc"
+                                                }
+                                            ],
+                                            "date_format": "M j, Y",
+                                            "download_text": "Descarcă",
+                                            "lang_labels": {
+                                                "en": "Engleză",
+                                                "ro": "Română"
+                                            },
+                                            "variant": "compact",
+                                            "view_page": "personal-resumes",
+                                            "view_text": "Vezi CV-ul"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "component": "column",
+                                "children": [
+                                    {
+                                        "component": "block_image",
+                                        "data": {
+                                            "img": "personal-images/dm-desktop-working.webp",
+                                            "alt": "Denis Marginas, la locul său de muncă",
+                                            "card": false,
+                                            "popup": false
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "experience",
+        "data": {
+            "seo": {
+                "title": "Experiență",
+                "description": "Am experiență ca dezvoltator web full-stack, lucrând la proiecte precum site-uri de prezentare, magazine online, aplicații web de rezervări, formulare pentru concursuri și optimizare SEO. ",
+                "keywords": "denis marginas experience",
+                "slug": "experience",
+                "index": true
+            }
+        },
+        "content": [
+            {
+                "component": "hero",
+                "children": [
+                    {
+                        "component": "animation_squares",
+                        "data": []
+                    }
+                ],
+                "data": {
+                    "variant": "xs",
+                    "img": "backgrounds/bg-home.webp",
+                    "video": {
+                        "src": "backgrounds/bg-home.webm",
+                        "loop": true,
+                        "audio": false,
+                        "overlay": 0.6
+                    },
+                    "title": "@data.seo.title",
+                    "description": "@data.seo.description"
+                }
+            },
+            {
+                "component": "section",
+                "children": [
+                    {
+                        "component": "columns",
+                        "data": {
+                            "layout": {
+                                "base": "100",
+                                "md": "40-60"
+                            },
+                            "gap": {
+                                "base": "lg",
+                                "md": "xl"
+                            },
+                            "align": "start"
+                        },
+                        "children": [
+                            {
+                                "component": "columns",
+                                "data": {
+                                    "layout": {
+                                        "base": "100"
+                                    },
+                                    "gap": {
+                                        "base": "lg"
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "component": "portrait_experience",
+                                        "data": {
+                                            "img": "personal-images/dm-personal-with-laptop.webp",
+                                            "alt": "Denis Marginas, împreună cu laptopul său",
+                                            "style": "arch",
+                                            "badges": [
+                                                "Dezvoltator web full-stack",
+                                                "Editor foto · video"
+                                            ],
+                                            "class": "pt-sm pt-md-xl"
+                                        }
+                                    },
+                                    {
+                                        "component": "knowledge_listing",
+                                        "data": {
+                                            "icons": true,
+                                            "buttons": [
+                                                {
+                                                    "text": "Carieră",
+                                                    "_id": "employee-experience",
+                                                    "svg": "employ"
+                                                },
+                                                {
+                                                    "text": "Proiecte",
+                                                    "_id": "projects",
+                                                    "svg": "about-me"
+                                                }
+                                            ],
+                                            "class": "d-none d-md-flex"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "component": "columns",
+                                "data": {
+                                    "layout": {
+                                        "base": "100"
+                                    },
+                                    "gap": {
+                                        "base": "lg"
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "component": "knowledge_listing",
+                                        "data": {
+                                            "title": "Experiență",
+                                            "text": [
+                                                "Lucrez ca dezvoltator web full-stack la site-uri de prezentare, magazine online, aplicații de rezervări, formulare de înscriere la concursuri și optimizare SEO. Sunt și editor foto-video și realizez bannere publicitare, materiale promoționale, logo-uri, conținut de brand și reclame video."
+                                            ],
+                                            "groups": [
+                                                {
+                                                    "title": "Dezvoltare web",
+                                                    "list": [
+                                                        "Limbaje: HTML, CSS, SASS/SCSS, JavaScript, PHP, Smarty TPL, SQL, Python, C/C++",
+                                                        "Framework-uri și biblioteci: Angular, React, Next.js, Node.js, jQuery 3, Bootstrap 5",
+                                                        "Platforme: WordPress, PrestaShop, GitHub Pages, Google Site, cPanel",
+                                                        "Instrumente de creare pagini: Elementor, WPBakery, Gutenberg",
+                                                        "Instrumente: Laragon, HeidiSQL, phpMyAdmin, Git, GitHub, GitLab, Visual Studio Code, PhpStorm, PyCharm, Prepros",
+                                                        "Sisteme de operare: Windows, Linux"
+                                                    ],
+                                                    "svg": "skill-web"
+                                                },
+                                                {
+                                                    "title": "Editare și design foto și video",
+                                                    "list": [
+                                                        "Software de editare video: Sony Vegas Pro, Adobe After Effects, Topaz Video Enhance, HandBrake",
+                                                        "Plugin-uri de editare video: BCC, RSMB, Sapphire, Ignite Pro, Optical Flares, Plexus, Particular, Element 3D, Urmărire 3D",
+                                                        "Software de editare foto: Photopea, Photoshop, Paint.net, Xara Photo, Topaz Gigapixel",
+                                                        "Design UI: Figma",
+                                                        "Software 3D: Blender"
+                                                    ],
+                                                    "svg": "skill-media"
+                                                },
+                                                {
+                                                    "title": "Spații de lucru și colaborare",
+                                                    "list": [
+                                                        "Microsoft Office: Microsoft Excel, Microsoft Word, Microsoft PowerPoint",
+                                                        "Google Drive: Google Sheets (Foaie de calcul Google), Google Docs (Documente Google), Google Slides (Prezentări Google)",
+                                                        "Colaborare: Trello, Slack, Discord"
+                                                    ],
+                                                    "svg": "skill-office"
+                                                },
+                                                {
+                                                    "title": "Instrumente AI",
+                                                    "list": [
+                                                        "Asistenți și agenți AI: Claude, Gemini, ChatGPT, DeepSeek, OpenCode",
+                                                        "Generare de imagini și video cu inteligență artificială: ComfyUI"
+                                                    ],
+                                                    "svg": "skill-ai"
+                                                }
+                                            ],
+                                            "icons": false
+                                        }
+                                    },
+                                    {
+                                        "component": "knowledge_listing",
+                                        "data": {
+                                            "icons": true,
+                                            "buttons": [
+                                                {
+                                                    "text": "Carieră",
+                                                    "_id": "employee-experience",
+                                                    "svg": "employ"
+                                                },
+                                                {
+                                                    "text": "Proiecte",
+                                                    "_id": "projects",
+                                                    "svg": "about-me"
+                                                }
+                                            ],
+                                            "class": "d-md-none"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "component": "columns",
+                        "data": {
+                            "id": "journey",
+                            "layout": {
+                                "base": "100"
+                            },
+                            "class": "pt-sm pb-sm"
+                        },
+                        "children": [
+                            {
+                                "component": "experience_timeline",
+                                "data": {
+                                    "types": [
+                                        "job",
+                                        "education"
+                                    ],
+                                    "exclude_by": [
+                                        {
+                                            "path": "_id",
+                                            "value": [
+                                                "education_emil_racovita_high_school",
+                                                "experience_enlivy",
+                                                "experience_gi_group"
+                                            ]
+                                        }
+                                    ],
+                                    "tag_labels": {
+                                        "wordpress": "WordPress",
+                                        "prestashop": "PS",
+                                        "javascript": "JS",
+                                        "php": "PHP",
+                                        "seo": "Optimizare pentru motoarele de căutare"
+                                    },
+                                    "max_tags": 10,
+                                    "titles": {
+                                        "education_technical_university_cluj_napoca_baia_mare": "Universitatea Tehnică din Cluj-Napoca"
+                                    },
+                                    "links": {
+                                        "job": "employee-experience",
+                                        "education": "education-experience"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "component": "columns",
+                        "data": {
+                            "layout": {
+                                "base": "100",
+                                "md": "60-40"
+                            },
+                            "gap": {
+                                "base": "lg",
+                                "md": "xl"
+                            },
+                            "align": "stretch"
+                        },
+                        "children": [
+                            {
+                                "component": "block_paragraph_card",
+                                "data": {
+                                    "text": [
+                                        "Înainte de dezvoltarea web, am lucrat ca editor video freelancer, mai ales pe videoclipuri cu jocuri video. După ce am terminat facultatea de Matematică-Informatică, m-am orientat spre dezvoltarea web și am făcut din ea cariera mea.",
+                                        "În 2019 am început la Pia Soft Product ca dezvoltator web și editor foto-video. Am creat site-uri de prezentare și magazine online pe WordPress și PrestaShop, m-am ocupat de SEO, de întreținerea site-urilor și a găzduirii și de comunicarea cu clienții și am realizat bannere, logo-uri și reclame video. În afară de editarea video, pe care o știam deja, am învățat totul din mers, lucrând independent și dezvoltând aplicații web cu PHP, Smarty TPL, SQL, JavaScript, jQuery, HTML și CSS.",
+                                        "La sfârșitul lui 2021 am trecut cu normă întreagă la Netex Romania, ca dezvoltator front-end, păstrând o jumătate de normă la Pia Soft Product până la finalul lui 2022. Am întreținut mai multe site-uri WordPress și am transformat machete din Zeplin în pagini statice, cu HTML, SASS, Node.js, Bootstrap, JavaScript și jQuery. La început am lucrat singur pe partea mea de proiect, apoi alături de un coleg, și așa am învățat GitLab, Git și lucrul în echipă.",
+                                        "În 2023 am avut colaborări mai scurte: dezvoltator WordPress junior la Enlivy și o temă WordPress personalizată pentru Yes Agency. Din 2024 lucrez cu Mentor Marketing Experts ca dezvoltator WordPress și web designer, construind site-uri în Elementor după designuri din Figma, iar din aprilie 2026 prin Gi Group."
+                                    ]
+                                }
+                            },
+                            {
+                                "component": "block_image",
+                                "data": {
+                                    "img": "personal-images/dm-working-in-office.webp",
+                                    "video": "backgrounds/dm-working-in-office.webm",
+                                    "alt": "Denis Marginas, la birou",
+                                    "card": false,
+                                    "popup": true,
+                                    "cover": true,
+                                    "width": "100%",
+                                    "height": "100%",
+                                    "height_md": "320px",
+                                    "height_sm": "220px"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "component": "section",
+                "data": {
+                    "class": "bg-radial-primary"
+                },
+                "children": [
+                    {
+                        "component": "taxonomy_listing",
+                        "data": {
+                            "post_type": "project",
+                            "taxonomy": "category",
+                            "title": {
+                                "text": "Proiecte",
+                                "tag": "h2",
+                                "class": "title-divider title-primary font-secondary"
+                            },
+                            "template": {
+                                "component": "card_taxonomy",
+                                "data": []
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "component": "section",
+                "children": [
+                    {
+                        "component": "video_listing",
+                        "data": {
+                            "template": {
+                                "component": "video"
+                            },
+                            "filter": {
+                                "_id": [
+                                    "denismarginas-experience-highlights",
+                                    "denismarginas-portfolio-showcase"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "component": "carousels_projects_items",
+                "children": [
+                    {
+                        "component": "carousel_projects_items",
+                        "data": {
+                            "post_type": "project",
+                            "class": "show-preview",
+                            "filter_by": {
+                                "_id": [
+                                    "kaizin-online-shop",
+                                    "bullionhouse-online-shop",
+                                    "familyfirst-online-shop",
+                                    "edlaparis-booking-application",
+                                    "merkaz-nadlan-presentation-website",
+                                    "corfuprivatecruises-booking-application",
+                                    "resurseeducationale-online-shop",
+                                    "agramix-media",
+                                    "casadarius-online-shop",
+                                    "lavmag-online-shop",
+                                    "promotiimars-contest-application",
+                                    "agromir-online-shop",
+                                    "busvip-media",
+                                    "revelnail-avadores-online-shop",
+                                    "reifendirekt-web-design",
+                                    "vseconstruct-media"
+                                ],
+                                "max_items": 16
+                            },
+                            "sort": [
+                                {
+                                    "by": "_id",
+                                    "values": [
+                                        "kaizin-online-shop",
+                                        "bullionhouse-online-shop",
+                                        "familyfirst-online-shop",
+                                        "edlaparis-booking-application",
+                                        "merkaz-nadlan-presentation-website",
+                                        "corfuprivatecruises-booking-application",
+                                        "resurseeducationale-online-shop",
+                                        "agramix-media",
+                                        "casadarius-online-shop",
+                                        "lavmag-online-shop",
+                                        "promotiimars-contest-application",
+                                        "agromir-online-shop",
+                                        "busvip-media",
+                                        "revelnail-avadores-online-shop",
+                                        "reifendirekt-web-design",
+                                        "vseconstruct-media"
+                                    ]
+                                }
+                            ],
+                            "template": {
+                                "component": "card_post_project_visual_default",
+                                "params": [],
+                                "width": 180,
+                                "height": 180,
+                                "width_phone": 120,
+                                "height_phone": 120
+                            },
+                            "direction": "right",
+                            "speed": "slow",
+                            "pause_on_hover": false,
+                            "gap": "--dm-spacing-sm",
+                            "gap_phone": "--dm-spacing-xs"
+                        }
+                    },
+                    {
+                        "component": "carousel_projects_items",
+                        "data": {
+                            "post_type": "project",
+                            "filter_by": {
+                                "_id": [
+                                    "agromir-online-shop",
+                                    "promotiimars-contest-application",
+                                    "lavmag-online-shop",
+                                    "casadarius-online-shop",
+                                    "agramix-online-shop",
+                                    "revelnail-avadores-online-shop",
+                                    "resurseeducationale-online-shop",
+                                    "merkaz-nadlan-presentation-website",
+                                    "familyfirst-online-shop",
+                                    "bullionhouse-online-shop",
+                                    "kaizin-online-shop",
+                                    "edlaparis-booking-application",
+                                    "logistic-brain-presentation-website",
+                                    "boneamed-presentation-website",
+                                    "colorplay-presentation-website"
+                                ],
+                                "max_items": 15
+                            },
+                            "sort": [
+                                {
+                                    "by": "_id",
+                                    "values": [
+                                        "agromir-online-shop",
+                                        "promotiimars-contest-application",
+                                        "lavmag-online-shop",
+                                        "casadarius-online-shop",
+                                        "agramix-online-shop",
+                                        "revelnail-avadores-online-shop",
+                                        "resurseeducationale-online-shop",
+                                        "merkaz-nadlan-presentation-website",
+                                        "familyfirst-online-shop",
+                                        "bullionhouse-online-shop",
+                                        "kaizin-online-shop",
+                                        "edlaparis-booking-application",
+                                        "logistic-brain-presentation-website",
+                                        "boneamed-presentation-website",
+                                        "colorplay-presentation-website"
+                                    ]
+                                }
+                            ],
+                            "template": {
+                                "component": "card_post_project_visual_devices_website",
+                                "params": {
+                                    "desktop_layout_style": false,
+                                    "phone_layout_style": false,
+                                    "desktop_device": "model-03",
+                                    "phone_device": "model-03"
+                                },
+                                "width": 320,
+                                "height": "auto",
+                                "width_phone": 200,
+                                "height_phone": 200
+                            },
+                            "direction": "left",
+                            "speed": "slow",
+                            "pause_on_hover": false,
+                            "gap": "--dm-spacing-lg",
+                            "gap_phone": "--dm-spacing-sm"
+                        }
+                    },
+                    {
+                        "component": "carousel_projects_items",
+                        "data": {
+                            "post_type": "project",
+                            "filter_by": {
+                                "taxonomy.category": "Media Projects",
+                                "max_items": 12
+                            },
+                            "exclude_by": [
+                                {
+                                    "path": "taxonomy.category",
+                                    "value": "Personal Projects"
+                                }
+                            ],
+                            "sort": [
+                                {
+                                    "by": "project.types",
+                                    "value": "personal",
+                                    "position": "last"
+                                },
+                                {
+                                    "by": "date.publish",
+                                    "order": "desc"
+                                }
+                            ],
+                            "template": {
+                                "component": "card_post_project_visual_default",
+                                "params": [],
+                                "width": 200,
+                                "height": 120,
+                                "width_phone": 120,
+                                "height_phone": 75
+                            },
+                            "direction": "right",
+                            "speed": "slow",
+                            "pause_on_hover": false,
+                            "gap": "--dm-spacing-sm",
+                            "gap_phone": "--dm-spacing-xs"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "search",
+        "data": {
+            "seo": {
+                "title": "Caută",
+                "description": "Căutați paginile, proiectele, categoriile și etichetele din portofoliul meu.",
+                "keywords": "denis marginas search",
+                "slug": "search",
+                "index": false
+            }
+        },
+        "content": [
+            {
+                "component": "hero",
+                "children": [
+                    {
+                        "component": "animation_blurred_lines",
+                        "data": []
+                    }
+                ],
+                "data": {
+                    "variant": "xs",
+                    "img": "backgrounds/bg-home.webp",
+                    "video": {
+                        "src": "backgrounds/bg-home.webm",
+                        "loop": true,
+                        "audio": false,
+                        "overlay": 0.6
+                    },
+                    "title": "@data.seo.title",
+                    "description": "@data.seo.description"
+                }
+            },
+            {
+                "component": "section",
+                "children": [
+                    {
+                        "component": "search",
+                        "data": {
+                            "toolbar": "search",
+                            "description_max": 100
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "privacy-policy",
+        "data": {
+            "seo": {
+                "title": "Politica de confidențialitate",
+                "description": "Descoperiți modul în care colectăm, utilizăm și protejăm datele dumneavoastră personale. Politica noastră de confidențialitate explică modul în care folosim cookie-uri, Google Analytics și drepturile dumneavoastră referitoare la datele dumneavoastră.",
+                "keywords": "denis marginas privacy-policy",
+                "slug": "privacy-policy",
+                "index": false
+            }
+        },
+        "content": [
+            {
+                "component": "hero",
+                "children": [
+                    {
+                        "component": "animation_squares",
+                        "data": []
+                    }
+                ],
+                "data": {
+                    "variant": "xs",
+                    "img": "backgrounds/bg-home.webp",
+                    "video": {
+                        "src": "backgrounds/bg-home.webm",
+                        "loop": true,
+                        "audio": false,
+                        "overlay": 0.6
+                    },
+                    "title": "@data.seo.title",
+                    "description": "@data.seo.description"
+                }
+            },
+            {
+                "component": "section",
+                "children": [
+                    {
+                        "component": "text_block",
+                        "data": {
+                            "elements": [
+                                {
+                                    "title": {
+                                        "text": "Politica de confidențialitate",
+                                        "tag": "h2",
+                                        "class": "title-divider title-primary font-secondary"
+                                    }
+                                },
+                                {
+                                    "subtitle": {
+                                        "text": "Google Analytics",
+                                        "tag": "h3",
+                                        "class": "title-divider title-secondary font-secondary"
+                                    }
+                                },
+                                {
+                                    "paragraphs": [
+                                        "Utilizăm Google Analytics pe acest site pentru a analiza și înțelege modul în care utilizatorii interacționează cu site-ul nostru. Google Analytics este un serviciu de analiză web oferit de Google Inc. Ne ajută să monitorizăm și să raportăm traficul site-ului, permițându-ne să îmbunătățim conținutul și experiența utilizatorilor, pe baza datelor colectate."
+                                    ]
+                                },
+                                {
+                                    "subtitle": {
+                                        "text": "Ce face Google Analytics",
+                                        "tag": "h3",
+                                        "class": "title-divider title-secondary font-secondary"
+                                    }
+                                },
+                                {
+                                    "paragraphs": [
+                                        "Google Analytics colectează date despre vizita dumneavoastră, inclusiv adresa IP, tipul browserului și paginile pe care le vizualizați. Aceste informații sunt utilizate pentru a genera rapoarte despre activitatea site-ului și comportamentul utilizatorilor. Datele colectate de Google Analytics sunt agregate și anonimizate, ceea ce înseamnă că nu vă identifică personal."
+                                    ]
+                                },
+                                {
+                                    "subtitle": {
+                                        "text": "Cum utilizăm datele",
+                                        "tag": "h3",
+                                        "class": "title-divider title-secondary font-secondary"
+                                    }
+                                },
+                                {
+                                    "paragraphs": [
+                                        "Informațiile colectate prin intermediul Google Analytics ne ajută să înțelegem modul în care utilizatorii navighează pe site-ul nostru, care pagini sunt cele mai populare și cum putem îmbunătăți performanța acestuia. Folosim aceste date pentru a lua decizii informate cu privire la conținutul și serviciile noastre, cu scopul de a oferi o experiență mai bună vizitatorilor."
+                                    ]
+                                },
+                                {
+                                    "subtitle": {
+                                        "text": "Opt-Out",
+                                        "tag": "h3",
+                                        "class": "title-divider title-secondary font-secondary"
+                                    }
+                                },
+                                {
+                                    "paragraphs": [
+                                        "Puteți alege să renunțați la urmărirea prin Google Analytics, instalând extensia Google Analytics Opt-out sau dezactivând cookie-urile în setările browserului. Vă rugăm să țineți cont că renunțarea la urmărire poate afecta experiența dumneavoastră pe site-ul nostru."
+                                    ]
+                                },
+                                {
+                                    "buttons": [
+                                        {
+                                            "text": "Supliment pentru dezactivarea Google Analytics",
+                                            "link": "https://tools.google.com/dlpage/gaoptout",
+                                            "svg": "new-tab",
+                                            "target": "_blank",
+                                            "rel": "noopener",
+                                            "class": "btn btn-outline btn-sm"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "paragraphs": [
+                                        "Pentru mai multe detalii despre modul în care Google Analytics gestionează datele dumneavoastră, puteți consulta Politica de confidențialitate a Google."
+                                    ]
+                                },
+                                {
+                                    "buttons": [
+                                        {
+                                            "text": "Politica de confidențialitate a Google",
+                                            "link": "https://policies.google.com/privacy",
+                                            "svg": "new-tab",
+                                            "target": "_blank",
+                                            "rel": "noopener",
+                                            "class": "btn btn-outline btn-sm"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "component": "text_block",
+                        "data": {
+                            "elements": [
+                                {
+                                    "subtitle": {
+                                        "text": "Setările privind cookie-urile",
+                                        "tag": "h3",
+                                        "class": "title-divider title-secondary font-secondary"
+                                    }
+                                },
+                                {
+                                    "paragraphs": [
+                                        "Puteți modifica această alegere oricând: accesați setările cookie-urilor și activați sau dezactivați Google Analytics pentru acest browser. Dezactivarea oprește urmărirea și elimină cookie-urile Google Analytics."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "component": "cookie_settings",
+                        "data": {
+                            "text": "Setări cookie",
+                            "class": "btn btn-outline btn-sm",
+                            "status": true
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

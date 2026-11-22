@@ -1,0 +1,13 @@
+{
+  "name": "utility_age",
+  "title": "Utility Age",
+  "summary": "Calculates full years from a date.",
+  "description": "Calculates full years from a date (e.g. a birth date \"09-09-1997\") until today, or until an optional end date.",
+  "type": "utility",
+  "assets": {
+    "php": [
+      "assets/php/utility_age.php"
+    ]
+  },
+  "dependencies": []
+}

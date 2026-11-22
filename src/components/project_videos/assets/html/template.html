@@ -1,0 +1,14 @@
+<div class="project-videos{{ class }}" data-project-videos>
+  <div class="project-videos-player">
+    <div class="project-videos-screen" data-video-screen>{{ player }}</div>
+    <div class="project-videos-head">
+      <div class="project-videos-head-text">
+        <h3 class="project-videos-title title-tertiary" data-video-title>{{ title }}</h3>
+        <span class="project-videos-meta text-label" data-video-meta>{{ meta }}</span>
+      </div>
+      <button type="button" class="btn-soft project-videos-details" data-video-details-open{{ details_hidden }}>{{ details_icon }}<span>{{ details_text }}</span></button>
+    </div>
+  </div>
+  {{ list }}
+  <div class="project-videos-templates" hidden>{{ templates }}</div>
+</div>

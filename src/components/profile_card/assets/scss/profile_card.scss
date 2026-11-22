@@ -1,0 +1,352 @@
+@import "theme";
+
+.profile-card {
+  --profile-card-spin-duration: 60s;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+  grid-template-areas: "media content";
+  align-items: center;
+  gap: var(--dm-spacing-xl);
+  width: 100%;
+
+  &[data-image-position="right"] {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 1fr);
+    grid-template-areas: "content media";
+  }
+
+  &[data-image-position="top"] {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "media"
+      "content";
+    gap: var(--dm-spacing-sm);
+  }
+
+  &:not(:has(.profile-card-media)) {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "content";
+  }
+
+  .profile-card-media {
+    grid-area: media;
+    display: flex;
+    justify-content: center;
+    min-width: 0;
+  }
+
+  &[data-image-style="rounded"] .profile-card-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: var(--dm-radius-md);
+    box-shadow: 0 8px 24px
+      color-mix(in srgb, var(--dm-color-black) 25%, transparent);
+  }
+
+  &[data-image-style="plain"] .profile-card-image {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .profile-card-circle {
+    position: relative;
+    display: block;
+    width: min(100%, 320px);
+    aspect-ratio: unquote("4 / 5");
+  }
+
+  .profile-card-circle-background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    isolation: isolate;
+    box-shadow: 0 10px 30px
+      color-mix(in srgb, var(--dm-color-black) 25%, transparent);
+    transition:
+      transform 0.5s ease,
+      box-shadow 0.5s ease;
+    animation: profile-card-spin var(--profile-card-spin-duration, 60s) linear infinite;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      border-radius: inherit;
+      background-size: 130% 130%;
+      background-position: 0% 0%;
+      transition: background-position 0.8s ease;
+      animation: profile-card-spin var(--profile-card-spin-duration, 60s) linear infinite paused;
+    }
+
+    [mode="light"] &::before {
+      background-image: linear-gradient(
+        135deg,
+        var(--dm-color-primary-300) 10%,
+        var(--dm-color-primary-500) 70%,
+        var(--dm-color-primary-600) 100%
+      );
+    }
+    [mode="dark"] &::before {
+      background-image: linear-gradient(
+        135deg,
+        var(--dm-color-primary-500) 10%,
+        var(--dm-color-primary-700) 70%,
+        var(--dm-color-primary-800) 100%
+      );
+    }
+    > overlay.overlay-noise {
+      border-radius: inherit;
+      pointer-events: none;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: -10px;
+      border-radius: 50%;
+      border: 2px dashed
+        color-mix(in srgb, var(--dm-color-primary) 60%, transparent);
+      transition:
+        transform 0.8s ease,
+        opacity 0.5s ease;
+      opacity: 0.6;
+    }
+  }
+
+  .profile-card-circle-clip {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    border-radius: 0 0 50% 50% / 0 0 40% 40%;
+  }
+
+  .profile-card-circle .profile-card-image {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 84%;
+    height: auto;
+    transform: translateX(-50%);
+    transform-origin: bottom center;
+    transition: transform 0.5s ease;
+    filter: drop-shadow(
+      0 6px 12px color-mix(in srgb, var(--dm-color-black) 30%, transparent)
+    );
+  }
+
+  .profile-card-circle:hover {
+    .profile-card-circle-background {
+      transform: scale(1.04);
+      box-shadow: 0 16px 40px
+        color-mix(in srgb, var(--dm-color-black) 35%, transparent);
+
+      &::before {
+        background-position: 100% 100%;
+        animation-play-state: running;
+      }
+
+      &::after {
+        transform: rotate(5deg) scale(1.03);
+        opacity: 1;
+      }
+    }
+
+    .profile-card-image {
+      transform: translateX(-50%) translateY(10%) scale(1.15);
+    }
+  }
+
+  .profile-card-content {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    gap: var(--dm-spacing-sm);
+    min-width: 0;
+  }
+
+  .profile-card-title {
+    margin: 0;
+  }
+
+  .profile-card-details {
+    @include reset-list();
+    display: flex;
+    flex-direction: column;
+    gap: var(--dm-spacing-xs);
+  }
+
+  .profile-card-detail {
+    display: flex;
+    align-items: center;
+    gap: var(--dm-spacing-xs);
+    min-width: 0;
+  }
+
+  .profile-card-detail-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgb(from var(--dm-color-primary) r g b / 0.12);
+    border: 1px solid rgb(from var(--dm-color-primary) r g b / 0.25);
+    transition: var(--dm-transition);
+  }
+
+  .profile-card-detail-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    @include svg-color(var(--dm-color-primary));
+  }
+
+  .profile-card-detail:hover .profile-card-detail-badge {
+    background-color: var(--dm-color-primary);
+
+    .profile-card-detail-icon {
+      @include svg-color(var(--dm-color-white));
+    }
+  }
+
+  .profile-card-detail-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    min-width: 0;
+  }
+
+  .profile-card-detail-label {
+    font-size: var(--dm-font-size-xs);
+    font-weight: var(--dm-font-weight-semibold);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    opacity: 0.65;
+  }
+
+  .profile-card-detail-value {
+    font-size: var(--dm-font-size-md);
+    word-break: break-word;
+  }
+
+  a.profile-card-detail-value {
+    color: var(--dm-link);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .profile-card-circle-background,
+    .profile-card-circle-background::before {
+      animation: none;
+    }
+
+    .profile-card-circle-background,
+    .profile-card-circle-background::after,
+    .profile-card-circle .profile-card-image {
+      transition: none;
+    }
+  }
+
+  @media (max-width: $dm-screen-md) {
+    &,
+    &[data-image-position="right"] {
+      grid-template-columns: minmax(0, 1fr);
+      grid-template-areas:
+        "media"
+        "content";
+      gap: var(--dm-spacing-lg);
+    }
+  }
+}
+
+.profile-card.profile-card-boxed {
+  padding: var(--dm-spacing-sm);
+  border-radius: var(--dm-radius-md);
+  border: 1px solid transparent;
+  gap: var(--dm-spacing-sm);
+  align-items: start;
+
+  [mode="light"] & {
+    border-color: rgb(from var(--dm-color-primary-300) r g b / 0.5);
+    box-shadow: 0 4px 16px rgb(from var(--dm-color-black) r g b / 0.08);
+  }
+
+  [mode="dark"] & {
+    border-color: rgb(from var(--dm-color-white) r g b / 0.12);
+    box-shadow: 0 4px 16px rgb(from var(--dm-color-black) r g b / 0.3);
+  }
+
+  .profile-card-title {
+    font-size: var(--dm-font-size-xl);
+  }
+
+  .profile-card-text {
+    margin: 0;
+    font-size: var(--dm-font-size-sm);
+    opacity: 0.8;
+  }
+
+  .profile-card-circle {
+    width: min(100%, 120px);
+  }
+
+  .profile-card-detail-value {
+    font-size: var(--dm-font-size-sm);
+  }
+
+  @media (min-width: 480px) {
+    &:has(.profile-card-media) {
+      grid-template-columns: 96px minmax(0, 1fr);
+      grid-template-areas:
+        "media title"
+        "media text"
+        "details details";
+      column-gap: var(--dm-spacing-sm);
+      row-gap: var(--dm-spacing-xxs);
+      align-items: center;
+
+      .profile-card-content {
+        display: contents;
+      }
+
+      .profile-card-title {
+        grid-area: title;
+        align-self: end;
+      }
+
+      .profile-card-text {
+        grid-area: text;
+        align-self: start;
+      }
+
+      .profile-card-details {
+        grid-area: details;
+        margin-top: var(--dm-spacing-xs);
+      }
+    }
+  }
+}
+
+@keyframes profile-card-spin {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}

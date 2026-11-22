@@ -1,0 +1,15 @@
+{
+    "name": "image",
+    "title": "Image",
+    "summary": "Image with path check and thumbnail style.",
+    "description": "Renders an image with path validation and thumbnail styling",
+    "type": "util",
+    "assets": {
+        "php": [
+            "assets/php/image.php"
+        ],
+        "css": [
+            "assets/css/image.css"
+        ]
+    }
+}

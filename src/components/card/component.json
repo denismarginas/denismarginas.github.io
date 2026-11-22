@@ -1,0 +1,37 @@
+{
+  "name": "card",
+  "title": "Card",
+  "summary": "Generic card: image, title, text, date, taxonomy, button.",
+  "description": "Card with image, title, description, button, link, date and taxonomy. Post, minimal and education templates.",
+  "assets": {
+    "php": [
+      "assets/php/card.php"
+    ],
+    "html": [
+      "assets/html/template_card_post.html",
+      "assets/html/template_card_minimal.html",
+      "assets/html/parts/meta.html",
+      "assets/html/parts/description.html",
+      "assets/html/parts/media_link.html",
+      "assets/html/parts/media_plain.html",
+      "assets/html/parts/title_link.html",
+      "assets/html/parts/title_plain.html",
+      "assets/html/parts/date.html",
+      "assets/html/parts/date_container.html",
+      "assets/html/parts/taxonomy_group.html",
+      "assets/html/parts/taxonomy_item_link.html",
+      "assets/html/parts/taxonomy_item_span.html",
+      "assets/html/parts/button.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "image",
+    "theme"
+  ]
+}

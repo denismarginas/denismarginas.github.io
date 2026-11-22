@@ -1,0 +1,222 @@
+.platform-generate-panel {
+  display: grid;
+  gap: var(--platform-gap-lg);
+}
+
+.platform-generate-toolbar {
+  display: flex;
+  align-items: center;
+  gap: var(--platform-gap-md);
+  flex-wrap: wrap;
+}
+
+.platform-generate-results {
+  display: grid;
+  gap: 2px;
+  max-height: 50vh;
+  overflow: auto;
+}
+
+.platform-generate-result-item {
+  padding: var(--platform-padding-sm) var(--platform-padding-md);
+  border: 1px solid var(--platform-item-border);
+  background: var(--platform-item-bg);
+  border-radius: var(--platform-radius-sm);
+  font-size: var(--platform-font-size-sm);
+  color: var(--platform-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  &.is-error {
+    color: var(--platform-color-status-error);
+  }
+}
+
+.platform-generate-select {
+  max-width: 340px;
+}
+
+.platform-generate-select-sm {
+  max-width: 200px;
+}
+
+.platform-generate-warnings {
+  display: grid;
+  gap: 2px;
+
+  &:empty {
+    display: none;
+  }
+}
+
+.platform-generate-thumbs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--platform-gap-md);
+  max-height: 70vh;
+  overflow: auto;
+}
+
+.platform-generate-thumb {
+  display: grid;
+  gap: var(--platform-gap-sm);
+  margin: 0;
+  padding: var(--platform-padding-sm);
+  border: 1px solid var(--platform-item-border);
+  background: var(--platform-item-bg);
+  border-radius: var(--platform-radius-sm);
+  font-size: var(--platform-font-size-sm);
+
+  img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    border-radius: var(--platform-radius-sm);
+    background-color: var(--platform-secondary);
+  }
+
+  figcaption {
+    display: grid;
+    gap: 2px;
+    min-width: 0;
+    color: var(--platform-secondary);
+
+    span {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  &.is-error figcaption span {
+    color: var(--platform-color-status-error);
+  }
+
+  &.is-skipped {
+    opacity: 0.6;
+  }
+}
+
+.platform-generate-thumb-sources {
+  opacity: 0.7;
+}
+
+.platform-translate-rules {
+  display: grid;
+  gap: var(--platform-gap-md);
+  padding-top: var(--platform-gap-lg);
+  border-top: 1px solid var(--platform-item-border);
+}
+
+.platform-translate-rules-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(260px, 2fr);
+  gap: var(--platform-gap-lg);
+  align-items: start;
+
+  @media (max-width: 1100px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.platform-translate-keys {
+  display: grid;
+  gap: var(--platform-gap-sm);
+  min-width: 0;
+
+  input[type="search"] {
+    max-width: 320px;
+  }
+}
+
+.platform-translate-keys-head,
+.platform-translate-key {
+  display: grid;
+  grid-template-columns: 70px minmax(120px, 200px) 60px minmax(0, 1fr);
+  align-items: center;
+  gap: var(--platform-gap-md);
+  padding: 4px var(--platform-padding-md);
+  font-size: var(--platform-font-size-sm);
+}
+
+.platform-translate-keys-head {
+  color: var(--platform-secondary);
+  opacity: 0.7;
+}
+
+.platform-translate-keys-list {
+  display: grid;
+  gap: 2px;
+  max-height: 55vh;
+  overflow: auto;
+}
+
+.platform-translate-key {
+  border: 1px solid var(--platform-item-border);
+  background: var(--platform-item-bg);
+  border-radius: var(--platform-radius-sm);
+  cursor: pointer;
+
+  input {
+    justify-self: start;
+  }
+
+  code {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &.is-off {
+    opacity: 0.55;
+  }
+}
+
+.platform-translate-key-example {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--platform-secondary);
+}
+
+.platform-translate-lists {
+  display: grid;
+  gap: var(--platform-gap-md);
+}
+
+.platform-translate-field {
+  display: grid;
+  gap: var(--platform-gap-sm);
+  font-size: var(--platform-font-size-sm);
+
+  small {
+    color: var(--platform-secondary);
+  }
+
+  textarea {
+    width: 100%;
+    min-height: 120px;
+    resize: vertical;
+    font-family: inherit;
+    box-sizing: border-box;
+  }
+}
+
+.platform-translate-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--platform-font-size-sm);
+  color: var(--platform-secondary);
+}
+
+.platform-translate-overrides {
+  display: grid;
+  gap: var(--platform-gap-md);
+
+  &:empty {
+    display: none;
+  }
+}

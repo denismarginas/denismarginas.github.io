@@ -1,0 +1,20 @@
+<svg width="458" height="480" viewBox="0 0 458 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="gigapixel-g1" x1="0" y1="0" x2="479.472" y2="457.496" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF8C1A"/>
+<stop offset="0.5" stop-color="#F26500"/>
+<stop offset="1" stop-color="#CC4400"/>
+</linearGradient>
+<linearGradient id="gigapixel-g2" x1="37" y1="32" x2="37" y2="440" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3A1C08"/>
+<stop offset="1" stop-color="#220E02"/>
+</linearGradient>
+<linearGradient id="gigapixel-g3" x1="111" y1="114" x2="111" y2="350" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF851B"/>
+<stop offset="1" stop-color="#E65C00"/>
+</linearGradient>
+</defs>
+<path d="M229 0C348 0 458 36 458 139C458 269 328 480 229 480C130 480 0 269 0 139C0 36 110 0 229 0Z" fill="url(#gigapixel-g1)"/>
+<path d="M229 32C328 32 421 62 421 148C421 258 311 440 229 440C147 440 37 258 37 148C37 62 130 32 229 32Z" fill="url(#gigapixel-g2)"/>
+<path d="M325 216H229V262H278C271 288 252 302 227 302C190 302 166 274 166 232C166 190 191 162 228 162C253 162 270 174 279 194L325 172C308 135 272 114 227 114C159 114 111 163 111 232C111 301 158 350 225 350C291 350 329 306 329 238C329 230 327 222 325 216Z" fill="url(#gigapixel-g3)"/>
+</svg>

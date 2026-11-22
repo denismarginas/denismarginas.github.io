@@ -1,0 +1,16 @@
+{
+  "name": "button",
+  "summary": "Link button with optional svg icon.",
+  "description": "Renders a link-button with optional svg icon. Dependencies: svg. Options: text, link (url or { post_id }), svg (icon name), svg_position (\"end\" puts the icon after the text; default before), class, target, rel.",
+  "assets": {
+    "php": [
+      "assets/php/button.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ]
+  },
+  "dependencies": [
+    "svg"
+  ]
+}

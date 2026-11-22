@@ -1,0 +1,31 @@
+{
+  "name": "project_hero_stage_media",
+  "title": "Project Hero Stage: Media",
+  "summary": "Media stage of the project hero (window, square, video).",
+  "description": "The media stage of project_hero: a gallery image in a window (the project name in its bar), a square card (another square image, else the logo) and a card with the first video that plays in the popup; every piece sways in a slow loop. Links to the gallery section. Rendered by project_hero; frame colors, the stage base and the tag come from it.",
+  "post_types": [
+    "project"
+  ],
+  "assets": {
+    "php": [
+      "assets/php/project_hero_stage_media.php"
+    ],
+    "html": [
+      "assets/html/parts/video_card.html",
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "utility_project_media",
+    "project_block_video",
+    "popup",
+    "image",
+    "theme"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "hobby_listing",
+  "title": "Hobby Listing",
+  "summary": "Title + grid of hobby cards.",
+  "description": "Title + grid of hobby cards from the \"hobby\" items (data_items_hobby.json: title, feature_image, svg, optional link), rendered with card_mini_icon_and_text.",
+  "assets": {
+    "php": [
+      "assets/php/hobby_listing.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "card_mini_icon_and_text",
+    "theme",
+    "title"
+  ]
+}

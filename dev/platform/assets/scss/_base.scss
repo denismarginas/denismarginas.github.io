@@ -1,0 +1,26 @@
+.platform-body,
+.platform-body * {
+  box-sizing: border-box;
+}
+
+.platform-body {
+  margin: 0px;
+  min-width: 320px;
+  width: 100%;
+  min-height: 600px;
+  background:
+    radial-gradient(circle at top, var(--platform-accent-soft), var(--platform-color-transparent) 400px),
+    linear-gradient(180deg, var(--platform-bg-gradient) 0px, var(--platform-bg) 100%);
+  color: var(--platform-text);
+  font-family: var(--platform-font);
+  font-size: var(--platform-font-size-base);
+}
+
+.platform-shell {
+  min-height: 100vh;
+  padding: var(--platform-padding-md);
+
+  @media (max-width: 700px) {
+    padding: var(--platform-padding-sm);
+  }
+}

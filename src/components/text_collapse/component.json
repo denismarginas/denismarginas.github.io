@@ -1,0 +1,27 @@
+{
+  "name": "text_collapse",
+  "title": "Text Collapse",
+  "summary": "Long text with Show More / Show Less.",
+  "description": "Long text shortened to its first max_chars - 3 characters + \"...\" with a Show More / Show Less button that expands / collapses the full text (text_collapse.js). Shorter texts are rendered as they are, without a button. Reusable anywhere (video_listing descriptions, ...).",
+  "assets": {
+    "php": [
+      "assets/php/text_collapse.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ],
+    "js": [
+      "assets/js/text_collapse.js"
+    ]
+  },
+  "dependencies": [
+    "svg",
+    "theme"
+  ]
+}

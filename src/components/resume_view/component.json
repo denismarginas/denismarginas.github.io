@@ -1,0 +1,23 @@
+{
+  "name": "resume_view",
+  "title": "Resume View",
+  "summary": "Large view of one resume in the popup.",
+  "description": "Big view of one resume, shown in the popup: the full CV page (click = zoom), title, description, language, date and Download / Open PDF buttons. Used by resume_listing (View button / thumbnail; #<item _id> in the URL opens it through the popup's data-popup-hash).",
+  "assets": {
+    "php": [
+      "assets/php/resume_view.php"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": [
+    "image",
+    "popup",
+    "svg",
+    "theme"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "listing_toolbar",
+  "title": "Listing Toolbar",
+  "summary": "Toolbar settings for listings; keeps state in the URL.",
+  "description": "Settings of the toolbars above the listings (search input, filters, sort, results count), one item per toolbar in data_items_listing_toolbar.json. Read by filters_post_projects, hobby_pc_video_games_filters and search through \"toolbar\": \"<_id>\". listing_toolbar.js keeps the toolbar state in the URL (?q=, one param per filter, ?sort=&order=) and restores it on load.",
+  "type": "utility",
+  "assets": {
+    "php": [
+      "assets/php/listing_toolbar.php"
+    ],
+    "js": [
+      "assets/js/listing_toolbar.js"
+    ]
+  },
+  "dependencies": []
+}

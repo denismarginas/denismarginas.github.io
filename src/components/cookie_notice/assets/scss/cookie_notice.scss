@@ -1,0 +1,287 @@
+@import "theme";
+
+.cookie-notice {
+  --cookie-notice-ink: var(--dm-color-primary-800);
+  --cookie-notice-muted: var(--dm-color-primary-600);
+  --cookie-notice-line: var(--dm-color-primary-200);
+  --cookie-notice-track: var(--dm-color-primary-200);
+  --cookie-notice-track-on: var(--dm-color-primary);
+
+  position: fixed;
+  left: var(--dm-spacing-sm);
+  bottom: var(--dm-spacing-sm);
+  z-index: 900;
+  display: grid;
+  gap: var(--dm-spacing-xs);
+  width: min(560px, calc(100vw - var(--dm-spacing-sm) * 2));
+  padding: var(--dm-spacing-xs) var(--dm-spacing-xs) var(--dm-spacing-xs) var(--dm-spacing-sm);
+  border: 1px solid var(--dm-color-primary-300);
+  border-radius: var(--dm-radius-md);
+  background-color: var(--dm-color-primary-50);
+  color: var(--cookie-notice-ink);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
+  [mode="dark"] & {
+    --cookie-notice-ink: var(--dm-color-primary-200);
+    --cookie-notice-muted: var(--dm-color-primary-400);
+    --cookie-notice-line: var(--dm-color-primary-700);
+    --cookie-notice-track: var(--dm-color-primary-700);
+    --cookie-notice-track-on: var(--dm-color-primary-400);
+
+    border-color: var(--dm-color-primary-700);
+    background-color: var(--dm-color-primary-900);
+  }
+
+  &[hidden] {
+    display: none;
+  }
+
+  &.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+    transform: none;
+  }
+
+  @media (max-width: 480px) {
+    left: var(--dm-spacing-xs);
+    right: var(--dm-spacing-xs);
+    bottom: var(--dm-spacing-xs);
+    width: auto;
+    padding: var(--dm-spacing-xs);
+  }
+}
+
+.cookie-notice-main {
+  display: flex;
+  align-items: center;
+  gap: var(--dm-spacing-xs) var(--dm-spacing-sm);
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.cookie-notice-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--dm-spacing-xxs);
+  flex: none;
+
+  @media (max-width: 480px) {
+    > .cookie-notice-accept {
+      flex: 1;
+      min-height: 36px;
+    }
+
+    > .cookie-notice-settings-toggle {
+      min-height: 36px;
+      min-width: 44px;
+    }
+  }
+}
+
+.cookie-notice-settings-toggle {
+  padding-inline: var(--dm-spacing-xxs);
+
+  > svg.cookie-notice-icon {
+    width: 14px;
+    height: 14px;
+    min-height: 14px;
+    transition: transform 0.3s ease;
+  }
+
+  &[aria-expanded="true"] > svg.cookie-notice-icon {
+    transform: rotate(60deg);
+  }
+}
+
+.cookie-notice-accept {
+  white-space: nowrap;
+}
+
+.cookie-notice .cookie-notice-text {
+  margin: 0;
+  font-size: var(--dm-font-size-sm);
+  line-height: 1.5;
+  color: var(--cookie-notice-ink);
+}
+
+.cookie-notice .cookie-notice-link {
+  font-size: inherit;
+  line-height: inherit;
+  color: var(--cookie-notice-ink);
+  font-weight: var(--dm-font-weight-bold);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--dm-color-accent-1);
+  }
+}
+
+.cookie-notice-settings {
+  display: grid;
+  gap: var(--dm-spacing-xs);
+  padding-top: var(--dm-spacing-xs);
+  border-top: 1px solid var(--cookie-notice-line);
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+.cookie-notice .cookie-notice-settings-title {
+  margin: 0;
+  font-size: var(--dm-font-size-sm);
+  font-weight: var(--dm-font-weight-bold);
+  line-height: 1.4;
+  color: var(--cookie-notice-ink);
+}
+
+.cookie-notice-options {
+  display: grid;
+  gap: var(--dm-spacing-xs);
+}
+
+.cookie-notice-option {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--dm-spacing-xs);
+}
+
+.cookie-notice .cookie-notice-option-copy {
+  display: grid;
+  gap: 2px;
+  cursor: var(--cursor-pointer, pointer);
+  font-size: var(--dm-font-size-sm);
+  line-height: 1.4;
+  color: var(--cookie-notice-ink);
+}
+
+.cookie-notice .is-locked .cookie-notice-option-copy {
+  cursor: var(--cursor-default, default);
+}
+
+.cookie-notice .cookie-notice-option-title {
+  font-size: var(--dm-font-size-sm);
+  font-weight: var(--dm-font-weight-bold);
+  line-height: 1.4;
+  color: var(--cookie-notice-ink);
+}
+
+.cookie-notice .cookie-notice-option-text {
+  font-size: var(--dm-font-size-sm);
+  line-height: 1.4;
+  color: var(--cookie-notice-muted);
+}
+
+.cookie-notice-switch {
+  appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  flex: none;
+  width: 32px;
+  height: 18px;
+  margin: 1px 0 0;
+  border-radius: 999px;
+  background-color: var(--cookie-notice-track);
+  cursor: var(--cursor-pointer, pointer);
+  transition: background-color 0.2s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--dm-color-white);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+  }
+
+  &:checked {
+    background-color: var(--cookie-notice-track-on);
+
+    &::after {
+      transform: translateX(14px);
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--dm-link);
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    cursor: var(--cursor-default, default);
+    opacity: 0.6;
+  }
+}
+
+.cookie-notice-settings-actions {
+  display: flex;
+  justify-content: flex-end;
+
+  @media (max-width: 480px) {
+    > .btn {
+      flex: 1;
+      min-height: 36px;
+    }
+  }
+}
+
+.cookie-notice-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 1px solid var(--dm-color-primary-300);
+  border-radius: 50%;
+  background-color: var(--dm-color-primary-50);
+  color: var(--cookie-notice-ink);
+  cursor: var(--cursor-pointer, pointer);
+  transform: translate(40%, -40%);
+  transition: background-color 0.2s ease, color 0.2s ease;
+
+  .cookie-notice-icon {
+    width: 12px;
+    height: 12px;
+    @include svg-color(currentColor);
+  }
+
+  &:hover {
+    background-color: var(--dm-color-primary);
+    color: var(--dm-color-white);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--dm-link);
+    outline-offset: 2px;
+  }
+
+  [mode="dark"] & {
+    border-color: var(--dm-color-primary-700);
+    background-color: var(--dm-color-primary-900);
+
+    &:hover {
+      background-color: var(--dm-color-primary-400);
+      color: var(--dm-color-primary-950);
+    }
+  }
+}

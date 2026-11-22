@@ -1,0 +1,37 @@
+{
+  "name": "project_screens",
+  "title": "Project Screens",
+  "summary": "Website screens section with device mockup and thumbnails.",
+  "description": "Website screens section of a project page: a stage with the selected screen paired with its counterpart in the laptop + phone mockup (card_post_project_visual_devices_website), a meta row (counter, title, \"View all\") and a rail of device thumbnails - below the stage up to 768px, a 2-column list scrolling top to bottom next to it above. Clicking the stage / \"View all\" opens every capture in the popup gallery. A <section> of its own with a section_head.",
+  "post_types": [
+    "project"
+  ],
+  "assets": {
+    "php": [
+      "assets/php/project_screens.php"
+    ],
+    "html": [
+      "assets/html/parts/thumb.html",
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ],
+    "js": [
+      "assets/js/project_screens.js"
+    ]
+  },
+  "dependencies": [
+    "section",
+    "section_head",
+    "card_post_project_visual_devices_website",
+    "overlay_noise",
+    "utility_project_media",
+    "popup",
+    "image",
+    "theme"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "cursor",
+  "title": "Custom Cursor",
+  "summary": "CSS-only custom cursors for light and dark mode.",
+  "description": "CSS-only custom cursors (no JS): SVG icons drawn by the browser as the real system cursor, light + dark versions switched by body[mode]. Automatic for links, buttons, text fields, disabled elements; manual with data-cursor=\"view|play|external|zoom-in|zoom-out|grab|move|crosshair|progress|not-allowed|…\" or .cursor-<name>. Icons are CSS variables (--cursor-<name>).",
+  "type": "utility",
+  "assets": {
+    "php": ["assets/php/cursor.php"],
+    "scss": ["assets/scss/**"],
+    "css": ["assets/css/**"]
+  },
+  "dependencies": ["theme"]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "animation_grid_background",
+  "title": "Animation Grid Background",
+  "summary": "Moving grid background behind the page.",
+  "description": "Moving grid behind the page (.animation-grid-background, per theme mode). Compositor-only animation, paused while the page scrolls (assets/js).",
+  "type": "utility",
+  "assets": {
+    "php": [
+      "assets/php/animation_grid_background.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ],
+    "js": [
+      "assets/js/animation_grid_background.js"
+    ]
+  },
+  "dependencies": []
+}

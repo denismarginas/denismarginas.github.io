@@ -1,0 +1,15 @@
+{
+  "name": "scroll_down",
+  "title": "Scroll Down",
+  "summary": "Animated mouse cue that scrolls to the next content.",
+  "description": "Scroll-down cue: a small mouse with a moving wheel. On click it smooth-scrolls to the content right after its section (or to a target selector). Sits at the bottom center of its parent by default; color comes from --scroll-down-color (default currentColor).",
+  "post_types": ["page"],
+  "assets": {
+    "php": ["assets/php/scroll_down.php"],
+    "html": ["assets/html/template.html"],
+    "scss": ["assets/scss/**"],
+    "css": ["assets/css/**"],
+    "js": ["assets/js/scroll_down.js"]
+  },
+  "dependencies": ["theme"]
+}

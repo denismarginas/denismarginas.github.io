@@ -1,0 +1,80 @@
+{
+    "post": {
+        "singular": "Postare",
+        "plural": "Postări",
+        "types": {
+            "page": {
+                "singular": "Pagină",
+                "plural": "Pagini"
+            },
+            "project": {
+                "singular": "Proiect",
+                "plural": "Proiecte"
+            },
+            "workstation": {
+                "singular": "Stație de lucru",
+                "plural": "Stații de lucru"
+            }
+        }
+    },
+    "taxonomy": {
+        "singular": "Taxonomie",
+        "plural": "Taxonomii",
+        "types": {
+            "category": {
+                "singular": "Categorie",
+                "plural": "Categorii"
+            }
+        }
+    },
+    "collection": {
+        "singular": "Colecție",
+        "plural": "Colecții",
+        "types": {
+            "job": {
+                "singular": "Loc de muncă",
+                "plural": "Locuri de muncă"
+            },
+            "education": {
+                "singular": "Educație",
+                "plural": "Educație"
+            },
+            "resume": {
+                "singular": "CV",
+                "plural": "CV-uri"
+            },
+            "hobby_pc_video_game": {
+                "singular": "Joc video pe PC",
+                "plural": "Jocuri video pe PC"
+            },
+            "social_post": {
+                "singular": "Postare socială",
+                "plural": "Postări sociale"
+            },
+            "social_link": {
+                "singular": "Link social",
+                "plural": "Linkuri sociale"
+            },
+            "form": {
+                "singular": "Formular",
+                "plural": "Formulare"
+            },
+            "video": {
+                "singular": "Videoclip",
+                "plural": "Videoclipuri"
+            },
+            "knowledge_item": {
+                "singular": "Element de cunoștințe",
+                "plural": "Cunoștințe"
+            },
+            "listing_toolbar": {
+                "singular": "Bară de listare",
+                "plural": "Bare de listare"
+            },
+            "hobby": {
+                "singular": "Activitate de agrement",
+                "plural": "Hobby-uri"
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+<div class="screens-viewer" data-screens-viewer data-popup-group-name="{{ group }}">
+  <div class="screens-viewer-stage" data-screens-stage role="button" tabindex="0" aria-label="{{ open_label }}">{{ stage }}</div>
+  <div class="screens-viewer-meta">
+    <span class="screens-viewer-counter text-label text-label-sm" data-screens-counter>{{ counter }}</span>
+    <div class="screens-viewer-meta-text">
+      <h3 class="screens-viewer-title title-tertiary" data-screens-title>{{ title }}</h3>
+      <p class="screens-viewer-sub text-label" data-screens-sub>{{ sub }}</p>
+    </div>
+    <button type="button" class="btn btn-ghost btn-sm screens-viewer-open" data-screens-open>{{ open_text }}</button>
+  </div>
+  <div class="screens-viewer-rail">
+    <button type="button" class="screens-viewer-arrow" data-screens-prev aria-label="{{ prev_label }}">&larr;</button>
+    <div class="screens-viewer-thumbs" data-screens-thumbs role="list">{{ thumbs }}</div>
+    <button type="button" class="screens-viewer-arrow" data-screens-next aria-label="{{ next_label }}">&rarr;</button>
+  </div>
+  <div class="screens-viewer-pairs" hidden>{{ pairs }}</div>
+  <div class="screens-viewer-source" hidden>{{ source }}</div>
+</div>

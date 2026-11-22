@@ -1,0 +1,19 @@
+{
+  "name": "utility_calc_date_interval",
+  "title": "Utility Calc Date Interval",
+  "summary": "Calculates years, months, weeks, days between dates.",
+  "description": "Calculates date intervals and returns time units (years, months, weeks, days) with singular/plural labels from data_dates.json.",
+  "type": "utility",
+  "assets": {
+    "php": [
+      "assets/php/utility_calc_date_interval.php"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ]
+  },
+  "dependencies": []
+}

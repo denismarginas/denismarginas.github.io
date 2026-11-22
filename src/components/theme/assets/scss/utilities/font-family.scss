@@ -1,0 +1,11 @@
+$dm-font-families: (
+  'primary': var(--dm-font-primary),
+  'secondary': var(--dm-font-secondary),
+  'tertiary': var(--dm-font-tertiary),
+);
+
+@each $name, $value in $dm-font-families {
+  .font-#{$name} {
+    font-family: $value !important;
+  }
+}

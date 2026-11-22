@@ -1,0 +1,292 @@
+[
+  {
+    "_id": "projects",
+    "settings": {
+      "render": true
+    },
+    "data": {
+      "search": {
+        "placeholder": "Search keywords..",
+        "button": "Search",
+        "toggle": true,
+        "expanded": true
+      },
+      "filters": {
+        "expanded": false,
+        "items": [
+          {
+            "_id": "post-category",
+            "name": "category",
+            "placeholder": "--select--",
+            "label": "Category:",
+            "type": "select",
+            "json-path": "['data']['taxonomy']['category']",
+            "json-type": "array"
+          },
+          {
+            "_id": "post-date-start",
+            "name": "date-start",
+            "placeholder": "--select--",
+            "label": "After Date:",
+            "type": "select",
+            "json-path": "['data']['date']['start']",
+            "json-type": "date",
+            "json-search-mode": ">="
+          },
+          {
+            "_id": "post-date-end",
+            "name": "date-end",
+            "placeholder": "--select--",
+            "label": "Until Date:",
+            "type": "select",
+            "json-path": "['data']['date']['end']",
+            "json-type": "date",
+            "json-search-mode": "<="
+          },
+          {
+            "_id": "post-employ",
+            "name": "employ",
+            "placeholder": "--select--",
+            "label": "Employee:",
+            "type": "select",
+            "json-path": "['data']['project']['employer']",
+            "json-type": "string"
+          },
+          {
+            "_id": "post-web-platform",
+            "name": "web-platform",
+            "placeholder": "--select--",
+            "label": "Web Platform:",
+            "type": "select",
+            "json-path": "['data']['web']['platform']",
+            "json-type": "array",
+            "json-array-key": "text"
+          },
+          {
+            "_id": "post-web-technology",
+            "name": "web-technology",
+            "placeholder": "--select--",
+            "label": "Web Technology:",
+            "type": "select",
+            "json-path": "['data']['web']['technology']",
+            "json-type": "array",
+            "json-array-key": "text"
+          },
+          {
+            "_id": "post-media-platform",
+            "name": "media-platform",
+            "placeholder": "--select--",
+            "label": "Media Platform:",
+            "type": "select",
+            "json-path": "['data']['media']['platforms']",
+            "json-type": "array",
+            "json-array-key": "text"
+          },
+          {
+            "_id": "post-project_types",
+            "name": "project_types",
+            "placeholder": "--select--",
+            "label": "Project Types:",
+            "type": "select",
+            "style": "text-transform: capitalize;",
+            "json-path": "['data']['project']['types']",
+            "json-type": "array"
+          },
+          {
+            "_id": "post-collaboration",
+            "name": "collaboration",
+            "placeholder": "--select--",
+            "label": "Collaboration:",
+            "type": "select",
+            "json-path": "['data']['project']['collaboration']",
+            "json-type": "array"
+          }
+        ]
+      },
+      "sort": {
+        "default": "Default",
+        "expanded": false,
+        "fields": [
+          {
+            "label": "Name",
+            "by": "seo.title",
+            "type": "text",
+            "order": "asc"
+          },
+          {
+            "label": "Publish Date",
+            "by": "date.publish",
+            "type": "date",
+            "order": "desc"
+          }
+        ]
+      },
+      "results": {
+        "text": "Showing {n} results."
+      },
+      "view": {
+        "search": true,
+        "sticky": true
+      }
+    }
+  },
+  {
+    "_id": "pc-video-games",
+    "settings": {
+      "render": true
+    },
+    "data": {
+      "search": {
+        "placeholder": "Search games...",
+        "button": "Search"
+      },
+      "filters": {
+        "expanded": true,
+        "items": [
+          {
+            "_id": "game-display",
+            "name": "display",
+            "placeholder": "Display",
+            "label": "Display:",
+            "type": "display",
+            "options": [
+              {
+                "value": "default",
+                "label": "Default"
+              },
+              {
+                "value": "all",
+                "label": "All"
+              }
+            ]
+          },
+          {
+            "_id": "game-tags",
+            "name": "tags",
+            "placeholder": "--select--",
+            "label": "Tag:",
+            "type": "select",
+            "json-path": "['data']['tags']",
+            "json-type": "list"
+          },
+          {
+            "_id": "game-rank",
+            "name": "rank",
+            "placeholder": "--select--",
+            "label": "Min Rank:",
+            "type": "select",
+            "json-path": "['data']['rank']",
+            "json-type": "number",
+            "json-search-mode": ">="
+          },
+          {
+            "_id": "game-playtime",
+            "name": "playtime",
+            "placeholder": "--select--",
+            "label": "Min Playtime:",
+            "type": "select",
+            "json-path": "['data']['playtime_hours']",
+            "json-type": "number",
+            "json-search-mode": ">=",
+            "options": [
+              "10",
+              "50",
+              "100",
+              "250",
+              "500",
+              "1000",
+              "2000"
+            ],
+            "option-suffix": "h+"
+          },
+          {
+            "_id": "game-release-date",
+            "name": "release-date",
+            "placeholder": "--select--",
+            "label": "Release Year:",
+            "type": "select",
+            "json-path": "['data']['release_year']",
+            "json-type": "date"
+          }
+        ],
+        "exclude": [
+          "game-release-date"
+        ]
+      },
+      "sort": {
+        "expanded": false,
+        "fields": [
+          {
+            "label": "Name",
+            "by": "name",
+            "type": "text",
+            "order": "asc"
+          },
+          {
+            "label": "Rank",
+            "by": "rank",
+            "type": "number",
+            "order": "desc"
+          },
+          {
+            "label": "Playtime",
+            "by": "playtime",
+            "type": "number",
+            "order": "desc"
+          }
+        ]
+      },
+      "results": {
+        "text": "Showing {n} games."
+      },
+      "view": {
+        "details": false
+      }
+    }
+  },
+  {
+    "_id": "search",
+    "settings": {
+      "render": true
+    },
+    "data": {
+      "search": {
+        "label": "Search",
+        "placeholder": "Search keywords..",
+        "button": "Search",
+        "min_chars": 2
+      },
+      "filters": {
+        "label": "Filters",
+        "expanded": false,
+        "items": [
+          {
+            "_id": "search-type",
+            "name": "type",
+            "placeholder": "--select--",
+            "label": "Type:",
+            "type": "select",
+            "json-path": "['type']"
+          }
+        ]
+      },
+      "sort": {
+        "fields": [
+          {
+            "label": "Name",
+            "by": "title",
+            "type": "text",
+            "order": "asc"
+          }
+        ]
+      },
+      "results": {
+        "label": "Results",
+        "text": "Showing {n} results.",
+        "hint": "Type at least 2 characters to search the pages, projects and categories, or turn on Show all in Filters.",
+        "no_results": "No results for “{query}”.",
+        "show_all": "Show all"
+      }
+    }
+  }
+]

@@ -1,0 +1,28 @@
+@import "../variables/_fonts";
+
+:root {
+  --dm-font-primary: #{$dm-font-primary};
+  --dm-font-secondary: #{$dm-font-secondary};
+  --dm-font-tertiary: #{$dm-font-tertiary};
+
+  --dm-font-weight-thin: #{$dm-font-weight-thin};
+  --dm-font-weight-extra-light: #{$dm-font-weight-extra-light};
+  --dm-font-weight-light: #{$dm-font-weight-light};
+  --dm-font-weight-regular: #{$dm-font-weight-regular};
+  --dm-font-weight-medium: #{$dm-font-weight-medium};
+  --dm-font-weight-semibold: #{$dm-font-weight-semibold};
+  --dm-font-weight-bold: #{$dm-font-weight-bold};
+  --dm-font-weight-extra-bold: #{$dm-font-weight-extra-bold};
+  --dm-font-weight-black: #{$dm-font-weight-black};
+
+  --dm-font-size-xs: #{$dm-font-size-xs};
+  --dm-font-size-sm: #{$dm-font-size-sm};
+  --dm-font-size-md: #{$dm-font-size-md};
+  --dm-font-size-base: #{$dm-font-size-base};
+  --dm-font-size-lg: #{$dm-font-size-lg};
+  --dm-font-size-xl: #{$dm-font-size-xl};
+  --dm-font-size-2xl: #{$dm-font-size-2xl};
+  --dm-font-size-3xl: #{$dm-font-size-3xl};
+  --dm-font-size-4xl: #{$dm-font-size-4xl};
+  --dm-font-size-5xl: #{$dm-font-size-5xl};
+}

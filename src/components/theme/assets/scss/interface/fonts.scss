@@ -1,0 +1,41 @@
+@import "../variables/_font-faces";
+
+@each $font in $dm-fonts {
+  $name: map-get($font, name);
+  $root: map-get($font, root);
+  $src: map-get($root, src);
+  $files: map-get($root, files);
+
+  @font-face {
+    font-family: quote($name);
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+
+    @if map-has-key($files, ttf) {
+      src: url("../../fonts/#{$src}/#{map-get($files, ttf)}");
+    } @else if map-has-key($files, otf) {
+      src: url("../../fonts/#{$src}/#{map-get($files, otf)}");
+    }
+
+    $src-list: local("");
+
+    @if map-has-key($files, eot) {
+      $src-list: append($src-list, url("../../fonts/#{$src}/#{map-get($files, eot)}?#iefix") format("embedded-opentype"), comma);
+    }
+    @if map-has-key($files, woff2) {
+      $src-list: append($src-list, url("../../fonts/#{$src}/#{map-get($files, woff2)}") format("woff2"), comma);
+    }
+    @if map-has-key($files, woff) {
+      $src-list: append($src-list, url("../../fonts/#{$src}/#{map-get($files, woff)}") format("woff"), comma);
+    }
+    @if map-has-key($files, ttf) {
+      $src-list: append($src-list, url("../../fonts/#{$src}/#{map-get($files, ttf)}") format("truetype"), comma);
+    }
+    @if map-has-key($files, otf) {
+      $src-list: append($src-list, url("../../fonts/#{$src}/#{map-get($files, otf)}") format("opentype"), comma);
+    }
+
+    src: $src-list;
+  }
+}

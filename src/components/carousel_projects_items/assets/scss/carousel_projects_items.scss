@@ -1,0 +1,33 @@
+@import "theme";
+
+.carousel-projects-items {
+  --carousel-item-width: 200px;
+  --carousel-item-height: 120px;
+  --carousel-item-width-phone: 120px;
+  --carousel-item-height-phone: 75px;
+
+  > .carousel-list > .carousel-item {
+    width: var(--carousel-item-width);
+    height: var(--carousel-item-height);
+
+    > a,
+    > .dm-post-view,
+    > .dm-post-view-default {
+      width: 100%;
+      height: 100%;
+      min-height: 0;
+      box-sizing: border-box;
+    }
+
+    > .dm-post-view.visual-media > .photo {
+      height: calc(100% - 26px);
+    }
+  }
+
+  @media only screen and (max-width: $dm-screen-sm) {
+    > .carousel-list > .carousel-item {
+      width: var(--carousel-item-width-phone);
+      height: var(--carousel-item-height-phone);
+    }
+  }
+}

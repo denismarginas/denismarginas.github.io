@@ -1,0 +1,42 @@
+@import "theme";
+
+.block-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: var(--dm-spacing-sm);
+  border-radius: var(--dm-radius-md);
+  text-align: center;
+
+  [mode="light"] &,
+  [mode="dark"] & {
+    background-color: var(--post-color-primary);
+  }
+
+  > overlay.overlay-noise {
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  > span {
+    position: relative;
+    z-index: 1;
+    font-family: var(--dm-font-secondary);
+    font-size: var(--dm-font-size-lg);
+    font-weight: var(--dm-font-weight-semibold);
+    line-height: 1.4;
+    color: var(--post-color-secondary);
+  }
+
+  @media (max-width: $dm-screen-sm) {
+    padding: var(--dm-spacing-xs) var(--dm-spacing-sm);
+
+    > span {
+      font-size: var(--dm-font-size-base);
+    }
+  }
+}

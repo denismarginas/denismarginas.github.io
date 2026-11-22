@@ -1,0 +1,95 @@
+{
+    "months": {
+        "full": [
+            "Ianuarie",
+            "Februarie",
+            "Martie",
+            "Aprilie",
+            "Mai",
+            "Iunie",
+            "Iulie",
+            "August",
+            "Septembrie",
+            "Octombrie",
+            "Noiembrie",
+            "Decembrie"
+        ],
+        "short": [
+            "Ian",
+            "Februarie",
+            "Mar",
+            "April",
+            "Mai",
+            "Iun",
+            "Iul",
+            "August",
+            "Septembrie",
+            "Octombrie",
+            "Noi",
+            "Dec"
+        ]
+    },
+    "days": {
+        "full": [
+            "Duminică",
+            "Luni",
+            "Marți",
+            "Miercuri",
+            "Joi",
+            "Vineri",
+            "Sâmbătă"
+        ],
+        "short": [
+            "Dum",
+            "Lun",
+            "Mar",
+            "Mie",
+            "Joi",
+            "Vin",
+            "Sâm"
+        ]
+    },
+    "time_units": {
+        "second": {
+            "singular": "Secundă",
+            "plural": "Secunde",
+            "short": "sec"
+        },
+        "minute": {
+            "singular": "Minut",
+            "plural": "Minute",
+            "short": "min"
+        },
+        "hour": {
+            "singular": "Oră",
+            "plural": "Ore",
+            "short": "hr"
+        },
+        "day": {
+            "singular": "Zi",
+            "plural": "Zile",
+            "short": "d"
+        },
+        "week": {
+            "singular": "Săptămână",
+            "plural": "Săptămâni",
+            "short": "wk"
+        },
+        "month": {
+            "singular": "Lună",
+            "plural": "Luni",
+            "short": "mo"
+        },
+        "year": {
+            "singular": "An",
+            "plural": "Ani",
+            "short": "yr"
+        }
+    },
+    "current_date": {
+        "current_date": "Data curentă",
+        "present": "Prezent",
+        "in_progress": "În lucru",
+        "currently": "În prezent"
+    }
+}

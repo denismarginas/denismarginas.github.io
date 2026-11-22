@@ -1,0 +1,91 @@
+:root {
+  --platform-color-black: #000000;
+  --platform-color-white: #ffffff;
+  --platform-color-transparent: transparent;
+
+  --platform-color-bg-base: #222222;
+  --platform-color-bg-surface: #202020;
+  --platform-color-bg-surface-elevated: #2a2a2a;
+  --platform-color-bg-surface-sunken: #151515;
+
+  --platform-color-text-primary: var(--platform-color-white);
+  --platform-color-text-secondary: #999999;
+  --platform-color-text-disabled: #555555;
+  --platform-color-text-placeholder: #777777;
+
+  --platform-color-primary: #525252;
+  --platform-color-primary-soft: rgba(101, 127, 145, 0.12);
+
+  --platform-color-border-base: #353535;
+  --platform-color-border-subtle: #1b1b1b;
+
+  --platform-color-port-input: #a5acb4;
+  --platform-color-port-output: #858585;
+
+  --platform-color-status-error: #d9534f;
+  --platform-color-status-warning: #f0ad4e;
+  --platform-color-status-success: #5cb85c;
+
+  --platform-color-shadow: rgba(0, 0, 0, 0.5);
+
+  --platform-bg: var(--platform-color-bg-base);
+  --platform-bg-gradient: var(--platform-color-bg-base);
+  --platform-panel: var(--platform-color-bg-surface);
+  --platform-panel-strong: var(--platform-color-bg-surface-sunken);
+  --platform-border: var(--platform-color-border-base);
+  --platform-text: var(--platform-color-text-primary);
+  --platform-secondary: var(--platform-color-text-secondary);
+  --platform-accent: var(--platform-color-primary);
+  --platform-accent-soft: var(--platform-color-primary-soft);
+
+  --platform-card: var(--platform-panel);
+  --platform-card-border: var(--platform-border);
+  --platform-port-input: var(--platform-color-port-input);
+  --platform-port-output: var(--platform-color-port-output);
+  --platform-danger: var(--platform-color-status-error);
+  --platform-shadow: var(--platform-color-shadow);
+
+  --platform-canvas-grid-subtle: #1c1c1c;
+  --platform-canvas-grid-main: #141414;
+
+  --platform-node-bg-top: var(--platform-color-bg-surface-elevated);
+  --platform-node-bg-bottom: var(--platform-color-bg-base);
+  --platform-header-bg: var(--platform-color-bg-surface-elevated);
+  --platform-item-bg: var(--platform-color-bg-surface-sunken);
+  --platform-item-border: var(--platform-color-border-subtle);
+  --platform-code-bg: var(--platform-color-bg-surface-sunken);
+
+  --platform-btn-text: var(--platform-color-text-primary);
+  --platform-placeholder: var(--platform-color-text-placeholder);
+  --platform-link-secondary: var(--platform-color-border-base);
+  --platform-link-disabled: var(--platform-color-text-disabled);
+
+  --platform-font: "Roboto", Arial, sans-serif;
+  --platform-font-size-xs: 11px;
+  --platform-font-size-sm: 12px;
+  --platform-font-size-md: 13px;
+  --platform-font-size-base: 14px;
+  --platform-font-size-xl: 18px;
+  --platform-font-weight-regular: 400;
+  --platform-font-weight-bold: 600;
+  --platform-letter-spacing-wide: 0.5px;
+  --platform-letter-spacing-wider: 1px;
+
+  --platform-radius: 6px;
+  --platform-radius-sm: 4px;
+  --platform-gap-xs: 4px;
+  --platform-gap-sm: 8px;
+  --platform-gap-md: 12px;
+  --platform-gap-lg: 16px;
+  --platform-gap-xl: 20px;
+
+  --platform-padding-sm: 6px;
+  --platform-padding-md: 10px;
+  --platform-padding-lg: 14px;
+  --platform-padding-xl: 18px;
+
+  --platform-node-width: 280px;
+  --platform-sidebar-width: 300px;
+  --platform-canvas-grid-sub: 15px;
+  --platform-canvas-grid-main-size: 150px;
+}
