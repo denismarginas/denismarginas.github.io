@@ -24,7 +24,7 @@ class i18n_frontend
         $init = is_file($initPath) ? trim((string) file_get_contents($initPath)) : '';
 
         return '<style>html.i18n-loading body>:not([data-preloader]){visibility:hidden}</style>'
-            . '<script>window.dmI18n=' . json_encode($config, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG) . ';' . $init . '</script>';
+            . '<script id="i18n-frontend-init">window.dmI18n=' . json_encode($config, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG) . ';' . $init . '</script>';
     }
 
     private static function data_config(array $frontend): array

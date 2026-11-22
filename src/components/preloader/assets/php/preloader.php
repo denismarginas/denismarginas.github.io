@@ -20,7 +20,7 @@ class preloader
     {
         if (($data['part'] ?? '') !== 'head' || !self::settings()['enabled']) return '';
         $path = __DIR__ . '/../js/preloader_init.js';
-        return is_file($path) ? '<script>' . trim((string) file_get_contents($path)) . '</script>' : '';
+        return is_file($path) ? '<script id="preloader-init">' . trim((string) file_get_contents($path)) . '</script>' : '';
     }
 
     public static function render(array $data = []): string
