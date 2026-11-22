@@ -3536,7 +3536,8 @@ window.Svg = window.Svg || Svg;
   }
 
   function isLocal() {
-    return /^(localhost|127\.0\.0\.1|\[?::1\]?)$/.test(window.location.hostname);
+    var host = window.location.hostname;
+    return /^(localhost|127\.0\.0\.1|\[?::1\]?)$/.test(host) || /\.(local|localhost|test)$/.test(host);
   }
 
   function allowed() {
@@ -3545,24 +3546,37 @@ window.Svg = window.Svg || Svg;
     return consent === null ? config.default_value === true : consent === true;
   }
 
+  function isTagManager() {
+    return /^GTM-/i.test(config.id);
+  }
+
   function load() {
     window['ga-disable-' + config.id] = false;
-    if (loaded) return;
-    loaded = true;
-
     window.dataLayer = window.dataLayer || [];
     window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
-    window.gtag('js', new Date());
-    window.gtag('config', config.id, { anonymize_ip: true });
+    if (loaded) {
+      window.gtag('consent', 'update', { analytics_storage: 'granted' });
+      return;
+    }
+    loaded = true;
 
     var script = document.createElement('script');
     script.async = true;
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(config.id);
+    if (isTagManager()) {
+      window.gtag('consent', 'default', { analytics_storage: 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
+      window.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+      script.src = 'https://www.googletagmanager.com/gtm.js?id=' + encodeURIComponent(config.id);
+    } else {
+      window.gtag('js', new Date());
+      window.gtag('config', config.id, { anonymize_ip: true });
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(config.id);
+    }
     document.head.appendChild(script);
   }
 
   function disable() {
     window['ga-disable-' + config.id] = true;
+    if (window.gtag) window.gtag('consent', 'update', { analytics_storage: 'denied' });
     var host = window.location.hostname;
     var parts = host.split('.');
     var domains = [''];
