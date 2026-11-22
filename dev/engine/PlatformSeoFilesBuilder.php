@@ -123,7 +123,8 @@ class PlatformSeoFilesBuilder
 
                     $rel = $langPrefix . ($folder !== '' ? $folder . '/' : '') . $id . $extension;
                     $isFront = $params['front_page_as_root'] && $id === $frontId;
-                    $loc = $isFront ? $siteUrl . $langPrefix : $siteUrl . self::encode_path($rel);
+                    $href = $langPrefix . ($folder !== '' ? $folder . '/' : '') . $id . PlatformPathService::link_extension();
+                    $loc = $isFront ? $siteUrl . $langPrefix : $siteUrl . self::encode_path($href);
                     if (isset($seen[$loc])) continue;
                     $seen[$loc] = true;
 

@@ -144,6 +144,10 @@ Build switches live in `settings/data_settings_workflow.json` (render, compile, 
 2. Push to `main`: the GitHub Action `.github/workflows/static.yml` publishes `dist/` at the site root
    and copies `src/` next to it (without PHP / SCSS), so the pages' `../src/…` links resolve to `/src/…`.
 
+Links are written without `.html` (`routing.clean_links` in `data_settings_routing.json`), because GitHub Pages
+serves `/experience` from `experience.html`; files keep the extension. Opened locally (`file://`, `localhost`,
+`*.local`), the `utility_local_links` script adds `.html` back to page links, keeping `?params` and `#hash`.
+
 ---
 
 ## Conventions

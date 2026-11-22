@@ -1,0 +1,10 @@
+{
+  "name": "utility_local_links",
+  "title": "Utility Local Links",
+  "summary": "Adds .html to page links when the site is opened locally.",
+  "description": "Pages are linked without the extension (routing.clean_links) because GitHub Pages serves /experience from experience.html. A local server or file:// does not, so on file://, localhost, 127.0.0.1, ::1, *.local, *.localhost and *.test this script rewrites same-site links whose last path part has no extension to <path>.html, keeping ?query and #hash. Skipped: external links, mailto/tel/javascript/data, hash-only and query-only links, folder links ending with /, files with an extension, /dev/platform/ (admin and preview) and links with data-no-html. Links added later are handled too. Does nothing on the live site. Loaded by page_constructor.",
+  "assets": {
+    "php": ["assets/php/utility_local_links.php"],
+    "js": ["assets/js/utility_local_links.js"]
+  }
+}

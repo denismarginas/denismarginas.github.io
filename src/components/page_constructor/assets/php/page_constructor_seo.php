@@ -72,7 +72,7 @@ class page_constructor_seo
 
         $slug = $seo_data['slug'] ?? '';
         if (!empty($slug)) {
-            $ext = PlatformConfig::getPageSlugExtension();
+            $ext = PlatformPathService::link_extension();
             $html .= '<link rel="canonical" href="' . htmlspecialchars($slug . $ext) . '">';
             $index = filter_var($seo_data['index'] ?? true, FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE) ?? true;
             $html .= $index

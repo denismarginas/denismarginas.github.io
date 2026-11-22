@@ -93,10 +93,16 @@ class PlatformPathService
         return self::dist_lang_prefix($lang) . ($folder !== '' ? $folder . '/' : '') . ltrim($slug, '/') . self::extension();
     }
 
+    public static function post_href(string $slug, ?string $lang = null): string
+    {
+        $folder = trim(self::get_dist_folder($slug), '/');
+        return self::dist_lang_prefix($lang) . ($folder !== '' ? $folder . '/' : '') . ltrim($slug, '/') . self::link_extension();
+    }
+
     public static function post_url(string $slug, ?string $lang = null): string
     {
         $base = rtrim((string) (PlatformDataService::get_data('settings_routing')['url'] ?? ''), '/');
-        return $base === '' ? '' : $base . '/' . self::post_path($slug, $lang);
+        return $base === '' ? '' : $base . '/' . self::post_href($slug, $lang);
     }
 
     public static function post_link(string $slug, ?string $lang = null): string
@@ -104,7 +110,7 @@ class PlatformPathService
         $lang = $lang ?? PlatformDataService::get_language();
 
         if (($GLOBALS['render_target'] ?? '') === 'dist') {
-            return self::dist_relative_prefix() . self::post_path($slug, $lang);
+            return self::dist_relative_prefix() . self::post_href($slug, $lang);
         }
 
         $requestUri = $_SERVER['REQUEST_URI'] ?? '';
@@ -117,7 +123,13 @@ class PlatformPathService
 
         $globalData = PlatformDataService::get_data('settings_routing');
         $baseUrl = rtrim($globalData['url'] ?? '', '/');
-        return $baseUrl . '/' . self::dist_lang_prefix($lang) . ltrim($slug, '/') . self::extension();
+        return $baseUrl . '/' . self::dist_lang_prefix($lang) . ltrim($slug, '/') . self::link_extension();
+    }
+
+    public static function link_extension(): string
+    {
+        $routing = PlatformDataService::get_data('settings_routing')['routing'] ?? [];
+        return ($routing['clean_links'] ?? false) === true ? '' : self::extension();
     }
 
     private static function extension(): string

@@ -13,7 +13,7 @@ class PlatformSearchIndexBuilder
 
         $types = PlatformDataService::get_data('settings_types') ?? [];
         $routing = PlatformDataService::get_data('settings_routing') ?? [];
-        $extension = $routing['routing']['extension'] ?? $routing['page_slug_extension'] ?? '.html';
+        $extension = PlatformPathService::link_extension();
         $mappings = PlatformConfig::getRoutingMappings();
         $skip = array_filter([$mappings['404_post_id'] ?? '404', $mappings['search_post_id'] ?? 'search']);
         $render = PlatformWorkflowService::section('render');

@@ -1,7 +1,8 @@
 {
-  "url": "https://denismarginas.github.io/",
+  "url": "https://denismarginas.github.io/portfolio/",
   "routing": {
     "extension": ".html",
+    "clean_links": true,
     "mappings": {
       "front_post_id": "home",
       "search_post_id": "search",
