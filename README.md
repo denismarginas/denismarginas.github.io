@@ -2,7 +2,7 @@
 
 Denis Marginas' portfolio: a small file-based CMS and static site generator in plain PHP.
 Content is JSON, pages are trees of reusable **components**, and the output is static HTML in `dist/`
-(published to GitHub Pages: https://denismarginas.github.io/portfolio/).
+(published to GitHub Pages: https://denismarginas.github.io/).
 
 The code has no comments on purpose. This file is the starting point; the full reference
 (every setting, generator and endpoint) is [`dev/platform/README.md`](dev/platform/README.md).
@@ -141,7 +141,8 @@ Build switches live in `settings/data_settings_workflow.json` (render, compile, 
 ## Publishing
 
 1. `Render → HTML Bulk Render` writes every page to `dist/` (plus `sitemap.xml`, `robots.txt`).
-2. Push to `main`: the GitHub Action `.github/workflows/static.yml` deploys `dist/` to GitHub Pages.
+2. Push to `main`: the GitHub Action `.github/workflows/static.yml` publishes `dist/` at the site root
+   and copies `src/` next to it (without PHP / SCSS), so the pages' `../src/…` links resolve to `/src/…`.
 
 ---
 

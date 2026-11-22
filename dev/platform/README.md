@@ -2,7 +2,7 @@
 
 Portfolio CMS (by Denis Marginas) is a small, file-based CMS and static site generator written in plain PHP.
 Content lives in JSON files, pages are built from reusable **components**, and the result is written as static
-HTML to `dist/` (published to GitHub Pages at `https://denismarginas.github.io/portfolio/`).
+HTML to `dist/` (published to GitHub Pages at `https://denismarginas.github.io/`).
 
 The code is kept without comments on purpose. This file is the explanation: how the pieces fit, how a page is
 rendered, and the conventions to follow when adding something new.
@@ -47,7 +47,7 @@ The server root is the **project root**, so the admin is `/dev/platform/`, previ
 ## 2. Folder map
 
 ```
-portfolio-development/
+denismarginas.github.io/
 ├─ start.bat
 ├─ dist/                         generated static site (HTML, sitemap.xml, robots.txt) – never edit by hand
 ├─ src/
