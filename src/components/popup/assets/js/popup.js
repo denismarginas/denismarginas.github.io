@@ -232,7 +232,7 @@
         Array.prototype.forEach.call(popup.querySelectorAll('.popup-fit-target'), function (img) {
             img.style.transform = '';
             img.dataset.zoomLevel = 0;
-            var box = img.closest('.popup-slide') || img.closest('.popup-body');
+            var box = img.closest('.popup-fit-scroll');
             if (box) box.scrollTop = 0;
         });
     }
@@ -251,7 +251,7 @@
         if (!tall) return false;
         var content = popup.querySelector('.popup-content');
         var available = parseFloat(window.getComputedStyle(content).maxWidth) || content.clientWidth;
-        return available > img.offsetWidth * FIT_GROW;
+        return Math.min(available, img.naturalWidth) > img.offsetWidth * FIT_GROW;
     }
 
     function updateFit(popup) {
@@ -264,7 +264,19 @@
             return;
         }
         var ok = !!img && (img.classList.contains('popup-fit-target') || canFit(popup, img));
-        if (ok) img.classList.add('popup-fit-target');
+        if (ok) {
+            img.classList.add('popup-fit-target');
+            var wrap = img.parentElement;
+            if (!wrap.classList.contains('popup-fit-scroll')) {
+                wrap = document.createElement('div');
+                wrap.className = 'popup-fit-scroll';
+                img.parentNode.insertBefore(wrap, img);
+                wrap.appendChild(img);
+            }
+            wrap.style.setProperty('--popup-fit-max', img.naturalWidth + 'px');
+            var content = popup.querySelector('.popup-content');
+            if (content && !popup.utilitySlider) content.style.setProperty('--popup-fit-max', img.naturalWidth + 'px');
+        }
         btn.hidden = !ok;
     }
 
