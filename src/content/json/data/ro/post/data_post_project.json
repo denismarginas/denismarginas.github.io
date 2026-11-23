@@ -18556,9 +18556,13 @@
                             "slider": "highlights/seo-optimization/",
                             "case_media": "slider",
                             "show_numbers": false,
+                            "text": "Optimizare SEO cu ajutorul Yoast SEO pentru indexare pe Google, Bing și alte motoare de căutare: titluri și descrieri meta, titluri și URL-uri curate, texte alternative pentru imagini și o hartă a site-ului, plus imagini, CSS și JavaScript optimizate pentru o încărcare mai rapidă. Verificat cu Google Lighthouse și PageSpeed Insights: 100/100 pentru SEO și 97 pentru performanță.",
                             "tags": [
                                 "SEO",
-                                "Google Lighthouse"
+                                "Yoast SEO",
+                                "Google Lighthouse",
+                                "PageSpeed Insights",
+                                "WordPress"
                             ]
                         }
                     }

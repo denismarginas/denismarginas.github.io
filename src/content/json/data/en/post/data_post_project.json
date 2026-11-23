@@ -16726,7 +16726,8 @@
               "slider": "highlights/seo-optimization/",
               "case_media": "slider",
               "show_numbers": false,
-              "tags": ["SEO", "Google Lighthouse"]
+              "text": "SEO set up with Yoast SEO for indexing on Google, Bing and other search engines: meta titles and descriptions, clean headings and URLs, image alt texts and a sitemap, plus optimized images, CSS and JavaScript for faster loading. Checked with Google Lighthouse and PageSpeed Insights: 100/100 at SEO and 97 at Performance.",
+              "tags": ["SEO", "Yoast SEO", "Google Lighthouse", "PageSpeed Insights", "WordPress"]
             }
           }
         ]
