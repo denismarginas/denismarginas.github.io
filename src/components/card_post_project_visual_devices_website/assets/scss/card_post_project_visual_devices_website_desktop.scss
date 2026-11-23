@@ -6,7 +6,12 @@
       2px 3px 4px color-mix(in srgb, var(--dm-color-black) 50%, transparent)
     );
 
+    // Width / height of each frame image, used to fit the device inside a fixed box.
+    --device-ratio: 1.406;
+
     &.desktop-model-01 {
+      --device-ratio: 1.387;
+
       > .screen {
         top: 1.4%;
         left: 1%;
@@ -16,6 +21,8 @@
     }
 
     &.desktop-model-02 {
+      --device-ratio: 1.762;
+
       > .screen {
         top: 5%;
         left: 11.5%;
@@ -25,6 +32,8 @@
     }
 
     &.desktop-model-03 {
+      --device-ratio: 1.406;
+
       > .screen {
         top: 2%;
         left: 2.1%;

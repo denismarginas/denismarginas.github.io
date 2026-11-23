@@ -11,9 +11,12 @@ $ease: cubic-bezier(0.22, 0.61, 0.36, 1);
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     width: min(100%, 500px);
-    min-height: clamp(200px, 26vw, 320px);
+    // Fixed box: its height comes from its width, never from the device inside,
+    // so switching between desktop and phone screens doesn't move the meta row.
+    aspect-ratio: 4 / 3;
+    container-type: size;
     cursor: var(--cursor-zoom-in, zoom-in);
 
     &:focus-visible {
@@ -23,12 +26,21 @@ $ease: cubic-bezier(0.22, 0.61, 0.36, 1);
 
     > .dm-post-view.visual-devices-website {
       width: 100%;
+      height: 100%;
       min-height: 0;
       padding: 0;
       opacity: 0;
       transform: translateY(10px);
       transition: opacity 0.45s $ease, transform 0.45s $ease;
       pointer-events: none;
+
+      // Fit the device in the box: as wide as possible without getting taller than the stage.
+      .device-layout-laptop,
+      &:not(.desktop-and-phone-devices) .device-layout-phone {
+        width: min(100cqw, calc(100cqh * var(--device-ratio, 1.4)));
+        max-width: none;
+        margin: 0;
+      }
     }
 
     &.is-in > .dm-post-view.visual-devices-website {
@@ -60,6 +72,10 @@ $ease: cubic-bezier(0.22, 0.61, 0.36, 1);
   }
 
   .project-screens-meta-text > .project-screens-title {
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     color: var(--project-ink, var(--dm-color-gray-dark));
   }
 
@@ -158,11 +174,10 @@ $ease: cubic-bezier(0.22, 0.61, 0.36, 1);
     cursor: var(--cursor-pointer, pointer);
     scroll-snap-align: center;
     opacity: 0.75;
-    transition: opacity 0.25s, transform 0.3s $ease;
+    transition: opacity 0.25s;
 
     &:hover {
       opacity: 1;
-      transform: translateY(-2px);
     }
 
     &[aria-current="true"] {
@@ -294,6 +309,8 @@ $ease: cubic-bezier(0.22, 0.61, 0.36, 1);
       padding: var(--dm-spacing-xxs) var(--dm-spacing-xs) var(--dm-spacing-xs) var(--dm-spacing-xxs);
       overflow-x: hidden;
       overflow-y: auto;
+      // Reserve the scrollbar space so the columns never change width when it shows up.
+      scrollbar-gutter: stable;
       scroll-snap-type: y proximity;
       -webkit-mask-image: none;
       mask-image: none;
