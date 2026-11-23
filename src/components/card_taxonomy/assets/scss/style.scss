@@ -14,9 +14,37 @@
     mask-image: linear-gradient(#000, #000);
     transition: var(--dm-transition);
 
-    [mode="dark"] &,
+    // Dark look (default).
+    --card-taxonomy-bg: var(--dm-color-primary-950);
+    --card-taxonomy-fade: var(--dm-color-primary-950);
+    --card-taxonomy-title: var(--dm-color-white);
+    --card-taxonomy-text: rgb(from var(--dm-color-white) r g b / 0.75);
+    --card-taxonomy-line: rgb(from var(--dm-color-white) r g b / 0.15);
+    --card-taxonomy-line-strong: rgb(from var(--dm-color-white) r g b / 0.25);
+    --card-taxonomy-icon-bg: rgb(from var(--dm-color-primary-700) r g b / 0.7);
+    --card-taxonomy-arrow-bg: rgb(from var(--dm-color-primary-950) r g b / 0.35);
+    --card-taxonomy-arrow-icon: var(--dm-color-white);
+    --card-taxonomy-arrow-hover-bg: var(--dm-color-white);
+    --card-taxonomy-arrow-hover-icon: var(--dm-color-primary-950);
+    --card-taxonomy-img-opacity: 0.7;
+    --card-taxonomy-img-opacity-hover: 0.85;
+    background-color: var(--card-taxonomy-bg);
+
+    // Light look: near-white card, dark and gray-dark text.
     [mode="light"] & {
-      background-color: var(--dm-color-primary-950);
+      --card-taxonomy-bg: var(--dm-color-primary-50);
+      --card-taxonomy-fade: var(--dm-color-primary-200);
+      --card-taxonomy-title: var(--dm-color-gray-dark);
+      --card-taxonomy-text: var(--dm-color-gray);
+      --card-taxonomy-line: rgb(from var(--dm-color-gray-dark) r g b / 0.12);
+      --card-taxonomy-line-strong: rgb(from var(--dm-color-gray-dark) r g b / 0.2);
+      --card-taxonomy-icon-bg: rgb(from var(--dm-color-primary-700) r g b / 0.85);
+      --card-taxonomy-arrow-bg: rgb(from var(--dm-color-white) r g b / 0.7);
+      --card-taxonomy-arrow-icon: var(--dm-color-gray-dark);
+      --card-taxonomy-arrow-hover-bg: var(--dm-color-gray-dark);
+      --card-taxonomy-arrow-hover-icon: var(--dm-color-white);
+      --card-taxonomy-img-opacity: 0.55;
+      --card-taxonomy-img-opacity-hover: 0.75;
     }
 
     &::before {
@@ -28,14 +56,14 @@
       background:
         linear-gradient(
           to top,
-          rgb(from var(--dm-color-primary-950) r g b / 0.95) 0%,
-          rgb(from var(--dm-color-primary-950) r g b / 0.6) 40%,
-          rgb(from var(--dm-color-primary-950) r g b / 0) 75%
+          rgb(from var(--card-taxonomy-fade) r g b / 0.95) 0%,
+          rgb(from var(--card-taxonomy-fade) r g b / 0.6) 40%,
+          rgb(from var(--card-taxonomy-fade) r g b / 0) 75%
         ),
         linear-gradient(
           to bottom,
-          rgb(from var(--dm-color-primary-950) r g b / 0.45) 0%,
-          rgb(from var(--dm-color-primary-950) r g b / 0) 30%
+          rgb(from var(--card-taxonomy-fade) r g b / 0.45) 0%,
+          rgb(from var(--card-taxonomy-fade) r g b / 0) 30%
         );
     }
 
@@ -49,7 +77,7 @@
       pointer-events: none;
 
       &.card-image {
-        opacity: 0.7;
+        opacity: var(--card-taxonomy-img-opacity);
         filter: saturate(0.6);
         transform: scale(1.02);
         transition:
@@ -91,9 +119,9 @@
       width: 68px;
       height: 68px;
       flex-shrink: 0;
-      border: 1px solid rgb(from var(--dm-color-white) r g b / 0.15);
+      border: 1px solid var(--card-taxonomy-line);
       border-radius: var(--dm-radius-md);
-      background-color: rgb(from var(--dm-color-primary-700) r g b / 0.7);
+      background-color: var(--card-taxonomy-icon-bg);
       backdrop-filter: blur(8px);
       transition: var(--dm-transition);
 
@@ -110,16 +138,16 @@
       width: 42px;
       height: 42px;
       flex-shrink: 0;
-      border: 1px solid rgb(from var(--dm-color-white) r g b / 0.25);
+      border: 1px solid var(--card-taxonomy-line-strong);
       border-radius: 50%;
-      background-color: rgb(from var(--dm-color-primary-950) r g b / 0.35);
+      background-color: var(--card-taxonomy-arrow-bg);
       backdrop-filter: blur(8px);
       transition: var(--dm-transition);
 
       svg {
         width: 16px;
         height: 16px;
-        @include svg-color(var(--dm-color-white));
+        @include svg-color(var(--card-taxonomy-arrow-icon));
       }
     }
 
@@ -135,11 +163,7 @@
       font-size: var(--dm-font-size-2xl);
       font-weight: var(--dm-font-weight-bold);
       line-height: 1.15;
-
-      [mode="dark"] &,
-      [mode="light"] & {
-        color: var(--dm-color-white);
-      }
+      color: var(--card-taxonomy-title);
     }
 
     .card-description {
@@ -158,11 +182,7 @@
         max-height 0.4s ease,
         opacity 0.3s ease,
         transform 0.4s ease;
-
-      [mode="dark"] &,
-      [mode="light"] & {
-        color: rgb(from var(--dm-color-white) r g b / 0.75);
-      }
+      color: var(--card-taxonomy-text);
     }
 
     &:hover,
@@ -170,7 +190,7 @@
       border-color: var(--dm-color-primary-300);
 
       .card-image {
-        opacity: 0.85;
+        opacity: var(--card-taxonomy-img-opacity-hover);
         filter: saturate(1);
         transform: scale(1.08);
       }
@@ -186,12 +206,12 @@
       }
 
       .card-arrow {
-        border-color: var(--dm-color-white);
-        background-color: var(--dm-color-white);
+        border-color: var(--card-taxonomy-arrow-hover-bg);
+        background-color: var(--card-taxonomy-arrow-hover-bg);
         transform: translateX(4px);
 
         svg {
-          @include svg-color(var(--dm-color-primary-950));
+          @include svg-color(var(--card-taxonomy-arrow-hover-icon));
         }
       }
     }
