@@ -40,7 +40,7 @@
       var q = query();
       var folded = fold(q);
       var words = folded.split(' ').filter(Boolean);
-      var filtered = selects.some(function (select) { return select.value !== ''; });
+      var filtered = selects.some(function (select) { return window.filtersToolbar.values(select).length > 0; });
       var active = folded.length >= minChars || showAll || filtered;
       if (folded.length < minChars) words = [];
       var shown = 0;
@@ -50,7 +50,9 @@
         var visible = active && !!entry &&
           words.every(function (word) { return entry.keywords.indexOf(word) !== -1; }) &&
           selects.every(function (select) {
-            return !select.value || (entry[select.dataset.filter] || []).indexOf(select.value) !== -1;
+            var selected = window.filtersToolbar.values(select);
+            var values = entry[select.dataset.filter] || [];
+            return !selected.length || selected.some(function (value) { return values.indexOf(value) !== -1; });
           });
         item.hidden = !visible;
         if (visible) shown++;

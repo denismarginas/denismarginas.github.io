@@ -23,6 +23,7 @@
   },
   "dependencies": [
     "svg",
+    "select_box_search",
     "theme"
   ]
 }

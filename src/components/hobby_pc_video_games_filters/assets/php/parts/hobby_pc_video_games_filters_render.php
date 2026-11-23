@@ -59,14 +59,13 @@ class hobby_pc_video_games_filters_render
 
     private static function filter(string $target, array $filter): string
     {
-        $placeholder = filters_toolbar::placeholder($filter['placeholder'] ?? '');
         $style = isset($filter['style']) ? ' style="' . self::e((string) $filter['style']) . '"' : '';
         $prefix = (string) ($filter['option-prefix'] ?? '');
         $suffix = (string) ($filter['option-suffix'] ?? '');
 
         $isDisplay = hobby_pc_video_games_filters_values::is_display($filter);
 
-        $options = '<option value="">' . self::e($placeholder) . '</option>';
+        $options = select_box_search::placeholder_option($filter);
         foreach ($filter['options'] as $option) {
             $value = is_array($option) ? (string) $option['value'] : (string) $option;
             $label = is_array($option) ? (string) $option['label'] : $prefix . $value . $suffix;
@@ -80,6 +79,7 @@ class hobby_pc_video_games_filters_render
             'label' => self::e(filters_toolbar::label((string) ($filter['label'] ?? ''))),
             'type' => self::e($isDisplay ? 'display' : hobby_pc_video_games_filters_values::type($filter)),
             'mode' => self::e(hobby_pc_video_games_filters_values::mode($filter)),
+            'select_attrs' => select_box_search::attrs($filter),
             'style' => $style,
             'options' => $options,
         ]);

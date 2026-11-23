@@ -49,7 +49,7 @@
 })();
 </script>
     <script id="preloader-init">document.documentElement.classList.add("is-loading");</script>
-    <style>html.i18n-loading body>:not([data-preloader]){visibility:hidden}</style><script id="i18n-frontend-init">window.dmI18n={"default":"en","page_lang":"en","langs":["en","ro"],"frontend":["ro"],"root":"../../","timeout":6000,"data":"src/content/json/data/","files":{"collection/data_collection_education.json":["ro"],"collection/data_collection_form.json":["ro"],"collection/data_collection_hobby.json":["ro"],"collection/data_collection_hobby_pc_video_game.json":["ro"],"collection/data_collection_job.json":["ro"],"collection/data_collection_knowledge_item.json":["ro"],"collection/data_collection_listing_toolbar.json":["ro"],"collection/data_collection_resume.json":["ro"],"collection/data_collection_social_link.json":["ro"],"collection/data_collection_social_post.json":["ro"],"collection/data_collection_video.json":["ro"],"content/data_content_cookie_notice.json":["ro"],"content/data_content_footer.json":["ro"],"content/data_content_header_menu.json":["ro"],"content/data_content_post_projects.json":["ro"],"content/data_content_project_info.json":["ro"],"content/data_content_ui.json":["ro"],"content/data_dates.json":["ro"],"data_types.json":["ro"],"post/data_post_page.json":["ro"],"post/data_post_project.json":["ro"],"post/data_post_workstation.json":["ro"],"taxonomy/data_taxonomy_category.json":["ro"]},"v":"towlcx","skip":["script","style","noscript","template","svg","math","textarea","iframe","object","canvas"],"attrs":["alt","title","placeholder","aria-label","aria-description","data-tooltip"],"prefixes":["data-label"],"meta":["description","og:title","og:description","og:image:alt","twitter:title","twitter:description","twitter:image:alt"],"inputs":["submit","button","reset"]};(function () {
+    <style>html.i18n-loading body>:not([data-preloader]){visibility:hidden}</style><script id="i18n-frontend-init">window.dmI18n={"default":"en","page_lang":"en","langs":["en","ro"],"frontend":["ro"],"root":"../../","timeout":6000,"data":"src/content/json/data/","files":{"collection/data_collection_education.json":["ro"],"collection/data_collection_form.json":["ro"],"collection/data_collection_hobby.json":["ro"],"collection/data_collection_hobby_pc_video_game.json":["ro"],"collection/data_collection_job.json":["ro"],"collection/data_collection_knowledge_item.json":["ro"],"collection/data_collection_listing_toolbar.json":["ro"],"collection/data_collection_resume.json":["ro"],"collection/data_collection_social_link.json":["ro"],"collection/data_collection_social_post.json":["ro"],"collection/data_collection_video.json":["ro"],"content/data_content_cookie_notice.json":["ro"],"content/data_content_footer.json":["ro"],"content/data_content_header_menu.json":["ro"],"content/data_content_post_projects.json":["ro"],"content/data_content_project_info.json":["ro"],"content/data_content_ui.json":["ro"],"content/data_dates.json":["ro"],"data_types.json":["ro"],"post/data_post_page.json":["ro"],"post/data_post_project.json":["ro"],"post/data_post_workstation.json":["ro"],"taxonomy/data_taxonomy_category.json":["ro"]},"v":"toy31f","skip":["script","style","noscript","template","svg","math","textarea","iframe","object","canvas"],"attrs":["alt","title","placeholder","aria-label","aria-description","data-tooltip"],"prefixes":["data-label"],"meta":["description","og:title","og:description","og:image:alt","twitter:title","twitter:description","twitter:image:alt"],"inputs":["submit","button","reset"]};(function () {
   var c = window.dmI18n, d = document.documentElement, key = "dm_lang", lang = null;
   if (!c) return;
 
@@ -281,13 +281,13 @@
           <div class="filters-sort" data-target="projects" data-grid-listing="2" data-grid-column-balancing="items-divisible-by-2">
   <div class="filters-sort-field">
     <label for="projects-sort-by">Sort by</label>
-    <select id="projects-sort-by" name="sort_by" class="sort-by">
+    <select id="projects-sort-by" name="sort_by" class="sort-by" data-select-box-search="auto" data-label-search="Search..." data-label-empty="No matches">
       <option value="" data-type="" data-order="">Default</option><option value="seo.title" data-type="text" data-order="asc" data-label-asc="A-Z" data-label-desc="Z-A">Name</option><option value="date.publish" data-type="date" data-order="desc" data-label-asc="Oldest" data-label-desc="Newest">Publish Date</option>
     </select>
   </div>
   <div class="filters-sort-field">
     <label for="projects-sort-order">Order</label>
-    <select id="projects-sort-order" name="sort_order" class="sort-order" disabled>
+    <select id="projects-sort-order" name="sort_order" class="sort-order" data-select-box-search="off" data-label-search="Search..." data-label-empty="No matches" disabled>
       <option value="asc">A-Z</option>
       <option value="desc">Z-A</option>
     </select>
@@ -300,38 +300,38 @@
           <div class="ft-fields">
             <div class="filter">
   <label for="projects-post-date-start">After Date</label>
-  <select id="projects-post-date-start" name="date-start" data-filter="post-date-start" data-type="date" data-mode="&gt;=">
+  <select id="projects-post-date-start" name="date-start" data-filter="post-date-start" data-type="date" data-mode="&gt;=" data-select-box-search="auto" data-label-search="Search..." data-label-empty="No matches">
     <option value="">All</option><option value="2026">2026</option><option value="2023">2023</option><option value="2021">2021</option><option value="2020">2020</option><option value="2016">2016</option>
   </select>
 </div>
 <div class="filter">
   <label for="projects-post-date-end">Until Date</label>
-  <select id="projects-post-date-end" name="date-end" data-filter="post-date-end" data-type="date" data-mode="&lt;=">
+  <select id="projects-post-date-end" name="date-end" data-filter="post-date-end" data-type="date" data-mode="&lt;=" data-select-box-search="auto" data-label-search="Search..." data-label-empty="No matches">
     <option value="">All</option><option value="2026">2026</option><option value="2024">2024</option><option value="2022">2022</option>
   </select>
 </div>
 <div class="filter">
   <label for="projects-post-web-platform">Web Platform</label>
-  <select id="projects-post-web-platform" name="web-platform" data-filter="post-web-platform" data-type="array" data-mode="">
-    <option value="">All</option><option value="GitHub Pages">GitHub Pages</option><option value="Angular">Angular</option><option value="Vercel">Vercel</option><option value="NodeJS">NodeJS</option><option value="Google Site">Google Site</option>
+  <select id="projects-post-web-platform" name="web-platform" data-filter="post-web-platform" data-type="array" data-mode="" data-select-box-search="auto" data-label-search="Search..." data-label-empty="No matches" multiple data-placeholder="All">
+    <option value="GitHub Pages">GitHub Pages</option><option value="Angular">Angular</option><option value="Vercel">Vercel</option><option value="NodeJS">NodeJS</option><option value="Google Site">Google Site</option>
   </select>
 </div>
 <div class="filter">
   <label for="projects-post-web-technology">Web Technology</label>
-  <select id="projects-post-web-technology" name="web-technology" data-filter="post-web-technology" data-type="array" data-mode="">
-    <option value="">All</option><option value="HTML">HTML</option><option value="CSS">CSS</option><option value="JS">JS</option><option value="jQuery">jQuery</option><option value="html2canvas">html2canvas</option><option value="JSON">JSON</option><option value="Google Analytics">Google Analytics</option><option value="TypeScript">TypeScript</option><option value="SQL">SQL</option><option value="SASS">SASS</option><option value="PHP">PHP</option><option value="Prepros">Prepros</option>
+  <select id="projects-post-web-technology" name="web-technology" data-filter="post-web-technology" data-type="array" data-mode="" data-select-box-search="auto" data-label-search="Search..." data-label-empty="No matches" multiple data-placeholder="All">
+    <option value="HTML">HTML</option><option value="CSS">CSS</option><option value="JS">JS</option><option value="jQuery">jQuery</option><option value="html2canvas">html2canvas</option><option value="JSON">JSON</option><option value="Google Analytics">Google Analytics</option><option value="TypeScript">TypeScript</option><option value="SQL">SQL</option><option value="SASS">SASS</option><option value="PHP">PHP</option><option value="Prepros">Prepros</option>
   </select>
 </div>
 <div class="filter">
   <label for="projects-post-media-platform">Media Platform</label>
-  <select id="projects-post-media-platform" name="media-platform" data-filter="post-media-platform" data-type="array" data-mode="">
-    <option value="">All</option><option value="Photopea">Photopea</option><option value="Xara Photo &amp; Graphic Designer">Xara Photo &amp; Graphic Designer</option><option value="Paint.net">Paint.net</option><option value="Sony Vegas">Sony Vegas</option><option value="After Effects">After Effects</option><option value="Blender">Blender</option>
+  <select id="projects-post-media-platform" name="media-platform" data-filter="post-media-platform" data-type="array" data-mode="" data-select-box-search="auto" data-label-search="Search..." data-label-empty="No matches" multiple data-placeholder="All">
+    <option value="Photopea">Photopea</option><option value="Xara Photo &amp; Graphic Designer">Xara Photo &amp; Graphic Designer</option><option value="Paint.net">Paint.net</option><option value="Sony Vegas">Sony Vegas</option><option value="After Effects">After Effects</option><option value="Blender">Blender</option>
   </select>
 </div>
 <div class="filter">
   <label for="projects-post-project_types">Project Types</label>
-  <select id="projects-post-project_types" name="project_types" data-filter="post-project_types" data-type="array" data-mode="" style="text-transform: capitalize;">
-    <option value="">All</option><option value="content generator" style="text-transform: capitalize;">Content generator</option><option value="web design" style="text-transform: capitalize;">Web design</option><option value="personal" style="text-transform: capitalize;">Personal</option><option value="online shop" style="text-transform: capitalize;">Online shop</option><option value="presentation website" style="text-transform: capitalize;">Presentation website</option><option value="web content" style="text-transform: capitalize;">Web content</option><option value="seo optimization" style="text-transform: capitalize;">SEO Optimization</option><option value="media image" style="text-transform: capitalize;">Media image</option><option value="media video" style="text-transform: capitalize;">Media video</option><option value="3d visuals" style="text-transform: capitalize;">3D Visuals</option>
+  <select id="projects-post-project_types" name="project_types" data-filter="post-project_types" data-type="array" data-mode="" data-select-box-search="auto" data-label-search="Search..." data-label-empty="No matches" multiple data-placeholder="All" style="text-transform: capitalize;">
+    <option value="content generator" style="text-transform: capitalize;">Content generator</option><option value="web design" style="text-transform: capitalize;">Web design</option><option value="personal" style="text-transform: capitalize;">Personal</option><option value="online shop" style="text-transform: capitalize;">Online shop</option><option value="presentation website" style="text-transform: capitalize;">Presentation website</option><option value="web content" style="text-transform: capitalize;">Web content</option><option value="seo optimization" style="text-transform: capitalize;">SEO Optimization</option><option value="media image" style="text-transform: capitalize;">Media image</option><option value="media video" style="text-transform: capitalize;">Media video</option><option value="3d visuals" style="text-transform: capitalize;">3D Visuals</option>
   </select>
 </div>
 

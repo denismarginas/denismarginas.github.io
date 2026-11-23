@@ -112,8 +112,7 @@ class filters_toolbar
 
     public static function placeholder(mixed $placeholder): string
     {
-        $placeholder = is_scalar($placeholder) ? trim((string) $placeholder) : '';
-        return ($placeholder === '' || preg_match('/^-*\s*select\s*-*$/i', $placeholder)) ? PlatformTextService::ui('all', 'All') : $placeholder;
+        return select_box_search::placeholder($placeholder);
     }
 
     public static function icon(string $name): string

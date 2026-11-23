@@ -136,7 +136,7 @@ class search
 
     private static function filter(string $target, array $filter): string
     {
-        $options = '<option value="">' . self::e(filters_toolbar::placeholder($filter['placeholder'] ?? '')) . '</option>';
+        $options = select_box_search::placeholder_option($filter);
         foreach ($filter['options'] as $value => $label) {
             $options .= '<option value="' . self::e((string) $value) . '">' . self::e($label) . '</option>';
         }
@@ -145,6 +145,7 @@ class search
             'filter_id' => self::e((string) $filter['_id']),
             'name' => self::e((string) ($filter['name'] ?? $filter['_id'])),
             'label' => self::e(filters_toolbar::label((string) ($filter['label'] ?? ''))),
+            'select_attrs' => select_box_search::attrs($filter),
             'options' => $options,
         ]);
     }

@@ -20,6 +20,7 @@
                         "placeholder": "--select--",
                         "label": "Categorie:",
                         "type": "select",
+                        "multiple": true,
                         "json-path": "['data']['taxonomy']['category']",
                         "json-type": "array"
                     },
@@ -49,6 +50,7 @@
                         "placeholder": "--select--",
                         "label": "Angajator:",
                         "type": "select",
+                        "multiple": true,
                         "json-path": "['data']['project']['employer']",
                         "json-type": "string"
                     },
@@ -58,6 +60,7 @@
                         "placeholder": "--select--",
                         "label": "Platformă web:",
                         "type": "select",
+                        "multiple": true,
                         "json-path": "['data']['web']['platform']",
                         "json-type": "array",
                         "json-array-key": "text"
@@ -68,6 +71,7 @@
                         "placeholder": "--select--",
                         "label": "Tehnologii web:",
                         "type": "select",
+                        "multiple": true,
                         "json-path": "['data']['web']['technology']",
                         "json-type": "array",
                         "json-array-key": "text"
@@ -78,6 +82,7 @@
                         "placeholder": "--select--",
                         "label": "Platformă media:",
                         "type": "select",
+                        "multiple": true,
                         "json-path": "['data']['media']['platforms']",
                         "json-type": "array",
                         "json-array-key": "text"
@@ -88,6 +93,7 @@
                         "placeholder": "--select--",
                         "label": "Tipuri de proiecte:",
                         "type": "select",
+                        "multiple": true,
                         "style": "text-transform: capitalize;",
                         "json-path": "['data']['project']['types']",
                         "json-type": "array"
@@ -98,6 +104,7 @@
                         "placeholder": "--select--",
                         "label": "Colaborare:",
                         "type": "select",
+                        "multiple": true,
                         "json-path": "['data']['project']['collaboration']",
                         "json-type": "array"
                     }
@@ -166,6 +173,7 @@
                         "placeholder": "--select--",
                         "label": "Etichetă:",
                         "type": "select",
+                        "multiple": true,
                         "json-path": "['data']['tags']",
                         "json-type": "list"
                     },
@@ -266,6 +274,7 @@
                         "placeholder": "--select--",
                         "label": "Tip:",
                         "type": "select",
+                        "multiple": true,
                         "json-path": "['type']"
                     }
                 ]

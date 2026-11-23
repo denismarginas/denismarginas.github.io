@@ -15,15 +15,33 @@
     return same.length > 1 || s === '' ? String(value) : s;
   }
 
-  function pick(select, wanted) {
-    if (wanted == null || wanted === '') return false;
+  function chosen(select) {
+    return Array.prototype.filter.call(select.options, function (o) { return o.selected && o.value !== ''; })
+      .map(function (o) { return o.value; });
+  }
+
+  function find(select, wanted) {
+    if (wanted == null || wanted === '') return null;
     var options = Array.prototype.filter.call(select.options, function (o) { return o.value !== ''; });
     var w = slug(wanted);
-    var match = options.filter(function (o) { return o.value === wanted; })[0]
+    return options.filter(function (o) { return o.value === wanted; })[0]
       || options.filter(function (o) { return slug(o.value) === w; })[0]
-      || options.filter(function (o) { return slug(o.textContent) === w; })[0];
+      || options.filter(function (o) { return slug(o.textContent) === w; })[0]
+      || null;
+  }
+
+  function pick(select, wanted) {
+    var match = find(select, wanted);
     if (!match) return false;
     select.value = match.value;
+    return true;
+  }
+
+  function pickAll(select, wanted) {
+    if (!select.multiple) return pick(select, wanted);
+    var found = String(wanted || '').split(',').map(function (w) { return find(select, w.trim()); }).filter(Boolean);
+    if (!found.length) return false;
+    Array.prototype.forEach.call(select.options, function (o) { o.selected = found.indexOf(o) !== -1; });
     return true;
   }
 
@@ -36,7 +54,7 @@
       if (v === null || v === undefined || v === '') url.searchParams.delete(key);
       else url.searchParams.set(key, v);
     });
-    var next = url.toString().replace(/\?$/, '');
+    var next = url.toString().replace(/%2C/gi, ',').replace(/\?$/, '');
     if (next !== window.location.href) history.replaceState(history.state, '', next);
   }
 
@@ -60,8 +78,8 @@
     var defaults = {};
     var filtered = false;
     filterSelects(form).forEach(function (select) {
-      defaults[select.name] = select.value;
-      if (p && p.has(select.name) && pick(select, p.get(select.name)) && select.value !== defaults[select.name]) filtered = true;
+      defaults[select.name] = chosen(select).join(',');
+      if (p && p.has(select.name) && pickAll(select, p.get(select.name)) && chosen(select).join(',') !== defaults[select.name]) filtered = true;
     });
     form._toolbarDefaults = defaults;
     if (filtered) open(form, '.toggle-filters', '.block-filters');
@@ -79,8 +97,10 @@
     if (!form._toolbarDefaults) return;
     var values = {};
     filterSelects(form).forEach(function (select) {
-      var v = select.value;
-      values[select.name] = v === '' || v === form._toolbarDefaults[select.name] ? null : token(select, v);
+      var list = chosen(select);
+      values[select.name] = list.length === 0 || list.join(',') === form._toolbarDefaults[select.name]
+        ? null
+        : list.map(function (v) { return token(select, v); }).join(',');
     });
     var input = searchInput(form);
     if (input) values.q = input.value.trim();

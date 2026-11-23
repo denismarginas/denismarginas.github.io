@@ -26,6 +26,8 @@
     "sort_date_desc": "Newest",
     "all": "All",
     "default": "Default",
+    "select_search_placeholder": "Search...",
+    "select_no_matches": "No matches",
     "search_label": "Search",
     "search_placeholder": "Search keywords...",
     "search_games_placeholder": "Search games...",

@@ -33,6 +33,7 @@
     "utility_grid_listing",
     "utility_grid_column_balancing",
     "svg",
+    "select_box_search",
     "theme"
   ]
 }

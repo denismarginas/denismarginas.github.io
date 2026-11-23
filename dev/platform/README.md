@@ -563,6 +563,13 @@ scrolled into view, highlighted and its field focused.
    (list css as `assets/css/**` and add `theme` to dependencies if it uses theme variables / classes).
 4. Use it in content: `{ "component": "<name>", "data": { … } }`. Styles compile on the next preview.
 
+**Make a select searchable / multiple choice**
+Print `select_box_search::attrs($def)` on the `<select>` and `select_box_search::placeholder_option($def)` as its first
+option (and add `select_box_search` to the component's dependencies). `$def`: `multiple`, `search` (`auto` / `true` /
+`false`), `search_min`, `placeholder`. In the listing toolbars this is per filter item in
+`data_collection_listing_toolbar.json` (`"multiple": true`); a filter with several choices matches any of them and is
+kept in the URL as `?<name>=a,b`. Filter scripts read the choices with `window.filtersToolbar.values(select)`.
+
 **Add a content type**
 Add it to `data_settings_types.json` and create the data file under `data/<lang>/<kind>/`. Labels go in
 `data/<lang>/data_types.json`. The admin menu, listing, editor, preview, bulk render, sitemap and search pick it up.

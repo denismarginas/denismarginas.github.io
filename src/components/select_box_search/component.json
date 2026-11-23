@@ -1,0 +1,27 @@
+{
+  "name": "select_box_search",
+  "title": "Select Box Search",
+  "summary": "Turns a native <select> into a searchable dropdown, single or multiple choice.",
+  "description": "Progressive enhancement of a native <select>: the select stays in the form (value, change events, reset and URL state keep working, and without JavaScript the native select is shown) and select_box_search.js draws a button with the current choice and a panel with an optional search input and the option list. Enhanced: every select with the data-select-box-search attribute, printed by select_box_search::attrs($def). Options of $def: multiple (true = several choices at once, adds the multiple attribute, no empty option; shown as the joined labels and a count), search (\"auto\" default: the search input appears from search_min options, 8 by default; true = always; false = never), search_min, placeholder (text when nothing is chosen, --select-- or empty gives the ui text \"all\"). select_box_search::placeholder_option($def) prints the empty option for single selects. Keyboard: Enter / Space / arrows open, typing filters (diacritics ignored), arrows move, Enter picks, Esc closes, Backspace in an empty search removes the last choice. Texts: ui keys select_search_placeholder and select_no_matches. The component can also be placed on its own: { id, name, label, options (list of values, value => label map or list of { value, label }), selected (value or list), multiple, search, search_min, placeholder }. JS: window.selectBoxSearch.init(root), refresh(root), values(select). Used by filters_toolbar, filters_sort, filters_post_projects, hobby_pc_video_games_filters and search; the filters choose multiple per item in data_collection_listing_toolbar.json (\"multiple\": true), matching any of the chosen values.",
+  "type": "utility",
+  "assets": {
+    "php": [
+      "assets/php/select_box_search.php"
+    ],
+    "html": [
+      "assets/html/template.html"
+    ],
+    "scss": [
+      "assets/scss/**"
+    ],
+    "css": [
+      "assets/css/**"
+    ],
+    "js": [
+      "assets/js/select_box_search.js"
+    ]
+  },
+  "dependencies": [
+    "theme"
+  ]
+}

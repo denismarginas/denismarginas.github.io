@@ -16,7 +16,7 @@
                 "description": "Prezentare a proiectelor pe care le-am realizat sau în care am fost implicat, incluzând designul și funcționalitatea site-urilor web și a conținutului media.",
                 "keywords": "denis marginas projects",
                 "slug": "projects",
-                "index": false
+                "index": true
             },
             "media": []
         },
@@ -896,7 +896,7 @@
                 "description": "Descoperiți lumea unui dezvoltator web full-stack și un editor de fotografii și videoclipuri priceput. Explorați intersecția dintre dezvoltarea web și povestirea vizuală, în blogul informativ al lui Denis Ionut Marginas.",
                 "keywords": "denis marginas social posts",
                 "slug": "social-posts",
-                "index": false
+                "index": true
             },
             "media": {
                 "svg": "projects",

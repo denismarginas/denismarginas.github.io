@@ -5,22 +5,24 @@
   }
 
   function matchesFilter(values, select) {
-    var selected = select.value;
-    if (!selected) return true;
+    var selected = window.filtersToolbar.values(select);
+    if (!selected.length) return true;
     values = values || [];
 
     if (select.dataset.type === 'date') {
-      var wanted = parseInt(selected, 10);
       var mode = select.dataset.mode || '=';
-      return values.some(function (v) {
-        var year = yearOf(v);
-        if (year === null) return false;
-        if (mode === '>=') return year >= wanted;
-        if (mode === '<=') return year <= wanted;
-        return year === wanted;
+      return selected.some(function (value) {
+        var wanted = parseInt(value, 10);
+        return values.some(function (v) {
+          var year = yearOf(v);
+          if (year === null) return false;
+          if (mode === '>=') return year >= wanted;
+          if (mode === '<=') return year <= wanted;
+          return year === wanted;
+        });
       });
     }
-    return values.indexOf(selected) !== -1;
+    return selected.some(function (value) { return values.indexOf(value) !== -1; });
   }
 
   function matchesKeywords(entry, words) {

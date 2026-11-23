@@ -26,6 +26,8 @@
     "sort_date_desc": "Cele mai noi",
     "all": "Toate",
     "default": "Implicit",
+    "select_search_placeholder": "Search...",
+    "select_no_matches": "Nu s-au găsit rezultate",
     "search_label": "Caută",
     "search_placeholder": "Caută cuvinte cheie...",
     "search_games_placeholder": "Caută jocuri...",

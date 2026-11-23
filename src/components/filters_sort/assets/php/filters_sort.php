@@ -49,6 +49,8 @@ class filters_sort
             'by_label' => self::e((string) ($data['sort_by_label'] ?? 'Sort by:')),
             'order_label' => self::e((string) ($data['sort_order_label'] ?? 'Order:')),
             'by_options' => $options,
+            'by_attrs' => select_box_search::attrs(),
+            'order_attrs' => select_box_search::attrs(['search' => false]),
             'asc_label' => self::e($labels['asc']),
             'desc_label' => self::e($labels['desc']),
             'desc_selected' => ($first['order'] ?? 'asc') === 'desc' ? ' selected' : '',

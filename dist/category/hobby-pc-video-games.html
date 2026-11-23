@@ -49,7 +49,7 @@
 })();
 </script>
     <script id="preloader-init">document.documentElement.classList.add("is-loading");</script>
-    <style>html.i18n-loading body>:not([data-preloader]){visibility:hidden}</style><script id="i18n-frontend-init">window.dmI18n={"default":"en","page_lang":"en","langs":["en","ro"],"frontend":["ro"],"root":"../../","timeout":6000,"data":"src/content/json/data/","files":{"collection/data_collection_education.json":["ro"],"collection/data_collection_form.json":["ro"],"collection/data_collection_hobby.json":["ro"],"collection/data_collection_hobby_pc_video_game.json":["ro"],"collection/data_collection_job.json":["ro"],"collection/data_collection_knowledge_item.json":["ro"],"collection/data_collection_listing_toolbar.json":["ro"],"collection/data_collection_resume.json":["ro"],"collection/data_collection_social_link.json":["ro"],"collection/data_collection_social_post.json":["ro"],"collection/data_collection_video.json":["ro"],"content/data_content_cookie_notice.json":["ro"],"content/data_content_footer.json":["ro"],"content/data_content_header_menu.json":["ro"],"content/data_content_post_projects.json":["ro"],"content/data_content_project_info.json":["ro"],"content/data_content_ui.json":["ro"],"content/data_dates.json":["ro"],"data_types.json":["ro"],"post/data_post_page.json":["ro"],"post/data_post_project.json":["ro"],"post/data_post_workstation.json":["ro"],"taxonomy/data_taxonomy_category.json":["ro"]},"v":"towlcx","skip":["script","style","noscript","template","svg","math","textarea","iframe","object","canvas"],"attrs":["alt","title","placeholder","aria-label","aria-description","data-tooltip"],"prefixes":["data-label"],"meta":["description","og:title","og:description","og:image:alt","twitter:title","twitter:description","twitter:image:alt"],"inputs":["submit","button","reset"]};(function () {
+    <style>html.i18n-loading body>:not([data-preloader]){visibility:hidden}</style><script id="i18n-frontend-init">window.dmI18n={"default":"en","page_lang":"en","langs":["en","ro"],"frontend":["ro"],"root":"../../","timeout":6000,"data":"src/content/json/data/","files":{"collection/data_collection_education.json":["ro"],"collection/data_collection_form.json":["ro"],"collection/data_collection_hobby.json":["ro"],"collection/data_collection_hobby_pc_video_game.json":["ro"],"collection/data_collection_job.json":["ro"],"collection/data_collection_knowledge_item.json":["ro"],"collection/data_collection_listing_toolbar.json":["ro"],"collection/data_collection_resume.json":["ro"],"collection/data_collection_social_link.json":["ro"],"collection/data_collection_social_post.json":["ro"],"collection/data_collection_video.json":["ro"],"content/data_content_cookie_notice.json":["ro"],"content/data_content_footer.json":["ro"],"content/data_content_header_menu.json":["ro"],"content/data_content_post_projects.json":["ro"],"content/data_content_project_info.json":["ro"],"content/data_content_ui.json":["ro"],"content/data_dates.json":["ro"],"data_types.json":["ro"],"post/data_post_page.json":["ro"],"post/data_post_project.json":["ro"],"post/data_post_workstation.json":["ro"],"taxonomy/data_taxonomy_category.json":["ro"]},"v":"toy31f","skip":["script","style","noscript","template","svg","math","textarea","iframe","object","canvas"],"attrs":["alt","title","placeholder","aria-label","aria-description","data-tooltip"],"prefixes":["data-label"],"meta":["description","og:title","og:description","og:image:alt","twitter:title","twitter:description","twitter:image:alt"],"inputs":["submit","button","reset"]};(function () {
   var c = window.dmI18n, d = document.documentElement, key = "dm_lang", lang = null;
   if (!c) return;
 
@@ -281,13 +281,13 @@
           <div class="filters-sort" data-target="hobby-pc-video-games" data-grid-listing="2" data-grid-column-balancing="items-divisible-by-2">
   <div class="filters-sort-field">
     <label for="hobby-pc-video-games-sort-by">Sort by</label>
-    <select id="hobby-pc-video-games-sort-by" name="sort_by" class="sort-by">
+    <select id="hobby-pc-video-games-sort-by" name="sort_by" class="sort-by" data-select-box-search="auto" data-label-search="Search..." data-label-empty="No matches">
       <option value="name" data-type="text" data-order="asc" data-label-asc="A-Z" data-label-desc="Z-A">Name</option><option value="rank" data-type="number" data-order="desc" data-label-asc="Low-High" data-label-desc="High-Low">Rank</option><option value="playtime" data-type="number" data-order="desc" data-label-asc="Low-High" data-label-desc="High-Low">Playtime</option>
     </select>
   </div>
   <div class="filters-sort-field">
     <label for="hobby-pc-video-games-sort-order">Order</label>
-    <select id="hobby-pc-video-games-sort-order" name="sort_order" class="sort-order">
+    <select id="hobby-pc-video-games-sort-order" name="sort_order" class="sort-order" data-select-box-search="off" data-label-search="Search..." data-label-empty="No matches">
       <option value="asc">A-Z</option>
       <option value="desc">Z-A</option>
     </select>
@@ -300,25 +300,25 @@
           <div class="ft-fields">
             <div class="filter">
   <label for="hobby-pc-video-games-game-display">Display</label>
-  <select id="hobby-pc-video-games-game-display" name="display" data-filter="game-display" data-type="display" data-mode="">
+  <select id="hobby-pc-video-games-game-display" name="display" data-filter="game-display" data-type="display" data-mode="" data-select-box-search="auto" data-label-search="Search..." data-label-empty="No matches">
     <option value="">Display</option><option value="default">Default</option><option value="all">All</option>
   </select>
 </div>
 <div class="filter">
   <label for="hobby-pc-video-games-game-tags">Tag</label>
-  <select id="hobby-pc-video-games-game-tags" name="tags" data-filter="game-tags" data-type="list" data-mode="">
-    <option value="">All</option><option value="Action">Action</option><option value="Arcade">Arcade</option><option value="ARPG">ARPG</option><option value="Battle Royale">Battle Royale</option><option value="Board Game">Board Game</option><option value="Co-op">Co-op</option><option value="Combat">Combat</option><option value="Crafting">Crafting</option><option value="Extraction Shooter">Extraction Shooter</option><option value="Fantasy">Fantasy</option><option value="Fighting">Fighting</option><option value="FPS">FPS</option><option value="Horror">Horror</option><option value="Indie">Indie</option><option value="Indie Racing">Indie Racing</option><option value="Lan">Lan</option><option value="MMO">MMO</option><option value="Multiplayer">Multiplayer</option><option value="Open World">Open World</option><option value="Race">Race</option><option value="Racing">Racing</option><option value="Retro">Retro</option><option value="RPG">RPG</option><option value="RTS">RTS</option><option value="Sandbox">Sandbox</option><option value="Singleplayer">Singleplayer</option><option value="Space">Space</option><option value="Strategy">Strategy</option><option value="Survival">Survival</option><option value="Survival Zombies">Survival Zombies</option><option value="Tactical">Tactical</option><option value="TPS">TPS</option><option value="Turn-Based">Turn-Based</option><option value="Vehicle Combat">Vehicle Combat</option><option value="Vehicular Combat">Vehicular Combat</option>
+  <select id="hobby-pc-video-games-game-tags" name="tags" data-filter="game-tags" data-type="list" data-mode="" data-select-box-search="auto" data-label-search="Search..." data-label-empty="No matches" multiple data-placeholder="All">
+    <option value="Action">Action</option><option value="Arcade">Arcade</option><option value="ARPG">ARPG</option><option value="Battle Royale">Battle Royale</option><option value="Board Game">Board Game</option><option value="Co-op">Co-op</option><option value="Combat">Combat</option><option value="Crafting">Crafting</option><option value="Extraction Shooter">Extraction Shooter</option><option value="Fantasy">Fantasy</option><option value="Fighting">Fighting</option><option value="FPS">FPS</option><option value="Horror">Horror</option><option value="Indie">Indie</option><option value="Indie Racing">Indie Racing</option><option value="Lan">Lan</option><option value="MMO">MMO</option><option value="Multiplayer">Multiplayer</option><option value="Open World">Open World</option><option value="Race">Race</option><option value="Racing">Racing</option><option value="Retro">Retro</option><option value="RPG">RPG</option><option value="RTS">RTS</option><option value="Sandbox">Sandbox</option><option value="Singleplayer">Singleplayer</option><option value="Space">Space</option><option value="Strategy">Strategy</option><option value="Survival">Survival</option><option value="Survival Zombies">Survival Zombies</option><option value="Tactical">Tactical</option><option value="TPS">TPS</option><option value="Turn-Based">Turn-Based</option><option value="Vehicle Combat">Vehicle Combat</option><option value="Vehicular Combat">Vehicular Combat</option>
   </select>
 </div>
 <div class="filter">
   <label for="hobby-pc-video-games-game-rank">Min Rank</label>
-  <select id="hobby-pc-video-games-game-rank" name="rank" data-filter="game-rank" data-type="number" data-mode="&gt;=">
+  <select id="hobby-pc-video-games-game-rank" name="rank" data-filter="game-rank" data-type="number" data-mode="&gt;=" data-select-box-search="auto" data-label-search="Search..." data-label-empty="No matches">
     <option value="">All</option><option value="10">10</option><option value="9">9</option><option value="8">8</option><option value="7">7</option><option value="6">6</option><option value="5">5</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1</option>
   </select>
 </div>
 <div class="filter">
   <label for="hobby-pc-video-games-game-playtime">Min Playtime</label>
-  <select id="hobby-pc-video-games-game-playtime" name="playtime" data-filter="game-playtime" data-type="number" data-mode="&gt;=">
+  <select id="hobby-pc-video-games-game-playtime" name="playtime" data-filter="game-playtime" data-type="number" data-mode="&gt;=" data-select-box-search="auto" data-label-search="Search..." data-label-empty="No matches">
     <option value="">All</option><option value="2000">2000h+</option><option value="1000">1000h+</option><option value="500">500h+</option><option value="250">250h+</option><option value="100">100h+</option><option value="50">50h+</option><option value="10">10h+</option>
   </select>
 </div>

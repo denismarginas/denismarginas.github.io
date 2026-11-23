@@ -20,6 +20,7 @@
             "placeholder": "--select--",
             "label": "Category:",
             "type": "select",
+            "multiple": true,
             "json-path": "['data']['taxonomy']['category']",
             "json-type": "array"
           },
@@ -49,6 +50,7 @@
             "placeholder": "--select--",
             "label": "Employee:",
             "type": "select",
+            "multiple": true,
             "json-path": "['data']['project']['employer']",
             "json-type": "string"
           },
@@ -58,6 +60,7 @@
             "placeholder": "--select--",
             "label": "Web Platform:",
             "type": "select",
+            "multiple": true,
             "json-path": "['data']['web']['platform']",
             "json-type": "array",
             "json-array-key": "text"
@@ -68,6 +71,7 @@
             "placeholder": "--select--",
             "label": "Web Technology:",
             "type": "select",
+            "multiple": true,
             "json-path": "['data']['web']['technology']",
             "json-type": "array",
             "json-array-key": "text"
@@ -78,6 +82,7 @@
             "placeholder": "--select--",
             "label": "Media Platform:",
             "type": "select",
+            "multiple": true,
             "json-path": "['data']['media']['platforms']",
             "json-type": "array",
             "json-array-key": "text"
@@ -88,6 +93,7 @@
             "placeholder": "--select--",
             "label": "Project Types:",
             "type": "select",
+            "multiple": true,
             "style": "text-transform: capitalize;",
             "json-path": "['data']['project']['types']",
             "json-type": "array"
@@ -98,6 +104,7 @@
             "placeholder": "--select--",
             "label": "Collaboration:",
             "type": "select",
+            "multiple": true,
             "json-path": "['data']['project']['collaboration']",
             "json-type": "array"
           }
@@ -166,6 +173,7 @@
             "placeholder": "--select--",
             "label": "Tag:",
             "type": "select",
+            "multiple": true,
             "json-path": "['data']['tags']",
             "json-type": "list"
           },
@@ -266,6 +274,7 @@
             "placeholder": "--select--",
             "label": "Type:",
             "type": "select",
+            "multiple": true,
             "json-path": "['type']"
           }
         ]

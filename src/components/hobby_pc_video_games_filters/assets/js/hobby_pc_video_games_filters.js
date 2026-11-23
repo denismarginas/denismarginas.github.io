@@ -5,23 +5,25 @@
   }
 
   function matchesFilter(values, select) {
-    var selected = select.value;
-    if (!selected) return true;
+    var selected = window.filtersToolbar.values(select);
+    if (!selected.length) return true;
     values = values || [];
 
     var type = select.dataset.type;
     if (type === 'number' || type === 'date') {
-      var wanted = toNumber(selected);
       var mode = select.dataset.mode || '=';
-      return values.some(function (v) {
-        var n = toNumber(v);
-        if (n === null || wanted === null) return false;
-        if (mode === '>=') return n >= wanted;
-        if (mode === '<=') return n <= wanted;
-        return n === wanted;
+      return selected.some(function (value) {
+        var wanted = toNumber(value);
+        return values.some(function (v) {
+          var n = toNumber(v);
+          if (n === null || wanted === null) return false;
+          if (mode === '>=') return n >= wanted;
+          if (mode === '<=') return n <= wanted;
+          return n === wanted;
+        });
       });
     }
-    return values.indexOf(selected) !== -1;
+    return selected.some(function (value) { return values.indexOf(value) !== -1; });
   }
 
   function matchesKeywords(entry, words) {

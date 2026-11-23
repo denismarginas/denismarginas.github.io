@@ -49,10 +49,9 @@ class filters_post_projects_render
 
     private static function filter(string $target, array $filter): string
     {
-        $placeholder = filters_toolbar::placeholder($filter['placeholder'] ?? '');
         $style = isset($filter['style']) ? ' style="' . self::e((string) $filter['style']) . '"' : '';
 
-        $options = '<option value="">' . self::e($placeholder) . '</option>';
+        $options = select_box_search::placeholder_option($filter);
         foreach ($filter['options'] as $value) {
             $options .= '<option value="' . self::e($value) . '"' . $style . '>' . self::e(self::option_label($filter, $value)) . '</option>';
         }
@@ -64,6 +63,7 @@ class filters_post_projects_render
             'label' => self::e(filters_toolbar::label((string) ($filter['label'] ?? ''))),
             'type' => self::e((string) ($filter['json-type'] ?? 'string')),
             'mode' => self::e(listing_toolbar::mode($filter)),
+            'select_attrs' => select_box_search::attrs($filter),
             'style' => $style,
             'options' => $options,
         ]);

@@ -6,6 +6,11 @@
 
   var STORE = 'ft-view:';
 
+  function values(select) {
+    return Array.prototype.filter.call(select.options, function (o) { return o.selected && o.value !== ''; })
+      .map(function (o) { return o.value; });
+  }
+
   function stored(name) {
     try { return window.localStorage.getItem(STORE + name); } catch (e) { return null; }
   }
@@ -73,21 +78,26 @@
     function update(shown) {
       var query = input ? input.value.trim() : '';
       syncDrawerInput();
-      var active = selects.filter(function (select) { return !!select.value; });
+      var active = selects.filter(function (select) { return values(select).length > 0; });
+      var chosen = active.reduce(function (total, select) { return total + values(select).length; }, 0);
 
       if (typeof shown === 'number') amounts.forEach(function (el) { el.textContent = shown; });
       if (badge) {
-        badge.textContent = active.length;
-        badge.hidden = active.length === 0;
+        badge.textContent = chosen;
+        badge.hidden = chosen === 0;
       }
       form.classList.toggle('has-active-filters', active.length > 0);
 
       if (chips) {
         chips.textContent = '';
         active.forEach(function (select) {
-          addChip(labelOf(form, select) + ': ' + select.options[select.selectedIndex].textContent, function () {
-            select.value = '';
-            select.dispatchEvent(new Event('change', { bubbles: true }));
+          Array.prototype.forEach.call(select.options, function (option) {
+            if (!option.selected || option.value === '') return;
+            addChip(labelOf(form, select) + ': ' + option.textContent, function () {
+              if (select.multiple) option.selected = false;
+              else select.value = '';
+              select.dispatchEvent(new Event('change', { bubbles: true }));
+            });
           });
         });
         if (query && input) {
@@ -100,6 +110,7 @@
       }
       if (clearBtn) clearBtn.hidden = active.length === 0 && !query;
       if (filtersBtn && drawer) filtersBtn.setAttribute('aria-expanded', drawer.open ? 'true' : 'false');
+      if (window.selectBoxSearch) window.selectBoxSearch.refresh(form);
     }
 
     if (input) {
@@ -217,5 +228,5 @@
     return { update: update, syncViews: syncViews };
   }
 
-  window.filtersToolbar = { init: init };
+  window.filtersToolbar = { init: init, values: values };
 })();
