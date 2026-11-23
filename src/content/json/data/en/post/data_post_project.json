@@ -1282,7 +1282,12 @@
         "logo": {
           "img": "augustinnailtrainer-media/logo/logo.webp"
         },
-        "platforms": [],
+        "platforms": [
+          {
+            "svg": "photopea",
+            "text": "Photopea"
+          }
+        ],
         "urls": [
           {
             "url": "https://www.facebook.com/augustin.andradaandreea",
@@ -6687,7 +6692,12 @@
         "logo": {
           "img": "roundselfie-media/logo/logo.webp"
         },
-        "platforms": [],
+        "platforms": [
+          {
+            "svg": "photopea",
+            "text": "Photopea"
+          }
+        ],
         "urls": [
           {
             "url": "https://www.facebook.com/RoundSelfie",
