@@ -131,7 +131,7 @@ Every data file is a JSON array of entries:
 
 | file                              | holds                                                                                   |
 |-----------------------------------|-----------------------------------------------------------------------------------------|
-| `data_settings_site.json`         | site title, logo, favicon, site url                                                     |
+| `data_settings_site.json`         | site title, logo, favicon (`site_logo_favicon`, printed by `utility_favicon`), site url |
 | `data_settings_routing.json`      | `url`, `routing.extension` (`.html`), `routing.mappings` (`front_post_id`, `404_post_id`, `search_post_id`, `privacy_post_id`), `theme` paths and default mode |
 | `data_settings_languages.json`    | `default` language and the language `list` (`text`, `iso`, `mode`: `static` / `frontend`, §3.4) |
 | `data_settings_seo.json`          | Google Analytics id / consent                                                           |
@@ -333,7 +333,7 @@ platform_write_dist_html          also writes dist/ when render.html_compile is 
 
 ### 6.2 `page_constructor` — the HTML document
 
-1. SEO meta (implicit fields, entry `seo`, share image) + `utility_seo_ga`
+1. SEO meta (implicit fields, entry `seo`), `utility_favicon` (entry `seo.favicon`, else `site_logo_favicon`), share image + `utility_seo_ga`
 2. `header`, `page_content` (the body), `footer`, `cookie_notice`, `utility_performance_monitor`
 3. `overlay_noise`, `animation_grid_background`, `cursor` (styles only)
 4. **asset tags last**, so everything rendered above has been marked as used:

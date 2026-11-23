@@ -1,0 +1,10 @@
+{
+  "name": "utility_favicon",
+  "title": "Utility Favicon",
+  "summary": "Prints the favicon <link> tag.",
+  "description": "Prints <link rel=\"icon\"> for the page head. Options: img_path (path from the project root, e.g. /src/content/img/brand/favicon/favicon.ico, or a full http(s) url), type (mime type, optional). When img_path is empty the favicon comes from data_settings_site.json (site_logo_favicon). Local paths are made relative to the page in dist and use the url path in preview. The mime type is taken from the file extension (ico, png, svg, webp, gif, jpg) when type is not set. Rendered in the head by page_constructor, which passes the entry's seo.favicon as img_path, so a page or project can have its own favicon.",
+  "assets": {
+    "php": ["assets/php/utility_favicon.php"]
+  },
+  "dependencies": []
+}

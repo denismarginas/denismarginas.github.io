@@ -20,6 +20,7 @@ class page_constructor extends page_constructor_seo
         if (!empty($seo)) {
             $seoFields = self::add_seo_to_html($seo, $seoFields);
         }
+        $seoFields .= PlatformComponentRenderer::render('utility_favicon', ['img_path' => $seo['favicon'] ?? '']);
         $seoFields .= self::share_image_fields($data['post_current_data'] ?? null);
         $seoFields .= self::alternate_links($data['post_current_data'] ?? null);
 

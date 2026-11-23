@@ -9,18 +9,9 @@ class page_constructor_seo
         $fields = [];
         $global = PlatformDataService::get_global_settings();
 
-        $site_name = $global['name'] ?? '';
+        $site_name = $global['site_title'] ?? $global['name'] ?? '';
         $description = $global['site_description'] ?? '';
-        $favicon = $global['favicon'] ?? '';
 
-        if (!empty($favicon)) {
-            if (str_starts_with($favicon, 'http')) {
-                $favicon_url = $favicon;
-            } else {
-                $favicon_url = PlatformPathService::asset_relative_prefix() . ltrim($favicon, '/');
-            }
-            $fields[] = '<link rel="icon" type="image/x-icon" href="' . htmlspecialchars($favicon_url) . '">';
-        }
         if (!empty($site_name)) {
             $fields[] = '<meta name="application-name" content="' . htmlspecialchars($site_name) . '">';
         }
