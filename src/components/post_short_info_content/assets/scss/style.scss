@@ -165,6 +165,9 @@
       &.post-short-info-status-undone {
         background-color: var(--dm-color-error);
       }
+      &.post-short-info-status-in-progress {
+        background-color: var(--dm-color-warning, #c98500);
+      }
     }
   }
 

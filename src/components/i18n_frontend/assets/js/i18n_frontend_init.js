@@ -58,16 +58,18 @@
 
   c.store = store;
   c.fetch = function (target) {
-    var root = (c.root || "") + c.data, v = "?v=" + encodeURIComponent(c.v || "");
+    var root = (c.root || "") + c.data;
+    // "no-cache" = the browser keeps its copy but asks the server whether the file changed
+    // (a tiny "304 Not Modified" when it didn't), so no version has to be written into the pages.
     function get(url) {
-      return fetch(url, { credentials: "same-origin" })
+      return fetch(url, { credentials: "same-origin", cache: "no-cache" })
         .then(function (r) { return r.ok ? r.json() : null; })
         .catch(function () { return null; });
     }
     var jobs = Object.keys(c.files || {}).filter(function (file) {
       return (c.files[file] || []).indexOf(target) !== -1;
     }).map(function (file) {
-      return Promise.all([get(root + c.default + "/" + file + v), get(root + target + "/" + file + v)]);
+      return Promise.all([get(root + c.default + "/" + file), get(root + target + "/" + file)]);
     });
     return Promise.all(jobs).then(function (results) {
       var map = new Map();

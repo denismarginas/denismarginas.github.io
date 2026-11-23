@@ -38,7 +38,6 @@ class i18n_frontend
         $relative = trim(str_starts_with($dataDir, $root) ? substr($dataDir, strlen($root)) : 'src/content/json/data', '/');
 
         $files = [];
-        $newest = 0;
         foreach (PlatformTranslationBuilder::files($default) as $file) {
             $source = $dataDir . '/' . $default . '/' . $file;
             if (!is_file($source)) continue;
@@ -47,17 +46,14 @@ class i18n_frontend
                 $target = $dataDir . '/' . $lang . '/' . $file;
                 if (!is_file($target)) continue;
                 $langs[] = $lang;
-                $newest = max($newest, (int) filemtime($target));
             }
             if ($langs === []) continue;
-            $newest = max($newest, (int) filemtime($source));
             $files[$file] = $langs;
         }
 
         return $cache = [
             'data' => $relative . '/',
             'files' => $files,
-            'v' => base_convert((string) $newest, 10, 36),
         ];
     }
 }

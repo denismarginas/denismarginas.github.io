@@ -120,8 +120,14 @@ class project_hero
             $type = self::strings($d['project']['types'] ?? [])[0] ?? '';
             $status = '';
             if (array_key_exists('delivery_status', $d['web'] ?? [])) {
-                $done = filter_var($d['web']['delivery_status'], FILTER_VALIDATE_BOOLEAN);
-                $status = $done ? utility_project_media::text('status_done', 'Delivered') : utility_project_media::text('status_undone', 'In progress');
+                $raw = $d['web']['delivery_status'];
+                if (is_string($raw) && in_array(strtolower(str_replace([' ', '-'], '_', trim($raw))), ['in_progress', 'progress'], true)) {
+                    $status = utility_project_media::text('status_in_progress', 'In progress');
+                } elseif (filter_var($raw, FILTER_VALIDATE_BOOLEAN)) {
+                    $status = utility_project_media::text('status_done', 'Delivered');
+                } else {
+                    $status = utility_project_media::text('status_undone', 'Undone');
+                }
             }
             $items = [
                 ['label' => utility_project_media::text('meta_platform', 'Platform'), 'value' => self::str($platform)],

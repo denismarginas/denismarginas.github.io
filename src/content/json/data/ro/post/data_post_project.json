@@ -5277,7 +5277,7 @@
                         "svg": "web"
                     }
                 ],
-                "delivery_status": false
+                "delivery_status": true
             },
             "media": {
                 "path": "mewi-web-maintenance",
@@ -16486,7 +16486,7 @@
                         "text": "Yoast SEO"
                     }
                 ],
-                "delivery_status": false,
+                "delivery_status": true,
                 "urls": []
             },
             "media": {
@@ -17233,7 +17233,7 @@
                         "svg": "socials_github"
                     }
                 ],
-                "delivery_status": false
+                "delivery_status": true
             },
             "media": {
                 "path": "module-sell-my-things-wordpress-plugin",
@@ -17777,7 +17777,7 @@
                         "svg": "web"
                     }
                 ],
-                "delivery_status": false
+                "delivery_status": "in_progress"
             },
             "media": {
                 "path": "orions-presentation-website",
@@ -18020,7 +18020,7 @@
                         "svg": "web"
                     }
                 ],
-                "delivery_status": false
+                "delivery_status": "in_progress"
             },
             "media": {
                 "path": "zozo-online-shop",
@@ -18659,7 +18659,7 @@
                         "svg": "web"
                     }
                 ],
-                "delivery_status": false
+                "delivery_status": "in_progress"
             },
             "media": {
                 "path": "ubertek-presentation-website",
@@ -19015,7 +19015,7 @@
                         "svg": "web"
                     }
                 ],
-                "delivery_status": false
+                "delivery_status": "in_progress"
             },
             "media": {
                 "path": "peptides-online-shop",

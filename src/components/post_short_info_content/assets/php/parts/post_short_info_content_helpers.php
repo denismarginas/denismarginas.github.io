@@ -11,6 +11,7 @@ class post_short_info_content_helpers
         'web_project_status' => 'Web Project Status:',
         'web_project_status_done' => 'Done',
         'web_project_status_undone' => 'Undone',
+        'web_project_status_in_progress' => 'In progress',
         'media_platforms' => 'Media Platforms: ',
         'employer_type' => 'Worked as:',
         'employer_location' => 'Worked at:',

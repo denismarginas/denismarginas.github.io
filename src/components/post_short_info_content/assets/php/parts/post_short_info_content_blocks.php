@@ -82,13 +82,17 @@ class post_short_info_content_blocks extends post_short_info_content_helpers
     {
         if (!array_key_exists('delivery_status', $d['web'] ?? [])) return '';
 
-        $done = filter_var($d['web']['delivery_status'], FILTER_VALIDATE_BOOLEAN);
-        $state = $done ? 'done' : 'undone';
+        $raw = $d['web']['delivery_status'];
+        if (is_string($raw) && in_array(strtolower(str_replace([' ', '-'], '_', trim($raw))), ['in_progress', 'progress'], true)) {
+            $state = 'in_progress';
+        } else {
+            $state = filter_var($raw, FILTER_VALIDATE_BOOLEAN) ? 'done' : 'undone';
+        }
         $label = trim(self::label('web_project_status'));
 
         return '<div class="post-short-info-status">'
             . ($label !== '' ? '<span class="post-short-info-status-label">' . self::esc($label) . '</span>' : '')
-            . '<span class="post-short-info-status-value post-short-info-status-' . $state . '">' . self::esc(self::label('web_project_status_' . $state)) . '</span>'
+            . '<span class="post-short-info-status-value post-short-info-status-' . str_replace('_', '-', $state) . '">' . self::esc(self::label('web_project_status_' . $state)) . '</span>'
             . '</div>';
     }
 

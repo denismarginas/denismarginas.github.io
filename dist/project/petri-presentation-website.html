@@ -49,7 +49,7 @@
 })();
 </script>
     <script id="preloader-init">document.documentElement.classList.add("is-loading");</script>
-    <style>html.i18n-loading body>:not([data-preloader]){visibility:hidden}</style><script id="i18n-frontend-init">window.dmI18n={"default":"en","page_lang":"en","langs":["en","ro"],"frontend":["ro"],"root":"../../","timeout":6000,"data":"src/content/json/data/","files":{"collection/data_collection_education.json":["ro"],"collection/data_collection_form.json":["ro"],"collection/data_collection_hobby.json":["ro"],"collection/data_collection_hobby_pc_video_game.json":["ro"],"collection/data_collection_job.json":["ro"],"collection/data_collection_knowledge_item.json":["ro"],"collection/data_collection_listing_toolbar.json":["ro"],"collection/data_collection_resume.json":["ro"],"collection/data_collection_social_link.json":["ro"],"collection/data_collection_social_post.json":["ro"],"collection/data_collection_video.json":["ro"],"content/data_content_cookie_notice.json":["ro"],"content/data_content_footer.json":["ro"],"content/data_content_header_menu.json":["ro"],"content/data_content_post_projects.json":["ro"],"content/data_content_project_info.json":["ro"],"content/data_content_ui.json":["ro"],"content/data_dates.json":["ro"],"data_types.json":["ro"],"post/data_post_page.json":["ro"],"post/data_post_project.json":["ro"],"post/data_post_workstation.json":["ro"],"taxonomy/data_taxonomy_category.json":["ro"]},"v":"toy5gy","skip":["script","style","noscript","template","svg","math","textarea","iframe","object","canvas"],"attrs":["alt","title","placeholder","aria-label","aria-description","data-tooltip"],"prefixes":["data-label"],"meta":["description","og:title","og:description","og:image:alt","twitter:title","twitter:description","twitter:image:alt"],"inputs":["submit","button","reset"]};(function () {
+    <style>html.i18n-loading body>:not([data-preloader]){visibility:hidden}</style><script id="i18n-frontend-init">window.dmI18n={"default":"en","page_lang":"en","langs":["en","ro"],"frontend":["ro"],"root":"../../","timeout":6000,"data":"src/content/json/data/","files":{"collection/data_collection_education.json":["ro"],"collection/data_collection_form.json":["ro"],"collection/data_collection_hobby.json":["ro"],"collection/data_collection_hobby_pc_video_game.json":["ro"],"collection/data_collection_job.json":["ro"],"collection/data_collection_knowledge_item.json":["ro"],"collection/data_collection_listing_toolbar.json":["ro"],"collection/data_collection_resume.json":["ro"],"collection/data_collection_social_link.json":["ro"],"collection/data_collection_social_post.json":["ro"],"collection/data_collection_video.json":["ro"],"content/data_content_cookie_notice.json":["ro"],"content/data_content_footer.json":["ro"],"content/data_content_header_menu.json":["ro"],"content/data_content_post_projects.json":["ro"],"content/data_content_project_info.json":["ro"],"content/data_content_ui.json":["ro"],"content/data_dates.json":["ro"],"data_types.json":["ro"],"post/data_post_page.json":["ro"],"post/data_post_project.json":["ro"],"post/data_post_workstation.json":["ro"],"taxonomy/data_taxonomy_category.json":["ro"]},"skip":["script","style","noscript","template","svg","math","textarea","iframe","object","canvas"],"attrs":["alt","title","placeholder","aria-label","aria-description","data-tooltip"],"prefixes":["data-label"],"meta":["description","og:title","og:description","og:image:alt","twitter:title","twitter:description","twitter:image:alt"],"inputs":["submit","button","reset"]};(function () {
   var c = window.dmI18n, d = document.documentElement, key = "dm_lang", lang = null;
   if (!c) return;
 
@@ -109,16 +109,18 @@
 
   c.store = store;
   c.fetch = function (target) {
-    var root = (c.root || "") + c.data, v = "?v=" + encodeURIComponent(c.v || "");
+    var root = (c.root || "") + c.data;
+    // "no-cache" = the browser keeps its copy but asks the server whether the file changed
+    // (a tiny "304 Not Modified" when it didn't), so no version has to be written into the pages.
     function get(url) {
-      return fetch(url, { credentials: "same-origin" })
+      return fetch(url, { credentials: "same-origin", cache: "no-cache" })
         .then(function (r) { return r.ok ? r.json() : null; })
         .catch(function () { return null; });
     }
     var jobs = Object.keys(c.files || {}).filter(function (file) {
       return (c.files[file] || []).indexOf(target) !== -1;
     }).map(function (file) {
-      return Promise.all([get(root + c.default + "/" + file + v), get(root + target + "/" + file + v)]);
+      return Promise.all([get(root + c.default + "/" + file), get(root + target + "/" + file)]);
     });
     return Promise.all(jobs).then(function (results) {
       var map = new Map();
@@ -224,7 +226,7 @@
   <svg type="fill" width="36" height="36" viewBox="0 0 36 36" class="btn-icon"><path d="M32 36H4C1.8 36 0 34.2 0 32V4C0 1.8 1.8 0 4 0H18V4H4V32H32V18H36V32C36 34.2 34.2 36 32 36Z"/><path d="M36 14H32V4H22V0H36V14Z"/><path d="M10.5551 22.6168L32.6164 0.554706L35.4449 3.38308L13.3835 25.4452L10.5551 22.6168Z"/></svg><span class="btn-text">Visit website</span>
 </a>
 </div>
-      <dl class="key-value-list key-value-list-inline key-value-list-cols-2 project-hero-meta"><div class="key-value-list-row"><dt class="text-label">Platform</dt><dd>Wordpress</dd></div><div class="key-value-list-row"><dt class="text-label">Scope</dt><dd>Presentation website</dd></div><div class="key-value-list-row"><dt class="text-label">Status</dt><dd>In progress</dd></div></dl>
+      <dl class="key-value-list key-value-list-inline key-value-list-cols-2 project-hero-meta"><div class="key-value-list-row"><dt class="text-label">Platform</dt><dd>Wordpress</dd></div><div class="key-value-list-row"><dt class="text-label">Scope</dt><dd>Presentation website</dd></div><div class="key-value-list-row"><dt class="text-label">Status</dt><dd>Undone</dd></div></dl>
 
     </div>
     <a class="project-hero-stage project-hero-stage-website" href="#screens" aria-label="View the showcase">
