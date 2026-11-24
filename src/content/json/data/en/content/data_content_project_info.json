@@ -1,14 +1,43 @@
 {
+  "project": "denismarginas-portfolio-cms",
   "dates": [
     {
-      "text": "Online since:",
-      "date": "04-06-2023"
+      "text": "Publish since:",
+      "field": "publish"
+    },
+    {
+      "text": "Started:",
+      "field": "start"
+    },
+    {
+      "text": "Status:",
+      "field": "end"
     },
     {
       "text": "Last updated:",
       "date": "current-date"
     }
   ],
+  "groups": [
+    {
+      "text": "Technologies",
+      "field": "web.technology"
+    },
+    {
+      "text": "Platform",
+      "field": "web.platform"
+    },
+    {
+      "text": "Tools",
+      "field": "web.tools"
+    },
+    {
+      "text": "AI Tools",
+      "field": "web.ai_tools"
+    }
+  ],
+  "items_display": "both",
+  "in_progress_text": "In progress",
   "date_format": "M j, Y",
   "cookie_settings": true,
   "copyright": {

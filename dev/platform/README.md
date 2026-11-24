@@ -194,6 +194,14 @@ both modes; the mode only decides what the HTML render makes of them.
   The first Romanian page view downloads the default and translated data files (cached afterwards). Files must be
   served over http(s), and `src/content/json/data/` must be published next to `dist/`, like the other `src/` assets.
 
+**Site info without a re-render** – the footer's `website_info` prints only a project-info icon next to the cookie
+settings icon. `website_info.js` fetches `content/data_content_project_info.json` and the project it names
+(`"project": "denismarginas-portfolio-cms"`, a `render: false` entry of `post/data_post_project.json`) from
+`src/content/json/data/<lang>/` (current `<html lang>`, default language as fallback) when the popover opens: the
+project's dates (`dates[].field`), its `web.technology` / `web.platform` / `web.tools` / `web.ai_tools` as icon chips
+(`groups`, `items_display`), and `"current-date"` as `document.lastModified` (on GitHub Pages: the last deploy).
+Editing those files and deploying updates every page without compiling HTML.
+
 > Note: there is a `PlatformDataServiceItems` trait (for `data_items_*.json`), but it is not loaded by
 > `bootstrap.php` or used by `PlatformDataService`. The current naming is `data_collection_*`.
 

@@ -1,15 +1,44 @@
 {
+    "project": "denismarginas-portfolio-cms",
     "dates": [
         {
-            "text": "Online din:",
-            "date": "04-06-2023"
+            "text": "Publicat din:",
+            "field": "publish"
+        },
+        {
+            "text": "Început:",
+            "field": "start"
+        },
+        {
+            "text": "Stadiu:",
+            "field": "end"
         },
         {
             "text": "Ultima actualizare:",
             "date": "current-date"
         }
     ],
-    "date_format": "M j, Y",
+    "groups": [
+        {
+            "text": "Tehnologii",
+            "field": "web.technology"
+        },
+        {
+            "text": "Platformă",
+            "field": "web.platform"
+        },
+        {
+            "text": "Instrumente",
+            "field": "web.tools"
+        },
+        {
+            "text": "Instrumente AI",
+            "field": "web.ai_tools"
+        }
+    ],
+    "items_display": "both",
+    "in_progress_text": "În desfășurare",
+    "date_format": "j M Y",
     "cookie_settings": true,
     "copyright": {
         "text": "© Toate drepturile rezervate,",

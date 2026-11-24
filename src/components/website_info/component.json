@@ -1,8 +1,8 @@
 {
   "name": "website_info",
   "title": "Website Info",
-  "summary": "Site start / update dates and copyright line.",
-  "description": "About this website: start / last update dates and the copyright line. Reads data_content_project_info.json by default; component data overrides it. Used in the footer.",
+  "summary": "Copyright line plus a project-info icon that opens the site dates and the project's technologies.",
+  "description": "Footer copyright line, the cookie settings icon and a project-info icon that opens a small popover. Nothing of it is printed in the HTML: website_info.js fetches data_content_project_info.json and, when it sets \"project\", that entry from post/data_post_project.json (current language, default language as fallback) when the popover opens, so changing a date or a technology needs no re-render. \"dates\": { text, field } reads data.date.<field> of the project (\"In progress\" shows in_progress_text), { text, date } a fixed date or \"current-date\" (the page's last-modified time = last deploy). \"groups\": { text, field } lists the project's { svg, text } items at that path (web.technology, web.platform, web.tools, web.ai_tools); \"items_display\": both | icon | text. Icons are loaded from src/content/svg/.",
   "assets": {
     "php": [
       "assets/php/website_info.php"
@@ -15,10 +15,14 @@
     ],
     "css": [
       "assets/css/**"
+    ],
+    "js": [
+      "assets/js/website_info.js"
     ]
   },
   "dependencies": [
     "theme",
+    "svg",
     "cookie_settings"
   ]
 }

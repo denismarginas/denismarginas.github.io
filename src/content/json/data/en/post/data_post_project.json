@@ -17318,5 +17318,136 @@
         ]
       }
     ]
+  },
+  {
+    "_id": "denismarginas-portfolio-cms",
+    "settings": {
+      "render": false,
+      "exclude_from_categories": true
+    },
+    "data": {
+      "seo": {
+        "title": "Denis Marginas Portfolio & CMS",
+        "description": "My current portfolio at denismarginas.github.io, built with my own file-based PHP CMS and static site generator: JSON content, reusable components, bulk HTML render and a Romanian version translated in the browser.",
+        "slug": "denismarginas-portfolio-cms",
+        "index": false
+      },
+      "date": {
+        "start": "2026-09-01",
+        "end": "In progress",
+        "publish": "2026-11-22"
+      },
+      "project": {
+        "types": [
+          "presentation website",
+          "management application",
+          "personal"
+        ],
+        "collaboration": [
+          "Individual"
+        ]
+      },
+      "web": {
+        "platform": [
+          {
+            "svg": "github-pages",
+            "text": "GitHub Pages"
+          }
+        ],
+        "technology": [
+          {
+            "svg": "php",
+            "text": "PHP"
+          },
+          {
+            "svg": "js",
+            "text": "JS"
+          },
+          {
+            "svg": "sass",
+            "text": "SCSS"
+          },
+          {
+            "svg": "css",
+            "text": "CSS"
+          },
+          {
+            "svg": "html",
+            "text": "HTML"
+          },
+          {
+            "text": "JSON"
+          }
+        ],
+        "tools": [
+          {
+            "svg": "vscode",
+            "text": "VS Code"
+          },
+          {
+            "svg": "phpstorm",
+            "text": "PhpStorm"
+          },
+          {
+            "svg": "socials_github",
+            "text": "GitHub"
+          },
+          {
+            "text": "GitHub Actions"
+          },
+          {
+            "text": "Composer"
+          },
+          {
+            "text": "scssphp"
+          }
+        ],
+        "ai_tools": [
+          {
+            "svg": "claude",
+            "text": "Claude"
+          },
+          {
+            "text": "Ollama · TranslateGemma"
+          },
+          {
+            "svg": "opencode",
+            "text": "OpenCode"
+          },
+          {
+            "svg": "deepseek",
+            "text": "DeepSeek V4"
+          },
+          {
+            "svg": "gemini",
+            "text": "Gemini"
+          }
+        ],
+        "urls": [
+          {
+            "url": "https://denismarginas.github.io/",
+            "svg": "web"
+          },
+          {
+            "url": "github.com/denismarginas/denismarginas.github.io",
+            "text": "GitHub Repository",
+            "svg": "socials_github"
+          }
+        ],
+        "delivery_status": false
+      },
+      "media": {
+        "path": "denismarginas-portfolio-cms"
+      },
+      "taxonomy": {
+        "tag": [
+          "web"
+        ],
+        "category": [
+          "Web Projects",
+          "Personal Projects"
+        ]
+      }
+    }
   }
 ]
